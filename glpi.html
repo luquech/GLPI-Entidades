@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status das Entidades</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      background: #1e293b;
+      color: white;
+      padding: 14px;
+      text-align: center;
+    }
+
+    td {
+      padding: 12px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+      background: #f1f5f9;
+    }
+
+    .ok {
+      color: #16a34a;
+      font-weight: bold;
+    }
+
+    .entregue {
+      color: #16a34a;
+      font-weight: bold;
+    }
+
+    .atrasado {
+      color: #dc2626;
+      font-weight: bold;
+    }
+
+    .aguardando {
+      color: #d97706;
+      font-weight: bold;
+    }
+
+    .esquecido {
+      color: #7c3aed;
+      font-weight: bold;
+    }
+
+    .vazio {
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Status das Entidades</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entidade</th>
+          <th>HOM</th>
+          <th>PROD</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>PRE</td>
+          <td class="ok">OK</td>
+          <td class="vazio">—</td>
+          <td class="vazio">—</td>
+        </tr>
+
+        <tr>
+          <td>PPGEA</td>
+          <td class="ok">OK</td>
+          <td class="ok">OK</td>
+          <td class="entregue">ENTREGUE</td>
+        </tr>
+
+        <tr>
+          <td>PROPREX</td>
+          <td class="vazio">—</td>
+          <td class="vazio">—</td>
+          <td class="atrasado">ATRASADO</td>
+        </tr>
+
+        <tr>
+          <td>PROTOCOLO</td>
+          <td class="vazio">—</td>
+          <td class="vazio">—</td>
+          <td class="vazio">—</td>
+        </tr>
+
+        <tr>
+          <td>CDSA</td>
+          <td class="ok">OK</td>
+          <td class="vazio">—</td>
+          <td class="aguardando">AGUARDANDO</td>
+        </tr>
+
+        <tr>
+          <td>SEPLAN</td>
+          <td class="vazio">—</td>
+          <td class="vazio">—</td>
+          <td class="vazio">—</td>
+        </tr>
+
+        <tr>
+          <td>NAI</td>
+          <td class="vazio">—</td>
+          <td class="vazio">—</td>
+          <td class="vazio">—</td>
+        </tr>
+
+        <tr>
+          <td>SC-CES</td>
+          <td class="vazio">—</td>
+          <td class="vazio">—</td>
+          <td class="vazio">—</td>
+        </tr>
+
+        <tr>
+          <td>UAEAI</td>
+          <td class="ok">OK</td>
+          <td class="vazio">—</td>
+          <td class="atrasado">ATRASADO</td>
+        </tr>
+
+        <tr>
+          <td>ASTECH</td>
+          <td class="ok">OK</td>
+          <td class="ok">OK</td>
+          <td class="aguardando">AGUARDANDO</td>
+        </tr>
+
+        <tr>
+          <td>UAMAT</td>
+          <td class="vazio">—</td>
+          <td class="vazio">—</td>
+          <td class="esquecido">ESQUECIDO</td>
+        </tr>
+
+        <tr>
+          <td>UNAMUS</td>
+          <td class="vazio">—</td>
+          <td class="vazio">—</td>
+          <td class="esquecido">ESQUECIDO</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
