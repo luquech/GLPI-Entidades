@@ -328,35 +328,50 @@
     approvalRate.set(s.codigo, taxa);
   });
 
-  // Cálculo de desbloqueio (descendentes: quantas disciplinas dependem direta/indiretamente)
   function computeDescendantsCount() {
-    // construir grafo reverso (de disciplina para seus dependentes diretos)
-    const reverseAdj = new Map();
-    mandatorySubjects.forEach(sub => {
-      sub.preReqs.forEach(pre => {
-        if (!reverseAdj.has(pre)) reverseAdj.set(pre, []);
-        reverseAdj.get(pre).push(sub.codigo);
-      });
+  // Grafo reverso: de cada disciplina, lista de dependentes diretos
+  const reverseAdj = new Map();
+  mandatorySubjects.forEach(sub => {
+    sub.preReqs.forEach(pre => {
+      if (!reverseAdj.has(pre)) reverseAdj.set(pre, []);
+      reverseAdj.get(pre).push(sub.codigo);
     });
-    // memoização DFS para contar descendentes (inclui indiretos)
-    const memo = new Map();
-    function dfsCount(node) {
-      if (memo.has(node)) return memo.get(node);
-      let count = 0;
-      const deps = reverseAdj.get(node) || [];
-      for (let dep of deps) {
-        count += 1 + dfsCount(dep);
-      }
-      memo.set(node, count);
-      return count;
+  });
+
+  const descendantsCount = new Map();
+
+  function getDescendantsSet(node, visited = new Set()) {
+    if (descendantsCount.has(node)) {
+      // Retorna o conjunto já calculado (mas precisamos dele, não só o tamanho)
+      // Para simplificar, vamos calcular sob demanda com cache do conjunto
     }
-    const desbloqueio = new Map();
-    mandatorySubjects.forEach(sub => {
-      desbloqueio.set(sub.codigo, dfsCount(sub.codigo));
-    });
-    return desbloqueio;
+    const set = new Set();
+    const queue = [node];
+    const seen = new Set();
+    seen.add(node);
+    while (queue.length) {
+      const current = queue.shift();
+      const deps = reverseAdj.get(current) || [];
+      for (let dep of deps) {
+        if (!seen.has(dep)) {
+          seen.add(dep);
+          set.add(dep);
+          queue.push(dep);
+        }
+      }
+    }
+    return set;
   }
-  const desbloqueioMap = computeDescendantsCount();
+
+  // Pré‑calcular o conjunto de descendentes para cada disciplina
+  const descendantsSetCache = new Map();
+  for (let sub of mandatorySubjects) {
+    const set = getDescendantsSet(sub.codigo);
+    descendantsSetCache.set(sub.codigo, set);
+    descendantsCount.set(sub.codigo, set.size);
+  }
+  return descendantsCount;
+}
 
   // Normalização de valores (min-max)
   function normalizeMapValues(map, reverse = false) {
