@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Matriz Curricular - Fluxo por Colunas | Ciência da Computação</title>
+  <title>Matriz Curricular Compacta | Fluxo por Colunas</title>
   <style>
     * {
       box-sizing: border-box;
     }
 
     body {
-      font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-      background: #eef2f8;
+      font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, 'Roboto', sans-serif;
+      background: #eef2f5;
       margin: 0;
-      padding: 20px;
-      color: #0f2b3d;
+      padding: 16px;
+      color: #1e2a3e;
     }
 
     .container {
@@ -22,24 +22,24 @@
       margin: 0 auto;
     }
 
-    /* cabeçalho e progresso */
+    /* cabeçalho reduzido */
     .header {
       background: white;
-      border-radius: 32px;
-      padding: 1rem 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.03);
+      border-radius: 24px;
+      padding: 0.8rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      gap: 1rem;
-      border: 1px solid #e2edf2;
+      gap: 0.8rem;
+      border: 1px solid #e2e8f0;
     }
 
     .title h1 {
       margin: 0;
-      font-size: 1.55rem;
+      font-size: 1.3rem;
       font-weight: 700;
       background: linear-gradient(135deg, #1e4a6e, #0f2b3d);
       background-clip: text;
@@ -48,29 +48,28 @@
     }
 
     .title p {
-      margin: 0.2rem 0 0;
+      margin: 0;
+      font-size: 0.7rem;
       color: #4b6f8c;
-      font-size: 0.85rem;
     }
 
     .progress-panel {
       background: #f8fafc;
       border-radius: 2rem;
-      padding: 0.5rem 1.5rem;
-      min-width: 220px;
+      padding: 0.4rem 1.2rem;
+      min-width: 180px;
       text-align: center;
       border: 1px solid #e2e8f0;
     }
 
     .progress-label {
       font-weight: 600;
-      font-size: 0.75rem;
-      letter-spacing: 0.5px;
+      font-size: 0.7rem;
       color: #2c5a74;
     }
 
     .progress-value {
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: 800;
       line-height: 1;
       color: #1e5a7a;
@@ -79,9 +78,9 @@
     .progress-bar-bg {
       background: #e2e8f0;
       border-radius: 40px;
-      height: 8px;
+      height: 6px;
       width: 100%;
-      margin-top: 8px;
+      margin-top: 6px;
       overflow: hidden;
     }
 
@@ -96,181 +95,162 @@
     button.reset-btn {
       background: none;
       border: 1px solid #cbd5e1;
-      padding: 5px 12px;
+      padding: 4px 10px;
       border-radius: 30px;
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       font-weight: 500;
       cursor: pointer;
-      margin-top: 10px;
-      transition: 0.1s;
+      margin-top: 6px;
     }
 
-    button.reset-btn:hover {
-      background: #f1f5f9;
-    }
-
-    /* LAYOUT: colunas por nível (scroll horizontal em mobile) */
+    /* colunas */
     .columns-wrapper {
       overflow-x: auto;
-      padding-bottom: 20px;
-      margin-bottom: 1rem;
+      padding-bottom: 12px;
     }
 
     .matrix-columns {
       display: flex;
-      gap: 24px;
+      gap: 16px;
       min-width: min-content;
       align-items: flex-start;
     }
 
-    /* cada coluna = nível */
     .level-column {
       background: white;
-      border-radius: 28px;
-      width: 310px;
-      min-width: 310px;
+      border-radius: 20px;
+      width: 270px;
+      min-width: 270px;
       display: flex;
       flex-direction: column;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       border: 1px solid #e2edf2;
-      transition: all 0.1s;
     }
 
     .column-header {
       background: #f9fbfd;
-      padding: 1rem;
-      border-bottom: 2px solid #e0ecf3;
-      border-radius: 28px 28px 0 0;
+      padding: 0.6rem;
+      border-bottom: 1px solid #e0ecf3;
+      border-radius: 20px 20px 0 0;
       text-align: center;
     }
 
     .column-header h3 {
       margin: 0;
-      font-size: 1.25rem;
+      font-size: 1rem;
       font-weight: 700;
       color: #155e75;
     }
 
     .column-header span {
-      font-size: 0.7rem;
+      font-size: 0.6rem;
       background: #e6f0f5;
-      padding: 2px 12px;
-      border-radius: 30px;
-      display: inline-block;
-      margin-top: 6px;
-    }
-
-    .subjects-list {
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      flex: 1;
-    }
-
-    /* Cards de disciplina - cores no card inteiro (design em botão) */
-    .subject-card {
-      border-radius: 20px;
-      padding: 0.9rem;
-      transition: all 0.2s ease;
-      cursor: pointer;
-      border: 1px solid transparent;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-      position: relative;
-    }
-
-    /* status concluída (verde suave) */
-    .subject-completed {
-      background: #d9f0e3;
-      border-color: #a3cfb5;
-      color: #1a4d2e;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    .subject-completed:hover {
-      background: #c8eada;
-      transform: translateY(-1px);
-    }
-
-    /* status disponível (azul claro, pronto para cursar) */
-    .subject-available {
-      background: #e3f0fa;
-      border-color: #bdd9ed;
-      color: #0f3b5c;
-    }
-    .subject-available:hover {
-      background: #d1e6f5;
-      transform: translateY(-1px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-    }
-
-    /* status bloqueada (cinza/suave, sem hover forte) */
-    .subject-blocked {
-      background: #f0f2f6;
-      border-color: #dce3ec;
-      color: #6c7a8e;
-      cursor: not-allowed;
-      opacity: 0.75;
-      filter: grayscale(0.05);
-    }
-    .subject-blocked:hover {
-      transform: none;
-      background: #f0f2f6;
-      box-shadow: none;
-    }
-
-    .subject-code {
-      font-family: 'Courier New', monospace;
-      font-size: 0.7rem;
-      font-weight: 700;
-      background: rgba(255,255,240,0.7);
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 30px;
-      color: #1e4a6e;
-    }
-
-    .subject-name {
-      font-weight: 700;
-      font-size: 0.88rem;
-      margin: 8px 0 4px;
-      line-height: 1.3;
-    }
-
-    .subject-ch {
-      font-size: 0.65rem;
-      background: rgba(0,0,0,0.05);
       padding: 2px 8px;
       border-radius: 20px;
       display: inline-block;
       margin-top: 4px;
     }
 
+    .subjects-list {
+      padding: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+
+    /* cards menores */
+    .subject-card {
+      border-radius: 16px;
+      padding: 0.6rem;
+      transition: all 0.15s;
+      cursor: pointer;
+      border: 1px solid transparent;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+
+    /* cores mais vivas */
+    .subject-completed {
+      background: #81c784;  /* verde vivo */
+      border-color: #4caf50;
+      color: #1b3b1a;
+    }
+    .subject-completed:hover {
+      background: #66bb6a;
+      transform: translateY(-1px);
+    }
+
+    .subject-available {
+      background: #64b5f6;  /* azul vivo */
+      border-color: #42a5f5;
+      color: #0d2e4a;
+    }
+    .subject-available:hover {
+      background: #42a5f5;
+      transform: translateY(-1px);
+    }
+
+    .subject-blocked {
+      background: #e0e0e0;
+      border-color: #bdbdbd;
+      color: #616161;
+      cursor: not-allowed;
+      opacity: 0.8;
+    }
+    .subject-blocked:hover {
+      transform: none;
+      background: #e0e0e0;
+    }
+
+    .subject-code {
+      font-family: monospace;
+      font-size: 0.6rem;
+      font-weight: 700;
+      background: rgba(255,255,240,0.8);
+      display: inline-block;
+      padding: 1px 6px;
+      border-radius: 20px;
+    }
+
+    .subject-name {
+      font-weight: 700;
+      font-size: 0.75rem;
+      margin: 5px 0 2px;
+      line-height: 1.2;
+    }
+
+    .subject-ch {
+      font-size: 0.6rem;
+      background: rgba(0,0,0,0.08);
+      padding: 1px 6px;
+      border-radius: 20px;
+      display: inline-block;
+    }
+
     .pre-req-hint {
-      font-size: 0.65rem;
-      color: #5b6e8c;
-      margin-top: 8px;
-      border-top: 1px dashed rgba(0,0,0,0.1);
-      padding-top: 6px;
+      font-size: 0.6rem;
+      color: rgba(0,0,0,0.6);
+      margin-top: 5px;
+      border-top: 1px dashed rgba(0,0,0,0.15);
+      padding-top: 4px;
     }
 
     .status-badge {
-      font-size: 0.6rem;
+      font-size: 0.55rem;
       font-weight: 600;
-      display: inline-block;
-      margin-left: 6px;
-      background: rgba(255,255,240,0.7);
-      padding: 2px 6px;
-      border-radius: 30px;
+      background: rgba(255,255,240,0.8);
+      padding: 1px 5px;
+      border-radius: 20px;
     }
 
     footer {
       text-align: center;
-      margin-top: 2rem;
-      font-size: 0.7rem;
+      margin-top: 1.5rem;
+      font-size: 0.65rem;
       color: #5b6e8c;
       background: white;
-      padding: 12px;
-      border-radius: 30px;
+      padding: 8px;
+      border-radius: 24px;
     }
   </style>
 </head>
@@ -279,13 +259,13 @@
   <div class="header">
     <div class="title">
       <h1>📚 Matriz Curricular · Fluxo por Nível</h1>
-      <p>Ciência da Computação | Clique nas disciplinas disponíveis para avançar</p>
+      <p>Clique nas disciplinas disponíveis (azul) para avançar | Pré-requisitos em cascata</p>
     </div>
     <div class="progress-panel">
-      <div class="progress-label">✅ CONCLUSÃO TOTAL</div>
+      <div class="progress-label">✅ PROGRESSO OBRIGATÓRIAS</div>
       <div class="progress-value" id="percentDisplay">0%</div>
       <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
-      <button class="reset-btn" id="resetBtn">🔄 Redefinir progresso</button>
+      <button class="reset-btn" id="resetBtn">🔄 Redefinir tudo</button>
     </div>
   </div>
 
@@ -293,18 +273,17 @@
     <div class="matrix-columns" id="matrixColumns"></div>
   </div>
   <footer>
-    🎓 <strong>Legenda de cores (card inteiro)</strong>:  
-    <span style="background:#d9f0e3; padding:4px 10px; border-radius:20px; margin:0 4px;">✅ Cursada</span>  
-    <span style="background:#e3f0fa; padding:4px 10px; border-radius:20px; margin:0 4px;">🔓 Disponível</span>  
-    <span style="background:#f0f2f6; padding:4px 10px; border-radius:20px; margin:0 4px;">🔒 Bloqueada</span>
-    <br>📌 <strong>Optativas e complementares</strong> foram ocultadas para foco nos níveis obrigatórios. Progresso considera APENAS disciplinas obrigatórias.
+    🎓 <strong>Cores</strong>: 
+    <span style="background:#81c784; padding:2px 8px; border-radius:16px;">✅ Cursada</span> 
+    <span style="background:#64b5f6; padding:2px 8px; border-radius:16px;">🔓 Disponível</span> 
+    <span style="background:#e0e0e0; padding:2px 8px; border-radius:16px;">🔒 Bloqueada</span>
+    <br>✔️ Se você desmarcar uma disciplina, todas que dependem dela serão automaticamente desmarcadas.
   </footer>
 </div>
 
 <script>
   // --------------------------------------------------------------
-  // Dados completos da matriz obrigatória (conforme XLSX fornecido)
-  // Inclui código, nome, ch, preReqs e nivel
+  // Matriz obrigatória (dados completos)
   // --------------------------------------------------------------
   const mandatorySubjects = [
     { nivel: "1° Nível", codigo: "1305219", nome: "DIREITO E CIDADANIA", ch: "60h", preReqs: [] },
@@ -345,48 +324,82 @@
     { nivel: "9° Nível", codigo: "1411348", nome: "PROJETO EM COMPUTAÇÃO II", ch: "60h", preReqs: ["1411185"] }
   ];
 
-  // Mapa para acesso rápido
+  // Mapa para lookup
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
 
-  // Estado de disciplinas concluídas (apenas obrigatórias)
+  // Mapa de dependentes reversos: para cada disciplina, lista de códigos que a têm como pré-requisito
+  const reverseDeps = new Map();
+  mandatorySubjects.forEach(sub => {
+    sub.preReqs.forEach(pre => {
+      if (!reverseDeps.has(pre)) reverseDeps.set(pre, []);
+      reverseDeps.get(pre).push(sub.codigo);
+    });
+  });
+
+  // Estado: conjunto de disciplinas concluídas (apenas obrigatórias)
   let completedSet = new Set();
 
-  // ---------- Verifica se pré-requisitos estão cumpridos ----------
+  // ---------- Funções de validação e cascata ----------
   function arePrerequisitesMet(codigo) {
     const disciplina = subjectsMap.get(codigo);
     if (!disciplina) return true;
     const preReqs = disciplina.preReqs || [];
-    if (preReqs.length === 0) return true;
     return preReqs.every(preCod => completedSet.has(preCod));
   }
 
-  // Determina status: "completed", "available", "blocked"
-  function getSubjectStatus(codigo) {
-    if (completedSet.has(codigo)) return "completed";
-    const preReqsOk = arePrerequisitesMet(codigo);
-    return preReqsOk ? "available" : "blocked";
+  // Remove recursivamente disciplinas que ficaram sem pré-requisito após desmarcação
+  function cascadeUncheck(startingCode) {
+    // pilha de disciplinas a verificar (a partir da que foi desmarcada)
+    const toCheck = [startingCode];
+    const visited = new Set();
+    while (toCheck.length) {
+      const current = toCheck.shift();
+      if (visited.has(current)) continue;
+      visited.add(current);
+      // Se esta disciplina ainda está no completedSet mas seus pré-requisitos não estão mais todos satisfeitos, remova
+      if (completedSet.has(current) && !arePrerequisitesMet(current)) {
+        completedSet.delete(current);
+        // Agora, todas as que dependem dela também podem ser afetadas
+        const dependents = reverseDeps.get(current) || [];
+        dependents.forEach(dep => {
+          if (!visited.has(dep)) toCheck.push(dep);
+        });
+      } else {
+        // Mesmo que não remova agora, verifique dependentes que possam ter perdido pré-requisito por outras razões
+        const dependents = reverseDeps.get(current) || [];
+        dependents.forEach(dep => {
+          if (!visited.has(dep)) toCheck.push(dep);
+        });
+      }
+    }
   }
 
-  // Alternar conclusão sem alerta para bloqueadas (apenas ignora clique se bloqueada)
+  // Alterna conclusão com lógica correta (ao desmarcar, cascata remove dependentes)
   function toggleSubject(codigo) {
     const status = getSubjectStatus(codigo);
-    // Se bloqueada: NÃO FAZ NADA, sem alerta, sem alteração
-    if (status === "blocked") {
-      return;  // silenciosamente ignora o clique
-    }
-    // Se está disponível ou concluída, toogle
+    if (status === "blocked") return;  // silencioso, sem alerta
+
     if (completedSet.has(codigo)) {
+      // Desmarcar esta disciplina
       completedSet.delete(codigo);
+      // Propagar desmarcação para dependentes que perderam pré-requisito
+      cascadeUncheck(codigo);
     } else {
+      // Marcar como concluída (já sabemos que está disponível, pré-requisitos ok)
       completedSet.add(codigo);
     }
     saveProgress();
-    renderColumns();      // re-renderiza todas as colunas
+    renderColumns();
     updateGlobalProgress();
   }
 
-  // Persistência localStorage
+  function getSubjectStatus(codigo) {
+    if (completedSet.has(codigo)) return "completed";
+    return arePrerequisitesMet(codigo) ? "available" : "blocked";
+  }
+
+  // Persistência
   function saveProgress() {
     localStorage.setItem('completedObrigatorias', JSON.stringify([...completedSet]));
   }
@@ -395,10 +408,17 @@
     const saved = localStorage.getItem('completedObrigatorias');
     if (saved) {
       completedSet = new Set(JSON.parse(saved));
+      // Garantir consistência após carregar: se alguma concluída tem pré-requisito não cumprido, removê-la (cascata leve)
+      const toRemove = [];
+      for (let code of completedSet) {
+        if (!arePrerequisitesMet(code)) toRemove.push(code);
+      }
+      toRemove.forEach(code => completedSet.delete(code));
+      saveProgress(); // corrige storage
     }
   }
 
-  // Calcular percentual (apenas obrigatórias)
+  // Percentual
   function computePercent() {
     const total = mandatorySubjects.length;
     if (total === 0) return 0;
@@ -411,11 +431,10 @@
     document.getElementById('progressFill').style.width = `${percent}%`;
   }
 
-  // Renderização das colunas (um nível por coluna)
+  // Renderização das colunas
   function renderColumns() {
     const container = document.getElementById('matrixColumns');
     if (!container) return;
-    
     const niveisOrdenados = ["1° Nível","2° Nível","3° Nível","4° Nível","5° Nível","6° Nível","7° Nível","8° Nível","9° Nível"];
     const grouped = new Map();
     mandatorySubjects.forEach(sub => {
@@ -428,12 +447,11 @@
     for (let nivel of niveisOrdenados) {
       const subjectsOfLevel = grouped.get(nivel) || [];
       if (subjectsOfLevel.length === 0) continue;
-      
       columnsHtml += `
         <div class="level-column">
           <div class="column-header">
             <h3>${nivel}</h3>
-            <span>${subjectsOfLevel.length} disciplinas</span>
+            <span>${subjectsOfLevel.length} disc.</span>
           </div>
           <div class="subjects-list">
       `;
@@ -441,10 +459,9 @@
         const status = getSubjectStatus(sub.codigo);
         let cardClass = '';
         let statusText = '';
-
         if (status === 'completed') {
           cardClass = 'subject-completed';
-          statusText = '✅ Concluída';
+          statusText = '✅ Cursada';
         } else if (status === 'available') {
           cardClass = 'subject-available';
           statusText = '🔓 Disponível';
@@ -452,14 +469,11 @@
           cardClass = 'subject-blocked';
           statusText = '🔒 Bloqueada';
         }
-
-        // Exibir pré-requisitos de forma legível
         let prereqDisplay = 'Nenhum';
-        if (sub.preReqs && sub.preReqs.length > 0) {
+        if (sub.preReqs && sub.preReqs.length) {
           const nomesPre = sub.preReqs.map(cod => subjectsMap.get(cod)?.nome || cod).join(', ');
           prereqDisplay = nomesPre;
         }
-
         columnsHtml += `
           <div class="subject-card ${cardClass}" onclick="toggleSubject('${sub.codigo}')">
             <div style="display: flex; justify-content: space-between; align-items: center;">
@@ -468,9 +482,7 @@
             </div>
             <div class="subject-name">${sub.nome}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
-            <div class="pre-req-hint">
-              📌 Pré‑requisitos: ${prereqDisplay}
-            </div>
+            <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>
         `;
       });
@@ -479,7 +491,7 @@
     container.innerHTML = columnsHtml;
   }
 
-  // Resetar todo progresso
+  // Reset
   document.getElementById('resetBtn')?.addEventListener('click', () => {
     completedSet.clear();
     saveProgress();
@@ -487,17 +499,14 @@
     updateGlobalProgress();
   });
 
-  // Inicialização
   loadProgress();
   renderColumns();
   updateGlobalProgress();
 
-  // Estilo adicional para garantir que o cursor fique adequado
+  // Forçar estilo cursor
   const style = document.createElement('style');
   style.textContent = `
-    .subject-available { cursor: pointer; }
-    .subject-completed { cursor: pointer; }
-    .subject-blocked { cursor: not-allowed; }
+    .subject-available, .subject-completed { cursor: pointer; }
   `;
   document.head.appendChild(style);
 </script>
