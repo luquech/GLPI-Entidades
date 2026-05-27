@@ -206,7 +206,19 @@
     }
     button.pdf-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
     button.reset-btn:hover, button.theme-btn:hover { background: var(--chip-bg); border-color: var(--brand-2); transform: translateY(-1px); }
-    button.reset-btn:focus-visible, button.theme-btn:focus-visible, button.pdf-btn:focus-visible { outline: none; box-shadow: var(--ring); }
+    button.reset-btn:focus-visible, button.theme-btn:focus-visible, button.pdf-btn:focus-visible, a.home-btn:focus-visible { outline: none; box-shadow: var(--ring); }
+
+    a.home-btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      height: 42px; padding: 0 14px; border-radius: 999px;
+      font-size: 0.78rem; font-weight: 600; font-family: inherit;
+      text-decoration: none; color: #fff;
+      background: linear-gradient(135deg, var(--brand-2), var(--brand));
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+    }
+    a.home-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    @media print { a.home-btn { display: none !important; } }
 
     /* ---------- Legend ---------- */
     .legend {
@@ -356,6 +368,7 @@
       </div>
     </div>
     <div class="header-actions">
+      <a href="index.html" class="home-btn" aria-label="Voltar para a página inicial" title="Página inicial">🏠 Início</a>
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
