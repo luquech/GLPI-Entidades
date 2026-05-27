@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,248 +404,248 @@
           <tr>
               <td>9101064</td>
               <td>CONTROLE BIOLOGICO DE PRAGAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ENTOMOLOGIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101118</td>
               <td>AGRICULTURA ORGANICA: PRINCIPIOS BASICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À AGRONOMIA, FERTILIDADE DO SOLO E NUT MIN DE PLANTAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101120</td>
               <td>ANÁLISE DE SEMENTES</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>PRODUCAO E TECNOLOGIA DE SEMENTES</td>
               <td></td>
           </tr>
           <tr>
               <td>9101121</td>
               <td>APICULTURA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>ENTOMOLOGIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101125</td>
               <td>CULTIVO DE OLEAGINOSAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À AGRONOMIA, FISIOLOGIA VEGETAL</td>
               <td></td>
           </tr>
           <tr>
               <td>9101127</td>
               <td>CULTIVOS PROTEGIDOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FISIOLOGIA VEGETAL, FERTILIDADE DO SOLO E NUT MIN DE PLANTAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101136</td>
               <td>RECUPERACAO DE AREAS DEGRADADAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>AGROECOLOGIA, MANEJO E CONSERVAÇÃO DO SOLO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101137</td>
               <td>RECURSOS NATURAIS RENOVAVEIS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>ECOLOGIA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>9101138</td>
               <td>SALINIDADE DO SOLO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FERTILIDADE DO SOLO E NUT MIN DE PLANTAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101139</td>
               <td>SISTEMAS AGROFLORESTAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SILVICULTURA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101196</td>
               <td>PRINCIPIOS E ESTRAT DA EDUC AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101197</td>
               <td>CARTOGRAFIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GEOPROCESSAMENTO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101313</td>
               <td>LINGUA BRASILEIRA DE SINAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101380</td>
               <td>ADUBOS E ADUBAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À AGRONOMIA, FERTILIDADE DO SOLO E NUT MIN DE PLANTAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101381</td>
               <td>AGRONEGÓCIO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>ECONOMIA E ADMINISTRAÇÃO RURAL</td>
               <td></td>
           </tr>
           <tr>
               <td>9101382</td>
               <td>AGRICULTURA DE PRECISÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INFORMÁTICA, GEOPROCESSAMENTO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101383</td>
               <td>BIOLOGIA DO SOLO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MICROBIOLOGIA E BIOQUÍMICA DO SOLO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101384</td>
               <td>BIOTECNOLOGIA APLICADA À AGRICULTURA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MELHORAMENTO DE PLANTAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101385</td>
               <td>BOVINOCULTURA E OVINOCAPRINOCULTURA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ZOOTECNIA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>9101387</td>
               <td>CULTIVO E PROCESSAMENTO DE PLANTAS MED</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FISIOLOGIA VEGETAL</td>
               <td></td>
           </tr>
           <tr>
               <td>9101388</td>
               <td>FERTIRRIGAÇÃO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>IRRIGACAO E DRENAGEM, FERTILIDADE DO SOLO E NUT MIN DE PLANTAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101389</td>
               <td>FLORICULTURA E PAISAGISMO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FISIOLOGIA VEGETAL</td>
               <td></td>
           </tr>
           <tr>
               <td>9101390</td>
               <td>INTRODUÇÃO À ESCRITA CIENTÍFICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOLOGIA CIENTÍFICA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101391</td>
               <td>MANEJO INTEGRADO DE PRAGAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ENTOMOLOGIA II</td>
               <td></td>
           </tr>
           <tr>
               <td>9101392</td>
               <td>NUTRIÇÃO E ADUBAÇÃO DE ESPEC FLORESTAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FERTILIDADE DO SOLO E NUT MIN DE PLANTAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101393</td>
               <td>PATOLOGIA DE SEMENTES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PRODUCAO E TECNOLOGIA DE SEMENTES, FITOPATOLOGIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101394</td>
               <td>PISCICULTURA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ZOOTECNIA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>9101395</td>
               <td>PRODUÇÃO DE MONOGÁSTRICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ZOOTECNIA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>9101397</td>
               <td>PROJETOS DE DRENAGEM AGRÍCOLA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>IRRIGACAO E DRENAGEM</td>
               <td></td>
           </tr>
           <tr>
               <td>9101398</td>
               <td>SEGURANÇA DO TRABALHO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101399</td>
               <td>TEC PÓS-COLHEITA DE FRUTOS E HORTALIÇAS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>BIOQUÍMICA GERAL</td>
               <td></td>
           </tr>
@@ -689,8 +692,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "9101069", "nome": "ECOLOGIA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101072", "nome": "INFORMÁTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101151", "nome": "CITOLOGIA E HISTOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101164", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101354", "nome": "CÁLCULO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101358", "nome": "INTRODUÇÃO À AGRONOMIA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101068", "nome": "DESENHO TÉCNICO", "ch": "60h", "preReqs": ["9101072"]}, {"nivel": "2º Nível", "codigo": "9101070", "nome": "ESTATÍSTICA BÁSICA", "ch": "60h", "preReqs": ["9101354"]}, {"nivel": "2º Nível", "codigo": "9101076", "nome": "MORFOLOGIA E ANATOMIA VEGETAL", "ch": "60h", "preReqs": ["9101151"]}, {"nivel": "2º Nível", "codigo": "9101077", "nome": "QUÍMICA ANALÍTICA", "ch": "60h", "preReqs": ["9101164"]}, {"nivel": "2º Nível", "codigo": "9101080", "nome": "ZOOLOGIA", "ch": "60h", "preReqs": ["9101151"]}, {"nivel": "2º Nível", "codigo": "9101355", "nome": "ELEMENTOS DE GEOLOGIA E MINERALOGIA", "ch": "60h", "preReqs": ["9101164"]}, {"nivel": "2º Nível", "codigo": "9101359", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101073", "nome": "MECÂNICA E TERMODINÂMICA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101079", "nome": "SISTEMÁTICA VEGETAL", "ch": "60h", "preReqs": ["9101076"]}, {"nivel": "3º Nível", "codigo": "9101091", "nome": "ESTATÍSTICA EXPERIMENTAL", "ch": "60h", "preReqs": ["9101070"]}, {"nivel": "3º Nível", "codigo": "9101114", "nome": "TOPOGRAFIA", "ch": "60h", "preReqs": ["9101068"]}, {"nivel": "3º Nível", "codigo": "9101159", "nome": "QUÍMICA ORGÂNICA", "ch": "60h", "preReqs": ["9101164"]}, {"nivel": "3º Nível", "codigo": "9101362", "nome": "ATRIBUTOS FÍSICOS E QUÍMICOS DO SOLO", "ch": "60h", "preReqs": ["9101355"]}, {"nivel": "4º Nível", "codigo": "9101083", "nome": "AGROMETEOROLOGIA", "ch": "60h", "preReqs": ["9101073"]}, {"nivel": "4º Nível", "codigo": "9101102", "nome": "HIDRAULICA AGRICOLA", "ch": "60h", "preReqs": ["9101073", "9101114"]}, {"nivel": "4º Nível", "codigo": "9101105", "nome": "MÁQUINAS E MECANIZAÇÃO AGRÍCOLA", "ch": "60h", "preReqs": ["9101073", "9101362"]}, {"nivel": "4º Nível", "codigo": "9101166", "nome": "BIOQUÍMICA GERAL", "ch": "60h", "preReqs": ["9101159"]}, {"nivel": "4º Nível", "codigo": "9101240", "nome": "GEOPROCESSAMENTO", "ch": "60h", "preReqs": ["9101072", "9101114"]}, {"nivel": "4º Nível", "codigo": "9101357", "nome": "GENÉTICA BÁSICA", "ch": "60h", "preReqs": ["9101151", "9101159"]}, {"nivel": "4º Nível", "codigo": "9101372", "nome": "GÊNESE", "ch": "60h", "preReqs": ["9101355"]}, {"nivel": "5º Nível", "codigo": "9101075", "nome": "MICROBIOLOGIA GERAL", "ch": "60h", "preReqs": ["9101166"]}, {"nivel": "5º Nível", "codigo": "9101103", "nome": "IRRIGACAO E DRENAGEM", "ch": "60h", "preReqs": ["9101102"]}, {"nivel": "5º Nível", "codigo": "9101106", "nome": "MELHORAMENTO DE PLANTAS", "ch": "60h", "preReqs": ["9101357"]}, {"nivel": "5º Nível", "codigo": "9101115", "nome": "ZOOTECNIA GERAL", "ch": "45h", "preReqs": ["9101080"]}, {"nivel": "5º Nível", "codigo": "9101356", "nome": "FISIOLOGIA VEGETAL", "ch": "60h", "preReqs": ["9101076", "9101166"]}, {"nivel": "5º Nível", "codigo": "9101365", "nome": "ENTOMOLOGIA I", "ch": "60h", "preReqs": ["9101080"]}, {"nivel": "6º Nível", "codigo": "9101096", "nome": "FORRAGICULTURA", "ch": "60h", "preReqs": ["9101115"]}, {"nivel": "6º Nível", "codigo": "9101104", "nome": "MANEJO E CONSERVAÇÃO DO SOLO", "ch": "60h", "preReqs": ["9101362"]}, {"nivel": "6º Nível", "codigo": "9101107", "nome": "MICROBIOLOGIA E BIOQUÍMICA DO SOLO", "ch": "60h", "preReqs": ["9101075"]}, {"nivel": "6º Nível", "codigo": "9101366", "nome": "ENTOMOLOGIA II", "ch": "60h", "preReqs": ["9101365"]}, {"nivel": "6º Nível", "codigo": "9101367", "nome": "FERTILIDADE DO SOLO E NUT MIN DE PLANTAS", "ch": "60h", "preReqs": ["9101358", "9101362", "9101356"]}, {"nivel": "6º Nível", "codigo": "9101368", "nome": "FITOPATOLOGIA I", "ch": "60h", "preReqs": ["9101075"]}, {"nivel": "6º Nível", "codigo": "9101375", "nome": "HORTICULTURA", "ch": "60h", "preReqs": ["9101358", "9101356"]}, {"nivel": "7º Nível", "codigo": "9101086", "nome": "CONSTRUCOES RURAIS", "ch": "60h", "preReqs": ["9101114"]}, {"nivel": "7º Nível", "codigo": "9101110", "nome": "PRODUCAO E TECNOLOGIA DE SEMENTES", "ch": "60h", "preReqs": ["9101356"]}, {"nivel": "7º Nível", "codigo": "9101361", "nome": "AGROECOLOGIA", "ch": "45h", "preReqs": ["9101069"]}, {"nivel": "7º Nível", "codigo": "9101369", "nome": "FITOPATOLOGIA II", "ch": "60h", "preReqs": ["9101368"]}, {"nivel": "7º Nível", "codigo": "9101370", "nome": "FRUTICULTURA I", "ch": "60h", "preReqs": ["9101375"]}, {"nivel": "7º Nível", "codigo": "9101377", "nome": "PRODUÇÃO DE HORTALIÇAS I", "ch": "60h", "preReqs": ["9101375"]}, {"nivel": "8º Nível", "codigo": "9101088", "nome": "ECONOMIA E ADMINISTRAÇÃO RURAL", "ch": "60h", "preReqs": ["9101070"]}, {"nivel": "8º Nível", "codigo": "9101111", "nome": "SILVICULTURA", "ch": "60h", "preReqs": ["9101356"]}, {"nivel": "8º Nível", "codigo": "9101371", "nome": "FRUTICULTURA II", "ch": "60h", "preReqs": ["9101375"]}, {"nivel": "8º Nível", "codigo": "9101373", "nome": "GRANDES CULTURAS I", "ch": "60h", "preReqs": ["9101356"]}, {"nivel": "8º Nível", "codigo": "9101378", "nome": "PRODUÇÃO DE HORTALIÇAS II", "ch": "60h", "preReqs": ["9101375"]}, {"nivel": "8º Nível", "codigo": "9101379", "nome": "SOCIOLOGIA RURAL", "ch": "30h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "9101087", "nome": "BIOLOGIA E CONT.DE PLANTAS DANINHAS", "ch": "60h", "preReqs": ["9101356"]}, {"nivel": "9º Nível", "codigo": "9101113", "nome": "TECNOLOGIA DE PROD.AGROPECUARIOS", "ch": "60h", "preReqs": ["9101370", "9101371", "9101377", "9101378", "9101115"]}, {"nivel": "9º Nível", "codigo": "9101363", "nome": "COMUNICAÇÃO E EXTENSÃO RURAL", "ch": "45h", "preReqs": ["9101379"]}, {"nivel": "9º Nível", "codigo": "9101364", "nome": "EMPREENDEDORISMO RURAL", "ch": "30h", "preReqs": ["9101088"]}, {"nivel": "9º Nível", "codigo": "9101374", "nome": "GRANDES CULTURAS II", "ch": "60h", "preReqs": ["9101356"]}, {"nivel": "9º Nível", "codigo": "9101376", "nome": "LEGISLAÇÃO E IMPACTOS NA AGRICULTURA", "ch": "45h", "preReqs": ["9101361", "9101104"]}];
-  const codigoToNome = {"9101069": "ECOLOGIA GERAL", "9101072": "INFORMÁTICA", "9101151": "CITOLOGIA E HISTOLOGIA", "9101164": "QUÍMICA GERAL", "9101354": "CÁLCULO", "9101358": "INTRODUÇÃO À AGRONOMIA", "9101068": "DESENHO TÉCNICO", "9101070": "ESTATÍSTICA BÁSICA", "9101076": "MORFOLOGIA E ANATOMIA VEGETAL", "9101077": "QUÍMICA ANALÍTICA", "9101080": "ZOOLOGIA", "9101355": "ELEMENTOS DE GEOLOGIA E MINERALOGIA", "9101359": "METODOLOGIA CIENTÍFICA", "9101073": "MECÂNICA E TERMODINÂMICA", "9101079": "SISTEMÁTICA VEGETAL", "9101091": "ESTATÍSTICA EXPERIMENTAL", "9101114": "TOPOGRAFIA", "9101159": "QUÍMICA ORGÂNICA", "9101362": "ATRIBUTOS FÍSICOS E QUÍMICOS DO SOLO", "9101083": "AGROMETEOROLOGIA", "9101102": "HIDRAULICA AGRICOLA", "9101105": "MÁQUINAS E MECANIZAÇÃO AGRÍCOLA", "9101166": "BIOQUÍMICA GERAL", "9101240": "GEOPROCESSAMENTO", "9101357": "GENÉTICA BÁSICA", "9101372": "GÊNESE", "9101075": "MICROBIOLOGIA GERAL", "9101103": "IRRIGACAO E DRENAGEM", "9101106": "MELHORAMENTO DE PLANTAS", "9101115": "ZOOTECNIA GERAL", "9101356": "FISIOLOGIA VEGETAL", "9101365": "ENTOMOLOGIA I", "9101096": "FORRAGICULTURA", "9101104": "MANEJO E CONSERVAÇÃO DO SOLO", "9101107": "MICROBIOLOGIA E BIOQUÍMICA DO SOLO", "9101366": "ENTOMOLOGIA II", "9101367": "FERTILIDADE DO SOLO E NUT MIN DE PLANTAS", "9101368": "FITOPATOLOGIA I", "9101375": "HORTICULTURA", "9101086": "CONSTRUCOES RURAIS", "9101110": "PRODUCAO E TECNOLOGIA DE SEMENTES", "9101361": "AGROECOLOGIA", "9101369": "FITOPATOLOGIA II", "9101370": "FRUTICULTURA I", "9101377": "PRODUÇÃO DE HORTALIÇAS I", "9101088": "ECONOMIA E ADMINISTRAÇÃO RURAL", "9101111": "SILVICULTURA", "9101371": "FRUTICULTURA II", "9101373": "GRANDES CULTURAS I", "9101378": "PRODUÇÃO DE HORTALIÇAS II", "9101379": "SOCIOLOGIA RURAL", "9101087": "BIOLOGIA E CONT.DE PLANTAS DANINHAS", "9101113": "TECNOLOGIA DE PROD.AGROPECUARIOS", "9101363": "COMUNICAÇÃO E EXTENSÃO RURAL", "9101364": "EMPREENDEDORISMO RURAL", "9101374": "GRANDES CULTURAS II", "9101376": "LEGISLAÇÃO E IMPACTOS NA AGRICULTURA", "9101064": "CONTROLE BIOLOGICO DE PRAGAS", "9101118": "AGRICULTURA ORGANICA: PRINCIPIOS BASICOS", "9101120": "ANÁLISE DE SEMENTES", "9101121": "APICULTURA", "9101125": "CULTIVO DE OLEAGINOSAS", "9101127": "CULTIVOS PROTEGIDOS", "9101136": "RECUPERACAO DE AREAS DEGRADADAS", "9101137": "RECURSOS NATURAIS RENOVAVEIS", "9101138": "SALINIDADE DO SOLO", "9101139": "SISTEMAS AGROFLORESTAIS", "9101196": "PRINCIPIOS E ESTRAT DA EDUC AMBIENTAL", "9101197": "CARTOGRAFIA", "9101313": "LINGUA BRASILEIRA DE SINAIS", "9101380": "ADUBOS E ADUBAÇÃO", "9101381": "AGRONEGÓCIO", "9101382": "AGRICULTURA DE PRECISÃO", "9101383": "BIOLOGIA DO SOLO", "9101384": "BIOTECNOLOGIA APLICADA À AGRICULTURA", "9101385": "BOVINOCULTURA E OVINOCAPRINOCULTURA", "9101387": "CULTIVO E PROCESSAMENTO DE PLANTAS MED", "9101388": "FERTIRRIGAÇÃO", "9101389": "FLORICULTURA E PAISAGISMO", "9101390": "INTRODUÇÃO À ESCRITA CIENTÍFICA", "9101391": "MANEJO INTEGRADO DE PRAGAS", "9101392": "NUTRIÇÃO E ADUBAÇÃO DE ESPEC FLORESTAIS", "9101393": "PATOLOGIA DE SEMENTES", "9101394": "PISCICULTURA", "9101395": "PRODUÇÃO DE MONOGÁSTRICOS", "9101397": "PROJETOS DE DRENAGEM AGRÍCOLA", "9101398": "SEGURANÇA DO TRABALHO", "9101399": "TEC PÓS-COLHEITA DE FRUTOS E HORTALIÇAS"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "9101069", "nome": "ECOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101072", "nome": "INFORMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101151", "nome": "CITOLOGIA E HISTOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101164", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101354", "nome": "CÁLCULO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101358", "nome": "INTRODUÇÃO À AGRONOMIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101068", "nome": "DESENHO TÉCNICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101072"]}, {"nivel": "2º Nível", "codigo": "9101070", "nome": "ESTATÍSTICA BÁSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101354"]}, {"nivel": "2º Nível", "codigo": "9101076", "nome": "MORFOLOGIA E ANATOMIA VEGETAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101151"]}, {"nivel": "2º Nível", "codigo": "9101077", "nome": "QUÍMICA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101164"]}, {"nivel": "2º Nível", "codigo": "9101080", "nome": "ZOOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101151"]}, {"nivel": "2º Nível", "codigo": "9101355", "nome": "ELEMENTOS DE GEOLOGIA E MINERALOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101164"]}, {"nivel": "2º Nível", "codigo": "9101359", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101073", "nome": "MECÂNICA E TERMODINÂMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101079", "nome": "SISTEMÁTICA VEGETAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101076"]}, {"nivel": "3º Nível", "codigo": "9101091", "nome": "ESTATÍSTICA EXPERIMENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101070"]}, {"nivel": "3º Nível", "codigo": "9101114", "nome": "TOPOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101068"]}, {"nivel": "3º Nível", "codigo": "9101159", "nome": "QUÍMICA ORGÂNICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101164"]}, {"nivel": "3º Nível", "codigo": "9101362", "nome": "ATRIBUTOS FÍSICOS E QUÍMICOS DO SOLO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101355"]}, {"nivel": "4º Nível", "codigo": "9101083", "nome": "AGROMETEOROLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101073"]}, {"nivel": "4º Nível", "codigo": "9101102", "nome": "HIDRAULICA AGRICOLA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101073", "9101114"]}, {"nivel": "4º Nível", "codigo": "9101105", "nome": "MÁQUINAS E MECANIZAÇÃO AGRÍCOLA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101073", "9101362"]}, {"nivel": "4º Nível", "codigo": "9101166", "nome": "BIOQUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101159"]}, {"nivel": "4º Nível", "codigo": "9101240", "nome": "GEOPROCESSAMENTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101072", "9101114"]}, {"nivel": "4º Nível", "codigo": "9101357", "nome": "GENÉTICA BÁSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101151", "9101159"]}, {"nivel": "4º Nível", "codigo": "9101372", "nome": "GÊNESE, MORFOLOGIA E CLASSIFIC DO SOLO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101355"]}, {"nivel": "5º Nível", "codigo": "9101075", "nome": "MICROBIOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101166"]}, {"nivel": "5º Nível", "codigo": "9101103", "nome": "IRRIGACAO E DRENAGEM", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101102"]}, {"nivel": "5º Nível", "codigo": "9101106", "nome": "MELHORAMENTO DE PLANTAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101357"]}, {"nivel": "5º Nível", "codigo": "9101115", "nome": "ZOOTECNIA GERAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101080"]}, {"nivel": "5º Nível", "codigo": "9101356", "nome": "FISIOLOGIA VEGETAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101076", "9101166"]}, {"nivel": "5º Nível", "codigo": "9101365", "nome": "ENTOMOLOGIA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101080"]}, {"nivel": "6º Nível", "codigo": "9101096", "nome": "FORRAGICULTURA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101115"]}, {"nivel": "6º Nível", "codigo": "9101104", "nome": "MANEJO E CONSERVAÇÃO DO SOLO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101362"]}, {"nivel": "6º Nível", "codigo": "9101107", "nome": "MICROBIOLOGIA E BIOQUÍMICA DO SOLO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101075"]}, {"nivel": "6º Nível", "codigo": "9101366", "nome": "ENTOMOLOGIA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101365"]}, {"nivel": "6º Nível", "codigo": "9101367", "nome": "FERTILIDADE DO SOLO E NUT MIN DE PLANTAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101358", "9101362", "9101356"]}, {"nivel": "6º Nível", "codigo": "9101368", "nome": "FITOPATOLOGIA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101075"]}, {"nivel": "6º Nível", "codigo": "9101375", "nome": "HORTICULTURA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101358", "9101356"]}, {"nivel": "7º Nível", "codigo": "9101086", "nome": "CONSTRUCOES RURAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101114"]}, {"nivel": "7º Nível", "codigo": "9101110", "nome": "PRODUCAO E TECNOLOGIA DE SEMENTES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101356"]}, {"nivel": "7º Nível", "codigo": "9101361", "nome": "AGROECOLOGIA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101069"]}, {"nivel": "7º Nível", "codigo": "9101369", "nome": "FITOPATOLOGIA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101368"]}, {"nivel": "7º Nível", "codigo": "9101370", "nome": "FRUTICULTURA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101375"]}, {"nivel": "7º Nível", "codigo": "9101377", "nome": "PRODUÇÃO DE HORTALIÇAS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101375"]}, {"nivel": "8º Nível", "codigo": "9101088", "nome": "ECONOMIA E ADMINISTRAÇÃO RURAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101070"]}, {"nivel": "8º Nível", "codigo": "9101111", "nome": "SILVICULTURA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101356"]}, {"nivel": "8º Nível", "codigo": "9101371", "nome": "FRUTICULTURA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101375"]}, {"nivel": "8º Nível", "codigo": "9101373", "nome": "GRANDES CULTURAS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101356"]}, {"nivel": "8º Nível", "codigo": "9101378", "nome": "PRODUÇÃO DE HORTALIÇAS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101375"]}, {"nivel": "8º Nível", "codigo": "9101379", "nome": "SOCIOLOGIA RURAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "9101401", "nome": "TRABALHO DE CONCLUSÃO DE CURSO I", "ch": "15\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["9101359"]}, {"nivel": "9º Nível", "codigo": "9101087", "nome": "BIOLOGIA E CONT.DE PLANTAS DANINHAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101356"]}, {"nivel": "9º Nível", "codigo": "9101113", "nome": "TECNOLOGIA DE PROD.AGROPECUARIOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101370", "9101371", "9101377", "9101378", "9101115"]}, {"nivel": "9º Nível", "codigo": "9101363", "nome": "COMUNICAÇÃO E EXTENSÃO RURAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101379"]}, {"nivel": "9º Nível", "codigo": "9101364", "nome": "EMPREENDEDORISMO RURAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101088"]}, {"nivel": "9º Nível", "codigo": "9101374", "nome": "GRANDES CULTURAS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101356"]}, {"nivel": "9º Nível", "codigo": "9101376", "nome": "LEGISLAÇÃO E IMPACTOS NA AGRICULTURA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101361", "9101104"]}, {"nivel": "10º Nível", "codigo": "9101116", "nome": "ESTAGIO SUPERVISIONADO CURRICULAR", "ch": "180\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "9101402", "nome": "TRABALHO DE CONCLUSÃO DE CURSO II", "ch": "45\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["9101401"]}];
+  const codigoToNome = {"9101069": "ECOLOGIA GERAL", "9101072": "INFORMÁTICA", "9101151": "CITOLOGIA E HISTOLOGIA", "9101164": "QUÍMICA GERAL", "9101354": "CÁLCULO", "9101358": "INTRODUÇÃO À AGRONOMIA", "9101068": "DESENHO TÉCNICO", "9101070": "ESTATÍSTICA BÁSICA", "9101076": "MORFOLOGIA E ANATOMIA VEGETAL", "9101077": "QUÍMICA ANALÍTICA", "9101080": "ZOOLOGIA", "9101355": "ELEMENTOS DE GEOLOGIA E MINERALOGIA", "9101359": "METODOLOGIA CIENTÍFICA", "9101073": "MECÂNICA E TERMODINÂMICA", "9101079": "SISTEMÁTICA VEGETAL", "9101091": "ESTATÍSTICA EXPERIMENTAL", "9101114": "TOPOGRAFIA", "9101159": "QUÍMICA ORGÂNICA", "9101362": "ATRIBUTOS FÍSICOS E QUÍMICOS DO SOLO", "9101083": "AGROMETEOROLOGIA", "9101102": "HIDRAULICA AGRICOLA", "9101105": "MÁQUINAS E MECANIZAÇÃO AGRÍCOLA", "9101166": "BIOQUÍMICA GERAL", "9101240": "GEOPROCESSAMENTO", "9101357": "GENÉTICA BÁSICA", "9101372": "GÊNESE, MORFOLOGIA E CLASSIFIC DO SOLO", "9101075": "MICROBIOLOGIA GERAL", "9101103": "IRRIGACAO E DRENAGEM", "9101106": "MELHORAMENTO DE PLANTAS", "9101115": "ZOOTECNIA GERAL", "9101356": "FISIOLOGIA VEGETAL", "9101365": "ENTOMOLOGIA I", "9101096": "FORRAGICULTURA", "9101104": "MANEJO E CONSERVAÇÃO DO SOLO", "9101107": "MICROBIOLOGIA E BIOQUÍMICA DO SOLO", "9101366": "ENTOMOLOGIA II", "9101367": "FERTILIDADE DO SOLO E NUT MIN DE PLANTAS", "9101368": "FITOPATOLOGIA I", "9101375": "HORTICULTURA", "9101086": "CONSTRUCOES RURAIS", "9101110": "PRODUCAO E TECNOLOGIA DE SEMENTES", "9101361": "AGROECOLOGIA", "9101369": "FITOPATOLOGIA II", "9101370": "FRUTICULTURA I", "9101377": "PRODUÇÃO DE HORTALIÇAS I", "9101088": "ECONOMIA E ADMINISTRAÇÃO RURAL", "9101111": "SILVICULTURA", "9101371": "FRUTICULTURA II", "9101373": "GRANDES CULTURAS I", "9101378": "PRODUÇÃO DE HORTALIÇAS II", "9101379": "SOCIOLOGIA RURAL", "9101401": "TRABALHO DE CONCLUSÃO DE CURSO I", "9101087": "BIOLOGIA E CONT.DE PLANTAS DANINHAS", "9101113": "TECNOLOGIA DE PROD.AGROPECUARIOS", "9101363": "COMUNICAÇÃO E EXTENSÃO RURAL", "9101364": "EMPREENDEDORISMO RURAL", "9101374": "GRANDES CULTURAS II", "9101376": "LEGISLAÇÃO E IMPACTOS NA AGRICULTURA", "9101116": "ESTAGIO SUPERVISIONADO CURRICULAR", "9101402": "TRABALHO DE CONCLUSÃO DE CURSO II", "9101064": "CONTROLE BIOLOGICO DE PRAGAS", "9101118": "AGRICULTURA ORGANICA: PRINCIPIOS BASICOS", "9101120": "ANÁLISE DE SEMENTES", "9101121": "APICULTURA", "9101125": "CULTIVO DE OLEAGINOSAS", "9101127": "CULTIVOS PROTEGIDOS", "9101136": "RECUPERACAO DE AREAS DEGRADADAS", "9101137": "RECURSOS NATURAIS RENOVAVEIS", "9101138": "SALINIDADE DO SOLO", "9101139": "SISTEMAS AGROFLORESTAIS", "9101196": "PRINCIPIOS E ESTRAT DA EDUC AMBIENTAL", "9101197": "CARTOGRAFIA", "9101313": "LINGUA BRASILEIRA DE SINAIS", "9101380": "ADUBOS E ADUBAÇÃO", "9101381": "AGRONEGÓCIO", "9101382": "AGRICULTURA DE PRECISÃO", "9101383": "BIOLOGIA DO SOLO", "9101384": "BIOTECNOLOGIA APLICADA À AGRICULTURA", "9101385": "BOVINOCULTURA E OVINOCAPRINOCULTURA", "9101387": "CULTIVO E PROCESSAMENTO DE PLANTAS MED", "9101388": "FERTIRRIGAÇÃO", "9101389": "FLORICULTURA E PAISAGISMO", "9101390": "INTRODUÇÃO À ESCRITA CIENTÍFICA", "9101391": "MANEJO INTEGRADO DE PRAGAS", "9101392": "NUTRIÇÃO E ADUBAÇÃO DE ESPEC FLORESTAIS", "9101393": "PATOLOGIA DE SEMENTES", "9101394": "PISCICULTURA", "9101395": "PRODUÇÃO DE MONOGÁSTRICOS", "9101397": "PROJETOS DE DRENAGEM AGRÍCOLA", "9101398": "SEGURANÇA DO TRABALHO", "9101399": "TEC PÓS-COLHEITA DE FRUTOS E HORTALIÇAS"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -802,7 +805,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

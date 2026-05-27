@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,448 +404,448 @@
           <tr>
               <td>9101091</td>
               <td>ESTATÍSTICA EXPERIMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTATÍSTICA BÁSICA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101196</td>
               <td>PRINCIPIOS E ESTRAT DA EDUC AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CIENCIAS DO AMBIENTE</td>
               <td></td>
           </tr>
           <tr>
               <td>9101199</td>
               <td>SOCIOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101207</td>
               <td>FENOMENOS DE TRANSPORTE II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FENOMENOS DE TRANSPORTE I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101209</td>
               <td>FÍSICA IV</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FÍSICA III</td>
               <td></td>
           </tr>
           <tr>
               <td>9101217</td>
               <td>ECONOMIA AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FUNDAMENTOS DA ECONOMIA E ADMINISTRAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101219</td>
               <td>TRATAMENTO DE ÁGUA DE ABASTECIMENTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SISTEMAS DE ABASTECIMENTO DE ÁGUA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101286</td>
               <td>MECANICA GERAL II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECANICA GERAL I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101301</td>
               <td>LICENCIAMENTO AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INSTITUIÇÕES DE DIREITO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101313</td>
               <td>LINGUA BRASILEIRA DE SINAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101416</td>
               <td>GESTÃO E ANÁLISE DE RISCO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>MODELAGEM MATEMÁTICA DE SIST AMBIENTAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101419</td>
               <td>PROGRAMAÇÃO DE PLANILHAS ELETRÔNICAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>INTRODUÇÃO À COMPUTAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101459</td>
               <td>ALVENARIA ESTRUTURAL</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>ANÁLISE DE ESTRUTURAS HIPERESTÁTICAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101460</td>
               <td>ANÁLISE DE CONFIABILIDADE APLICADA À ENG</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CALCULO NUMERICO, ESTATÍSTICA BÁSICA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101461</td>
               <td>ANÁLISE MATRICIAL DE ESTRUTURAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CALCULO NUMERICO, ANÁLISE DE ESTRUTURAS HIPERESTÁTICAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101462</td>
               <td>APLICAÇÕES DE ENERGIAS RENOVÁVEIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INSTALAÇOES ELÉTRICAS DE BAIXA TENSÃO, INSTALACOES HIDRAULICAS E SANITARIAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101463</td>
               <td>ATERROS SANITÁRIOS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>RESÍDUOS SÓLIDOS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101464</td>
               <td>AVALIAÇÃO DE IMPACTO AMBIENTAL I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECÂNICA DOS SOLOS II, HIDRAULICA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101465</td>
               <td>BARRAGENS DE TERRA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>FUNDAÇÕES E ESTRUTURAS DE CONTENÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101466</td>
               <td>CONSERVAÇÃO DE ÁGUA EM EDIFICAÇÕES</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>INSTALACOES HIDRAULICAS E SANITARIAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101467</td>
               <td>DESENVOLVIMENTO SUSTENTÁVEL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101468</td>
               <td>ELEMENTOS DE ARQUITETURA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PROJETO ARQUITETÔNICO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101469</td>
               <td>ENERGIAS RENOVÁVEIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101470</td>
               <td>ENGENHARIA DIAGNÓSTICA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>MATERIAIS DE CONSTRUÇÃO II</td>
               <td></td>
           </tr>
           <tr>
               <td>9101471</td>
               <td>ENGENHARIA ECONÔMICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>FUNDAMENTOS DA ECONOMIA E ADMINISTRAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101472</td>
               <td>ESTABILIDADE GLOBAL DE EDIFÍCIOS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CALCULO NUMERICO, ANÁLISE DE ESTRUTURAS HIPERESTÁTICAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101473</td>
               <td>ESTRUTURAS DE AÇO II</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>ESTRUTURAS DE AÇO I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101474</td>
               <td>ESTRUTURAS DE CONCRETO ARMADO III</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ESTRUTURAS DE CONCRETO ARMADO I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101475</td>
               <td>ESTRUTUAS DE CONCRETO PRÉ-MOLDADO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>ESTRUTURAS DE CONCRETO ARMADO I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101476</td>
               <td>ESTRUTURAS DE CONCRETO PROTENDIDO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>ESTRUTURAS DE CONCRETO ARMADO II</td>
               <td></td>
           </tr>
           <tr>
               <td>9101477</td>
               <td>ESTRUTURAS DE MADEIRA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>ANÁLISE DE ESTRUTURAS HIPERESTÁTICAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101478</td>
               <td>GEOTECNIA AMBIENTAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101479</td>
               <td>GEOTECNOLOGIAS APLIC AOS RECURSOS HÍDR</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>GEOPROCESSAMENTO, HIDROLOGIA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101480</td>
               <td>GESTÃO DAS ÁGUAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101481</td>
               <td>GESTÃO DE OBRAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>TÉCNICAS DE CONSTRUÇÃO II</td>
               <td></td>
           </tr>
           <tr>
               <td>9101482</td>
               <td>GESTÃO DE PROJETOS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>FUNDAMENTOS DA ECONOMIA E ADMINISTRAÇÃO, TÉCNICAS DE CONSTRUÇÃO II</td>
               <td></td>
           </tr>
           <tr>
               <td>9101483</td>
               <td>HIDROGEOLOGIA AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GEOLOGIA GERAL, HIDROLOGIA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101484</td>
               <td>INTRODUÇÃO AO ESTUDO DAS FERROVIAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ESTRADAS, MECÂNICA DOS SOLOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101485</td>
               <td>LUMINOTÉCNICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>INSTALAÇOES ELÉTRICAS DE BAIXA TENSÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101486</td>
               <td>MATERIAIS ALTERNATIVOS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>TÉCNICAS DE CONSTRUÇÃO II</td>
               <td></td>
           </tr>
           <tr>
               <td>9101487</td>
               <td>MATERIAIS CERÂMICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TÉCNICAS DE CONSTRUÇÃO II</td>
               <td></td>
           </tr>
           <tr>
               <td>9101488</td>
               <td>MOBILIDADE HURBANA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>PLANEJAMENTO DE SISTEMAS DE TRANSPORTES</td>
               <td></td>
           </tr>
           <tr>
               <td>9101489</td>
               <td>MODELAGEM DE REDES DE ABASTEC DE ÁGUA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>HIDRAULICA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101490</td>
               <td>MODELAGEM MATEMÁTICA DE SIST AMBIENTAIS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>CALCULO NUMERICO, INTRODUÇÃO À COMPUTAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101491</td>
               <td>NOÇÕES SOBRE DOMÓTICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>INSTALAÇOES ELÉTRICAS DE BAIXA TENSÃO, INTRODUÇÃO À COMPUTAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101492</td>
               <td>OBRAS DE TERRA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>MECÂNICA DOS SOLOS II</td>
               <td></td>
           </tr>
           <tr>
               <td>9101493</td>
               <td>OTIMIZAÇÃO DE PROJETOS DE ENGENHARIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CALCULO NUMERICO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101494</td>
               <td>PATOLOGIAS DA CONSTRUÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TÉCNICAS DE CONSTRUÇÃO II</td>
               <td></td>
           </tr>
           <tr>
               <td>9101495</td>
               <td>PAVIMENTAÇÃO I</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>MECÂNICA DOS SOLOS II, TÉCNICAS DE CONSTRUÇÃO II, ESTRADAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101496</td>
               <td>PAVIMENTAÇÃO II</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>PAVIMENTAÇÃO I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101497</td>
               <td>PONTES EM CONCRETO ARMADO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>ESTRUTURAS DE CONCRETO ARMADO I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101498</td>
               <td>PROJETO DE ESTRUTURAS DE CONCRETO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ESTRUTURAS DE CONCRETO ARMADO I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101499</td>
               <td>RESÍDUOS SÓLIDOS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>CIENCIAS DO AMBIENTE</td>
               <td></td>
           </tr>
           <tr>
               <td>9101500</td>
               <td>SÉRIES TEMPORAIS APLICADAS À ENGENHARIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CALCULO NUMERICO, ESTATÍSTICA BÁSICA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101501</td>
               <td>TECNOLOGIA DE ARGAMASSAS E CONCRETOS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>TÉCNICAS DE CONSTRUÇÃO II</td>
               <td></td>
           </tr>
           <tr>
               <td>9101502</td>
               <td>TRATAMENTO DE ÁGUAS RESIDUÁRIAS I</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>SISTEMAS DE ESGOTAMENTO SANITÁRIO</td>
               <td></td>
           </tr>
@@ -889,8 +892,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "9101145", "nome": "CALCULO I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101147", "nome": "GEOMETRIA ANALÍTICA E ÁLGEBRA LINEAR", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101164", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101277", "nome": "INTRODUÇÃO À ENGENHARIA CIVIL", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101280", "nome": "CIENCIAS DO AMBIENTE", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101428", "nome": "GEOLOGIA GERAL", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101068", "nome": "DESENHO TÉCNICO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101070", "nome": "ESTATÍSTICA BÁSICA", "ch": "60h", "preReqs": ["9101145"]}, {"nivel": "2º Nível", "codigo": "9101146", "nome": "FÍSICA I", "ch": "60h", "preReqs": ["9101145"]}, {"nivel": "2º Nível", "codigo": "9101154", "nome": "CALCULO II", "ch": "60h", "preReqs": ["9101145"]}, {"nivel": "2º Nível", "codigo": "9101404", "nome": "INTRODUÇÃO À COMPUTAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101430", "nome": "INSTITUIÇÕES DE DIREITO", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101114", "nome": "TOPOGRAFIA", "ch": "60h", "preReqs": ["9101068"]}, {"nivel": "3º Nível", "codigo": "9101150", "nome": "METODOLOGIA CIENTÍFICA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101156", "nome": "FÍSICA II", "ch": "60h", "preReqs": ["9101146"]}, {"nivel": "3º Nível", "codigo": "9101162", "nome": "CALCULO III", "ch": "60h", "preReqs": ["9101154", "9101147"]}, {"nivel": "3º Nível", "codigo": "9101282", "nome": "MECANICA GERAL I", "ch": "60h", "preReqs": ["9101146", "9101147"]}, {"nivel": "3º Nível", "codigo": "9101403", "nome": "DESENHO UNIVERSAL E ACESSIBILIDADE", "ch": "30h", "preReqs": ["9101068"]}, {"nivel": "3º Nível", "codigo": "9101427", "nome": "FUNDAMENTOS DA ECONOMIA E ADMINISTRAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "9101173", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["9101162"]}, {"nivel": "4º Nível", "codigo": "9101175", "nome": "FÍSICA III", "ch": "60h", "preReqs": ["9101156"]}, {"nivel": "4º Nível", "codigo": "9101183", "nome": "FENOMENOS DE TRANSPORTE I", "ch": "60h", "preReqs": ["9101156"]}, {"nivel": "4º Nível", "codigo": "9101240", "nome": "GEOPROCESSAMENTO", "ch": "60h", "preReqs": ["9101114"]}, {"nivel": "4º Nível", "codigo": "9101292", "nome": "PLANEJAMENTO DE SISTEMAS DE TRANSPORTES", "ch": "60h", "preReqs": ["9101070"]}, {"nivel": "4º Nível", "codigo": "9101431", "nome": "ANÁLISE DE ESTRUTURAS ISOSTÁTICAS", "ch": "45h", "preReqs": ["9101282"]}, {"nivel": "4º Nível", "codigo": "9101439", "nome": "PROJETO ARQUITETÔNICO", "ch": "60h", "preReqs": ["9101403"]}, {"nivel": "5º Nível", "codigo": "9101182", "nome": "CALCULO NUMERICO", "ch": "60h", "preReqs": ["9101173", "9101404"]}, {"nivel": "5º Nível", "codigo": "9101184", "nome": "LABORATÓRIO DE FÍSICA", "ch": "60h", "preReqs": ["9101175"]}, {"nivel": "5º Nível", "codigo": "9101198", "nome": "HIDRAULICA APLICADA", "ch": "60h", "preReqs": ["9101183"]}, {"nivel": "5º Nível", "codigo": "9101293", "nome": "RESISTENCIA DOS MATERIAIS I", "ch": "60h", "preReqs": ["9101431"]}, {"nivel": "5º Nível", "codigo": "9101303", "nome": "ESTRADAS", "ch": "60h", "preReqs": ["9101114"]}, {"nivel": "5º Nível", "codigo": "9101398", "nome": "SEGURANÇA DO TRABALHO", "ch": "45h", "preReqs": ["9101277"]}, {"nivel": "5º Nível", "codigo": "9101435", "nome": "MATERIAIS DE CONSTRUÇÃO I", "ch": "60h", "preReqs": ["9101164", "9101428"]}, {"nivel": "6º Nível", "codigo": "9101222", "nome": "HIDROLOGIA APLICADA", "ch": "60h", "preReqs": ["9101198"]}, {"nivel": "6º Nível", "codigo": "9101309", "nome": "RESISTENCIA DOS MATERIAIS II", "ch": "60h", "preReqs": ["9101293"]}, {"nivel": "6º Nível", "codigo": "9101429", "nome": "INSTALAÇOES ELÉTRICAS DE BAIXA TENSÃO", "ch": "60h", "preReqs": ["9101175"]}, {"nivel": "6º Nível", "codigo": "9101433", "nome": "LABORATÓRIO DE HIDRÁULICA", "ch": "30h", "preReqs": ["9101198"]}, {"nivel": "6º Nível", "codigo": "9101436", "nome": "MATERIAIS DE CONSTRUÇÃO II", "ch": "60h", "preReqs": ["9101435"]}, {"nivel": "6º Nível", "codigo": "9101437", "nome": "MECÂNICA DOS SOLOS I", "ch": "60h", "preReqs": ["9101428", "9101293"]}, {"nivel": "6º Nível", "codigo": "9101453", "nome": "SISTEMAS DE ESGOTAMENTO SANITÁRIO", "ch": "45h", "preReqs": ["9101198"]}, {"nivel": "7º Nível", "codigo": "9101329", "nome": "INSTALACOES HIDRAULICAS E SANITARIAS", "ch": "60h", "preReqs": ["9101198"]}, {"nivel": "7º Nível", "codigo": "9101438", "nome": "MECÂNICA DOS SOLOS II", "ch": "60h", "preReqs": ["9101437"]}, {"nivel": "7º Nível", "codigo": "9101441", "nome": "ANÁLISE DE ESTRUTURAS HIPERESTÁTICAS", "ch": "60h", "preReqs": ["9101436"]}, {"nivel": "7º Nível", "codigo": "9101443", "nome": "ESTRUTURAS DE CONCRETO ARMADO I", "ch": "60h", "preReqs": ["9101436", "9101309"]}, {"nivel": "7º Nível", "codigo": "9101451", "nome": "SISTEMAS DE ABASTECIMENTO DE ÁGUA", "ch": "45h", "preReqs": ["9101198"]}, {"nivel": "7º Nível", "codigo": "9101454", "nome": "TÉCNICAS DE CONSTRUÇÃO I", "ch": "60h", "preReqs": ["9101436"]}, {"nivel": "8º Nível", "codigo": "9101442", "nome": "ESTRUTURAS DE AÇO I", "ch": "60h", "preReqs": ["9101309"]}, {"nivel": "8º Nível", "codigo": "9101444", "nome": "ESTRUTURAS DE CONCRETO ARMADO II", "ch": "45h", "preReqs": ["9101441", "9101443"]}, {"nivel": "8º Nível", "codigo": "9101445", "nome": "FUNDAÇÕES E ESTRUTURAS DE CONTENÇÃO", "ch": "60h", "preReqs": ["9101438"]}, {"nivel": "8º Nível", "codigo": "9101449", "nome": "PROJETO INTERDISCIPLINAR I", "ch": "45h", "preReqs": ["9101439", "9101454", "9101451", "9101453"]}, {"nivel": "8º Nível", "codigo": "9101452", "nome": "SISTEMAS DE DRENAGEM URBANA", "ch": "45h", "preReqs": ["9101198"]}, {"nivel": "8º Nível", "codigo": "9101455", "nome": "TÉCNICAS DE CONSTRUÇÃO II", "ch": "60h", "preReqs": ["9101329", "9101429", "9101454"]}, {"nivel": "9º Nível", "codigo": "9101432", "nome": "EMPREENDEDORISMO", "ch": "30h", "preReqs": ["9101427"]}, {"nivel": "9º Nível", "codigo": "9101434", "nome": "LICITAÇÃO E CONTRATOS ADMINISTRATIVOS", "ch": "30h", "preReqs": ["9101430"]}, {"nivel": "9º Nível", "codigo": "9101446", "nome": "MODELAGEM DA INFORMAÇÃO DA CONSTRUÇÃO", "ch": "30h", "preReqs": ["9101439", "9101454"]}, {"nivel": "9º Nível", "codigo": "9101447", "nome": "ORÇAMENTO E PLANEJAMENTO DE OBRAS", "ch": "60h", "preReqs": ["9101455"]}, {"nivel": "9º Nível", "codigo": "9101448", "nome": "PROJETO DE ESTRUTURAS DE FUNDAÇÕES", "ch": "30h", "preReqs": ["9101443", "9101445"]}, {"nivel": "9º Nível", "codigo": "9101450", "nome": "PROJETO INTERDISCIPLINAR II", "ch": "45h", "preReqs": ["9101455", "9101443"]}];
-  const codigoToNome = {"9101145": "CALCULO I", "9101147": "GEOMETRIA ANALÍTICA E ÁLGEBRA LINEAR", "9101164": "QUÍMICA GERAL", "9101277": "INTRODUÇÃO À ENGENHARIA CIVIL", "9101280": "CIENCIAS DO AMBIENTE", "9101428": "GEOLOGIA GERAL", "9101068": "DESENHO TÉCNICO", "9101070": "ESTATÍSTICA BÁSICA", "9101146": "FÍSICA I", "9101154": "CALCULO II", "9101404": "INTRODUÇÃO À COMPUTAÇÃO", "9101430": "INSTITUIÇÕES DE DIREITO", "9101114": "TOPOGRAFIA", "9101150": "METODOLOGIA CIENTÍFICA", "9101156": "FÍSICA II", "9101162": "CALCULO III", "9101282": "MECANICA GERAL I", "9101403": "DESENHO UNIVERSAL E ACESSIBILIDADE", "9101427": "FUNDAMENTOS DA ECONOMIA E ADMINISTRAÇÃO", "9101173": "EQUACOES DIFERENCIAIS LINEARES", "9101175": "FÍSICA III", "9101183": "FENOMENOS DE TRANSPORTE I", "9101240": "GEOPROCESSAMENTO", "9101292": "PLANEJAMENTO DE SISTEMAS DE TRANSPORTES", "9101431": "ANÁLISE DE ESTRUTURAS ISOSTÁTICAS", "9101439": "PROJETO ARQUITETÔNICO", "9101182": "CALCULO NUMERICO", "9101184": "LABORATÓRIO DE FÍSICA", "9101198": "HIDRAULICA APLICADA", "9101293": "RESISTENCIA DOS MATERIAIS I", "9101303": "ESTRADAS", "9101398": "SEGURANÇA DO TRABALHO", "9101435": "MATERIAIS DE CONSTRUÇÃO I", "9101222": "HIDROLOGIA APLICADA", "9101309": "RESISTENCIA DOS MATERIAIS II", "9101429": "INSTALAÇOES ELÉTRICAS DE BAIXA TENSÃO", "9101433": "LABORATÓRIO DE HIDRÁULICA", "9101436": "MATERIAIS DE CONSTRUÇÃO II", "9101437": "MECÂNICA DOS SOLOS I", "9101453": "SISTEMAS DE ESGOTAMENTO SANITÁRIO", "9101329": "INSTALACOES HIDRAULICAS E SANITARIAS", "9101438": "MECÂNICA DOS SOLOS II", "9101441": "ANÁLISE DE ESTRUTURAS HIPERESTÁTICAS", "9101443": "ESTRUTURAS DE CONCRETO ARMADO I", "9101451": "SISTEMAS DE ABASTECIMENTO DE ÁGUA", "9101454": "TÉCNICAS DE CONSTRUÇÃO I", "9101442": "ESTRUTURAS DE AÇO I", "9101444": "ESTRUTURAS DE CONCRETO ARMADO II", "9101445": "FUNDAÇÕES E ESTRUTURAS DE CONTENÇÃO", "9101449": "PROJETO INTERDISCIPLINAR I", "9101452": "SISTEMAS DE DRENAGEM URBANA", "9101455": "TÉCNICAS DE CONSTRUÇÃO II", "9101432": "EMPREENDEDORISMO", "9101434": "LICITAÇÃO E CONTRATOS ADMINISTRATIVOS", "9101446": "MODELAGEM DA INFORMAÇÃO DA CONSTRUÇÃO", "9101447": "ORÇAMENTO E PLANEJAMENTO DE OBRAS", "9101448": "PROJETO DE ESTRUTURAS DE FUNDAÇÕES", "9101450": "PROJETO INTERDISCIPLINAR II", "9101091": "ESTATÍSTICA EXPERIMENTAL", "9101196": "PRINCIPIOS E ESTRAT DA EDUC AMBIENTAL", "9101199": "SOCIOLOGIA", "9101207": "FENOMENOS DE TRANSPORTE II", "9101209": "FÍSICA IV", "9101217": "ECONOMIA AMBIENTAL", "9101219": "TRATAMENTO DE ÁGUA DE ABASTECIMENTO", "9101286": "MECANICA GERAL II", "9101301": "LICENCIAMENTO AMBIENTAL", "9101313": "LINGUA BRASILEIRA DE SINAIS", "9101416": "GESTÃO E ANÁLISE DE RISCO", "9101419": "PROGRAMAÇÃO DE PLANILHAS ELETRÔNICAS", "9101459": "ALVENARIA ESTRUTURAL", "9101460": "ANÁLISE DE CONFIABILIDADE APLICADA À ENG", "9101461": "ANÁLISE MATRICIAL DE ESTRUTURAS", "9101462": "APLICAÇÕES DE ENERGIAS RENOVÁVEIS", "9101463": "ATERROS SANITÁRIOS", "9101464": "AVALIAÇÃO DE IMPACTO AMBIENTAL I", "9101465": "BARRAGENS DE TERRA", "9101466": "CONSERVAÇÃO DE ÁGUA EM EDIFICAÇÕES", "9101467": "DESENVOLVIMENTO SUSTENTÁVEL", "9101468": "ELEMENTOS DE ARQUITETURA", "9101469": "ENERGIAS RENOVÁVEIS", "9101470": "ENGENHARIA DIAGNÓSTICA", "9101471": "ENGENHARIA ECONÔMICA", "9101472": "ESTABILIDADE GLOBAL DE EDIFÍCIOS", "9101473": "ESTRUTURAS DE AÇO II", "9101474": "ESTRUTURAS DE CONCRETO ARMADO III", "9101475": "ESTRUTUAS DE CONCRETO PRÉ-MOLDADO", "9101476": "ESTRUTURAS DE CONCRETO PROTENDIDO", "9101477": "ESTRUTURAS DE MADEIRA", "9101478": "GEOTECNIA AMBIENTAL", "9101479": "GEOTECNOLOGIAS APLIC AOS RECURSOS HÍDR", "9101480": "GESTÃO DAS ÁGUAS", "9101481": "GESTÃO DE OBRAS", "9101482": "GESTÃO DE PROJETOS", "9101483": "HIDROGEOLOGIA AMBIENTAL", "9101484": "INTRODUÇÃO AO ESTUDO DAS FERROVIAS", "9101485": "LUMINOTÉCNICA", "9101486": "MATERIAIS ALTERNATIVOS", "9101487": "MATERIAIS CERÂMICOS", "9101488": "MOBILIDADE HURBANA", "9101489": "MODELAGEM DE REDES DE ABASTEC DE ÁGUA", "9101490": "MODELAGEM MATEMÁTICA DE SIST AMBIENTAIS", "9101491": "NOÇÕES SOBRE DOMÓTICA", "9101492": "OBRAS DE TERRA", "9101493": "OTIMIZAÇÃO DE PROJETOS DE ENGENHARIA", "9101494": "PATOLOGIAS DA CONSTRUÇÃO", "9101495": "PAVIMENTAÇÃO I", "9101496": "PAVIMENTAÇÃO II", "9101497": "PONTES EM CONCRETO ARMADO", "9101498": "PROJETO DE ESTRUTURAS DE CONCRETO", "9101499": "RESÍDUOS SÓLIDOS", "9101500": "SÉRIES TEMPORAIS APLICADAS À ENGENHARIA", "9101501": "TECNOLOGIA DE ARGAMASSAS E CONCRETOS", "9101502": "TRATAMENTO DE ÁGUAS RESIDUÁRIAS I"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "9101145", "nome": "CALCULO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101147", "nome": "GEOMETRIA ANALÍTICA E ÁLGEBRA LINEAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101164", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101277", "nome": "INTRODUÇÃO À ENGENHARIA CIVIL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101280", "nome": "CIENCIAS DO AMBIENTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101428", "nome": "GEOLOGIA GERAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101068", "nome": "DESENHO TÉCNICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101070", "nome": "ESTATÍSTICA BÁSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101145"]}, {"nivel": "2º Nível", "codigo": "9101146", "nome": "FÍSICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101145"]}, {"nivel": "2º Nível", "codigo": "9101154", "nome": "CALCULO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101145"]}, {"nivel": "2º Nível", "codigo": "9101404", "nome": "INTRODUÇÃO À COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101430", "nome": "INSTITUIÇÕES DE DIREITO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101114", "nome": "TOPOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101068"]}, {"nivel": "3º Nível", "codigo": "9101150", "nome": "METODOLOGIA CIENTÍFICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101156", "nome": "FÍSICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101146"]}, {"nivel": "3º Nível", "codigo": "9101162", "nome": "CALCULO III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101154", "9101147"]}, {"nivel": "3º Nível", "codigo": "9101282", "nome": "MECANICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101146", "9101147"]}, {"nivel": "3º Nível", "codigo": "9101403", "nome": "DESENHO UNIVERSAL E ACESSIBILIDADE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101068"]}, {"nivel": "3º Nível", "codigo": "9101427", "nome": "FUNDAMENTOS DA ECONOMIA E ADMINISTRAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "9101173", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101162"]}, {"nivel": "4º Nível", "codigo": "9101175", "nome": "FÍSICA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101156"]}, {"nivel": "4º Nível", "codigo": "9101183", "nome": "FENOMENOS DE TRANSPORTE I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101156"]}, {"nivel": "4º Nível", "codigo": "9101240", "nome": "GEOPROCESSAMENTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101114"]}, {"nivel": "4º Nível", "codigo": "9101292", "nome": "PLANEJAMENTO DE SISTEMAS DE TRANSPORTES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101070"]}, {"nivel": "4º Nível", "codigo": "9101431", "nome": "ANÁLISE DE ESTRUTURAS ISOSTÁTICAS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101282"]}, {"nivel": "4º Nível", "codigo": "9101439", "nome": "PROJETO ARQUITETÔNICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101403"]}, {"nivel": "5º Nível", "codigo": "9101182", "nome": "CALCULO NUMERICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101173", "9101404"]}, {"nivel": "5º Nível", "codigo": "9101184", "nome": "LABORATÓRIO DE FÍSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101175"]}, {"nivel": "5º Nível", "codigo": "9101198", "nome": "HIDRAULICA APLICADA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101183"]}, {"nivel": "5º Nível", "codigo": "9101293", "nome": "RESISTENCIA DOS MATERIAIS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101431"]}, {"nivel": "5º Nível", "codigo": "9101303", "nome": "ESTRADAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101114"]}, {"nivel": "5º Nível", "codigo": "9101398", "nome": "SEGURANÇA DO TRABALHO", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101277"]}, {"nivel": "5º Nível", "codigo": "9101435", "nome": "MATERIAIS DE CONSTRUÇÃO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101164", "9101428"]}, {"nivel": "6º Nível", "codigo": "9101222", "nome": "HIDROLOGIA APLICADA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101198"]}, {"nivel": "6º Nível", "codigo": "9101309", "nome": "RESISTENCIA DOS MATERIAIS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101293"]}, {"nivel": "6º Nível", "codigo": "9101429", "nome": "INSTALAÇOES ELÉTRICAS DE BAIXA TENSÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101175"]}, {"nivel": "6º Nível", "codigo": "9101433", "nome": "LABORATÓRIO DE HIDRÁULICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101198"]}, {"nivel": "6º Nível", "codigo": "9101436", "nome": "MATERIAIS DE CONSTRUÇÃO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101435"]}, {"nivel": "6º Nível", "codigo": "9101437", "nome": "MECÂNICA DOS SOLOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101428", "9101293"]}, {"nivel": "6º Nível", "codigo": "9101453", "nome": "SISTEMAS DE ESGOTAMENTO SANITÁRIO", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101198"]}, {"nivel": "7º Nível", "codigo": "9101329", "nome": "INSTALACOES HIDRAULICAS E SANITARIAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101198"]}, {"nivel": "7º Nível", "codigo": "9101438", "nome": "MECÂNICA DOS SOLOS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101437"]}, {"nivel": "7º Nível", "codigo": "9101441", "nome": "ANÁLISE DE ESTRUTURAS HIPERESTÁTICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101436"]}, {"nivel": "7º Nível", "codigo": "9101443", "nome": "ESTRUTURAS DE CONCRETO ARMADO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101436", "9101309"]}, {"nivel": "7º Nível", "codigo": "9101451", "nome": "SISTEMAS DE ABASTECIMENTO DE ÁGUA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101198"]}, {"nivel": "7º Nível", "codigo": "9101454", "nome": "TÉCNICAS DE CONSTRUÇÃO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101436"]}, {"nivel": "8º Nível", "codigo": "9101442", "nome": "ESTRUTURAS DE AÇO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101309"]}, {"nivel": "8º Nível", "codigo": "9101444", "nome": "ESTRUTURAS DE CONCRETO ARMADO II", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101441", "9101443"]}, {"nivel": "8º Nível", "codigo": "9101445", "nome": "FUNDAÇÕES E ESTRUTURAS DE CONTENÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101438"]}, {"nivel": "8º Nível", "codigo": "9101449", "nome": "PROJETO INTERDISCIPLINAR I", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101439", "9101454", "9101451", "9101453"]}, {"nivel": "8º Nível", "codigo": "9101452", "nome": "SISTEMAS DE DRENAGEM URBANA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101198"]}, {"nivel": "8º Nível", "codigo": "9101455", "nome": "TÉCNICAS DE CONSTRUÇÃO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101329", "9101429", "9101454"]}, {"nivel": "9º Nível", "codigo": "9101456", "nome": "TRABALHO DE CONCLUSÃO DE CURSO I", "ch": "30\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["9101150"]}, {"nivel": "9º Nível", "codigo": "9101432", "nome": "EMPREENDEDORISMO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101427"]}, {"nivel": "9º Nível", "codigo": "9101434", "nome": "LICITAÇÃO E CONTRATOS ADMINISTRATIVOS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101430"]}, {"nivel": "9º Nível", "codigo": "9101446", "nome": "MODELAGEM DA INFORMAÇÃO DA CONSTRUÇÃO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101439", "9101454"]}, {"nivel": "9º Nível", "codigo": "9101447", "nome": "ORÇAMENTO E PLANEJAMENTO DE OBRAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101455"]}, {"nivel": "9º Nível", "codigo": "9101448", "nome": "PROJETO DE ESTRUTURAS DE FUNDAÇÕES", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101443", "9101445"]}, {"nivel": "9º Nível", "codigo": "9101450", "nome": "PROJETO INTERDISCIPLINAR II", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101455", "9101443"]}, {"nivel": "10º Nível", "codigo": "9101327", "nome": "ESTAGIO SUPERVISIONADO", "ch": "180\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "9101457", "nome": "TRABALHO DE CONCLUSÃO DE CURSO II", "ch": "30\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["9101456"]}];
+  const codigoToNome = {"9101145": "CALCULO I", "9101147": "GEOMETRIA ANALÍTICA E ÁLGEBRA LINEAR", "9101164": "QUÍMICA GERAL", "9101277": "INTRODUÇÃO À ENGENHARIA CIVIL", "9101280": "CIENCIAS DO AMBIENTE", "9101428": "GEOLOGIA GERAL", "9101068": "DESENHO TÉCNICO", "9101070": "ESTATÍSTICA BÁSICA", "9101146": "FÍSICA I", "9101154": "CALCULO II", "9101404": "INTRODUÇÃO À COMPUTAÇÃO", "9101430": "INSTITUIÇÕES DE DIREITO", "9101114": "TOPOGRAFIA", "9101150": "METODOLOGIA CIENTÍFICA", "9101156": "FÍSICA II", "9101162": "CALCULO III", "9101282": "MECANICA GERAL I", "9101403": "DESENHO UNIVERSAL E ACESSIBILIDADE", "9101427": "FUNDAMENTOS DA ECONOMIA E ADMINISTRAÇÃO", "9101173": "EQUACOES DIFERENCIAIS LINEARES", "9101175": "FÍSICA III", "9101183": "FENOMENOS DE TRANSPORTE I", "9101240": "GEOPROCESSAMENTO", "9101292": "PLANEJAMENTO DE SISTEMAS DE TRANSPORTES", "9101431": "ANÁLISE DE ESTRUTURAS ISOSTÁTICAS", "9101439": "PROJETO ARQUITETÔNICO", "9101182": "CALCULO NUMERICO", "9101184": "LABORATÓRIO DE FÍSICA", "9101198": "HIDRAULICA APLICADA", "9101293": "RESISTENCIA DOS MATERIAIS I", "9101303": "ESTRADAS", "9101398": "SEGURANÇA DO TRABALHO", "9101435": "MATERIAIS DE CONSTRUÇÃO I", "9101222": "HIDROLOGIA APLICADA", "9101309": "RESISTENCIA DOS MATERIAIS II", "9101429": "INSTALAÇOES ELÉTRICAS DE BAIXA TENSÃO", "9101433": "LABORATÓRIO DE HIDRÁULICA", "9101436": "MATERIAIS DE CONSTRUÇÃO II", "9101437": "MECÂNICA DOS SOLOS I", "9101453": "SISTEMAS DE ESGOTAMENTO SANITÁRIO", "9101329": "INSTALACOES HIDRAULICAS E SANITARIAS", "9101438": "MECÂNICA DOS SOLOS II", "9101441": "ANÁLISE DE ESTRUTURAS HIPERESTÁTICAS", "9101443": "ESTRUTURAS DE CONCRETO ARMADO I", "9101451": "SISTEMAS DE ABASTECIMENTO DE ÁGUA", "9101454": "TÉCNICAS DE CONSTRUÇÃO I", "9101442": "ESTRUTURAS DE AÇO I", "9101444": "ESTRUTURAS DE CONCRETO ARMADO II", "9101445": "FUNDAÇÕES E ESTRUTURAS DE CONTENÇÃO", "9101449": "PROJETO INTERDISCIPLINAR I", "9101452": "SISTEMAS DE DRENAGEM URBANA", "9101455": "TÉCNICAS DE CONSTRUÇÃO II", "9101456": "TRABALHO DE CONCLUSÃO DE CURSO I", "9101432": "EMPREENDEDORISMO", "9101434": "LICITAÇÃO E CONTRATOS ADMINISTRATIVOS", "9101446": "MODELAGEM DA INFORMAÇÃO DA CONSTRUÇÃO", "9101447": "ORÇAMENTO E PLANEJAMENTO DE OBRAS", "9101448": "PROJETO DE ESTRUTURAS DE FUNDAÇÕES", "9101450": "PROJETO INTERDISCIPLINAR II", "9101327": "ESTAGIO SUPERVISIONADO", "9101457": "TRABALHO DE CONCLUSÃO DE CURSO II", "9101091": "ESTATÍSTICA EXPERIMENTAL", "9101196": "PRINCIPIOS E ESTRAT DA EDUC AMBIENTAL", "9101199": "SOCIOLOGIA", "9101207": "FENOMENOS DE TRANSPORTE II", "9101209": "FÍSICA IV", "9101217": "ECONOMIA AMBIENTAL", "9101219": "TRATAMENTO DE ÁGUA DE ABASTECIMENTO", "9101286": "MECANICA GERAL II", "9101301": "LICENCIAMENTO AMBIENTAL", "9101313": "LINGUA BRASILEIRA DE SINAIS", "9101416": "GESTÃO E ANÁLISE DE RISCO", "9101419": "PROGRAMAÇÃO DE PLANILHAS ELETRÔNICAS", "9101459": "ALVENARIA ESTRUTURAL", "9101460": "ANÁLISE DE CONFIABILIDADE APLICADA À ENG", "9101461": "ANÁLISE MATRICIAL DE ESTRUTURAS", "9101462": "APLICAÇÕES DE ENERGIAS RENOVÁVEIS", "9101463": "ATERROS SANITÁRIOS", "9101464": "AVALIAÇÃO DE IMPACTO AMBIENTAL I", "9101465": "BARRAGENS DE TERRA", "9101466": "CONSERVAÇÃO DE ÁGUA EM EDIFICAÇÕES", "9101467": "DESENVOLVIMENTO SUSTENTÁVEL", "9101468": "ELEMENTOS DE ARQUITETURA", "9101469": "ENERGIAS RENOVÁVEIS", "9101470": "ENGENHARIA DIAGNÓSTICA", "9101471": "ENGENHARIA ECONÔMICA", "9101472": "ESTABILIDADE GLOBAL DE EDIFÍCIOS", "9101473": "ESTRUTURAS DE AÇO II", "9101474": "ESTRUTURAS DE CONCRETO ARMADO III", "9101475": "ESTRUTUAS DE CONCRETO PRÉ-MOLDADO", "9101476": "ESTRUTURAS DE CONCRETO PROTENDIDO", "9101477": "ESTRUTURAS DE MADEIRA", "9101478": "GEOTECNIA AMBIENTAL", "9101479": "GEOTECNOLOGIAS APLIC AOS RECURSOS HÍDR", "9101480": "GESTÃO DAS ÁGUAS", "9101481": "GESTÃO DE OBRAS", "9101482": "GESTÃO DE PROJETOS", "9101483": "HIDROGEOLOGIA AMBIENTAL", "9101484": "INTRODUÇÃO AO ESTUDO DAS FERROVIAS", "9101485": "LUMINOTÉCNICA", "9101486": "MATERIAIS ALTERNATIVOS", "9101487": "MATERIAIS CERÂMICOS", "9101488": "MOBILIDADE HURBANA", "9101489": "MODELAGEM DE REDES DE ABASTEC DE ÁGUA", "9101490": "MODELAGEM MATEMÁTICA DE SIST AMBIENTAIS", "9101491": "NOÇÕES SOBRE DOMÓTICA", "9101492": "OBRAS DE TERRA", "9101493": "OTIMIZAÇÃO DE PROJETOS DE ENGENHARIA", "9101494": "PATOLOGIAS DA CONSTRUÇÃO", "9101495": "PAVIMENTAÇÃO I", "9101496": "PAVIMENTAÇÃO II", "9101497": "PONTES EM CONCRETO ARMADO", "9101498": "PROJETO DE ESTRUTURAS DE CONCRETO", "9101499": "RESÍDUOS SÓLIDOS", "9101500": "SÉRIES TEMPORAIS APLICADAS À ENGENHARIA", "9101501": "TECNOLOGIA DE ARGAMASSAS E CONCRETOS", "9101502": "TRATAMENTO DE ÁGUAS RESIDUÁRIAS I"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -1002,7 +1005,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

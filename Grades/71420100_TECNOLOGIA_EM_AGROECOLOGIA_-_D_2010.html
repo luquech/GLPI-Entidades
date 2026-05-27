@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,136 +404,136 @@
           <tr>
               <td>7102088</td>
               <td>CAPRINOCULTURA LEITEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ZOOTECNIA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>7102115</td>
               <td>TECNOLOGIA DE SEMENTES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANATO-FISIOLOGIA VEGETAL</td>
               <td></td>
           </tr>
           <tr>
               <td>7102116</td>
               <td>MATERIA ORGANICA E COMPOSTAGEM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102117</td>
               <td>NUTRICAO MINERAL DE PLANTAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANATO-FISIOLOGIA VEGETAL</td>
               <td></td>
           </tr>
           <tr>
               <td>7106106</td>
               <td>ECONOMIA SOLIDARIA E AUTOGESTAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102022</td>
               <td>BOTANICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ANATO-FISIOLOGIA VEGETAL</td>
               <td></td>
           </tr>
           <tr>
               <td>7102242</td>
               <td>SISTEMAS AGROFLORESTAIS NO SEMIÁRIDO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102282</td>
               <td>MANEJO AGROEC E CONSERVACAO DOS SOLOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SOLOS DO SEMIARIDO</td>
               <td></td>
           </tr>
           <tr>
               <td>7102293</td>
               <td>MEIO AMBIENTE E TURISMO AGROECOLOGICO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102294</td>
               <td>ESTATÍSTICA EXPERIMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102298</td>
               <td>EXTENSAO RURAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102299</td>
               <td>MANEJO DE BACIAS HIDROGRAFICAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102303</td>
               <td>APICULTURA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ZOOTECNIA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>7102304</td>
               <td>BIOCONTROLE DE DOENCAS DE PLANTAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>MANEJO AGROEC DE DOENCAS DE PLANTAS</td>
               <td></td>
           </tr>
           <tr>
               <td>7102305</td>
               <td>DESENVOLVIMENTO RURAL E SUSTENTABILIDADE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102306</td>
               <td>TECNOLOGIA SOCIAIS PARA DESENV SUSTENTAV</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102307</td>
               <td>AGRICULTURA ORGÂNICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
@@ -577,8 +580,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "7101006", "nome": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7101115", "nome": "INFORMÁTICA BÁSICA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102016", "nome": "BIOLOGIA DO SEMIARIDO", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102017", "nome": "HIDROLOGIA E CLIMATOLOGIA DO SEMIARIDO", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102018", "nome": "INTRODUÇÃO À AGROECOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102019", "nome": "SOLOS DO SEMIARIDO", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7105030", "nome": "DES SUST", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7105036", "nome": "LAB PESQ E EXT EM DES RURAL I", "ch": "90h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7101051", "nome": "AÇÃO COLETIVA", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102033", "nome": "METODOLOGIA DA PESQUISA E SEMINARIOS", "ch": "60h", "preReqs": ["7101006"]}, {"nivel": "2º Nível", "codigo": "7102035", "nome": "ECOLOGIA DO SEMIARIDO", "ch": "60h", "preReqs": ["7102016"]}, {"nivel": "2º Nível", "codigo": "7102036", "nome": "ANATO-FISIOLOGIA VEGETAL", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102037", "nome": "MICROBIOLOGIA GERAL E DO SOLO", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102038", "nome": "ENTOMOLOGIA GERAL", "ch": "30h", "preReqs": ["7102016"]}, {"nivel": "2º Nível", "codigo": "7102039", "nome": "TOPOGRAFIA E GEOPROCESSAMENTO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7103032", "nome": "QUÍMICA ANALÍTICA APLICADA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "7102034", "nome": "FUNDAMENTOS DA PESQUISA AMBIENTAL", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "7102056", "nome": "HORTICULTURA BASICA", "ch": "30h", "preReqs": ["7102036"]}, {"nivel": "3º Nível", "codigo": "7102057", "nome": "ZOOTECNIA APLICADA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "7102059", "nome": "MANEJO AGROEC DE DOENCAS DE PLANTAS", "ch": "60h", "preReqs": ["7102037"]}, {"nivel": "3º Nível", "codigo": "7102060", "nome": "MANEJO AGROECOLOGICO DE PRAGAS", "ch": "30h", "preReqs": ["7102038"]}, {"nivel": "3º Nível", "codigo": "7102061", "nome": "PEDOLOGIA E CLASSIFICACAO DOS SOLOS", "ch": "60h", "preReqs": ["7102019"]}, {"nivel": "3º Nível", "codigo": "7102062", "nome": "HIDRAULICA", "ch": "60h", "preReqs": ["7102017"]}, {"nivel": "3º Nível", "codigo": "7105050", "nome": "HISTÓRIA SOCIAL DO CAMPESINATO", "ch": "30h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "7102058", "nome": "IMPACTOS E RECUP DE AREAS DEGRADADAS", "ch": "60h", "preReqs": ["7102035"]}, {"nivel": "4º Nível", "codigo": "7102063", "nome": "AGROECOLOGIA", "ch": "30h", "preReqs": ["7102018"]}, {"nivel": "4º Nível", "codigo": "7102082", "nome": "AGROEC APLIC AO CULTIVO DE OLERICOLAS", "ch": "60h", "preReqs": ["7102056"]}, {"nivel": "4º Nível", "codigo": "7102083", "nome": "AGROECOLOGIA ANIMAL", "ch": "60h", "preReqs": ["7102057"]}, {"nivel": "4º Nível", "codigo": "7102084", "nome": "IRRIGACAO E DRENAGEM", "ch": "60h", "preReqs": ["7102062"]}, {"nivel": "4º Nível", "codigo": "7102085", "nome": "AGROEC APLIC AO CULTIVO DE FRUTIFERAS", "ch": "30h", "preReqs": ["7102056"]}, {"nivel": "4º Nível", "codigo": "7102087", "nome": "LAB DE PROD DE DEFENSIVOS AGROECOLOGICOS", "ch": "30h", "preReqs": ["7102059", "7102060"]}, {"nivel": "5º Nível", "codigo": "7102086", "nome": "AGROEC APLIC AO CULT DE PLANTAS ALIMENT", "ch": "60h", "preReqs": ["7102056"]}, {"nivel": "5º Nível", "codigo": "7102109", "nome": "USO SUSTENTAVEL DA BIODIVERSIDADE", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "7102111", "nome": "CONSTRUÇÕES E MÁQUINAS RURAIS", "ch": "60h", "preReqs": ["7102039"]}, {"nivel": "5º Nível", "codigo": "7102112", "nome": "LAB DE DIAGNOSE E USO DO SOLO", "ch": "30h", "preReqs": ["7102061"]}, {"nivel": "5º Nível", "codigo": "7103110", "nome": "TECNOLOGIA DE ALIMENTOS", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "7106127", "nome": "DIREITO AGRARIO E AMBIENTAL", "ch": "30h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "7102094", "nome": "ADMINISTRAÇÃO E EMPREENDEDORISMO", "ch": "30h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "7102235", "nome": "CERTIFICAÇÃO DE SISTEMAS AGROECOLÓGICOS", "ch": "60h", "preReqs": ["7102085", "7103110", "7102082", "7102086", "7102087"]}, {"nivel": "6º Nível", "codigo": "7102236", "nome": "LABORATÓRIO DE PROC DE PROD AGROPECUÁRIO", "ch": "60h", "preReqs": ["7102057"]}, {"nivel": "6º Nível", "codigo": "7102237", "nome": "ETOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "7102238", "nome": "ELABORAÇÃO E AVAL. DE PROJ. ECONÔMICOS", "ch": "60h", "preReqs": []}];
-  const codigoToNome = {"7101006": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "7101115": "INFORMÁTICA BÁSICA", "7102016": "BIOLOGIA DO SEMIARIDO", "7102017": "HIDROLOGIA E CLIMATOLOGIA DO SEMIARIDO", "7102018": "INTRODUÇÃO À AGROECOLOGIA", "7102019": "SOLOS DO SEMIARIDO", "7105030": "DES SUST", "7105036": "LAB PESQ E EXT EM DES RURAL I", "7101051": "AÇÃO COLETIVA", "7102033": "METODOLOGIA DA PESQUISA E SEMINARIOS", "7102035": "ECOLOGIA DO SEMIARIDO", "7102036": "ANATO-FISIOLOGIA VEGETAL", "7102037": "MICROBIOLOGIA GERAL E DO SOLO", "7102038": "ENTOMOLOGIA GERAL", "7102039": "TOPOGRAFIA E GEOPROCESSAMENTO", "7103032": "QUÍMICA ANALÍTICA APLICADA", "7102034": "FUNDAMENTOS DA PESQUISA AMBIENTAL", "7102056": "HORTICULTURA BASICA", "7102057": "ZOOTECNIA APLICADA", "7102059": "MANEJO AGROEC DE DOENCAS DE PLANTAS", "7102060": "MANEJO AGROECOLOGICO DE PRAGAS", "7102061": "PEDOLOGIA E CLASSIFICACAO DOS SOLOS", "7102062": "HIDRAULICA", "7105050": "HISTÓRIA SOCIAL DO CAMPESINATO", "7102058": "IMPACTOS E RECUP DE AREAS DEGRADADAS", "7102063": "AGROECOLOGIA", "7102082": "AGROEC APLIC AO CULTIVO DE OLERICOLAS", "7102083": "AGROECOLOGIA ANIMAL", "7102084": "IRRIGACAO E DRENAGEM", "7102085": "AGROEC APLIC AO CULTIVO DE FRUTIFERAS", "7102087": "LAB DE PROD DE DEFENSIVOS AGROECOLOGICOS", "7102086": "AGROEC APLIC AO CULT DE PLANTAS ALIMENT", "7102109": "USO SUSTENTAVEL DA BIODIVERSIDADE", "7102111": "CONSTRUÇÕES E MÁQUINAS RURAIS", "7102112": "LAB DE DIAGNOSE E USO DO SOLO", "7103110": "TECNOLOGIA DE ALIMENTOS", "7106127": "DIREITO AGRARIO E AMBIENTAL", "7102094": "ADMINISTRAÇÃO E EMPREENDEDORISMO", "7102235": "CERTIFICAÇÃO DE SISTEMAS AGROECOLÓGICOS", "7102236": "LABORATÓRIO DE PROC DE PROD AGROPECUÁRIO", "7102237": "ETOLOGIA", "7102238": "ELABORAÇÃO E AVAL. DE PROJ. ECONÔMICOS", "7102088": "CAPRINOCULTURA LEITEIRA", "7102115": "TECNOLOGIA DE SEMENTES", "7102116": "MATERIA ORGANICA E COMPOSTAGEM", "7102117": "NUTRICAO MINERAL DE PLANTAS", "7106106": "ECONOMIA SOLIDARIA E AUTOGESTAO", "7102022": "BOTANICA", "7102242": "SISTEMAS AGROFLORESTAIS NO SEMIÁRIDO", "7102282": "MANEJO AGROEC E CONSERVACAO DOS SOLOS", "7102293": "MEIO AMBIENTE E TURISMO AGROECOLOGICO", "7102294": "ESTATÍSTICA EXPERIMENTAL", "7102298": "EXTENSAO RURAL", "7102299": "MANEJO DE BACIAS HIDROGRAFICAS", "7102303": "APICULTURA", "7102304": "BIOCONTROLE DE DOENCAS DE PLANTAS", "7102305": "DESENVOLVIMENTO RURAL E SUSTENTABILIDADE", "7102306": "TECNOLOGIA SOCIAIS PARA DESENV SUSTENTAV", "7102307": "AGRICULTURA ORGÂNICA"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "7101006", "nome": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7101115", "nome": "INFORMÁTICA BÁSICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102016", "nome": "BIOLOGIA DO SEMIARIDO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102017", "nome": "HIDROLOGIA E CLIMATOLOGIA DO SEMIARIDO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102018", "nome": "INTRODUÇÃO À AGROECOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102019", "nome": "SOLOS DO SEMIARIDO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7105030", "nome": "DES SUST, IDENTIDADES E TERRITORIALIDADE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7105036", "nome": "LAB PESQ E EXT EM DES RURAL I", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7101051", "nome": "AÇÃO COLETIVA,ASSOCIAT E COOPERATIVISMO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102033", "nome": "METODOLOGIA DA PESQUISA E SEMINARIOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7101006"]}, {"nivel": "2º Nível", "codigo": "7102035", "nome": "ECOLOGIA DO SEMIARIDO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102016"]}, {"nivel": "2º Nível", "codigo": "7102036", "nome": "ANATO-FISIOLOGIA VEGETAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102037", "nome": "MICROBIOLOGIA GERAL E DO SOLO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102038", "nome": "ENTOMOLOGIA GERAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102016"]}, {"nivel": "2º Nível", "codigo": "7102039", "nome": "TOPOGRAFIA E GEOPROCESSAMENTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7103032", "nome": "QUÍMICA ANALÍTICA APLICADA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "7102034", "nome": "FUNDAMENTOS DA PESQUISA AMBIENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "7102056", "nome": "HORTICULTURA BASICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102036"]}, {"nivel": "3º Nível", "codigo": "7102057", "nome": "ZOOTECNIA APLICADA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "7102059", "nome": "MANEJO AGROEC DE DOENCAS DE PLANTAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102037"]}, {"nivel": "3º Nível", "codigo": "7102060", "nome": "MANEJO AGROECOLOGICO DE PRAGAS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102038"]}, {"nivel": "3º Nível", "codigo": "7102061", "nome": "PEDOLOGIA E CLASSIFICACAO DOS SOLOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102019"]}, {"nivel": "3º Nível", "codigo": "7102062", "nome": "HIDRAULICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102017"]}, {"nivel": "3º Nível", "codigo": "7105050", "nome": "HISTÓRIA SOCIAL DO CAMPESINATO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "7102058", "nome": "IMPACTOS E RECUP DE AREAS DEGRADADAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102035"]}, {"nivel": "4º Nível", "codigo": "7102063", "nome": "AGROECOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102018"]}, {"nivel": "4º Nível", "codigo": "7102082", "nome": "AGROEC APLIC AO CULTIVO DE OLERICOLAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102056"]}, {"nivel": "4º Nível", "codigo": "7102083", "nome": "AGROECOLOGIA ANIMAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102057"]}, {"nivel": "4º Nível", "codigo": "7102084", "nome": "IRRIGACAO E DRENAGEM", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102062"]}, {"nivel": "4º Nível", "codigo": "7102085", "nome": "AGROEC APLIC AO CULTIVO DE FRUTIFERAS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102056"]}, {"nivel": "4º Nível", "codigo": "7102087", "nome": "LAB DE PROD DE DEFENSIVOS AGROECOLOGICOS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102059", "7102060"]}, {"nivel": "5º Nível", "codigo": "7102086", "nome": "AGROEC APLIC AO CULT DE PLANTAS ALIMENT", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102056"]}, {"nivel": "5º Nível", "codigo": "7102109", "nome": "USO SUSTENTAVEL DA BIODIVERSIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "7102111", "nome": "CONSTRUÇÕES E MÁQUINAS RURAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102039"]}, {"nivel": "5º Nível", "codigo": "7102112", "nome": "LAB DE DIAGNOSE E USO DO SOLO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102061"]}, {"nivel": "5º Nível", "codigo": "7103110", "nome": "TECNOLOGIA DE ALIMENTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "7106127", "nome": "DIREITO AGRARIO E AMBIENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "7102094", "nome": "ADMINISTRAÇÃO E EMPREENDEDORISMO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "7102235", "nome": "CERTIFICAÇÃO DE SISTEMAS AGROECOLÓGICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102085", "7103110", "7102082", "7102086", "7102087"]}, {"nivel": "6º Nível", "codigo": "7102236", "nome": "LABORATÓRIO DE PROC DE PROD AGROPECUÁRIO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102057"]}, {"nivel": "6º Nível", "codigo": "7102237", "nome": "ETOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "7102238", "nome": "ELABORAÇÃO E AVAL. DE PROJ. ECONÔMICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "7102256", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO", "ch": "150\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "7º Nível", "codigo": "7102257", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "7º Nível", "codigo": "7102258", "nome": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "ch": "240\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}];
+  const codigoToNome = {"7101006": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "7101115": "INFORMÁTICA BÁSICA", "7102016": "BIOLOGIA DO SEMIARIDO", "7102017": "HIDROLOGIA E CLIMATOLOGIA DO SEMIARIDO", "7102018": "INTRODUÇÃO À AGROECOLOGIA", "7102019": "SOLOS DO SEMIARIDO", "7105030": "DES SUST, IDENTIDADES E TERRITORIALIDADE", "7105036": "LAB PESQ E EXT EM DES RURAL I", "7101051": "AÇÃO COLETIVA,ASSOCIAT E COOPERATIVISMO", "7102033": "METODOLOGIA DA PESQUISA E SEMINARIOS", "7102035": "ECOLOGIA DO SEMIARIDO", "7102036": "ANATO-FISIOLOGIA VEGETAL", "7102037": "MICROBIOLOGIA GERAL E DO SOLO", "7102038": "ENTOMOLOGIA GERAL", "7102039": "TOPOGRAFIA E GEOPROCESSAMENTO", "7103032": "QUÍMICA ANALÍTICA APLICADA", "7102034": "FUNDAMENTOS DA PESQUISA AMBIENTAL", "7102056": "HORTICULTURA BASICA", "7102057": "ZOOTECNIA APLICADA", "7102059": "MANEJO AGROEC DE DOENCAS DE PLANTAS", "7102060": "MANEJO AGROECOLOGICO DE PRAGAS", "7102061": "PEDOLOGIA E CLASSIFICACAO DOS SOLOS", "7102062": "HIDRAULICA", "7105050": "HISTÓRIA SOCIAL DO CAMPESINATO", "7102058": "IMPACTOS E RECUP DE AREAS DEGRADADAS", "7102063": "AGROECOLOGIA", "7102082": "AGROEC APLIC AO CULTIVO DE OLERICOLAS", "7102083": "AGROECOLOGIA ANIMAL", "7102084": "IRRIGACAO E DRENAGEM", "7102085": "AGROEC APLIC AO CULTIVO DE FRUTIFERAS", "7102087": "LAB DE PROD DE DEFENSIVOS AGROECOLOGICOS", "7102086": "AGROEC APLIC AO CULT DE PLANTAS ALIMENT", "7102109": "USO SUSTENTAVEL DA BIODIVERSIDADE", "7102111": "CONSTRUÇÕES E MÁQUINAS RURAIS", "7102112": "LAB DE DIAGNOSE E USO DO SOLO", "7103110": "TECNOLOGIA DE ALIMENTOS", "7106127": "DIREITO AGRARIO E AMBIENTAL", "7102094": "ADMINISTRAÇÃO E EMPREENDEDORISMO", "7102235": "CERTIFICAÇÃO DE SISTEMAS AGROECOLÓGICOS", "7102236": "LABORATÓRIO DE PROC DE PROD AGROPECUÁRIO", "7102237": "ETOLOGIA", "7102238": "ELABORAÇÃO E AVAL. DE PROJ. ECONÔMICOS", "7102256": "ESTAGIO CURRICULAR SUPERVISIONADO", "7102257": "TRABALHO DE CONCLUSAO DE CURSO", "7102258": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "7102088": "CAPRINOCULTURA LEITEIRA", "7102115": "TECNOLOGIA DE SEMENTES", "7102116": "MATERIA ORGANICA E COMPOSTAGEM", "7102117": "NUTRICAO MINERAL DE PLANTAS", "7106106": "ECONOMIA SOLIDARIA E AUTOGESTAO", "7102022": "BOTANICA", "7102242": "SISTEMAS AGROFLORESTAIS NO SEMIÁRIDO", "7102282": "MANEJO AGROEC E CONSERVACAO DOS SOLOS", "7102293": "MEIO AMBIENTE E TURISMO AGROECOLOGICO", "7102294": "ESTATÍSTICA EXPERIMENTAL", "7102298": "EXTENSAO RURAL", "7102299": "MANEJO DE BACIAS HIDROGRAFICAS", "7102303": "APICULTURA", "7102304": "BIOCONTROLE DE DOENCAS DE PLANTAS", "7102305": "DESENVOLVIMENTO RURAL E SUSTENTABILIDADE", "7102306": "TECNOLOGIA SOCIAIS PARA DESENV SUSTENTAV", "7102307": "AGRICULTURA ORGÂNICA"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -690,7 +693,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

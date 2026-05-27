@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,272 +404,272 @@
           <tr>
               <td>9101178</td>
               <td>DESENVOLVIMENTO SUSTENTAVEL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101196</td>
               <td>PRINCIPIOS E ESTRAT DA EDUC AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101199</td>
               <td>SOCIOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101179</td>
               <td>MICROBIOLOGIA AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CIENCIAS DO AMBIENTE</td>
               <td></td>
           </tr>
           <tr>
               <td>9101207</td>
               <td>FENOMENOS DE TRANSPORTE II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FENOMENOS DE TRANSPORTE I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101209</td>
               <td>FÍSICA IV</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FÍSICA III</td>
               <td></td>
           </tr>
           <tr>
               <td>9101217</td>
               <td>ECONOMIA AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ECONOMIA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101238</td>
               <td>GERENCIAMENTO DE RESIDUOS SOLIDOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CIENCIAS DO AMBIENTE</td>
               <td></td>
           </tr>
           <tr>
               <td>9101241</td>
               <td>SOCIOLOGIA AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101248</td>
               <td>PLANEJAMENTO E GESTAO DE REC HIDRICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GEOMETRIA ANALÍTICA E ÁLGEBRA LINEAR, CALCULO III, HIDROLOGIA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101249</td>
               <td>HIDROGEOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>HIDROLOGIA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101251</td>
               <td>AVALIAÇÃO DE IMPACTOS AMBIENTAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CIENCIAS DO AMBIENTE, MECANICA DOS SOLOS, HIDROLOGIA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101266</td>
               <td>REUSO DE ÁGUA EM EDIFICAÇÕES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>HIDROLOGIA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101290</td>
               <td>TEEC(INTROD AO DES ASSIST POR COMPUTADOR</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>DESENHO BASICO E GEOMETRIA DESCRITIVA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101294</td>
               <td>TEEC(GESTAO SUST NA CONST DE EDIFICIOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101295</td>
               <td>TEEC(MATERIAIS DE CONSTRUCAO ALTERNATIVO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101296</td>
               <td>TE(GERENCIAMENTO DE PROJETOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>INTRODUÇÃO À ADMINISTRAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101302</td>
               <td>TEEC(TOP AVANC.EM DES ASSIST POR COMPUT)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEEC(INTROD AO DES ASSIST POR COMPUTADOR</td>
               <td></td>
           </tr>
           <tr>
               <td>9101313</td>
               <td>LINGUA BRASILEIRA DE SINAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101316</td>
               <td>TEEC(INT.A GESTAO POR PLAN.ELETRONICAS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>INTRODUÇÃO À PROGRAMAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101317</td>
               <td>TEEC(PLANEJAMENTO DE EXPERIMENTOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROBABILIDADE E ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101320</td>
               <td>ENGENHARIA ECONOMICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ECONOMIA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101321</td>
               <td>PAVIMENTACAO</td>
-              <td>90h</td>
-              <td>6.0</td>
+              <td>90"h</td>
+              <td>6"</td>
               <td>MECANICA DOS SOLOS, MATERIAIS DE CONSTRUCAO, ESTRADAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101323</td>
               <td>OBRAS DE TERRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECANICA DOS SOLOS, HIDROLOGIA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101324</td>
               <td>TEEC(ENGENHARIA DIAGNOSTICA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101337</td>
               <td>TEEC(TOP.AVANCADOS EM MECANICA DOS SOLOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECANICA DOS SOLOS, FUNDACOES</td>
               <td></td>
           </tr>
           <tr>
               <td>9101338</td>
               <td>TEEC(PLANEJ. E GERENCIAMENTO DE OBRAS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>INTRODUÇÃO À PROGRAMAÇÃO, INTRODUÇÃO À ADMINISTRAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>9101339</td>
               <td>TEEC(NTRODUCAO AO ESTUDO DAS FERROVIAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ESTRADAS, MECANICA DOS SOLOS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101340</td>
               <td>TEEC(ESTABILIDADE GLOBAL DE EDIFÍCIOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA DAS ESTRUTURAS I</td>
               <td></td>
           </tr>
           <tr>
               <td>9101343</td>
               <td>TEEC(CIÊNCIAS DO AMBIENTE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>9101345</td>
               <td>TEEC(ENERGIAS RENOVÁVEIS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INSTALACOES ELETRICAS, INSTALACOES HIDRAULICAS E SANITARIAS</td>
               <td></td>
           </tr>
           <tr>
               <td>9101347</td>
               <td>TEEC(SIMULAÇÃO HIDROLÓGICA:HEC-HMS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>HIDROLOGIA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101348</td>
               <td>TEEC(SIMULAÇÃO HIDRÁULICA:EPANET)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>HIDRAULICA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>9101352</td>
               <td>TEEC(NOÇÕES SOBRE DOMÓTICA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>INSTALACOES ELETRICAS, INTRODUÇÃO À PROGRAMAÇÃO</td>
               <td></td>
           </tr>
@@ -713,8 +716,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "9101145", "nome": "CALCULO I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101147", "nome": "GEOMETRIA ANALÍTICA E ÁLGEBRA LINEAR", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101164", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101276", "nome": "DESENHO BASICO E GEOMETRIA DESCRITIVA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101277", "nome": "INTRODUÇÃO À ENGENHARIA CIVIL", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101278", "nome": "INTRODUÇÃO À PROGRAMAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101146", "nome": "FÍSICA I", "ch": "60h", "preReqs": ["9101145"]}, {"nivel": "2º Nível", "codigo": "9101154", "nome": "CALCULO II", "ch": "60h", "preReqs": ["9101145"]}, {"nivel": "2º Nível", "codigo": "9101157", "nome": "GEOLOGIA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101279", "nome": "PROBABILIDADE E ESTATÍSTICA", "ch": "90h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101283", "nome": "DESENHO TECNICO", "ch": "60h", "preReqs": ["9101276"]}, {"nivel": "3º Nível", "codigo": "9101114", "nome": "TOPOGRAFIA", "ch": "60h", "preReqs": ["9101283"]}, {"nivel": "3º Nível", "codigo": "9101150", "nome": "METODOLOGIA CIENTÍFICA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101156", "nome": "FÍSICA II", "ch": "60h", "preReqs": ["9101146"]}, {"nivel": "3º Nível", "codigo": "9101162", "nome": "CALCULO III", "ch": "60h", "preReqs": ["9101154", "9101147"]}, {"nivel": "3º Nível", "codigo": "9101280", "nome": "CIENCIAS DO AMBIENTE", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101281", "nome": "INTRODUÇÃO À ADMINISTRAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101282", "nome": "MECANICA GERAL I", "ch": "60h", "preReqs": ["9101146", "9101147"]}, {"nivel": "4º Nível", "codigo": "9101173", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["9101162"]}, {"nivel": "4º Nível", "codigo": "9101175", "nome": "FÍSICA III", "ch": "60h", "preReqs": ["9101156", "9101147"]}, {"nivel": "4º Nível", "codigo": "9101240", "nome": "GEOPROCESSAMENTO", "ch": "60h", "preReqs": ["9101114"]}, {"nivel": "4º Nível", "codigo": "9101286", "nome": "MECANICA GERAL II", "ch": "60h", "preReqs": ["9101282"]}, {"nivel": "4º Nível", "codigo": "9101287", "nome": "ASPECTOS JURIDICOS DE ENGENHARIA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "9101288", "nome": "ECONOMIA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "9101182", "nome": "CALCULO NUMERICO", "ch": "60h", "preReqs": ["9101154", "9101278"]}, {"nivel": "5º Nível", "codigo": "9101183", "nome": "FENOMENOS DE TRANSPORTE I", "ch": "60h", "preReqs": ["9101156"]}, {"nivel": "5º Nível", "codigo": "9101184", "nome": "LABORATÓRIO DE FÍSICA", "ch": "60h", "preReqs": ["9101175"]}, {"nivel": "5º Nível", "codigo": "9101291", "nome": "INSTALACOES ELETRICAS", "ch": "60h", "preReqs": ["9101175"]}, {"nivel": "5º Nível", "codigo": "9101292", "nome": "PLANEJAMENTO DE SISTEMAS DE TRANSPORTES", "ch": "60h", "preReqs": ["9101279"]}, {"nivel": "5º Nível", "codigo": "9101293", "nome": "RESISTENCIA DOS MATERIAIS I", "ch": "60h", "preReqs": ["9101282"]}, {"nivel": "6º Nível", "codigo": "9101198", "nome": "HIDRAULICA APLICADA", "ch": "60h", "preReqs": ["9101183"]}, {"nivel": "6º Nível", "codigo": "9101303", "nome": "ESTRADAS", "ch": "60h", "preReqs": ["9101114"]}, {"nivel": "6º Nível", "codigo": "9101305", "nome": "HIDRAULICA EXPERIMENTAL", "ch": "30h", "preReqs": ["9101183"]}, {"nivel": "6º Nível", "codigo": "9101306", "nome": "MATERIAIS DE CONSTRUCAO", "ch": "90h", "preReqs": ["9101164"]}, {"nivel": "6º Nível", "codigo": "9101307", "nome": "MECANICA DOS SOLOS", "ch": "60h", "preReqs": ["9101157", "9101293"]}, {"nivel": "6º Nível", "codigo": "9101308", "nome": "MECANICA DOS SOLOS EXPERIMENTAL", "ch": "30h", "preReqs": ["9101157", "9101293"]}, {"nivel": "6º Nível", "codigo": "9101309", "nome": "RESISTENCIA DOS MATERIAIS II", "ch": "60h", "preReqs": ["9101293"]}, {"nivel": "7º Nível", "codigo": "9101222", "nome": "HIDROLOGIA APLICADA", "ch": "60h", "preReqs": ["9101279"]}, {"nivel": "7º Nível", "codigo": "9101254", "nome": "SEGURANCA DO TRABALHO", "ch": "30h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "9101264", "nome": "SISTEMAS DE ABASTECIMENTO DE ÁGUA", "ch": "60h", "preReqs": ["9101198"]}, {"nivel": "7º Nível", "codigo": "9101310", "nome": "ELEMENTOS DE ARQUITETURA", "ch": "60h", "preReqs": ["9101283"]}, {"nivel": "7º Nível", "codigo": "9101318", "nome": "FUNDACOES", "ch": "60h", "preReqs": ["9101307"]}, {"nivel": "7º Nível", "codigo": "9101319", "nome": "TEORIA DAS ESTRUTURAS I", "ch": "60h", "preReqs": ["9101309"]}, {"nivel": "8º Nível", "codigo": "9101328", "nome": "ESTRUTURAS METALICAS E DE MADEIRA", "ch": "60h", "preReqs": ["9101319", "9101306"]}, {"nivel": "8º Nível", "codigo": "9101329", "nome": "INSTALACOES HIDRAULICAS E SANITARIAS", "ch": "60h", "preReqs": ["9101198"]}, {"nivel": "8º Nível", "codigo": "9101330", "nome": "SISTEMAS DE ESGOTAMENTO SANITARIO", "ch": "60h", "preReqs": ["9101280", "9101198"]}, {"nivel": "8º Nível", "codigo": "9101331", "nome": "TEORIAS DAS ESTRUTURAS II", "ch": "60h", "preReqs": ["9101319"]}, {"nivel": "9º Nível", "codigo": "9101332", "nome": "CONSTRUCOES DE EDIFICIOS", "ch": "90h", "preReqs": ["9101306", "9101291", "9101329"]}, {"nivel": "9º Nível", "codigo": "9101333", "nome": "ESTRUTURAS DE CONCRETO ARMADO I", "ch": "90h", "preReqs": ["9101306", "9101319"]}, {"nivel": "9º Nível", "codigo": "9101334", "nome": "SISTEMAS DE DRENAGEM URBANA", "ch": "60h", "preReqs": ["9101198", "9101222"]}];
-  const codigoToNome = {"9101145": "CALCULO I", "9101147": "GEOMETRIA ANALÍTICA E ÁLGEBRA LINEAR", "9101164": "QUÍMICA GERAL", "9101276": "DESENHO BASICO E GEOMETRIA DESCRITIVA", "9101277": "INTRODUÇÃO À ENGENHARIA CIVIL", "9101278": "INTRODUÇÃO À PROGRAMAÇÃO", "9101146": "FÍSICA I", "9101154": "CALCULO II", "9101157": "GEOLOGIA GERAL", "9101279": "PROBABILIDADE E ESTATÍSTICA", "9101283": "DESENHO TECNICO", "9101114": "TOPOGRAFIA", "9101150": "METODOLOGIA CIENTÍFICA", "9101156": "FÍSICA II", "9101162": "CALCULO III", "9101280": "CIENCIAS DO AMBIENTE", "9101281": "INTRODUÇÃO À ADMINISTRAÇÃO", "9101282": "MECANICA GERAL I", "9101173": "EQUACOES DIFERENCIAIS LINEARES", "9101175": "FÍSICA III", "9101240": "GEOPROCESSAMENTO", "9101286": "MECANICA GERAL II", "9101287": "ASPECTOS JURIDICOS DE ENGENHARIA", "9101288": "ECONOMIA", "9101182": "CALCULO NUMERICO", "9101183": "FENOMENOS DE TRANSPORTE I", "9101184": "LABORATÓRIO DE FÍSICA", "9101291": "INSTALACOES ELETRICAS", "9101292": "PLANEJAMENTO DE SISTEMAS DE TRANSPORTES", "9101293": "RESISTENCIA DOS MATERIAIS I", "9101198": "HIDRAULICA APLICADA", "9101303": "ESTRADAS", "9101305": "HIDRAULICA EXPERIMENTAL", "9101306": "MATERIAIS DE CONSTRUCAO", "9101307": "MECANICA DOS SOLOS", "9101308": "MECANICA DOS SOLOS EXPERIMENTAL", "9101309": "RESISTENCIA DOS MATERIAIS II", "9101222": "HIDROLOGIA APLICADA", "9101254": "SEGURANCA DO TRABALHO", "9101264": "SISTEMAS DE ABASTECIMENTO DE ÁGUA", "9101310": "ELEMENTOS DE ARQUITETURA", "9101318": "FUNDACOES", "9101319": "TEORIA DAS ESTRUTURAS I", "9101328": "ESTRUTURAS METALICAS E DE MADEIRA", "9101329": "INSTALACOES HIDRAULICAS E SANITARIAS", "9101330": "SISTEMAS DE ESGOTAMENTO SANITARIO", "9101331": "TEORIAS DAS ESTRUTURAS II", "9101332": "CONSTRUCOES DE EDIFICIOS", "9101333": "ESTRUTURAS DE CONCRETO ARMADO I", "9101334": "SISTEMAS DE DRENAGEM URBANA", "9101178": "DESENVOLVIMENTO SUSTENTAVEL", "9101196": "PRINCIPIOS E ESTRAT DA EDUC AMBIENTAL", "9101199": "SOCIOLOGIA", "9101179": "MICROBIOLOGIA AMBIENTAL", "9101207": "FENOMENOS DE TRANSPORTE II", "9101209": "FÍSICA IV", "9101217": "ECONOMIA AMBIENTAL", "9101238": "GERENCIAMENTO DE RESIDUOS SOLIDOS", "9101241": "SOCIOLOGIA AMBIENTAL", "9101248": "PLANEJAMENTO E GESTAO DE REC HIDRICOS", "9101249": "HIDROGEOLOGIA", "9101251": "AVALIAÇÃO DE IMPACTOS AMBIENTAIS", "9101266": "REUSO DE ÁGUA EM EDIFICAÇÕES", "9101290": "TEEC(INTROD AO DES ASSIST POR COMPUTADOR", "9101294": "TEEC(GESTAO SUST NA CONST DE EDIFICIOS)", "9101295": "TEEC(MATERIAIS DE CONSTRUCAO ALTERNATIVO", "9101296": "TE(GERENCIAMENTO DE PROJETOS)", "9101302": "TEEC(TOP AVANC.EM DES ASSIST POR COMPUT)", "9101313": "LINGUA BRASILEIRA DE SINAIS", "9101316": "TEEC(INT.A GESTAO POR PLAN.ELETRONICAS)", "9101317": "TEEC(PLANEJAMENTO DE EXPERIMENTOS)", "9101320": "ENGENHARIA ECONOMICA", "9101321": "PAVIMENTACAO", "9101323": "OBRAS DE TERRA", "9101324": "TEEC(ENGENHARIA DIAGNOSTICA)", "9101337": "TEEC(TOP.AVANCADOS EM MECANICA DOS SOLOS", "9101338": "TEEC(PLANEJ. E GERENCIAMENTO DE OBRAS)", "9101339": "TEEC(NTRODUCAO AO ESTUDO DAS FERROVIAS", "9101340": "TEEC(ESTABILIDADE GLOBAL DE EDIFÍCIOS)", "9101343": "TEEC(CIÊNCIAS DO AMBIENTE)", "9101345": "TEEC(ENERGIAS RENOVÁVEIS)", "9101347": "TEEC(SIMULAÇÃO HIDROLÓGICA:HEC-HMS)", "9101348": "TEEC(SIMULAÇÃO HIDRÁULICA:EPANET)", "9101352": "TEEC(NOÇÕES SOBRE DOMÓTICA)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "9101145", "nome": "CALCULO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101147", "nome": "GEOMETRIA ANALÍTICA E ÁLGEBRA LINEAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101164", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101276", "nome": "DESENHO BASICO E GEOMETRIA DESCRITIVA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101277", "nome": "INTRODUÇÃO À ENGENHARIA CIVIL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "9101278", "nome": "INTRODUÇÃO À PROGRAMAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101146", "nome": "FÍSICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101145"]}, {"nivel": "2º Nível", "codigo": "9101154", "nome": "CALCULO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101145"]}, {"nivel": "2º Nível", "codigo": "9101157", "nome": "GEOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101279", "nome": "PROBABILIDADE E ESTATÍSTICA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "9101283", "nome": "DESENHO TECNICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101276"]}, {"nivel": "3º Nível", "codigo": "9101114", "nome": "TOPOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101283"]}, {"nivel": "3º Nível", "codigo": "9101150", "nome": "METODOLOGIA CIENTÍFICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101156", "nome": "FÍSICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101146"]}, {"nivel": "3º Nível", "codigo": "9101162", "nome": "CALCULO III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101154", "9101147"]}, {"nivel": "3º Nível", "codigo": "9101280", "nome": "CIENCIAS DO AMBIENTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101281", "nome": "INTRODUÇÃO À ADMINISTRAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "9101282", "nome": "MECANICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101146", "9101147"]}, {"nivel": "4º Nível", "codigo": "9101173", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101162"]}, {"nivel": "4º Nível", "codigo": "9101175", "nome": "FÍSICA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101156", "9101147"]}, {"nivel": "4º Nível", "codigo": "9101240", "nome": "GEOPROCESSAMENTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101114"]}, {"nivel": "4º Nível", "codigo": "9101286", "nome": "MECANICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101282"]}, {"nivel": "4º Nível", "codigo": "9101287", "nome": "ASPECTOS JURIDICOS DE ENGENHARIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "9101288", "nome": "ECONOMIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "9101182", "nome": "CALCULO NUMERICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101154", "9101278"]}, {"nivel": "5º Nível", "codigo": "9101183", "nome": "FENOMENOS DE TRANSPORTE I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101156"]}, {"nivel": "5º Nível", "codigo": "9101184", "nome": "LABORATÓRIO DE FÍSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101175"]}, {"nivel": "5º Nível", "codigo": "9101291", "nome": "INSTALACOES ELETRICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101175"]}, {"nivel": "5º Nível", "codigo": "9101292", "nome": "PLANEJAMENTO DE SISTEMAS DE TRANSPORTES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101279"]}, {"nivel": "5º Nível", "codigo": "9101293", "nome": "RESISTENCIA DOS MATERIAIS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101282"]}, {"nivel": "6º Nível", "codigo": "9101198", "nome": "HIDRAULICA APLICADA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101183"]}, {"nivel": "6º Nível", "codigo": "9101303", "nome": "ESTRADAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101114"]}, {"nivel": "6º Nível", "codigo": "9101305", "nome": "HIDRAULICA EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101183"]}, {"nivel": "6º Nível", "codigo": "9101306", "nome": "MATERIAIS DE CONSTRUCAO", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101164"]}, {"nivel": "6º Nível", "codigo": "9101307", "nome": "MECANICA DOS SOLOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101157", "9101293"]}, {"nivel": "6º Nível", "codigo": "9101308", "nome": "MECANICA DOS SOLOS EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101157", "9101293"]}, {"nivel": "6º Nível", "codigo": "9101309", "nome": "RESISTENCIA DOS MATERIAIS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101293"]}, {"nivel": "7º Nível", "codigo": "9101222", "nome": "HIDROLOGIA APLICADA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101279"]}, {"nivel": "7º Nível", "codigo": "9101254", "nome": "SEGURANCA DO TRABALHO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "9101264", "nome": "SISTEMAS DE ABASTECIMENTO DE ÁGUA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101198"]}, {"nivel": "7º Nível", "codigo": "9101310", "nome": "ELEMENTOS DE ARQUITETURA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101283"]}, {"nivel": "7º Nível", "codigo": "9101318", "nome": "FUNDACOES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101307"]}, {"nivel": "7º Nível", "codigo": "9101319", "nome": "TEORIA DAS ESTRUTURAS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101309"]}, {"nivel": "8º Nível", "codigo": "9101328", "nome": "ESTRUTURAS METALICAS E DE MADEIRA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101319", "9101306"]}, {"nivel": "8º Nível", "codigo": "9101329", "nome": "INSTALACOES HIDRAULICAS E SANITARIAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101198"]}, {"nivel": "8º Nível", "codigo": "9101330", "nome": "SISTEMAS DE ESGOTAMENTO SANITARIO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101280", "9101198"]}, {"nivel": "8º Nível", "codigo": "9101331", "nome": "TEORIAS DAS ESTRUTURAS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101319"]}, {"nivel": "9º Nível", "codigo": "9101326", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "9º Nível", "codigo": "9101332", "nome": "CONSTRUCOES DE EDIFICIOS", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101306", "9101291", "9101329"]}, {"nivel": "9º Nível", "codigo": "9101333", "nome": "ESTRUTURAS DE CONCRETO ARMADO I", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101306", "9101319"]}, {"nivel": "9º Nível", "codigo": "9101334", "nome": "SISTEMAS DE DRENAGEM URBANA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["9101198", "9101222"]}, {"nivel": "10º Nível", "codigo": "9101327", "nome": "ESTAGIO SUPERVISIONADO", "ch": "180\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}];
+  const codigoToNome = {"9101145": "CALCULO I", "9101147": "GEOMETRIA ANALÍTICA E ÁLGEBRA LINEAR", "9101164": "QUÍMICA GERAL", "9101276": "DESENHO BASICO E GEOMETRIA DESCRITIVA", "9101277": "INTRODUÇÃO À ENGENHARIA CIVIL", "9101278": "INTRODUÇÃO À PROGRAMAÇÃO", "9101146": "FÍSICA I", "9101154": "CALCULO II", "9101157": "GEOLOGIA GERAL", "9101279": "PROBABILIDADE E ESTATÍSTICA", "9101283": "DESENHO TECNICO", "9101114": "TOPOGRAFIA", "9101150": "METODOLOGIA CIENTÍFICA", "9101156": "FÍSICA II", "9101162": "CALCULO III", "9101280": "CIENCIAS DO AMBIENTE", "9101281": "INTRODUÇÃO À ADMINISTRAÇÃO", "9101282": "MECANICA GERAL I", "9101173": "EQUACOES DIFERENCIAIS LINEARES", "9101175": "FÍSICA III", "9101240": "GEOPROCESSAMENTO", "9101286": "MECANICA GERAL II", "9101287": "ASPECTOS JURIDICOS DE ENGENHARIA", "9101288": "ECONOMIA", "9101182": "CALCULO NUMERICO", "9101183": "FENOMENOS DE TRANSPORTE I", "9101184": "LABORATÓRIO DE FÍSICA", "9101291": "INSTALACOES ELETRICAS", "9101292": "PLANEJAMENTO DE SISTEMAS DE TRANSPORTES", "9101293": "RESISTENCIA DOS MATERIAIS I", "9101198": "HIDRAULICA APLICADA", "9101303": "ESTRADAS", "9101305": "HIDRAULICA EXPERIMENTAL", "9101306": "MATERIAIS DE CONSTRUCAO", "9101307": "MECANICA DOS SOLOS", "9101308": "MECANICA DOS SOLOS EXPERIMENTAL", "9101309": "RESISTENCIA DOS MATERIAIS II", "9101222": "HIDROLOGIA APLICADA", "9101254": "SEGURANCA DO TRABALHO", "9101264": "SISTEMAS DE ABASTECIMENTO DE ÁGUA", "9101310": "ELEMENTOS DE ARQUITETURA", "9101318": "FUNDACOES", "9101319": "TEORIA DAS ESTRUTURAS I", "9101328": "ESTRUTURAS METALICAS E DE MADEIRA", "9101329": "INSTALACOES HIDRAULICAS E SANITARIAS", "9101330": "SISTEMAS DE ESGOTAMENTO SANITARIO", "9101331": "TEORIAS DAS ESTRUTURAS II", "9101326": "TRABALHO DE CONCLUSAO DE CURSO", "9101332": "CONSTRUCOES DE EDIFICIOS", "9101333": "ESTRUTURAS DE CONCRETO ARMADO I", "9101334": "SISTEMAS DE DRENAGEM URBANA", "9101327": "ESTAGIO SUPERVISIONADO", "9101178": "DESENVOLVIMENTO SUSTENTAVEL", "9101196": "PRINCIPIOS E ESTRAT DA EDUC AMBIENTAL", "9101199": "SOCIOLOGIA", "9101179": "MICROBIOLOGIA AMBIENTAL", "9101207": "FENOMENOS DE TRANSPORTE II", "9101209": "FÍSICA IV", "9101217": "ECONOMIA AMBIENTAL", "9101238": "GERENCIAMENTO DE RESIDUOS SOLIDOS", "9101241": "SOCIOLOGIA AMBIENTAL", "9101248": "PLANEJAMENTO E GESTAO DE REC HIDRICOS", "9101249": "HIDROGEOLOGIA", "9101251": "AVALIAÇÃO DE IMPACTOS AMBIENTAIS", "9101266": "REUSO DE ÁGUA EM EDIFICAÇÕES", "9101290": "TEEC(INTROD AO DES ASSIST POR COMPUTADOR", "9101294": "TEEC(GESTAO SUST NA CONST DE EDIFICIOS)", "9101295": "TEEC(MATERIAIS DE CONSTRUCAO ALTERNATIVO", "9101296": "TE(GERENCIAMENTO DE PROJETOS)", "9101302": "TEEC(TOP AVANC.EM DES ASSIST POR COMPUT)", "9101313": "LINGUA BRASILEIRA DE SINAIS", "9101316": "TEEC(INT.A GESTAO POR PLAN.ELETRONICAS)", "9101317": "TEEC(PLANEJAMENTO DE EXPERIMENTOS)", "9101320": "ENGENHARIA ECONOMICA", "9101321": "PAVIMENTACAO", "9101323": "OBRAS DE TERRA", "9101324": "TEEC(ENGENHARIA DIAGNOSTICA)", "9101337": "TEEC(TOP.AVANCADOS EM MECANICA DOS SOLOS", "9101338": "TEEC(PLANEJ. E GERENCIAMENTO DE OBRAS)", "9101339": "TEEC(NTRODUCAO AO ESTUDO DAS FERROVIAS", "9101340": "TEEC(ESTABILIDADE GLOBAL DE EDIFÍCIOS)", "9101343": "TEEC(CIÊNCIAS DO AMBIENTE)", "9101345": "TEEC(ENERGIAS RENOVÁVEIS)", "9101347": "TEEC(SIMULAÇÃO HIDROLÓGICA:HEC-HMS)", "9101348": "TEEC(SIMULAÇÃO HIDRÁULICA:EPANET)", "9101352": "TEEC(NOÇÕES SOBRE DOMÓTICA)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -826,7 +829,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,168 +404,168 @@
           <tr>
               <td>7101084</td>
               <td>LINGUA BRASILEIRA DE SINAIS-LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7105113</td>
               <td>ESTADO E POLITICAS PUBLICAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7105178</td>
               <td>SOCIOLOGIA URBANA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7105180</td>
               <td>SOCIOLOGIA AMBIENTAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106080</td>
               <td>DIREITO REGULATORIO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106085</td>
               <td>TEGP(ECONOMIA SOLIDARIA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106112</td>
               <td>CONTABILIDADE AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106179</td>
               <td>MARKETING NA GESTAO PUBLICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106181</td>
               <td>ECONOMIA RURAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106182</td>
               <td>FILOSOFIA POLITICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106184</td>
               <td>ECONOMIA POLÍTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106191</td>
               <td>TEGP(EMPREENDEDORISMO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106155</td>
               <td>DIREITO AMBIENTAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106156</td>
               <td>DIREITOS HUMANOS E DESENVOLV. HUMANO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106194</td>
               <td>TEGP(GESTAO DA SEGURANCA PUBLICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106195</td>
               <td>TEGP(ECONOMIA DO SETOR PUBLICO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106196</td>
               <td>TEGP(ECONOMIA SOLIDARIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106203</td>
               <td>TEGP(POLITICAS CULTURAIS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106204</td>
               <td>TEGP(MARKETING POLITICO E ELEITORAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106205</td>
               <td>TEGP(GOVERNANÇA E INOVAÇÃO NA ADM PUB)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7106206</td>
               <td>TEGP(GOVERNANÇA E INOVAÇÃO NA GEST PUB)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -609,8 +612,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "7101006", "nome": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7106023", "nome": "FUNDAMENTOS E TEORIAS DA ADMINISTRACAO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7106024", "nome": "INSTITUICOES DE DIREITO PUB E PRIVADO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7106025", "nome": "FUNDAMENTOS DA ECONOMIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7106026", "nome": "TEORIA POLITICA DO ESTADO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7101115", "nome": "INFORMÁTICA BÁSICA", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7106019", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7106027", "nome": "LAB DE PESQUISA EM POLITICAS PUBLICAS I", "ch": "30h", "preReqs": ["7106026"]}, {"nivel": "2º Nível", "codigo": "7106047", "nome": "ADMINISTRAÇÃO ESTRATÉGICA", "ch": "60h", "preReqs": ["7106023"]}, {"nivel": "2º Nível", "codigo": "7106048", "nome": "MATEMÁTICA FINANCEIRA", "ch": "60h", "preReqs": ["7106025"]}, {"nivel": "2º Nível", "codigo": "7106049", "nome": "DIREITO CONSTITUCIONAL", "ch": "60h", "preReqs": ["7106024"]}, {"nivel": "3º Nível", "codigo": "7106060", "nome": "GESTAO DE PESSOAS NA ADM PUBLICA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "7106061", "nome": "DIREITO ADMINISTRATIVO", "ch": "60h", "preReqs": ["7106049"]}, {"nivel": "3º Nível", "codigo": "7106062", "nome": "ESTATÍSTICA BÁSICA", "ch": "30h", "preReqs": ["7106048"]}, {"nivel": "3º Nível", "codigo": "7106063", "nome": "CONT INTERNOS E EXTERNOS DA GEST PUBLICA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "7106064", "nome": "ETICA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "7106065", "nome": "PADROES DE REL EXECUTIVO-LEGISLATIVO", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "7106056", "nome": "LOGISTICA E PATRIMONIO NA ADM PUBLICA", "ch": "60h", "preReqs": ["7106047"]}, {"nivel": "4º Nível", "codigo": "7106057", "nome": "FUNDAMENTOS DE SOCIOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "7106058", "nome": "TEORIA GERAL DO PROCESSO", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "7106059", "nome": "FEDERALISMO FISCAL", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "7106107", "nome": "GESTAO PUBLICA SUSTENTAVEL", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "7106108", "nome": "DIREITO TRIBUTARIO", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "7106109", "nome": "GESTAO DAS ORGAN DO TERCEIRO SETOR", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "7106110", "nome": "PROJETO DE PESQUISA", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "7106111", "nome": "AVALIAÇÃO DE POLÍTICAS PÚBLICAS", "ch": "60h", "preReqs": ["7106027"]}, {"nivel": "6º Nível", "codigo": "7106152", "nome": "ELAB DE PROJ E CAPT DE RECURS PUBLICOS", "ch": "60h", "preReqs": []}];
-  const codigoToNome = {"7101006": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "7106023": "FUNDAMENTOS E TEORIAS DA ADMINISTRACAO", "7106024": "INSTITUICOES DE DIREITO PUB E PRIVADO", "7106025": "FUNDAMENTOS DA ECONOMIA", "7106026": "TEORIA POLITICA DO ESTADO", "7101115": "INFORMÁTICA BÁSICA", "7106019": "METODOLOGIA CIENTÍFICA", "7106027": "LAB DE PESQUISA EM POLITICAS PUBLICAS I", "7106047": "ADMINISTRAÇÃO ESTRATÉGICA", "7106048": "MATEMÁTICA FINANCEIRA", "7106049": "DIREITO CONSTITUCIONAL", "7106060": "GESTAO DE PESSOAS NA ADM PUBLICA", "7106061": "DIREITO ADMINISTRATIVO", "7106062": "ESTATÍSTICA BÁSICA", "7106063": "CONT INTERNOS E EXTERNOS DA GEST PUBLICA", "7106064": "ETICA", "7106065": "PADROES DE REL EXECUTIVO-LEGISLATIVO", "7106056": "LOGISTICA E PATRIMONIO NA ADM PUBLICA", "7106057": "FUNDAMENTOS DE SOCIOLOGIA", "7106058": "TEORIA GERAL DO PROCESSO", "7106059": "FEDERALISMO FISCAL", "7106107": "GESTAO PUBLICA SUSTENTAVEL", "7106108": "DIREITO TRIBUTARIO", "7106109": "GESTAO DAS ORGAN DO TERCEIRO SETOR", "7106110": "PROJETO DE PESQUISA", "7106111": "AVALIAÇÃO DE POLÍTICAS PÚBLICAS", "7106152": "ELAB DE PROJ E CAPT DE RECURS PUBLICOS", "7101084": "LINGUA BRASILEIRA DE SINAIS-LIBRAS", "7105113": "ESTADO E POLITICAS PUBLICAS", "7105178": "SOCIOLOGIA URBANA", "7105180": "SOCIOLOGIA AMBIENTAL", "7106080": "DIREITO REGULATORIO", "7106085": "TEGP(ECONOMIA SOLIDARIA)", "7106112": "CONTABILIDADE AMBIENTAL", "7106179": "MARKETING NA GESTAO PUBLICA", "7106181": "ECONOMIA RURAL", "7106182": "FILOSOFIA POLITICA", "7106184": "ECONOMIA POLÍTICA", "7106191": "TEGP(EMPREENDEDORISMO)", "7106155": "DIREITO AMBIENTAL", "7106156": "DIREITOS HUMANOS E DESENVOLV. HUMANO", "7106194": "TEGP(GESTAO DA SEGURANCA PUBLICA)", "7106195": "TEGP(ECONOMIA DO SETOR PUBLICO)", "7106196": "TEGP(ECONOMIA SOLIDARIA)", "7106203": "TEGP(POLITICAS CULTURAIS)", "7106204": "TEGP(MARKETING POLITICO E ELEITORAL)", "7106205": "TEGP(GOVERNANÇA E INOVAÇÃO NA ADM PUB)", "7106206": "TEGP(GOVERNANÇA E INOVAÇÃO NA GEST PUB)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "7101006", "nome": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7106023", "nome": "FUNDAMENTOS E TEORIAS DA ADMINISTRACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7106024", "nome": "INSTITUICOES DE DIREITO PUB E PRIVADO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7106025", "nome": "FUNDAMENTOS DA ECONOMIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7106026", "nome": "TEORIA POLITICA DO ESTADO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7101115", "nome": "INFORMÁTICA BÁSICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7106019", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7106027", "nome": "LAB DE PESQUISA EM POLITICAS PUBLICAS I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7106026"]}, {"nivel": "2º Nível", "codigo": "7106047", "nome": "ADMINISTRAÇÃO ESTRATÉGICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7106023"]}, {"nivel": "2º Nível", "codigo": "7106048", "nome": "MATEMÁTICA FINANCEIRA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7106025"]}, {"nivel": "2º Nível", "codigo": "7106049", "nome": "DIREITO CONSTITUCIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7106024"]}, {"nivel": "3º Nível", "codigo": "7106060", "nome": "GESTAO DE PESSOAS NA ADM PUBLICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "7106061", "nome": "DIREITO ADMINISTRATIVO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7106049"]}, {"nivel": "3º Nível", "codigo": "7106062", "nome": "ESTATÍSTICA BÁSICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7106048"]}, {"nivel": "3º Nível", "codigo": "7106063", "nome": "CONT INTERNOS E EXTERNOS DA GEST PUBLICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "7106064", "nome": "ETICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "7106065", "nome": "PADROES DE REL EXECUTIVO-LEGISLATIVO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "7106056", "nome": "LOGISTICA E PATRIMONIO NA ADM PUBLICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7106047"]}, {"nivel": "4º Nível", "codigo": "7106057", "nome": "FUNDAMENTOS DE SOCIOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "7106058", "nome": "TEORIA GERAL DO PROCESSO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "7106059", "nome": "FEDERALISMO FISCAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "7106107", "nome": "GESTAO PUBLICA SUSTENTAVEL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "7106108", "nome": "DIREITO TRIBUTARIO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "7106109", "nome": "GESTAO DAS ORGAN DO TERCEIRO SETOR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "7106110", "nome": "PROJETO DE PESQUISA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "7106111", "nome": "AVALIAÇÃO DE POLÍTICAS PÚBLICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7106027"]}, {"nivel": "6º Nível", "codigo": "7106153", "nome": "TRABALHO DE CONCLUSÃO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["7106110"]}, {"nivel": "6º Nível", "codigo": "7106154", "nome": "ESTAGIO SUPERVISIONADO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["7106110"]}, {"nivel": "6º Nível", "codigo": "7106175", "nome": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "ch": "120\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "6º Nível", "codigo": "7106152", "nome": "ELAB DE PROJ E CAPT DE RECURS PUBLICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}];
+  const codigoToNome = {"7101006": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "7106023": "FUNDAMENTOS E TEORIAS DA ADMINISTRACAO", "7106024": "INSTITUICOES DE DIREITO PUB E PRIVADO", "7106025": "FUNDAMENTOS DA ECONOMIA", "7106026": "TEORIA POLITICA DO ESTADO", "7101115": "INFORMÁTICA BÁSICA", "7106019": "METODOLOGIA CIENTÍFICA", "7106027": "LAB DE PESQUISA EM POLITICAS PUBLICAS I", "7106047": "ADMINISTRAÇÃO ESTRATÉGICA", "7106048": "MATEMÁTICA FINANCEIRA", "7106049": "DIREITO CONSTITUCIONAL", "7106060": "GESTAO DE PESSOAS NA ADM PUBLICA", "7106061": "DIREITO ADMINISTRATIVO", "7106062": "ESTATÍSTICA BÁSICA", "7106063": "CONT INTERNOS E EXTERNOS DA GEST PUBLICA", "7106064": "ETICA", "7106065": "PADROES DE REL EXECUTIVO-LEGISLATIVO", "7106056": "LOGISTICA E PATRIMONIO NA ADM PUBLICA", "7106057": "FUNDAMENTOS DE SOCIOLOGIA", "7106058": "TEORIA GERAL DO PROCESSO", "7106059": "FEDERALISMO FISCAL", "7106107": "GESTAO PUBLICA SUSTENTAVEL", "7106108": "DIREITO TRIBUTARIO", "7106109": "GESTAO DAS ORGAN DO TERCEIRO SETOR", "7106110": "PROJETO DE PESQUISA", "7106111": "AVALIAÇÃO DE POLÍTICAS PÚBLICAS", "7106153": "TRABALHO DE CONCLUSÃO DE CURSO", "7106154": "ESTAGIO SUPERVISIONADO", "7106175": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "7106152": "ELAB DE PROJ E CAPT DE RECURS PUBLICOS", "7101084": "LINGUA BRASILEIRA DE SINAIS-LIBRAS", "7105113": "ESTADO E POLITICAS PUBLICAS", "7105178": "SOCIOLOGIA URBANA", "7105180": "SOCIOLOGIA AMBIENTAL", "7106080": "DIREITO REGULATORIO", "7106085": "TEGP(ECONOMIA SOLIDARIA)", "7106112": "CONTABILIDADE AMBIENTAL", "7106179": "MARKETING NA GESTAO PUBLICA", "7106181": "ECONOMIA RURAL", "7106182": "FILOSOFIA POLITICA", "7106184": "ECONOMIA POLÍTICA", "7106191": "TEGP(EMPREENDEDORISMO)", "7106155": "DIREITO AMBIENTAL", "7106156": "DIREITOS HUMANOS E DESENVOLV. HUMANO", "7106194": "TEGP(GESTAO DA SEGURANCA PUBLICA)", "7106195": "TEGP(ECONOMIA DO SETOR PUBLICO)", "7106196": "TEGP(ECONOMIA SOLIDARIA)", "7106203": "TEGP(POLITICAS CULTURAIS)", "7106204": "TEGP(MARKETING POLITICO E ELEITORAL)", "7106205": "TEGP(GOVERNANÇA E INOVAÇÃO NA ADM PUB)", "7106206": "TEGP(GOVERNANÇA E INOVAÇÃO NA GEST PUB)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -722,7 +725,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>
