@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4f6fa" media="(prefers-color-scheme: light)">
+  <title>Matriz Curricular - CIÊNCIAS BIOLÓGICAS (LIC) - N (2008)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f6fa;
+      --bg-grad: radial-gradient(1200px 600px at 10% -10%, #e6efff 0%, transparent 60%),
+                 radial-gradient(900px 500px at 100% 0%, #e8fbff 0%, transparent 55%),
+                 linear-gradient(180deg, #f4f6fa 0%, #eef2f7 100%);
+      --surface: #ffffff;
+      --surface-2: #f8fafc;
+      --surface-3: #f9fbfd;
+      --border: #e3e8f0;
+      --border-2: #e6edf5;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --text-soft: #64748b;
+      --brand: #0a3d62;
+      --brand-2: #1e6091;
+      --brand-3: #2e86ab;
+      --accent: #0e7490;
+      --accent-2: #0891b2;
+      --accent-3: #155e75;
+      --title-grad-1: #0a3d62;
+      --title-grad-2: #0e7490;
+      --chip-bg: #eaf2f8;
+      --chip-text: #0a3d62;
+      --progress-bg: #e2e8f0;
+      --progress-fill-1: #0891b2;
+      --progress-fill-2: #06b6d4;
+      --completed-bg: linear-gradient(135deg, #16a34a, #15803d);
+      --completed-border: #15803d;
+      --completed-text: #f0fdf4;
+      --completed-hover: linear-gradient(135deg, #15803d, #166534);
+      --available-bg: linear-gradient(135deg, #2563eb, #1d4ed8);
+      --available-border: #1d4ed8;
+      --available-text: #eff6ff;
+      --available-hover: linear-gradient(135deg, #1d4ed8, #1e40af);
+      --blocked-bg: #eef1f5;
+      --blocked-border: #d6dde6;
+      --blocked-text: #6b7280;
+      --code-bg: rgba(255,255,255,0.22);
+      --code-text: #ffffff;
+      --code-bg-light: #f1f5f9;
+      --code-text-light: #0f172a;
+      --ch-bg: rgba(255,255,255,0.18);
+      --hint-text: rgba(255,255,255,0.85);
+      --hint-border: rgba(255,255,255,0.25);
+      --table-head: #f1f5f9;
+      --table-border: #e2e8f0;
+      --table-row-alt: #fafbfd;
+      --shadow: 0 10px 30px -12px rgba(15,23,42,0.12), 0 2px 6px rgba(15,23,42,0.04);
+      --shadow-sm: 0 4px 14px -6px rgba(15,23,42,0.08);
+      --ring: 0 0 0 3px rgba(8,145,178,0.18);
+    }
+    html[data-theme="dark"] {
+      --bg: #0b1220;
+      --bg-grad: radial-gradient(1200px 600px at 10% -10%, #0e2a47 0%, transparent 60%),
+                 radial-gradient(900px 500px at 100% 0%, #0a3a4a 0%, transparent 55%),
+                 linear-gradient(180deg, #0b1220 0%, #060b16 100%);
+      --surface: #131c2e;
+      --surface-2: #0f1727;
+      --surface-3: #131c2e;
+      --border: #1f2a40;
+      --border-2: #1f2a40;
+      --text: #e6edf7;
+      --text-muted: #9aa8bf;
+      --text-soft: #8696b0;
+      --brand: #7dd3fc;
+      --brand-2: #38bdf8;
+      --brand-3: #22d3ee;
+      --accent: #67e8f9;
+      --accent-2: #22d3ee;
+      --accent-3: #38bdf8;
+      --title-grad-1: #7dd3fc;
+      --title-grad-2: #22d3ee;
+      --chip-bg: #0f2b3d;
+      --chip-text: #7dd3fc;
+      --progress-bg: #1f2a40;
+      --progress-fill-1: #06b6d4;
+      --progress-fill-2: #22d3ee;
+      --completed-bg: linear-gradient(135deg, #15803d, #14532d);
+      --completed-border: #16a34a;
+      --completed-text: #ecfdf5;
+      --completed-hover: linear-gradient(135deg, #166534, #14532d);
+      --available-bg: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+      --available-border: #2563eb;
+      --available-text: #eff6ff;
+      --available-hover: linear-gradient(135deg, #1e40af, #172554);
+      --blocked-bg: #1a2336;
+      --blocked-border: #283449;
+      --blocked-text: #7d8aa3;
+      --code-bg: rgba(255,255,255,0.12);
+      --code-text: #ffffff;
+      --code-bg-light: #1a2336;
+      --code-text-light: #e6edf7;
+      --ch-bg: rgba(255,255,255,0.12);
+      --hint-text: rgba(255,255,255,0.78);
+      --hint-border: rgba(255,255,255,0.18);
+      --table-head: #0f1727;
+      --table-border: #1f2a40;
+      --table-row-alt: #111a2c;
+      --shadow: 0 12px 32px -12px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.3);
+      --shadow-sm: 0 4px 14px -6px rgba(0,0,0,0.5);
+      --ring: 0 0 0 3px rgba(34,211,238,0.25);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      background-image: var(--bg-grad);
+      background-attachment: fixed;
+      margin: 0; padding: 20px; color: var(--text);
+      transition: background 0.25s ease, color 0.25s ease;
+      letter-spacing: -0.005em;
+    }
+    .container { max-width: 1600px; margin: 0 auto; }
+
+    /* ---------- Header ---------- */
+    .header {
+      background: var(--surface);
+      border-radius: 22px;
+      padding: 14px 20px;
+      margin-bottom: 20px;
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      align-items: center; gap: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      backdrop-filter: saturate(140%);
+    }
+    .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+    .logo-wrap {
+      width: 54px; height: 54px; flex-shrink: 0;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 16px -6px rgba(10,61,98,0.55);
+      overflow: hidden; position: relative;
+    }
+    .logo-wrap img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
+    .logo-wrap .logo-fallback {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.5px;
+    }
+    .title { min-width: 0; }
+    .title .eyebrow {
+      display: inline-block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--brand-2);
+      background: var(--chip-bg); color: var(--chip-text);
+      padding: 3px 9px; border-radius: 999px; margin-bottom: 6px;
+    }
+    .title h1 {
+      margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--title-grad-1), var(--title-grad-2));
+      background-clip: text; -webkit-background-clip: text; color: transparent;
+      line-height: 1.15;
+    }
+    .title p { margin: 4px 0 0; font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+
+    .header-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .progress-panel {
+      background: var(--surface-2); border-radius: 18px; padding: 10px 18px;
+      min-width: 200px; text-align: center; border: 1px solid var(--border);
+    }
+    .progress-label { font-weight: 700; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+    .progress-value {
+      font-size: 1.8rem; font-weight: 800; line-height: 1.05;
+      background: linear-gradient(135deg, var(--progress-fill-1), var(--progress-fill-2));
+      background-clip: text; -webkit-background-clip: text; color: transparent;
+      font-variant-numeric: tabular-nums;
+    }
+    .progress-bar-bg { background: var(--progress-bg); border-radius: 40px; height: 7px; width: 100%; margin-top: 6px; overflow: hidden; }
+    .progress-fill {
+      background: linear-gradient(90deg, var(--progress-fill-1), var(--progress-fill-2));
+      width: 0%; height: 100%; border-radius: 40px; transition: width 0.35s ease;
+    }
+    .progress-meta { font-size: 0.6rem; color: var(--text-soft); margin-top: 4px; font-variant-numeric: tabular-nums; }
+
+    button.reset-btn, button.theme-btn {
+      background: var(--surface); border: 1px solid var(--border); color: var(--text);
+      padding: 7px 12px; border-radius: 999px; font-size: 0.72rem; font-weight: 600;
+      cursor: pointer; margin-top: 8px; font-family: inherit;
+      transition: all 0.15s ease;
+    }
+    button.theme-btn {
+      margin-top: 0; padding: 10px 12px; font-size: 1rem; line-height: 1;
+      width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center;
+    }
+    button.reset-btn:hover, button.theme-btn:hover { background: var(--chip-bg); border-color: var(--brand-2); transform: translateY(-1px); }
+    button.reset-btn:focus-visible, button.theme-btn:focus-visible { outline: none; box-shadow: var(--ring); }
+
+    /* ---------- Legend ---------- */
+    .legend {
+      display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 14px;
+      padding: 10px 14px; background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; box-shadow: var(--shadow-sm);
+      font-size: 0.72rem; color: var(--text-muted); align-items: center;
+    }
+    .legend-item { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 4px; display: inline-block; }
+    .legend-dot.completed { background: linear-gradient(135deg, #16a34a, #15803d); }
+    .legend-dot.available { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+    .legend-dot.blocked { background: var(--blocked-bg); border: 1px solid var(--blocked-border); }
+
+    /* ---------- Columns ---------- */
+    .columns-wrapper { overflow-x: auto; padding-bottom: 14px; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+    .columns-wrapper::-webkit-scrollbar { height: 10px; }
+    .columns-wrapper::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+    .columns-wrapper::-webkit-scrollbar-thumb:hover { background: var(--brand-2); }
+    .matrix-columns { display: flex; gap: 18px; min-width: min-content; align-items: flex-start; }
+    .level-column {
+      background: var(--surface); border-radius: 20px; width: 278px; min-width: 278px;
+      display: flex; flex-direction: column; box-shadow: var(--shadow); border: 1px solid var(--border-2);
+      overflow: hidden;
+    }
+    .column-header {
+      background: linear-gradient(135deg, var(--surface-3), var(--surface));
+      padding: 12px; border-bottom: 1px solid var(--border-2);
+      text-align: center; position: relative;
+    }
+    .column-header::before {
+      content: ''; position: absolute; top: 0; left: 10%; right: 10%; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--brand-2), transparent);
+    }
+    .column-header h3 { margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--brand); letter-spacing: -0.01em; }
+    .column-header span { font-size: 0.6rem; background: var(--chip-bg); color: var(--chip-text); padding: 2px 9px; border-radius: 999px; display: inline-block; margin-top: 6px; font-weight: 600; }
+    .subjects-list { padding: 12px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+
+    .subject-card {
+      border-radius: 14px; padding: 10px 12px; transition: all 0.18s ease; cursor: pointer;
+      border: 1px solid transparent;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+    }
+    .subject-card:focus-visible { outline: none; box-shadow: var(--ring); }
+    .subject-completed { background: var(--completed-bg); border-color: var(--completed-border); color: var(--completed-text); box-shadow: 0 4px 12px -4px rgba(22,163,74,0.4); }
+    .subject-completed:hover { background: var(--completed-hover); transform: translateY(-2px); box-shadow: 0 8px 18px -6px rgba(22,163,74,0.5); }
+    .subject-available { background: var(--available-bg); border-color: var(--available-border); color: var(--available-text); box-shadow: 0 4px 12px -4px rgba(37,99,235,0.4); }
+    .subject-available:hover { background: var(--available-hover); transform: translateY(-2px); box-shadow: 0 8px 18px -6px rgba(37,99,235,0.5); }
+    .subject-blocked { background: var(--blocked-bg); border-color: var(--blocked-border); color: var(--blocked-text); cursor: not-allowed; }
+    .subject-blocked .subject-code,
+    .subject-blocked .status-badge { background: var(--code-bg-light); color: var(--code-text-light); }
+    .subject-blocked .subject-ch { background: rgba(0,0,0,0.06); color: var(--blocked-text); }
+    .subject-blocked .pre-req-hint { color: var(--blocked-text); border-top-color: var(--blocked-border); }
+
+    .subject-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+    .subject-code { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.62rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); display: inline-block; padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; }
+    .subject-name { font-weight: 700; font-size: 0.82rem; margin: 7px 0 4px; line-height: 1.25; letter-spacing: -0.01em; }
+    .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
+    .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
+    .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+
+    /* ---------- Optativas ---------- */
+    .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+    .optativas-section h2 {
+      color: var(--brand); border-left: 4px solid var(--brand-2); padding-left: 14px;
+      margin: 0 0 14px; font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em;
+    }
+    .optativas-table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; border: 1px solid var(--border); }
+    .optativas-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 720px; }
+    .optativas-table th, .optativas-table td { border-bottom: 1px solid var(--table-border); padding: 10px 12px; text-align: left; vertical-align: top; word-break: break-word; }
+    .optativas-table tbody tr:nth-child(even) { background: var(--table-row-alt); }
+    .optativas-table tbody tr:hover { background: var(--chip-bg); }
+    .optativas-table th { background: var(--table-head); font-weight: 700; color: var(--text); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    .optativas-table td:first-child { font-family: 'JetBrains Mono', ui-monospace, monospace; font-weight: 600; color: var(--brand-2); white-space: nowrap; }
+
+    footer { text-align: center; margin-top: 20px; font-size: 0.72rem; color: var(--text-soft); background: var(--surface); padding: 12px; border-radius: 16px; border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+    footer strong { color: var(--text); }
+
+    /* ---------- Mobile ---------- */
+    @media (max-width: 768px) {
+      body { padding: 12px; }
+      .header { padding: 12px; border-radius: 18px; gap: 12px; }
+      .logo-wrap { width: 44px; height: 44px; border-radius: 12px; }
+      .title h1 { font-size: 1.05rem; }
+      .title p { font-size: 0.7rem; }
+      .title .eyebrow { font-size: 0.55rem; }
+      .header-actions { width: 100%; justify-content: space-between; }
+      .progress-panel { flex: 1; min-width: 0; padding: 8px 14px; border-radius: 14px; }
+      .progress-value { font-size: 1.4rem; }
+      .level-column { width: 240px; min-width: 240px; border-radius: 16px; }
+      .optativas-section { padding: 14px; border-radius: 18px; margin-top: 24px; }
+      .optativas-section h2 { font-size: 1rem; }
+      .legend { font-size: 0.65rem; gap: 8px; padding: 8px 10px; }
+    }
+    @media (max-width: 420px) {
+      .level-column { width: 86vw; min-width: 86vw; }
+      .title h1 { font-size: 0.98rem; }
+      .brand { gap: 10px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="brand">
+      <div class="logo-wrap" aria-hidden="true">
+        <span class="logo-fallback">UFCG</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Logo_UFCG.png/240px-Logo_UFCG.png"
+             alt="" onerror="this.style.display='none'"
+             onload="this.previousElementSibling.style.display='none'">
+      </div>
+      <div class="title">
+        <span class="eyebrow">Universidade Federal de Campina Grande</span>
+        <h1>CIÊNCIAS BIOLÓGICAS (LIC) - N</h1>
+        <p>Cuité · Currículo 2008 · Código 51201210</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
+      <div class="progress-panel">
+        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-value" id="percentDisplay">0%</div>
+        <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
+        <button class="reset-btn" id="resetBtn">🔄 Redefinir</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend" role="list">
+    <span class="legend-item" role="listitem"><span class="legend-dot completed"></span> Cursada</span>
+    <span class="legend-item" role="listitem"><span class="legend-dot available"></span> Disponível</span>
+    <span class="legend-item" role="listitem"><span class="legend-dot blocked"></span> Bloqueada (pré‑requisitos pendentes)</span>
+  </div>
+
+  <div class="columns-wrapper">
+    <div class="matrix-columns" id="matrixColumns"></div>
+  </div>
+
+  <div class="optativas-section">
+    <h2>📖 Disciplinas Optativas</h2>
+    <div class="optativas-table-wrapper">
+      <table class="optativas-table">
+        <thead><tr><th>Código</th><th>Disciplina</th><th>CH</th><th>Créd.</th><th>Pré‑requisitos</th><th>Co‑requisitos</th></tr></thead>
+        <tbody>
+
+          <tr>
+              <td>5104009</td>
+              <td>PRINCIPIOS DE SEGURANCA EM LABORATÓRIOS</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5101021</td>
+              <td>INFORMÁTICA APLICADA AO ENSINO</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5102156</td>
+              <td>PARASITOLOGIA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104015</td>
+              <td>INGLES INSTRUMENTAL</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104104</td>
+              <td>ETOLOGIA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104136</td>
+              <td>BOTANICA ECONOMICA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>SISTEMÁTICA DE FANERÓGAMAS</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104137</td>
+              <td>ECOLOGIA DA POLINIZAÇÃO E DISPERSÃO</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104169</td>
+              <td>ECOTURISMO</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ECOLOGIA GERAL</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104174</td>
+              <td>ENTOMOLOGIA GERAL</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104182</td>
+              <td>BIOLOGIA MARINHA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104191</td>
+              <td>FUNDAMENTOS DE ETNOECOLOGIA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104192</td>
+              <td>MICOLOGIA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>BOTANICA CRIPTOGAMICA</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104193</td>
+              <td>FUNDAMENTOS DE LIMNOLOGIA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104194</td>
+              <td>FUNDAMENTOS DE AQUICULTURA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104205</td>
+              <td>BIOLOGIA GERAL</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104206</td>
+              <td>EDUCAÇÃO AMBIENTAL</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ECOLOGIA GERAL</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104105</td>
+              <td>BIOLOGIA E ECOLOGIA DA MEIOFAUNA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104179</td>
+              <td>GERENCIAMENTO DE RESIDUOS</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104190</td>
+              <td>ANATOMIA COMPARADA DOS VERTEBRADOS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104207</td>
+              <td>POLÍTICA E EDUCAÇÃO</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104211</td>
+              <td>ENSINO INCLUSO</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104212</td>
+              <td>CURRICULO EDUCACIONAL</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104213</td>
+              <td>ETICA E DIVERSIDADE</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104215</td>
+              <td>HISTORIA DA BIOLOGIA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104220</td>
+              <td>TECB(ENSINO INCLUSO)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104222</td>
+              <td>TECB(INTROD À FILOSOFIA E À SOC DA EDUC)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104224</td>
+              <td>TECB(METODOLOGIA CIENTÍFICA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104225</td>
+              <td>TECB(BIOTECNOLOGIA E BIOPRODUTOS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104226</td>
+              <td>TECB(PALEOTONLOGIA E EDUCAÇÃO)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104227</td>
+              <td>TECB(VIROLOGIA BÁSICA E APLICADA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104228</td>
+              <td>TECB(ESCRITA CIENTÍFICA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104229</td>
+              <td>TECB(TÓPICOS EM BOTÂNICA APLICADA I)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104230</td>
+              <td>TECB(TÓPICOS EM BOTÂNICA APLICADA II)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104231</td>
+              <td>TECB(BIOEST EXPERIMENTAL APLIC ÀS C BIOL</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104232</td>
+              <td>TECB(TÓPICOS EM BIOQUÍMICA CELULAR)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>5104237</td>
+              <td>TECB(GENÉTICA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer>🎓 <strong>Dica:</strong> clique nas disciplinas <em>disponíveis</em> para marcar como cursadas. Desmarcar uma disciplina recalcula automaticamente as dependentes. Seu progresso é salvo neste navegador.</footer>
+</div>
+
+<script>
+  // ---------- Tema ----------
+  (function initTheme() {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+  function updateThemeBtn() {
+    const btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    btn.textContent = isDark ? '☀️' : '🌙';
+  }
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateThemeBtn();
+  });
+  updateThemeBtn();
+
+  // ---------- Dados ----------
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5104001", "nome": "BIOLOGIA CELULAR", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104002", "nome": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104003", "nome": "ZOOLOGIA DOS INVERTEBRADOS I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104004", "nome": "BOTANICA CRIPTOGAMICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104035", "nome": "EMBRIOLOGIA E HISTOLOGIA", "ch": "60h", "preReqs": ["5104001"]}, {"nivel": "2º Nível", "codigo": "5104036", "nome": "MORFOLOGIA E ANATOMIA VEGETAL", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104037", "nome": "ZOOLOGIA DOS INVERTEBRADOS II", "ch": "60h", "preReqs": ["5104003"]}, {"nivel": "2º Nível", "codigo": "5104038", "nome": "BIOQUÍMICA GERAL", "ch": "60h", "preReqs": ["5104005"]}, {"nivel": "2º Nível", "codigo": "5104040", "nome": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS II", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5104042", "nome": "ANATOMIA HUMANA BASICA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5104043", "nome": "SISTEMÁTICA DE FANERÓGAMAS", "ch": "60h", "preReqs": ["5104036"]}, {"nivel": "3º Nível", "codigo": "5104044", "nome": "ZOOLOGIA DOS CORDADOS I", "ch": "60h", "preReqs": ["5104037"]}, {"nivel": "3º Nível", "codigo": "5104047", "nome": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS III", "ch": "60h", "preReqs": ["5104040"]}, {"nivel": "4º Nível", "codigo": "5104085", "nome": "FISIOLOGIA VEGETAL", "ch": "60h", "preReqs": ["5104036"]}, {"nivel": "4º Nível", "codigo": "5104086", "nome": "ZOOLOGIA DOS CORDADOS II", "ch": "60h", "preReqs": ["5104044"]}, {"nivel": "4º Nível", "codigo": "5104087", "nome": "FISIOLOGIA ANIMAL COMPARADA", "ch": "60h", "preReqs": ["5104042"]}, {"nivel": "4º Nível", "codigo": "5104088", "nome": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS IV", "ch": "60h", "preReqs": ["5104047"]}, {"nivel": "5º Nível", "codigo": "5104041", "nome": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104084", "nome": "ECOLOGIA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104102", "nome": "MICROBIOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104103", "nome": "INSTRUMENTACAO NO ENSINO DE C BIOLOGICAS", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "5104016", "nome": "PSICOLOGIA E EDUCAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "5104100", "nome": "ECOLOGIA DE ECOSSISTEMAS AQUATICOS", "ch": "60h", "preReqs": ["5104084"]}, {"nivel": "6º Nível", "codigo": "5104101", "nome": "GENETICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "5104134", "nome": "RECURSOS TEC PARA O ENS DE C BIOLOGICAS", "ch": "45h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "5104131", "nome": "ECOLOGIA DE ECOSSISTEMAS TERRESTRES", "ch": "60h", "preReqs": ["5104084"]}, {"nivel": "7º Nível", "codigo": "5104132", "nome": "GENETICA DE POPULACOES E EVOLUCAO", "ch": "60h", "preReqs": ["5104101"]}, {"nivel": "7º Nível", "codigo": "5104133", "nome": "GEOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "5104147", "nome": "MET. CIENTÍFICA PARA O ENS. DA BIOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "5101033", "nome": "LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "ch": "45h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "5101054", "nome": "PLANEJAMENTO EM EDUCAÇÃO", "ch": "45h", "preReqs": ["5104016"]}, {"nivel": "8º Nível", "codigo": "5104135", "nome": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA I", "ch": "90h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "5104146", "nome": "PALEONTOLOGIA", "ch": "60h", "preReqs": ["5104133"]}, {"nivel": "9º Nível", "codigo": "5101052", "nome": "AVALIAÇÃO E APRENDIZAGEM", "ch": "45h", "preReqs": ["5104016"]}, {"nivel": "9º Nível", "codigo": "5104145", "nome": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA II", "ch": "150h", "preReqs": ["5104135"]}, {"nivel": "9º Nível", "codigo": "5104164", "nome": "TRABALHO DE CONCLUSÃO DE CURSO", "ch": "30h", "preReqs": []}, {"nivel": "10º Nível", "codigo": "5101148", "nome": "LINGUA BRASILEIRA DE SINAIS", "ch": "60h", "preReqs": []}, {"nivel": "10º Nível", "codigo": "5104165", "nome": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA III", "ch": "165h", "preReqs": ["5104145"]}];
+  const codigoToNome = {"5104001": "BIOLOGIA CELULAR", "5104002": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS I", "5104003": "ZOOLOGIA DOS INVERTEBRADOS I", "5104004": "BOTANICA CRIPTOGAMICA", "5104035": "EMBRIOLOGIA E HISTOLOGIA", "5104036": "MORFOLOGIA E ANATOMIA VEGETAL", "5104037": "ZOOLOGIA DOS INVERTEBRADOS II", "5104038": "BIOQUÍMICA GERAL", "5104040": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS II", "5104042": "ANATOMIA HUMANA BASICA", "5104043": "SISTEMÁTICA DE FANERÓGAMAS", "5104044": "ZOOLOGIA DOS CORDADOS I", "5104047": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS III", "5104085": "FISIOLOGIA VEGETAL", "5104086": "ZOOLOGIA DOS CORDADOS II", "5104087": "FISIOLOGIA ANIMAL COMPARADA", "5104088": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS IV", "5104041": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "5104084": "ECOLOGIA GERAL", "5104102": "MICROBIOLOGIA", "5104103": "INSTRUMENTACAO NO ENSINO DE C BIOLOGICAS", "5104016": "PSICOLOGIA E EDUCAÇÃO", "5104100": "ECOLOGIA DE ECOSSISTEMAS AQUATICOS", "5104101": "GENETICA GERAL", "5104134": "RECURSOS TEC PARA O ENS DE C BIOLOGICAS", "5104131": "ECOLOGIA DE ECOSSISTEMAS TERRESTRES", "5104132": "GENETICA DE POPULACOES E EVOLUCAO", "5104133": "GEOLOGIA", "5104147": "MET. CIENTÍFICA PARA O ENS. DA BIOLOGIA", "5101033": "LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "5101054": "PLANEJAMENTO EM EDUCAÇÃO", "5104135": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA I", "5104146": "PALEONTOLOGIA", "5101052": "AVALIAÇÃO E APRENDIZAGEM", "5104145": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA II", "5104164": "TRABALHO DE CONCLUSÃO DE CURSO", "5101148": "LINGUA BRASILEIRA DE SINAIS", "5104165": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA III", "5104009": "PRINCIPIOS DE SEGURANCA EM LABORATÓRIOS", "5101021": "INFORMÁTICA APLICADA AO ENSINO", "5102156": "PARASITOLOGIA", "5104015": "INGLES INSTRUMENTAL", "5104104": "ETOLOGIA", "5104136": "BOTANICA ECONOMICA", "5104137": "ECOLOGIA DA POLINIZAÇÃO E DISPERSÃO", "5104169": "ECOTURISMO", "5104174": "ENTOMOLOGIA GERAL", "5104182": "BIOLOGIA MARINHA", "5104191": "FUNDAMENTOS DE ETNOECOLOGIA", "5104192": "MICOLOGIA", "5104193": "FUNDAMENTOS DE LIMNOLOGIA", "5104194": "FUNDAMENTOS DE AQUICULTURA", "5104205": "BIOLOGIA GERAL", "5104206": "EDUCAÇÃO AMBIENTAL", "5104105": "BIOLOGIA E ECOLOGIA DA MEIOFAUNA", "5104179": "GERENCIAMENTO DE RESIDUOS", "5104190": "ANATOMIA COMPARADA DOS VERTEBRADOS", "5104207": "POLÍTICA E EDUCAÇÃO", "5104211": "ENSINO INCLUSO", "5104212": "CURRICULO EDUCACIONAL", "5104213": "ETICA E DIVERSIDADE", "5104215": "HISTORIA DA BIOLOGIA", "5104220": "TECB(ENSINO INCLUSO)", "5104222": "TECB(INTROD À FILOSOFIA E À SOC DA EDUC)", "5104224": "TECB(METODOLOGIA CIENTÍFICA)", "5104225": "TECB(BIOTECNOLOGIA E BIOPRODUTOS)", "5104226": "TECB(PALEOTONLOGIA E EDUCAÇÃO)", "5104227": "TECB(VIROLOGIA BÁSICA E APLICADA)", "5104228": "TECB(ESCRITA CIENTÍFICA)", "5104229": "TECB(TÓPICOS EM BOTÂNICA APLICADA I)", "5104230": "TECB(TÓPICOS EM BOTÂNICA APLICADA II)", "5104231": "TECB(BIOEST EXPERIMENTAL APLIC ÀS C BIOL", "5104232": "TECB(TÓPICOS EM BIOQUÍMICA CELULAR)", "5104237": "TECB(GENÉTICA)"};
+
+  const subjectsMap = new Map();
+  mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
+
+  const reverseDeps = new Map();
+  mandatorySubjects.forEach(sub => {
+    if (sub.preReqs && sub.preReqs.length) {
+      sub.preReqs.forEach(pre => {
+        if (!reverseDeps.has(pre)) reverseDeps.set(pre, []);
+        reverseDeps.get(pre).push(sub.codigo);
+      });
+    }
+  });
+
+  let completedSet = new Set();
+
+  function arePrerequisitesMet(codigo) {
+    const disciplina = subjectsMap.get(codigo);
+    if (!disciplina) return true;
+    const preReqs = disciplina.preReqs || [];
+    return preReqs.every(preCod => {
+      if (!subjectsMap.has(preCod)) return true;
+      return completedSet.has(preCod);
+    });
+  }
+
+  function cascadeUncheck(startingCode) {
+    const queue = [startingCode];
+    const visited = new Set();
+    while (queue.length) {
+      const current = queue.shift();
+      if (visited.has(current)) continue;
+      visited.add(current);
+      if (completedSet.has(current) && !arePrerequisitesMet(current)) {
+        completedSet.delete(current);
+      }
+      const dependents = reverseDeps.get(current) || [];
+      dependents.forEach(dep => { if (!visited.has(dep)) queue.push(dep); });
+    }
+  }
+
+  function getSubjectStatus(codigo) {
+    if (completedSet.has(codigo)) return "completed";
+    return arePrerequisitesMet(codigo) ? "available" : "blocked";
+  }
+
+  window.toggleSubject = function(codigo) {
+    const status = getSubjectStatus(codigo);
+    if (status === "blocked") return;
+    if (completedSet.has(codigo)) {
+      completedSet.delete(codigo);
+      cascadeUncheck(codigo);
+    } else {
+      completedSet.add(codigo);
+    }
+    saveProgress();
+    renderColumns();
+    updateGlobalProgress();
+  };
+
+  function computePercent() {
+    const total = mandatorySubjects.length;
+    return total === 0 ? 0 : Math.round((completedSet.size / total) * 100);
+  }
+
+  function updateGlobalProgress() {
+    const percent = computePercent();
+    const total = mandatorySubjects.length;
+    document.getElementById('percentDisplay').innerText = `${percent}%`;
+    document.getElementById('progressFill').style.width = `${percent}%`;
+    const meta = document.getElementById('progressMeta');
+    if (meta) meta.innerText = `${completedSet.size} / ${total} disciplinas`;
+  }
+
+  function renderColumns() {
+    const container = document.getElementById('matrixColumns');
+    if (!container) return;
+    const niveis = [];
+    const mapNivel = new Map();
+    mandatorySubjects.forEach(sub => {
+      const nivel = sub.nivel;
+      if (!mapNivel.has(nivel)) { mapNivel.set(nivel, []); niveis.push(nivel); }
+      mapNivel.get(nivel).push(sub);
+    });
+    let columnsHtml = '';
+    for (let nivel of niveis) {
+      const subjectsOfLevel = mapNivel.get(nivel);
+      columnsHtml += `
+        <div class="level-column">
+          <div class="column-header">
+            <h3>${nivel}</h3>
+            <span>${subjectsOfLevel.length} disc.</span>
+          </div>
+          <div class="subjects-list">
+      `;
+      subjectsOfLevel.forEach(sub => {
+        const status = getSubjectStatus(sub.codigo);
+        let cardClass = '', statusText = '';
+        if (status === 'completed') { cardClass = 'subject-completed'; statusText = '✅ Cursada'; }
+        else if (status === 'available') { cardClass = 'subject-available'; statusText = '🔓 Disponível'; }
+        else { cardClass = 'subject-blocked'; statusText = '🔒 Bloqueada'; }
+        let prereqDisplay = 'Nenhum';
+        if (sub.preReqs && sub.preReqs.length) {
+          prereqDisplay = sub.preReqs.map(cod => codigoToNome[cod] || cod).join(', ');
+        }
+        columnsHtml += `
+          <div class="subject-card ${cardClass}" data-codigo="${sub.codigo}">
+            <div class="subject-row">
+              <span class="subject-code">${sub.codigo}</span>
+              <span class="status-badge">${statusText}</span>
+            </div>
+            <div class="subject-name">${sub.nome}</div>
+            <div><span class="subject-ch">${sub.ch}</span></div>
+            <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
+          </div>
+        `;
+      });
+      columnsHtml += `</div></div>`;
+    }
+    container.innerHTML = columnsHtml;
+    document.querySelectorAll('.subject-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const codigo = card.getAttribute('data-codigo');
+        if (codigo) window.toggleSubject(codigo);
+      });
+    });
+  }
+
+  function saveProgress() {
+    localStorage.setItem('completedObrigatorias_51201210_2008', JSON.stringify([...completedSet]));
+  }
+
+  function loadProgress() {
+    const saved = localStorage.getItem('completedObrigatorias_51201210_2008');
+    if (saved) {
+      completedSet = new Set(JSON.parse(saved));
+      const toRemove = [];
+      for (let code of completedSet) { if (!arePrerequisitesMet(code)) toRemove.push(code); }
+      toRemove.forEach(code => completedSet.delete(code));
+      saveProgress();
+    }
+  }
+
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    completedSet.clear();
+    saveProgress();
+    renderColumns();
+    updateGlobalProgress();
+  });
+
+  loadProgress();
+  renderColumns();
+  updateGlobalProgress();
+</script>
+</body>
+</html>

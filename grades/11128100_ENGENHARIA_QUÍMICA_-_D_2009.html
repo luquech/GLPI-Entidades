@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4f6fa" media="(prefers-color-scheme: light)">
+  <title>Matriz Curricular - ENGENHARIA QUÍMICA - D (2009)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f6fa;
+      --bg-grad: radial-gradient(1200px 600px at 10% -10%, #e6efff 0%, transparent 60%),
+                 radial-gradient(900px 500px at 100% 0%, #e8fbff 0%, transparent 55%),
+                 linear-gradient(180deg, #f4f6fa 0%, #eef2f7 100%);
+      --surface: #ffffff;
+      --surface-2: #f8fafc;
+      --surface-3: #f9fbfd;
+      --border: #e3e8f0;
+      --border-2: #e6edf5;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --text-soft: #64748b;
+      --brand: #0a3d62;
+      --brand-2: #1e6091;
+      --brand-3: #2e86ab;
+      --accent: #0e7490;
+      --accent-2: #0891b2;
+      --accent-3: #155e75;
+      --title-grad-1: #0a3d62;
+      --title-grad-2: #0e7490;
+      --chip-bg: #eaf2f8;
+      --chip-text: #0a3d62;
+      --progress-bg: #e2e8f0;
+      --progress-fill-1: #0891b2;
+      --progress-fill-2: #06b6d4;
+      --completed-bg: linear-gradient(135deg, #16a34a, #15803d);
+      --completed-border: #15803d;
+      --completed-text: #f0fdf4;
+      --completed-hover: linear-gradient(135deg, #15803d, #166534);
+      --available-bg: linear-gradient(135deg, #2563eb, #1d4ed8);
+      --available-border: #1d4ed8;
+      --available-text: #eff6ff;
+      --available-hover: linear-gradient(135deg, #1d4ed8, #1e40af);
+      --blocked-bg: #eef1f5;
+      --blocked-border: #d6dde6;
+      --blocked-text: #6b7280;
+      --code-bg: rgba(255,255,255,0.22);
+      --code-text: #ffffff;
+      --code-bg-light: #f1f5f9;
+      --code-text-light: #0f172a;
+      --ch-bg: rgba(255,255,255,0.18);
+      --hint-text: rgba(255,255,255,0.85);
+      --hint-border: rgba(255,255,255,0.25);
+      --table-head: #f1f5f9;
+      --table-border: #e2e8f0;
+      --table-row-alt: #fafbfd;
+      --shadow: 0 10px 30px -12px rgba(15,23,42,0.12), 0 2px 6px rgba(15,23,42,0.04);
+      --shadow-sm: 0 4px 14px -6px rgba(15,23,42,0.08);
+      --ring: 0 0 0 3px rgba(8,145,178,0.18);
+    }
+    html[data-theme="dark"] {
+      --bg: #0b1220;
+      --bg-grad: radial-gradient(1200px 600px at 10% -10%, #0e2a47 0%, transparent 60%),
+                 radial-gradient(900px 500px at 100% 0%, #0a3a4a 0%, transparent 55%),
+                 linear-gradient(180deg, #0b1220 0%, #060b16 100%);
+      --surface: #131c2e;
+      --surface-2: #0f1727;
+      --surface-3: #131c2e;
+      --border: #1f2a40;
+      --border-2: #1f2a40;
+      --text: #e6edf7;
+      --text-muted: #9aa8bf;
+      --text-soft: #8696b0;
+      --brand: #7dd3fc;
+      --brand-2: #38bdf8;
+      --brand-3: #22d3ee;
+      --accent: #67e8f9;
+      --accent-2: #22d3ee;
+      --accent-3: #38bdf8;
+      --title-grad-1: #7dd3fc;
+      --title-grad-2: #22d3ee;
+      --chip-bg: #0f2b3d;
+      --chip-text: #7dd3fc;
+      --progress-bg: #1f2a40;
+      --progress-fill-1: #06b6d4;
+      --progress-fill-2: #22d3ee;
+      --completed-bg: linear-gradient(135deg, #15803d, #14532d);
+      --completed-border: #16a34a;
+      --completed-text: #ecfdf5;
+      --completed-hover: linear-gradient(135deg, #166534, #14532d);
+      --available-bg: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+      --available-border: #2563eb;
+      --available-text: #eff6ff;
+      --available-hover: linear-gradient(135deg, #1e40af, #172554);
+      --blocked-bg: #1a2336;
+      --blocked-border: #283449;
+      --blocked-text: #7d8aa3;
+      --code-bg: rgba(255,255,255,0.12);
+      --code-text: #ffffff;
+      --code-bg-light: #1a2336;
+      --code-text-light: #e6edf7;
+      --ch-bg: rgba(255,255,255,0.12);
+      --hint-text: rgba(255,255,255,0.78);
+      --hint-border: rgba(255,255,255,0.18);
+      --table-head: #0f1727;
+      --table-border: #1f2a40;
+      --table-row-alt: #111a2c;
+      --shadow: 0 12px 32px -12px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.3);
+      --shadow-sm: 0 4px 14px -6px rgba(0,0,0,0.5);
+      --ring: 0 0 0 3px rgba(34,211,238,0.25);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      background-image: var(--bg-grad);
+      background-attachment: fixed;
+      margin: 0; padding: 20px; color: var(--text);
+      transition: background 0.25s ease, color 0.25s ease;
+      letter-spacing: -0.005em;
+    }
+    .container { max-width: 1600px; margin: 0 auto; }
+
+    /* ---------- Header ---------- */
+    .header {
+      background: var(--surface);
+      border-radius: 22px;
+      padding: 14px 20px;
+      margin-bottom: 20px;
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      align-items: center; gap: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      backdrop-filter: saturate(140%);
+    }
+    .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+    .logo-wrap {
+      width: 54px; height: 54px; flex-shrink: 0;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 16px -6px rgba(10,61,98,0.55);
+      overflow: hidden; position: relative;
+    }
+    .logo-wrap img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
+    .logo-wrap .logo-fallback {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.5px;
+    }
+    .title { min-width: 0; }
+    .title .eyebrow {
+      display: inline-block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--brand-2);
+      background: var(--chip-bg); color: var(--chip-text);
+      padding: 3px 9px; border-radius: 999px; margin-bottom: 6px;
+    }
+    .title h1 {
+      margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--title-grad-1), var(--title-grad-2));
+      background-clip: text; -webkit-background-clip: text; color: transparent;
+      line-height: 1.15;
+    }
+    .title p { margin: 4px 0 0; font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+
+    .header-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .progress-panel {
+      background: var(--surface-2); border-radius: 18px; padding: 10px 18px;
+      min-width: 200px; text-align: center; border: 1px solid var(--border);
+    }
+    .progress-label { font-weight: 700; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+    .progress-value {
+      font-size: 1.8rem; font-weight: 800; line-height: 1.05;
+      background: linear-gradient(135deg, var(--progress-fill-1), var(--progress-fill-2));
+      background-clip: text; -webkit-background-clip: text; color: transparent;
+      font-variant-numeric: tabular-nums;
+    }
+    .progress-bar-bg { background: var(--progress-bg); border-radius: 40px; height: 7px; width: 100%; margin-top: 6px; overflow: hidden; }
+    .progress-fill {
+      background: linear-gradient(90deg, var(--progress-fill-1), var(--progress-fill-2));
+      width: 0%; height: 100%; border-radius: 40px; transition: width 0.35s ease;
+    }
+    .progress-meta { font-size: 0.6rem; color: var(--text-soft); margin-top: 4px; font-variant-numeric: tabular-nums; }
+
+    button.reset-btn, button.theme-btn {
+      background: var(--surface); border: 1px solid var(--border); color: var(--text);
+      padding: 7px 12px; border-radius: 999px; font-size: 0.72rem; font-weight: 600;
+      cursor: pointer; margin-top: 8px; font-family: inherit;
+      transition: all 0.15s ease;
+    }
+    button.theme-btn {
+      margin-top: 0; padding: 10px 12px; font-size: 1rem; line-height: 1;
+      width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center;
+    }
+    button.reset-btn:hover, button.theme-btn:hover { background: var(--chip-bg); border-color: var(--brand-2); transform: translateY(-1px); }
+    button.reset-btn:focus-visible, button.theme-btn:focus-visible { outline: none; box-shadow: var(--ring); }
+
+    /* ---------- Legend ---------- */
+    .legend {
+      display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 14px;
+      padding: 10px 14px; background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; box-shadow: var(--shadow-sm);
+      font-size: 0.72rem; color: var(--text-muted); align-items: center;
+    }
+    .legend-item { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 4px; display: inline-block; }
+    .legend-dot.completed { background: linear-gradient(135deg, #16a34a, #15803d); }
+    .legend-dot.available { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+    .legend-dot.blocked { background: var(--blocked-bg); border: 1px solid var(--blocked-border); }
+
+    /* ---------- Columns ---------- */
+    .columns-wrapper { overflow-x: auto; padding-bottom: 14px; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+    .columns-wrapper::-webkit-scrollbar { height: 10px; }
+    .columns-wrapper::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+    .columns-wrapper::-webkit-scrollbar-thumb:hover { background: var(--brand-2); }
+    .matrix-columns { display: flex; gap: 18px; min-width: min-content; align-items: flex-start; }
+    .level-column {
+      background: var(--surface); border-radius: 20px; width: 278px; min-width: 278px;
+      display: flex; flex-direction: column; box-shadow: var(--shadow); border: 1px solid var(--border-2);
+      overflow: hidden;
+    }
+    .column-header {
+      background: linear-gradient(135deg, var(--surface-3), var(--surface));
+      padding: 12px; border-bottom: 1px solid var(--border-2);
+      text-align: center; position: relative;
+    }
+    .column-header::before {
+      content: ''; position: absolute; top: 0; left: 10%; right: 10%; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--brand-2), transparent);
+    }
+    .column-header h3 { margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--brand); letter-spacing: -0.01em; }
+    .column-header span { font-size: 0.6rem; background: var(--chip-bg); color: var(--chip-text); padding: 2px 9px; border-radius: 999px; display: inline-block; margin-top: 6px; font-weight: 600; }
+    .subjects-list { padding: 12px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+
+    .subject-card {
+      border-radius: 14px; padding: 10px 12px; transition: all 0.18s ease; cursor: pointer;
+      border: 1px solid transparent;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+    }
+    .subject-card:focus-visible { outline: none; box-shadow: var(--ring); }
+    .subject-completed { background: var(--completed-bg); border-color: var(--completed-border); color: var(--completed-text); box-shadow: 0 4px 12px -4px rgba(22,163,74,0.4); }
+    .subject-completed:hover { background: var(--completed-hover); transform: translateY(-2px); box-shadow: 0 8px 18px -6px rgba(22,163,74,0.5); }
+    .subject-available { background: var(--available-bg); border-color: var(--available-border); color: var(--available-text); box-shadow: 0 4px 12px -4px rgba(37,99,235,0.4); }
+    .subject-available:hover { background: var(--available-hover); transform: translateY(-2px); box-shadow: 0 8px 18px -6px rgba(37,99,235,0.5); }
+    .subject-blocked { background: var(--blocked-bg); border-color: var(--blocked-border); color: var(--blocked-text); cursor: not-allowed; }
+    .subject-blocked .subject-code,
+    .subject-blocked .status-badge { background: var(--code-bg-light); color: var(--code-text-light); }
+    .subject-blocked .subject-ch { background: rgba(0,0,0,0.06); color: var(--blocked-text); }
+    .subject-blocked .pre-req-hint { color: var(--blocked-text); border-top-color: var(--blocked-border); }
+
+    .subject-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+    .subject-code { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.62rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); display: inline-block; padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; }
+    .subject-name { font-weight: 700; font-size: 0.82rem; margin: 7px 0 4px; line-height: 1.25; letter-spacing: -0.01em; }
+    .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
+    .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
+    .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+
+    /* ---------- Optativas ---------- */
+    .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+    .optativas-section h2 {
+      color: var(--brand); border-left: 4px solid var(--brand-2); padding-left: 14px;
+      margin: 0 0 14px; font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em;
+    }
+    .optativas-table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; border: 1px solid var(--border); }
+    .optativas-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 720px; }
+    .optativas-table th, .optativas-table td { border-bottom: 1px solid var(--table-border); padding: 10px 12px; text-align: left; vertical-align: top; word-break: break-word; }
+    .optativas-table tbody tr:nth-child(even) { background: var(--table-row-alt); }
+    .optativas-table tbody tr:hover { background: var(--chip-bg); }
+    .optativas-table th { background: var(--table-head); font-weight: 700; color: var(--text); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    .optativas-table td:first-child { font-family: 'JetBrains Mono', ui-monospace, monospace; font-weight: 600; color: var(--brand-2); white-space: nowrap; }
+
+    footer { text-align: center; margin-top: 20px; font-size: 0.72rem; color: var(--text-soft); background: var(--surface); padding: 12px; border-radius: 16px; border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+    footer strong { color: var(--text); }
+
+    /* ---------- Mobile ---------- */
+    @media (max-width: 768px) {
+      body { padding: 12px; }
+      .header { padding: 12px; border-radius: 18px; gap: 12px; }
+      .logo-wrap { width: 44px; height: 44px; border-radius: 12px; }
+      .title h1 { font-size: 1.05rem; }
+      .title p { font-size: 0.7rem; }
+      .title .eyebrow { font-size: 0.55rem; }
+      .header-actions { width: 100%; justify-content: space-between; }
+      .progress-panel { flex: 1; min-width: 0; padding: 8px 14px; border-radius: 14px; }
+      .progress-value { font-size: 1.4rem; }
+      .level-column { width: 240px; min-width: 240px; border-radius: 16px; }
+      .optativas-section { padding: 14px; border-radius: 18px; margin-top: 24px; }
+      .optativas-section h2 { font-size: 1rem; }
+      .legend { font-size: 0.65rem; gap: 8px; padding: 8px 10px; }
+    }
+    @media (max-width: 420px) {
+      .level-column { width: 86vw; min-width: 86vw; }
+      .title h1 { font-size: 0.98rem; }
+      .brand { gap: 10px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="brand">
+      <div class="logo-wrap" aria-hidden="true">
+        <span class="logo-fallback">UFCG</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Logo_UFCG.png/240px-Logo_UFCG.png"
+             alt="" onerror="this.style.display='none'"
+             onload="this.previousElementSibling.style.display='none'">
+      </div>
+      <div class="title">
+        <span class="eyebrow">Universidade Federal de Campina Grande</span>
+        <h1>ENGENHARIA QUÍMICA - D</h1>
+        <p>Campina Grande · Currículo 2009 · Código 11128100</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
+      <div class="progress-panel">
+        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-value" id="percentDisplay">0%</div>
+        <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
+        <button class="reset-btn" id="resetBtn">🔄 Redefinir</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend" role="list">
+    <span class="legend-item" role="listitem"><span class="legend-dot completed"></span> Cursada</span>
+    <span class="legend-item" role="listitem"><span class="legend-dot available"></span> Disponível</span>
+    <span class="legend-item" role="listitem"><span class="legend-dot blocked"></span> Bloqueada (pré‑requisitos pendentes)</span>
+  </div>
+
+  <div class="columns-wrapper">
+    <div class="matrix-columns" id="matrixColumns"></div>
+  </div>
+
+  <div class="optativas-section">
+    <h2>📖 Disciplinas Optativas</h2>
+    <div class="optativas-table-wrapper">
+      <table class="optativas-table">
+        <thead><tr><th>Código</th><th>Disciplina</th><th>CH</th><th>Créd.</th><th>Pré‑requisitos</th><th>Co‑requisitos</th></tr></thead>
+        <tbody>
+
+          <tr>
+              <td>1107224</td>
+              <td>TE(INTRODUÇÃO A ENG DE RESERVATORIOS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107227</td>
+              <td>TE (ENGENHARIA DE POÇO)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107262</td>
+              <td>TEEQ (TRAT. ÁGUAS NATUR. E RESIDUÁRIAS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107264</td>
+              <td>INTRODUÇÃO À ENGENHARIA DE PETRÓLEO</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107302</td>
+              <td>CATALISE</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107303</td>
+              <td>COMPUTAÇÃO PARA ENGENHARIA QUÍMICA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107306</td>
+              <td>ELETROQUÍMICA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107307</td>
+              <td>ENGENHARIA BIOQUÍMICA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107308</td>
+              <td>ENGENHARIA ELETROQUÍMICA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107309</td>
+              <td>INTROD A FLUIDODINAMICA COMPUTACIONAL</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107310</td>
+              <td>INTRODUÇÃO A INTELIGENCIA ARTIFICIAL</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107311</td>
+              <td>PRINCIPIOS E MODELOS DE TURBULENCIA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107312</td>
+              <td>ZEOLITAS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107317</td>
+              <td>TEEQ(INT A PROC DE SEP POR MEMB ENG QUIM</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1113034</td>
+              <td>GESTAO DA QUALIDADE</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107225</td>
+              <td>TE (INTRODUÇÃO À ENGENHARIA DO PETRÓLEO)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107234</td>
+              <td>TEEQ(PRINC E APL FLUIDODINAMICA COMPUT)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>FENOMENOS DE TRANSPORTES III</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107258</td>
+              <td>TEEQ (FERR. COMP. APL. A PROC. QUÍMICOS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107313</td>
+              <td>TEEQ(TRAT ELETRO E EFLU DA IND DO PETR)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107318</td>
+              <td>TEEQ(TECNOLOGIA DA FERMENTACAO ALCOOLICA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107319</td>
+              <td>TEEQ(PROCESSOS DE REFINO)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107320</td>
+              <td>TEEQ(INTRODUCAO A PROPRIEDADE INDUSTRIAL</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107321</td>
+              <td>TEEQ(SECAGEM E CRISTALIZAÇÃO)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107322</td>
+              <td>TEEQ(TOPICOS DE PROPRIEDADE INDUSTRIAL)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107323</td>
+              <td>TEEQ(MICROB. AMBIENTAL P/ ENGENHEIROS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107324</td>
+              <td>TEEQ(AVALIACAO DE IMPACTO AMBIENTAL)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107325</td>
+              <td>TEEQ(TERMOD APLIC AOS SIST REAT E NÃO RE</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107326</td>
+              <td>TEEQ(HIGIENE E SEG DA INDÚSTRIA QUÍMICA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1107327</td>
+              <td>TEEQ(INTROD À INSTRUMENTAÇÃO ANALÍTICA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1307332</td>
+              <td>LIBRAS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer>🎓 <strong>Dica:</strong> clique nas disciplinas <em>disponíveis</em> para marcar como cursadas. Desmarcar uma disciplina recalcula automaticamente as dependentes. Seu progresso é salvo neste navegador.</footer>
+</div>
+
+<script>
+  // ---------- Tema ----------
+  (function initTheme() {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+  function updateThemeBtn() {
+    const btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    btn.textContent = isDark ? '☀️' : '🌙';
+  }
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateThemeBtn();
+  });
+  updateThemeBtn();
+
+  // ---------- Dados ----------
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1107255", "nome": "LABORATÓRIO DE QUÍMICA GERAL", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1107283", "nome": "INTRODUÇÃO À ENGENHARIA QUÍMICA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1107294", "nome": "INFORMÁTICA APLICADA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1107290", "nome": "LABORATÓRIO DE QUÍMICA ORGÂNICA", "ch": "30h", "preReqs": ["1107232", "1107132", "1107177", "1107255"]}, {"nivel": "2º Nível", "codigo": "1107296", "nome": "PRINCÍPIOS E CÁLCULOS DA ENG. QUÍMICA I", "ch": "60h", "preReqs": ["1107232", "1107132"]}, {"nivel": "2º Nível", "codigo": "1107304", "nome": "QUÍMICA ORGÂNICA", "ch": "60h", "preReqs": ["1107132", "1107232", "1107177", "1107255"]}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109126", "1109050"]}, {"nivel": "3º Nível", "codigo": "1107271", "nome": "MÉTODOS NUMÉRICOS PARA ENG. QUÍMICA", "ch": "60h", "preReqs": ["1107294"]}, {"nivel": "3º Nível", "codigo": "1107297", "nome": "PRINCÍPIOS E CÁLCULOS DA ENG. QUÍMICA II", "ch": "60h", "preReqs": ["1107296", "1107136"]}, {"nivel": "3º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60h", "preReqs": ["1108031", "1108081", "1108023", "1108026"]}, {"nivel": "3º Nível", "codigo": "1108101", "nome": "FÍSICA EXPERIMENTAL II", "ch": "60h", "preReqs": ["1108081", "1108031", "1108023", "1108026"]}, {"nivel": "3º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["1109053", "1109131", "1109035"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60h", "preReqs": ["1109035", "1109131", "1109053"]}, {"nivel": "4º Nível", "codigo": "1107256", "nome": "QUÍMICA ANALÍTICA", "ch": "60h", "preReqs": ["1107232", "1107132", "1107255", "1107177"]}, {"nivel": "4º Nível", "codigo": "1107277", "nome": "CINÉTICA QUÍMICA", "ch": "60h", "preReqs": ["1108081", "1109128", "1109010"]}, {"nivel": "4º Nível", "codigo": "1107284", "nome": "LABORATÓRIO DE ENGENHARIA QUÍMICA I", "ch": "30h", "preReqs": ["1107297"]}, {"nivel": "4º Nível", "codigo": "1107289", "nome": "LABORATÓRIO DE QUÍMICA ANALÍTICA", "ch": "60h", "preReqs": ["1107232", "1107132", "1107255", "1107177"]}, {"nivel": "4º Nível", "codigo": "1107298", "nome": "TERMODINÂMICA DA ENGENHARIA QUÍMICA I", "ch": "60h", "preReqs": ["1108081", "1109128", "1109010"]}, {"nivel": "4º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1404026", "nome": "ELETROTÉCNICA GERAL", "ch": "60h", "preReqs": ["1108100", "1108025", "1108101", "1108024"]}, {"nivel": "5º Nível", "codigo": "1107272", "nome": "MICROBIOLOGIA", "ch": "60h", "preReqs": ["1107304"]}, {"nivel": "5º Nível", "codigo": "1107280", "nome": "FENOMENOS DE TRANSPORTES I", "ch": "60h", "preReqs": ["1108081", "1109128", "1109010"]}, {"nivel": "5º Nível", "codigo": "1107285", "nome": "LABORATÓRIO DE ENGENHARIA QUÍMICA II", "ch": "30h", "preReqs": ["1107298", "1107148", "1107284", "1107014"]}, {"nivel": "5º Nível", "codigo": "1107299", "nome": "TERMODINÂMICA DA ENGENHARIA QUÍMICA II", "ch": "60h", "preReqs": ["1107298", "1107148", "1107277", "1107011"]}, {"nivel": "5º Nível", "codigo": "1108099", "nome": "MECÂNICA GERAL", "ch": "60h", "preReqs": ["1109051", "1109093", "1109128"]}, {"nivel": "5º Nível", "codigo": "1301014", "nome": "ADMINISTRAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1305109", "nome": "SOCIOLOGIA INDUSTRIAL", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1107275", "nome": "CALCULO DE REATORES I", "ch": "60h", "preReqs": ["1107298"]}, {"nivel": "6º Nível", "codigo": "1107281", "nome": "FENOMENOS DE TRANSPORTES II", "ch": "60h", "preReqs": ["1107280", "1107133"]}, {"nivel": "6º Nível", "codigo": "1107282", "nome": "FENOMENOS DE TRANSPORTES III", "ch": "60h", "preReqs": ["1107280", "1107133"]}, {"nivel": "6º Nível", "codigo": "1107286", "nome": "LABORATÓRIO DE ENGENHARIA QUÍMICA III", "ch": "30h", "preReqs": ["1107285"]}, {"nivel": "6º Nível", "codigo": "1107291", "nome": "OPERACOES UNITARIAS I", "ch": "60h", "preReqs": ["1107280", "1107133", "1107285"]}, {"nivel": "6º Nível", "codigo": "1107305", "nome": "PROBABILIDADE E ESTATÍSTICA", "ch": "60h", "preReqs": ["1109131", "1109053"]}, {"nivel": "7º Nível", "codigo": "1107267", "nome": "CONTROLE ESTATISTICO DE PROCESSOS", "ch": "60h", "preReqs": ["1107305", "1114052", "1107297", "1107136"]}, {"nivel": "7º Nível", "codigo": "1107276", "nome": "CALCULO DE REATORES II", "ch": "60h", "preReqs": ["1107282", "1107275"]}, {"nivel": "7º Nível", "codigo": "1107287", "nome": "LABORATÓRIO DE ENGENHARIA QUÍMICA IV", "ch": "30h", "preReqs": ["1107286"]}, {"nivel": "7º Nível", "codigo": "1107292", "nome": "OPERACOES UNITARIAS II", "ch": "60h", "preReqs": ["1107281"]}, {"nivel": "7º Nível", "codigo": "1107293", "nome": "OPERACOES UNITARIAS III", "ch": "60h", "preReqs": ["1107281", "1107282", "1107299"]}, {"nivel": "8º Nível", "codigo": "1107266", "nome": "ANÁLISE ECONÔMICA DE PROCESSOS", "ch": "60h", "preReqs": ["1107297", "1107136"]}, {"nivel": "8º Nível", "codigo": "1107269", "nome": "DINAMICA DE PROCESSOS", "ch": "60h", "preReqs": ["1107292", "1107138", "1107293", "1107139", "1107275", "1107140"]}, {"nivel": "8º Nível", "codigo": "1107273", "nome": "OTIMIZACAO DE PROCESSOS", "ch": "60h", "preReqs": ["1107276", "1107141"]}, {"nivel": "8º Nível", "codigo": "1107278", "nome": "ENGENHARIA DE PROCESSOS I", "ch": "60h", "preReqs": ["1107292", "1107138", "1107293", "1107139", "1107275", "1107140"]}, {"nivel": "9º Nível", "codigo": "1107236", "nome": "GESTÃO AMBIENTAL", "ch": "60h", "preReqs": ["1107277", "1107256", "1107022"]}, {"nivel": "9º Nível", "codigo": "1107268", "nome": "CONTROLE DE PROCESSOS", "ch": "60h", "preReqs": ["1107269"]}, {"nivel": "9º Nível", "codigo": "1107274", "nome": "PLANEJAMENTO E ANÁLISE DE EXPERIMENTOS", "ch": "60h", "preReqs": ["1107305", "1114052"]}, {"nivel": "9º Nível", "codigo": "1107279", "nome": "ENGENHARIA DE PROCESSOS II", "ch": "60h", "preReqs": ["1107278", "1107146"]}, {"nivel": "9º Nível", "codigo": "1107288", "nome": "LABORATÓRIO DE ENGENHARIA QUÍMICA V", "ch": "30h", "preReqs": ["1107287"]}, {"nivel": "9º Nível", "codigo": "1107300", "nome": "TRABALHO DE CONCLUSAO DE CURSO (TCC)", "ch": "60h", "preReqs": ["1107269", "1107278", "1107146", "1107266", "1303021", "1107273"]}];
+  const codigoToNome = {"1107232": "QUÍMICA GERAL", "1107255": "LABORATÓRIO DE QUÍMICA GERAL", "1107283": "INTRODUÇÃO À ENGENHARIA QUÍMICA", "1107294": "INFORMÁTICA APLICADA", "1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1107290": "LABORATÓRIO DE QUÍMICA ORGÂNICA", "1107296": "PRINCÍPIOS E CÁLCULOS DA ENG. QUÍMICA I", "1107304": "QUÍMICA ORGÂNICA", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1107271": "MÉTODOS NUMÉRICOS PARA ENG. QUÍMICA", "1107297": "PRINCÍPIOS E CÁLCULOS DA ENG. QUÍMICA II", "1108100": "FÍSICA GERAL III", "1108101": "FÍSICA EXPERIMENTAL II", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1107256": "QUÍMICA ANALÍTICA", "1107277": "CINÉTICA QUÍMICA", "1107284": "LABORATÓRIO DE ENGENHARIA QUÍMICA I", "1107289": "LABORATÓRIO DE QUÍMICA ANALÍTICA", "1107298": "TERMODINÂMICA DA ENGENHARIA QUÍMICA I", "1113019": "EXPRESSAO GRAFICA", "1404026": "ELETROTÉCNICA GERAL", "1107272": "MICROBIOLOGIA", "1107280": "FENOMENOS DE TRANSPORTES I", "1107285": "LABORATÓRIO DE ENGENHARIA QUÍMICA II", "1107299": "TERMODINÂMICA DA ENGENHARIA QUÍMICA II", "1108099": "MECÂNICA GERAL", "1301014": "ADMINISTRAÇÃO", "1305109": "SOCIOLOGIA INDUSTRIAL", "1107275": "CALCULO DE REATORES I", "1107281": "FENOMENOS DE TRANSPORTES II", "1107282": "FENOMENOS DE TRANSPORTES III", "1107286": "LABORATÓRIO DE ENGENHARIA QUÍMICA III", "1107291": "OPERACOES UNITARIAS I", "1107305": "PROBABILIDADE E ESTATÍSTICA", "1107267": "CONTROLE ESTATISTICO DE PROCESSOS", "1107276": "CALCULO DE REATORES II", "1107287": "LABORATÓRIO DE ENGENHARIA QUÍMICA IV", "1107292": "OPERACOES UNITARIAS II", "1107293": "OPERACOES UNITARIAS III", "1107266": "ANÁLISE ECONÔMICA DE PROCESSOS", "1107269": "DINAMICA DE PROCESSOS", "1107273": "OTIMIZACAO DE PROCESSOS", "1107278": "ENGENHARIA DE PROCESSOS I", "1107236": "GESTÃO AMBIENTAL", "1107268": "CONTROLE DE PROCESSOS", "1107274": "PLANEJAMENTO E ANÁLISE DE EXPERIMENTOS", "1107279": "ENGENHARIA DE PROCESSOS II", "1107288": "LABORATÓRIO DE ENGENHARIA QUÍMICA V", "1107300": "TRABALHO DE CONCLUSAO DE CURSO (TCC)", "1107224": "TE(INTRODUÇÃO A ENG DE RESERVATORIOS)", "1107227": "TE (ENGENHARIA DE POÇO)", "1107262": "TEEQ (TRAT. ÁGUAS NATUR. E RESIDUÁRIAS)", "1107264": "INTRODUÇÃO À ENGENHARIA DE PETRÓLEO", "1107302": "CATALISE", "1107303": "COMPUTAÇÃO PARA ENGENHARIA QUÍMICA", "1107306": "ELETROQUÍMICA", "1107307": "ENGENHARIA BIOQUÍMICA", "1107308": "ENGENHARIA ELETROQUÍMICA", "1107309": "INTROD A FLUIDODINAMICA COMPUTACIONAL", "1107310": "INTRODUÇÃO A INTELIGENCIA ARTIFICIAL", "1107311": "PRINCIPIOS E MODELOS DE TURBULENCIA", "1107312": "ZEOLITAS", "1107317": "TEEQ(INT A PROC DE SEP POR MEMB ENG QUIM", "1113034": "GESTAO DA QUALIDADE", "1107225": "TE (INTRODUÇÃO À ENGENHARIA DO PETRÓLEO)", "1107234": "TEEQ(PRINC E APL FLUIDODINAMICA COMPUT)", "1107258": "TEEQ (FERR. COMP. APL. A PROC. QUÍMICOS)", "1107313": "TEEQ(TRAT ELETRO E EFLU DA IND DO PETR)", "1107318": "TEEQ(TECNOLOGIA DA FERMENTACAO ALCOOLICA", "1107319": "TEEQ(PROCESSOS DE REFINO)", "1107320": "TEEQ(INTRODUCAO A PROPRIEDADE INDUSTRIAL", "1107321": "TEEQ(SECAGEM E CRISTALIZAÇÃO)", "1107322": "TEEQ(TOPICOS DE PROPRIEDADE INDUSTRIAL)", "1107323": "TEEQ(MICROB. AMBIENTAL P/ ENGENHEIROS)", "1107324": "TEEQ(AVALIACAO DE IMPACTO AMBIENTAL)", "1107325": "TEEQ(TERMOD APLIC AOS SIST REAT E NÃO RE", "1107326": "TEEQ(HIGIENE E SEG DA INDÚSTRIA QUÍMICA)", "1107327": "TEEQ(INTROD À INSTRUMENTAÇÃO ANALÍTICA)", "1307332": "LIBRAS"};
+
+  const subjectsMap = new Map();
+  mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
+
+  const reverseDeps = new Map();
+  mandatorySubjects.forEach(sub => {
+    if (sub.preReqs && sub.preReqs.length) {
+      sub.preReqs.forEach(pre => {
+        if (!reverseDeps.has(pre)) reverseDeps.set(pre, []);
+        reverseDeps.get(pre).push(sub.codigo);
+      });
+    }
+  });
+
+  let completedSet = new Set();
+
+  function arePrerequisitesMet(codigo) {
+    const disciplina = subjectsMap.get(codigo);
+    if (!disciplina) return true;
+    const preReqs = disciplina.preReqs || [];
+    return preReqs.every(preCod => {
+      if (!subjectsMap.has(preCod)) return true;
+      return completedSet.has(preCod);
+    });
+  }
+
+  function cascadeUncheck(startingCode) {
+    const queue = [startingCode];
+    const visited = new Set();
+    while (queue.length) {
+      const current = queue.shift();
+      if (visited.has(current)) continue;
+      visited.add(current);
+      if (completedSet.has(current) && !arePrerequisitesMet(current)) {
+        completedSet.delete(current);
+      }
+      const dependents = reverseDeps.get(current) || [];
+      dependents.forEach(dep => { if (!visited.has(dep)) queue.push(dep); });
+    }
+  }
+
+  function getSubjectStatus(codigo) {
+    if (completedSet.has(codigo)) return "completed";
+    return arePrerequisitesMet(codigo) ? "available" : "blocked";
+  }
+
+  window.toggleSubject = function(codigo) {
+    const status = getSubjectStatus(codigo);
+    if (status === "blocked") return;
+    if (completedSet.has(codigo)) {
+      completedSet.delete(codigo);
+      cascadeUncheck(codigo);
+    } else {
+      completedSet.add(codigo);
+    }
+    saveProgress();
+    renderColumns();
+    updateGlobalProgress();
+  };
+
+  function computePercent() {
+    const total = mandatorySubjects.length;
+    return total === 0 ? 0 : Math.round((completedSet.size / total) * 100);
+  }
+
+  function updateGlobalProgress() {
+    const percent = computePercent();
+    const total = mandatorySubjects.length;
+    document.getElementById('percentDisplay').innerText = `${percent}%`;
+    document.getElementById('progressFill').style.width = `${percent}%`;
+    const meta = document.getElementById('progressMeta');
+    if (meta) meta.innerText = `${completedSet.size} / ${total} disciplinas`;
+  }
+
+  function renderColumns() {
+    const container = document.getElementById('matrixColumns');
+    if (!container) return;
+    const niveis = [];
+    const mapNivel = new Map();
+    mandatorySubjects.forEach(sub => {
+      const nivel = sub.nivel;
+      if (!mapNivel.has(nivel)) { mapNivel.set(nivel, []); niveis.push(nivel); }
+      mapNivel.get(nivel).push(sub);
+    });
+    let columnsHtml = '';
+    for (let nivel of niveis) {
+      const subjectsOfLevel = mapNivel.get(nivel);
+      columnsHtml += `
+        <div class="level-column">
+          <div class="column-header">
+            <h3>${nivel}</h3>
+            <span>${subjectsOfLevel.length} disc.</span>
+          </div>
+          <div class="subjects-list">
+      `;
+      subjectsOfLevel.forEach(sub => {
+        const status = getSubjectStatus(sub.codigo);
+        let cardClass = '', statusText = '';
+        if (status === 'completed') { cardClass = 'subject-completed'; statusText = '✅ Cursada'; }
+        else if (status === 'available') { cardClass = 'subject-available'; statusText = '🔓 Disponível'; }
+        else { cardClass = 'subject-blocked'; statusText = '🔒 Bloqueada'; }
+        let prereqDisplay = 'Nenhum';
+        if (sub.preReqs && sub.preReqs.length) {
+          prereqDisplay = sub.preReqs.map(cod => codigoToNome[cod] || cod).join(', ');
+        }
+        columnsHtml += `
+          <div class="subject-card ${cardClass}" data-codigo="${sub.codigo}">
+            <div class="subject-row">
+              <span class="subject-code">${sub.codigo}</span>
+              <span class="status-badge">${statusText}</span>
+            </div>
+            <div class="subject-name">${sub.nome}</div>
+            <div><span class="subject-ch">${sub.ch}</span></div>
+            <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
+          </div>
+        `;
+      });
+      columnsHtml += `</div></div>`;
+    }
+    container.innerHTML = columnsHtml;
+    document.querySelectorAll('.subject-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const codigo = card.getAttribute('data-codigo');
+        if (codigo) window.toggleSubject(codigo);
+      });
+    });
+  }
+
+  function saveProgress() {
+    localStorage.setItem('completedObrigatorias_11128100_2009', JSON.stringify([...completedSet]));
+  }
+
+  function loadProgress() {
+    const saved = localStorage.getItem('completedObrigatorias_11128100_2009');
+    if (saved) {
+      completedSet = new Set(JSON.parse(saved));
+      const toRemove = [];
+      for (let code of completedSet) { if (!arePrerequisitesMet(code)) toRemove.push(code); }
+      toRemove.forEach(code => completedSet.delete(code));
+      saveProgress();
+    }
+  }
+
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    completedSet.clear();
+    saveProgress();
+    renderColumns();
+    updateGlobalProgress();
+  });
+
+  loadProgress();
+  renderColumns();
+  updateGlobalProgress();
+</script>
+</body>
+</html>

@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4f6fa" media="(prefers-color-scheme: light)">
+  <title>Matriz Curricular - MEDICINA VETERINÁRIA - D (2018)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f6fa;
+      --bg-grad: radial-gradient(1200px 600px at 10% -10%, #e6efff 0%, transparent 60%),
+                 radial-gradient(900px 500px at 100% 0%, #e8fbff 0%, transparent 55%),
+                 linear-gradient(180deg, #f4f6fa 0%, #eef2f7 100%);
+      --surface: #ffffff;
+      --surface-2: #f8fafc;
+      --surface-3: #f9fbfd;
+      --border: #e3e8f0;
+      --border-2: #e6edf5;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --text-soft: #64748b;
+      --brand: #0a3d62;
+      --brand-2: #1e6091;
+      --brand-3: #2e86ab;
+      --accent: #0e7490;
+      --accent-2: #0891b2;
+      --accent-3: #155e75;
+      --title-grad-1: #0a3d62;
+      --title-grad-2: #0e7490;
+      --chip-bg: #eaf2f8;
+      --chip-text: #0a3d62;
+      --progress-bg: #e2e8f0;
+      --progress-fill-1: #0891b2;
+      --progress-fill-2: #06b6d4;
+      --completed-bg: linear-gradient(135deg, #16a34a, #15803d);
+      --completed-border: #15803d;
+      --completed-text: #f0fdf4;
+      --completed-hover: linear-gradient(135deg, #15803d, #166534);
+      --available-bg: linear-gradient(135deg, #2563eb, #1d4ed8);
+      --available-border: #1d4ed8;
+      --available-text: #eff6ff;
+      --available-hover: linear-gradient(135deg, #1d4ed8, #1e40af);
+      --blocked-bg: #eef1f5;
+      --blocked-border: #d6dde6;
+      --blocked-text: #6b7280;
+      --code-bg: rgba(255,255,255,0.22);
+      --code-text: #ffffff;
+      --code-bg-light: #f1f5f9;
+      --code-text-light: #0f172a;
+      --ch-bg: rgba(255,255,255,0.18);
+      --hint-text: rgba(255,255,255,0.85);
+      --hint-border: rgba(255,255,255,0.25);
+      --table-head: #f1f5f9;
+      --table-border: #e2e8f0;
+      --table-row-alt: #fafbfd;
+      --shadow: 0 10px 30px -12px rgba(15,23,42,0.12), 0 2px 6px rgba(15,23,42,0.04);
+      --shadow-sm: 0 4px 14px -6px rgba(15,23,42,0.08);
+      --ring: 0 0 0 3px rgba(8,145,178,0.18);
+    }
+    html[data-theme="dark"] {
+      --bg: #0b1220;
+      --bg-grad: radial-gradient(1200px 600px at 10% -10%, #0e2a47 0%, transparent 60%),
+                 radial-gradient(900px 500px at 100% 0%, #0a3a4a 0%, transparent 55%),
+                 linear-gradient(180deg, #0b1220 0%, #060b16 100%);
+      --surface: #131c2e;
+      --surface-2: #0f1727;
+      --surface-3: #131c2e;
+      --border: #1f2a40;
+      --border-2: #1f2a40;
+      --text: #e6edf7;
+      --text-muted: #9aa8bf;
+      --text-soft: #8696b0;
+      --brand: #7dd3fc;
+      --brand-2: #38bdf8;
+      --brand-3: #22d3ee;
+      --accent: #67e8f9;
+      --accent-2: #22d3ee;
+      --accent-3: #38bdf8;
+      --title-grad-1: #7dd3fc;
+      --title-grad-2: #22d3ee;
+      --chip-bg: #0f2b3d;
+      --chip-text: #7dd3fc;
+      --progress-bg: #1f2a40;
+      --progress-fill-1: #06b6d4;
+      --progress-fill-2: #22d3ee;
+      --completed-bg: linear-gradient(135deg, #15803d, #14532d);
+      --completed-border: #16a34a;
+      --completed-text: #ecfdf5;
+      --completed-hover: linear-gradient(135deg, #166534, #14532d);
+      --available-bg: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+      --available-border: #2563eb;
+      --available-text: #eff6ff;
+      --available-hover: linear-gradient(135deg, #1e40af, #172554);
+      --blocked-bg: #1a2336;
+      --blocked-border: #283449;
+      --blocked-text: #7d8aa3;
+      --code-bg: rgba(255,255,255,0.12);
+      --code-text: #ffffff;
+      --code-bg-light: #1a2336;
+      --code-text-light: #e6edf7;
+      --ch-bg: rgba(255,255,255,0.12);
+      --hint-text: rgba(255,255,255,0.78);
+      --hint-border: rgba(255,255,255,0.18);
+      --table-head: #0f1727;
+      --table-border: #1f2a40;
+      --table-row-alt: #111a2c;
+      --shadow: 0 12px 32px -12px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.3);
+      --shadow-sm: 0 4px 14px -6px rgba(0,0,0,0.5);
+      --ring: 0 0 0 3px rgba(34,211,238,0.25);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      background-image: var(--bg-grad);
+      background-attachment: fixed;
+      margin: 0; padding: 20px; color: var(--text);
+      transition: background 0.25s ease, color 0.25s ease;
+      letter-spacing: -0.005em;
+    }
+    .container { max-width: 1600px; margin: 0 auto; }
+
+    /* ---------- Header ---------- */
+    .header {
+      background: var(--surface);
+      border-radius: 22px;
+      padding: 14px 20px;
+      margin-bottom: 20px;
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      align-items: center; gap: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      backdrop-filter: saturate(140%);
+    }
+    .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+    .logo-wrap {
+      width: 54px; height: 54px; flex-shrink: 0;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 16px -6px rgba(10,61,98,0.55);
+      overflow: hidden; position: relative;
+    }
+    .logo-wrap img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
+    .logo-wrap .logo-fallback {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.5px;
+    }
+    .title { min-width: 0; }
+    .title .eyebrow {
+      display: inline-block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--brand-2);
+      background: var(--chip-bg); color: var(--chip-text);
+      padding: 3px 9px; border-radius: 999px; margin-bottom: 6px;
+    }
+    .title h1 {
+      margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--title-grad-1), var(--title-grad-2));
+      background-clip: text; -webkit-background-clip: text; color: transparent;
+      line-height: 1.15;
+    }
+    .title p { margin: 4px 0 0; font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+
+    .header-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .progress-panel {
+      background: var(--surface-2); border-radius: 18px; padding: 10px 18px;
+      min-width: 200px; text-align: center; border: 1px solid var(--border);
+    }
+    .progress-label { font-weight: 700; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+    .progress-value {
+      font-size: 1.8rem; font-weight: 800; line-height: 1.05;
+      background: linear-gradient(135deg, var(--progress-fill-1), var(--progress-fill-2));
+      background-clip: text; -webkit-background-clip: text; color: transparent;
+      font-variant-numeric: tabular-nums;
+    }
+    .progress-bar-bg { background: var(--progress-bg); border-radius: 40px; height: 7px; width: 100%; margin-top: 6px; overflow: hidden; }
+    .progress-fill {
+      background: linear-gradient(90deg, var(--progress-fill-1), var(--progress-fill-2));
+      width: 0%; height: 100%; border-radius: 40px; transition: width 0.35s ease;
+    }
+    .progress-meta { font-size: 0.6rem; color: var(--text-soft); margin-top: 4px; font-variant-numeric: tabular-nums; }
+
+    button.reset-btn, button.theme-btn {
+      background: var(--surface); border: 1px solid var(--border); color: var(--text);
+      padding: 7px 12px; border-radius: 999px; font-size: 0.72rem; font-weight: 600;
+      cursor: pointer; margin-top: 8px; font-family: inherit;
+      transition: all 0.15s ease;
+    }
+    button.theme-btn {
+      margin-top: 0; padding: 10px 12px; font-size: 1rem; line-height: 1;
+      width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center;
+    }
+    button.reset-btn:hover, button.theme-btn:hover { background: var(--chip-bg); border-color: var(--brand-2); transform: translateY(-1px); }
+    button.reset-btn:focus-visible, button.theme-btn:focus-visible { outline: none; box-shadow: var(--ring); }
+
+    /* ---------- Legend ---------- */
+    .legend {
+      display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 14px;
+      padding: 10px 14px; background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; box-shadow: var(--shadow-sm);
+      font-size: 0.72rem; color: var(--text-muted); align-items: center;
+    }
+    .legend-item { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 4px; display: inline-block; }
+    .legend-dot.completed { background: linear-gradient(135deg, #16a34a, #15803d); }
+    .legend-dot.available { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+    .legend-dot.blocked { background: var(--blocked-bg); border: 1px solid var(--blocked-border); }
+
+    /* ---------- Columns ---------- */
+    .columns-wrapper { overflow-x: auto; padding-bottom: 14px; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+    .columns-wrapper::-webkit-scrollbar { height: 10px; }
+    .columns-wrapper::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+    .columns-wrapper::-webkit-scrollbar-thumb:hover { background: var(--brand-2); }
+    .matrix-columns { display: flex; gap: 18px; min-width: min-content; align-items: flex-start; }
+    .level-column {
+      background: var(--surface); border-radius: 20px; width: 278px; min-width: 278px;
+      display: flex; flex-direction: column; box-shadow: var(--shadow); border: 1px solid var(--border-2);
+      overflow: hidden;
+    }
+    .column-header {
+      background: linear-gradient(135deg, var(--surface-3), var(--surface));
+      padding: 12px; border-bottom: 1px solid var(--border-2);
+      text-align: center; position: relative;
+    }
+    .column-header::before {
+      content: ''; position: absolute; top: 0; left: 10%; right: 10%; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--brand-2), transparent);
+    }
+    .column-header h3 { margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--brand); letter-spacing: -0.01em; }
+    .column-header span { font-size: 0.6rem; background: var(--chip-bg); color: var(--chip-text); padding: 2px 9px; border-radius: 999px; display: inline-block; margin-top: 6px; font-weight: 600; }
+    .subjects-list { padding: 12px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+
+    .subject-card {
+      border-radius: 14px; padding: 10px 12px; transition: all 0.18s ease; cursor: pointer;
+      border: 1px solid transparent;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+    }
+    .subject-card:focus-visible { outline: none; box-shadow: var(--ring); }
+    .subject-completed { background: var(--completed-bg); border-color: var(--completed-border); color: var(--completed-text); box-shadow: 0 4px 12px -4px rgba(22,163,74,0.4); }
+    .subject-completed:hover { background: var(--completed-hover); transform: translateY(-2px); box-shadow: 0 8px 18px -6px rgba(22,163,74,0.5); }
+    .subject-available { background: var(--available-bg); border-color: var(--available-border); color: var(--available-text); box-shadow: 0 4px 12px -4px rgba(37,99,235,0.4); }
+    .subject-available:hover { background: var(--available-hover); transform: translateY(-2px); box-shadow: 0 8px 18px -6px rgba(37,99,235,0.5); }
+    .subject-blocked { background: var(--blocked-bg); border-color: var(--blocked-border); color: var(--blocked-text); cursor: not-allowed; }
+    .subject-blocked .subject-code,
+    .subject-blocked .status-badge { background: var(--code-bg-light); color: var(--code-text-light); }
+    .subject-blocked .subject-ch { background: rgba(0,0,0,0.06); color: var(--blocked-text); }
+    .subject-blocked .pre-req-hint { color: var(--blocked-text); border-top-color: var(--blocked-border); }
+
+    .subject-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+    .subject-code { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.62rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); display: inline-block; padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; }
+    .subject-name { font-weight: 700; font-size: 0.82rem; margin: 7px 0 4px; line-height: 1.25; letter-spacing: -0.01em; }
+    .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
+    .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
+    .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+
+    /* ---------- Optativas ---------- */
+    .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+    .optativas-section h2 {
+      color: var(--brand); border-left: 4px solid var(--brand-2); padding-left: 14px;
+      margin: 0 0 14px; font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em;
+    }
+    .optativas-table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; border: 1px solid var(--border); }
+    .optativas-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 720px; }
+    .optativas-table th, .optativas-table td { border-bottom: 1px solid var(--table-border); padding: 10px 12px; text-align: left; vertical-align: top; word-break: break-word; }
+    .optativas-table tbody tr:nth-child(even) { background: var(--table-row-alt); }
+    .optativas-table tbody tr:hover { background: var(--chip-bg); }
+    .optativas-table th { background: var(--table-head); font-weight: 700; color: var(--text); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    .optativas-table td:first-child { font-family: 'JetBrains Mono', ui-monospace, monospace; font-weight: 600; color: var(--brand-2); white-space: nowrap; }
+
+    footer { text-align: center; margin-top: 20px; font-size: 0.72rem; color: var(--text-soft); background: var(--surface); padding: 12px; border-radius: 16px; border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+    footer strong { color: var(--text); }
+
+    /* ---------- Mobile ---------- */
+    @media (max-width: 768px) {
+      body { padding: 12px; }
+      .header { padding: 12px; border-radius: 18px; gap: 12px; }
+      .logo-wrap { width: 44px; height: 44px; border-radius: 12px; }
+      .title h1 { font-size: 1.05rem; }
+      .title p { font-size: 0.7rem; }
+      .title .eyebrow { font-size: 0.55rem; }
+      .header-actions { width: 100%; justify-content: space-between; }
+      .progress-panel { flex: 1; min-width: 0; padding: 8px 14px; border-radius: 14px; }
+      .progress-value { font-size: 1.4rem; }
+      .level-column { width: 240px; min-width: 240px; border-radius: 16px; }
+      .optativas-section { padding: 14px; border-radius: 18px; margin-top: 24px; }
+      .optativas-section h2 { font-size: 1rem; }
+      .legend { font-size: 0.65rem; gap: 8px; padding: 8px 10px; }
+    }
+    @media (max-width: 420px) {
+      .level-column { width: 86vw; min-width: 86vw; }
+      .title h1 { font-size: 0.98rem; }
+      .brand { gap: 10px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="brand">
+      <div class="logo-wrap" aria-hidden="true">
+        <span class="logo-fallback">UFCG</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Logo_UFCG.png/240px-Logo_UFCG.png"
+             alt="" onerror="this.style.display='none'"
+             onload="this.previousElementSibling.style.display='none'">
+      </div>
+      <div class="title">
+        <span class="eyebrow">Universidade Federal de Campina Grande</span>
+        <h1>MEDICINA VETERINÁRIA - D</h1>
+        <p>Patos · Currículo 2018 · Código 41410100</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
+      <div class="progress-panel">
+        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-value" id="percentDisplay">0%</div>
+        <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
+        <button class="reset-btn" id="resetBtn">🔄 Redefinir</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend" role="list">
+    <span class="legend-item" role="listitem"><span class="legend-dot completed"></span> Cursada</span>
+    <span class="legend-item" role="listitem"><span class="legend-dot available"></span> Disponível</span>
+    <span class="legend-item" role="listitem"><span class="legend-dot blocked"></span> Bloqueada (pré‑requisitos pendentes)</span>
+  </div>
+
+  <div class="columns-wrapper">
+    <div class="matrix-columns" id="matrixColumns"></div>
+  </div>
+
+  <div class="optativas-section">
+    <h2>📖 Disciplinas Optativas</h2>
+    <div class="optativas-table-wrapper">
+      <table class="optativas-table">
+        <thead><tr><th>Código</th><th>Disciplina</th><th>CH</th><th>Créd.</th><th>Pré‑requisitos</th><th>Co‑requisitos</th></tr></thead>
+        <tbody>
+
+          <tr>
+              <td>4101070</td>
+              <td>MEDICINA VETERINARIA LEGAL</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101072</td>
+              <td>EDUCAÇÃO SANITÁRIA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101148</td>
+              <td>TEMV (TÓP. ESPECIAIS C. DA COMPUTAÇÃO)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101156</td>
+              <td>PRÁTICA DESPORTIVA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101218</td>
+              <td>TÓPICOS ESPECIAIS EM BIOQUÍMICA</td>
+              <td>30h</td>
+              <td>0.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101222</td>
+              <td>TEMV(MANEJO DE PASTAGEM NATIVA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101226</td>
+              <td>TEMV(TERAPEUTICA)</td>
+              <td>45h</td>
+              <td>0.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101227</td>
+              <td>TEMV(DEFESA SANITARIA ANIMAL-PROG SANIT)</td>
+              <td>45h</td>
+              <td>0.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101229</td>
+              <td>TEMV(EMPREENDEDORISMO)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101230</td>
+              <td>TEMV(DESC E INTERP DE ACHADOS DE NECROP.</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101231</td>
+              <td>TEMV(PRATICAS DE ENFERMAGEM VETERINARIA)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101232</td>
+              <td>TEMV(DERMATOLOGIA DE PEQUENOS ANIMAIS)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101233</td>
+              <td>TEMV(CLINICA MEDICA DE RUMINANTES)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101234</td>
+              <td>TEMV(CLINICA E CIRURGIA DE EQUINOS)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101235</td>
+              <td>TEMV(CARDIOLOGIA DE PEQUENOS ANIMAIS)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101236</td>
+              <td>TEMV(ANALISE ESTAT EM MED VETERINARIA)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101237</td>
+              <td>TEMV(NUTRICAO DE CAES E GATOS)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101238</td>
+              <td>TEMV(DIREITO ANIMAL)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101283</td>
+              <td>ADM E EMPREEND NA MEDICINA VETERINARIA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101284</td>
+              <td>AGROECOLOGIA EM MEDICINA VETERINARIA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101285</td>
+              <td>ANALISE QUIMICA DE ALIMENTOS</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101286</td>
+              <td>ANATOMIA COMPARADA DE ANIMAIS SILVESTRE</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101287</td>
+              <td>AVALIACAO ANIMAL</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101288</td>
+              <td>BIOQUIMICA CLINICA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101289</td>
+              <td>BIOSSEG APLICADA A MEDICINA VETERINARIA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101290</td>
+              <td>EMERG MED NA CLINICA DE CANINOS E FELINO</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101291</td>
+              <td>CAPRINOCULTURA /OVINOCULTURA</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101292</td>
+              <td>CLINICA CIRURGICA DE GRANDES ANIMAIS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101293</td>
+              <td>CLINICA CIRURGICA DE PEQUENOS ANIMAIS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101294</td>
+              <td>COMPORTAMENTO E BEM ESTAR ANIMAL</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101295</td>
+              <td>CONT DE QUALID DOS PROD DE ORIG ANIMAL</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101296</td>
+              <td>CUNICULTURA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101297</td>
+              <td>EXAMES POR IMAGENS NA MED VETERINARIA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101298</td>
+              <td>DIAGNOSTICO PÓST MORTEN</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101299</td>
+              <td>EQUIDEOCULTURA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101300</td>
+              <td>METODOS QUANTITATIVOS EM MED VETERINARIA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101301</td>
+              <td>FILOSOFIA DA CIENCIA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101302</td>
+              <td>FUNDAM DA HOMEOPATIA E DA FITOTERAPIA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101303</td>
+              <td>GERENCIAMENTO EM SAUDE ANIMAL E PUBLICA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101304</td>
+              <td>IMUNOLOGIA CLINICA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101305</td>
+              <td>MANEJO DE PASTAGENS NATIVAS</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101306</td>
+              <td>MANEJO REPRODUTIVO</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101307</td>
+              <td>CONSERVACAO DE FORRAGENS</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101308</td>
+              <td>MEDICINA DE ANIMAIS SILVESTRES</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101309</td>
+              <td>METODOS DE DIAGNOSTICO SOROLOGICO</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101310</td>
+              <td>MET E TEC DE DIAG E CONT DE DOEN PARASIT</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101311</td>
+              <td>MORFOFISIOLOGIA DAS AVES</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101312</td>
+              <td>NEONATOLOGIA EM PEQUENOS ANIMAIS</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101313</td>
+              <td>NEONATOLOGIA DE GRANDES ANIMAIS</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101314</td>
+              <td>PRATICA HOSPITALAR I</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101315</td>
+              <td>PRATICA HOSPITALAR II</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101316</td>
+              <td>SOCIOLOGIA AMBIENTAL</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101317</td>
+              <td>PRAT EM TECN E INSPECAO DE CARNE</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101318</td>
+              <td>PRODUCAO DE FORRAGENS</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101319</td>
+              <td>TECN E INSP DE PROD APIC</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101320</td>
+              <td>TOP AVANCADOS EM GENETICA DE POPULACOES</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101321</td>
+              <td>VIGILANCIA E SAUDE PUBLICA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101322</td>
+              <td>ONCOLOGIA VETER DE PEQUENOS ANIMAIS</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101325</td>
+              <td>HISTOPATOLOGIA VETERINARIA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101328</td>
+              <td>TEMV(PRATICAS EM LABORATORIO CLINICO)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101329</td>
+              <td>TEMV(B TEOR DA ANAT DESC D TOP AN DOM I)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101330</td>
+              <td>TEMV(HIST E SUAS BASES TEOR P/ VET)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101331</td>
+              <td>TEMV(B TEOR DA ANAT DESC D TOP AN DOM II</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101332</td>
+              <td>TEMV(B TEOR DA HISTOFISIOLOGIA VET)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101333</td>
+              <td>TEMV(NOÇÕES DE BIOESTATÍSTICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101334</td>
+              <td>TEMV(MICROBIOLOGIA BÁSICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101335</td>
+              <td>TEMV(B TEOR DA ANAT TOP APLICADA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101336</td>
+              <td>TEMV(EPID PARASITÁRIA DOS ANIMAIS)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101337</td>
+              <td>TEMV(ANEST E TÉCNICA CIRÚRGICA VET)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101338</td>
+              <td>TEMV(ASPEC TEOR DE PATO CLÍNICA VET)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101339</td>
+              <td>TEMV(BASE TEÓRICA DA PATALOGIA GERAL</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101340</td>
+              <td>TEMV(SEMIOLOGIA VETERINÁRIA)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101341</td>
+              <td>TEMV(TÉC AVAN FORM E PROD RAÇÃO MONO)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101342</td>
+              <td>TEMV(NEONAT DE EQUINOS E RUMINANTES)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101343</td>
+              <td>TEMV(PATOLOGIAS DE CANINOS FELINOS)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101344</td>
+              <td>TEMV(CLÍNICA MÉDICA DE PEQUENOS ANIMAIS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101345</td>
+              <td>TEMV(DOENÇAS TÓX DE CANINOS E FELINOS)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101346</td>
+              <td>TEMV(B TEOR DA REPR E OBST DE CAN E FEL)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101347</td>
+              <td>TEMV(FUNDAMENTOS DE ANDROLOGIA VET)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101348</td>
+              <td>TEMV(B TEOR DA PATO CIRÚRGICA VET)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101349</td>
+              <td>TEMV(ENFERMIDADES DE RUMINANTES)</td>
+              <td>150h</td>
+              <td>10.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101350</td>
+              <td>TEMV(FUND DE GINECO E OBST VET)</td>
+              <td>75h</td>
+              <td>5.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101351</td>
+              <td>TEMV(B TEOR DO DIAGNÓSTICO MACRO)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101352</td>
+              <td>TEMV(B TEOR DA BIOTEC DA REPRO ANIMAL)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101353</td>
+              <td>TEMV(B TEOR S/ CIRUR DE ROT EM GRAN ANI)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101354</td>
+              <td>TEMV(DOENÇAS TOX DE CANINOS E FELINOS)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101355</td>
+              <td>TEM(FUND TEOR DA ANAT DESC E TOP AN DO I</td>
+              <td>90h</td>
+              <td>6.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101356</td>
+              <td>TEM(BASES EMBR DA FORMAÇÃO DO FETO ANIM)</td>
+              <td>15h</td>
+              <td>1.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101357</td>
+              <td>TEM(FUND TEOR DA ANAT DESC E TOP A D II)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101358</td>
+              <td>TEM(FUND TEOR DA ANAT TOPOG APLICADA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101359</td>
+              <td>TEM(SEMIOLOGIA VETERINÁRIA ASPEC TEOR)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101360</td>
+              <td>TEM(ENFERMIDADE DE EQUÍDEOS)</td>
+              <td>135h</td>
+              <td>9.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101361</td>
+              <td>TEMV(PRAT EM ANAT DESC E TOP DOS A DOM I</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101362</td>
+              <td>TEMV(PRAT EM ANAT DESC E T DOS A DOM II)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101363</td>
+              <td>TEMV(PRAT EM ANAT TOPOGRÁFICA APLICADA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101364</td>
+              <td>TEMV(PRAT EM CLIN MED E PAT DE EQUÍDEOS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101365</td>
+              <td>TEMV(TOP EM ANEST E TEC CIRÚRGICA VET II</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101366</td>
+              <td>TEMV(PRAT EM CLIN MED E PAT DE RUMINANTE</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101367</td>
+              <td>TEMV(PRAT EM PATOLOGIA CIRÚRGICA VET)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101368</td>
+              <td>TEMV(EMERG GASTROENTÉRICAS E LOC EM EQ)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101369</td>
+              <td>TEMV(TOP ESP EM IMAGENOLOGIA VET)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101370</td>
+              <td>TEMV(NEONATOLOGIA DE RUM E EQUINOS)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101371</td>
+              <td>TEMV(HISTOLOGIA VET APLICADA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101372</td>
+              <td>TEMV(BIO E CONSERVAÇÃO DE ANF E RÉPTEIS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101373</td>
+              <td>TEMV(FICOLOGIA VETERINÁRIA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4101374</td>
+              <td>TEMV(DESEN PROF MÉDICO VETERINÁRIO)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4105100</td>
+              <td>LINGUA BRASILEIRA DE SINAIS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer>🎓 <strong>Dica:</strong> clique nas disciplinas <em>disponíveis</em> para marcar como cursadas. Desmarcar uma disciplina recalcula automaticamente as dependentes. Seu progresso é salvo neste navegador.</footer>
+</div>
+
+<script>
+  // ---------- Tema ----------
+  (function initTheme() {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+  function updateThemeBtn() {
+    const btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    btn.textContent = isDark ? '☀️' : '🌙';
+  }
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateThemeBtn();
+  });
+  updateThemeBtn();
+
+  // ---------- Dados ----------
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "4101118", "nome": "ECOLOGIA", "ch": "45h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4101119", "nome": "METODOLOGIA CIENTÍFICA", "ch": "45h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4101239", "nome": "ANAT DESC E TOP DOS ANIMAIS DOMESTICOS I", "ch": "90h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4101241", "nome": "BIOQUIMICA ANIMAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4101243", "nome": "EMBRIOLOGIA BASICA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4101248", "nome": "HISTOLOGIA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4101252", "nome": "INTRODUCAO A MEDICINA VETERINARIA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4101255", "nome": "QUIMICA BIOLOGICA", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4101003", "nome": "SOCIOLOGIA RURAL", "ch": "45h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4101024", "nome": "BIOESTATÍSTICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4101240", "nome": "ANAT DESC E TOP DOS ANIMAIS DOMEST. II", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4101244", "nome": "ESTAGIO SUPERVISIONADO OBRIGATORIO I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4101249", "nome": "HISTOLOGIA VETERINARIA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4101250", "nome": "INFORMATICA", "ch": "45h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4101251", "nome": "INTROD A BIOLOGIA MOLECULAR E CELULAR", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4101253", "nome": "LABORATORIO DIDATICO I", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "4101078", "nome": "MICROBIOLOGIA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "4101081", "nome": "DEONTOLOGIA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "4101124", "nome": "BIOCLIMATOLOGIA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "4101242", "nome": "COMUNICACAO E DESENVOLVIMENTO RURAL", "ch": "45h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "4101246", "nome": "FARMACOLOGIA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "4101247", "nome": "FISIOLOGIA VETERINARIA", "ch": "120h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "4101254", "nome": "LABORATORIO DIDATICO II", "ch": "30h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "4101041", "nome": "NUTRICAO ANIMAL", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "4101096", "nome": "FARMACOLOGIA VETERINARIA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "4101126", "nome": "OFICINA INTERDISCIPLINAR I", "ch": "30h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "4101256", "nome": "ANATOMIA TOPOGRAFICA APLICADA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "4101259", "nome": "IMUNOLOGIA VETERINARIA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "4101260", "nome": "PARASITOLOGIA VETERINARIA", "ch": "90h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "4101324", "nome": "MICROBIOLOGIA VETERINARIA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "4101049", "nome": "SEMIOLOGIA VETERINARIA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "4101128", "nome": "ANESTESIOLOGIA E TEC CIRÚRGICA VETERIN.", "ch": "105h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "4101245", "nome": "ESTAGIO SUPERVISIONADO OBRIGATORIO II", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "4101257", "nome": "DIAGNOSTICO POR IMAGEM", "ch": "45h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "4101258", "nome": "EPIDEMIOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "4101261", "nome": "PATOLOGIA CLINICA VETERINARIA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "4101262", "nome": "PATOLOGIA GERAL", "ch": "75h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "4101264", "nome": "ANDROLOGIA VETERINARIA", "ch": "45h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "4101271", "nome": "LABORATORIO DIDATICO III", "ch": "30h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "4101273", "nome": "PAT E CLIN MEDICA DE CANINOS E FELINOS", "ch": "135h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "4101274", "nome": "PATOLOGIA E CLINICA MEDICA DE EQUIDEOS", "ch": "135h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "4101277", "nome": "REPRODUCAO DE CANINOS E FELINOS", "ch": "45h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "4101100", "nome": "PATOLOGIA CIRURG VETERINARIA", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "4101137", "nome": "PESQUISA APLICADA", "ch": "30h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "4101270", "nome": "GINECOLOGIA E OBSTETRICIA VETERINARIA", "ch": "75h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "4101275", "nome": "PATOLOGIA E CLINICA MEDICA DE RUMINANTES", "ch": "150h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "4101152", "nome": "PRODUCAO DE RUMINANTES", "ch": "90h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "4101263", "nome": "ALIMENTOS E ALIMENTACAO ANIMAL", "ch": "75h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "4101265", "nome": "ECONOMIA E ADMINISTRACAO RURAL", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "4101269", "nome": "GENETICA E MELHORAMENTO ANIMAL", "ch": "75h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "4101272", "nome": "LABORATORIO DIDATICO IV", "ch": "30h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "4101276", "nome": "PRODUCAO DE AVES E SUINOS", "ch": "75h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "4101323", "nome": "BIOTECNOLOGIA DA REPRODUCAO", "ch": "45h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "4101155", "nome": "DOENÇAS DE AVES E SUINOS", "ch": "45h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "4101267", "nome": "EPIDEM DAS DOENCAS INFECTOCONTAGIOSAS", "ch": "75h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "4101268", "nome": "EPIDEMIOLOGIA DAS DOENCAS PARASITARIAS", "ch": "60h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "4101278", "nome": "TEC E INSP PROD ORIG ANIM(LEITE E DERIV)", "ch": "105h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "4101279", "nome": "TEC E INSP PROD ORIG ANIM(CARN", "ch": "105h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "4101280", "nome": "ZOONOSE E SAUDE PUBLICA", "ch": "60h", "preReqs": []}, {"nivel": "10º Nível", "codigo": "4101266", "nome": "ESTAGIO SUPERVISIONADO OBRIGATORIO III", "ch": "315h", "preReqs": []}];
+  const codigoToNome = {"4101118": "ECOLOGIA", "4101119": "METODOLOGIA CIENTÍFICA", "4101239": "ANAT DESC E TOP DOS ANIMAIS DOMESTICOS I", "4101241": "BIOQUIMICA ANIMAL", "4101243": "EMBRIOLOGIA BASICA", "4101248": "HISTOLOGIA GERAL", "4101252": "INTRODUCAO A MEDICINA VETERINARIA", "4101255": "QUIMICA BIOLOGICA", "4101003": "SOCIOLOGIA RURAL", "4101024": "BIOESTATÍSTICA", "4101240": "ANAT DESC E TOP DOS ANIMAIS DOMEST. II", "4101244": "ESTAGIO SUPERVISIONADO OBRIGATORIO I", "4101249": "HISTOLOGIA VETERINARIA", "4101250": "INFORMATICA", "4101251": "INTROD A BIOLOGIA MOLECULAR E CELULAR", "4101253": "LABORATORIO DIDATICO I", "4101078": "MICROBIOLOGIA GERAL", "4101081": "DEONTOLOGIA", "4101124": "BIOCLIMATOLOGIA", "4101242": "COMUNICACAO E DESENVOLVIMENTO RURAL", "4101246": "FARMACOLOGIA GERAL", "4101247": "FISIOLOGIA VETERINARIA", "4101254": "LABORATORIO DIDATICO II", "4101041": "NUTRICAO ANIMAL", "4101096": "FARMACOLOGIA VETERINARIA", "4101126": "OFICINA INTERDISCIPLINAR I", "4101256": "ANATOMIA TOPOGRAFICA APLICADA", "4101259": "IMUNOLOGIA VETERINARIA", "4101260": "PARASITOLOGIA VETERINARIA", "4101324": "MICROBIOLOGIA VETERINARIA", "4101049": "SEMIOLOGIA VETERINARIA", "4101128": "ANESTESIOLOGIA E TEC CIRÚRGICA VETERIN.", "4101245": "ESTAGIO SUPERVISIONADO OBRIGATORIO II", "4101257": "DIAGNOSTICO POR IMAGEM", "4101258": "EPIDEMIOLOGIA", "4101261": "PATOLOGIA CLINICA VETERINARIA", "4101262": "PATOLOGIA GERAL", "4101264": "ANDROLOGIA VETERINARIA", "4101271": "LABORATORIO DIDATICO III", "4101273": "PAT E CLIN MEDICA DE CANINOS E FELINOS", "4101274": "PATOLOGIA E CLINICA MEDICA DE EQUIDEOS", "4101277": "REPRODUCAO DE CANINOS E FELINOS", "4101100": "PATOLOGIA CIRURG VETERINARIA", "4101137": "PESQUISA APLICADA", "4101270": "GINECOLOGIA E OBSTETRICIA VETERINARIA", "4101275": "PATOLOGIA E CLINICA MEDICA DE RUMINANTES", "4101152": "PRODUCAO DE RUMINANTES", "4101263": "ALIMENTOS E ALIMENTACAO ANIMAL", "4101265": "ECONOMIA E ADMINISTRACAO RURAL", "4101269": "GENETICA E MELHORAMENTO ANIMAL", "4101272": "LABORATORIO DIDATICO IV", "4101276": "PRODUCAO DE AVES E SUINOS", "4101323": "BIOTECNOLOGIA DA REPRODUCAO", "4101155": "DOENÇAS DE AVES E SUINOS", "4101267": "EPIDEM DAS DOENCAS INFECTOCONTAGIOSAS", "4101268": "EPIDEMIOLOGIA DAS DOENCAS PARASITARIAS", "4101278": "TEC E INSP PROD ORIG ANIM(LEITE E DERIV)", "4101279": "TEC E INSP PROD ORIG ANIM(CARN", "4101280": "ZOONOSE E SAUDE PUBLICA", "4101266": "ESTAGIO SUPERVISIONADO OBRIGATORIO III", "4101070": "MEDICINA VETERINARIA LEGAL", "4101072": "EDUCAÇÃO SANITÁRIA", "4101148": "TEMV (TÓP. ESPECIAIS C. DA COMPUTAÇÃO)", "4101156": "PRÁTICA DESPORTIVA", "4101218": "TÓPICOS ESPECIAIS EM BIOQUÍMICA", "4101222": "TEMV(MANEJO DE PASTAGEM NATIVA)", "4101226": "TEMV(TERAPEUTICA)", "4101227": "TEMV(DEFESA SANITARIA ANIMAL-PROG SANIT)", "4101229": "TEMV(EMPREENDEDORISMO)", "4101230": "TEMV(DESC E INTERP DE ACHADOS DE NECROP.", "4101231": "TEMV(PRATICAS DE ENFERMAGEM VETERINARIA)", "4101232": "TEMV(DERMATOLOGIA DE PEQUENOS ANIMAIS)", "4101233": "TEMV(CLINICA MEDICA DE RUMINANTES)", "4101234": "TEMV(CLINICA E CIRURGIA DE EQUINOS)", "4101235": "TEMV(CARDIOLOGIA DE PEQUENOS ANIMAIS)", "4101236": "TEMV(ANALISE ESTAT EM MED VETERINARIA)", "4101237": "TEMV(NUTRICAO DE CAES E GATOS)", "4101238": "TEMV(DIREITO ANIMAL)", "4101283": "ADM E EMPREEND NA MEDICINA VETERINARIA", "4101284": "AGROECOLOGIA EM MEDICINA VETERINARIA", "4101285": "ANALISE QUIMICA DE ALIMENTOS", "4101286": "ANATOMIA COMPARADA DE ANIMAIS SILVESTRE", "4101287": "AVALIACAO ANIMAL", "4101288": "BIOQUIMICA CLINICA", "4101289": "BIOSSEG APLICADA A MEDICINA VETERINARIA", "4101290": "EMERG MED NA CLINICA DE CANINOS E FELINO", "4101291": "CAPRINOCULTURA /OVINOCULTURA", "4101292": "CLINICA CIRURGICA DE GRANDES ANIMAIS", "4101293": "CLINICA CIRURGICA DE PEQUENOS ANIMAIS", "4101294": "COMPORTAMENTO E BEM ESTAR ANIMAL", "4101295": "CONT DE QUALID DOS PROD DE ORIG ANIMAL", "4101296": "CUNICULTURA", "4101297": "EXAMES POR IMAGENS NA MED VETERINARIA", "4101298": "DIAGNOSTICO PÓST MORTEN", "4101299": "EQUIDEOCULTURA", "4101300": "METODOS QUANTITATIVOS EM MED VETERINARIA", "4101301": "FILOSOFIA DA CIENCIA", "4101302": "FUNDAM DA HOMEOPATIA E DA FITOTERAPIA", "4101303": "GERENCIAMENTO EM SAUDE ANIMAL E PUBLICA", "4101304": "IMUNOLOGIA CLINICA", "4101305": "MANEJO DE PASTAGENS NATIVAS", "4101306": "MANEJO REPRODUTIVO", "4101307": "CONSERVACAO DE FORRAGENS", "4101308": "MEDICINA DE ANIMAIS SILVESTRES", "4101309": "METODOS DE DIAGNOSTICO SOROLOGICO", "4101310": "MET E TEC DE DIAG E CONT DE DOEN PARASIT", "4101311": "MORFOFISIOLOGIA DAS AVES", "4101312": "NEONATOLOGIA EM PEQUENOS ANIMAIS", "4101313": "NEONATOLOGIA DE GRANDES ANIMAIS", "4101314": "PRATICA HOSPITALAR I", "4101315": "PRATICA HOSPITALAR II", "4101316": "SOCIOLOGIA AMBIENTAL", "4101317": "PRAT EM TECN E INSPECAO DE CARNE", "4101318": "PRODUCAO DE FORRAGENS", "4101319": "TECN E INSP DE PROD APIC", "4101320": "TOP AVANCADOS EM GENETICA DE POPULACOES", "4101321": "VIGILANCIA E SAUDE PUBLICA", "4101322": "ONCOLOGIA VETER DE PEQUENOS ANIMAIS", "4101325": "HISTOPATOLOGIA VETERINARIA", "4101328": "TEMV(PRATICAS EM LABORATORIO CLINICO)", "4101329": "TEMV(B TEOR DA ANAT DESC D TOP AN DOM I)", "4101330": "TEMV(HIST E SUAS BASES TEOR P/ VET)", "4101331": "TEMV(B TEOR DA ANAT DESC D TOP AN DOM II", "4101332": "TEMV(B TEOR DA HISTOFISIOLOGIA VET)", "4101333": "TEMV(NOÇÕES DE BIOESTATÍSTICA)", "4101334": "TEMV(MICROBIOLOGIA BÁSICA)", "4101335": "TEMV(B TEOR DA ANAT TOP APLICADA)", "4101336": "TEMV(EPID PARASITÁRIA DOS ANIMAIS)", "4101337": "TEMV(ANEST E TÉCNICA CIRÚRGICA VET)", "4101338": "TEMV(ASPEC TEOR DE PATO CLÍNICA VET)", "4101339": "TEMV(BASE TEÓRICA DA PATALOGIA GERAL", "4101340": "TEMV(SEMIOLOGIA VETERINÁRIA)", "4101341": "TEMV(TÉC AVAN FORM E PROD RAÇÃO MONO)", "4101342": "TEMV(NEONAT DE EQUINOS E RUMINANTES)", "4101343": "TEMV(PATOLOGIAS DE CANINOS FELINOS)", "4101344": "TEMV(CLÍNICA MÉDICA DE PEQUENOS ANIMAIS)", "4101345": "TEMV(DOENÇAS TÓX DE CANINOS E FELINOS)", "4101346": "TEMV(B TEOR DA REPR E OBST DE CAN E FEL)", "4101347": "TEMV(FUNDAMENTOS DE ANDROLOGIA VET)", "4101348": "TEMV(B TEOR DA PATO CIRÚRGICA VET)", "4101349": "TEMV(ENFERMIDADES DE RUMINANTES)", "4101350": "TEMV(FUND DE GINECO E OBST VET)", "4101351": "TEMV(B TEOR DO DIAGNÓSTICO MACRO)", "4101352": "TEMV(B TEOR DA BIOTEC DA REPRO ANIMAL)", "4101353": "TEMV(B TEOR S/ CIRUR DE ROT EM GRAN ANI)", "4101354": "TEMV(DOENÇAS TOX DE CANINOS E FELINOS)", "4101355": "TEM(FUND TEOR DA ANAT DESC E TOP AN DO I", "4101356": "TEM(BASES EMBR DA FORMAÇÃO DO FETO ANIM)", "4101357": "TEM(FUND TEOR DA ANAT DESC E TOP A D II)", "4101358": "TEM(FUND TEOR DA ANAT TOPOG APLICADA)", "4101359": "TEM(SEMIOLOGIA VETERINÁRIA ASPEC TEOR)", "4101360": "TEM(ENFERMIDADE DE EQUÍDEOS)", "4101361": "TEMV(PRAT EM ANAT DESC E TOP DOS A DOM I", "4101362": "TEMV(PRAT EM ANAT DESC E T DOS A DOM II)", "4101363": "TEMV(PRAT EM ANAT TOPOGRÁFICA APLICADA)", "4101364": "TEMV(PRAT EM CLIN MED E PAT DE EQUÍDEOS)", "4101365": "TEMV(TOP EM ANEST E TEC CIRÚRGICA VET II", "4101366": "TEMV(PRAT EM CLIN MED E PAT DE RUMINANTE", "4101367": "TEMV(PRAT EM PATOLOGIA CIRÚRGICA VET)", "4101368": "TEMV(EMERG GASTROENTÉRICAS E LOC EM EQ)", "4101369": "TEMV(TOP ESP EM IMAGENOLOGIA VET)", "4101370": "TEMV(NEONATOLOGIA DE RUM E EQUINOS)", "4101371": "TEMV(HISTOLOGIA VET APLICADA)", "4101372": "TEMV(BIO E CONSERVAÇÃO DE ANF E RÉPTEIS)", "4101373": "TEMV(FICOLOGIA VETERINÁRIA)", "4101374": "TEMV(DESEN PROF MÉDICO VETERINÁRIO)", "4105100": "LINGUA BRASILEIRA DE SINAIS"};
+
+  const subjectsMap = new Map();
+  mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
+
+  const reverseDeps = new Map();
+  mandatorySubjects.forEach(sub => {
+    if (sub.preReqs && sub.preReqs.length) {
+      sub.preReqs.forEach(pre => {
+        if (!reverseDeps.has(pre)) reverseDeps.set(pre, []);
+        reverseDeps.get(pre).push(sub.codigo);
+      });
+    }
+  });
+
+  let completedSet = new Set();
+
+  function arePrerequisitesMet(codigo) {
+    const disciplina = subjectsMap.get(codigo);
+    if (!disciplina) return true;
+    const preReqs = disciplina.preReqs || [];
+    return preReqs.every(preCod => {
+      if (!subjectsMap.has(preCod)) return true;
+      return completedSet.has(preCod);
+    });
+  }
+
+  function cascadeUncheck(startingCode) {
+    const queue = [startingCode];
+    const visited = new Set();
+    while (queue.length) {
+      const current = queue.shift();
+      if (visited.has(current)) continue;
+      visited.add(current);
+      if (completedSet.has(current) && !arePrerequisitesMet(current)) {
+        completedSet.delete(current);
+      }
+      const dependents = reverseDeps.get(current) || [];
+      dependents.forEach(dep => { if (!visited.has(dep)) queue.push(dep); });
+    }
+  }
+
+  function getSubjectStatus(codigo) {
+    if (completedSet.has(codigo)) return "completed";
+    return arePrerequisitesMet(codigo) ? "available" : "blocked";
+  }
+
+  window.toggleSubject = function(codigo) {
+    const status = getSubjectStatus(codigo);
+    if (status === "blocked") return;
+    if (completedSet.has(codigo)) {
+      completedSet.delete(codigo);
+      cascadeUncheck(codigo);
+    } else {
+      completedSet.add(codigo);
+    }
+    saveProgress();
+    renderColumns();
+    updateGlobalProgress();
+  };
+
+  function computePercent() {
+    const total = mandatorySubjects.length;
+    return total === 0 ? 0 : Math.round((completedSet.size / total) * 100);
+  }
+
+  function updateGlobalProgress() {
+    const percent = computePercent();
+    const total = mandatorySubjects.length;
+    document.getElementById('percentDisplay').innerText = `${percent}%`;
+    document.getElementById('progressFill').style.width = `${percent}%`;
+    const meta = document.getElementById('progressMeta');
+    if (meta) meta.innerText = `${completedSet.size} / ${total} disciplinas`;
+  }
+
+  function renderColumns() {
+    const container = document.getElementById('matrixColumns');
+    if (!container) return;
+    const niveis = [];
+    const mapNivel = new Map();
+    mandatorySubjects.forEach(sub => {
+      const nivel = sub.nivel;
+      if (!mapNivel.has(nivel)) { mapNivel.set(nivel, []); niveis.push(nivel); }
+      mapNivel.get(nivel).push(sub);
+    });
+    let columnsHtml = '';
+    for (let nivel of niveis) {
+      const subjectsOfLevel = mapNivel.get(nivel);
+      columnsHtml += `
+        <div class="level-column">
+          <div class="column-header">
+            <h3>${nivel}</h3>
+            <span>${subjectsOfLevel.length} disc.</span>
+          </div>
+          <div class="subjects-list">
+      `;
+      subjectsOfLevel.forEach(sub => {
+        const status = getSubjectStatus(sub.codigo);
+        let cardClass = '', statusText = '';
+        if (status === 'completed') { cardClass = 'subject-completed'; statusText = '✅ Cursada'; }
+        else if (status === 'available') { cardClass = 'subject-available'; statusText = '🔓 Disponível'; }
+        else { cardClass = 'subject-blocked'; statusText = '🔒 Bloqueada'; }
+        let prereqDisplay = 'Nenhum';
+        if (sub.preReqs && sub.preReqs.length) {
+          prereqDisplay = sub.preReqs.map(cod => codigoToNome[cod] || cod).join(', ');
+        }
+        columnsHtml += `
+          <div class="subject-card ${cardClass}" data-codigo="${sub.codigo}">
+            <div class="subject-row">
+              <span class="subject-code">${sub.codigo}</span>
+              <span class="status-badge">${statusText}</span>
+            </div>
+            <div class="subject-name">${sub.nome}</div>
+            <div><span class="subject-ch">${sub.ch}</span></div>
+            <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
+          </div>
+        `;
+      });
+      columnsHtml += `</div></div>`;
+    }
+    container.innerHTML = columnsHtml;
+    document.querySelectorAll('.subject-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const codigo = card.getAttribute('data-codigo');
+        if (codigo) window.toggleSubject(codigo);
+      });
+    });
+  }
+
+  function saveProgress() {
+    localStorage.setItem('completedObrigatorias_41410100_2018', JSON.stringify([...completedSet]));
+  }
+
+  function loadProgress() {
+    const saved = localStorage.getItem('completedObrigatorias_41410100_2018');
+    if (saved) {
+      completedSet = new Set(JSON.parse(saved));
+      const toRemove = [];
+      for (let code of completedSet) { if (!arePrerequisitesMet(code)) toRemove.push(code); }
+      toRemove.forEach(code => completedSet.delete(code));
+      saveProgress();
+    }
+  }
+
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    completedSet.clear();
+    saveProgress();
+    renderColumns();
+    updateGlobalProgress();
+  });
+
+  loadProgress();
+  renderColumns();
+  updateGlobalProgress();
+</script>
+</body>
+</html>

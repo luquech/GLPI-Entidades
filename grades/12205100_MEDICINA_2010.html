@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4f6fa" media="(prefers-color-scheme: light)">
+  <title>Matriz Curricular - MEDICINA (2010)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f6fa;
+      --bg-grad: radial-gradient(1200px 600px at 10% -10%, #e6efff 0%, transparent 60%),
+                 radial-gradient(900px 500px at 100% 0%, #e8fbff 0%, transparent 55%),
+                 linear-gradient(180deg, #f4f6fa 0%, #eef2f7 100%);
+      --surface: #ffffff;
+      --surface-2: #f8fafc;
+      --surface-3: #f9fbfd;
+      --border: #e3e8f0;
+      --border-2: #e6edf5;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --text-soft: #64748b;
+      --brand: #0a3d62;
+      --brand-2: #1e6091;
+      --brand-3: #2e86ab;
+      --accent: #0e7490;
+      --accent-2: #0891b2;
+      --accent-3: #155e75;
+      --title-grad-1: #0a3d62;
+      --title-grad-2: #0e7490;
+      --chip-bg: #eaf2f8;
+      --chip-text: #0a3d62;
+      --progress-bg: #e2e8f0;
+      --progress-fill-1: #0891b2;
+      --progress-fill-2: #06b6d4;
+      --completed-bg: linear-gradient(135deg, #16a34a, #15803d);
+      --completed-border: #15803d;
+      --completed-text: #f0fdf4;
+      --completed-hover: linear-gradient(135deg, #15803d, #166534);
+      --available-bg: linear-gradient(135deg, #2563eb, #1d4ed8);
+      --available-border: #1d4ed8;
+      --available-text: #eff6ff;
+      --available-hover: linear-gradient(135deg, #1d4ed8, #1e40af);
+      --blocked-bg: #eef1f5;
+      --blocked-border: #d6dde6;
+      --blocked-text: #6b7280;
+      --code-bg: rgba(255,255,255,0.22);
+      --code-text: #ffffff;
+      --code-bg-light: #f1f5f9;
+      --code-text-light: #0f172a;
+      --ch-bg: rgba(255,255,255,0.18);
+      --hint-text: rgba(255,255,255,0.85);
+      --hint-border: rgba(255,255,255,0.25);
+      --table-head: #f1f5f9;
+      --table-border: #e2e8f0;
+      --table-row-alt: #fafbfd;
+      --shadow: 0 10px 30px -12px rgba(15,23,42,0.12), 0 2px 6px rgba(15,23,42,0.04);
+      --shadow-sm: 0 4px 14px -6px rgba(15,23,42,0.08);
+      --ring: 0 0 0 3px rgba(8,145,178,0.18);
+    }
+    html[data-theme="dark"] {
+      --bg: #0b1220;
+      --bg-grad: radial-gradient(1200px 600px at 10% -10%, #0e2a47 0%, transparent 60%),
+                 radial-gradient(900px 500px at 100% 0%, #0a3a4a 0%, transparent 55%),
+                 linear-gradient(180deg, #0b1220 0%, #060b16 100%);
+      --surface: #131c2e;
+      --surface-2: #0f1727;
+      --surface-3: #131c2e;
+      --border: #1f2a40;
+      --border-2: #1f2a40;
+      --text: #e6edf7;
+      --text-muted: #9aa8bf;
+      --text-soft: #8696b0;
+      --brand: #7dd3fc;
+      --brand-2: #38bdf8;
+      --brand-3: #22d3ee;
+      --accent: #67e8f9;
+      --accent-2: #22d3ee;
+      --accent-3: #38bdf8;
+      --title-grad-1: #7dd3fc;
+      --title-grad-2: #22d3ee;
+      --chip-bg: #0f2b3d;
+      --chip-text: #7dd3fc;
+      --progress-bg: #1f2a40;
+      --progress-fill-1: #06b6d4;
+      --progress-fill-2: #22d3ee;
+      --completed-bg: linear-gradient(135deg, #15803d, #14532d);
+      --completed-border: #16a34a;
+      --completed-text: #ecfdf5;
+      --completed-hover: linear-gradient(135deg, #166534, #14532d);
+      --available-bg: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+      --available-border: #2563eb;
+      --available-text: #eff6ff;
+      --available-hover: linear-gradient(135deg, #1e40af, #172554);
+      --blocked-bg: #1a2336;
+      --blocked-border: #283449;
+      --blocked-text: #7d8aa3;
+      --code-bg: rgba(255,255,255,0.12);
+      --code-text: #ffffff;
+      --code-bg-light: #1a2336;
+      --code-text-light: #e6edf7;
+      --ch-bg: rgba(255,255,255,0.12);
+      --hint-text: rgba(255,255,255,0.78);
+      --hint-border: rgba(255,255,255,0.18);
+      --table-head: #0f1727;
+      --table-border: #1f2a40;
+      --table-row-alt: #111a2c;
+      --shadow: 0 12px 32px -12px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.3);
+      --shadow-sm: 0 4px 14px -6px rgba(0,0,0,0.5);
+      --ring: 0 0 0 3px rgba(34,211,238,0.25);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      background-image: var(--bg-grad);
+      background-attachment: fixed;
+      margin: 0; padding: 20px; color: var(--text);
+      transition: background 0.25s ease, color 0.25s ease;
+      letter-spacing: -0.005em;
+    }
+    .container { max-width: 1600px; margin: 0 auto; }
+
+    /* ---------- Header ---------- */
+    .header {
+      background: var(--surface);
+      border-radius: 22px;
+      padding: 14px 20px;
+      margin-bottom: 20px;
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      align-items: center; gap: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      backdrop-filter: saturate(140%);
+    }
+    .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+    .logo-wrap {
+      width: 54px; height: 54px; flex-shrink: 0;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 16px -6px rgba(10,61,98,0.55);
+      overflow: hidden; position: relative;
+    }
+    .logo-wrap img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
+    .logo-wrap .logo-fallback {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      color: #fff; font-weight: 800; font-size: 0.85rem; letter-spacing: 0.5px;
+    }
+    .title { min-width: 0; }
+    .title .eyebrow {
+      display: inline-block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--brand-2);
+      background: var(--chip-bg); color: var(--chip-text);
+      padding: 3px 9px; border-radius: 999px; margin-bottom: 6px;
+    }
+    .title h1 {
+      margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--title-grad-1), var(--title-grad-2));
+      background-clip: text; -webkit-background-clip: text; color: transparent;
+      line-height: 1.15;
+    }
+    .title p { margin: 4px 0 0; font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+
+    .header-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .progress-panel {
+      background: var(--surface-2); border-radius: 18px; padding: 10px 18px;
+      min-width: 200px; text-align: center; border: 1px solid var(--border);
+    }
+    .progress-label { font-weight: 700; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+    .progress-value {
+      font-size: 1.8rem; font-weight: 800; line-height: 1.05;
+      background: linear-gradient(135deg, var(--progress-fill-1), var(--progress-fill-2));
+      background-clip: text; -webkit-background-clip: text; color: transparent;
+      font-variant-numeric: tabular-nums;
+    }
+    .progress-bar-bg { background: var(--progress-bg); border-radius: 40px; height: 7px; width: 100%; margin-top: 6px; overflow: hidden; }
+    .progress-fill {
+      background: linear-gradient(90deg, var(--progress-fill-1), var(--progress-fill-2));
+      width: 0%; height: 100%; border-radius: 40px; transition: width 0.35s ease;
+    }
+    .progress-meta { font-size: 0.6rem; color: var(--text-soft); margin-top: 4px; font-variant-numeric: tabular-nums; }
+
+    button.reset-btn, button.theme-btn {
+      background: var(--surface); border: 1px solid var(--border); color: var(--text);
+      padding: 7px 12px; border-radius: 999px; font-size: 0.72rem; font-weight: 600;
+      cursor: pointer; margin-top: 8px; font-family: inherit;
+      transition: all 0.15s ease;
+    }
+    button.theme-btn {
+      margin-top: 0; padding: 10px 12px; font-size: 1rem; line-height: 1;
+      width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center;
+    }
+    button.reset-btn:hover, button.theme-btn:hover { background: var(--chip-bg); border-color: var(--brand-2); transform: translateY(-1px); }
+    button.reset-btn:focus-visible, button.theme-btn:focus-visible { outline: none; box-shadow: var(--ring); }
+
+    /* ---------- Legend ---------- */
+    .legend {
+      display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 14px;
+      padding: 10px 14px; background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; box-shadow: var(--shadow-sm);
+      font-size: 0.72rem; color: var(--text-muted); align-items: center;
+    }
+    .legend-item { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 4px; display: inline-block; }
+    .legend-dot.completed { background: linear-gradient(135deg, #16a34a, #15803d); }
+    .legend-dot.available { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+    .legend-dot.blocked { background: var(--blocked-bg); border: 1px solid var(--blocked-border); }
+
+    /* ---------- Columns ---------- */
+    .columns-wrapper { overflow-x: auto; padding-bottom: 14px; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+    .columns-wrapper::-webkit-scrollbar { height: 10px; }
+    .columns-wrapper::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+    .columns-wrapper::-webkit-scrollbar-thumb:hover { background: var(--brand-2); }
+    .matrix-columns { display: flex; gap: 18px; min-width: min-content; align-items: flex-start; }
+    .level-column {
+      background: var(--surface); border-radius: 20px; width: 278px; min-width: 278px;
+      display: flex; flex-direction: column; box-shadow: var(--shadow); border: 1px solid var(--border-2);
+      overflow: hidden;
+    }
+    .column-header {
+      background: linear-gradient(135deg, var(--surface-3), var(--surface));
+      padding: 12px; border-bottom: 1px solid var(--border-2);
+      text-align: center; position: relative;
+    }
+    .column-header::before {
+      content: ''; position: absolute; top: 0; left: 10%; right: 10%; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--brand-2), transparent);
+    }
+    .column-header h3 { margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--brand); letter-spacing: -0.01em; }
+    .column-header span { font-size: 0.6rem; background: var(--chip-bg); color: var(--chip-text); padding: 2px 9px; border-radius: 999px; display: inline-block; margin-top: 6px; font-weight: 600; }
+    .subjects-list { padding: 12px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+
+    .subject-card {
+      border-radius: 14px; padding: 10px 12px; transition: all 0.18s ease; cursor: pointer;
+      border: 1px solid transparent;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+    }
+    .subject-card:focus-visible { outline: none; box-shadow: var(--ring); }
+    .subject-completed { background: var(--completed-bg); border-color: var(--completed-border); color: var(--completed-text); box-shadow: 0 4px 12px -4px rgba(22,163,74,0.4); }
+    .subject-completed:hover { background: var(--completed-hover); transform: translateY(-2px); box-shadow: 0 8px 18px -6px rgba(22,163,74,0.5); }
+    .subject-available { background: var(--available-bg); border-color: var(--available-border); color: var(--available-text); box-shadow: 0 4px 12px -4px rgba(37,99,235,0.4); }
+    .subject-available:hover { background: var(--available-hover); transform: translateY(-2px); box-shadow: 0 8px 18px -6px rgba(37,99,235,0.5); }
+    .subject-blocked { background: var(--blocked-bg); border-color: var(--blocked-border); color: var(--blocked-text); cursor: not-allowed; }
+    .subject-blocked .subject-code,
+    .subject-blocked .status-badge { background: var(--code-bg-light); color: var(--code-text-light); }
+    .subject-blocked .subject-ch { background: rgba(0,0,0,0.06); color: var(--blocked-text); }
+    .subject-blocked .pre-req-hint { color: var(--blocked-text); border-top-color: var(--blocked-border); }
+
+    .subject-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+    .subject-code { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.62rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); display: inline-block; padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; }
+    .subject-name { font-weight: 700; font-size: 0.82rem; margin: 7px 0 4px; line-height: 1.25; letter-spacing: -0.01em; }
+    .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
+    .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
+    .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+
+    /* ---------- Optativas ---------- */
+    .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+    .optativas-section h2 {
+      color: var(--brand); border-left: 4px solid var(--brand-2); padding-left: 14px;
+      margin: 0 0 14px; font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em;
+    }
+    .optativas-table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; border: 1px solid var(--border); }
+    .optativas-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 720px; }
+    .optativas-table th, .optativas-table td { border-bottom: 1px solid var(--table-border); padding: 10px 12px; text-align: left; vertical-align: top; word-break: break-word; }
+    .optativas-table tbody tr:nth-child(even) { background: var(--table-row-alt); }
+    .optativas-table tbody tr:hover { background: var(--chip-bg); }
+    .optativas-table th { background: var(--table-head); font-weight: 700; color: var(--text); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    .optativas-table td:first-child { font-family: 'JetBrains Mono', ui-monospace, monospace; font-weight: 600; color: var(--brand-2); white-space: nowrap; }
+
+    footer { text-align: center; margin-top: 20px; font-size: 0.72rem; color: var(--text-soft); background: var(--surface); padding: 12px; border-radius: 16px; border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+    footer strong { color: var(--text); }
+
+    /* ---------- Mobile ---------- */
+    @media (max-width: 768px) {
+      body { padding: 12px; }
+      .header { padding: 12px; border-radius: 18px; gap: 12px; }
+      .logo-wrap { width: 44px; height: 44px; border-radius: 12px; }
+      .title h1 { font-size: 1.05rem; }
+      .title p { font-size: 0.7rem; }
+      .title .eyebrow { font-size: 0.55rem; }
+      .header-actions { width: 100%; justify-content: space-between; }
+      .progress-panel { flex: 1; min-width: 0; padding: 8px 14px; border-radius: 14px; }
+      .progress-value { font-size: 1.4rem; }
+      .level-column { width: 240px; min-width: 240px; border-radius: 16px; }
+      .optativas-section { padding: 14px; border-radius: 18px; margin-top: 24px; }
+      .optativas-section h2 { font-size: 1rem; }
+      .legend { font-size: 0.65rem; gap: 8px; padding: 8px 10px; }
+    }
+    @media (max-width: 420px) {
+      .level-column { width: 86vw; min-width: 86vw; }
+      .title h1 { font-size: 0.98rem; }
+      .brand { gap: 10px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="brand">
+      <div class="logo-wrap" aria-hidden="true">
+        <span class="logo-fallback">UFCG</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Logo_UFCG.png/240px-Logo_UFCG.png"
+             alt="" onerror="this.style.display='none'"
+             onload="this.previousElementSibling.style.display='none'">
+      </div>
+      <div class="title">
+        <span class="eyebrow">Universidade Federal de Campina Grande</span>
+        <h1>MEDICINA</h1>
+        <p>Campina Grande · Currículo 2010 · Código 12205100</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
+      <div class="progress-panel">
+        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-value" id="percentDisplay">0%</div>
+        <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
+        <button class="reset-btn" id="resetBtn">🔄 Redefinir</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend" role="list">
+    <span class="legend-item" role="listitem"><span class="legend-dot completed"></span> Cursada</span>
+    <span class="legend-item" role="listitem"><span class="legend-dot available"></span> Disponível</span>
+    <span class="legend-item" role="listitem"><span class="legend-dot blocked"></span> Bloqueada (pré‑requisitos pendentes)</span>
+  </div>
+
+  <div class="columns-wrapper">
+    <div class="matrix-columns" id="matrixColumns"></div>
+  </div>
+
+  <div class="optativas-section">
+    <h2>📖 Disciplinas Optativas</h2>
+    <div class="optativas-table-wrapper">
+      <table class="optativas-table">
+        <thead><tr><th>Código</th><th>Disciplina</th><th>CH</th><th>Créd.</th><th>Pré‑requisitos</th><th>Co‑requisitos</th></tr></thead>
+        <tbody>
+
+          <tr>
+              <td>1201197</td>
+              <td>TÓPICOS EM MEDICINA (SEMIN. EM FARMAC.)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1201224</td>
+              <td>TEM(CULTURA E SUBJETIVIDADE)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1201276</td>
+              <td>TOXICOLOGIA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202032</td>
+              <td>TEM(TANATOLOGIA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202042</td>
+              <td>TEM(RADIOLOGIA TORAXICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202043</td>
+              <td>TEM (DEPENDÊNCIA QUÍMICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202044</td>
+              <td>TEM(PSICOPATOLOGIA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202045</td>
+              <td>TEM (MEDICINA INTENSIVA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202049</td>
+              <td>TEM(ENDOCRINOLOGIA FEMININA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202206</td>
+              <td>ELETROCARDIOGRAFIA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202225</td>
+              <td>SOCIOLOGIA DA SAUDE</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1304055</td>
+              <td>FUTSAL</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202261</td>
+              <td>TEM(INTERP CLIN  DE EXAMES LABORATORIAIS</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1201242</td>
+              <td>TEM(ESTATÍSTICA AVANÇADA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1201243</td>
+              <td>TEM(CORPO</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1201310</td>
+              <td>TEENF(AMB E REL INTERPESSOAIS NA S DO H)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202251</td>
+              <td>INTRODUÇÃO À MEDICINA ALTERNATIVA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202252</td>
+              <td>TEM(ANATOMIA PATOLOGICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202253</td>
+              <td>PRIMEIROS SOCORROS</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202254</td>
+              <td>TECNICAS ASSISTENCIAIS BASICAS EM SAUDE</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202255</td>
+              <td>ZOONOSE</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202256</td>
+              <td>GERIATRIA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202257</td>
+              <td>TEM(TANATOLOGIA E CLINICA DO LUTO)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202258</td>
+              <td>TEM(INT AS PRAT INTEG E E COMPLEMENTARES</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202259</td>
+              <td>TEM (BIOESTATÍSTICA COMPUTACIONAL)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td>BIOESTATÍSTICA</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202260</td>
+              <td>TEM(DERMATOLOGIA PARA O PSF)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td>DERMATOLOGIA</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202262</td>
+              <td>TEM(TERAPIAS COMPLEMENTARES)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202263</td>
+              <td>TEM(FORMACAO INTERPROFISSIONAL EM SAUDE)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td>SAUDE COLETIVA II</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202264</td>
+              <td>TEM(BIOQUIMICA CLINICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td>BIOQUÍMICA MOLECULAR E METABÓLICA</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202265</td>
+              <td>TEM(ANATOMIA RADIOLOGICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202266</td>
+              <td>TEM(PRIMEIROS SOCORROS)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202267</td>
+              <td>TEM(SEMIOLOGIA I)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202268</td>
+              <td>TEM(ANTIBIOTICOS)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202269</td>
+              <td>TEM(TÓPICOS EM SAÚDE COLETIVO III)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202270</td>
+              <td>TEM(TÓPICOS EM SAÚDE COLETIVA IV)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202271</td>
+              <td>TEM(DEONTOLOGIA MÉDICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202272</td>
+              <td>TEM(INTRO À INT ART À TELEMEDICINA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202273</td>
+              <td>TEM(PUBLICAÇÕES CIENTÍFICAS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202274</td>
+              <td>TEM(ÉTICA E BIOÉTICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202275</td>
+              <td>TEM(AVALIAÇÃO E TRAT DE FERIDAS)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202276</td>
+              <td>TEM(INTRODUÇÃO À ANATOMIA)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202277</td>
+              <td>TEM(ANAT CLI END REPR FEM E MAS)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202278</td>
+              <td>TEM(FISIOLOGIA DO ENDÓCRINO E REPR)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202279</td>
+              <td>TEM(NEUROFISIOLOGIA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202280</td>
+              <td>TEM(TOP HIS EMB SIS CAR</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202281</td>
+              <td>TEM(FISIOLOGIA DO SISTEMA URINÁRIO)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202282</td>
+              <td>TEM(MICROB MEC DE AGRES E DEFESA)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202283</td>
+              <td>TEM(PARASITOLOGIA REMOTA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202284</td>
+              <td>TEM(IMUNOLOGIA REMOTA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202285</td>
+              <td>TEM(SAÚDE COLETIVA I ONLINE)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202286</td>
+              <td>TEM(EPIDEMIOLOGIA ONLINE)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202287</td>
+              <td>TEM(TÓP DE ANAT DO SISTEMA RESPIRATÓRIO)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202288</td>
+              <td>TEM(TOP ESP DE ANAT DO SIST DIGESTÓRIO)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202289</td>
+              <td>TEM(ANTIBIOTICOTERAPIA CLÍNICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202290</td>
+              <td>TEM(FUND TEOR PARA INIC AO EXAM CLI)</td>
+              <td>120h</td>
+              <td>8.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202291</td>
+              <td>TEM(BAS FISIO DO SISTEMA GASTROINT)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202292</td>
+              <td>TEM(INTRODUÇÃO À HEMATOLOGIA)</td>
+              <td>90h</td>
+              <td>6.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202293</td>
+              <td>TEM(INTRODUÇÃO À NEFROLOGIA)</td>
+              <td>90h</td>
+              <td>6.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202294</td>
+              <td>TEM(TOP DE CLI BAS EM DERMATOLOGIA)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202295</td>
+              <td>TEM(PSICOFARMACOLOGIA APL À CLÍNICA)</td>
+              <td>15h</td>
+              <td>1.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202296</td>
+              <td>TEM(INTR AS DOEN ALER ERR INAT DE IMUN)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202297</td>
+              <td>TEM(NEUROANATOMIA ATRA DE CAS CLÍNICOS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202298</td>
+              <td>TEM(NEUROLOGIA CLÍNICA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>INICIACAO AO EXAME CLINICO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202299</td>
+              <td>TEM(TEORIAS E ATU DE DOEN REUMÁTICAS)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202300</td>
+              <td>TEM(TOP AVAN EM ENDOCRINOLOGIA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202301</td>
+              <td>TEM(CLÍNICA CIRÚRGICA)</td>
+              <td>90h</td>
+              <td>6.0</td>
+              <td>INICIACAO AO EXAME CLINICO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202302</td>
+              <td>TEM(INTRO À SAÙDE DA CRIAN E DO ADOL)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202303</td>
+              <td>TEM(TÓPICOS ESP EM OBSTETRÍCIA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202304</td>
+              <td>TEM(TÓPICOS ESP EM GINECOLOGIA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202305</td>
+              <td>TEM(FUND TEOR EM PNEUMOLOGIA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202306</td>
+              <td>TEM(HISTÓRIA DA MEDICINA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202307</td>
+              <td>TEM(BASES TEOR DA SAÚDE MENTAL)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202308</td>
+              <td>TEM(INTRODUÇÃO À OFTALMOLOGIA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202309</td>
+              <td>TEM(INTRODUÇÃO AO TCC)</td>
+              <td>90h</td>
+              <td>6.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202310</td>
+              <td>TEM(MÉT DE DIAG POR IMAGEM)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202311</td>
+              <td>TEM(TEMAS EM ONCOLOGIA CLÍNICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202312</td>
+              <td>TEM(TEOR E ATUA EM OTORRINO)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202313</td>
+              <td>TEM(TOP DE CLI TRAUMATO-ORTOPÉDICA)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202314</td>
+              <td>TEM(TÓPICOS EM UROLOGIA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202315</td>
+              <td>TEM(TÓP AVAN EM CLÍNICA MÉDICA)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202316</td>
+              <td>TEM(TÓP ESP EM GENÉTICA MÉDICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202317</td>
+              <td>TEM(TOP. ESP. EM ELETROCARDIOGRAFIA)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202318</td>
+              <td>TEM(TÓPICOS EM GASTROENTEROLOGIA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202319</td>
+              <td>TEM(SAB TRAD E CURA: DIAL. EPIST. E PRAT</td>
+              <td>30h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202320</td>
+              <td>TEM(COMUNICAÇÃO CIENTÍFICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202321</td>
+              <td>TEM(PRÁTICAS EM OTORRINOLARINGOLOGIA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202322</td>
+              <td>TEM(INTRODUÇÃO A HEMATOLOGIA PRÁTICA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202323</td>
+              <td>TEM(FUND PRÁTICA PARA I.E.C)</td>
+              <td>90h</td>
+              <td>6.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202324</td>
+              <td>TEM(GASTROENTEROLOGIA PRÁTICA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202325</td>
+              <td>TEM(PRÁTICAS CIRÚRGICAS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>TEM(CLÍNICA CIRÚRGICA)</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202326</td>
+              <td>TEM(PRAT EM SAÚDE DA CRIANÇA E DO ADOL)</td>
+              <td>90h</td>
+              <td>6.0</td>
+              <td>TEM(INTRO À SAÙDE DA CRIAN E DO ADOL)</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202327</td>
+              <td>TEM(DOENÇAS INFECTO-PARASITÁRIAS PRÁTICA</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202328</td>
+              <td>TEM(OFTALMOLOGIA PRÁTICA)</td>
+              <td>15h</td>
+              <td>1.0</td>
+              <td>TEM(INTRODUÇÃO À OFTALMOLOGIA)</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202329</td>
+              <td>TEM(URGÊNCIA E EMERGÊNCIA PRÁTICA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202330</td>
+              <td>TEM(PRÁTICAS DE PNEUMOLOGIA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202331</td>
+              <td>TEM(NEUROLOGIA PRÁTICA)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202332</td>
+              <td>TEM(SAÚDE E ESPIRITUALIDADE)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1202333</td>
+              <td>TEM(MEDICINA DO SONO)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td>INICIACAO AO EXAME CLINICO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1307314</td>
+              <td>INGLES INSTRUMENTAL</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1307332</td>
+              <td>LIBRAS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer>🎓 <strong>Dica:</strong> clique nas disciplinas <em>disponíveis</em> para marcar como cursadas. Desmarcar uma disciplina recalcula automaticamente as dependentes. Seu progresso é salvo neste navegador.</footer>
+</div>
+
+<script>
+  // ---------- Tema ----------
+  (function initTheme() {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+  function updateThemeBtn() {
+    const btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    btn.textContent = isDark ? '☀️' : '🌙';
+  }
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateThemeBtn();
+  });
+  updateThemeBtn();
+
+  // ---------- Dados ----------
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1202170", "nome": "INTRODUÇÃO AO CURSO", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1202171", "nome": "BIOQUÍMICA MOLECULAR E METABÓLICA", "ch": "120h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1202172", "nome": "BIOLOGIA CELULAR E TISSULAR", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1202173", "nome": "GENESE E DESENVOLVIMENTO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1202174", "nome": "BIOFÍSICA E FISIOL. MOLECULAR E CELULAR", "ch": "120h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1202175", "nome": "FUNDAMENTOS DA ANATOMIA HUMANA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1202176", "nome": "BIOESTATÍSTICA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1202177", "nome": "ETICA E RELACOES HUMANAS", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1202179", "nome": "SISTEMA NERVOSO", "ch": "135h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1202180", "nome": "SISTEMA ENDOCRINO-REPRODUTOR", "ch": "120h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1202181", "nome": "SISTEMA LOCOMOTOR", "ch": "90h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1202182", "nome": "METODOLOGIA CIENTÍFICA E INFORM. MÉDICA", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1202183", "nome": "EPIDEMIOLOGIA", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1202184", "nome": "SIST CARDIOVASCULAR", "ch": "105h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1202023", "nome": "MECANISMOS DE AGRESSAO E DEFESA", "ch": "135h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1202024", "nome": "FARMACOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1202185", "nome": "SISTEMA RESPIRATORIO", "ch": "90h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1202186", "nome": "SISTEMA DIGESTORIO", "ch": "75h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1202187", "nome": "SISTEMA URINARIO", "ch": "90h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1202188", "nome": "SAUDE COLETIVA I", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1202010", "nome": "INICIACAO AO EXAME CLINICO", "ch": "210h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1202030", "nome": "GENÉTICA MÉDICA", "ch": "45h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1202031", "nome": "PROCESSOS PATOLOGICOS GERAIS", "ch": "105h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1202189", "nome": "SAUDE COLETIVA II", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1202190", "nome": "PSICOLOGIA MÉDICA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1202011", "nome": "CARDIOLOGIA", "ch": "90h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1202012", "nome": "PNEUMOLOGIA", "ch": "90h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1202013", "nome": "GASTROENTEROLOGIA", "ch": "90h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1202014", "nome": "HEMATOLOGIA", "ch": "90h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1202015", "nome": "DERMATOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1202205", "nome": "SAUDE COLETIVA III", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1202016", "nome": "NEUROLOGIA", "ch": "90h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1202017", "nome": "REUMATOLOGIA", "ch": "90h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1202018", "nome": "ENDOCRINOLOGIA E METABOLOGIA", "ch": "90h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1202019", "nome": "DOENÇAS INFECCIOSAS E PARASITARIAS", "ch": "90h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1202020", "nome": "NEFROLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1202021", "nome": "IMUNOLOGIA CLÍNICA", "ch": "30h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1202022", "nome": "DEONTOLOGIA", "ch": "30h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1202025", "nome": "GINECOLOGIA", "ch": "90h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1202026", "nome": "OBSTETRICIA", "ch": "90h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1202027", "nome": "ATENÇÃO À SAÚDE DA CRIANÇA E DO ADOLESC.", "ch": "120h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1202028", "nome": "ATENÇÃO AO PACIENTE CIRÚRGICO I", "ch": "120h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1202029", "nome": "SAUDE COLETIVA IV", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1202033", "nome": "OFTALMOLOGIA", "ch": "45h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1202034", "nome": "OTORRINOLARINGOLOGIA", "ch": "45h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1202035", "nome": "ORTOPEDIA E TRAUMATOLOGIA", "ch": "45h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1202036", "nome": "UROLOGIA", "ch": "45h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1202037", "nome": "ATENÇÃO AO PACIENTE ONCOLÓGICO", "ch": "90h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1202038", "nome": "ATENÇÃO À SAÚDE MENTAL", "ch": "90h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1202039", "nome": "URGENCIAS E EMERGENCIAS", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1202040", "nome": "IMAGEM", "ch": "30h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1202041", "nome": "MEDICINA LEGAL", "ch": "30h", "preReqs": []}, {"nivel": "12º Nível", "codigo": "1202053", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "120h", "preReqs": []}];
+  const codigoToNome = {"1202170": "INTRODUÇÃO AO CURSO", "1202171": "BIOQUÍMICA MOLECULAR E METABÓLICA", "1202172": "BIOLOGIA CELULAR E TISSULAR", "1202173": "GENESE E DESENVOLVIMENTO", "1202174": "BIOFÍSICA E FISIOL. MOLECULAR E CELULAR", "1202175": "FUNDAMENTOS DA ANATOMIA HUMANA", "1202176": "BIOESTATÍSTICA", "1202177": "ETICA E RELACOES HUMANAS", "1202179": "SISTEMA NERVOSO", "1202180": "SISTEMA ENDOCRINO-REPRODUTOR", "1202181": "SISTEMA LOCOMOTOR", "1202182": "METODOLOGIA CIENTÍFICA E INFORM. MÉDICA", "1202183": "EPIDEMIOLOGIA", "1202184": "SIST CARDIOVASCULAR", "1202023": "MECANISMOS DE AGRESSAO E DEFESA", "1202024": "FARMACOLOGIA", "1202185": "SISTEMA RESPIRATORIO", "1202186": "SISTEMA DIGESTORIO", "1202187": "SISTEMA URINARIO", "1202188": "SAUDE COLETIVA I", "1202010": "INICIACAO AO EXAME CLINICO", "1202030": "GENÉTICA MÉDICA", "1202031": "PROCESSOS PATOLOGICOS GERAIS", "1202189": "SAUDE COLETIVA II", "1202190": "PSICOLOGIA MÉDICA", "1202011": "CARDIOLOGIA", "1202012": "PNEUMOLOGIA", "1202013": "GASTROENTEROLOGIA", "1202014": "HEMATOLOGIA", "1202015": "DERMATOLOGIA", "1202205": "SAUDE COLETIVA III", "1202016": "NEUROLOGIA", "1202017": "REUMATOLOGIA", "1202018": "ENDOCRINOLOGIA E METABOLOGIA", "1202019": "DOENÇAS INFECCIOSAS E PARASITARIAS", "1202020": "NEFROLOGIA", "1202021": "IMUNOLOGIA CLÍNICA", "1202022": "DEONTOLOGIA", "1202025": "GINECOLOGIA", "1202026": "OBSTETRICIA", "1202027": "ATENÇÃO À SAÚDE DA CRIANÇA E DO ADOLESC.", "1202028": "ATENÇÃO AO PACIENTE CIRÚRGICO I", "1202029": "SAUDE COLETIVA IV", "1202033": "OFTALMOLOGIA", "1202034": "OTORRINOLARINGOLOGIA", "1202035": "ORTOPEDIA E TRAUMATOLOGIA", "1202036": "UROLOGIA", "1202037": "ATENÇÃO AO PACIENTE ONCOLÓGICO", "1202038": "ATENÇÃO À SAÚDE MENTAL", "1202039": "URGENCIAS E EMERGENCIAS", "1202040": "IMAGEM", "1202041": "MEDICINA LEGAL", "1202053": "TRABALHO DE CONCLUSAO DE CURSO", "1201197": "TÓPICOS EM MEDICINA (SEMIN. EM FARMAC.)", "1201224": "TEM(CULTURA E SUBJETIVIDADE)", "1201276": "TOXICOLOGIA", "1202032": "TEM(TANATOLOGIA)", "1202042": "TEM(RADIOLOGIA TORAXICA)", "1202043": "TEM (DEPENDÊNCIA QUÍMICA)", "1202044": "TEM(PSICOPATOLOGIA)", "1202045": "TEM (MEDICINA INTENSIVA)", "1202049": "TEM(ENDOCRINOLOGIA FEMININA)", "1202206": "ELETROCARDIOGRAFIA", "1202225": "SOCIOLOGIA DA SAUDE", "1304055": "FUTSAL", "1202261": "TEM(INTERP CLIN  DE EXAMES LABORATORIAIS", "1201242": "TEM(ESTATÍSTICA AVANÇADA)", "1201243": "TEM(CORPO", "1201310": "TEENF(AMB E REL INTERPESSOAIS NA S DO H)", "1202251": "INTRODUÇÃO À MEDICINA ALTERNATIVA", "1202252": "TEM(ANATOMIA PATOLOGICA)", "1202253": "PRIMEIROS SOCORROS", "1202254": "TECNICAS ASSISTENCIAIS BASICAS EM SAUDE", "1202255": "ZOONOSE", "1202256": "GERIATRIA", "1202257": "TEM(TANATOLOGIA E CLINICA DO LUTO)", "1202258": "TEM(INT AS PRAT INTEG E E COMPLEMENTARES", "1202259": "TEM (BIOESTATÍSTICA COMPUTACIONAL)", "1202260": "TEM(DERMATOLOGIA PARA O PSF)", "1202262": "TEM(TERAPIAS COMPLEMENTARES)", "1202263": "TEM(FORMACAO INTERPROFISSIONAL EM SAUDE)", "1202264": "TEM(BIOQUIMICA CLINICA)", "1202265": "TEM(ANATOMIA RADIOLOGICA)", "1202266": "TEM(PRIMEIROS SOCORROS)", "1202267": "TEM(SEMIOLOGIA I)", "1202268": "TEM(ANTIBIOTICOS)", "1202269": "TEM(TÓPICOS EM SAÚDE COLETIVO III)", "1202270": "TEM(TÓPICOS EM SAÚDE COLETIVA IV)", "1202271": "TEM(DEONTOLOGIA MÉDICA)", "1202272": "TEM(INTRO À INT ART À TELEMEDICINA)", "1202273": "TEM(PUBLICAÇÕES CIENTÍFICAS)", "1202274": "TEM(ÉTICA E BIOÉTICA)", "1202275": "TEM(AVALIAÇÃO E TRAT DE FERIDAS)", "1202276": "TEM(INTRODUÇÃO À ANATOMIA)", "1202277": "TEM(ANAT CLI END REPR FEM E MAS)", "1202278": "TEM(FISIOLOGIA DO ENDÓCRINO E REPR)", "1202279": "TEM(NEUROFISIOLOGIA)", "1202280": "TEM(TOP HIS EMB SIS CAR", "1202281": "TEM(FISIOLOGIA DO SISTEMA URINÁRIO)", "1202282": "TEM(MICROB MEC DE AGRES E DEFESA)", "1202283": "TEM(PARASITOLOGIA REMOTA)", "1202284": "TEM(IMUNOLOGIA REMOTA)", "1202285": "TEM(SAÚDE COLETIVA I ONLINE)", "1202286": "TEM(EPIDEMIOLOGIA ONLINE)", "1202287": "TEM(TÓP DE ANAT DO SISTEMA RESPIRATÓRIO)", "1202288": "TEM(TOP ESP DE ANAT DO SIST DIGESTÓRIO)", "1202289": "TEM(ANTIBIOTICOTERAPIA CLÍNICA)", "1202290": "TEM(FUND TEOR PARA INIC AO EXAM CLI)", "1202291": "TEM(BAS FISIO DO SISTEMA GASTROINT)", "1202292": "TEM(INTRODUÇÃO À HEMATOLOGIA)", "1202293": "TEM(INTRODUÇÃO À NEFROLOGIA)", "1202294": "TEM(TOP DE CLI BAS EM DERMATOLOGIA)", "1202295": "TEM(PSICOFARMACOLOGIA APL À CLÍNICA)", "1202296": "TEM(INTR AS DOEN ALER ERR INAT DE IMUN)", "1202297": "TEM(NEUROANATOMIA ATRA DE CAS CLÍNICOS)", "1202298": "TEM(NEUROLOGIA CLÍNICA)", "1202299": "TEM(TEORIAS E ATU DE DOEN REUMÁTICAS)", "1202300": "TEM(TOP AVAN EM ENDOCRINOLOGIA)", "1202301": "TEM(CLÍNICA CIRÚRGICA)", "1202302": "TEM(INTRO À SAÙDE DA CRIAN E DO ADOL)", "1202303": "TEM(TÓPICOS ESP EM OBSTETRÍCIA", "1202304": "TEM(TÓPICOS ESP EM GINECOLOGIA)", "1202305": "TEM(FUND TEOR EM PNEUMOLOGIA)", "1202306": "TEM(HISTÓRIA DA MEDICINA)", "1202307": "TEM(BASES TEOR DA SAÚDE MENTAL)", "1202308": "TEM(INTRODUÇÃO À OFTALMOLOGIA)", "1202309": "TEM(INTRODUÇÃO AO TCC)", "1202310": "TEM(MÉT DE DIAG POR IMAGEM)", "1202311": "TEM(TEMAS EM ONCOLOGIA CLÍNICA)", "1202312": "TEM(TEOR E ATUA EM OTORRINO)", "1202313": "TEM(TOP DE CLI TRAUMATO-ORTOPÉDICA)", "1202314": "TEM(TÓPICOS EM UROLOGIA)", "1202315": "TEM(TÓP AVAN EM CLÍNICA MÉDICA)", "1202316": "TEM(TÓP ESP EM GENÉTICA MÉDICA)", "1202317": "TEM(TOP. ESP. EM ELETROCARDIOGRAFIA)", "1202318": "TEM(TÓPICOS EM GASTROENTEROLOGIA)", "1202319": "TEM(SAB TRAD E CURA: DIAL. EPIST. E PRAT", "1202320": "TEM(COMUNICAÇÃO CIENTÍFICA)", "1202321": "TEM(PRÁTICAS EM OTORRINOLARINGOLOGIA)", "1202322": "TEM(INTRODUÇÃO A HEMATOLOGIA PRÁTICA)", "1202323": "TEM(FUND PRÁTICA PARA I.E.C)", "1202324": "TEM(GASTROENTEROLOGIA PRÁTICA)", "1202325": "TEM(PRÁTICAS CIRÚRGICAS)", "1202326": "TEM(PRAT EM SAÚDE DA CRIANÇA E DO ADOL)", "1202327": "TEM(DOENÇAS INFECTO-PARASITÁRIAS PRÁTICA", "1202328": "TEM(OFTALMOLOGIA PRÁTICA)", "1202329": "TEM(URGÊNCIA E EMERGÊNCIA PRÁTICA)", "1202330": "TEM(PRÁTICAS DE PNEUMOLOGIA)", "1202331": "TEM(NEUROLOGIA PRÁTICA)", "1202332": "TEM(SAÚDE E ESPIRITUALIDADE)", "1202333": "TEM(MEDICINA DO SONO)", "1307314": "INGLES INSTRUMENTAL", "1307332": "LIBRAS"};
+
+  const subjectsMap = new Map();
+  mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
+
+  const reverseDeps = new Map();
+  mandatorySubjects.forEach(sub => {
+    if (sub.preReqs && sub.preReqs.length) {
+      sub.preReqs.forEach(pre => {
+        if (!reverseDeps.has(pre)) reverseDeps.set(pre, []);
+        reverseDeps.get(pre).push(sub.codigo);
+      });
+    }
+  });
+
+  let completedSet = new Set();
+
+  function arePrerequisitesMet(codigo) {
+    const disciplina = subjectsMap.get(codigo);
+    if (!disciplina) return true;
+    const preReqs = disciplina.preReqs || [];
+    return preReqs.every(preCod => {
+      if (!subjectsMap.has(preCod)) return true;
+      return completedSet.has(preCod);
+    });
+  }
+
+  function cascadeUncheck(startingCode) {
+    const queue = [startingCode];
+    const visited = new Set();
+    while (queue.length) {
+      const current = queue.shift();
+      if (visited.has(current)) continue;
+      visited.add(current);
+      if (completedSet.has(current) && !arePrerequisitesMet(current)) {
+        completedSet.delete(current);
+      }
+      const dependents = reverseDeps.get(current) || [];
+      dependents.forEach(dep => { if (!visited.has(dep)) queue.push(dep); });
+    }
+  }
+
+  function getSubjectStatus(codigo) {
+    if (completedSet.has(codigo)) return "completed";
+    return arePrerequisitesMet(codigo) ? "available" : "blocked";
+  }
+
+  window.toggleSubject = function(codigo) {
+    const status = getSubjectStatus(codigo);
+    if (status === "blocked") return;
+    if (completedSet.has(codigo)) {
+      completedSet.delete(codigo);
+      cascadeUncheck(codigo);
+    } else {
+      completedSet.add(codigo);
+    }
+    saveProgress();
+    renderColumns();
+    updateGlobalProgress();
+  };
+
+  function computePercent() {
+    const total = mandatorySubjects.length;
+    return total === 0 ? 0 : Math.round((completedSet.size / total) * 100);
+  }
+
+  function updateGlobalProgress() {
+    const percent = computePercent();
+    const total = mandatorySubjects.length;
+    document.getElementById('percentDisplay').innerText = `${percent}%`;
+    document.getElementById('progressFill').style.width = `${percent}%`;
+    const meta = document.getElementById('progressMeta');
+    if (meta) meta.innerText = `${completedSet.size} / ${total} disciplinas`;
+  }
+
+  function renderColumns() {
+    const container = document.getElementById('matrixColumns');
+    if (!container) return;
+    const niveis = [];
+    const mapNivel = new Map();
+    mandatorySubjects.forEach(sub => {
+      const nivel = sub.nivel;
+      if (!mapNivel.has(nivel)) { mapNivel.set(nivel, []); niveis.push(nivel); }
+      mapNivel.get(nivel).push(sub);
+    });
+    let columnsHtml = '';
+    for (let nivel of niveis) {
+      const subjectsOfLevel = mapNivel.get(nivel);
+      columnsHtml += `
+        <div class="level-column">
+          <div class="column-header">
+            <h3>${nivel}</h3>
+            <span>${subjectsOfLevel.length} disc.</span>
+          </div>
+          <div class="subjects-list">
+      `;
+      subjectsOfLevel.forEach(sub => {
+        const status = getSubjectStatus(sub.codigo);
+        let cardClass = '', statusText = '';
+        if (status === 'completed') { cardClass = 'subject-completed'; statusText = '✅ Cursada'; }
+        else if (status === 'available') { cardClass = 'subject-available'; statusText = '🔓 Disponível'; }
+        else { cardClass = 'subject-blocked'; statusText = '🔒 Bloqueada'; }
+        let prereqDisplay = 'Nenhum';
+        if (sub.preReqs && sub.preReqs.length) {
+          prereqDisplay = sub.preReqs.map(cod => codigoToNome[cod] || cod).join(', ');
+        }
+        columnsHtml += `
+          <div class="subject-card ${cardClass}" data-codigo="${sub.codigo}">
+            <div class="subject-row">
+              <span class="subject-code">${sub.codigo}</span>
+              <span class="status-badge">${statusText}</span>
+            </div>
+            <div class="subject-name">${sub.nome}</div>
+            <div><span class="subject-ch">${sub.ch}</span></div>
+            <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
+          </div>
+        `;
+      });
+      columnsHtml += `</div></div>`;
+    }
+    container.innerHTML = columnsHtml;
+    document.querySelectorAll('.subject-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const codigo = card.getAttribute('data-codigo');
+        if (codigo) window.toggleSubject(codigo);
+      });
+    });
+  }
+
+  function saveProgress() {
+    localStorage.setItem('completedObrigatorias_12205100_2010', JSON.stringify([...completedSet]));
+  }
+
+  function loadProgress() {
+    const saved = localStorage.getItem('completedObrigatorias_12205100_2010');
+    if (saved) {
+      completedSet = new Set(JSON.parse(saved));
+      const toRemove = [];
+      for (let code of completedSet) { if (!arePrerequisitesMet(code)) toRemove.push(code); }
+      toRemove.forEach(code => completedSet.delete(code));
+      saveProgress();
+    }
+  }
+
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    completedSet.clear();
+    saveProgress();
+    renderColumns();
+    updateGlobalProgress();
+  });
+
+  loadProgress();
+  renderColumns();
+  updateGlobalProgress();
+</script>
+</body>
+</html>
