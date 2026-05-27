@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-br" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grades UFCG — Início</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f6fb; --bg-elev:#ffffff; --text:#0f1e33; --text-soft:#4b5b73;
+  --border:#dbe2ee; --brand:#2c5f82; --brand-2:#3d96ad; --accent:#5a85e0;
+  --shadow:0 6px 22px rgba(20,40,80,.08);
+  --shadow-lg:0 14px 40px rgba(20,40,80,.14);
+  --radius:14px;
+}
+html[data-theme="dark"]{
+  --bg:#0e1726; --bg-elev:#16243a; --text:#e6ecf7; --text-soft:#9fb0c9;
+  --border:#243551; --brand:#5a9fc7; --brand-2:#6cc0d6; --accent:#7fa4ef;
+  --shadow:0 6px 22px rgba(0,0,0,.4);
+  --shadow-lg:0 14px 40px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  background:var(--bg); color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+header{
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));
+  color:#fff; padding:28px 24px;
+  box-shadow:var(--shadow);
+}
+.header-inner{
+  max-width:1200px; margin:0 auto;
+  display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+}
+.logo-wrap{
+  width:64px;height:64px;border-radius:14px;background:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.18); flex-shrink:0;
+}
+.logo-wrap img{width:54px;height:54px;object-fit:contain}
+.title-block h1{margin:0;font-size:1.6rem;font-weight:800;letter-spacing:.2px}
+.title-block p{margin:4px 0 0;opacity:.9;font-size:.95rem}
+.spacer{flex:1}
+.theme-btn{
+  background:rgba(255,255,255,.18); color:#fff; border:0;
+  padding:10px 14px; border-radius:10px; cursor:pointer;
+  font-weight:600; font-size:.9rem; transition:.2s;
+}
+.theme-btn:hover{background:rgba(255,255,255,.3)}
+
+main{max-width:1200px;margin:0 auto;padding:28px 24px 60px}
+
+.toolbar{
+  display:grid; grid-template-columns: 1fr 260px; gap:14px;
+  margin-bottom:22px;
+}
+.toolbar input, .toolbar select{
+  width:100%; padding:14px 16px; border-radius:12px;
+  border:1px solid var(--border); background:var(--bg-elev);
+  color:var(--text); font-size:1rem; font-family:inherit;
+  transition:.2s; box-shadow:var(--shadow);
+}
+.toolbar input:focus, .toolbar select:focus{
+  outline:none; border-color:var(--brand-2);
+  box-shadow:0 0 0 3px rgba(61,150,173,.25);
+}
+
+.stats{
+  margin-bottom:18px; color:var(--text-soft); font-size:.9rem;
+}
+.stats strong{color:var(--text)}
+
+.grid{
+  display:grid; gap:16px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+.card{
+  display:flex; flex-direction:column; gap:10px;
+  background:var(--bg-elev); border:1px solid var(--border);
+  border-radius:var(--radius); padding:18px;
+  text-decoration:none; color:inherit;
+  box-shadow:var(--shadow);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s;
+  position:relative; overflow:hidden;
+}
+.card::before{
+  content:""; position:absolute; left:0; top:0; bottom:0; width:4px;
+  background:linear-gradient(180deg,var(--brand),var(--brand-2));
+}
+.card:hover{
+  transform:translateY(-3px); box-shadow:var(--shadow-lg);
+  border-color:var(--brand-2);
+}
+.card .nome{font-weight:700; font-size:1.02rem; line-height:1.3}
+.card .meta{
+  display:flex; flex-wrap:wrap; gap:6px; margin-top:auto;
+}
+.tag{
+  font-size:.72rem; font-weight:600; padding:4px 9px; border-radius:999px;
+  background:rgba(90,133,224,.12); color:var(--accent); letter-spacing:.2px;
+}
+.tag.codigo{
+  font-family:'JetBrains Mono',monospace; font-weight:700;
+  background:rgba(44,95,130,.12); color:var(--brand);
+}
+.tag.campus{
+  background:rgba(61,150,173,.15); color:var(--brand-2);
+}
+.tag.turno{
+  background:rgba(120,120,140,.15); color:var(--text-soft);
+}
+
+.empty{
+  text-align:center; padding:60px 20px; color:var(--text-soft);
+}
+.empty h3{margin:0 0 6px;color:var(--text)}
+
+footer{
+  text-align:center; padding:30px 20px; color:var(--text-soft);
+  font-size:.85rem;
+}
+
+@media (max-width: 720px){
+  header{padding:20px 16px}
+  .header-inner{gap:12px}
+  .logo-wrap{width:52px;height:52px}
+  .logo-wrap img{width:42px;height:42px}
+  .title-block h1{font-size:1.25rem}
+  .title-block p{font-size:.85rem}
+  main{padding:18px 14px 50px}
+  .toolbar{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+  .card{padding:14px}
+}
+@media (max-width: 420px){
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="logo-wrap">
+      <img src="https://ccbs.ufcg.edu.br/images/Logomarcas/UFCG_logo_png.png" alt="UFCG"
+           onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{innerText:'UFCG',style:'font-weight:800;color:#2c5f82'}))">
+    </div>
+    <div class="title-block">
+      <h1>Grades Curriculares UFCG</h1>
+      <p>Selecione um curso para visualizar sua grade interativa</p>
+    </div>
+    <div class="spacer"></div>
+    <button class="theme-btn" id="themeBtn" type="button">🌙 Tema</button>
+  </div>
+</header>
+
+<main>
+  <div class="toolbar">
+    <input id="busca" type="search" placeholder="🔎 Buscar por nome ou código do curso..." autocomplete="off">
+    <select id="filtroCampus">
+      <option value="">Todos os campi</option>
+      <option value="Campina Grande">Campina Grande</option>
+<option value="Cajazeiras">Cajazeiras</option>
+<option value="Sousa">Sousa</option>
+<option value="Patos">Patos</option>
+<option value="Cuité">Cuité</option>
+<option value="Sumé">Sumé</option>
+<option value="Pombal">Pombal</option>
+    </select>
+  </div>
+
+  <div class="stats" id="stats"></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none">
+    <h3>Nenhum curso encontrado</h3>
+    <p>Tente outro termo de busca ou troque o filtro de campus.</p>
+  </div>
+</main>
+
+<footer>UFCG · Grades interativas — gerado automaticamente</footer>
+
+<script>
+const cursos = [{"arquivo": "21201110_CIÊNCIAS_BIOLÓGICAS_(LIC)_-_M_2011.html", "codigo": "21201110", "nome": "CIÊNCIAS BIOLÓGICAS (LIC)", "curriculo": "2011", "turno": "Matutino", "campus": "Cajazeiras"}, {"arquivo": "21204100_ENFERMAGEM_-_D_2018.html", "codigo": "21204100", "nome": "ENFERMAGEM", "curriculo": "2018", "turno": "Diurno", "campus": "Cajazeiras"}, {"arquivo": "21105210_FÍSICA_(LIC)_-_N_2011.html", "codigo": "21105210", "nome": "FÍSICA (LIC)", "curriculo": "2011", "turno": "Noturno", "campus": "Cajazeiras"}, {"arquivo": "21316110_GEOGRAFIA_(LICENCIATURA)_-_M_2008.html", "codigo": "21316110", "nome": "GEOGRAFIA (LICENCIATURA)", "curriculo": "2008", "turno": "Matutino", "campus": "Cajazeiras"}, {"arquivo": "21316210_GEOGRAFIA_(LICENCIATURA)_-_N_2008.html", "codigo": "21316210", "nome": "GEOGRAFIA (LICENCIATURA)", "curriculo": "2008", "turno": "Noturno", "campus": "Cajazeiras"}, {"arquivo": "21309110_HISTÓRIA_(LIC)_-_M_2009.html", "codigo": "21309110", "nome": "HISTÓRIA (LIC)", "curriculo": "2009", "turno": "Matutino", "campus": "Cajazeiras"}, {"arquivo": "21309210_HISTÓRIA_(LIC)_-_N_2009.html", "codigo": "21309210", "nome": "HISTÓRIA (LIC)", "curriculo": "2009", "turno": "Noturno", "campus": "Cajazeiras"}, {"arquivo": "21310116_LETRAS_-_LÍNGUA_INGLESA_(LIC)_-_D_2011.html", "codigo": "21310116", "nome": "LETRAS - LÍNGUA INGLESA (LIC)", "curriculo": "2011", "turno": "Diurno", "campus": "Cajazeiras"}, {"arquivo": "21310110_LETRAS_-_LÍNGUA_PORTUGUESA_(LIC)_-_M_2011.html", "codigo": "21310110", "nome": "LETRAS - LÍNGUA PORTUGUESA (LIC)", "curriculo": "2011", "turno": "Matutino", "campus": "Cajazeiras"}, {"arquivo": "21310210_LETRAS_-_LÍNGUA_PORTUGUESA_(LIC)_-_N_2011.html", "codigo": "21310210", "nome": "LETRAS - LÍNGUA PORTUGUESA (LIC)", "curriculo": "2011", "turno": "Noturno", "campus": "Cajazeiras"}, {"arquivo": "21107110_MATEMÁTICA_(LIC)_-_D_2011.html", "codigo": "21107110", "nome": "MATEMÁTICA (LIC)", "curriculo": "2011", "turno": "Diurno", "campus": "Cajazeiras"}, {"arquivo": "21205100_MEDICINA_2017.html", "codigo": "21205100", "nome": "MEDICINA", "curriculo": "2017", "turno": "", "campus": "Cajazeiras"}, {"arquivo": "21312110_PEDAGOGIA_(LICENCIATURA)_-_M_2009.html", "codigo": "21312110", "nome": "PEDAGOGIA (LICENCIATURA)", "curriculo": "2009", "turno": "Matutino", "campus": "Cajazeiras"}, {"arquivo": "21312210_PEDAGOGIA_(LICENCIATURA)_-_N_2009.html", "codigo": "21312210", "nome": "PEDAGOGIA (LICENCIATURA)", "curriculo": "2009", "turno": "Noturno", "campus": "Cajazeiras"}, {"arquivo": "21109210_QUÍMICA_(LIC)_-_N_2011.html", "codigo": "21109210", "nome": "QUÍMICA (LIC)", "curriculo": "2011", "turno": "Noturno", "campus": "Cajazeiras"}, {"arquivo": "13301100_ADMINISTRAÇÃO_-_D_2017.html", "codigo": "13301100", "nome": "ADMINISTRAÇÃO", "curriculo": "2017", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13301200_ADMINISTRAÇÃO_-_N_2017.html", "codigo": "13301200", "nome": "ADMINISTRAÇÃO", "curriculo": "2017", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "15101100_ARQUITETURA_E_URBANISMO_-_D_2010.html", "codigo": "15101100", "nome": "ARQUITETURA E URBANISMO", "curriculo": "2010", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "15101100_ARQUITETURA_E_URBANISMO_-_D_2024.html", "codigo": "15101100", "nome": "ARQUITETURA E URBANISMO", "curriculo": "2024", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13317100_ARTE_E_MÍDIA_-_D_1999.html", "codigo": "13317100", "nome": "ARTE E MÍDIA", "curriculo": "1999", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "14102100_CIÊNCIA_DA_COMPUTAÇÃO_-_D_2017.html", "codigo": "14102100", "nome": "CIÊNCIA DA COMPUTAÇÃO", "curriculo": "2017", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "14102100_CIÊNCIA_DA_COMPUTAÇÃO_-_D_2023.html", "codigo": "14102100", "nome": "CIÊNCIA DA COMPUTAÇÃO", "curriculo": "2023", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13304100_CIÊNCIAS_ECONÔMICAS_-_M_2009.html", "codigo": "13304100", "nome": "CIÊNCIAS ECONÔMICAS", "curriculo": "2009", "turno": "Matutino", "campus": "Campina Grande"}, {"arquivo": "13304200_CIÊNCIAS_ECONÔMICAS_-_N_2009.html", "codigo": "13304200", "nome": "CIÊNCIAS ECONÔMICAS", "curriculo": "2009", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "13304100_CIÊNCIAS_ECONÔMICAS_-_M_2023.html", "codigo": "13304100", "nome": "CIÊNCIAS ECONÔMICAS", "curriculo": "2023", "turno": "Matutino", "campus": "Campina Grande"}, {"arquivo": "13304200_CIÊNCIAS_ECONÔMICAS_-_N_2023.html", "codigo": "13304200", "nome": "CIÊNCIAS ECONÔMICAS", "curriculo": "2023", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "13305150_CIÊNCIAS_SOCIAIS_(BAC)_-_D_2017.html", "codigo": "13305150", "nome": "CIÊNCIAS SOCIAIS (BAC)", "curriculo": "2017", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13305210_CIÊNCIAS_SOCIAIS_(LIC)_-_N_2018.html", "codigo": "13305210", "nome": "CIÊNCIAS SOCIAIS (LIC)", "curriculo": "2018", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "13306100_COMUNICAÇÃO_SOCIAL_-_D_2010.html", "codigo": "13306100", "nome": "COMUNICAÇÃO SOCIAL", "curriculo": "2010", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13306200_COMUNICAÇÃO_SOCIAL_-_N_2010.html", "codigo": "13306200", "nome": "COMUNICAÇÃO SOCIAL", "curriculo": "2010", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "11104120_DESIGN_-_D_2013.html", "codigo": "11104120", "nome": "DESIGN", "curriculo": "2013", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "12204100_ENFERMAGEM_-_D_2009.html", "codigo": "12204100", "nome": "ENFERMAGEM", "curriculo": "2009", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "15121100_ENGENHARIA_AGRÍCOLA_-_D_2021.html", "codigo": "15121100", "nome": "ENGENHARIA AGRÍCOLA", "curriculo": "2021", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "15122100_ENGENHARIA_CIVIL_-_D_2014.html", "codigo": "15122100", "nome": "ENGENHARIA CIVIL", "curriculo": "2014", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "15125100_ENGENHARIA_DE_ALIMENTOS_-_D_2009.html", "codigo": "15125100", "nome": "ENGENHARIA DE ALIMENTOS", "curriculo": "2009", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "11126100_ENGENHARIA_DE_MATERIAIS_-_D_2009.html", "codigo": "11126100", "nome": "ENGENHARIA DE MATERIAIS", "curriculo": "2009", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "15127100_ENGENHARIA_DE_MINAS_-_D_2010.html", "codigo": "15127100", "nome": "ENGENHARIA DE MINAS", "curriculo": "2010", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "11135100_ENGENHARIA_DE_PETRÓLEO_-_D_2009.html", "codigo": "11135100", "nome": "ENGENHARIA DE PETRÓLEO", "curriculo": "2009", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "11133100_ENGENHARIA_DE_PRODUÇÃO_-_D_2005.html", "codigo": "11133100", "nome": "ENGENHARIA DE PRODUÇÃO", "curriculo": "2005", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "14123100_ENGENHARIA_ELÉTRICA_1999.html", "codigo": "14123100", "nome": "ENGENHARIA ELÉTRICA", "curriculo": "1999", "turno": "", "campus": "Campina Grande"}, {"arquivo": "11124100_ENGENHARIA_MECÂNICA_-_D_2016.html", "codigo": "11124100", "nome": "ENGENHARIA MECÂNICA", "curriculo": "2016", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "11128100_ENGENHARIA_QUÍMICA_-_D_2009.html", "codigo": "11128100", "nome": "ENGENHARIA QUÍMICA", "curriculo": "2009", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "11134100_ESTATÍSTICA_-_D_2010.html", "codigo": "11134100", "nome": "ESTATÍSTICA", "curriculo": "2010", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13314250_FILOSOFIA_(BAC)_-_N_2009.html", "codigo": "13314250", "nome": "FILOSOFIA (BAC)", "curriculo": "2009", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "13314210_FILOSOFIA_(LIC)_-_N_2009.html", "codigo": "13314210", "nome": "FILOSOFIA (LIC)", "curriculo": "2009", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "11105150_FÍSICA_(BAC)_-_D_2020.html", "codigo": "11105150", "nome": "FÍSICA (BAC)", "curriculo": "2020", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "11105110_FÍSICA_(LIC)_-_D_2017.html", "codigo": "11105110", "nome": "FÍSICA (LIC)", "curriculo": "2017", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13316110_GEOGRAFIA_(LIC)_-_M_2009.html", "codigo": "13316110", "nome": "GEOGRAFIA (LIC)", "curriculo": "2009", "turno": "Matutino", "campus": "Campina Grande"}, {"arquivo": "13316210_GEOGRAFIA_(LIC)_-_N_2009.html", "codigo": "13316210", "nome": "GEOGRAFIA (LIC)", "curriculo": "2009", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "13316110_GEOGRAFIA_(LIC)_-_M_2019.html", "codigo": "13316110", "nome": "GEOGRAFIA (LIC)", "curriculo": "2019", "turno": "Matutino", "campus": "Campina Grande"}, {"arquivo": "13316210_GEOGRAFIA_(LIC)_-_N_2019.html", "codigo": "13316210", "nome": "GEOGRAFIA (LIC)", "curriculo": "2019", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "13309210_HISTÓRIA_(LIC)_-_N_1986.html", "codigo": "13309210", "nome": "HISTÓRIA (LIC)", "curriculo": "1986", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "13309110_HISTÓRIA_(LIC)_-_D_2019.html", "codigo": "13309110", "nome": "HISTÓRIA (LIC)", "curriculo": "2019", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13309210_HISTÓRIA_(LIC)_-_N_2019.html", "codigo": "13309210", "nome": "HISTÓRIA (LIC)", "curriculo": "2019", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "13310214_LETRAS_-_ESPANHOL_(LICENCIATURA)_N_2011.html", "codigo": "13310214", "nome": "LETRAS - ESPANHOL (LICENCIATURA) N", "curriculo": "2011", "turno": "", "campus": "Campina Grande"}, {"arquivo": "13323110_LETRAS_-_LIBRAS_(LIC)_-_D_2016.html", "codigo": "13323110", "nome": "LETRAS - LIBRAS (LIC)", "curriculo": "2016", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13310115_LETRAS_-_LÍNG.PORT._LÍNG.FRANC.(LIC)-D_2011.html", "codigo": "13310115", "nome": "LETRAS - LÍNG.PORT. LÍNG.FRANC.(LIC)-D", "curriculo": "2011", "turno": "", "campus": "Campina Grande"}, {"arquivo": "13310116_LETRAS_-_LÍNGUA_INGLESA_(LIC)_-_D_2011.html", "codigo": "13310116", "nome": "LETRAS - LÍNGUA INGLESA (LIC)", "curriculo": "2011", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13310210_LETRAS_-_LÍNGUA_PORTUGUESA_(LIC)_-_N_2011.html", "codigo": "13310210", "nome": "LETRAS - LÍNGUA PORTUGUESA (LIC)", "curriculo": "2011", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "13310110_LETRAS-_LÍNGUA_PORTUGUESA_(LIC)_-_D_2011.html", "codigo": "13310110", "nome": "LETRAS- LÍNGUA PORTUGUESA (LIC)", "curriculo": "2011", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "11107150_MATEMÁTICA_(BAC)_-_D_2008.html", "codigo": "11107150", "nome": "MATEMÁTICA (BAC)", "curriculo": "2008", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "11107110_MATEMÁTICA_(LIC)_-_D_2008.html", "codigo": "11107110", "nome": "MATEMÁTICA (LIC)", "curriculo": "2008", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "11107210_MATEMÁTICA_(LIC)_-_N_2008.html", "codigo": "11107210", "nome": "MATEMÁTICA (LIC)", "curriculo": "2008", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "12205100_MEDICINA_2010.html", "codigo": "12205100", "nome": "MEDICINA", "curriculo": "2010", "turno": "", "campus": "Campina Grande"}, {"arquivo": "15108100_METEOROLOGIA_-_D_2014.html", "codigo": "15108100", "nome": "METEOROLOGIA", "curriculo": "2014", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13311150_MÚSICA_(BAC)_-_D_2009.html", "codigo": "13311150", "nome": "MÚSICA (BAC)", "curriculo": "2009", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13311110_MÚSICA_(LIC)_-_D_2009.html", "codigo": "13311110", "nome": "MÚSICA (LIC)", "curriculo": "2009", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "13312110_PEDAGOGIA_(LIC)_-_M_2009.html", "codigo": "13312110", "nome": "PEDAGOGIA (LIC)", "curriculo": "2009", "turno": "Matutino", "campus": "Campina Grande"}, {"arquivo": "13312210_PEDAGOGIA_(LIC)_-_N_2009.html", "codigo": "13312210", "nome": "PEDAGOGIA (LIC)", "curriculo": "2009", "turno": "Noturno", "campus": "Campina Grande"}, {"arquivo": "12208100_PSICOLOGIA_-_D_2015.html", "codigo": "12208100", "nome": "PSICOLOGIA", "curriculo": "2015", "turno": "Diurno", "campus": "Campina Grande"}, {"arquivo": "51201110_CIÊNCIAS_BIOLÓGICAS_(LIC)_-_D_2008.html", "codigo": "51201110", "nome": "CIÊNCIAS BIOLÓGICAS (LIC)", "curriculo": "2008", "turno": "Diurno", "campus": "Cuité"}, {"arquivo": "51201210_CIÊNCIAS_BIOLÓGICAS_(LIC)_-_N_2008.html", "codigo": "51201210", "nome": "CIÊNCIAS BIOLÓGICAS (LIC)", "curriculo": "2008", "turno": "Noturno", "campus": "Cuité"}, {"arquivo": "51204100_ENFERMAGEM_-_D_2015.html", "codigo": "51204100", "nome": "ENFERMAGEM", "curriculo": "2015", "turno": "Diurno", "campus": "Cuité"}, {"arquivo": "51203100_FARMÁCIA_-_D_2007.html", "codigo": "51203100", "nome": "FARMÁCIA", "curriculo": "2007", "turno": "Diurno", "campus": "Cuité"}, {"arquivo": "51105110_FÍSICA_(LIC)_-_D_2019.html", "codigo": "51105110", "nome": "FÍSICA (LIC)", "curriculo": "2019", "turno": "Diurno", "campus": "Cuité"}, {"arquivo": "51105210_FÍSICA_(LIC)_-_N_2019.html", "codigo": "51105210", "nome": "FÍSICA (LIC)", "curriculo": "2019", "turno": "Noturno", "campus": "Cuité"}, {"arquivo": "51107110_MATEMÁTICA_(LIC)_-_D_2019.html", "codigo": "51107110", "nome": "MATEMÁTICA (LIC)", "curriculo": "2019", "turno": "Diurno", "campus": "Cuité"}, {"arquivo": "51107210_MATEMÁTICA_(LIC)_-_N_2019.html", "codigo": "51107210", "nome": "MATEMÁTICA (LIC)", "curriculo": "2019", "turno": "Noturno", "campus": "Cuité"}, {"arquivo": "51206100_NUTRIÇÃO_-_D_2011.html", "codigo": "51206100", "nome": "NUTRIÇÃO", "curriculo": "2011", "turno": "Diurno", "campus": "Cuité"}, {"arquivo": "51109110_QUÍMICA_(LIC)_-_D_2006.html", "codigo": "51109110", "nome": "QUÍMICA (LIC)", "curriculo": "2006", "turno": "Diurno", "campus": "Cuité"}, {"arquivo": "51109210_QUÍMICA_(LIC)_-_N_2006.html", "codigo": "51109210", "nome": "QUÍMICA (LIC)", "curriculo": "2006", "turno": "Noturno", "campus": "Cuité"}, {"arquivo": "51109110_QUÍMICA_(LIC)_-_D_2022.html", "codigo": "51109110", "nome": "QUÍMICA (LIC)", "curriculo": "2022", "turno": "Diurno", "campus": "Cuité"}, {"arquivo": "51109210_QUÍMICA_(LIC)_-_N_2022.html", "codigo": "51109210", "nome": "QUÍMICA (LIC)", "curriculo": "2022", "turno": "Noturno", "campus": "Cuité"}, {"arquivo": "41201110_CIÊNCIAS_BIOLÓGICAS_(LIC)_-_D_2010.html", "codigo": "41201110", "nome": "CIÊNCIAS BIOLÓGICAS (LIC)", "curriculo": "2010", "turno": "Diurno", "campus": "Patos"}, {"arquivo": "41201210_CIÊNCIAS_BIOLÓGICAS_(LIC)_-_N_2010.html", "codigo": "41201210", "nome": "CIÊNCIAS BIOLÓGICAS (LIC)", "curriculo": "2010", "turno": "Noturno", "campus": "Patos"}, {"arquivo": "41403100_ENGENHARIA_FLORESTAL_-_D_2009.html", "codigo": "41403100", "nome": "ENGENHARIA FLORESTAL", "curriculo": "2009", "turno": "Diurno", "campus": "Patos"}, {"arquivo": "41410100_MEDICINA_VETERINÁRIA_-_D_2018.html", "codigo": "41410100", "nome": "MEDICINA VETERINÁRIA", "curriculo": "2018", "turno": "Diurno", "campus": "Patos"}, {"arquivo": "41207100_ODONTOLOGIA_-_D_2009.html", "codigo": "41207100", "nome": "ODONTOLOGIA", "curriculo": "2009", "turno": "Diurno", "campus": "Patos"}, {"arquivo": "91402100_AGRONOMIA_-_D_2008.html", "codigo": "91402100", "nome": "AGRONOMIA", "curriculo": "2008", "turno": "Diurno", "campus": "Pombal"}, {"arquivo": "91402100_AGRONOMIA_-_D_2023.html", "codigo": "91402100", "nome": "AGRONOMIA", "curriculo": "2023", "turno": "Diurno", "campus": "Pombal"}, {"arquivo": "91130100_ENGENHARIA_AMBIENTAL_-_D_2009.html", "codigo": "91130100", "nome": "ENGENHARIA AMBIENTAL", "curriculo": "2009", "turno": "Diurno", "campus": "Pombal"}, {"arquivo": "91130100_ENGENHARIA_AMBIENTAL_-_D_2024.html", "codigo": "91130100", "nome": "ENGENHARIA AMBIENTAL", "curriculo": "2024", "turno": "Diurno", "campus": "Pombal"}, {"arquivo": "91122100_ENGENHARIA_CIVIL_-_D_2014.html", "codigo": "91122100", "nome": "ENGENHARIA CIVIL", "curriculo": "2014", "turno": "Diurno", "campus": "Pombal"}, {"arquivo": "91122100_ENGENHARIA_CIVIL_-_D_2024.html", "codigo": "91122100", "nome": "ENGENHARIA CIVIL", "curriculo": "2024", "turno": "Diurno", "campus": "Pombal"}, {"arquivo": "91125100_ENGENHARIA_DE_ALIMENTOS_-_D_2023.html", "codigo": "91125100", "nome": "ENGENHARIA DE ALIMENTOS", "curriculo": "2023", "turno": "Diurno", "campus": "Pombal"}, {"arquivo": "31301200_ADMINISTRAÇÃO_-_N_2009.html", "codigo": "31301200", "nome": "ADMINISTRAÇÃO", "curriculo": "2009", "turno": "Noturno", "campus": "Sousa"}, {"arquivo": "31360200_CIÊNCIAS_CONTÁBEIS_-_N_2016.html", "codigo": "31360200", "nome": "CIÊNCIAS CONTÁBEIS", "curriculo": "2016", "turno": "Noturno", "campus": "Sousa"}, {"arquivo": "31350100_DIREITO_-_M_2015.html", "codigo": "31350100", "nome": "DIREITO", "curriculo": "2015", "turno": "Matutino", "campus": "Sousa"}, {"arquivo": "31350200_DIREITO_-_N_2015.html", "codigo": "31350200", "nome": "DIREITO", "curriculo": "2015", "turno": "Noturno", "campus": "Sousa"}, {"arquivo": "31350300_DIREITO_-_V_2015.html", "codigo": "31350300", "nome": "DIREITO", "curriculo": "2015", "turno": "Vespertino", "campus": "Sousa"}, {"arquivo": "31340100_SERVIÇO_SOCIAL_-_M_2010.html", "codigo": "31340100", "nome": "SERVIÇO SOCIAL", "curriculo": "2010", "turno": "Matutino", "campus": "Sousa"}, {"arquivo": "71305210_CIÊNCIAS_SOCIAIS_(LIC)_-_N_2009.html", "codigo": "71305210", "nome": "CIÊNCIAS SOCIAIS (LIC)", "curriculo": "2009", "turno": "Noturno", "campus": "Sumé"}, {"arquivo": "71132100_ENG._DE_BIOTECNOLOGIA_E_BIOPROCESSOS_-_D_2009.html", "codigo": "71132100", "nome": "ENG. DE BIOTECNOLOGIA E BIOPROCESSOS", "curriculo": "2009", "turno": "Diurno", "campus": "Sumé"}, {"arquivo": "71131100_ENGENHARIA_DE_BIOSSISTEMAS_-_D_2009.html", "codigo": "71131100", "nome": "ENGENHARIA DE BIOSSISTEMAS", "curriculo": "2009", "turno": "Diurno", "campus": "Sumé"}, {"arquivo": "71133100_ENGENHARIA_DE_PRODUÇÃO_-_D_2009.html", "codigo": "71133100", "nome": "ENGENHARIA DE PRODUÇÃO", "curriculo": "2009", "turno": "Diurno", "campus": "Sumé"}, {"arquivo": "71133100_ENGENHARIA_DE_PRODUÇÃO_-_D_2024.html", "codigo": "71133100", "nome": "ENGENHARIA DE PRODUÇÃO", "curriculo": "2024", "turno": "Diurno", "campus": "Sumé"}, {"arquivo": "71315110_INTERDISCIPLINAR_EM_EDUC._DO_CAMPO(LIC)D_2009.html", "codigo": "71315110", "nome": "INTERDISCIPLINAR EM EDUC. DO CAMPO(LIC)D", "curriculo": "2009", "turno": "", "campus": "Sumé"}, {"arquivo": "71420100_TECNOLOGIA_EM_AGROECOLOGIA_-_D_2010.html", "codigo": "71420100", "nome": "TECNOLOGIA EM AGROECOLOGIA", "curriculo": "2010", "turno": "Diurno", "campus": "Sumé"}, {"arquivo": "71318200_TECNOLOGIA_EM_GESTÃO_PÚBLICA_-_N_2010.html", "codigo": "71318200", "nome": "TECNOLOGIA EM GESTÃO PÚBLICA", "curriculo": "2010", "turno": "Noturno", "campus": "Sumé"}];
+const grid = document.getElementById('grid');
+const busca = document.getElementById('busca');
+const filtroCampus = document.getElementById('filtroCampus');
+const stats = document.getElementById('stats');
+const empty = document.getElementById('empty');
+
+function norm(s){
+  return (s||"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+}
+
+function render(){
+  const q = norm(busca.value.trim());
+  const camp = filtroCampus.value;
+  const filtrados = cursos.filter(c => {
+    if (camp && c.campus !== camp) return false;
+    if (!q) return true;
+    return norm(c.nome).includes(q) || c.codigo.includes(q);
+  });
+
+  grid.innerHTML = filtrados.map(c => `
+    <a class="card" href="${encodeURIComponent(c.arquivo)}">
+      <div class="nome">${c.nome}</div>
+      <div class="meta">
+        <span class="tag codigo">${c.codigo}</span>
+        <span class="tag campus">${c.campus}</span>
+        ${c.turno ? `<span class="tag turno">${c.turno}</span>` : ""}
+        ${c.curriculo ? `<span class="tag">Currículo ${c.curriculo}</span>` : ""}
+      </div>
+    </a>
+  `).join('');
+
+  stats.innerHTML = `Exibindo <strong>${filtrados.length}</strong> de <strong>${cursos.length}</strong> cursos`;
+  empty.style.display = filtrados.length ? 'none' : 'block';
+}
+
+busca.addEventListener('input', render);
+filtroCampus.addEventListener('change', render);
+render();
+
+// Tema
+const themeBtn = document.getElementById('themeBtn');
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  themeBtn.innerText = t === 'dark' ? '☀️ Tema' : '🌙 Tema';
+  try{ localStorage.setItem('ufcg-theme', t); }catch(e){}
+}
+let saved = 'light';
+try{ saved = localStorage.getItem('ufcg-theme') ||
+  (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); }catch(e){}
+applyTheme(saved);
+themeBtn.addEventListener('click', () => {
+  applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+});
+</script>
+</body>
+</html>
