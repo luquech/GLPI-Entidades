@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4f6fa" media="(prefers-color-scheme: light)">
+  <title>Matriz Curricular - ENGENHARIA ELÉTRICA (1999)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4f6fa;
+      --bg-grad: radial-gradient(1200px 600px at 10% -10%, #e6efff 0%, transparent 60%),
+                 radial-gradient(900px 500px at 100% 0%, #e8fbff 0%, transparent 55%),
+                 linear-gradient(180deg, #f4f6fa 0%, #eef2f7 100%);
+      --surface: #ffffff;
+      --surface-2: #f8fafc;
+      --surface-3: #f9fbfd;
+      --border: #e3e8f0;
+      --border-2: #e6edf5;
+      --text: #0f172a;
+      --text-muted: #475569;
+      --text-soft: #64748b;
+      --brand: #2c5f82;
+      --brand-2: #4a82ab;
+      --brand-3: #6ba3c2;
+      --accent: #3d96ad;
+      --accent-2: #4fb1c7;
+      --accent-3: #437d8f;
+      --title-grad-1: #2c5f82;
+      --title-grad-2: #3d96ad;
+      --chip-bg: #eff5f9;
+      --chip-text: #2c5f82;
+      --progress-bg: #e7ecf2;
+      --progress-fill-1: #4fb1c7;
+      --progress-fill-2: #6cc8db;
+      --completed-bg: linear-gradient(135deg, #4cb872, #3f9e60);
+      --completed-border: #3f9e60;
+      --completed-text: #f4fbf6;
+      --completed-hover: linear-gradient(135deg, #3f9e60, #338652);
+      --available-bg: linear-gradient(135deg, #5a85e0, #4a73d1);
+      --available-border: #4a73d1;
+      --available-text: #f1f5fc;
+      --available-hover: linear-gradient(135deg, #4a73d1, #3e63bd);
+      --blocked-bg: #f1f3f7;
+      --blocked-border: #dde2ea;
+      --blocked-text: #7a8497;
+      --code-bg: rgba(255,255,255,0.22);
+      --code-text: #ffffff;
+      --code-bg-light: #f1f5f9;
+      --code-text-light: #0f172a;
+      --ch-bg: rgba(255,255,255,0.18);
+      --hint-text: rgba(255,255,255,0.85);
+      --hint-border: rgba(255,255,255,0.25);
+      --table-head: #f1f5f9;
+      --table-border: #e2e8f0;
+      --table-row-alt: #fafbfd;
+      --shadow: 0 10px 30px -12px rgba(15,23,42,0.12), 0 2px 6px rgba(15,23,42,0.04);
+      --shadow-sm: 0 4px 14px -6px rgba(15,23,42,0.08);
+      --ring: 0 0 0 3px rgba(8,145,178,0.18);
+    }
+    html[data-theme="dark"] {
+      --bg: #0b1220;
+      --bg-grad: radial-gradient(1200px 600px at 10% -10%, #0e2a47 0%, transparent 60%),
+                 radial-gradient(900px 500px at 100% 0%, #0a3a4a 0%, transparent 55%),
+                 linear-gradient(180deg, #0b1220 0%, #060b16 100%);
+      --surface: #131c2e;
+      --surface-2: #0f1727;
+      --surface-3: #131c2e;
+      --border: #1f2a40;
+      --border-2: #1f2a40;
+      --text: #e6edf7;
+      --text-muted: #9aa8bf;
+      --text-soft: #8696b0;
+      --brand: #7dd3fc;
+      --brand-2: #38bdf8;
+      --brand-3: #22d3ee;
+      --accent: #67e8f9;
+      --accent-2: #22d3ee;
+      --accent-3: #38bdf8;
+      --title-grad-1: #7dd3fc;
+      --title-grad-2: #22d3ee;
+      --chip-bg: #0f2b3d;
+      --chip-text: #7dd3fc;
+      --progress-bg: #1f2a40;
+      --progress-fill-1: #06b6d4;
+      --progress-fill-2: #22d3ee;
+      --completed-bg: linear-gradient(135deg, #15803d, #14532d);
+      --completed-border: #16a34a;
+      --completed-text: #ecfdf5;
+      --completed-hover: linear-gradient(135deg, #166534, #14532d);
+      --available-bg: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+      --available-border: #2563eb;
+      --available-text: #eff6ff;
+      --available-hover: linear-gradient(135deg, #1e40af, #172554);
+      --blocked-bg: #1a2336;
+      --blocked-border: #283449;
+      --blocked-text: #7d8aa3;
+      --code-bg: rgba(255,255,255,0.12);
+      --code-text: #ffffff;
+      --code-bg-light: #1a2336;
+      --code-text-light: #e6edf7;
+      --ch-bg: rgba(255,255,255,0.12);
+      --hint-text: rgba(255,255,255,0.78);
+      --hint-border: rgba(255,255,255,0.18);
+      --table-head: #0f1727;
+      --table-border: #1f2a40;
+      --table-row-alt: #111a2c;
+      --shadow: 0 12px 32px -12px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.3);
+      --shadow-sm: 0 4px 14px -6px rgba(0,0,0,0.5);
+      --ring: 0 0 0 3px rgba(34,211,238,0.25);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      background-image: var(--bg-grad);
+      background-attachment: fixed;
+      margin: 0; padding: 20px; color: var(--text);
+      transition: background 0.25s ease, color 0.25s ease;
+      letter-spacing: -0.005em;
+    }
+    .container { max-width: 1600px; margin: 0 auto; }
+
+    /* ---------- Header ---------- */
+    .header {
+      background: var(--surface);
+      border-radius: 22px;
+      padding: 14px 20px;
+      margin-bottom: 20px;
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      align-items: center; gap: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      backdrop-filter: saturate(140%);
+    }
+    .brand { display: flex; align-items: center; gap: 14px; min-width: 0; flex: 1; }
+    .logo-wrap {
+      width: 60px; height: 60px; flex-shrink: 0;
+      border-radius: 14px;
+      background: #ffffff;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 12px -4px rgba(44,95,130,0.3);
+      overflow: hidden; position: relative;
+      border: 1px solid var(--border);
+    }
+    html[data-theme="dark"] .logo-wrap { background: #ffffff; }
+    .logo-wrap img { width: 100%; height: 100%; object-fit: contain; padding: 6px; }
+    .logo-wrap .logo-fallback {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      color: var(--brand); font-weight: 800; font-size: 0.85rem; letter-spacing: 0.5px;
+    }
+    .title { min-width: 0; }
+    .title .eyebrow {
+      display: inline-block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--brand-2);
+      background: var(--chip-bg); color: var(--chip-text);
+      padding: 3px 9px; border-radius: 999px; margin-bottom: 6px;
+    }
+    .title h1 {
+      margin: 0; font-size: 1.35rem; font-weight: 800; letter-spacing: -0.02em;
+      background: linear-gradient(135deg, var(--title-grad-1), var(--title-grad-2));
+      background-clip: text; -webkit-background-clip: text; color: transparent;
+      line-height: 1.15;
+    }
+    .title p { margin: 4px 0 0; font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+
+    .header-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .progress-panel {
+      background: var(--surface-2); border-radius: 18px; padding: 10px 18px;
+      min-width: 200px; text-align: center; border: 1px solid var(--border);
+    }
+    .progress-label { font-weight: 700; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+    .progress-value {
+      font-size: 1.8rem; font-weight: 800; line-height: 1.05;
+      background: linear-gradient(135deg, var(--progress-fill-1), var(--progress-fill-2));
+      background-clip: text; -webkit-background-clip: text; color: transparent;
+      font-variant-numeric: tabular-nums;
+    }
+    .progress-bar-bg { background: var(--progress-bg); border-radius: 40px; height: 7px; width: 100%; margin-top: 6px; overflow: hidden; }
+    .progress-fill {
+      background: linear-gradient(90deg, var(--progress-fill-1), var(--progress-fill-2));
+      width: 0%; height: 100%; border-radius: 40px; transition: width 0.35s ease;
+    }
+    .progress-meta { font-size: 0.6rem; color: var(--text-soft); margin-top: 4px; font-variant-numeric: tabular-nums; }
+
+    button.reset-btn, button.theme-btn, button.pdf-btn {
+      background: var(--surface); border: 1px solid var(--border); color: var(--text);
+      padding: 7px 12px; border-radius: 999px; font-size: 0.72rem; font-weight: 600;
+      cursor: pointer; margin-top: 8px; font-family: inherit;
+      transition: all 0.15s ease;
+    }
+    button.theme-btn, button.pdf-btn {
+      margin-top: 0; padding: 10px 12px; font-size: 0.95rem; line-height: 1;
+      height: 42px; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    }
+    button.theme-btn { width: 42px; }
+    button.pdf-btn {
+      padding: 0 14px; font-size: 0.78rem;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff;
+      border-color: transparent;
+    }
+    button.pdf-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    button.reset-btn:hover, button.theme-btn:hover { background: var(--chip-bg); border-color: var(--brand-2); transform: translateY(-1px); }
+    button.reset-btn:focus-visible, button.theme-btn:focus-visible, button.pdf-btn:focus-visible { outline: none; box-shadow: var(--ring); }
+
+    /* ---------- Legend ---------- */
+    .legend {
+      display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 14px;
+      padding: 10px 14px; background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; box-shadow: var(--shadow-sm);
+      font-size: 0.72rem; color: var(--text-muted); align-items: center;
+    }
+    .legend-item { display: inline-flex; align-items: center; gap: 6px; font-weight: 500; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 4px; display: inline-block; }
+    .legend-dot.completed { background: linear-gradient(135deg, #4cb872, #3f9e60); }
+    .legend-dot.available { background: linear-gradient(135deg, #5a85e0, #4a73d1); }
+    .legend-dot.blocked { background: var(--blocked-bg); border: 1px solid var(--blocked-border); }
+
+    /* ---------- Columns ---------- */
+    .columns-wrapper { overflow-x: auto; padding-bottom: 14px; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+    .columns-wrapper::-webkit-scrollbar { height: 10px; }
+    .columns-wrapper::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+    .columns-wrapper::-webkit-scrollbar-thumb:hover { background: var(--brand-2); }
+    .matrix-columns { display: flex; gap: 18px; min-width: min-content; align-items: flex-start; }
+    .level-column {
+      background: var(--surface); border-radius: 20px; width: 278px; min-width: 278px;
+      display: flex; flex-direction: column; box-shadow: var(--shadow); border: 1px solid var(--border-2);
+      overflow: hidden;
+    }
+    .column-header {
+      background: linear-gradient(135deg, var(--surface-3), var(--surface));
+      padding: 12px; border-bottom: 1px solid var(--border-2);
+      text-align: center; position: relative;
+    }
+    .column-header::before {
+      content: ''; position: absolute; top: 0; left: 10%; right: 10%; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--brand-2), transparent);
+    }
+    .column-header h3 { margin: 0; font-size: 0.95rem; font-weight: 700; color: var(--brand); letter-spacing: -0.01em; }
+    .column-header span { font-size: 0.6rem; background: var(--chip-bg); color: var(--chip-text); padding: 2px 9px; border-radius: 999px; display: inline-block; margin-top: 6px; font-weight: 600; }
+    .subjects-list { padding: 12px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+
+    .subject-card {
+      border-radius: 14px; padding: 10px 12px; transition: all 0.18s ease; cursor: pointer;
+      border: 1px solid transparent;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+    }
+    .subject-card:focus-visible { outline: none; box-shadow: var(--ring); }
+    .subject-completed { background: var(--completed-bg); border-color: var(--completed-border); color: var(--completed-text); box-shadow: 0 4px 12px -4px rgba(76,184,114,0.35); }
+    .subject-completed:hover { background: var(--completed-hover); transform: translateY(-2px); box-shadow: 0 8px 18px -6px rgba(76,184,114,0.45); }
+    .subject-available { background: var(--available-bg); border-color: var(--available-border); color: var(--available-text); box-shadow: 0 4px 12px -4px rgba(90,133,224,0.35); }
+    .subject-available:hover { background: var(--available-hover); transform: translateY(-2px); box-shadow: 0 8px 18px -6px rgba(90,133,224,0.45); }
+    .subject-blocked { background: var(--blocked-bg); border-color: var(--blocked-border); color: var(--blocked-text); cursor: not-allowed; }
+    .subject-blocked .subject-code,
+    .subject-blocked .status-badge { background: var(--code-bg-light); color: var(--code-text-light); }
+    .subject-blocked .subject-ch { background: rgba(0,0,0,0.06); color: var(--blocked-text); }
+    .subject-blocked .pre-req-hint { color: var(--blocked-text); border-top-color: var(--blocked-border); }
+
+    .subject-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+    .subject-code { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 0.62rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); display: inline-block; padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; }
+    .subject-name { font-weight: 700; font-size: 0.82rem; margin: 7px 0 4px; line-height: 1.25; letter-spacing: -0.01em; }
+    .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
+    .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
+    .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+
+    /* ---------- Optativas ---------- */
+    .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+    .optativas-section h2 {
+      color: var(--brand); border-left: 4px solid var(--brand-2); padding-left: 14px;
+      margin: 0 0 14px; font-size: 1.15rem; font-weight: 700; letter-spacing: -0.01em;
+    }
+    .optativas-table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; border: 1px solid var(--border); }
+    .optativas-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 720px; }
+    .optativas-table th, .optativas-table td { border-bottom: 1px solid var(--table-border); padding: 10px 12px; text-align: left; vertical-align: top; word-break: break-word; }
+    .optativas-table tbody tr:nth-child(even) { background: var(--table-row-alt); }
+    .optativas-table tbody tr:hover { background: var(--chip-bg); }
+    .optativas-table th { background: var(--table-head); font-weight: 700; color: var(--text); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    .optativas-table td:first-child { font-family: 'JetBrains Mono', ui-monospace, monospace; font-weight: 600; color: var(--brand-2); white-space: nowrap; }
+
+    footer { text-align: center; margin-top: 20px; font-size: 0.72rem; color: var(--text-soft); background: var(--surface); padding: 12px; border-radius: 16px; border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+    footer strong { color: var(--text); }
+
+    /* ---------- Mobile ---------- */
+    @media (max-width: 768px) {
+      body { padding: 10px; }
+      .header { padding: 12px; border-radius: 16px; gap: 10px; flex-direction: column; align-items: stretch; }
+      .brand { width: 100%; }
+      .logo-wrap { width: 48px; height: 48px; border-radius: 12px; }
+      .title h1 { font-size: 1.05rem; }
+      .title p { font-size: 0.7rem; }
+      .title .eyebrow { font-size: 0.55rem; }
+      .header-actions { width: 100%; justify-content: space-between; gap: 8px; }
+      .progress-panel { flex: 1; min-width: 0; padding: 8px 12px; border-radius: 14px; }
+      .progress-value { font-size: 1.3rem; }
+      .level-column { width: 240px; min-width: 240px; border-radius: 16px; }
+      .optativas-section { padding: 14px; border-radius: 18px; margin-top: 20px; }
+      .optativas-section h2 { font-size: 1rem; }
+      .legend { font-size: 0.65rem; gap: 8px; padding: 8px 10px; }
+      button.pdf-btn { font-size: 0.7rem; padding: 0 10px; height: 38px; }
+      button.theme-btn { width: 38px; height: 38px; }
+    }
+    @media (max-width: 480px) {
+      body { padding: 8px; }
+      .level-column { width: 84vw; min-width: 84vw; }
+      .title h1 { font-size: 0.98rem; }
+      .brand { gap: 10px; }
+      .header-actions { flex-wrap: wrap; }
+      .progress-panel { order: -1; width: 100%; flex: none; }
+      .subject-name { font-size: 0.78rem; }
+      .pre-req-hint { font-size: 0.62rem; }
+      footer { font-size: 0.66rem; padding: 10px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+
+    /* ---------- Print / PDF ---------- */
+    @media print {
+      @page { size: A3 landscape; margin: 10mm; }
+      html, body { background: #fff !important; color: #111 !important; }
+      body { padding: 0; background-image: none !important; }
+      .header, .legend, .optativas-section, .level-column, footer { box-shadow: none !important; border-color: #d0d5dd !important; }
+      .header-actions button, #themeToggle, #pdfBtn, #resetBtn { display: none !important; }
+      .columns-wrapper { overflow: visible !important; }
+      .matrix-columns { display: grid !important; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; min-width: 0 !important; }
+      .level-column { width: auto !important; min-width: 0 !important; break-inside: avoid; page-break-inside: avoid; }
+      .subject-card { break-inside: avoid; page-break-inside: avoid; transform: none !important; }
+      .subject-blocked { background: #f4f5f8 !important; color: #555 !important; }
+      .optativas-table { min-width: 0 !important; font-size: 0.7rem; }
+      .optativas-table-wrapper { overflow: visible !important; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="brand">
+      <div class="logo-wrap" aria-hidden="true">
+        <span class="logo-fallback">UFCG</span>
+        <img src="https://ccbs.ufcg.edu.br/images/Logomarcas/UFCG_logo_png.png"
+             alt="" onerror="this.style.display='none'"
+             onload="this.previousElementSibling.style.display='none'">
+      </div>
+      <div class="title">
+        <span class="eyebrow">Universidade Federal de Campina Grande</span>
+        <h1>ENGENHARIA ELÉTRICA</h1>
+        <p>Campina Grande · Currículo 1999 · Código 14123100</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
+      <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
+      <div class="progress-panel">
+        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-value" id="percentDisplay">0%</div>
+        <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
+        <button class="reset-btn" id="resetBtn">🔄 Redefinir</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="legend" role="list">
+    <span class="legend-item" role="listitem"><span class="legend-dot completed"></span> Cursada</span>
+    <span class="legend-item" role="listitem"><span class="legend-dot available"></span> Disponível</span>
+    <span class="legend-item" role="listitem"><span class="legend-dot blocked"></span> Bloqueada (pré‑requisitos pendentes)</span>
+  </div>
+
+  <div class="columns-wrapper">
+    <div class="matrix-columns" id="matrixColumns"></div>
+  </div>
+
+  <div class="optativas-section">
+    <h2>📖 Disciplinas Optativas</h2>
+    <div class="optativas-table-wrapper">
+      <table class="optativas-table">
+        <thead><tr><th>Código</th><th>Disciplina</th><th>CH</th><th>Créd.</th><th>Pré‑requisitos</th><th>Co‑requisitos</th></tr></thead>
+        <tbody>
+
+          <tr>
+              <td>1105373</td>
+              <td>TE(FUNDAMENTOS DO SETOR DE P&G)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1105377</td>
+              <td>TE(SISTEMAS DE PROD DO SETOR P&G)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1105404</td>
+              <td>TE(EQUIP E APLIC NO SETOR DE PETR E GAS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1304055</td>
+              <td>FUTSAL</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1304062</td>
+              <td>PRÁTICA DESPORTIVA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1307001</td>
+              <td>ALEMAO</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1307009</td>
+              <td>FRANCES</td>
+              <td>75h</td>
+              <td>5.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1307011</td>
+              <td>INGLES</td>
+              <td>75h</td>
+              <td>5.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1307045</td>
+              <td>LINGUA PORTUGUESA</td>
+              <td>75h</td>
+              <td>5.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404108</td>
+              <td>TEEE(MET. NUM. NO ELETROMAGN.)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404167</td>
+              <td>ANÁLISE DE SISTEMAS ELÉTRICOS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>SISTEMAS ELÉTRICOS, LAB. SISTEMAS ELÉTRICOS, 1404038</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404168</td>
+              <td>DISTRIBUICAO DE ENERGIA ELETRICA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ANÁLISE DE SISTEMAS ELÉTRICOS, 1404046</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404169</td>
+              <td>EQUIPAMENTOS ELÉTRICOS</td>
+              <td>75h</td>
+              <td>5.0</td>
+              <td>MATERIAIS ELÉTRICOS, LAB. MATERIAIS ELÉTRICOS, 1404054, INSTALACOES ELETRICAS, LAB.INSTALACOES ELETRICAS, 1404014</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404170</td>
+              <td>GERACAO DE ENERGIA ELETRICA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CONVERSÃO ELETROMECÂNICA, LAB. CONVERSÃO ELETROMECÂNICA, 1404015</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404171</td>
+              <td>GERENCIAMENTO DE ENERGIA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>SISTEMAS ELÉTRICOS, LAB. SISTEMAS ELÉTRICOS, 1404038</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404172</td>
+              <td>TÉCNICAS DE MEDIÇÃO</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>SISTEMAS ELÉTRICOS, LAB. SISTEMAS ELÉTRICOS, 1404038</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404173</td>
+              <td>OPERAÇÃO E CONT. DE SISTEMAS ELÉTRICOS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ANÁLISE DE SISTEMAS ELÉTRICOS, 1404046</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404174</td>
+              <td>PROTEÇÃO DE SISTEMAS ELÉTRICOS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ANÁLISE DE SISTEMAS ELÉTRICOS, 1404046</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404175</td>
+              <td>TÉCNICAS DE ALTA TENSÃO</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>MATERIAIS ELÉTRICOS, LAB. MATERIAIS ELÉTRICOS, 1404054, INSTALACOES ELETRICAS, LAB.INSTALACOES ELETRICAS, 1404014</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404176</td>
+              <td>ARQUITETURAS AVANÇ. P/ COMPUTAÇÃO</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ARQUITETURA DE SISTEMAS DIGITAIS, LAB ARQUIT. DE SISTEMAS DIGITAIS, 1404006, 1404049</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404177</td>
+              <td>CIRCUITOS PARA COMUNICACOES</td>
+              <td>75h</td>
+              <td>5.0</td>
+              <td>ELETRONICA, LAB. ELETRONICA, 1404033, 1404211, PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES, 1404018</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404178</td>
+              <td>ESTRUTURA E CONCEPCAO DE CIRC. INTEG.</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ELETRONICA, LAB. ELETRONICA, 1404033, 1404211</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404179</td>
+              <td>FILTROS ELÉTRICOS</td>
+              <td>75h</td>
+              <td>5.0</td>
+              <td>ELETRONICA, LAB. ELETRONICA, 1404033, 1404211</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404180</td>
+              <td>INSTRUMENTACAO ELETRONICA</td>
+              <td>75h</td>
+              <td>5.0</td>
+              <td>ELETRONICA, LAB. ELETRONICA, 1404033, 1404211</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404181</td>
+              <td>PROCESSAMENTO DIGITAL DE SINAIS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ANÁLISE DE SINAIS E SISTEMAS, 1109027, 1404082</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404182</td>
+              <td>PROJETO DE CIRCUITOS INTEGRADOS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>DISPOSITIVOS ELETRONICOS, LAB. DISPOSITIVOS ELETRONICOS, 1404033</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404183</td>
+              <td>SISTEMAS DE AQUIS.DE DADOS E INTERFACE</td>
+              <td>75h</td>
+              <td>5.0</td>
+              <td>ELETRONICA, LAB. ELETRONICA, 1404033, 1404211</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404184</td>
+              <td>SISTEMAS DE AUTOMACAO INDUSTRIAL</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ARQUITETURA DE SISTEMAS DIGITAIS, LAB ARQUIT. DE SISTEMAS DIGITAIS, 1404006, 1404049</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404185</td>
+              <td>SISTEMAS DE PROC. DE AUDIO E VIDEO</td>
+              <td>75h</td>
+              <td>5.0</td>
+              <td>ELETRONICA, LAB. ELETRONICA, 1404033, 1404211</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404186</td>
+              <td>ANTENAS E PROPAGAÇÃO</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ONDAS E LINHAS, 1404019</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404187</td>
+              <td>COMPATIBILIDADE E INTERF ELETROMAGNETICA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ONDAS E LINHAS, 1404019</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404188</td>
+              <td>COMUNICACOES DIGITAIS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES, 1404018</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404189</td>
+              <td>COMUNICACOES OPTICAS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ONDAS E LINHAS, 1404019, PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404190</td>
+              <td>ENGENHARIA DE MICROONDAS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ONDAS E LINHAS, 1404019</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404191</td>
+              <td>ESTRUTURAS GUIANTES</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ONDAS E LINHAS, 1404019</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404192</td>
+              <td>TRANSMISSAO DIGITAL DA INFORMACAO</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES, 1404018</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404193</td>
+              <td>SISTEMAS DE COMUNICACOES</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES, 1404018</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404194</td>
+              <td>TELEFONIA DIGITAL</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404195</td>
+              <td>TEORIA DA INFORMACAO E CODIFICACAO</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES, 1404018</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404196</td>
+              <td>ACIONAMENTOS ELÉTRICOS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CONVERSÃO ELETROMECÂNICA, LAB. CONVERSÃO ELETROMECÂNICA</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404197</td>
+              <td>AUTOMAÇÃO INTELIGENTE</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CONTROLE DIGITAL, LAB. CONTROLE DIGITAL, 1404036</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404198</td>
+              <td>CONVERSORES ESTATICOS E ELETROMECANICOS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ELETRONICA DE POTENCIA, LAB. ELETRONICA DE POTENCIA, 1404043, MÁQUINAS ELÉTRICAS, LABORATÓRIO DE MÁQUINAS ELÉTRICAS, 1404015</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404199</td>
+              <td>GERENCIA</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>INTRODUÇÃO À ENGENHARIA ELÉTRICA, ADMINISTRAÇÃO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404200</td>
+              <td>REDES DE COMPUTADORES</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES, 1404018</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404201</td>
+              <td>SISTEMAS A EVENTOS DISCRETOS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ARQUITETURA DE SISTEMAS DIGITAIS, LAB ARQUIT. DE SISTEMAS DIGITAIS, 1404006, 1404049</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404202</td>
+              <td>INFORMÁTICA INDUSTRIAL</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ARQUITETURA DE SISTEMAS DIGITAIS, LAB ARQUIT. DE SISTEMAS DIGITAIS, 1404006, 1404049</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404203</td>
+              <td>SISTEMAS EM TEMPO REAL</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ARQUITETURA DE SISTEMAS DIGITAIS, LAB ARQUIT. DE SISTEMAS DIGITAIS, 1404006, 1404049, TÉCNICAS DE PROGRAMAÇÃO, 1411001</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404207</td>
+              <td>TÓPICOS ESPECIAIS EM ENG. ELÉTRICA</td>
+              <td>0h</td>
+              <td>0.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404213</td>
+              <td>LAB. FILTROS ELÉTRICOS</td>
+              <td>0h</td>
+              <td>0.0</td>
+              <td></td>
+              <td>FILTROS ELÉTRICOS</td>
+          </tr>
+          <tr>
+              <td>1404214</td>
+              <td>LAB. INSTRUMENTACAO</td>
+              <td>0h</td>
+              <td>0.0</td>
+              <td></td>
+              <td>INSTRUMENTACAO ELETRONICA</td>
+          </tr>
+          <tr>
+              <td>1404218</td>
+              <td>LAB SIST AQUIS DE DADOS E INTER</td>
+              <td>0h</td>
+              <td>0.0</td>
+              <td></td>
+              <td>SISTEMAS DE AQUIS.DE DADOS E INTERFACE</td>
+          </tr>
+          <tr>
+              <td>1404237</td>
+              <td>LAB. EQUIPAMENTOS ELÉTRICOS</td>
+              <td>0h</td>
+              <td>0.0</td>
+              <td>MATERIAIS ELÉTRICOS, LAB. MATERIAIS ELÉTRICOS, 1404054, INSTALACOES ELETRICAS, LAB.INSTALACOES ELETRICAS, 1404014</td>
+              <td>EQUIPAMENTOS ELÉTRICOS</td>
+          </tr>
+          <tr>
+              <td>1404239</td>
+              <td>TEEE(LAB ANTENAS E PROPAGACAO)</td>
+              <td>15h</td>
+              <td>1.0</td>
+              <td>ONDAS E LINHAS, 1404019</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404248</td>
+              <td>TI (LINGUAGEM DE PROGRAMAÇÃO I)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404255</td>
+              <td>TI (PROGRAMAÇÃO I)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404258</td>
+              <td>TH (INTRODUÇÃO À PSICOLOGIA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404260</td>
+              <td>TEEE( DCCHCFP )</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ELETRONICA, CONTROLE ANALOGICO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404264</td>
+              <td>TT (MÁQ. HIDR. E PNEUMÁTICAS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404265</td>
+              <td>TT(ISNT METEOR E TEC OBS SUPERFICIE)</td>
+              <td>75h</td>
+              <td>5.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404266</td>
+              <td>TEE(SIST RECONF E MICROCONTROLADORES)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>DISPOSITIVOS ELETRONICOS</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404268</td>
+              <td>TEEE (PROGRAMAÇÃO ORIENTADA A OBJETOS)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404269</td>
+              <td>TEEE (PROGRAMAÇÃO EM LINGUAGEM C++)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404270</td>
+              <td>TEEE(ARQUITETURA DE SISTEMAS EMBUTIDOS)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404271</td>
+              <td>TEEE(SIST OPER P/APLIC MOVEIS EMBUTIDAS)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404272</td>
+              <td>TAEE(MICROCONT E PROC DIGITAIS DE SINAIS</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404273</td>
+              <td>TAEE(INSTRUMENTACAO INDUSTRIAL)</td>
+              <td>45h</td>
+              <td>3.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404275</td>
+              <td>TEEE (CRIPTOGRAFIA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>PROBABILIDADE E ESTATÍSTICA, TÉCNICAS DE PROGRAMAÇÃO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404276</td>
+              <td>TEEE(SISTEMAS EMBARCADOS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ARQUITETURA DE SISTEMAS DIGITAIS</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404277</td>
+              <td>TEEE(QUALIDADE DE ENERGIA ELÉTRICA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CIRCUITOS ELÉTRICOS II</td>
+              <td>ELETROMAGNETISMO</td>
+          </tr>
+          <tr>
+              <td>1404279</td>
+              <td>TEEE(MET.GRAF.PARA LINHAS DE TRANSM.RF)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td>ONDAS E LINHAS</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404280</td>
+              <td>TEEE(INIC À CONC DE CIRC IN AN E MISTOS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CIRCUITOS ELÉTRICOS I</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404372</td>
+              <td>TE(FONTES REN DE ENERGIA E EFIC ENERG)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404373</td>
+              <td>TAEE(QUALIDADE DE ENERGIA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404374</td>
+              <td>TEEE(RADIO DEFINIDO POR SOFTWARE)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404375</td>
+              <td>TEEE(ARQ DE REDES E ELETROELET.VEICULAR)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td>ELETRONICA, LAB. ELETRONICA</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404376</td>
+              <td>TEEE(MODEL E SIMUL DE SISTE.AUTOMOTIVOS)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td>CONTROLE ANALOGICO, LAB. CONTROLE ANALOGICO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404377</td>
+              <td>TE(INSTR.E CONTROLE PARA O SETOR P&G)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404378</td>
+              <td>TAEE(MAQUINAS ELETRICAS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404379</td>
+              <td>TEEE(PROCESSAMENTO DE SINAIS MULTIMIDIA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>TÉCNICAS DE PROGRAMAÇÃO, PROBABILIDADE E ESTATÍSTICA, ANÁLISE DE SINAIS E SISTEMAS</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404380</td>
+              <td>TAEE(IDENT.EM MALHA FECH P/CONT DE SIST)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CONTROLE DIGITAL</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404381</td>
+              <td>TEEE(SISTEMAS ELETRICOS INDUSTRIAIS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>INSTALACOES ELETRICAS, LAB.INSTALACOES ELETRICAS</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404382</td>
+              <td>TEEE(INTERNET DAS COISAS INDUSTRIAL-IIOT</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td>ARQUITETURA DE SISTEMAS DIGITAIS, LAB ARQUIT. DE SISTEMAS DIGITAIS</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404383</td>
+              <td>TEEE(INT AO PROC DE IMAG DIG E VISAO COM</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>TÉCNICAS DE PROGRAMAÇÃO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404384</td>
+              <td>TEEE(ROBOTICA</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404385</td>
+              <td>TEEE(REDES DE SENSORES/ATUAD INDUSTRIAIS</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td>ELETRONICA, LAB. ELETRONICA</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404386</td>
+              <td>TEEE(MODELAGEM E IDENT DE PROCESSOS)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td>ANÁLISE DE SINAIS E SISTEMAS</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404387</td>
+              <td>TEEE(SISTEMAS OPTICOS COERENTES)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404388</td>
+              <td>TEEE(PROJ DE CIRC. FOTONICOS EM SILICIOS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ONDAS E LINHAS</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404389</td>
+              <td>TEEE(IDENTIF DE PROC MULTIVARIAVEIS)</td>
+              <td>30h</td>
+              <td>2.0</td>
+              <td>CONTROLE ANALOGICO, LAB. CONTROLE ANALOGICO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404390</td>
+              <td>TEEE(PROJ INTER DE CONTROLAD INDUSTRIAIS</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CONTROLE ANALOGICO, LAB. CONTROLE ANALOGICO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404391</td>
+              <td>TEEE(CONTROLE PREDITIVO)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CONTROLE ANALOGICO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404392</td>
+              <td>TEEE(INT ART E CIENC DADOS APLIC SIST EL</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CALCULO NUMERICO, SISTEMAS ELÉTRICOS</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404393</td>
+              <td>TEEE(PRÁTICAS DE ENGENHARIA ELÉTRICA)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404394</td>
+              <td>TEEE(PRÁTICA DE ENG ELÉTRICA EXTRAMUROS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404395</td>
+              <td>TEEE(MODELAGEM</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CONTROLE ANALOGICO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404397</td>
+              <td>TEEE(NR 10 SEG EM INST E SERV EM ELETR)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>INSTALACOES ELETRICAS</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404398</td>
+              <td>TEEE(BIOSENSORES:FUNDAMENTOS E APLICAÇÕE</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>ELETRONICA</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404399</td>
+              <td>TEEE(INTERNET DAS COISAS INDUST(II0T)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CIRCUITOS LOGICOS, LAB. CIRCUITOS LOGICOS, TÉCNICAS DE PROGRAMAÇÃO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404400</td>
+              <td>TEEE(REDES DE PETRI)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CIRCUITOS LOGICOS, REDES DE COMPUTADORES, SISTEMAS A EVENTOS DISCRETOS</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404401</td>
+              <td>TEEE(SISTEMAS FÍSICO CIBERNÉTICOS)</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CIRCUITOS LOGICOS, CONTROLE ANALOGICO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404402</td>
+              <td>TEEE(PRAT EM CONTROLE DE PROCESSOS E AUT</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CONTROLE ANALOGICO</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>1404403</td>
+              <td>TEEE(SISTEMAS DISTR PARA AUT:HARD E SOFT</td>
+              <td>60h</td>
+              <td>4.0</td>
+              <td>CONTROLE ANALOGICO</td>
+              <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer>🎓 <strong>Dica:</strong> clique nas disciplinas <em>disponíveis</em> para marcar como cursadas. Desmarcar uma disciplina recalcula automaticamente as dependentes. Seu progresso é salvo neste navegador.</footer>
+</div>
+
+<script>
+  // ---------- Tema ----------
+  (function initTheme() {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+  function updateThemeBtn() {
+    const btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    btn.textContent = isDark ? '☀️' : '🌙';
+  }
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateThemeBtn();
+  });
+  updateThemeBtn();
+
+  // ---------- Exportar PDF ----------
+  document.getElementById('pdfBtn').addEventListener('click', () => {
+    const prevTheme = document.documentElement.getAttribute('data-theme');
+    if (prevTheme === 'dark') document.documentElement.setAttribute('data-theme', 'light');
+    setTimeout(() => {
+      window.print();
+      if (prevTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    }, 100);
+  });
+
+
+
+  // ---------- Dados ----------
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109103", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1404132", "nome": "INTRODUÇÃO À ENGENHARIA ELÉTRICA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411160", "nome": "INTRODUÇÃO À PROGRAMAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1503038", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "45h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1107212", "nome": "QUÍMICA", "ch": "75h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60h", "preReqs": ["1108002", "1108030", "1108080"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1108080", "1108030"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109053", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109103", "1109007"]}, {"nivel": "2º Nível", "codigo": "1411161", "nome": "TÉCNICAS DE PROGRAMAÇÃO", "ch": "60h", "preReqs": ["1411001", "1411160"]}, {"nivel": "3º Nível", "codigo": "1108083", "nome": "ELETRICIDADE E MAGNETISMO", "ch": "60h", "preReqs": ["1108082", "1108023", "1109104", "1109053", "1108081"]}, {"nivel": "3º Nível", "codigo": "1108084", "nome": "LAB. DE OPTICA ELETRICIDADE E MAGNETISMO", "ch": "60h", "preReqs": ["1108081", "1108003", "1108031", "1108082", "1108023", "1108026", "1109104", "1109008", "1109053"]}, {"nivel": "3º Nível", "codigo": "1108098", "nome": "MECÂNICA GERAL I", "ch": "60h", "preReqs": ["1109053", "1108030"]}, {"nivel": "3º Nível", "codigo": "1109105", "nome": "CALCULO DIFERENCIAL E INTEGRAL III", "ch": "75h", "preReqs": ["1109053", "1109035"]}, {"nivel": "3º Nível", "codigo": "1109106", "nome": "EQUACOES DIFERENCIAIS", "ch": "60h", "preReqs": ["1109053", "1109049"]}, {"nivel": "3º Nível", "codigo": "1404163", "nome": "CIRCUITOS LOGICOS", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1404164", "nome": "LAB. CIRCUITOS LOGICOS", "ch": "15h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1108029", "nome": "MECÂNICA GERAL II", "ch": "60h", "preReqs": ["1108085", "1108006", "1108098"]}, {"nivel": "4º Nível", "codigo": "1109108", "nome": "VARIAVEIS COMPLEXAS", "ch": "60h", "preReqs": ["1109105", "1109009"]}, {"nivel": "4º Nível", "codigo": "1114107", "nome": "PROBABILIDADE E ESTATÍSTICA", "ch": "60h", "preReqs": ["1109104", "1109008", "1109053"]}, {"nivel": "4º Nível", "codigo": "1404137", "nome": "CIRCUITOS ELÉTRICOS I", "ch": "60h", "preReqs": ["1108083", "1108005", "1108087", "1109106", "1109010", "1108084", "1108024", "1108027"]}, {"nivel": "4º Nível", "codigo": "1404139", "nome": "LAB. CIRCUITOS ELÉTRICOS I", "ch": "15h", "preReqs": ["1108083", "1108005", "1108087", "1109106", "1109010", "1108084", "1108024", "1108027"]}, {"nivel": "4º Nível", "codigo": "1404141", "nome": "ELETROMAGNETISMO", "ch": "60h", "preReqs": ["1108083", "1108005", "1108087", "1108084", "1108024", "1109105", "1109009", "1109051"]}, {"nivel": "4º Nível", "codigo": "1404142", "nome": "LAB. ELETROMAGNETISMO", "ch": "15h", "preReqs": ["1108083", "1108005", "1108087", "1108084", "1108024", "1109105", "1109009", "1109051"]}, {"nivel": "4º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60h", "preReqs": ["1109106", "1109010", "1411161"]}, {"nivel": "5º Nível", "codigo": "1106058", "nome": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "ch": "60h", "preReqs": ["1107212", "1108029"]}, {"nivel": "5º Nível", "codigo": "1114109", "nome": "PROCESSOS ESTOCASTICOS", "ch": "60h", "preReqs": ["1114052", "1114107", "1114013"]}, {"nivel": "5º Nível", "codigo": "1404138", "nome": "CIRCUITOS ELÉTRICOS II", "ch": "60h", "preReqs": ["1404137", "1404139"]}, {"nivel": "5º Nível", "codigo": "1404140", "nome": "LAB. CIRCUITOS ELÉTRICOS II", "ch": "15h", "preReqs": ["1404137", "1404139"]}, {"nivel": "5º Nível", "codigo": "1404143", "nome": "ONDAS E LINHAS", "ch": "60h", "preReqs": ["1404141", "1404142", "1404017"]}, {"nivel": "5º Nível", "codigo": "1404144", "nome": "DISPOSITIVOS ELETRONICOS", "ch": "60h", "preReqs": ["1404137", "1404139", "1108083", "1108084"]}, {"nivel": "5º Nível", "codigo": "1404147", "nome": "LAB. DISPOSITIVOS ELETRONICOS", "ch": "15h", "preReqs": ["1404137", "1404139"]}, {"nivel": "5º Nível", "codigo": "1404160", "nome": "ANÁLISE DE SINAIS E SISTEMAS", "ch": "60h", "preReqs": ["1109011", "1109108", "1109061", "1109106", "1109010"]}, {"nivel": "6º Nível", "codigo": "1404145", "nome": "ELETRONICA", "ch": "60h", "preReqs": ["1404138", "1404140", "1404144", "1404147"]}, {"nivel": "6º Nível", "codigo": "1404148", "nome": "LAB. ELETRONICA", "ch": "15h", "preReqs": ["1404138", "1404140", "1404002", "1404144", "1404147"]}, {"nivel": "6º Nível", "codigo": "1404152", "nome": "CONVERSÃO ELETROMECÂNICA", "ch": "60h", "preReqs": ["1404138", "1404140", "1404141", "1404142"]}, {"nivel": "6º Nível", "codigo": "1404153", "nome": "LAB. CONVERSÃO ELETROMECÂNICA", "ch": "15h", "preReqs": ["1404138", "1404140", "1404141", "1404142"]}, {"nivel": "6º Nível", "codigo": "1404161", "nome": "PRINCIPIOS DE COMUNICACOES", "ch": "60h", "preReqs": ["1404160", "1109027", "1404082", "1114109", "1404396", "1114014"]}, {"nivel": "6º Nível", "codigo": "1404162", "nome": "LAB. PRINCIPIOS DE COMUNICACOES", "ch": "15h", "preReqs": ["1404160", "1114109", "1404396"]}, {"nivel": "6º Nível", "codigo": "1404165", "nome": "ARQUITETURA DE SISTEMAS DIGITAIS", "ch": "60h", "preReqs": ["1404163", "1404164", "1404031"]}, {"nivel": "6º Nível", "codigo": "1404166", "nome": "LAB ARQUIT. DE SISTEMAS DIGITAIS", "ch": "30h", "preReqs": ["1404163", "1404164", "1404031"]}, {"nivel": "6º Nível", "codigo": "1503034", "nome": "FENOMENOS DE TRANSPORTE", "ch": "75h", "preReqs": ["1108081", "1108003", "1109104", "1109053", "1109008", "1108023", "1108082", "1108007", "1108086", "1108069", "1108029"]}, {"nivel": "7º Nível", "codigo": "1305212", "nome": "SOCIOLOGIA INDUSTRIAL", "ch": "45h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1404135", "nome": "SISTEMAS ELÉTRICOS", "ch": "60h", "preReqs": ["1404138", "1404140", "1411075"]}, {"nivel": "7º Nível", "codigo": "1404136", "nome": "LAB. SISTEMAS ELÉTRICOS", "ch": "15h", "preReqs": ["1404138", "1404140", "1411075"]}, {"nivel": "7º Nível", "codigo": "1404150", "nome": "MATERIAIS ELÉTRICOS", "ch": "60h", "preReqs": ["1106058", "1108083", "1108084"]}, {"nivel": "7º Nível", "codigo": "1404151", "nome": "LAB. MATERIAIS ELÉTRICOS", "ch": "15h", "preReqs": ["1106058", "1108083", "1108084"]}, {"nivel": "7º Nível", "codigo": "1404154", "nome": "MÁQUINAS ELÉTRICAS", "ch": "60h", "preReqs": ["1404152", "1404153"]}, {"nivel": "7º Nível", "codigo": "1404155", "nome": "LABORATÓRIO DE MÁQUINAS ELÉTRICAS", "ch": "15h", "preReqs": ["1404152", "1404153"]}, {"nivel": "7º Nível", "codigo": "1404156", "nome": "CONTROLE ANALOGICO", "ch": "60h", "preReqs": ["1404160", "1109027", "1404082"]}, {"nivel": "7º Nível", "codigo": "1404158", "nome": "LAB. CONTROLE ANALOGICO", "ch": "15h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1301014", "nome": "ADMINISTRAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1303021", "nome": "ECONOMIA", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1404133", "nome": "INSTALACOES ELETRICAS", "ch": "60h", "preReqs": ["1404150", "1404151", "1404054", "1404135", "1404136"]}, {"nivel": "8º Nível", "codigo": "1404134", "nome": "LAB.INSTALACOES ELETRICAS", "ch": "15h", "preReqs": ["1404150", "1404151", "1404054", "1404135", "1404136", "1404038"]}, {"nivel": "8º Nível", "codigo": "1404146", "nome": "ELETRONICA DE POTENCIA", "ch": "60h", "preReqs": ["1404145", "1404148"]}, {"nivel": "8º Nível", "codigo": "1404149", "nome": "LAB. ELETRONICA DE POTENCIA", "ch": "15h", "preReqs": ["1404145", "1404148", "1404033", "1404211"]}, {"nivel": "8º Nível", "codigo": "1404157", "nome": "CONTROLE DIGITAL", "ch": "60h", "preReqs": ["1404156", "1404158"]}, {"nivel": "8º Nível", "codigo": "1404159", "nome": "LAB. CONTROLE DIGITAL", "ch": "15h", "preReqs": ["1404156", "1404158"]}, {"nivel": "9º Nível", "codigo": "1301018", "nome": "ENGENHARIA ECONOMICA", "ch": "60h", "preReqs": ["1303021"]}, {"nivel": "9º Nível", "codigo": "1305036", "nome": "INSTITUICOES DO DIREITO", "ch": "45h", "preReqs": []}];
+  const codigoToNome = {"1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109103": "CALCULO DIFERENCIAL E INTEGRAL I", "1113019": "EXPRESSAO GRAFICA", "1404132": "INTRODUÇÃO À ENGENHARIA ELÉTRICA", "1411160": "INTRODUÇÃO À PROGRAMAÇÃO", "1503038": "CIÊNCIAS DO AMBIENTE", "1107212": "QUÍMICA", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109053": "CALCULO DIFERENCIAL E INTEGRAL II", "1411161": "TÉCNICAS DE PROGRAMAÇÃO", "1108083": "ELETRICIDADE E MAGNETISMO", "1108084": "LAB. DE OPTICA ELETRICIDADE E MAGNETISMO", "1108098": "MECÂNICA GERAL I", "1109105": "CALCULO DIFERENCIAL E INTEGRAL III", "1109106": "EQUACOES DIFERENCIAIS", "1404163": "CIRCUITOS LOGICOS", "1404164": "LAB. CIRCUITOS LOGICOS", "1108029": "MECÂNICA GERAL II", "1109108": "VARIAVEIS COMPLEXAS", "1114107": "PROBABILIDADE E ESTATÍSTICA", "1404137": "CIRCUITOS ELÉTRICOS I", "1404139": "LAB. CIRCUITOS ELÉTRICOS I", "1404141": "ELETROMAGNETISMO", "1404142": "LAB. ELETROMAGNETISMO", "1411075": "CALCULO NUMERICO", "1106058": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "1114109": "PROCESSOS ESTOCASTICOS", "1404138": "CIRCUITOS ELÉTRICOS II", "1404140": "LAB. CIRCUITOS ELÉTRICOS II", "1404143": "ONDAS E LINHAS", "1404144": "DISPOSITIVOS ELETRONICOS", "1404147": "LAB. DISPOSITIVOS ELETRONICOS", "1404160": "ANÁLISE DE SINAIS E SISTEMAS", "1404145": "ELETRONICA", "1404148": "LAB. ELETRONICA", "1404152": "CONVERSÃO ELETROMECÂNICA", "1404153": "LAB. CONVERSÃO ELETROMECÂNICA", "1404161": "PRINCIPIOS DE COMUNICACOES", "1404162": "LAB. PRINCIPIOS DE COMUNICACOES", "1404165": "ARQUITETURA DE SISTEMAS DIGITAIS", "1404166": "LAB ARQUIT. DE SISTEMAS DIGITAIS", "1503034": "FENOMENOS DE TRANSPORTE", "1305212": "SOCIOLOGIA INDUSTRIAL", "1404135": "SISTEMAS ELÉTRICOS", "1404136": "LAB. SISTEMAS ELÉTRICOS", "1404150": "MATERIAIS ELÉTRICOS", "1404151": "LAB. MATERIAIS ELÉTRICOS", "1404154": "MÁQUINAS ELÉTRICAS", "1404155": "LABORATÓRIO DE MÁQUINAS ELÉTRICAS", "1404156": "CONTROLE ANALOGICO", "1404158": "LAB. CONTROLE ANALOGICO", "1301014": "ADMINISTRAÇÃO", "1303021": "ECONOMIA", "1404133": "INSTALACOES ELETRICAS", "1404134": "LAB.INSTALACOES ELETRICAS", "1404146": "ELETRONICA DE POTENCIA", "1404149": "LAB. ELETRONICA DE POTENCIA", "1404157": "CONTROLE DIGITAL", "1404159": "LAB. CONTROLE DIGITAL", "1301018": "ENGENHARIA ECONOMICA", "1305036": "INSTITUICOES DO DIREITO", "1105373": "TE(FUNDAMENTOS DO SETOR DE P&G)", "1105377": "TE(SISTEMAS DE PROD DO SETOR P&G)", "1105404": "TE(EQUIP E APLIC NO SETOR DE PETR E GAS)", "1304055": "FUTSAL", "1304062": "PRÁTICA DESPORTIVA", "1307001": "ALEMAO", "1307009": "FRANCES", "1307011": "INGLES", "1307045": "LINGUA PORTUGUESA", "1404108": "TEEE(MET. NUM. NO ELETROMAGN.)", "1404167": "ANÁLISE DE SISTEMAS ELÉTRICOS", "1404168": "DISTRIBUICAO DE ENERGIA ELETRICA", "1404169": "EQUIPAMENTOS ELÉTRICOS", "1404170": "GERACAO DE ENERGIA ELETRICA", "1404171": "GERENCIAMENTO DE ENERGIA", "1404172": "TÉCNICAS DE MEDIÇÃO", "1404173": "OPERAÇÃO E CONT. DE SISTEMAS ELÉTRICOS", "1404174": "PROTEÇÃO DE SISTEMAS ELÉTRICOS", "1404175": "TÉCNICAS DE ALTA TENSÃO", "1404176": "ARQUITETURAS AVANÇ. P/ COMPUTAÇÃO", "1404177": "CIRCUITOS PARA COMUNICACOES", "1404178": "ESTRUTURA E CONCEPCAO DE CIRC. INTEG.", "1404179": "FILTROS ELÉTRICOS", "1404180": "INSTRUMENTACAO ELETRONICA", "1404181": "PROCESSAMENTO DIGITAL DE SINAIS", "1404182": "PROJETO DE CIRCUITOS INTEGRADOS", "1404183": "SISTEMAS DE AQUIS.DE DADOS E INTERFACE", "1404184": "SISTEMAS DE AUTOMACAO INDUSTRIAL", "1404185": "SISTEMAS DE PROC. DE AUDIO E VIDEO", "1404186": "ANTENAS E PROPAGAÇÃO", "1404187": "COMPATIBILIDADE E INTERF ELETROMAGNETICA", "1404188": "COMUNICACOES DIGITAIS", "1404189": "COMUNICACOES OPTICAS", "1404190": "ENGENHARIA DE MICROONDAS", "1404191": "ESTRUTURAS GUIANTES", "1404192": "TRANSMISSAO DIGITAL DA INFORMACAO", "1404193": "SISTEMAS DE COMUNICACOES", "1404194": "TELEFONIA DIGITAL", "1404195": "TEORIA DA INFORMACAO E CODIFICACAO", "1404196": "ACIONAMENTOS ELÉTRICOS", "1404197": "AUTOMAÇÃO INTELIGENTE", "1404198": "CONVERSORES ESTATICOS E ELETROMECANICOS", "1404199": "GERENCIA", "1404200": "REDES DE COMPUTADORES", "1404201": "SISTEMAS A EVENTOS DISCRETOS", "1404202": "INFORMÁTICA INDUSTRIAL", "1404203": "SISTEMAS EM TEMPO REAL", "1404207": "TÓPICOS ESPECIAIS EM ENG. ELÉTRICA", "1404213": "LAB. FILTROS ELÉTRICOS", "1404214": "LAB. INSTRUMENTACAO", "1404218": "LAB SIST AQUIS DE DADOS E INTER", "1404237": "LAB. EQUIPAMENTOS ELÉTRICOS", "1404239": "TEEE(LAB ANTENAS E PROPAGACAO)", "1404248": "TI (LINGUAGEM DE PROGRAMAÇÃO I)", "1404255": "TI (PROGRAMAÇÃO I)", "1404258": "TH (INTRODUÇÃO À PSICOLOGIA)", "1404260": "TEEE( DCCHCFP )", "1404264": "TT (MÁQ. HIDR. E PNEUMÁTICAS)", "1404265": "TT(ISNT METEOR E TEC OBS SUPERFICIE)", "1404266": "TEE(SIST RECONF E MICROCONTROLADORES)", "1404268": "TEEE (PROGRAMAÇÃO ORIENTADA A OBJETOS)", "1404269": "TEEE (PROGRAMAÇÃO EM LINGUAGEM C++)", "1404270": "TEEE(ARQUITETURA DE SISTEMAS EMBUTIDOS)", "1404271": "TEEE(SIST OPER P/APLIC MOVEIS EMBUTIDAS)", "1404272": "TAEE(MICROCONT E PROC DIGITAIS DE SINAIS", "1404273": "TAEE(INSTRUMENTACAO INDUSTRIAL)", "1404275": "TEEE (CRIPTOGRAFIA)", "1404276": "TEEE(SISTEMAS EMBARCADOS)", "1404277": "TEEE(QUALIDADE DE ENERGIA ELÉTRICA)", "1404279": "TEEE(MET.GRAF.PARA LINHAS DE TRANSM.RF)", "1404280": "TEEE(INIC À CONC DE CIRC IN AN E MISTOS)", "1404372": "TE(FONTES REN DE ENERGIA E EFIC ENERG)", "1404373": "TAEE(QUALIDADE DE ENERGIA)", "1404374": "TEEE(RADIO DEFINIDO POR SOFTWARE)", "1404375": "TEEE(ARQ DE REDES E ELETROELET.VEICULAR)", "1404376": "TEEE(MODEL E SIMUL DE SISTE.AUTOMOTIVOS)", "1404377": "TE(INSTR.E CONTROLE PARA O SETOR P&G)", "1404378": "TAEE(MAQUINAS ELETRICAS)", "1404379": "TEEE(PROCESSAMENTO DE SINAIS MULTIMIDIA)", "1404380": "TAEE(IDENT.EM MALHA FECH P/CONT DE SIST)", "1404381": "TEEE(SISTEMAS ELETRICOS INDUSTRIAIS)", "1404382": "TEEE(INTERNET DAS COISAS INDUSTRIAL-IIOT", "1404383": "TEEE(INT AO PROC DE IMAG DIG E VISAO COM", "1404384": "TEEE(ROBOTICA", "1404385": "TEEE(REDES DE SENSORES/ATUAD INDUSTRIAIS", "1404386": "TEEE(MODELAGEM E IDENT DE PROCESSOS)", "1404387": "TEEE(SISTEMAS OPTICOS COERENTES)", "1404388": "TEEE(PROJ DE CIRC. FOTONICOS EM SILICIOS", "1404389": "TEEE(IDENTIF DE PROC MULTIVARIAVEIS)", "1404390": "TEEE(PROJ INTER DE CONTROLAD INDUSTRIAIS", "1404391": "TEEE(CONTROLE PREDITIVO)", "1404392": "TEEE(INT ART E CIENC DADOS APLIC SIST EL", "1404393": "TEEE(PRÁTICAS DE ENGENHARIA ELÉTRICA)", "1404394": "TEEE(PRÁTICA DE ENG ELÉTRICA EXTRAMUROS)", "1404395": "TEEE(MODELAGEM", "1404397": "TEEE(NR 10 SEG EM INST E SERV EM ELETR)", "1404398": "TEEE(BIOSENSORES:FUNDAMENTOS E APLICAÇÕE", "1404399": "TEEE(INTERNET DAS COISAS INDUST(II0T)", "1404400": "TEEE(REDES DE PETRI)", "1404401": "TEEE(SISTEMAS FÍSICO CIBERNÉTICOS)", "1404402": "TEEE(PRAT EM CONTROLE DE PROCESSOS E AUT", "1404403": "TEEE(SISTEMAS DISTR PARA AUT:HARD E SOFT"};
+
+  const subjectsMap = new Map();
+  mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
+
+  const reverseDeps = new Map();
+  mandatorySubjects.forEach(sub => {
+    if (sub.preReqs && sub.preReqs.length) {
+      sub.preReqs.forEach(pre => {
+        if (!reverseDeps.has(pre)) reverseDeps.set(pre, []);
+        reverseDeps.get(pre).push(sub.codigo);
+      });
+    }
+  });
+
+  let completedSet = new Set();
+
+  function arePrerequisitesMet(codigo) {
+    const disciplina = subjectsMap.get(codigo);
+    if (!disciplina) return true;
+    const preReqs = disciplina.preReqs || [];
+    return preReqs.every(preCod => {
+      if (!subjectsMap.has(preCod)) return true;
+      return completedSet.has(preCod);
+    });
+  }
+
+  function cascadeUncheck(startingCode) {
+    const queue = [startingCode];
+    const visited = new Set();
+    while (queue.length) {
+      const current = queue.shift();
+      if (visited.has(current)) continue;
+      visited.add(current);
+      if (completedSet.has(current) && !arePrerequisitesMet(current)) {
+        completedSet.delete(current);
+      }
+      const dependents = reverseDeps.get(current) || [];
+      dependents.forEach(dep => { if (!visited.has(dep)) queue.push(dep); });
+    }
+  }
+
+  function getSubjectStatus(codigo) {
+    if (completedSet.has(codigo)) return "completed";
+    return arePrerequisitesMet(codigo) ? "available" : "blocked";
+  }
+
+  window.toggleSubject = function(codigo) {
+    const status = getSubjectStatus(codigo);
+    if (status === "blocked") return;
+    if (completedSet.has(codigo)) {
+      completedSet.delete(codigo);
+      cascadeUncheck(codigo);
+    } else {
+      completedSet.add(codigo);
+    }
+    saveProgress();
+    renderColumns();
+    updateGlobalProgress();
+  };
+
+  function computePercent() {
+    const total = mandatorySubjects.length;
+    return total === 0 ? 0 : Math.round((completedSet.size / total) * 100);
+  }
+
+  function updateGlobalProgress() {
+    const percent = computePercent();
+    const total = mandatorySubjects.length;
+    document.getElementById('percentDisplay').innerText = `${percent}%`;
+    document.getElementById('progressFill').style.width = `${percent}%`;
+    const meta = document.getElementById('progressMeta');
+    if (meta) meta.innerText = `${completedSet.size} / ${total} disciplinas`;
+  }
+
+  function renderColumns() {
+    const container = document.getElementById('matrixColumns');
+    if (!container) return;
+    const niveis = [];
+    const mapNivel = new Map();
+    mandatorySubjects.forEach(sub => {
+      const nivel = sub.nivel;
+      if (!mapNivel.has(nivel)) { mapNivel.set(nivel, []); niveis.push(nivel); }
+      mapNivel.get(nivel).push(sub);
+    });
+    let columnsHtml = '';
+    for (let nivel of niveis) {
+      const subjectsOfLevel = mapNivel.get(nivel);
+      columnsHtml += `
+        <div class="level-column">
+          <div class="column-header">
+            <h3>${nivel}</h3>
+            <span>${subjectsOfLevel.length} disc.</span>
+          </div>
+          <div class="subjects-list">
+      `;
+      subjectsOfLevel.forEach(sub => {
+        const status = getSubjectStatus(sub.codigo);
+        let cardClass = '', statusText = '';
+        if (status === 'completed') { cardClass = 'subject-completed'; statusText = '✅ Cursada'; }
+        else if (status === 'available') { cardClass = 'subject-available'; statusText = '🔓 Disponível'; }
+        else { cardClass = 'subject-blocked'; statusText = '🔒 Bloqueada'; }
+        let prereqDisplay = 'Nenhum';
+        if (sub.preReqs && sub.preReqs.length) {
+          prereqDisplay = sub.preReqs.map(cod => codigoToNome[cod] || cod).join(', ');
+        }
+        columnsHtml += `
+          <div class="subject-card ${cardClass}" data-codigo="${sub.codigo}">
+            <div class="subject-row">
+              <span class="subject-code">${sub.codigo}</span>
+              <span class="status-badge">${statusText}</span>
+            </div>
+            <div class="subject-name">${sub.nome}</div>
+            <div><span class="subject-ch">${sub.ch}</span></div>
+            <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
+          </div>
+        `;
+      });
+      columnsHtml += `</div></div>`;
+    }
+    container.innerHTML = columnsHtml;
+    document.querySelectorAll('.subject-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const codigo = card.getAttribute('data-codigo');
+        if (codigo) window.toggleSubject(codigo);
+      });
+    });
+  }
+
+  function saveProgress() {
+    localStorage.setItem('completedObrigatorias_14123100_1999', JSON.stringify([...completedSet]));
+  }
+
+  function loadProgress() {
+    const saved = localStorage.getItem('completedObrigatorias_14123100_1999');
+    if (saved) {
+      completedSet = new Set(JSON.parse(saved));
+      const toRemove = [];
+      for (let code of completedSet) { if (!arePrerequisitesMet(code)) toRemove.push(code); }
+      toRemove.forEach(code => completedSet.delete(code));
+      saveProgress();
+    }
+  }
+
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    completedSet.clear();
+    saveProgress();
+    renderColumns();
+    updateGlobalProgress();
+  });
+
+  loadProgress();
+  renderColumns();
+  updateGlobalProgress();
+</script>
+</body>
+</html>
