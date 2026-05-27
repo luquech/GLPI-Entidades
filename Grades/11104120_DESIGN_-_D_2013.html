@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,104 +404,104 @@
           <tr>
               <td>1112255</td>
               <td>DESIGN E ECOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1112256</td>
               <td>DESIGN E DESENVOLVIMENTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1112257</td>
               <td>DESIGN E EMOCAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1112258</td>
               <td>SEMANTICA E DESIGN</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SEMIOTICA E SEMANTICA DO PRODUTO</td>
               <td></td>
           </tr>
           <tr>
               <td>1112259</td>
               <td>DESIGN URBANO I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1112260</td>
               <td>DESIGN URBANO II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>DESIGN URBANO I, 1112213, PROJETO V, 1112148</td>
               <td></td>
           </tr>
           <tr>
               <td>1112261</td>
               <td>DESIGN ESTRATEGICO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1112262</td>
               <td>MARKETING APLICADO AO DESIGN</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1112263</td>
               <td>GESTAO INTEGRADA DO DESIGN</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1112266</td>
               <td>TED(DESIGN EXPERIMENTAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1112267</td>
               <td>TED(DESIGN DE SUPERFÍCIE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1112268</td>
               <td>TED(PRECURSORES DO DESIGN)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -545,8 +548,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1112218", "nome": "PROJETO I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1112219", "nome": "DESENHO I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1112220", "nome": "HISTORIA DA ARTE E DO DESIGN", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1112221", "nome": "EXPRESSAO TRIDIMENSIONAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1112222", "nome": "MATERIAIS E PROCESSOS DE FABRICACAO I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1112223", "nome": "TÉCNICAS DE APRESENTAÇÃO DE PROJETO I", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1112224", "nome": "PROJETO II", "ch": "60h", "preReqs": ["1112218", "1112131"]}, {"nivel": "2º Nível", "codigo": "1112225", "nome": "DESENHO II", "ch": "60h", "preReqs": ["1112219", "1112156"]}, {"nivel": "2º Nível", "codigo": "1112226", "nome": "HISTORIA DO DESIGN INDUSTRIAL", "ch": "30h", "preReqs": ["1112220", "1112140"]}, {"nivel": "2º Nível", "codigo": "1112227", "nome": "EXPRESSAO TRIDIMENSIONAL II", "ch": "60h", "preReqs": ["1112221", "1112139"]}, {"nivel": "2º Nível", "codigo": "1112228", "nome": "MATERIAIS E PROCESSOS DE FABRICACAO II", "ch": "60h", "preReqs": ["1112222", "1105323"]}, {"nivel": "2º Nível", "codigo": "1112229", "nome": "REGISTRO E ANALISE DA IMAGEM", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1113057", "nome": "DESENHO TÉCNICO", "ch": "60h", "preReqs": ["1113019", "1113008", "1113007"]}, {"nivel": "3º Nível", "codigo": "1112230", "nome": "PROJETO III", "ch": "60h", "preReqs": ["1112224", "1112132"]}, {"nivel": "3º Nível", "codigo": "1112231", "nome": "COMPUTACAO GRAFICA", "ch": "60h", "preReqs": ["1112225", "1112151"]}, {"nivel": "3º Nível", "codigo": "1112232", "nome": "ANALISE DA FORMA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1112233", "nome": "TEORIA E PRÁTICA DA COR", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1112234", "nome": "MODELOS TRIDIMENSIONAIS", "ch": "60h", "preReqs": ["1112227", "1112157"]}, {"nivel": "3º Nível", "codigo": "1112235", "nome": "METODOLOGIA DE PROJETO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1112236", "nome": "TÉCNICAS DE APRESENTAÇÃO DE PROJETO II", "ch": "30h", "preReqs": ["1112223", "1112142", "1112229", "1112173", "1112158"]}, {"nivel": "4º Nível", "codigo": "1112237", "nome": "PROJETO IV", "ch": "60h", "preReqs": ["1112230", "1112133"]}, {"nivel": "4º Nível", "codigo": "1112238", "nome": "DESENHO ASSISTIDO POR COMPUTADOR I", "ch": "60h", "preReqs": ["1112231", "1112154"]}, {"nivel": "4º Nível", "codigo": "1112239", "nome": "METODOLOGIA VISUAL", "ch": "90h", "preReqs": ["1112232", "1112202"]}, {"nivel": "4º Nível", "codigo": "1112240", "nome": "INTRODUÇÃO À SOCIOLOGIA E À ANTROPOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1112241", "nome": "ERGONOMIA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1112242", "nome": "METODOLOGIA CIENTIFICA", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1112243", "nome": "PROJETO V", "ch": "60h", "preReqs": ["1112237", "1112147"]}, {"nivel": "5º Nível", "codigo": "1112244", "nome": "DESENHO ASSISTIDO POR COMPUTADOR II", "ch": "60h", "preReqs": ["1112238", "1112205"]}, {"nivel": "5º Nível", "codigo": "1112245", "nome": "ESTETICA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1112246", "nome": "SEMIOTICA E SEMANTICA DO PRODUTO", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1112247", "nome": "INTERAÇÃO USUARIO-PRODUTO", "ch": "60h", "preReqs": ["1112241", "1112130", "1112179", "1112203"]}, {"nivel": "5º Nível", "codigo": "1112248", "nome": "INOVACAO EM DESIGN", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1112249", "nome": "PROJETO VI", "ch": "60h", "preReqs": ["1112243", "1112148"]}, {"nivel": "6º Nível", "codigo": "1112250", "nome": "DESENHO AVANCADO", "ch": "60h", "preReqs": ["1112244", "1112209"]}, {"nivel": "6º Nível", "codigo": "1112251", "nome": "TEORIAS DO DESIGN", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1112252", "nome": "EMPREENDEDORISMO", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1112253", "nome": "PROJETO DE TCC", "ch": "30h", "preReqs": ["1112243", "1112148"]}, {"nivel": "6º Nível", "codigo": "1305411", "nome": "CULTURA MATERIAL", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1112254", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "120h", "preReqs": ["1112249", "1112149", "1112253", "1112138"]}];
-  const codigoToNome = {"1112218": "PROJETO I", "1112219": "DESENHO I", "1112220": "HISTORIA DA ARTE E DO DESIGN", "1112221": "EXPRESSAO TRIDIMENSIONAL I", "1112222": "MATERIAIS E PROCESSOS DE FABRICACAO I", "1112223": "TÉCNICAS DE APRESENTAÇÃO DE PROJETO I", "1113019": "EXPRESSAO GRAFICA", "1112224": "PROJETO II", "1112225": "DESENHO II", "1112226": "HISTORIA DO DESIGN INDUSTRIAL", "1112227": "EXPRESSAO TRIDIMENSIONAL II", "1112228": "MATERIAIS E PROCESSOS DE FABRICACAO II", "1112229": "REGISTRO E ANALISE DA IMAGEM", "1113057": "DESENHO TÉCNICO", "1112230": "PROJETO III", "1112231": "COMPUTACAO GRAFICA", "1112232": "ANALISE DA FORMA", "1112233": "TEORIA E PRÁTICA DA COR", "1112234": "MODELOS TRIDIMENSIONAIS", "1112235": "METODOLOGIA DE PROJETO", "1112236": "TÉCNICAS DE APRESENTAÇÃO DE PROJETO II", "1112237": "PROJETO IV", "1112238": "DESENHO ASSISTIDO POR COMPUTADOR I", "1112239": "METODOLOGIA VISUAL", "1112240": "INTRODUÇÃO À SOCIOLOGIA E À ANTROPOLOGIA", "1112241": "ERGONOMIA", "1112242": "METODOLOGIA CIENTIFICA", "1112243": "PROJETO V", "1112244": "DESENHO ASSISTIDO POR COMPUTADOR II", "1112245": "ESTETICA", "1112246": "SEMIOTICA E SEMANTICA DO PRODUTO", "1112247": "INTERAÇÃO USUARIO-PRODUTO", "1112248": "INOVACAO EM DESIGN", "1112249": "PROJETO VI", "1112250": "DESENHO AVANCADO", "1112251": "TEORIAS DO DESIGN", "1112252": "EMPREENDEDORISMO", "1112253": "PROJETO DE TCC", "1305411": "CULTURA MATERIAL", "1112254": "TRABALHO DE CONCLUSAO DE CURSO", "1112255": "DESIGN E ECOLOGIA", "1112256": "DESIGN E DESENVOLVIMENTO", "1112257": "DESIGN E EMOCAO", "1112258": "SEMANTICA E DESIGN", "1112259": "DESIGN URBANO I", "1112260": "DESIGN URBANO II", "1112261": "DESIGN ESTRATEGICO", "1112262": "MARKETING APLICADO AO DESIGN", "1112263": "GESTAO INTEGRADA DO DESIGN", "1112266": "TED(DESIGN EXPERIMENTAL)", "1112267": "TED(DESIGN DE SUPERFÍCIE)", "1112268": "TED(PRECURSORES DO DESIGN)", "1307332": "LIBRAS"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1112218", "nome": "PROJETO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1112219", "nome": "DESENHO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1112220", "nome": "HISTORIA DA ARTE E DO DESIGN", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1112221", "nome": "EXPRESSAO TRIDIMENSIONAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1112222", "nome": "MATERIAIS E PROCESSOS DE FABRICACAO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1112223", "nome": "TÉCNICAS DE APRESENTAÇÃO DE PROJETO I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1112224", "nome": "PROJETO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112218", "1112131"]}, {"nivel": "2º Nível", "codigo": "1112225", "nome": "DESENHO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112219", "1112156"]}, {"nivel": "2º Nível", "codigo": "1112226", "nome": "HISTORIA DO DESIGN INDUSTRIAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112220", "1112140"]}, {"nivel": "2º Nível", "codigo": "1112227", "nome": "EXPRESSAO TRIDIMENSIONAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112221", "1112139"]}, {"nivel": "2º Nível", "codigo": "1112228", "nome": "MATERIAIS E PROCESSOS DE FABRICACAO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112222", "1105323"]}, {"nivel": "2º Nível", "codigo": "1112229", "nome": "REGISTRO E ANALISE DA IMAGEM", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1113057", "nome": "DESENHO TÉCNICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113019", "1113008", "1113007"]}, {"nivel": "3º Nível", "codigo": "1112230", "nome": "PROJETO III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112224", "1112132"]}, {"nivel": "3º Nível", "codigo": "1112231", "nome": "COMPUTACAO GRAFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112225", "1112151"]}, {"nivel": "3º Nível", "codigo": "1112232", "nome": "ANALISE DA FORMA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1112233", "nome": "TEORIA E PRÁTICA DA COR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1112234", "nome": "MODELOS TRIDIMENSIONAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112227", "1112157"]}, {"nivel": "3º Nível", "codigo": "1112235", "nome": "METODOLOGIA DE PROJETO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1112236", "nome": "TÉCNICAS DE APRESENTAÇÃO DE PROJETO II", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112223", "1112142", "1112229", "1112173", "1112158"]}, {"nivel": "4º Nível", "codigo": "1112237", "nome": "PROJETO IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112230", "1112133"]}, {"nivel": "4º Nível", "codigo": "1112238", "nome": "DESENHO ASSISTIDO POR COMPUTADOR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112231", "1112154"]}, {"nivel": "4º Nível", "codigo": "1112239", "nome": "METODOLOGIA VISUAL", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112232", "1112202"]}, {"nivel": "4º Nível", "codigo": "1112240", "nome": "INTRODUÇÃO À SOCIOLOGIA E À ANTROPOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1112241", "nome": "ERGONOMIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1112242", "nome": "METODOLOGIA CIENTIFICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1112243", "nome": "PROJETO V", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112237", "1112147"]}, {"nivel": "5º Nível", "codigo": "1112244", "nome": "DESENHO ASSISTIDO POR COMPUTADOR II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112238", "1112205"]}, {"nivel": "5º Nível", "codigo": "1112245", "nome": "ESTETICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1112246", "nome": "SEMIOTICA E SEMANTICA DO PRODUTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1112247", "nome": "INTERAÇÃO USUARIO-PRODUTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112241", "1112130", "1112179", "1112203"]}, {"nivel": "5º Nível", "codigo": "1112248", "nome": "INOVACAO EM DESIGN", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1112249", "nome": "PROJETO VI", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112243", "1112148"]}, {"nivel": "6º Nível", "codigo": "1112250", "nome": "DESENHO AVANCADO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112244", "1112209"]}, {"nivel": "6º Nível", "codigo": "1112251", "nome": "TEORIAS DO DESIGN", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1112252", "nome": "EMPREENDEDORISMO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1112253", "nome": "PROJETO DE TCC", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112243", "1112148"]}, {"nivel": "6º Nível", "codigo": "1305411", "nome": "CULTURA MATERIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1112264", "nome": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "ch": "120\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1112254", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1112249", "1112149", "1112253", "1112138"]}];
+  const codigoToNome = {"1112218": "PROJETO I", "1112219": "DESENHO I", "1112220": "HISTORIA DA ARTE E DO DESIGN", "1112221": "EXPRESSAO TRIDIMENSIONAL I", "1112222": "MATERIAIS E PROCESSOS DE FABRICACAO I", "1112223": "TÉCNICAS DE APRESENTAÇÃO DE PROJETO I", "1113019": "EXPRESSAO GRAFICA", "1112224": "PROJETO II", "1112225": "DESENHO II", "1112226": "HISTORIA DO DESIGN INDUSTRIAL", "1112227": "EXPRESSAO TRIDIMENSIONAL II", "1112228": "MATERIAIS E PROCESSOS DE FABRICACAO II", "1112229": "REGISTRO E ANALISE DA IMAGEM", "1113057": "DESENHO TÉCNICO", "1112230": "PROJETO III", "1112231": "COMPUTACAO GRAFICA", "1112232": "ANALISE DA FORMA", "1112233": "TEORIA E PRÁTICA DA COR", "1112234": "MODELOS TRIDIMENSIONAIS", "1112235": "METODOLOGIA DE PROJETO", "1112236": "TÉCNICAS DE APRESENTAÇÃO DE PROJETO II", "1112237": "PROJETO IV", "1112238": "DESENHO ASSISTIDO POR COMPUTADOR I", "1112239": "METODOLOGIA VISUAL", "1112240": "INTRODUÇÃO À SOCIOLOGIA E À ANTROPOLOGIA", "1112241": "ERGONOMIA", "1112242": "METODOLOGIA CIENTIFICA", "1112243": "PROJETO V", "1112244": "DESENHO ASSISTIDO POR COMPUTADOR II", "1112245": "ESTETICA", "1112246": "SEMIOTICA E SEMANTICA DO PRODUTO", "1112247": "INTERAÇÃO USUARIO-PRODUTO", "1112248": "INOVACAO EM DESIGN", "1112249": "PROJETO VI", "1112250": "DESENHO AVANCADO", "1112251": "TEORIAS DO DESIGN", "1112252": "EMPREENDEDORISMO", "1112253": "PROJETO DE TCC", "1305411": "CULTURA MATERIAL", "1112264": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "1112254": "TRABALHO DE CONCLUSAO DE CURSO", "1112255": "DESIGN E ECOLOGIA", "1112256": "DESIGN E DESENVOLVIMENTO", "1112257": "DESIGN E EMOCAO", "1112258": "SEMANTICA E DESIGN", "1112259": "DESIGN URBANO I", "1112260": "DESIGN URBANO II", "1112261": "DESIGN ESTRATEGICO", "1112262": "MARKETING APLICADO AO DESIGN", "1112263": "GESTAO INTEGRADA DO DESIGN", "1112266": "TED(DESIGN EXPERIMENTAL)", "1112267": "TED(DESIGN DE SUPERFÍCIE)", "1112268": "TED(PRECURSORES DO DESIGN)", "1307332": "LIBRAS"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -658,7 +661,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

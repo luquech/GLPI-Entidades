@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,200 +404,200 @@
           <tr>
               <td>5101006</td>
               <td>LINGUA PORTUGUESA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101011</td>
               <td>MATEMÁTICA ELEMENTAR I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104084</td>
               <td>ECOLOGIA GERAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104117</td>
               <td>ANÁLISE TÉRMICA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>QUÍMICA ANALÍTICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>5104118</td>
               <td>ESPECTROSCOPIA DE COMPOSTOS ORGANICOS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>QUÍMICA ORGÂNICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>5104153</td>
               <td>QUÍMICA DE ALIMENTOS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104155</td>
               <td>QUÍMICA ANALÍTICA INSTRUMENTAL</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>QUÍMICA ANALÍTICA EXPERIMENTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>5104177</td>
               <td>QUÍMICA DO PETRÓLEO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>QUÍMICA ORGÂNICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>5104178</td>
               <td>ENERGIA DE BIOMASSA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>QUÍMICA ANALÍTICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>5104188</td>
               <td>TEQ (QUÍMICA FORENSE)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>QUÍMICA ANALÍTICA EXPERIMENTAL, QUÍMICA ORGÂNICA EXPERIMENTAL, ESPECTROSCOPIA DE COMPOSTOS ORGANICOS</td>
               <td></td>
           </tr>
           <tr>
               <td>5104154</td>
               <td>MINERALOGIA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>QUÍMICA INORGÂNICA DESCRITIVA</td>
               <td></td>
           </tr>
           <tr>
               <td>5104179</td>
               <td>GERENCIAMENTO DE RESIDUOS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104186</td>
               <td>PROFISSAO DOCENTE</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104200</td>
               <td>POLIMEROS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>QUÍMICA ORGÂNICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>5104205</td>
               <td>BIOLOGIA GERAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104207</td>
               <td>POLÍTICA E EDUCAÇÃO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104210</td>
               <td>INTRODUÇÃO À QUÍMICA QUÂNTICA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>QUÍMICA INORGÂNICA DE COORDENAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>5104211</td>
               <td>ENSINO INCLUSO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104212</td>
               <td>CURRICULO EDUCACIONAL</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104213</td>
               <td>ETICA E DIVERSIDADE</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104218</td>
               <td>TEQ(EDUCACAO AMBIENTAL)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104221</td>
               <td>TEQ(INTROD À FILOSOFIA E À SOC DA EDUC)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104223</td>
               <td>TEQ(METODOLOGIA CIENTÍFICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104232</td>
               <td>TECB(TÓPICOS EM BIOQUÍMICA CELULAR)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104236</td>
               <td>TEQ(FUNDAMENTOS DE QUÍMICA MEDICINAL)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
@@ -641,8 +644,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5101012", "nome": "ÁLGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5101033", "nome": "LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "ch": "45h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104007", "nome": "QUÍMICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104008", "nome": "INTRODUÇÃO À PRÁTICA EM ENS. DE QUÍMICA", "ch": "45h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104009", "nome": "PRINCIPIOS DE SEGURANCA EM LABORATÓRIOS", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104010", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101021", "nome": "INFORMÁTICA APLICADA AO ENSINO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101082", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "90h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104016", "nome": "PSICOLOGIA E EDUCAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104031", "nome": "QUÍMICA GERAL II", "ch": "60h", "preReqs": ["5104007"]}, {"nivel": "2º Nível", "codigo": "5104089", "nome": "HISTÓRIA DA QUÍMICA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5101048", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["5101082"]}, {"nivel": "3º Nível", "codigo": "5101054", "nome": "PLANEJAMENTO EM EDUCAÇÃO", "ch": "45h", "preReqs": ["5104016"]}, {"nivel": "3º Nível", "codigo": "5104015", "nome": "INGLES INSTRUMENTAL", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5104032", "nome": "PESQUISA NO ENSINO DE QUÍMICA", "ch": "45h", "preReqs": ["5104010"]}, {"nivel": "3º Nível", "codigo": "5104056", "nome": "QUÍMICA ORGÂNICA I", "ch": "60h", "preReqs": ["5104007"]}, {"nivel": "3º Nível", "codigo": "5104057", "nome": "QUÍMICA EXPERIMENTAL", "ch": "30h", "preReqs": ["5104031", "5104009"]}, {"nivel": "4º Nível", "codigo": "5101058", "nome": "FÍSICA GERAL E EXPERIMENTAL I", "ch": "60h", "preReqs": ["5101082"]}, {"nivel": "4º Nível", "codigo": "5104034", "nome": "METODOLOGIA DO ENSINO DE QUÍMICA I", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "5104041", "nome": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "5104059", "nome": "QUÍMICA INORGÂNICA DESCRITIVA", "ch": "60h", "preReqs": ["5104031"]}, {"nivel": "4º Nível", "codigo": "5104071", "nome": "QUÍMICA ORGÂNICA II", "ch": "60h", "preReqs": ["5104056"]}, {"nivel": "5º Nível", "codigo": "5101060", "nome": "FÍSICA II", "ch": "60h", "preReqs": ["5101058"]}, {"nivel": "5º Nível", "codigo": "5104055", "nome": "METODOLOGIA DO ENSINO DE QUÍMICA II", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104070", "nome": "QUÍMICA INORGÂNICA DE COORDENAÇÃO", "ch": "60h", "preReqs": ["5104031"]}, {"nivel": "5º Nível", "codigo": "5104073", "nome": "QUÍMICA ANALÍTICA I", "ch": "60h", "preReqs": ["5104031"]}, {"nivel": "5º Nível", "codigo": "5104097", "nome": "QUÍMICA ORGÂNICA EXPERIMENTAL", "ch": "30h", "preReqs": ["5104071", "5104009"]}, {"nivel": "5º Nível", "codigo": "5104125", "nome": "QUÍMICA AMBIENTAL", "ch": "30h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "5101050", "nome": "ESTATÍSTICA DESCRITIVA", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "5101052", "nome": "AVALIAÇÃO E APRENDIZAGEM", "ch": "45h", "preReqs": ["5104016"]}, {"nivel": "6º Nível", "codigo": "5104074", "nome": "FÍSICO-QUÍMICA I", "ch": "60h", "preReqs": ["5104031"]}, {"nivel": "6º Nível", "codigo": "5104096", "nome": "QUÍMICA INORGÂNICA EXPERIMENTAL", "ch": "30h", "preReqs": ["5104070", "5104009"]}, {"nivel": "6º Nível", "codigo": "5104098", "nome": "QUÍMICA ANALÍTICA II", "ch": "60h", "preReqs": ["5104073"]}, {"nivel": "7º Nível", "codigo": "5104099", "nome": "FÍSICO-QUÍMICA II", "ch": "60h", "preReqs": ["5104074"]}, {"nivel": "7º Nível", "codigo": "5104120", "nome": "INSTRUMENTAÇÃO NO ENSINO DE QUÍMICA", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "5104122", "nome": "ESTÁGIO SUPERV. EM ENSINO DE QUÍMICA I", "ch": "90h", "preReqs": ["5104034", "5104055"]}, {"nivel": "7º Nível", "codigo": "5104123", "nome": "QUÍMICA ANALÍTICA EXPERIMENTAL", "ch": "45h", "preReqs": ["5104098", "5104009"]}, {"nivel": "8º Nível", "codigo": "5101148", "nome": "LINGUA BRASILEIRA DE SINAIS", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "5104038", "nome": "BIOQUÍMICA GERAL", "ch": "60h", "preReqs": ["5104071"]}, {"nivel": "8º Nível", "codigo": "5104121", "nome": "CINÉTICA QUÍMICA", "ch": "30h", "preReqs": ["5104031"]}, {"nivel": "8º Nível", "codigo": "5104124", "nome": "FÍSICO-QUÍMICA EXPERIMENTAL", "ch": "30h", "preReqs": ["5104099", "5104009"]}, {"nivel": "8º Nível", "codigo": "5104149", "nome": "ESTÁGIO SUPERV. EM ENSINO DE QUÍMICA II", "ch": "120h", "preReqs": ["5104122"]}, {"nivel": "9º Nível", "codigo": "5104170", "nome": "ESTÁGIO SUPERV. EM ENSINO DE QUÍMICA III", "ch": "195h", "preReqs": ["5104149"]}, {"nivel": "9º Nível", "codigo": "5104171", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "30h", "preReqs": []}];
-  const codigoToNome = {"5101012": "ÁLGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "5101033": "LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "5104007": "QUÍMICA GERAL I", "5104008": "INTRODUÇÃO À PRÁTICA EM ENS. DE QUÍMICA", "5104009": "PRINCIPIOS DE SEGURANCA EM LABORATÓRIOS", "5104010": "METODOLOGIA CIENTÍFICA", "5101021": "INFORMÁTICA APLICADA AO ENSINO", "5101082": "CALCULO DIFERENCIAL E INTEGRAL I", "5104016": "PSICOLOGIA E EDUCAÇÃO", "5104031": "QUÍMICA GERAL II", "5104089": "HISTÓRIA DA QUÍMICA", "5101048": "CALCULO DIFERENCIAL E INTEGRAL II", "5101054": "PLANEJAMENTO EM EDUCAÇÃO", "5104015": "INGLES INSTRUMENTAL", "5104032": "PESQUISA NO ENSINO DE QUÍMICA", "5104056": "QUÍMICA ORGÂNICA I", "5104057": "QUÍMICA EXPERIMENTAL", "5101058": "FÍSICA GERAL E EXPERIMENTAL I", "5104034": "METODOLOGIA DO ENSINO DE QUÍMICA I", "5104041": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "5104059": "QUÍMICA INORGÂNICA DESCRITIVA", "5104071": "QUÍMICA ORGÂNICA II", "5101060": "FÍSICA II", "5104055": "METODOLOGIA DO ENSINO DE QUÍMICA II", "5104070": "QUÍMICA INORGÂNICA DE COORDENAÇÃO", "5104073": "QUÍMICA ANALÍTICA I", "5104097": "QUÍMICA ORGÂNICA EXPERIMENTAL", "5104125": "QUÍMICA AMBIENTAL", "5101050": "ESTATÍSTICA DESCRITIVA", "5101052": "AVALIAÇÃO E APRENDIZAGEM", "5104074": "FÍSICO-QUÍMICA I", "5104096": "QUÍMICA INORGÂNICA EXPERIMENTAL", "5104098": "QUÍMICA ANALÍTICA II", "5104099": "FÍSICO-QUÍMICA II", "5104120": "INSTRUMENTAÇÃO NO ENSINO DE QUÍMICA", "5104122": "ESTÁGIO SUPERV. EM ENSINO DE QUÍMICA I", "5104123": "QUÍMICA ANALÍTICA EXPERIMENTAL", "5101148": "LINGUA BRASILEIRA DE SINAIS", "5104038": "BIOQUÍMICA GERAL", "5104121": "CINÉTICA QUÍMICA", "5104124": "FÍSICO-QUÍMICA EXPERIMENTAL", "5104149": "ESTÁGIO SUPERV. EM ENSINO DE QUÍMICA II", "5104170": "ESTÁGIO SUPERV. EM ENSINO DE QUÍMICA III", "5104171": "TRABALHO DE CONCLUSAO DE CURSO", "5101006": "LINGUA PORTUGUESA", "5101011": "MATEMÁTICA ELEMENTAR I", "5104084": "ECOLOGIA GERAL", "5104117": "ANÁLISE TÉRMICA", "5104118": "ESPECTROSCOPIA DE COMPOSTOS ORGANICOS", "5104153": "QUÍMICA DE ALIMENTOS", "5104155": "QUÍMICA ANALÍTICA INSTRUMENTAL", "5104177": "QUÍMICA DO PETRÓLEO", "5104178": "ENERGIA DE BIOMASSA", "5104188": "TEQ (QUÍMICA FORENSE)", "5104154": "MINERALOGIA", "5104179": "GERENCIAMENTO DE RESIDUOS", "5104186": "PROFISSAO DOCENTE", "5104200": "POLIMEROS", "5104205": "BIOLOGIA GERAL", "5104207": "POLÍTICA E EDUCAÇÃO", "5104210": "INTRODUÇÃO À QUÍMICA QUÂNTICA", "5104211": "ENSINO INCLUSO", "5104212": "CURRICULO EDUCACIONAL", "5104213": "ETICA E DIVERSIDADE", "5104218": "TEQ(EDUCACAO AMBIENTAL)", "5104221": "TEQ(INTROD À FILOSOFIA E À SOC DA EDUC)", "5104223": "TEQ(METODOLOGIA CIENTÍFICA)", "5104232": "TECB(TÓPICOS EM BIOQUÍMICA CELULAR)", "5104236": "TEQ(FUNDAMENTOS DE QUÍMICA MEDICINAL)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5101012", "nome": "ÁLGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5101033", "nome": "LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104007", "nome": "QUÍMICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104008", "nome": "INTRODUÇÃO À PRÁTICA EM ENS. DE QUÍMICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104009", "nome": "PRINCIPIOS DE SEGURANCA EM LABORATÓRIOS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104010", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101021", "nome": "INFORMÁTICA APLICADA AO ENSINO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101082", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104016", "nome": "PSICOLOGIA E EDUCAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104031", "nome": "QUÍMICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104007"]}, {"nivel": "2º Nível", "codigo": "5104089", "nome": "HISTÓRIA DA QUÍMICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5101048", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101082"]}, {"nivel": "3º Nível", "codigo": "5101054", "nome": "PLANEJAMENTO EM EDUCAÇÃO", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104016"]}, {"nivel": "3º Nível", "codigo": "5104015", "nome": "INGLES INSTRUMENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5104032", "nome": "PESQUISA NO ENSINO DE QUÍMICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104010"]}, {"nivel": "3º Nível", "codigo": "5104056", "nome": "QUÍMICA ORGÂNICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104007"]}, {"nivel": "3º Nível", "codigo": "5104057", "nome": "QUÍMICA EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104031", "5104009"]}, {"nivel": "4º Nível", "codigo": "5101058", "nome": "FÍSICA GERAL E EXPERIMENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101082"]}, {"nivel": "4º Nível", "codigo": "5104034", "nome": "METODOLOGIA DO ENSINO DE QUÍMICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "5104041", "nome": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "5104059", "nome": "QUÍMICA INORGÂNICA DESCRITIVA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104031"]}, {"nivel": "4º Nível", "codigo": "5104071", "nome": "QUÍMICA ORGÂNICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104056"]}, {"nivel": "5º Nível", "codigo": "5101060", "nome": "FÍSICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101058"]}, {"nivel": "5º Nível", "codigo": "5104055", "nome": "METODOLOGIA DO ENSINO DE QUÍMICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104070", "nome": "QUÍMICA INORGÂNICA DE COORDENAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104031"]}, {"nivel": "5º Nível", "codigo": "5104073", "nome": "QUÍMICA ANALÍTICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104031"]}, {"nivel": "5º Nível", "codigo": "5104097", "nome": "QUÍMICA ORGÂNICA EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104071", "5104009"]}, {"nivel": "5º Nível", "codigo": "5104125", "nome": "QUÍMICA AMBIENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "5101050", "nome": "ESTATÍSTICA DESCRITIVA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "5101052", "nome": "AVALIAÇÃO E APRENDIZAGEM", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104016"]}, {"nivel": "6º Nível", "codigo": "5104074", "nome": "FÍSICO-QUÍMICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104031"]}, {"nivel": "6º Nível", "codigo": "5104096", "nome": "QUÍMICA INORGÂNICA EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104070", "5104009"]}, {"nivel": "6º Nível", "codigo": "5104098", "nome": "QUÍMICA ANALÍTICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104073"]}, {"nivel": "7º Nível", "codigo": "5104099", "nome": "FÍSICO-QUÍMICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104074"]}, {"nivel": "7º Nível", "codigo": "5104120", "nome": "INSTRUMENTAÇÃO NO ENSINO DE QUÍMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "5104122", "nome": "ESTÁGIO SUPERV. EM ENSINO DE QUÍMICA I", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104034", "5104055"]}, {"nivel": "7º Nível", "codigo": "5104123", "nome": "QUÍMICA ANALÍTICA EXPERIMENTAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104098", "5104009"]}, {"nivel": "8º Nível", "codigo": "5101148", "nome": "LINGUA BRASILEIRA DE SINAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "5104038", "nome": "BIOQUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104071"]}, {"nivel": "8º Nível", "codigo": "5104121", "nome": "CINÉTICA QUÍMICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104031"]}, {"nivel": "8º Nível", "codigo": "5104124", "nome": "FÍSICO-QUÍMICA EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104099", "5104009"]}, {"nivel": "8º Nível", "codigo": "5104149", "nome": "ESTÁGIO SUPERV. EM ENSINO DE QUÍMICA II", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104122"]}, {"nivel": "9º Nível", "codigo": "5104163", "nome": "ATIV. ACADEMICO-CIENTIFICO-CULTURAIS", "ch": "210\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "9º Nível", "codigo": "5104170", "nome": "ESTÁGIO SUPERV. EM ENSINO DE QUÍMICA III", "ch": "195\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104149"]}, {"nivel": "9º Nível", "codigo": "5104171", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}];
+  const codigoToNome = {"5101012": "ÁLGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "5101033": "LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "5104007": "QUÍMICA GERAL I", "5104008": "INTRODUÇÃO À PRÁTICA EM ENS. DE QUÍMICA", "5104009": "PRINCIPIOS DE SEGURANCA EM LABORATÓRIOS", "5104010": "METODOLOGIA CIENTÍFICA", "5101021": "INFORMÁTICA APLICADA AO ENSINO", "5101082": "CALCULO DIFERENCIAL E INTEGRAL I", "5104016": "PSICOLOGIA E EDUCAÇÃO", "5104031": "QUÍMICA GERAL II", "5104089": "HISTÓRIA DA QUÍMICA", "5101048": "CALCULO DIFERENCIAL E INTEGRAL II", "5101054": "PLANEJAMENTO EM EDUCAÇÃO", "5104015": "INGLES INSTRUMENTAL", "5104032": "PESQUISA NO ENSINO DE QUÍMICA", "5104056": "QUÍMICA ORGÂNICA I", "5104057": "QUÍMICA EXPERIMENTAL", "5101058": "FÍSICA GERAL E EXPERIMENTAL I", "5104034": "METODOLOGIA DO ENSINO DE QUÍMICA I", "5104041": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "5104059": "QUÍMICA INORGÂNICA DESCRITIVA", "5104071": "QUÍMICA ORGÂNICA II", "5101060": "FÍSICA II", "5104055": "METODOLOGIA DO ENSINO DE QUÍMICA II", "5104070": "QUÍMICA INORGÂNICA DE COORDENAÇÃO", "5104073": "QUÍMICA ANALÍTICA I", "5104097": "QUÍMICA ORGÂNICA EXPERIMENTAL", "5104125": "QUÍMICA AMBIENTAL", "5101050": "ESTATÍSTICA DESCRITIVA", "5101052": "AVALIAÇÃO E APRENDIZAGEM", "5104074": "FÍSICO-QUÍMICA I", "5104096": "QUÍMICA INORGÂNICA EXPERIMENTAL", "5104098": "QUÍMICA ANALÍTICA II", "5104099": "FÍSICO-QUÍMICA II", "5104120": "INSTRUMENTAÇÃO NO ENSINO DE QUÍMICA", "5104122": "ESTÁGIO SUPERV. EM ENSINO DE QUÍMICA I", "5104123": "QUÍMICA ANALÍTICA EXPERIMENTAL", "5101148": "LINGUA BRASILEIRA DE SINAIS", "5104038": "BIOQUÍMICA GERAL", "5104121": "CINÉTICA QUÍMICA", "5104124": "FÍSICO-QUÍMICA EXPERIMENTAL", "5104149": "ESTÁGIO SUPERV. EM ENSINO DE QUÍMICA II", "5104163": "ATIV. ACADEMICO-CIENTIFICO-CULTURAIS", "5104170": "ESTÁGIO SUPERV. EM ENSINO DE QUÍMICA III", "5104171": "TRABALHO DE CONCLUSAO DE CURSO", "5101006": "LINGUA PORTUGUESA", "5101011": "MATEMÁTICA ELEMENTAR I", "5104084": "ECOLOGIA GERAL", "5104117": "ANÁLISE TÉRMICA", "5104118": "ESPECTROSCOPIA DE COMPOSTOS ORGANICOS", "5104153": "QUÍMICA DE ALIMENTOS", "5104155": "QUÍMICA ANALÍTICA INSTRUMENTAL", "5104177": "QUÍMICA DO PETRÓLEO", "5104178": "ENERGIA DE BIOMASSA", "5104188": "TEQ (QUÍMICA FORENSE)", "5104154": "MINERALOGIA", "5104179": "GERENCIAMENTO DE RESIDUOS", "5104186": "PROFISSAO DOCENTE", "5104200": "POLIMEROS", "5104205": "BIOLOGIA GERAL", "5104207": "POLÍTICA E EDUCAÇÃO", "5104210": "INTRODUÇÃO À QUÍMICA QUÂNTICA", "5104211": "ENSINO INCLUSO", "5104212": "CURRICULO EDUCACIONAL", "5104213": "ETICA E DIVERSIDADE", "5104218": "TEQ(EDUCACAO AMBIENTAL)", "5104221": "TEQ(INTROD À FILOSOFIA E À SOC DA EDUC)", "5104223": "TEQ(METODOLOGIA CIENTÍFICA)", "5104232": "TECB(TÓPICOS EM BIOQUÍMICA CELULAR)", "5104236": "TEQ(FUNDAMENTOS DE QUÍMICA MEDICINAL)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -754,7 +757,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

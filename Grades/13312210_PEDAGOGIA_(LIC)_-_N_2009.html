@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,256 +404,256 @@
           <tr>
               <td>1304257</td>
               <td>A EDUCAÇÃO DA PESSOA SURDA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304258</td>
               <td>LIBRAS E PRAT PED DA EDUC DE SURDOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304259</td>
               <td>ENSINO BILINGUE E EDUC DE SURDOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304260</td>
               <td>TEMAS CONTEMPORANEOS EM EDUC DE SURDOS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304261</td>
-              <td>LINGUAGEM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>LINGUAGEM, CULTURA E DIVERSIDADE</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304262</td>
               <td>SOCIOLINGUISTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304263</td>
               <td>MULTIPLAS LINGUAGENS E PRAT PEDAGOGICAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304264</td>
               <td>PRÁTICAS DE LETRAMENTO E FORM DOCENTE</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304265</td>
               <td>GESTAO EDUCACIONAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304266</td>
               <td>POL. DE GESTÃO E FINANC. DA EDUCAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304267</td>
               <td>POLITICAS CURRICULARES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304268</td>
               <td>REL DE SABER-PODER SIS ENS E NAS ESCOLAS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304269</td>
-              <td>EDUCAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>EDUCAÇÃO, IDENTIDADE E CULTURA DO CAMPO</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304270</td>
               <td>MOV. SOCIAIS E EDUCAÇÃO BÁSICA NO CAMPO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304271</td>
               <td>METODOLOGIA DE ENSINO NO CAMPO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304272</td>
               <td>EDUCAÇÃO E DESENVOLVIMENTO SUSTENTÁVEL</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304273</td>
               <td>ALFAB. E EDUCAÇÃO DE JOVENS E ADULTOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304274</td>
               <td>PRAT ED E CONST CURR NA EDUC JOV E ADULT</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304275</td>
               <td>EDUCAÇÃO POPULAR E MOVIMENTOS SOCIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304276</td>
               <td>EXP DE ENS PESQ E EXT EDUC DE JOV E ADUL</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304277</td>
               <td>MEDIACAO PEDAGOGICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304278</td>
               <td>PROCESSOS PSICOSSOCIAIS DE EXCLUSAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304279</td>
               <td>PSICANÁLISE E EDUCAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304280</td>
               <td>PSICOLOGIA SOCIO-CULTURAL</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304281</td>
               <td>LINGUAGEM EM CONTEXTO DIGITAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304282</td>
               <td>TECNOLOGIAS EDUC E PROC DE APRENDIZAGEM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304283</td>
               <td>MÍDIAS IMPRESSAS NA EDUCAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304284</td>
               <td>FUNDAMENTOS HIST E POLIT DAS TECN EDUCAC</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304286</td>
               <td>EDUCAÇÃO MATEMÁTICA DE JOVENS E ADULTOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304288</td>
               <td>A MATEMÁTICA NA EDUCAÇÃO DO CAMPO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304285</td>
               <td>ENS. DE MATEMÁTICA NA EDUCAÇÃO ESPECIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304287</td>
               <td>INSTRUMENTOS TECN. NO ENS. DE MATEMÁTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -697,8 +700,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1304157", "nome": "INTRODUÇÃO À SOCIOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1304209", "nome": "INTRODUÇÃO À FILOSOFIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1304211", "nome": "FUNDAMENTOS ECONÔMICOS DA EDUCAÇÃO", "ch": "45h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1304212", "nome": "FUNDAMENTOS HISTÓRICOS DA EDUCAÇÃO I", "ch": "45h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1304213", "nome": "FUNDAMENTOS FILOSÓFICOS DA EDUCAÇÃO", "ch": "60h", "preReqs": ["1304209", "1304105"]}, {"nivel": "2º Nível", "codigo": "1304214", "nome": "FUNDAMENTOS SOCIOLOGICOS DA EDUCAÇÃO", "ch": "60h", "preReqs": ["1304157"]}, {"nivel": "3º Nível", "codigo": "1304004", "nome": "DIDATICA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1304210", "nome": "INTRODUÇÃO À PSICOLOGIA DA EDUCAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1304216", "nome": "FUNDAMENTOS POLÍTICOS DA EDUCAÇÃO", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1304217", "nome": "FUNDAMENTOS HISTÓRICOS DA EDUCAÇÃO II", "ch": "60h", "preReqs": ["1304212", "1304006"]}, {"nivel": "3º Nível", "codigo": "1304231", "nome": "FUNDAMENTOS LINGUÍSTICOS", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1304215", "nome": "FUNDAMENTOS PSICOLÓGICOS DA EDUCAÇÃO I", "ch": "60h", "preReqs": ["1304210", "1304081"]}, {"nivel": "4º Nível", "codigo": "1304221", "nome": "MATEMÁTICA ELEMENTAR", "ch": "45h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1304232", "nome": "AQUISIÇÃO E DESENVOLVIMENTO DA LINGUAGEM", "ch": "60h", "preReqs": ["1304231", "1307024", "1304034"]}, {"nivel": "5º Nível", "codigo": "1304222", "nome": "FUNDAMENTOS PSICOLÓGICOS DA EDUCAÇÃO II", "ch": "60h", "preReqs": ["1304215", "1304073"]}, {"nivel": "5º Nível", "codigo": "1304223", "nome": "MATEMÁTICA I E. INF. E AN. IN. E. FUND.", "ch": "60h", "preReqs": ["1304221", "1304035"]}, {"nivel": "5º Nível", "codigo": "1304233", "nome": "PROCESSOS DE ALFABETIZACAO E LETRAMENTO", "ch": "60h", "preReqs": ["1304232", "1307090", "1304142"]}, {"nivel": "5º Nível", "codigo": "1304236", "nome": "ED. FÍSICA ED. INF. ANOS INI. ENS. FUND.", "ch": "30h", "preReqs": ["1304219", "1304038"]}, {"nivel": "6º Nível", "codigo": "1304224", "nome": "MATEMÁTICA II E. INF. E ANOS IN E. FUND.", "ch": "60h", "preReqs": ["1304223", "1304077"]}, {"nivel": "6º Nível", "codigo": "1304225", "nome": "CIÊNCIAS I E. INF. E ANOS IN. E. FUND.", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1304227", "nome": "HISTÓRIA I ED. INF. E AN. IN. EN. FUND.", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1304234", "nome": "LINGUA MAT I EDU INF ANOS INIC ENS FUND", "ch": "60h", "preReqs": ["1304233", "1304039"]}, {"nivel": "6º Nível", "codigo": "1304240", "nome": "ESTAGIO SUPERVISIONADO I", "ch": "60h", "preReqs": ["1304249", "1304087", "1304253"]}, {"nivel": "6º Nível", "codigo": "1304244", "nome": "SEMINARIO EM EDUCAÇÃO I", "ch": "45h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1304226", "nome": "CIÊNCIAS II E. INF. E ANOS IN. E. FUND.", "ch": "60h", "preReqs": ["1304225", "1304036"]}, {"nivel": "7º Nível", "codigo": "1304228", "nome": "GEOGRAFIA I ED INF E ANOS INIC ENS FUND", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1304229", "nome": "HISTÓRIA II ED. INF. E AN. IN. EN. FUND.", "ch": "60h", "preReqs": ["1304227", "1304037"]}, {"nivel": "7º Nível", "codigo": "1304235", "nome": "LINGUA MAT II EDU INF ANOS INIC ENS FUND", "ch": "60h", "preReqs": ["1304234", "1304078"]}, {"nivel": "7º Nível", "codigo": "1304238", "nome": "FUNDAMENTOS DA EDUCAÇÃO INFANTIL", "ch": "60h", "preReqs": ["1304217", "1304069", "1304213", "1304001"]}, {"nivel": "8º Nível", "codigo": "1304230", "nome": "GEOGRAFIA II ED INF E ANOS INIC ENS FUND", "ch": "60h", "preReqs": ["1304228", "1304078"]}, {"nivel": "8º Nível", "codigo": "1304245", "nome": "SEMINARIO EM EDUCAÇÃO II", "ch": "30h", "preReqs": ["1304244"]}, {"nivel": "9º Nível", "codigo": "1304237", "nome": "ARTE NA EDUC INF E ANOS INIC DO ENS FUND", "ch": "60h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "1304239", "nome": "EDUCAÇÃO ESPECIAL", "ch": "60h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "1304241", "nome": "ESTAGIO SUPERVISIONADO II", "ch": "150h", "preReqs": ["1304240", "1304254"]}, {"nivel": "9º Nível", "codigo": "1304246", "nome": "SEMINARIO EM EDUCAÇÃO III", "ch": "30h", "preReqs": ["1304245"]}, {"nivel": "10º Nível", "codigo": "1304242", "nome": "ESTAGIO SUPERVISIONADO III", "ch": "150h", "preReqs": ["1304241"]}, {"nivel": "10º Nível", "codigo": "1304243", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "0h", "preReqs": []}, {"nivel": "10º Nível", "codigo": "1304247", "nome": "SEMINARIO EM EDUCAÇÃO IV", "ch": "30h", "preReqs": ["1304246"]}];
-  const codigoToNome = {"1304157": "INTRODUÇÃO À SOCIOLOGIA", "1304209": "INTRODUÇÃO À FILOSOFIA", "1304211": "FUNDAMENTOS ECONÔMICOS DA EDUCAÇÃO", "1304212": "FUNDAMENTOS HISTÓRICOS DA EDUCAÇÃO I", "1304213": "FUNDAMENTOS FILOSÓFICOS DA EDUCAÇÃO", "1304214": "FUNDAMENTOS SOCIOLOGICOS DA EDUCAÇÃO", "1304004": "DIDATICA", "1304210": "INTRODUÇÃO À PSICOLOGIA DA EDUCAÇÃO", "1304216": "FUNDAMENTOS POLÍTICOS DA EDUCAÇÃO", "1304217": "FUNDAMENTOS HISTÓRICOS DA EDUCAÇÃO II", "1304231": "FUNDAMENTOS LINGUÍSTICOS", "1304215": "FUNDAMENTOS PSICOLÓGICOS DA EDUCAÇÃO I", "1304221": "MATEMÁTICA ELEMENTAR", "1304232": "AQUISIÇÃO E DESENVOLVIMENTO DA LINGUAGEM", "1304222": "FUNDAMENTOS PSICOLÓGICOS DA EDUCAÇÃO II", "1304223": "MATEMÁTICA I E. INF. E AN. IN. E. FUND.", "1304233": "PROCESSOS DE ALFABETIZACAO E LETRAMENTO", "1304236": "ED. FÍSICA ED. INF. ANOS INI. ENS. FUND.", "1304224": "MATEMÁTICA II E. INF. E ANOS IN E. FUND.", "1304225": "CIÊNCIAS I E. INF. E ANOS IN. E. FUND.", "1304227": "HISTÓRIA I ED. INF. E AN. IN. EN. FUND.", "1304234": "LINGUA MAT I EDU INF ANOS INIC ENS FUND", "1304240": "ESTAGIO SUPERVISIONADO I", "1304244": "SEMINARIO EM EDUCAÇÃO I", "1304226": "CIÊNCIAS II E. INF. E ANOS IN. E. FUND.", "1304228": "GEOGRAFIA I ED INF E ANOS INIC ENS FUND", "1304229": "HISTÓRIA II ED. INF. E AN. IN. EN. FUND.", "1304235": "LINGUA MAT II EDU INF ANOS INIC ENS FUND", "1304238": "FUNDAMENTOS DA EDUCAÇÃO INFANTIL", "1304230": "GEOGRAFIA II ED INF E ANOS INIC ENS FUND", "1304245": "SEMINARIO EM EDUCAÇÃO II", "1304237": "ARTE NA EDUC INF E ANOS INIC DO ENS FUND", "1304239": "EDUCAÇÃO ESPECIAL", "1304241": "ESTAGIO SUPERVISIONADO II", "1304246": "SEMINARIO EM EDUCAÇÃO III", "1304242": "ESTAGIO SUPERVISIONADO III", "1304243": "TRABALHO DE CONCLUSAO DE CURSO", "1304247": "SEMINARIO EM EDUCAÇÃO IV", "1304257": "A EDUCAÇÃO DA PESSOA SURDA", "1304258": "LIBRAS E PRAT PED DA EDUC DE SURDOS", "1304259": "ENSINO BILINGUE E EDUC DE SURDOS", "1304260": "TEMAS CONTEMPORANEOS EM EDUC DE SURDOS", "1304261": "LINGUAGEM", "1304262": "SOCIOLINGUISTICA", "1304263": "MULTIPLAS LINGUAGENS E PRAT PEDAGOGICAS", "1304264": "PRÁTICAS DE LETRAMENTO E FORM DOCENTE", "1304265": "GESTAO EDUCACIONAL", "1304266": "POL. DE GESTÃO E FINANC. DA EDUCAÇÃO", "1304267": "POLITICAS CURRICULARES", "1304268": "REL DE SABER-PODER SIS ENS E NAS ESCOLAS", "1304269": "EDUCAÇÃO", "1304270": "MOV. SOCIAIS E EDUCAÇÃO BÁSICA NO CAMPO", "1304271": "METODOLOGIA DE ENSINO NO CAMPO", "1304272": "EDUCAÇÃO E DESENVOLVIMENTO SUSTENTÁVEL", "1304273": "ALFAB. E EDUCAÇÃO DE JOVENS E ADULTOS", "1304274": "PRAT ED E CONST CURR NA EDUC JOV E ADULT", "1304275": "EDUCAÇÃO POPULAR E MOVIMENTOS SOCIAIS", "1304276": "EXP DE ENS PESQ E EXT EDUC DE JOV E ADUL", "1304277": "MEDIACAO PEDAGOGICA", "1304278": "PROCESSOS PSICOSSOCIAIS DE EXCLUSAO", "1304279": "PSICANÁLISE E EDUCAÇÃO", "1304280": "PSICOLOGIA SOCIO-CULTURAL", "1304281": "LINGUAGEM EM CONTEXTO DIGITAL", "1304282": "TECNOLOGIAS EDUC E PROC DE APRENDIZAGEM", "1304283": "MÍDIAS IMPRESSAS NA EDUCAÇÃO", "1304284": "FUNDAMENTOS HIST E POLIT DAS TECN EDUCAC", "1304286": "EDUCAÇÃO MATEMÁTICA DE JOVENS E ADULTOS", "1304288": "A MATEMÁTICA NA EDUCAÇÃO DO CAMPO", "1304285": "ENS. DE MATEMÁTICA NA EDUCAÇÃO ESPECIAL", "1304287": "INSTRUMENTOS TECN. NO ENS. DE MATEMÁTICA"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1304220", "nome": "LEITURA E PRODUCAO TEXTUAL", "ch": "45\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305283", "nome": "CULTURA E EDUCAÇÃO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1304157", "nome": "INTRODUÇÃO À SOCIOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1304209", "nome": "INTRODUÇÃO À FILOSOFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1304211", "nome": "FUNDAMENTOS ECONÔMICOS DA EDUCAÇÃO", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1304218", "nome": "ANÁLISE E PRODUÇÃO DE TEXTOS ACADÊMICOS", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1304220", "1304030"]}, {"nivel": "2º Nível", "codigo": "1304219", "nome": "CORPO, BRINQUEDO E EDUCAÇÃO", "ch": "45\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1304212", "nome": "FUNDAMENTOS HISTÓRICOS DA EDUCAÇÃO I", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1304213", "nome": "FUNDAMENTOS FILOSÓFICOS DA EDUCAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304209", "1304105"]}, {"nivel": "2º Nível", "codigo": "1304214", "nome": "FUNDAMENTOS SOCIOLOGICOS DA EDUCAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304157"]}, {"nivel": "3º Nível", "codigo": "1304004", "nome": "DIDATICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1304210", "nome": "INTRODUÇÃO À PSICOLOGIA DA EDUCAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1304216", "nome": "FUNDAMENTOS POLÍTICOS DA EDUCAÇÃO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1304217", "nome": "FUNDAMENTOS HISTÓRICOS DA EDUCAÇÃO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304212", "1304006"]}, {"nivel": "3º Nível", "codigo": "1304231", "nome": "FUNDAMENTOS LINGUÍSTICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1304249", "nome": "POLITICA E GESTAO EDUCACIONAL", "ch": "45\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1304216"]}, {"nivel": "4º Nível", "codigo": "1304251", "nome": "INTRODUÇÃO À PESQUISA EDUCACIONAL", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1304218", "1304033"]}, {"nivel": "4º Nível", "codigo": "1304215", "nome": "FUNDAMENTOS PSICOLÓGICOS DA EDUCAÇÃO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304210", "1304081"]}, {"nivel": "4º Nível", "codigo": "1304221", "nome": "MATEMÁTICA ELEMENTAR", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1304232", "nome": "AQUISIÇÃO E DESENVOLVIMENTO DA LINGUAGEM", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304231", "1307024", "1304034"]}, {"nivel": "5º Nível", "codigo": "1304252", "nome": "AVALIAÇÃO DOS PROCESSOS EDUCACIONAIS", "ch": "45\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1304004"]}, {"nivel": "5º Nível", "codigo": "1304253", "nome": "PESQUISA EDUCACIONAL I", "ch": "45\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1304251"]}, {"nivel": "5º Nível", "codigo": "1304222", "nome": "FUNDAMENTOS PSICOLÓGICOS DA EDUCAÇÃO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304215", "1304073"]}, {"nivel": "5º Nível", "codigo": "1304223", "nome": "MATEMÁTICA I E. INF. E AN. IN. E. FUND.", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304221", "1304035"]}, {"nivel": "5º Nível", "codigo": "1304233", "nome": "PROCESSOS DE ALFABETIZACAO E LETRAMENTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304232", "1307090", "1304142"]}, {"nivel": "5º Nível", "codigo": "1304236", "nome": "ED. FÍSICA ED. INF. ANOS INI. ENS. FUND.", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304219", "1304038"]}, {"nivel": "6º Nível", "codigo": "1304224", "nome": "MATEMÁTICA II E. INF. E ANOS IN E. FUND.", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304223", "1304077"]}, {"nivel": "6º Nível", "codigo": "1304225", "nome": "CIÊNCIAS I E. INF. E ANOS IN. E. FUND.", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1304227", "nome": "HISTÓRIA I ED. INF. E AN. IN. EN. FUND.", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1304234", "nome": "LINGUA MAT I EDU INF ANOS INIC ENS FUND", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304233", "1304039"]}, {"nivel": "6º Nível", "codigo": "1304240", "nome": "ESTAGIO SUPERVISIONADO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304249", "1304087", "1304253"]}, {"nivel": "6º Nível", "codigo": "1304244", "nome": "SEMINARIO EM EDUCAÇÃO I", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1304226", "nome": "CIÊNCIAS II E. INF. E ANOS IN. E. FUND.", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304225", "1304036"]}, {"nivel": "7º Nível", "codigo": "1304228", "nome": "GEOGRAFIA I ED INF E ANOS INIC ENS FUND", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1304229", "nome": "HISTÓRIA II ED. INF. E AN. IN. EN. FUND.", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304227", "1304037"]}, {"nivel": "7º Nível", "codigo": "1304235", "nome": "LINGUA MAT II EDU INF ANOS INIC ENS FUND", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304234", "1304078"]}, {"nivel": "7º Nível", "codigo": "1304238", "nome": "FUNDAMENTOS DA EDUCAÇÃO INFANTIL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304217", "1304069", "1304213", "1304001"]}, {"nivel": "8º Nível", "codigo": "1304250", "nome": "EDUCAÇÃO DE JOVENS E ADULTOS", "ch": "45\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1304254", "nome": "PESQUISA EDUCACIONAL II", "ch": "45\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1304240"]}, {"nivel": "8º Nível", "codigo": "1304291", "nome": "LITERATURA INFANTIL", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1307182", "nome": "LITERATURA INFANTIL", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1304230", "nome": "GEOGRAFIA II ED INF E ANOS INIC ENS FUND", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304228", "1304078"]}, {"nivel": "8º Nível", "codigo": "1304245", "nome": "SEMINARIO EM EDUCAÇÃO II", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304244"]}, {"nivel": "9º Nível", "codigo": "1304248", "nome": "TEORIAS DO CURRICULO", "ch": "45\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1304255", "nome": "ENSINO DE LINGUA PORT NA EDUC DE SURDOS", "ch": "45\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1304234", "1304111", "1304207", "1307332"]}, {"nivel": "9º Nível", "codigo": "1304237", "nome": "ARTE NA EDUC INF E ANOS INIC DO ENS FUND", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1304239", "nome": "EDUCAÇÃO ESPECIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1304241", "nome": "ESTAGIO SUPERVISIONADO II", "ch": "150\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304240", "1304254"]}, {"nivel": "9º Nível", "codigo": "1304246", "nome": "SEMINARIO EM EDUCAÇÃO III", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304245"]}, {"nivel": "10º Nível", "codigo": "1304242", "nome": "ESTAGIO SUPERVISIONADO III", "ch": "150\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304241"]}, {"nivel": "10º Nível", "codigo": "1304243", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "0\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1304247", "nome": "SEMINARIO EM EDUCAÇÃO IV", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304246"]}];
+  const codigoToNome = {"1304220": "LEITURA E PRODUCAO TEXTUAL", "1305283": "CULTURA E EDUCAÇÃO", "1304157": "INTRODUÇÃO À SOCIOLOGIA", "1304209": "INTRODUÇÃO À FILOSOFIA", "1304211": "FUNDAMENTOS ECONÔMICOS DA EDUCAÇÃO", "1304218": "ANÁLISE E PRODUÇÃO DE TEXTOS ACADÊMICOS", "1304219": "CORPO, BRINQUEDO E EDUCAÇÃO", "1304212": "FUNDAMENTOS HISTÓRICOS DA EDUCAÇÃO I", "1304213": "FUNDAMENTOS FILOSÓFICOS DA EDUCAÇÃO", "1304214": "FUNDAMENTOS SOCIOLOGICOS DA EDUCAÇÃO", "1304004": "DIDATICA", "1304210": "INTRODUÇÃO À PSICOLOGIA DA EDUCAÇÃO", "1304216": "FUNDAMENTOS POLÍTICOS DA EDUCAÇÃO", "1304217": "FUNDAMENTOS HISTÓRICOS DA EDUCAÇÃO II", "1304231": "FUNDAMENTOS LINGUÍSTICOS", "1304249": "POLITICA E GESTAO EDUCACIONAL", "1304251": "INTRODUÇÃO À PESQUISA EDUCACIONAL", "1304215": "FUNDAMENTOS PSICOLÓGICOS DA EDUCAÇÃO I", "1304221": "MATEMÁTICA ELEMENTAR", "1304232": "AQUISIÇÃO E DESENVOLVIMENTO DA LINGUAGEM", "1304252": "AVALIAÇÃO DOS PROCESSOS EDUCACIONAIS", "1304253": "PESQUISA EDUCACIONAL I", "1304222": "FUNDAMENTOS PSICOLÓGICOS DA EDUCAÇÃO II", "1304223": "MATEMÁTICA I E. INF. E AN. IN. E. FUND.", "1304233": "PROCESSOS DE ALFABETIZACAO E LETRAMENTO", "1304236": "ED. FÍSICA ED. INF. ANOS INI. ENS. FUND.", "1304224": "MATEMÁTICA II E. INF. E ANOS IN E. FUND.", "1304225": "CIÊNCIAS I E. INF. E ANOS IN. E. FUND.", "1304227": "HISTÓRIA I ED. INF. E AN. IN. EN. FUND.", "1304234": "LINGUA MAT I EDU INF ANOS INIC ENS FUND", "1304240": "ESTAGIO SUPERVISIONADO I", "1304244": "SEMINARIO EM EDUCAÇÃO I", "1304226": "CIÊNCIAS II E. INF. E ANOS IN. E. FUND.", "1304228": "GEOGRAFIA I ED INF E ANOS INIC ENS FUND", "1304229": "HISTÓRIA II ED. INF. E AN. IN. EN. FUND.", "1304235": "LINGUA MAT II EDU INF ANOS INIC ENS FUND", "1304238": "FUNDAMENTOS DA EDUCAÇÃO INFANTIL", "1304250": "EDUCAÇÃO DE JOVENS E ADULTOS", "1304254": "PESQUISA EDUCACIONAL II", "1304291": "LITERATURA INFANTIL", "1307182": "LITERATURA INFANTIL", "1304230": "GEOGRAFIA II ED INF E ANOS INIC ENS FUND", "1304245": "SEMINARIO EM EDUCAÇÃO II", "1304248": "TEORIAS DO CURRICULO", "1304255": "ENSINO DE LINGUA PORT NA EDUC DE SURDOS", "1304237": "ARTE NA EDUC INF E ANOS INIC DO ENS FUND", "1304239": "EDUCAÇÃO ESPECIAL", "1304241": "ESTAGIO SUPERVISIONADO II", "1304246": "SEMINARIO EM EDUCAÇÃO III", "1304242": "ESTAGIO SUPERVISIONADO III", "1304243": "TRABALHO DE CONCLUSAO DE CURSO", "1304247": "SEMINARIO EM EDUCAÇÃO IV", "1304257": "A EDUCAÇÃO DA PESSOA SURDA", "1304258": "LIBRAS E PRAT PED DA EDUC DE SURDOS", "1304259": "ENSINO BILINGUE E EDUC DE SURDOS", "1304260": "TEMAS CONTEMPORANEOS EM EDUC DE SURDOS", "1304261": "LINGUAGEM, CULTURA E DIVERSIDADE", "1304262": "SOCIOLINGUISTICA", "1304263": "MULTIPLAS LINGUAGENS E PRAT PEDAGOGICAS", "1304264": "PRÁTICAS DE LETRAMENTO E FORM DOCENTE", "1304265": "GESTAO EDUCACIONAL", "1304266": "POL. DE GESTÃO E FINANC. DA EDUCAÇÃO", "1304267": "POLITICAS CURRICULARES", "1304268": "REL DE SABER-PODER SIS ENS E NAS ESCOLAS", "1304269": "EDUCAÇÃO, IDENTIDADE E CULTURA DO CAMPO", "1304270": "MOV. SOCIAIS E EDUCAÇÃO BÁSICA NO CAMPO", "1304271": "METODOLOGIA DE ENSINO NO CAMPO", "1304272": "EDUCAÇÃO E DESENVOLVIMENTO SUSTENTÁVEL", "1304273": "ALFAB. E EDUCAÇÃO DE JOVENS E ADULTOS", "1304274": "PRAT ED E CONST CURR NA EDUC JOV E ADULT", "1304275": "EDUCAÇÃO POPULAR E MOVIMENTOS SOCIAIS", "1304276": "EXP DE ENS PESQ E EXT EDUC DE JOV E ADUL", "1304277": "MEDIACAO PEDAGOGICA", "1304278": "PROCESSOS PSICOSSOCIAIS DE EXCLUSAO", "1304279": "PSICANÁLISE E EDUCAÇÃO", "1304280": "PSICOLOGIA SOCIO-CULTURAL", "1304281": "LINGUAGEM EM CONTEXTO DIGITAL", "1304282": "TECNOLOGIAS EDUC E PROC DE APRENDIZAGEM", "1304283": "MÍDIAS IMPRESSAS NA EDUCAÇÃO", "1304284": "FUNDAMENTOS HIST E POLIT DAS TECN EDUCAC", "1304286": "EDUCAÇÃO MATEMÁTICA DE JOVENS E ADULTOS", "1304288": "A MATEMÁTICA NA EDUCAÇÃO DO CAMPO", "1304285": "ENS. DE MATEMÁTICA NA EDUCAÇÃO ESPECIAL", "1304287": "INSTRUMENTOS TECN. NO ENS. DE MATEMÁTICA"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -810,7 +813,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

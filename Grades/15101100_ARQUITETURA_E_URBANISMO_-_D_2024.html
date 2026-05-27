@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,104 +404,104 @@
           <tr>
               <td>1108030</td>
               <td>FÍSICA GERAL I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108081</td>
               <td>FÍSICA GERAL II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1109126</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307150</td>
               <td>INGLÊS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307178</td>
               <td>FRANCES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307179</td>
               <td>ESPANHOL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503038</td>
               <td>CIÊNCIAS DO AMBIENTE</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503123</td>
               <td>GESTAO DO ESPAÇO URBANO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503124</td>
               <td>CAMPINA GRANDE ARQUITETURA E CIDADE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503131</td>
               <td>TOPOGRAFIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503161</td>
               <td>ARQUITETURA DE INTERIORES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503166</td>
               <td>TECNOLOGIAS SOCIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -545,8 +548,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113078", "nome": "DESENHO ARTÍSTICO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305298", "nome": "ESTUDOS SOCIOECONOMICOS", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305588", "nome": "ESTÉTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1503120", "nome": "ESPACO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1503165", "nome": "PESQ CIENT  EM ARQ", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1106124", "nome": "MATERIAIS DE CONSTRUÇÃO I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1113023", "nome": "DESENHO TÉCNICO E ARQUITETÔNICO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1503122", "nome": "FUND DO PLANEJAMENTO E DO DESENHO URBANO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1503158", "nome": "GEOTECNOLOGIAS APLICADAS", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1503245", "nome": "MODELAGEM VIRTUAL EM ARQUITETURA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1503246", "nome": "INTRODUÇÃO AO PROJETO ARQUITETÔNICO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503125", "nome": "CONFORTO AMBIENTAL I", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503126", "nome": "ESTUDOS URBANOS E REGIONAIS I", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503129", "nome": "SISTEMAS ESTRUTURAIS I", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503130", "nome": "TEORIA E HIST. DA ARQ. E DO URB. I", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503247", "nome": "PROJETO DE ARQUITETURA I", "ch": "90h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503248", "nome": "PLANEJAMENTO DA PAISAGEM I", "ch": "30h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503134", "nome": "TEORIA E HIST. DA ARQ. E DO URB. II", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503139", "nome": "SISTEMAS ESTRUTURAIS II", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503249", "nome": "PROJETO DE ARQUITETURA II", "ch": "90h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503250", "nome": "ESTUDOS URBANOS E REGIONAIS II", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503251", "nome": "PLANEJAMENTO DA PAISAGEM II", "ch": "30h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503252", "nome": "CONFORTO AMBIENTAL II", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1503142", "nome": "TEORIA E HIST. DA ARQ. E DO URB. III", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1503173", "nome": "INSTALACOES HIDRAULICAS PREDIAIS", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1503253", "nome": "INTRODUÇÃO À TECNOLOGIA BIM", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1503254", "nome": "PROJETO DE ARQUITETURA III", "ch": "90h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1503255", "nome": "ESTUDOS URBANOS E REGIONAIS III", "ch": "90h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1404404", "nome": "INTRODUÇÃO À ELETROTÉCNICA", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1503150", "nome": "PROJETO DE ARQUITETURA IV", "ch": "90h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1503256", "nome": "TEORIA E HISTÓRIA DA ARQ. E DO URB. IV", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1503257", "nome": "ESTUDOS URBANOS E REGIONAIS IV", "ch": "90h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1503258", "nome": "CONFORTO AMBIENTAL III", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1503175", "nome": "TECNICAS DE EDIFICACOES", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1503259", "nome": "TEORIA E HIST. DA ARQ. E DO URB. V", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1503260", "nome": "PROJETO DE ARQUITETURA V", "ch": "90h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1503261", "nome": "ESTUDOS URBANOS E REGIONAIS V", "ch": "90h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1503262", "nome": "PROJETO DE ARQUITETURA VI", "ch": "90h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1503263", "nome": "PROJETO EXECUTIVO", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1503264", "nome": "ESTUDOS URBANOS E REGIONAIS VI", "ch": "90h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "1503265", "nome": "ASSESORIA EM ARQUITETURA E URBANISMO", "ch": "60h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "1503266", "nome": "TRABALHO INTEGRADO", "ch": "180h", "preReqs": []}, {"nivel": "10º Nível", "codigo": "1503197", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO", "ch": "180h", "preReqs": []}, {"nivel": "10º Nível", "codigo": "1503267", "nome": "TRABALHO DE CONCLUSÃO DE CURSO", "ch": "180h", "preReqs": []}];
-  const codigoToNome = {"1113019": "EXPRESSAO GRAFICA", "1113078": "DESENHO ARTÍSTICO", "1305298": "ESTUDOS SOCIOECONOMICOS", "1305588": "ESTÉTICA", "1503120": "ESPACO", "1503165": "PESQ CIENT  EM ARQ", "1106124": "MATERIAIS DE CONSTRUÇÃO I", "1113023": "DESENHO TÉCNICO E ARQUITETÔNICO", "1503122": "FUND DO PLANEJAMENTO E DO DESENHO URBANO", "1503158": "GEOTECNOLOGIAS APLICADAS", "1503245": "MODELAGEM VIRTUAL EM ARQUITETURA", "1503246": "INTRODUÇÃO AO PROJETO ARQUITETÔNICO", "1503125": "CONFORTO AMBIENTAL I", "1503126": "ESTUDOS URBANOS E REGIONAIS I", "1503129": "SISTEMAS ESTRUTURAIS I", "1503130": "TEORIA E HIST. DA ARQ. E DO URB. I", "1503247": "PROJETO DE ARQUITETURA I", "1503248": "PLANEJAMENTO DA PAISAGEM I", "1503134": "TEORIA E HIST. DA ARQ. E DO URB. II", "1503139": "SISTEMAS ESTRUTURAIS II", "1503249": "PROJETO DE ARQUITETURA II", "1503250": "ESTUDOS URBANOS E REGIONAIS II", "1503251": "PLANEJAMENTO DA PAISAGEM II", "1503252": "CONFORTO AMBIENTAL II", "1503142": "TEORIA E HIST. DA ARQ. E DO URB. III", "1503173": "INSTALACOES HIDRAULICAS PREDIAIS", "1503253": "INTRODUÇÃO À TECNOLOGIA BIM", "1503254": "PROJETO DE ARQUITETURA III", "1503255": "ESTUDOS URBANOS E REGIONAIS III", "1404404": "INTRODUÇÃO À ELETROTÉCNICA", "1503150": "PROJETO DE ARQUITETURA IV", "1503256": "TEORIA E HISTÓRIA DA ARQ. E DO URB. IV", "1503257": "ESTUDOS URBANOS E REGIONAIS IV", "1503258": "CONFORTO AMBIENTAL III", "1503175": "TECNICAS DE EDIFICACOES", "1503259": "TEORIA E HIST. DA ARQ. E DO URB. V", "1503260": "PROJETO DE ARQUITETURA V", "1503261": "ESTUDOS URBANOS E REGIONAIS V", "1503262": "PROJETO DE ARQUITETURA VI", "1503263": "PROJETO EXECUTIVO", "1503264": "ESTUDOS URBANOS E REGIONAIS VI", "1503265": "ASSESORIA EM ARQUITETURA E URBANISMO", "1503266": "TRABALHO INTEGRADO", "1503197": "ESTAGIO CURRICULAR SUPERVISIONADO", "1503267": "TRABALHO DE CONCLUSÃO DE CURSO", "1108030": "FÍSICA GERAL I", "1108081": "FÍSICA GERAL II", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1307150": "INGLÊS", "1307178": "FRANCES", "1307179": "ESPANHOL", "1307332": "LIBRAS", "1503038": "CIÊNCIAS DO AMBIENTE", "1503123": "GESTAO DO ESPAÇO URBANO", "1503124": "CAMPINA GRANDE ARQUITETURA E CIDADE", "1503131": "TOPOGRAFIA", "1503161": "ARQUITETURA DE INTERIORES", "1503166": "TECNOLOGIAS SOCIAIS"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113078", "nome": "DESENHO ARTÍSTICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305298", "nome": "ESTUDOS SOCIOECONOMICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305588", "nome": "ESTÉTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1503120", "nome": "ESPACO, FORMA E PLASTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1503165", "nome": "PESQ CIENT  EM ARQ, URBAN E PAISAGISMO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1106124", "nome": "MATERIAIS DE CONSTRUÇÃO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1113023", "nome": "DESENHO TÉCNICO E ARQUITETÔNICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1503122", "nome": "FUND DO PLANEJAMENTO E DO DESENHO URBANO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1503158", "nome": "GEOTECNOLOGIAS APLICADAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1503245", "nome": "MODELAGEM VIRTUAL EM ARQUITETURA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1503246", "nome": "INTRODUÇÃO AO PROJETO ARQUITETÔNICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503125", "nome": "CONFORTO AMBIENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503126", "nome": "ESTUDOS URBANOS E REGIONAIS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503129", "nome": "SISTEMAS ESTRUTURAIS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503130", "nome": "TEORIA E HIST. DA ARQ. E DO URB. I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503247", "nome": "PROJETO DE ARQUITETURA I", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503248", "nome": "PLANEJAMENTO DA PAISAGEM I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503134", "nome": "TEORIA E HIST. DA ARQ. E DO URB. II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503139", "nome": "SISTEMAS ESTRUTURAIS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503249", "nome": "PROJETO DE ARQUITETURA II", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503250", "nome": "ESTUDOS URBANOS E REGIONAIS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503251", "nome": "PLANEJAMENTO DA PAISAGEM II", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503252", "nome": "CONFORTO AMBIENTAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1503142", "nome": "TEORIA E HIST. DA ARQ. E DO URB. III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1503173", "nome": "INSTALACOES HIDRAULICAS PREDIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1503253", "nome": "INTRODUÇÃO À TECNOLOGIA BIM", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1503254", "nome": "PROJETO DE ARQUITETURA III", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1503255", "nome": "ESTUDOS URBANOS E REGIONAIS III", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1404404", "nome": "INTRODUÇÃO À ELETROTÉCNICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1503150", "nome": "PROJETO DE ARQUITETURA IV", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1503256", "nome": "TEORIA E HISTÓRIA DA ARQ. E DO URB. IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1503257", "nome": "ESTUDOS URBANOS E REGIONAIS IV", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1503258", "nome": "CONFORTO AMBIENTAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1503175", "nome": "TECNICAS DE EDIFICACOES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1503259", "nome": "TEORIA E HIST. DA ARQ. E DO URB. V", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1503260", "nome": "PROJETO DE ARQUITETURA V", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1503261", "nome": "ESTUDOS URBANOS E REGIONAIS V", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1503262", "nome": "PROJETO DE ARQUITETURA VI", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1503263", "nome": "PROJETO EXECUTIVO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1503264", "nome": "ESTUDOS URBANOS E REGIONAIS VI", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1503265", "nome": "ASSESORIA EM ARQUITETURA E URBANISMO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1503266", "nome": "TRABALHO INTEGRADO", "ch": "180\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1503197", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO", "ch": "180\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1503267", "nome": "TRABALHO DE CONCLUSÃO DE CURSO", "ch": "180\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}];
+  const codigoToNome = {"1113019": "EXPRESSAO GRAFICA", "1113078": "DESENHO ARTÍSTICO", "1305298": "ESTUDOS SOCIOECONOMICOS", "1305588": "ESTÉTICA", "1503120": "ESPACO, FORMA E PLASTICA", "1503165": "PESQ CIENT  EM ARQ, URBAN E PAISAGISMO", "1106124": "MATERIAIS DE CONSTRUÇÃO I", "1113023": "DESENHO TÉCNICO E ARQUITETÔNICO", "1503122": "FUND DO PLANEJAMENTO E DO DESENHO URBANO", "1503158": "GEOTECNOLOGIAS APLICADAS", "1503245": "MODELAGEM VIRTUAL EM ARQUITETURA", "1503246": "INTRODUÇÃO AO PROJETO ARQUITETÔNICO", "1503125": "CONFORTO AMBIENTAL I", "1503126": "ESTUDOS URBANOS E REGIONAIS I", "1503129": "SISTEMAS ESTRUTURAIS I", "1503130": "TEORIA E HIST. DA ARQ. E DO URB. I", "1503247": "PROJETO DE ARQUITETURA I", "1503248": "PLANEJAMENTO DA PAISAGEM I", "1503134": "TEORIA E HIST. DA ARQ. E DO URB. II", "1503139": "SISTEMAS ESTRUTURAIS II", "1503249": "PROJETO DE ARQUITETURA II", "1503250": "ESTUDOS URBANOS E REGIONAIS II", "1503251": "PLANEJAMENTO DA PAISAGEM II", "1503252": "CONFORTO AMBIENTAL II", "1503142": "TEORIA E HIST. DA ARQ. E DO URB. III", "1503173": "INSTALACOES HIDRAULICAS PREDIAIS", "1503253": "INTRODUÇÃO À TECNOLOGIA BIM", "1503254": "PROJETO DE ARQUITETURA III", "1503255": "ESTUDOS URBANOS E REGIONAIS III", "1404404": "INTRODUÇÃO À ELETROTÉCNICA", "1503150": "PROJETO DE ARQUITETURA IV", "1503256": "TEORIA E HISTÓRIA DA ARQ. E DO URB. IV", "1503257": "ESTUDOS URBANOS E REGIONAIS IV", "1503258": "CONFORTO AMBIENTAL III", "1503175": "TECNICAS DE EDIFICACOES", "1503259": "TEORIA E HIST. DA ARQ. E DO URB. V", "1503260": "PROJETO DE ARQUITETURA V", "1503261": "ESTUDOS URBANOS E REGIONAIS V", "1503262": "PROJETO DE ARQUITETURA VI", "1503263": "PROJETO EXECUTIVO", "1503264": "ESTUDOS URBANOS E REGIONAIS VI", "1503265": "ASSESORIA EM ARQUITETURA E URBANISMO", "1503266": "TRABALHO INTEGRADO", "1503197": "ESTAGIO CURRICULAR SUPERVISIONADO", "1503267": "TRABALHO DE CONCLUSÃO DE CURSO", "1108030": "FÍSICA GERAL I", "1108081": "FÍSICA GERAL II", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1307150": "INGLÊS", "1307178": "FRANCES", "1307179": "ESPANHOL", "1307332": "LIBRAS", "1503038": "CIÊNCIAS DO AMBIENTE", "1503123": "GESTAO DO ESPAÇO URBANO", "1503124": "CAMPINA GRANDE ARQUITETURA E CIDADE", "1503131": "TOPOGRAFIA", "1503161": "ARQUITETURA DE INTERIORES", "1503166": "TECNOLOGIAS SOCIAIS"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -658,7 +661,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

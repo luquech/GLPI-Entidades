@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,264 +404,264 @@
           <tr>
               <td>5102212</td>
               <td>ASSISTÊNCIA FARMACÊUTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>EPIDEMIOLOGIA E SAUDE PUBLICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5101006</td>
               <td>LINGUA PORTUGUESA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101066</td>
               <td>INFORMÁTICA APLICADA À SAUDE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102140</td>
               <td>TEPS(ATENCAO FARM EM SAUDE MENTAL)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102141</td>
               <td>TEFARM(NOVOS SIST DE LIB DE FARMACOS)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>TECNOLOGIA FARMACEUTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5102153</td>
               <td>NUTRIÇÃO CLÍNICA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>BROMATOLOGIA GERAL, FARMACOGNOSIA</td>
               <td></td>
           </tr>
           <tr>
               <td>5102186</td>
               <td>FARMACOVIGILANCIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GESTAO FARMACEUTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5103014</td>
               <td>PRIMEIROS SOCORROS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>ANATOMIA HUMANA, 5102157</td>
               <td></td>
           </tr>
           <tr>
               <td>5104015</td>
               <td>INGLES INSTRUMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104117</td>
               <td>ANÁLISE TÉRMICA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>QUÍMICA ANALÍTICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>5104121</td>
               <td>CINÉTICA QUÍMICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>FUNDAMENTOS DE FÍSICO-QUÍMICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5104125</td>
               <td>QUÍMICA AMBIENTAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101148</td>
               <td>LINGUA BRASILEIRA DE SINAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102189</td>
               <td>TEFARM(BIOQUIMICA APLICADA AO EXERCICIO)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>BIOQUÍMICA II, FISIOLOGIA</td>
               <td></td>
           </tr>
           <tr>
               <td>5102190</td>
               <td>TEFARM(CONT DE QUALIDADE EM BIOQ CLINICA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>BIOQUÍMICA CLÍNICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5102196</td>
               <td>FARMACIA FITOTERAPICA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>FUNDAMENTOS DE FÍSICO-QUÍMICA, FARMACOBOTANICA, FARMACOGNOSIA, FARMACOTÉCNICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>5102197</td>
               <td>TEFARM( SAUDE ESTETICA)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102201</td>
               <td>TEFARM(PRAT INTEG E COMP EM SAUDE-PICS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102202</td>
               <td>TEFARM(CONSULTORIO FARMACEUTICO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FARMACOLOGIA I, FARMACOLOGIA II, ATENCAO FARMACEUTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5102203</td>
               <td>TEFARM(FISIOLOGIA INTEGRADA)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>FISIOLOGIA, FARMACOLOGIA I, FARMACOLOGIA II</td>
               <td></td>
           </tr>
           <tr>
               <td>5102204</td>
               <td>FARMACOLOGIA DAS DROGAS DE ABUSO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FARMACOBOTANICA, FARMACOLOGIA II</td>
               <td></td>
           </tr>
           <tr>
               <td>5102206</td>
               <td>TEFARM(CULTURA DE CÉLULAS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>BIOLOGIA CELULAR, EMBRIOLOGIA E HISTOLOGIA</td>
               <td></td>
           </tr>
           <tr>
               <td>5102208</td>
               <td>TEFARM(PRÁTICAS EM ANÁLISES CLÍNICAS)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>MICROBIOLOGIA CLÍNICA, HEMATOLOGIA CLÍNICA, BIOQUÍMICA CLÍNICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5102209</td>
               <td>TEFARM(DIAG LABORATORIAL DE DOEC INF)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MICROBIOLOGIA E IMUNOLOGIA, PATOLOGIA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>5102210</td>
               <td>TEFARM(MICROBIOLOGIA FARMACÊUTICA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>TECNOLOGIA FARMACEUTICA, TECNOLOGIA DE COSMETICOS</td>
               <td></td>
           </tr>
           <tr>
               <td>5102211</td>
               <td>TEFARM(BIOTECNOLOGIA E BIOPRODUTOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102213</td>
               <td>TEFARM(MEC MOLECULARES DE TRANSD SINAIS)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>BIOQUÍMICA II, FARMACOLOGIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>5102214</td>
               <td>TEFARM(PRÁTICAS INTEGRADAS EM FARMÁCIA)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>FARMACOTÉCNICA II, BROMATOLOGIA GERAL, FARMACOGNOSIA</td>
               <td></td>
           </tr>
           <tr>
               <td>5102215</td>
               <td>ANÁLISE FARMACOPÉICA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>QUÍMICA FARMACÊUTICA I, ATENCAO FARMACEUTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5104084</td>
               <td>ECOLOGIA GERAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104179</td>
               <td>GERENCIAMENTO DE RESIDUOS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104233</td>
               <td>TEFARM(TÓPICOS EM GENÉTICA P/ FARMÁCIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104235</td>
               <td>TEFARM(EXCIPIENTES FARMACÊUTICOS)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>FARMACOTÉCNICA II</td>
               <td></td>
           </tr>
@@ -705,8 +708,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5101039", "nome": "MATEMÁTICA BÁSICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102002", "nome": "INTRODUÇÃO À FARMÁCIA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102004", "nome": "ANATOMIA HUMANA", "ch": "90h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102007", "nome": "METODOLOGIA CIENTÍFICA APLICADA À SAÚDE", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102046", "nome": "BIOSSEGURANCA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104001", "nome": "BIOLOGIA CELULAR", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104068", "nome": "QUÍMICA GERAL E INORGÂNICA", "ch": "90h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104101", "nome": "GENETICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101093", "nome": "BIOESTATÍSTICA", "ch": "45h", "preReqs": ["5101039"]}, {"nivel": "2º Nível", "codigo": "5102006", "nome": "BIOFÍSICA", "ch": "45h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102008", "nome": "SAUDE E SOCIEDADE", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102013", "nome": "BIOQUÍMICA I", "ch": "60h", "preReqs": ["5104068"]}, {"nivel": "2º Nível", "codigo": "5102019", "nome": "FISIOLOGIA", "ch": "90h", "preReqs": ["5102020", "5102004", "5104042"]}, {"nivel": "2º Nível", "codigo": "5104035", "nome": "EMBRIOLOGIA E HISTOLOGIA", "ch": "60h", "preReqs": ["5104001"]}, {"nivel": "2º Nível", "codigo": "5104056", "nome": "QUÍMICA ORGÂNICA I", "ch": "60h", "preReqs": ["5104068"]}, {"nivel": "2º Nível", "codigo": "5104073", "nome": "QUÍMICA ANALÍTICA I", "ch": "60h", "preReqs": ["5104068"]}, {"nivel": "3º Nível", "codigo": "5102011", "nome": "EPIDEMIOLOGIA E SAUDE PUBLICA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5102017", "nome": "BIOQUÍMICA II", "ch": "60h", "preReqs": ["5102013"]}, {"nivel": "3º Nível", "codigo": "5102028", "nome": "PARASITOLOGIA HUMANA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5102038", "nome": "MICROBIOLOGIA E IMUNOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5104071", "nome": "QUÍMICA ORGÂNICA II", "ch": "60h", "preReqs": ["5104056"]}, {"nivel": "3º Nível", "codigo": "5104092", "nome": "FUNDAMENTOS DE BIOLOGIA MOLECULAR", "ch": "30h", "preReqs": ["5104001"]}, {"nivel": "3º Nível", "codigo": "5104098", "nome": "QUÍMICA ANALÍTICA II", "ch": "60h", "preReqs": ["5104073"]}, {"nivel": "3º Nível", "codigo": "5104115", "nome": "FUNDAMENTOS DE FÍSICO-QUÍMICA", "ch": "60h", "preReqs": ["5104068"]}, {"nivel": "4º Nível", "codigo": "5102003", "nome": "PSICOLOGIA E SAUDE", "ch": "45h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "5102010", "nome": "PATOLOGIA GERAL", "ch": "60h", "preReqs": ["5102012", "5102019", "5102017"]}, {"nivel": "4º Nível", "codigo": "5102047", "nome": "GESTAO FARMACEUTICA", "ch": "30h", "preReqs": ["5102002", "5102018", "5102011"]}, {"nivel": "4º Nível", "codigo": "5102048", "nome": "QUÍMICA FARMACÊUTICA I", "ch": "60h", "preReqs": ["5104071"]}, {"nivel": "4º Nível", "codigo": "5102049", "nome": "BROMATOLOGIA GERAL", "ch": "60h", "preReqs": ["5104068"]}, {"nivel": "4º Nível", "codigo": "5102050", "nome": "FARMACOLOGIA I", "ch": "60h", "preReqs": ["5102019", "5102012"]}, {"nivel": "4º Nível", "codigo": "5102051", "nome": "FARMACOBOTANICA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "5102052", "nome": "QUÍMICA DE ALIMENTOS", "ch": "45h", "preReqs": ["5104071"]}, {"nivel": "4º Nível", "codigo": "5104097", "nome": "QUÍMICA ORGÂNICA EXPERIMENTAL", "ch": "30h", "preReqs": ["5104071"]}, {"nivel": "5º Nível", "codigo": "5102063", "nome": "ATENCAO FARMACEUTICA", "ch": "30h", "preReqs": ["5102011", "5102018", "5102050", "5102003"]}, {"nivel": "5º Nível", "codigo": "5102064", "nome": "FITOTERAPIA", "ch": "30h", "preReqs": ["5102051"]}, {"nivel": "5º Nível", "codigo": "5102065", "nome": "QUÍMICA FARMACÊUTICA II", "ch": "60h", "preReqs": ["5102048"]}, {"nivel": "5º Nível", "codigo": "5102066", "nome": "FARMACOLOGIA II", "ch": "60h", "preReqs": ["5102050"]}, {"nivel": "5º Nível", "codigo": "5102067", "nome": "FARMACOGNOSIA", "ch": "90h", "preReqs": ["5102051"]}, {"nivel": "5º Nível", "codigo": "5102068", "nome": "HOMEOPATIA", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "5102069", "nome": "FARMACOTÉCNICA I", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104118", "nome": "ESPECTROSCOPIA DE COMPOSTOS ORGANICOS", "ch": "45h", "preReqs": ["5104071"]}, {"nivel": "5º Nível", "codigo": "5104155", "nome": "QUÍMICA ANALÍTICA INSTRUMENTAL", "ch": "45h", "preReqs": ["5104098", "5104071"]}, {"nivel": "6º Nível", "codigo": "5102080", "nome": "TOXICOLOGIA", "ch": "30h", "preReqs": ["5104071", "5102066"]}, {"nivel": "6º Nível", "codigo": "5102081", "nome": "IMUNOLOGIA CLÍNICA", "ch": "45h", "preReqs": ["5102038", "5102009"]}, {"nivel": "6º Nível", "codigo": "5102082", "nome": "MICOLOGIA E VIROLOGIA CLÍNICA", "ch": "45h", "preReqs": ["5102010"]}, {"nivel": "6º Nível", "codigo": "5102083", "nome": "PARASITOLOGIA CLÍNICA", "ch": "45h", "preReqs": ["5102028", "5102016"]}, {"nivel": "6º Nível", "codigo": "5102084", "nome": "FARMACIA HOSPITALAR", "ch": "45h", "preReqs": ["5102047", "5102063", "5102066"]}, {"nivel": "6º Nível", "codigo": "5102085", "nome": "ENZIMOLOGIA INDUSTRIAL", "ch": "60h", "preReqs": ["5102069"]}, {"nivel": "6º Nível", "codigo": "5102086", "nome": "FARMACOTÉCNICA II", "ch": "60h", "preReqs": ["5102069"]}, {"nivel": "6º Nível", "codigo": "5102087", "nome": "MICROBIOLOGIA CLÍNICA", "ch": "45h", "preReqs": ["5102038", "5102009"]}, {"nivel": "6º Nível", "codigo": "5102088", "nome": "MICROBIOLOGIA DE ALIMENTOS", "ch": "45h", "preReqs": ["5102049", "5102009", "5102038"]}, {"nivel": "7º Nível", "codigo": "5101181", "nome": "FÍSICA INDUSTRIAL", "ch": "30h", "preReqs": ["5102086"]}, {"nivel": "7º Nível", "codigo": "5102092", "nome": "CITOLOGIA CLÍNICA", "ch": "45h", "preReqs": ["5104092"]}, {"nivel": "7º Nível", "codigo": "5102093", "nome": "TECNOLOGIA DE COSMETICOS", "ch": "60h", "preReqs": ["5102086"]}, {"nivel": "7º Nível", "codigo": "5102094", "nome": "HEMATOLOGIA CLÍNICA", "ch": "45h", "preReqs": ["5104001", "5102017"]}, {"nivel": "7º Nível", "codigo": "5102095", "nome": "BIOQUÍMICA CLÍNICA", "ch": "60h", "preReqs": ["5102017", "5102010"]}, {"nivel": "7º Nível", "codigo": "5102096", "nome": "TECNOLOGIA FARMACEUTICA", "ch": "60h", "preReqs": ["5102086"]}, {"nivel": "7º Nível", "codigo": "5102097", "nome": "TOXICOLOGIA CLÍNICA", "ch": "45h", "preReqs": ["5102080"]}, {"nivel": "7º Nível", "codigo": "5102098", "nome": "TECNOLOGIA DE ALIMENTOS", "ch": "60h", "preReqs": ["5102088"]}, {"nivel": "7º Nível", "codigo": "5102099", "nome": "DEONTOLOGIA FARMACEUTICA", "ch": "30h", "preReqs": ["5102047"]}, {"nivel": "8º Nível", "codigo": "5102117", "nome": "CONT. QUAL. FÍSICO-QUIM. MEDIC. E COSM.", "ch": "45h", "preReqs": ["5102086", "5102096"]}, {"nivel": "8º Nível", "codigo": "5102118", "nome": "CONT DE QUAL MICROBIOL DE MEDIC E COSM.", "ch": "45h", "preReqs": ["5102086", "5102096"]}, {"nivel": "8º Nível", "codigo": "5102119", "nome": "CONTROLE DE QUALIDADE DE ALIMENTOS", "ch": "45h", "preReqs": ["5102098"]}, {"nivel": "8º Nível", "codigo": "5102120", "nome": "ESTAGIO SUPERVISIONADO I", "ch": "300h", "preReqs": ["5102063", "5102064", "5102068", "5102084"]}, {"nivel": "9º Nível", "codigo": "5102130", "nome": "ESTÁGIO SUPERV. II (ANÁLISE CLÍNICA)", "ch": "330h", "preReqs": ["5102082", "5102083", "5102087", "5102092", "5102094", "5102095", "5102097", "5102118"]}, {"nivel": "10º Nível", "codigo": "5102145", "nome": "EST SUP III(FARM IND", "ch": "300h", "preReqs": ["5102065", "5102086", "5102088", "5102093", "5102096", "5102098", "5102117", "5102119"]}, {"nivel": "10º Nível", "codigo": "5102146", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "30h", "preReqs": ["5102007", "5102117", "5102118", "5102119"]}];
-  const codigoToNome = {"5101039": "MATEMÁTICA BÁSICA", "5102002": "INTRODUÇÃO À FARMÁCIA", "5102004": "ANATOMIA HUMANA", "5102007": "METODOLOGIA CIENTÍFICA APLICADA À SAÚDE", "5102046": "BIOSSEGURANCA", "5104001": "BIOLOGIA CELULAR", "5104068": "QUÍMICA GERAL E INORGÂNICA", "5104101": "GENETICA GERAL", "5101093": "BIOESTATÍSTICA", "5102006": "BIOFÍSICA", "5102008": "SAUDE E SOCIEDADE", "5102013": "BIOQUÍMICA I", "5102019": "FISIOLOGIA", "5104035": "EMBRIOLOGIA E HISTOLOGIA", "5104056": "QUÍMICA ORGÂNICA I", "5104073": "QUÍMICA ANALÍTICA I", "5102011": "EPIDEMIOLOGIA E SAUDE PUBLICA", "5102017": "BIOQUÍMICA II", "5102028": "PARASITOLOGIA HUMANA", "5102038": "MICROBIOLOGIA E IMUNOLOGIA", "5104071": "QUÍMICA ORGÂNICA II", "5104092": "FUNDAMENTOS DE BIOLOGIA MOLECULAR", "5104098": "QUÍMICA ANALÍTICA II", "5104115": "FUNDAMENTOS DE FÍSICO-QUÍMICA", "5102003": "PSICOLOGIA E SAUDE", "5102010": "PATOLOGIA GERAL", "5102047": "GESTAO FARMACEUTICA", "5102048": "QUÍMICA FARMACÊUTICA I", "5102049": "BROMATOLOGIA GERAL", "5102050": "FARMACOLOGIA I", "5102051": "FARMACOBOTANICA", "5102052": "QUÍMICA DE ALIMENTOS", "5104097": "QUÍMICA ORGÂNICA EXPERIMENTAL", "5102063": "ATENCAO FARMACEUTICA", "5102064": "FITOTERAPIA", "5102065": "QUÍMICA FARMACÊUTICA II", "5102066": "FARMACOLOGIA II", "5102067": "FARMACOGNOSIA", "5102068": "HOMEOPATIA", "5102069": "FARMACOTÉCNICA I", "5104118": "ESPECTROSCOPIA DE COMPOSTOS ORGANICOS", "5104155": "QUÍMICA ANALÍTICA INSTRUMENTAL", "5102080": "TOXICOLOGIA", "5102081": "IMUNOLOGIA CLÍNICA", "5102082": "MICOLOGIA E VIROLOGIA CLÍNICA", "5102083": "PARASITOLOGIA CLÍNICA", "5102084": "FARMACIA HOSPITALAR", "5102085": "ENZIMOLOGIA INDUSTRIAL", "5102086": "FARMACOTÉCNICA II", "5102087": "MICROBIOLOGIA CLÍNICA", "5102088": "MICROBIOLOGIA DE ALIMENTOS", "5101181": "FÍSICA INDUSTRIAL", "5102092": "CITOLOGIA CLÍNICA", "5102093": "TECNOLOGIA DE COSMETICOS", "5102094": "HEMATOLOGIA CLÍNICA", "5102095": "BIOQUÍMICA CLÍNICA", "5102096": "TECNOLOGIA FARMACEUTICA", "5102097": "TOXICOLOGIA CLÍNICA", "5102098": "TECNOLOGIA DE ALIMENTOS", "5102099": "DEONTOLOGIA FARMACEUTICA", "5102117": "CONT. QUAL. FÍSICO-QUIM. MEDIC. E COSM.", "5102118": "CONT DE QUAL MICROBIOL DE MEDIC E COSM.", "5102119": "CONTROLE DE QUALIDADE DE ALIMENTOS", "5102120": "ESTAGIO SUPERVISIONADO I", "5102130": "ESTÁGIO SUPERV. II (ANÁLISE CLÍNICA)", "5102145": "EST SUP III(FARM IND", "5102146": "TRABALHO DE CONCLUSAO DE CURSO", "5102212": "ASSISTÊNCIA FARMACÊUTICA", "5101006": "LINGUA PORTUGUESA", "5101066": "INFORMÁTICA APLICADA À SAUDE", "5102140": "TEPS(ATENCAO FARM EM SAUDE MENTAL)", "5102141": "TEFARM(NOVOS SIST DE LIB DE FARMACOS)", "5102153": "NUTRIÇÃO CLÍNICA", "5102186": "FARMACOVIGILANCIA", "5103014": "PRIMEIROS SOCORROS", "5104015": "INGLES INSTRUMENTAL", "5104117": "ANÁLISE TÉRMICA", "5104121": "CINÉTICA QUÍMICA", "5104125": "QUÍMICA AMBIENTAL", "5101148": "LINGUA BRASILEIRA DE SINAIS", "5102189": "TEFARM(BIOQUIMICA APLICADA AO EXERCICIO)", "5102190": "TEFARM(CONT DE QUALIDADE EM BIOQ CLINICA", "5102196": "FARMACIA FITOTERAPICA", "5102197": "TEFARM( SAUDE ESTETICA)", "5102201": "TEFARM(PRAT INTEG E COMP EM SAUDE-PICS)", "5102202": "TEFARM(CONSULTORIO FARMACEUTICO)", "5102203": "TEFARM(FISIOLOGIA INTEGRADA)", "5102204": "FARMACOLOGIA DAS DROGAS DE ABUSO", "5102206": "TEFARM(CULTURA DE CÉLULAS)", "5102208": "TEFARM(PRÁTICAS EM ANÁLISES CLÍNICAS)", "5102209": "TEFARM(DIAG LABORATORIAL DE DOEC INF)", "5102210": "TEFARM(MICROBIOLOGIA FARMACÊUTICA)", "5102211": "TEFARM(BIOTECNOLOGIA E BIOPRODUTOS)", "5102213": "TEFARM(MEC MOLECULARES DE TRANSD SINAIS)", "5102214": "TEFARM(PRÁTICAS INTEGRADAS EM FARMÁCIA)", "5102215": "ANÁLISE FARMACOPÉICA", "5104084": "ECOLOGIA GERAL", "5104179": "GERENCIAMENTO DE RESIDUOS", "5104233": "TEFARM(TÓPICOS EM GENÉTICA P/ FARMÁCIA)", "5104235": "TEFARM(EXCIPIENTES FARMACÊUTICOS)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5101039", "nome": "MATEMÁTICA BÁSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102002", "nome": "INTRODUÇÃO À FARMÁCIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102004", "nome": "ANATOMIA HUMANA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102007", "nome": "METODOLOGIA CIENTÍFICA APLICADA À SAÚDE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102046", "nome": "BIOSSEGURANCA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104001", "nome": "BIOLOGIA CELULAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104068", "nome": "QUÍMICA GERAL E INORGÂNICA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104101", "nome": "GENETICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101093", "nome": "BIOESTATÍSTICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101039"]}, {"nivel": "2º Nível", "codigo": "5102006", "nome": "BIOFÍSICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102008", "nome": "SAUDE E SOCIEDADE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102013", "nome": "BIOQUÍMICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104068"]}, {"nivel": "2º Nível", "codigo": "5102019", "nome": "FISIOLOGIA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102020", "5102004", "5104042"]}, {"nivel": "2º Nível", "codigo": "5104035", "nome": "EMBRIOLOGIA E HISTOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104001"]}, {"nivel": "2º Nível", "codigo": "5104056", "nome": "QUÍMICA ORGÂNICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104068"]}, {"nivel": "2º Nível", "codigo": "5104073", "nome": "QUÍMICA ANALÍTICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104068"]}, {"nivel": "3º Nível", "codigo": "5102011", "nome": "EPIDEMIOLOGIA E SAUDE PUBLICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5102017", "nome": "BIOQUÍMICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102013"]}, {"nivel": "3º Nível", "codigo": "5102028", "nome": "PARASITOLOGIA HUMANA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5102038", "nome": "MICROBIOLOGIA E IMUNOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5104071", "nome": "QUÍMICA ORGÂNICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104056"]}, {"nivel": "3º Nível", "codigo": "5104092", "nome": "FUNDAMENTOS DE BIOLOGIA MOLECULAR", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104001"]}, {"nivel": "3º Nível", "codigo": "5104098", "nome": "QUÍMICA ANALÍTICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104073"]}, {"nivel": "3º Nível", "codigo": "5104115", "nome": "FUNDAMENTOS DE FÍSICO-QUÍMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104068"]}, {"nivel": "4º Nível", "codigo": "5102003", "nome": "PSICOLOGIA E SAUDE", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "5102010", "nome": "PATOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102012", "5102019", "5102017"]}, {"nivel": "4º Nível", "codigo": "5102047", "nome": "GESTAO FARMACEUTICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102002", "5102018", "5102011"]}, {"nivel": "4º Nível", "codigo": "5102048", "nome": "QUÍMICA FARMACÊUTICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104071"]}, {"nivel": "4º Nível", "codigo": "5102049", "nome": "BROMATOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104068"]}, {"nivel": "4º Nível", "codigo": "5102050", "nome": "FARMACOLOGIA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102019", "5102012"]}, {"nivel": "4º Nível", "codigo": "5102051", "nome": "FARMACOBOTANICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "5102052", "nome": "QUÍMICA DE ALIMENTOS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104071"]}, {"nivel": "4º Nível", "codigo": "5104097", "nome": "QUÍMICA ORGÂNICA EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104071"]}, {"nivel": "5º Nível", "codigo": "5102063", "nome": "ATENCAO FARMACEUTICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102011", "5102018", "5102050", "5102003"]}, {"nivel": "5º Nível", "codigo": "5102064", "nome": "FITOTERAPIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102051"]}, {"nivel": "5º Nível", "codigo": "5102065", "nome": "QUÍMICA FARMACÊUTICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102048"]}, {"nivel": "5º Nível", "codigo": "5102066", "nome": "FARMACOLOGIA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102050"]}, {"nivel": "5º Nível", "codigo": "5102067", "nome": "FARMACOGNOSIA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102051"]}, {"nivel": "5º Nível", "codigo": "5102068", "nome": "HOMEOPATIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "5102069", "nome": "FARMACOTÉCNICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104118", "nome": "ESPECTROSCOPIA DE COMPOSTOS ORGANICOS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104071"]}, {"nivel": "5º Nível", "codigo": "5104155", "nome": "QUÍMICA ANALÍTICA INSTRUMENTAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104098", "5104071"]}, {"nivel": "6º Nível", "codigo": "5102080", "nome": "TOXICOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104071", "5102066"]}, {"nivel": "6º Nível", "codigo": "5102081", "nome": "IMUNOLOGIA CLÍNICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102038", "5102009"]}, {"nivel": "6º Nível", "codigo": "5102082", "nome": "MICOLOGIA E VIROLOGIA CLÍNICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102010"]}, {"nivel": "6º Nível", "codigo": "5102083", "nome": "PARASITOLOGIA CLÍNICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102028", "5102016"]}, {"nivel": "6º Nível", "codigo": "5102084", "nome": "FARMACIA HOSPITALAR", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102047", "5102063", "5102066"]}, {"nivel": "6º Nível", "codigo": "5102085", "nome": "ENZIMOLOGIA INDUSTRIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102069"]}, {"nivel": "6º Nível", "codigo": "5102086", "nome": "FARMACOTÉCNICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102069"]}, {"nivel": "6º Nível", "codigo": "5102087", "nome": "MICROBIOLOGIA CLÍNICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102038", "5102009"]}, {"nivel": "6º Nível", "codigo": "5102088", "nome": "MICROBIOLOGIA DE ALIMENTOS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102049", "5102009", "5102038"]}, {"nivel": "7º Nível", "codigo": "5101181", "nome": "FÍSICA INDUSTRIAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102086"]}, {"nivel": "7º Nível", "codigo": "5102092", "nome": "CITOLOGIA CLÍNICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104092"]}, {"nivel": "7º Nível", "codigo": "5102093", "nome": "TECNOLOGIA DE COSMETICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102086"]}, {"nivel": "7º Nível", "codigo": "5102094", "nome": "HEMATOLOGIA CLÍNICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104001", "5102017"]}, {"nivel": "7º Nível", "codigo": "5102095", "nome": "BIOQUÍMICA CLÍNICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102017", "5102010"]}, {"nivel": "7º Nível", "codigo": "5102096", "nome": "TECNOLOGIA FARMACEUTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102086"]}, {"nivel": "7º Nível", "codigo": "5102097", "nome": "TOXICOLOGIA CLÍNICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102080"]}, {"nivel": "7º Nível", "codigo": "5102098", "nome": "TECNOLOGIA DE ALIMENTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102088"]}, {"nivel": "7º Nível", "codigo": "5102099", "nome": "DEONTOLOGIA FARMACEUTICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102047"]}, {"nivel": "8º Nível", "codigo": "5102117", "nome": "CONT. QUAL. FÍSICO-QUIM. MEDIC. E COSM.", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102086", "5102096"]}, {"nivel": "8º Nível", "codigo": "5102118", "nome": "CONT DE QUAL MICROBIOL DE MEDIC E COSM.", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102086", "5102096"]}, {"nivel": "8º Nível", "codigo": "5102119", "nome": "CONTROLE DE QUALIDADE DE ALIMENTOS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102098"]}, {"nivel": "8º Nível", "codigo": "5102120", "nome": "ESTAGIO SUPERVISIONADO I", "ch": "300\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102063", "5102064", "5102068", "5102084"]}, {"nivel": "9º Nível", "codigo": "5102130", "nome": "ESTÁGIO SUPERV. II (ANÁLISE CLÍNICA)", "ch": "330\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102082", "5102083", "5102087", "5102092", "5102094", "5102095", "5102097", "5102118"]}, {"nivel": "10º Nível", "codigo": "5102144", "nome": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "ch": "150\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "5102145", "nome": "EST SUP III(FARM IND,FARM MAGIS OU ALIME", "ch": "300\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102065", "5102086", "5102088", "5102093", "5102096", "5102098", "5102117", "5102119"]}, {"nivel": "10º Nível", "codigo": "5102146", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102007", "5102117", "5102118", "5102119"]}];
+  const codigoToNome = {"5101039": "MATEMÁTICA BÁSICA", "5102002": "INTRODUÇÃO À FARMÁCIA", "5102004": "ANATOMIA HUMANA", "5102007": "METODOLOGIA CIENTÍFICA APLICADA À SAÚDE", "5102046": "BIOSSEGURANCA", "5104001": "BIOLOGIA CELULAR", "5104068": "QUÍMICA GERAL E INORGÂNICA", "5104101": "GENETICA GERAL", "5101093": "BIOESTATÍSTICA", "5102006": "BIOFÍSICA", "5102008": "SAUDE E SOCIEDADE", "5102013": "BIOQUÍMICA I", "5102019": "FISIOLOGIA", "5104035": "EMBRIOLOGIA E HISTOLOGIA", "5104056": "QUÍMICA ORGÂNICA I", "5104073": "QUÍMICA ANALÍTICA I", "5102011": "EPIDEMIOLOGIA E SAUDE PUBLICA", "5102017": "BIOQUÍMICA II", "5102028": "PARASITOLOGIA HUMANA", "5102038": "MICROBIOLOGIA E IMUNOLOGIA", "5104071": "QUÍMICA ORGÂNICA II", "5104092": "FUNDAMENTOS DE BIOLOGIA MOLECULAR", "5104098": "QUÍMICA ANALÍTICA II", "5104115": "FUNDAMENTOS DE FÍSICO-QUÍMICA", "5102003": "PSICOLOGIA E SAUDE", "5102010": "PATOLOGIA GERAL", "5102047": "GESTAO FARMACEUTICA", "5102048": "QUÍMICA FARMACÊUTICA I", "5102049": "BROMATOLOGIA GERAL", "5102050": "FARMACOLOGIA I", "5102051": "FARMACOBOTANICA", "5102052": "QUÍMICA DE ALIMENTOS", "5104097": "QUÍMICA ORGÂNICA EXPERIMENTAL", "5102063": "ATENCAO FARMACEUTICA", "5102064": "FITOTERAPIA", "5102065": "QUÍMICA FARMACÊUTICA II", "5102066": "FARMACOLOGIA II", "5102067": "FARMACOGNOSIA", "5102068": "HOMEOPATIA", "5102069": "FARMACOTÉCNICA I", "5104118": "ESPECTROSCOPIA DE COMPOSTOS ORGANICOS", "5104155": "QUÍMICA ANALÍTICA INSTRUMENTAL", "5102080": "TOXICOLOGIA", "5102081": "IMUNOLOGIA CLÍNICA", "5102082": "MICOLOGIA E VIROLOGIA CLÍNICA", "5102083": "PARASITOLOGIA CLÍNICA", "5102084": "FARMACIA HOSPITALAR", "5102085": "ENZIMOLOGIA INDUSTRIAL", "5102086": "FARMACOTÉCNICA II", "5102087": "MICROBIOLOGIA CLÍNICA", "5102088": "MICROBIOLOGIA DE ALIMENTOS", "5101181": "FÍSICA INDUSTRIAL", "5102092": "CITOLOGIA CLÍNICA", "5102093": "TECNOLOGIA DE COSMETICOS", "5102094": "HEMATOLOGIA CLÍNICA", "5102095": "BIOQUÍMICA CLÍNICA", "5102096": "TECNOLOGIA FARMACEUTICA", "5102097": "TOXICOLOGIA CLÍNICA", "5102098": "TECNOLOGIA DE ALIMENTOS", "5102099": "DEONTOLOGIA FARMACEUTICA", "5102117": "CONT. QUAL. FÍSICO-QUIM. MEDIC. E COSM.", "5102118": "CONT DE QUAL MICROBIOL DE MEDIC E COSM.", "5102119": "CONTROLE DE QUALIDADE DE ALIMENTOS", "5102120": "ESTAGIO SUPERVISIONADO I", "5102130": "ESTÁGIO SUPERV. II (ANÁLISE CLÍNICA)", "5102144": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "5102145": "EST SUP III(FARM IND,FARM MAGIS OU ALIME", "5102146": "TRABALHO DE CONCLUSAO DE CURSO", "5102212": "ASSISTÊNCIA FARMACÊUTICA", "5101006": "LINGUA PORTUGUESA", "5101066": "INFORMÁTICA APLICADA À SAUDE", "5102140": "TEPS(ATENCAO FARM EM SAUDE MENTAL)", "5102141": "TEFARM(NOVOS SIST DE LIB DE FARMACOS)", "5102153": "NUTRIÇÃO CLÍNICA", "5102186": "FARMACOVIGILANCIA", "5103014": "PRIMEIROS SOCORROS", "5104015": "INGLES INSTRUMENTAL", "5104117": "ANÁLISE TÉRMICA", "5104121": "CINÉTICA QUÍMICA", "5104125": "QUÍMICA AMBIENTAL", "5101148": "LINGUA BRASILEIRA DE SINAIS", "5102189": "TEFARM(BIOQUIMICA APLICADA AO EXERCICIO)", "5102190": "TEFARM(CONT DE QUALIDADE EM BIOQ CLINICA", "5102196": "FARMACIA FITOTERAPICA", "5102197": "TEFARM( SAUDE ESTETICA)", "5102201": "TEFARM(PRAT INTEG E COMP EM SAUDE-PICS)", "5102202": "TEFARM(CONSULTORIO FARMACEUTICO)", "5102203": "TEFARM(FISIOLOGIA INTEGRADA)", "5102204": "FARMACOLOGIA DAS DROGAS DE ABUSO", "5102206": "TEFARM(CULTURA DE CÉLULAS)", "5102208": "TEFARM(PRÁTICAS EM ANÁLISES CLÍNICAS)", "5102209": "TEFARM(DIAG LABORATORIAL DE DOEC INF)", "5102210": "TEFARM(MICROBIOLOGIA FARMACÊUTICA)", "5102211": "TEFARM(BIOTECNOLOGIA E BIOPRODUTOS)", "5102213": "TEFARM(MEC MOLECULARES DE TRANSD SINAIS)", "5102214": "TEFARM(PRÁTICAS INTEGRADAS EM FARMÁCIA)", "5102215": "ANÁLISE FARMACOPÉICA", "5104084": "ECOLOGIA GERAL", "5104179": "GERENCIAMENTO DE RESIDUOS", "5104233": "TEFARM(TÓPICOS EM GENÉTICA P/ FARMÁCIA)", "5104235": "TEFARM(EXCIPIENTES FARMACÊUTICOS)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -818,7 +821,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

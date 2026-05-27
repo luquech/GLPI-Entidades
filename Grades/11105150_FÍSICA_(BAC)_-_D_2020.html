@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,288 +404,288 @@
           <tr>
               <td>1108060</td>
               <td>TEF (RELATIVIDADE RESTRITA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108095</td>
               <td>TEF (GEOFÍSICA ESPACIAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FÍSICA GERAL III</td>
               <td></td>
           </tr>
           <tr>
               <td>1108102</td>
               <td>TÓPICOS DE HISTÓRIA E ENSINO DA FÍSICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108103</td>
               <td>PRAT. DE ENS. DA FÍSICA NA EDUC. BASICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108104</td>
               <td>PROJETO EDUCACIONAL A</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FÍSICA EXPERIMENTAL I, 1108031</td>
               <td></td>
           </tr>
           <tr>
               <td>1108106</td>
               <td>INSTRUMENTAÇÃO PARA O ENSINO DA FÍSICA A</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108110</td>
               <td>METODOLOGIA E PRÁT DO ENSINO DE FÍSICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108114</td>
               <td>PROJETO EDUCACIONAL B</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FÍSICA GERAL III, FÍSICA EXPERIMENTAL II</td>
               <td></td>
           </tr>
           <tr>
               <td>1108115</td>
               <td>INSTRUMENTAÇÃO PARA O ENSINO DA FÍSICA B</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INSTRUMENTAÇÃO PARA O ENSINO DA FÍSICA A</td>
               <td></td>
           </tr>
           <tr>
               <td>1108119</td>
               <td>TEF(FISICA CONTEMPORANEA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108131</td>
               <td>TEF(INTROD A ASTROFISICA E COSMOLOGIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108140</td>
               <td>TEF(TÓPICOS DE MECÂNICA QUÂNTICA III)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108141</td>
               <td>TEF(PROP.ÓTICAS E ESTR. DOS MATERIAIS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108142</td>
               <td>TEF(MODELAGEM E PROGRAMAÇÃO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108143</td>
               <td>TEF(INTRODUÇÃO AO TCC)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108144</td>
               <td>TEF(INTR À DIDA DAS CIÊNCIAS FÍSICAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108145</td>
               <td>TEF(SEMINÁRIOS DE ESPECTROSCOPIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108146</td>
               <td>TEF(ENSINO DE FÍS REM: UMA FOR EXC SOC)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1109019</td>
               <td>ÁLGEBRA II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ÁLGEBRA LINEAR I</td>
               <td></td>
           </tr>
           <tr>
               <td>1109029</td>
               <td>INT A GEOMETRIA DIFERENCIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CALCULO AVANCADO</td>
               <td></td>
           </tr>
           <tr>
               <td>1109056</td>
               <td>ALGEBRA LINEAR II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ÁLGEBRA LINEAR I</td>
               <td></td>
           </tr>
           <tr>
               <td>1109061</td>
               <td>FUNCOES DE UMA VARIAVEL COMPLEXA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL III</td>
               <td></td>
           </tr>
           <tr>
               <td>1109075</td>
               <td>INT. AS EQUACOES DIFERENCIAIS PARCIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>EQUACOES DIFERENCIAIS LINEARES, CALCULO AVANCADO</td>
               <td></td>
           </tr>
           <tr>
               <td>1114129</td>
               <td>INTRODUÇÃO À PROBABILIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ÁLGEBRA LINEAR I, CÁLCULO DIFERENCIAL E INTEGRAL II</td>
               <td></td>
           </tr>
           <tr>
               <td>1114130</td>
               <td>INTRODUÇÃO À ESTATÍSTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À PROBABILIDADE</td>
               <td></td>
           </tr>
           <tr>
               <td>1301014</td>
               <td>ADMINISTRAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303021</td>
               <td>ECONOMIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304004</td>
               <td>DIDATICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304013</td>
               <td>BASQUETEBOL - MASC</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304025</td>
               <td>BASQUETEBOL - FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304055</td>
               <td>FUTSAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307150</td>
               <td>INGLÊS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307169</td>
               <td>LÍNGUA PORTUGUESA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307178</td>
               <td>FRANCES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503070</td>
               <td>CIÊNCIAS DO AMBIENTE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -729,7 +732,7 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1108121", "nome": "INTRODUÇÃO À FÍSICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109126"]}, {"nivel": "3º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "3º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1108030", "1109131"]}, {"nivel": "3º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["1109049", "1109131"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60h", "preReqs": ["1109035", "1109131"]}, {"nivel": "4º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60h", "preReqs": ["1108081", "1109128"]}, {"nivel": "4º Nível", "codigo": "1108101", "nome": "FÍSICA EXPERIMENTAL II", "ch": "60h", "preReqs": ["1108023"]}, {"nivel": "4º Nível", "codigo": "1108108", "nome": "FÍSICA MATEMÁTICA I", "ch": "60h", "preReqs": ["1109010", "1109128"]}, {"nivel": "4º Nível", "codigo": "1109134", "nome": "CALCULO AVANCADO", "ch": "60h", "preReqs": ["1109049", "1109128"]}, {"nivel": "5º Nível", "codigo": "1108038", "nome": "MECÂNICA CLÁSSICA I", "ch": "60h", "preReqs": ["1108108"]}, {"nivel": "5º Nível", "codigo": "1108056", "nome": "TERMODINAMICA", "ch": "60h", "preReqs": ["1108081", "1109128"]}, {"nivel": "5º Nível", "codigo": "1108105", "nome": "FÍSICA GERAL IV", "ch": "60h", "preReqs": ["1108100"]}, {"nivel": "5º Nível", "codigo": "1108126", "nome": "FISICA MATEMATICA II", "ch": "60h", "preReqs": ["1108108"]}, {"nivel": "6º Nível", "codigo": "1108039", "nome": "MECÂNICA CLÁSSICA II", "ch": "60h", "preReqs": ["1108038"]}, {"nivel": "6º Nível", "codigo": "1108040", "nome": "ELETROMAGNETISMO I", "ch": "60h", "preReqs": ["1108105", "1109134"]}, {"nivel": "6º Nível", "codigo": "1108055", "nome": "LABORATÓRIO DE FÍSICA MODERNA", "ch": "60h", "preReqs": ["1108101"]}, {"nivel": "6º Nível", "codigo": "1108107", "nome": "FÍSICA MODERNA", "ch": "60h", "preReqs": ["1108105"]}, {"nivel": "7º Nível", "codigo": "1108046", "nome": "ESTADO SOLIDO I", "ch": "60h", "preReqs": ["1108107"]}, {"nivel": "7º Nível", "codigo": "1108112", "nome": "MECANICA QUANTICA I", "ch": "60h", "preReqs": ["1108038", "1108107", "1108126"]}, {"nivel": "7º Nível", "codigo": "1108129", "nome": "ELETROMAGNETISMO II", "ch": "60h", "preReqs": ["1108040"]}, {"nivel": "7º Nível", "codigo": "1108132", "nome": "MECÂNICA ESTATÍSTICA I", "ch": "60h", "preReqs": ["1108056", "1108107"]}, {"nivel": "8º Nível", "codigo": "1108123", "nome": "MECANICA QUANTICA II", "ch": "60h", "preReqs": ["1108112"]}, {"nivel": "8º Nível", "codigo": "1108133", "nome": "MECÂNICA ESTATÍSTICA II", "ch": "60h", "preReqs": ["1108132"]}, {"nivel": "8º Nível", "codigo": "1108138", "nome": "TRABALHO DE CONCLUSÃO DE CURSO", "ch": "60h", "preReqs": ["1108040", "1108112", "1108132"]}];
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1108121", "nome": "INTRODUÇÃO À FÍSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126"]}, {"nivel": "3º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "3º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030", "1109131"]}, {"nivel": "3º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109049", "1109131"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035", "1109131"]}, {"nivel": "4º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108081", "1109128"]}, {"nivel": "4º Nível", "codigo": "1108101", "nome": "FÍSICA EXPERIMENTAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108023"]}, {"nivel": "4º Nível", "codigo": "1108108", "nome": "FÍSICA MATEMÁTICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109010", "1109128"]}, {"nivel": "4º Nível", "codigo": "1109134", "nome": "CALCULO AVANCADO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109049", "1109128"]}, {"nivel": "5º Nível", "codigo": "1108038", "nome": "MECÂNICA CLÁSSICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108108"]}, {"nivel": "5º Nível", "codigo": "1108056", "nome": "TERMODINAMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108081", "1109128"]}, {"nivel": "5º Nível", "codigo": "1108105", "nome": "FÍSICA GERAL IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108100"]}, {"nivel": "5º Nível", "codigo": "1108126", "nome": "FISICA MATEMATICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108108"]}, {"nivel": "6º Nível", "codigo": "1108039", "nome": "MECÂNICA CLÁSSICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108038"]}, {"nivel": "6º Nível", "codigo": "1108040", "nome": "ELETROMAGNETISMO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108105", "1109134"]}, {"nivel": "6º Nível", "codigo": "1108055", "nome": "LABORATÓRIO DE FÍSICA MODERNA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108101"]}, {"nivel": "6º Nível", "codigo": "1108107", "nome": "FÍSICA MODERNA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108105"]}, {"nivel": "7º Nível", "codigo": "1108046", "nome": "ESTADO SOLIDO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108107"]}, {"nivel": "7º Nível", "codigo": "1108112", "nome": "MECANICA QUANTICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108038", "1108107", "1108126"]}, {"nivel": "7º Nível", "codigo": "1108129", "nome": "ELETROMAGNETISMO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108040"]}, {"nivel": "7º Nível", "codigo": "1108132", "nome": "MECÂNICA ESTATÍSTICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108056", "1108107"]}, {"nivel": "8º Nível", "codigo": "1108123", "nome": "MECANICA QUANTICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108112"]}, {"nivel": "8º Nível", "codigo": "1108133", "nome": "MECÂNICA ESTATÍSTICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108132"]}, {"nivel": "8º Nível", "codigo": "1108138", "nome": "TRABALHO DE CONCLUSÃO DE CURSO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108040", "1108112", "1108132"]}];
   const codigoToNome = {"1107232": "QUÍMICA GERAL", "1108121": "INTRODUÇÃO À FÍSICA", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1108030": "FÍSICA GERAL I", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1108100": "FÍSICA GERAL III", "1108101": "FÍSICA EXPERIMENTAL II", "1108108": "FÍSICA MATEMÁTICA I", "1109134": "CALCULO AVANCADO", "1108038": "MECÂNICA CLÁSSICA I", "1108056": "TERMODINAMICA", "1108105": "FÍSICA GERAL IV", "1108126": "FISICA MATEMATICA II", "1108039": "MECÂNICA CLÁSSICA II", "1108040": "ELETROMAGNETISMO I", "1108055": "LABORATÓRIO DE FÍSICA MODERNA", "1108107": "FÍSICA MODERNA", "1108046": "ESTADO SOLIDO I", "1108112": "MECANICA QUANTICA I", "1108129": "ELETROMAGNETISMO II", "1108132": "MECÂNICA ESTATÍSTICA I", "1108123": "MECANICA QUANTICA II", "1108133": "MECÂNICA ESTATÍSTICA II", "1108138": "TRABALHO DE CONCLUSÃO DE CURSO", "1108060": "TEF (RELATIVIDADE RESTRITA)", "1108095": "TEF (GEOFÍSICA ESPACIAL)", "1108102": "TÓPICOS DE HISTÓRIA E ENSINO DA FÍSICA", "1108103": "PRAT. DE ENS. DA FÍSICA NA EDUC. BASICA", "1108104": "PROJETO EDUCACIONAL A", "1108106": "INSTRUMENTAÇÃO PARA O ENSINO DA FÍSICA A", "1108110": "METODOLOGIA E PRÁT DO ENSINO DE FÍSICA", "1108114": "PROJETO EDUCACIONAL B", "1108115": "INSTRUMENTAÇÃO PARA O ENSINO DA FÍSICA B", "1108119": "TEF(FISICA CONTEMPORANEA)", "1108131": "TEF(INTROD A ASTROFISICA E COSMOLOGIA)", "1108140": "TEF(TÓPICOS DE MECÂNICA QUÂNTICA III)", "1108141": "TEF(PROP.ÓTICAS E ESTR. DOS MATERIAIS)", "1108142": "TEF(MODELAGEM E PROGRAMAÇÃO)", "1108143": "TEF(INTRODUÇÃO AO TCC)", "1108144": "TEF(INTR À DIDA DAS CIÊNCIAS FÍSICAS)", "1108145": "TEF(SEMINÁRIOS DE ESPECTROSCOPIA", "1108146": "TEF(ENSINO DE FÍS REM: UMA FOR EXC SOC)", "1109019": "ÁLGEBRA II", "1109029": "INT A GEOMETRIA DIFERENCIAL", "1109056": "ALGEBRA LINEAR II", "1109061": "FUNCOES DE UMA VARIAVEL COMPLEXA", "1109075": "INT. AS EQUACOES DIFERENCIAIS PARCIAIS", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1301014": "ADMINISTRAÇÃO", "1303021": "ECONOMIA", "1304004": "DIDATICA", "1304013": "BASQUETEBOL - MASC", "1304025": "BASQUETEBOL - FEM", "1304055": "FUTSAL", "1307150": "INGLÊS", "1307169": "LÍNGUA PORTUGUESA", "1307178": "FRANCES", "1307332": "LIBRAS", "1503070": "CIÊNCIAS DO AMBIENTE"};
 
   const subjectsMap = new Map();
@@ -842,7 +845,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

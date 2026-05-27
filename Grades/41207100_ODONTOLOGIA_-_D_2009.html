@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,312 +404,312 @@
           <tr>
               <td>4102218</td>
               <td>LINGUA BRASILEIRA DE SINAIS (LIBRAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105021</td>
               <td>BIOESTATÍSTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105055</td>
               <td>INFORMÁTICA APLICADA À ODONTOLOGIA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105067</td>
               <td>SAUDE E CIDADANIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105084</td>
               <td>EXPRESSAO ORAL E ESCRITA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105085</td>
               <td>PRINCIPIOS BASICOS DE ANEST POR SEDACAO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105096</td>
               <td>INTRODUÇÃO À ODONTOLOGIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105100</td>
               <td>LINGUA BRASILEIRA DE SINAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105110</td>
               <td>ODONT CLIN P PACIENTES PORT DE NESC ESPE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CLÍNICA MULTIDISCIPLINAR II, PRÉ-CLÍNICA MULTIDISCIPLINAR V, TERAPEUTICA E ANESTESIOLOGIA</td>
               <td></td>
           </tr>
           <tr>
               <td>4105117</td>
               <td>FUNDAMENTOS DA LASERTERAPIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PROPEDEUTICA  ESTOMATOLOGICA IV</td>
               <td></td>
           </tr>
           <tr>
               <td>4105118</td>
               <td>FUND.DA FITOTERAPIA APLIC. A ODONTOLOGIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>FARMACOLOGIA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>4105120</td>
               <td>PRINCIPIOS BASICOS DE IMPLANTODONTIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PRÉ-CLÍNICA MULTIDISCIPLINAR III</td>
               <td></td>
           </tr>
           <tr>
               <td>4105122</td>
               <td>FUNDAMENTOS DA HOMEOPATIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105123</td>
               <td>TEO(INTERACOES MEDICAMENTOSAS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>FARMACOLOGIA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>4105124</td>
               <td>TEO(PRÁTICA DESPORTIVA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105125</td>
               <td>TEO(EST EM ODONT DIGITAL NA REAB ORAL)</td>
-              <td>120h</td>
-              <td>8.0</td>
+              <td>120"h</td>
+              <td>8"</td>
               <td>MATERIAIS DENTARIOS, PRÉ-CLÍNICA MULTIDISCIPLINAR I</td>
               <td></td>
           </tr>
           <tr>
               <td>4105126</td>
               <td>TEO(ODONTOLOGIA PARA INICIANTES)</td>
-              <td>120h</td>
-              <td>8.0</td>
+              <td>120"h</td>
+              <td>8"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105127</td>
               <td>TEO(TOP EM CIRURGIA DENTO-ALVEOLAR)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>PRÉ-CLÍNICA MULTIDISCIPLINAR III</td>
               <td></td>
           </tr>
           <tr>
               <td>4105128</td>
               <td>TEO(FARM APLIC A PREVENÇÃO E TRAT DA DOR</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FARMACOLOGIA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>4105129</td>
               <td>TEO(FUND DA FARM E FIT APLIC A BIOLOGIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BIOQUÍMICA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>4105130</td>
               <td>TEO(SEM AVANÇADOS DE ODONTOLOGIA LEGAL)</td>
-              <td>90h</td>
-              <td>6.0</td>
+              <td>90"h</td>
+              <td>6"</td>
               <td></td>
               <td>ODONTOLOGIA LEGAL E DEONTOLOGIA</td>
           </tr>
           <tr>
               <td>4105131</td>
               <td>TEO(TÓPICOS ESPECIAIS EM PERIODONTIA)</td>
-              <td>120h</td>
-              <td>8.0</td>
+              <td>120"h</td>
+              <td>8"</td>
               <td>PRÉ-CLÍNICA MULTIDISCIPLINAR II</td>
               <td></td>
           </tr>
           <tr>
               <td>4105132</td>
               <td>TEO(TOP ESPEC DE PESQ PARA ODONTOLOGIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOLOGIA CIENTIFICA E TECNOLOGICA</td>
               <td></td>
           </tr>
           <tr>
               <td>4105133</td>
               <td>TEO(PERIODONTIA CIRÚRGICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PRÉ-CLÍNICA MULTIDISCIPLINAR III</td>
               <td></td>
           </tr>
           <tr>
               <td>4105134</td>
               <td>TEO(INTRODUÇÃO À TELEODONTOLOGIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105135</td>
               <td>TEO(BIOSSEG APLIC A CLÍNICA ODONTOLÓGICA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>PRÉ-CLÍNICA MULTIDISCIPLINAR I</td>
               <td></td>
           </tr>
           <tr>
               <td>4105136</td>
               <td>TEO(DIAG E TRAT EM ORTODONTIA CORRETIVA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CLÍNICA INFANTIL I, CLÍNICA INFANTIL II</td>
               <td></td>
           </tr>
           <tr>
               <td>4105137</td>
               <td>TEO(TÓPICOS ESPCIAIS EM MICROBIOLOGIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105139</td>
               <td>TEO(TAO-PRINCÍPIOS E OCLUSÃO E DTM)</td>
-              <td>120h</td>
-              <td>8.0</td>
+              <td>120"h</td>
+              <td>8"</td>
               <td>MATERIAIS DENTARIOS, PRÉ-CLÍNICA MULTIDISCIPLINAR I</td>
               <td></td>
           </tr>
           <tr>
               <td>4105140</td>
               <td>TEO(ENDODONTIA-PRICÍPIOS BIOLÓGICOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PRÉ-CLÍNICA MULTIDISCIPLINAR IV</td>
               <td></td>
           </tr>
           <tr>
               <td>4105141</td>
               <td>TEO(ENDODONTIA-PRINCÍPIOS TÉCNICOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PRÉ-CLÍNICA MULTIDISCIPLINAR II, MATERIAIS DENTARIOS</td>
               <td></td>
           </tr>
           <tr>
               <td>4105142</td>
               <td>TEO(TÓPICOS EM ODONTOLOGIA HOSPITALAR)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CLÍNICA MULTIDISCIPLINAR II, PRÉ-CLÍNICA MULTIDISCIPLINAR V, CLÍNICA INFANTIL I, EST. SUP. EM CLÍN. MULTIDISCIPLINAR I</td>
               <td></td>
           </tr>
           <tr>
               <td>4105143</td>
               <td>TEO(MET AVANC DE ESTUDOS EM CEL E TEC)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4105144</td>
               <td>TEO(TÓPCOS ESPECIAIS EM DENTÍSTICA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>MATERIAIS DENTARIOS, PRÉ-CLÍNICA MULTIDISCIPLINAR I</td>
               <td></td>
           </tr>
           <tr>
               <td>4105145</td>
               <td>TEO(URGÊNCIAS E EMERGÊNCIAS MÉDICAS)</td>
-              <td>90h</td>
-              <td>6.0</td>
+              <td>90"h</td>
+              <td>6"</td>
               <td>TERAPEUTICA E ANESTESIOLOGIA, ANATOMIA TOPOGRÁFICA (CABEÇA E PESCOÇO)</td>
               <td></td>
           </tr>
           <tr>
               <td>4105146</td>
               <td>TEO(INTERP DE EX LAB APLIC À ODONTOLOGIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>BIOQUÍMICA E FISIOLOGIA BUCAL</td>
               <td></td>
           </tr>
           <tr>
               <td>4105155</td>
               <td>TEO(DISC DE CASOS CLIN EM ENDODONTIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>EST. SUP. EM CLÍN. MULTIDISCIPLINAR I, CLÍNICA MULTIDISCIPLINAR II</td>
               <td></td>
           </tr>
           <tr>
               <td>4105156</td>
               <td>TEO(TOPICOS EM HARMONIZAÇÃO OROFACIAL)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CLÍNICA MULTIDISCIPLINAR II, EST. SUP. EM CLÍN. MULTIDISCIPLINAR I</td>
               <td></td>
           </tr>
           <tr>
               <td>4105158</td>
               <td>PRÁTICA DESPORTIVA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
@@ -753,7 +756,7 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "4105008", "nome": "BIOLOGIA CELULAR E MOLECULAR", "ch": "45h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4105031", "nome": "ANATOMIA GERAL", "ch": "90h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4105032", "nome": "HISTOLOGIA GERAL E EMBRIOLOGIA", "ch": "90h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4105033", "nome": "BIOFÍSICA", "ch": "45h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4105034", "nome": "ANTROPOLOGIA CULTURAL E HUMANA", "ch": "45h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4105035", "nome": "SAUDE COLETIVA I", "ch": "45h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4105036", "nome": "PSICOLOGIA APLICADA A ODONTOLOGIA", "ch": "45h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4105041", "nome": "ANATOMIA TOPOGRÁFICA (CABEÇA E PESCOÇO)", "ch": "90h", "preReqs": ["4105031"]}, {"nivel": "2º Nível", "codigo": "4105042", "nome": "FISIOLOGIA HUMANA", "ch": "45h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4105043", "nome": "BIOQUÍMICA GERAL", "ch": "60h", "preReqs": ["4105008"]}, {"nivel": "2º Nível", "codigo": "4105044", "nome": "HIST. E EMB. ODONTOLOGICA E DE SISTEMAS", "ch": "90h", "preReqs": ["4105032"]}, {"nivel": "2º Nível", "codigo": "4105045", "nome": "MICROBIOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4105047", "nome": "SAUDE COLETIVA II", "ch": "45h", "preReqs": ["4105035"]}, {"nivel": "3º Nível", "codigo": "4105046", "nome": "EPIDEMIOLOGIA ODONTOLOGICA", "ch": "60h", "preReqs": ["4105047"]}, {"nivel": "3º Nível", "codigo": "4105051", "nome": "PARASITOLOGIA", "ch": "30h", "preReqs": ["4105044"]}, {"nivel": "3º Nível", "codigo": "4105053", "nome": "FARMACOLOGIA GERAL", "ch": "45h", "preReqs": ["4105043"]}, {"nivel": "3º Nível", "codigo": "4105054", "nome": "MICROBIOLOGIA BUCAL", "ch": "45h", "preReqs": ["4105045", "4105013"]}, {"nivel": "3º Nível", "codigo": "4105056", "nome": "PRÉ-CLÍNICA MULTIDISCIPLINAR I", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "4105057", "nome": "PATOLOGIA GERAL", "ch": "60h", "preReqs": ["4105044"]}, {"nivel": "3º Nível", "codigo": "4105058", "nome": "PROPEDEUTICA ESTOMATOLOGICA I", "ch": "60h", "preReqs": ["4105041"]}, {"nivel": "3º Nível", "codigo": "4105059", "nome": "GENETICA E EVOLUCAO", "ch": "30h", "preReqs": ["4105008"]}, {"nivel": "3º Nível", "codigo": "4105119", "nome": "METODOLOGIA CIENTIFICA E TECNOLOGICA", "ch": "30h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "4105062", "nome": "PRÉ-CLÍNICA MULTIDISCIPLINAR II", "ch": "90h", "preReqs": ["4105056"]}, {"nivel": "4º Nível", "codigo": "4105063", "nome": "BIOQUÍMICA E FISIOLOGIA BUCAL", "ch": "45h", "preReqs": ["4105042", "4105043"]}, {"nivel": "4º Nível", "codigo": "4105064", "nome": "PROPEDEUTICA ESTOMATOLOGICA II", "ch": "120h", "preReqs": ["4105057", "4105058"]}, {"nivel": "4º Nível", "codigo": "4105065", "nome": "MATERIAIS DENTARIOS", "ch": "75h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "4105066", "nome": "TERAPEUTICA E ANESTESIOLOGIA", "ch": "60h", "preReqs": ["4105053"]}, {"nivel": "5º Nível", "codigo": "4105072", "nome": "PRÉ-CLÍNICA MULTIDISCIPLINAR III", "ch": "150h", "preReqs": ["4105062"]}, {"nivel": "5º Nível", "codigo": "4105073", "nome": "ESTAGIO SUP EM SIST PUBLICO DE SAUDE I", "ch": "60h", "preReqs": ["4105046"]}, {"nivel": "5º Nível", "codigo": "4105074", "nome": "ODONTOLOGIA LEGAL E DEONTOLOGIA", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "4105075", "nome": "ETICA E LEGISLACAO ODONTOLOGIA", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "4105076", "nome": "PROPEDEUTICA ESTOMATOLOGICA III", "ch": "60h", "preReqs": ["4105064"]}, {"nivel": "5º Nível", "codigo": "4105077", "nome": "INGLES INSTRUMENTAL", "ch": "30h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "4105086", "nome": "CLÍNICA MULTIDISCIPLINAR I", "ch": "120h", "preReqs": ["4105072"]}, {"nivel": "6º Nível", "codigo": "4105087", "nome": "PRÉ-CLÍNICA MULTIDISCIPLINAR IV", "ch": "120h", "preReqs": ["4105062", "4105065"]}, {"nivel": "6º Nível", "codigo": "4105088", "nome": "ESTAGIO SUPERV EM SIST PUB DE SAUDE II", "ch": "90h", "preReqs": ["4105073"]}, {"nivel": "6º Nível", "codigo": "4105089", "nome": "PROPEDEUTICA  ESTOMATOLOGICA IV", "ch": "60h", "preReqs": ["4105076"]}, {"nivel": "7º Nível", "codigo": "4105092", "nome": "CLÍNICA MULTIDISCIPLINAR II", "ch": "90h", "preReqs": ["4105086", "4105087"]}, {"nivel": "7º Nível", "codigo": "4105093", "nome": "PRÉ-CLÍNICA MULTIDISCIPLINAR V", "ch": "120h", "preReqs": ["4105087"]}, {"nivel": "7º Nível", "codigo": "4105094", "nome": "CLÍNICA INFANTIL I", "ch": "90h", "preReqs": ["4105086"]}, {"nivel": "7º Nível", "codigo": "4105095", "nome": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR I", "ch": "90h", "preReqs": ["4105086", "4105089"]}, {"nivel": "8º Nível", "codigo": "4105097", "nome": "CLÍNICA MULTIDISCIPLINAR III", "ch": "120h", "preReqs": ["4105092"]}, {"nivel": "8º Nível", "codigo": "4105098", "nome": "CLÍNICA INFANTIL II", "ch": "120h", "preReqs": ["4105094"]}, {"nivel": "8º Nível", "codigo": "4105099", "nome": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR II", "ch": "120h", "preReqs": ["4105092", "4105095"]}, {"nivel": "9º Nível", "codigo": "4105104", "nome": "TRAUMAT E RECOSNT BUCO-MAXILO-FACIAL", "ch": "60h", "preReqs": ["4105092"]}, {"nivel": "9º Nível", "codigo": "4105105", "nome": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR III", "ch": "90h", "preReqs": ["4105093", "4105099"]}, {"nivel": "9º Nível", "codigo": "4105106", "nome": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR IV", "ch": "90h", "preReqs": ["4105097", "4105099"]}, {"nivel": "9º Nível", "codigo": "4105107", "nome": "ELAB DO PROJ DO TRAB DE CONC DE CURSO", "ch": "30h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "4105108", "nome": "EST SUP EM SIST PUBLICO DE SAUDE III", "ch": "60h", "preReqs": ["4105088"]}, {"nivel": "9º Nível", "codigo": "4105109", "nome": "ODONTOGERIATRIA", "ch": "30h", "preReqs": ["4105097"]}, {"nivel": "10º Nível", "codigo": "4105111", "nome": "ORIENTACAO PROFISSIONAL", "ch": "30h", "preReqs": []}, {"nivel": "10º Nível", "codigo": "4105112", "nome": "CLÍNICA ODONTOLÓGICA (EXTRA-MUROS)", "ch": "60h", "preReqs": ["4105109", "4105108"]}, {"nivel": "10º Nível", "codigo": "4105113", "nome": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR V", "ch": "120h", "preReqs": ["4105105"]}, {"nivel": "10º Nível", "codigo": "4105114", "nome": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR VI", "ch": "90h", "preReqs": ["4105109", "4105106"]}, {"nivel": "10º Nível", "codigo": "4105115", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "30h", "preReqs": ["4105107"]}];
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "4105008", "nome": "BIOLOGIA CELULAR E MOLECULAR", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "4105031", "nome": "ANATOMIA GERAL", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "4105032", "nome": "HISTOLOGIA GERAL E EMBRIOLOGIA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "4105033", "nome": "BIOFÍSICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "4105034", "nome": "ANTROPOLOGIA CULTURAL E HUMANA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "4105035", "nome": "SAUDE COLETIVA I", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "4105036", "nome": "PSICOLOGIA APLICADA A ODONTOLOGIA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "4105041", "nome": "ANATOMIA TOPOGRÁFICA (CABEÇA E PESCOÇO)", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105031"]}, {"nivel": "2º Nível", "codigo": "4105042", "nome": "FISIOLOGIA HUMANA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "4105043", "nome": "BIOQUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105008"]}, {"nivel": "2º Nível", "codigo": "4105044", "nome": "HIST. E EMB. ODONTOLOGICA E DE SISTEMAS", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105032"]}, {"nivel": "2º Nível", "codigo": "4105045", "nome": "MICROBIOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "4105047", "nome": "SAUDE COLETIVA II", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105035"]}, {"nivel": "3º Nível", "codigo": "4105046", "nome": "EPIDEMIOLOGIA ODONTOLOGICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105047"]}, {"nivel": "3º Nível", "codigo": "4105051", "nome": "PARASITOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105044"]}, {"nivel": "3º Nível", "codigo": "4105053", "nome": "FARMACOLOGIA GERAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105043"]}, {"nivel": "3º Nível", "codigo": "4105054", "nome": "MICROBIOLOGIA BUCAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105045", "4105013"]}, {"nivel": "3º Nível", "codigo": "4105056", "nome": "PRÉ-CLÍNICA MULTIDISCIPLINAR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "4105057", "nome": "PATOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105044"]}, {"nivel": "3º Nível", "codigo": "4105058", "nome": "PROPEDEUTICA ESTOMATOLOGICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105041"]}, {"nivel": "3º Nível", "codigo": "4105059", "nome": "GENETICA E EVOLUCAO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105008"]}, {"nivel": "3º Nível", "codigo": "4105119", "nome": "METODOLOGIA CIENTIFICA E TECNOLOGICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "4105062", "nome": "PRÉ-CLÍNICA MULTIDISCIPLINAR II", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105056"]}, {"nivel": "4º Nível", "codigo": "4105063", "nome": "BIOQUÍMICA E FISIOLOGIA BUCAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105042", "4105043"]}, {"nivel": "4º Nível", "codigo": "4105064", "nome": "PROPEDEUTICA ESTOMATOLOGICA II", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105057", "4105058"]}, {"nivel": "4º Nível", "codigo": "4105065", "nome": "MATERIAIS DENTARIOS", "ch": "75\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "4105066", "nome": "TERAPEUTICA E ANESTESIOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105053"]}, {"nivel": "5º Nível", "codigo": "4105072", "nome": "PRÉ-CLÍNICA MULTIDISCIPLINAR III", "ch": "150\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105062"]}, {"nivel": "5º Nível", "codigo": "4105073", "nome": "ESTAGIO SUP EM SIST PUBLICO DE SAUDE I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105046"]}, {"nivel": "5º Nível", "codigo": "4105074", "nome": "ODONTOLOGIA LEGAL E DEONTOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "4105075", "nome": "ETICA E LEGISLACAO ODONTOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "4105076", "nome": "PROPEDEUTICA ESTOMATOLOGICA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105064"]}, {"nivel": "5º Nível", "codigo": "4105077", "nome": "INGLES INSTRUMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "4105086", "nome": "CLÍNICA MULTIDISCIPLINAR I", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105072"]}, {"nivel": "6º Nível", "codigo": "4105087", "nome": "PRÉ-CLÍNICA MULTIDISCIPLINAR IV", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105062", "4105065"]}, {"nivel": "6º Nível", "codigo": "4105088", "nome": "ESTAGIO SUPERV EM SIST PUB DE SAUDE II", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105073"]}, {"nivel": "6º Nível", "codigo": "4105089", "nome": "PROPEDEUTICA  ESTOMATOLOGICA IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105076"]}, {"nivel": "7º Nível", "codigo": "4105092", "nome": "CLÍNICA MULTIDISCIPLINAR II", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105086", "4105087"]}, {"nivel": "7º Nível", "codigo": "4105093", "nome": "PRÉ-CLÍNICA MULTIDISCIPLINAR V", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105087"]}, {"nivel": "7º Nível", "codigo": "4105094", "nome": "CLÍNICA INFANTIL I", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105086"]}, {"nivel": "7º Nível", "codigo": "4105095", "nome": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR I", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105086", "4105089"]}, {"nivel": "8º Nível", "codigo": "4105097", "nome": "CLÍNICA MULTIDISCIPLINAR III", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105092"]}, {"nivel": "8º Nível", "codigo": "4105098", "nome": "CLÍNICA INFANTIL II", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105094"]}, {"nivel": "8º Nível", "codigo": "4105099", "nome": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR II", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105092", "4105095"]}, {"nivel": "9º Nível", "codigo": "4105104", "nome": "TRAUMAT E RECOSNT BUCO-MAXILO-FACIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105092"]}, {"nivel": "9º Nível", "codigo": "4105105", "nome": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR III", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105093", "4105099"]}, {"nivel": "9º Nível", "codigo": "4105106", "nome": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR IV", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105097", "4105099"]}, {"nivel": "9º Nível", "codigo": "4105107", "nome": "ELAB DO PROJ DO TRAB DE CONC DE CURSO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "4105108", "nome": "EST SUP EM SIST PUBLICO DE SAUDE III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105088"]}, {"nivel": "9º Nível", "codigo": "4105109", "nome": "ODONTOGERIATRIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105097"]}, {"nivel": "10º Nível", "codigo": "4105111", "nome": "ORIENTACAO PROFISSIONAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "10º Nível", "codigo": "4105112", "nome": "CLÍNICA ODONTOLÓGICA (EXTRA-MUROS)", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105109", "4105108"]}, {"nivel": "10º Nível", "codigo": "4105113", "nome": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR V", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105105"]}, {"nivel": "10º Nível", "codigo": "4105114", "nome": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR VI", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105109", "4105106"]}, {"nivel": "10º Nível", "codigo": "4105115", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4105107"]}];
   const codigoToNome = {"4105008": "BIOLOGIA CELULAR E MOLECULAR", "4105031": "ANATOMIA GERAL", "4105032": "HISTOLOGIA GERAL E EMBRIOLOGIA", "4105033": "BIOFÍSICA", "4105034": "ANTROPOLOGIA CULTURAL E HUMANA", "4105035": "SAUDE COLETIVA I", "4105036": "PSICOLOGIA APLICADA A ODONTOLOGIA", "4105041": "ANATOMIA TOPOGRÁFICA (CABEÇA E PESCOÇO)", "4105042": "FISIOLOGIA HUMANA", "4105043": "BIOQUÍMICA GERAL", "4105044": "HIST. E EMB. ODONTOLOGICA E DE SISTEMAS", "4105045": "MICROBIOLOGIA", "4105047": "SAUDE COLETIVA II", "4105046": "EPIDEMIOLOGIA ODONTOLOGICA", "4105051": "PARASITOLOGIA", "4105053": "FARMACOLOGIA GERAL", "4105054": "MICROBIOLOGIA BUCAL", "4105056": "PRÉ-CLÍNICA MULTIDISCIPLINAR I", "4105057": "PATOLOGIA GERAL", "4105058": "PROPEDEUTICA ESTOMATOLOGICA I", "4105059": "GENETICA E EVOLUCAO", "4105119": "METODOLOGIA CIENTIFICA E TECNOLOGICA", "4105062": "PRÉ-CLÍNICA MULTIDISCIPLINAR II", "4105063": "BIOQUÍMICA E FISIOLOGIA BUCAL", "4105064": "PROPEDEUTICA ESTOMATOLOGICA II", "4105065": "MATERIAIS DENTARIOS", "4105066": "TERAPEUTICA E ANESTESIOLOGIA", "4105072": "PRÉ-CLÍNICA MULTIDISCIPLINAR III", "4105073": "ESTAGIO SUP EM SIST PUBLICO DE SAUDE I", "4105074": "ODONTOLOGIA LEGAL E DEONTOLOGIA", "4105075": "ETICA E LEGISLACAO ODONTOLOGIA", "4105076": "PROPEDEUTICA ESTOMATOLOGICA III", "4105077": "INGLES INSTRUMENTAL", "4105086": "CLÍNICA MULTIDISCIPLINAR I", "4105087": "PRÉ-CLÍNICA MULTIDISCIPLINAR IV", "4105088": "ESTAGIO SUPERV EM SIST PUB DE SAUDE II", "4105089": "PROPEDEUTICA  ESTOMATOLOGICA IV", "4105092": "CLÍNICA MULTIDISCIPLINAR II", "4105093": "PRÉ-CLÍNICA MULTIDISCIPLINAR V", "4105094": "CLÍNICA INFANTIL I", "4105095": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR I", "4105097": "CLÍNICA MULTIDISCIPLINAR III", "4105098": "CLÍNICA INFANTIL II", "4105099": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR II", "4105104": "TRAUMAT E RECOSNT BUCO-MAXILO-FACIAL", "4105105": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR III", "4105106": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR IV", "4105107": "ELAB DO PROJ DO TRAB DE CONC DE CURSO", "4105108": "EST SUP EM SIST PUBLICO DE SAUDE III", "4105109": "ODONTOGERIATRIA", "4105111": "ORIENTACAO PROFISSIONAL", "4105112": "CLÍNICA ODONTOLÓGICA (EXTRA-MUROS)", "4105113": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR V", "4105114": "EST. SUP. EM CLÍN. MULTIDISCIPLINAR VI", "4105115": "TRABALHO DE CONCLUSAO DE CURSO", "4102218": "LINGUA BRASILEIRA DE SINAIS (LIBRAS)", "4105021": "BIOESTATÍSTICA", "4105055": "INFORMÁTICA APLICADA À ODONTOLOGIA", "4105067": "SAUDE E CIDADANIA", "4105084": "EXPRESSAO ORAL E ESCRITA", "4105085": "PRINCIPIOS BASICOS DE ANEST POR SEDACAO", "4105096": "INTRODUÇÃO À ODONTOLOGIA", "4105100": "LINGUA BRASILEIRA DE SINAIS", "4105110": "ODONT CLIN P PACIENTES PORT DE NESC ESPE", "4105117": "FUNDAMENTOS DA LASERTERAPIA", "4105118": "FUND.DA FITOTERAPIA APLIC. A ODONTOLOGIA", "4105120": "PRINCIPIOS BASICOS DE IMPLANTODONTIA", "4105122": "FUNDAMENTOS DA HOMEOPATIA", "4105123": "TEO(INTERACOES MEDICAMENTOSAS)", "4105124": "TEO(PRÁTICA DESPORTIVA)", "4105125": "TEO(EST EM ODONT DIGITAL NA REAB ORAL)", "4105126": "TEO(ODONTOLOGIA PARA INICIANTES)", "4105127": "TEO(TOP EM CIRURGIA DENTO-ALVEOLAR)", "4105128": "TEO(FARM APLIC A PREVENÇÃO E TRAT DA DOR", "4105129": "TEO(FUND DA FARM E FIT APLIC A BIOLOGIA)", "4105130": "TEO(SEM AVANÇADOS DE ODONTOLOGIA LEGAL)", "4105131": "TEO(TÓPICOS ESPECIAIS EM PERIODONTIA)", "4105132": "TEO(TOP ESPEC DE PESQ PARA ODONTOLOGIA)", "4105133": "TEO(PERIODONTIA CIRÚRGICA)", "4105134": "TEO(INTRODUÇÃO À TELEODONTOLOGIA)", "4105135": "TEO(BIOSSEG APLIC A CLÍNICA ODONTOLÓGICA", "4105136": "TEO(DIAG E TRAT EM ORTODONTIA CORRETIVA", "4105137": "TEO(TÓPICOS ESPCIAIS EM MICROBIOLOGIA)", "4105139": "TEO(TAO-PRINCÍPIOS E OCLUSÃO E DTM)", "4105140": "TEO(ENDODONTIA-PRICÍPIOS BIOLÓGICOS)", "4105141": "TEO(ENDODONTIA-PRINCÍPIOS TÉCNICOS)", "4105142": "TEO(TÓPICOS EM ODONTOLOGIA HOSPITALAR)", "4105143": "TEO(MET AVANC DE ESTUDOS EM CEL E TEC)", "4105144": "TEO(TÓPCOS ESPECIAIS EM DENTÍSTICA)", "4105145": "TEO(URGÊNCIAS E EMERGÊNCIAS MÉDICAS)", "4105146": "TEO(INTERP DE EX LAB APLIC À ODONTOLOGIA", "4105155": "TEO(DISC DE CASOS CLIN EM ENDODONTIA)", "4105156": "TEO(TOPICOS EM HARMONIZAÇÃO OROFACIAL)", "4105158": "PRÁTICA DESPORTIVA"};
 
   const subjectsMap = new Map();
@@ -866,7 +869,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

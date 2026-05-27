@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,96 +404,96 @@
           <tr>
               <td>1307189</td>
               <td>INGLES INSTRUMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308026</td>
               <td>GEOGRAFIA DO TURISMO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308027</td>
               <td>EDUCAÇÃO AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308028</td>
               <td>TEG(GEOGRAFIA DO SEMIARIDO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308029</td>
               <td>TEG(PROBLEMAS URBANOS E PLANEJ. LOCAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308039</td>
               <td>GEOGRAFIA DA SAUDE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308040</td>
               <td>GEOGRAFIA AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308041</td>
               <td>TEG(AGROECOLOGIA E GEOGRAFIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308043</td>
               <td>GEOGRAFIA SOCIOTERRITORIAL DO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308045</td>
               <td>GEOGRAFIA FÍSICO-AMBIENTAL DO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308047</td>
               <td>TEG (INTRODUÇÃO À OCEANOGRAFIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308095</td>
               <td>TEG(PESQ QUAL APLIC À CIÊNCIAS HUMANAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -537,8 +540,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1305027", "nome": "INTRODUÇÃO À SOCIOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307169", "nome": "LÍNGUA PORTUGUESA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1308002", "nome": "HISTÓRIA DO PENSAMENTO GEOGRÁFICO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1308003", "nome": "FUNDAMENTOS PARA ESTUDO EM GEOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1308004", "nome": "MET.DO TRAB.CIENT:AS NORMAS DA PROD.TEXT", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1308005", "nome": "TEORIA E METODOS EM GEOGRAFIA", "ch": "60h", "preReqs": ["1308002"]}, {"nivel": "2º Nível", "codigo": "1308006", "nome": "FUNDAMENTOS PARA ESTUDO EM GEOMORFOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1308007", "nome": "CARTOGRAFIA E ESTUDOS CORRELATOS", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1308008", "nome": "ELEMENTOS E DINAMICAS DEMOGRAFICAS", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1308024", "nome": "LEITURA E PROD.DE TEXTOS EM GEOGRAFIA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1308009", "nome": "ESTUDO DE CAMPO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1308010", "nome": "FUNDAMENTOS PARA ESTUDO EM CLIMATOLOGIA", "ch": "60h", "preReqs": ["1308003"]}, {"nivel": "3º Nível", "codigo": "1308011", "nome": "FUNDAMENTOS PARA ESTUDO EM PEDOLOGIA", "ch": "60h", "preReqs": ["1308006"]}, {"nivel": "3º Nível", "codigo": "1308012", "nome": "FUNDAMENTOS PARA ESTUDO EM GEOG AGRARIA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1308013", "nome": "FUNDAMENTOS PARA ESTUDO EM GEOG URBANA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1308001", "nome": "GEOGRAFIA ECONOMICA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1308015", "nome": "GEOGRAFIA POLITICA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1308016", "nome": "FORMACAO TERRITORIAL DO BRASIL", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1308017", "nome": "FUNDAMENTOS PARA ESTUDO EM BIOGEOGRAFIA", "ch": "60h", "preReqs": ["1308010"]}, {"nivel": "4º Nível", "codigo": "1308018", "nome": "REGIAO E REGIONALIZACAO", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1304293", "nome": "POLITICA EDUCACIONAL NO BRASIL", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1307332", "nome": "LIBRAS", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1308020", "nome": "GEOGRAFIA REGIONAL DO BRASIL", "ch": "60h", "preReqs": ["1308018"]}, {"nivel": "5º Nível", "codigo": "1308023", "nome": "PRÁTICA DE ENSINO EM GEOGRAFIA", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1304004", "nome": "DIDATICA", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1304295", "nome": "PSICOLOGIA EDUCACIONAL", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1308014", "nome": "GEOGRAFIA DA PARAIBA", "ch": "60h", "preReqs": ["1308020"]}, {"nivel": "7º Nível", "codigo": "1308025", "nome": "PROJETO DE PESQUISA", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1308032", "nome": "INFORMÁTICA APL. AO ENSINO DE GEOGRAFIA", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1308033", "nome": "GEOGRAFIA DOS RECURSOS HIDRICOS", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1308022", "nome": "GEOGRAFIA CULTURAL", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1308035", "nome": "GEOGRAFIA REGIONAL DO MUNDO", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1308036", "nome": "SENSORIAMENTO REMOTO E GEOPROCESSAMENTO", "ch": "60h", "preReqs": ["1308007"]}, {"nivel": "8º Nível", "codigo": "1308037", "nome": "METODOLOGIA DO ENSINO EM GEOGRAFIA", "ch": "60h", "preReqs": ["1308023"]}, {"nivel": "9º Nível", "codigo": "1308030", "nome": "PROD.E INST.DE REC.DIDAT.EM GEOGRAFIA", "ch": "60h", "preReqs": []}];
-  const codigoToNome = {"1305027": "INTRODUÇÃO À SOCIOLOGIA", "1307169": "LÍNGUA PORTUGUESA", "1308002": "HISTÓRIA DO PENSAMENTO GEOGRÁFICO", "1308003": "FUNDAMENTOS PARA ESTUDO EM GEOLOGIA", "1308004": "MET.DO TRAB.CIENT:AS NORMAS DA PROD.TEXT", "1308005": "TEORIA E METODOS EM GEOGRAFIA", "1308006": "FUNDAMENTOS PARA ESTUDO EM GEOMORFOLOGIA", "1308007": "CARTOGRAFIA E ESTUDOS CORRELATOS", "1308008": "ELEMENTOS E DINAMICAS DEMOGRAFICAS", "1308024": "LEITURA E PROD.DE TEXTOS EM GEOGRAFIA", "1308009": "ESTUDO DE CAMPO", "1308010": "FUNDAMENTOS PARA ESTUDO EM CLIMATOLOGIA", "1308011": "FUNDAMENTOS PARA ESTUDO EM PEDOLOGIA", "1308012": "FUNDAMENTOS PARA ESTUDO EM GEOG AGRARIA", "1308013": "FUNDAMENTOS PARA ESTUDO EM GEOG URBANA", "1308001": "GEOGRAFIA ECONOMICA", "1308015": "GEOGRAFIA POLITICA", "1308016": "FORMACAO TERRITORIAL DO BRASIL", "1308017": "FUNDAMENTOS PARA ESTUDO EM BIOGEOGRAFIA", "1308018": "REGIAO E REGIONALIZACAO", "1304293": "POLITICA EDUCACIONAL NO BRASIL", "1307332": "LIBRAS", "1308020": "GEOGRAFIA REGIONAL DO BRASIL", "1308023": "PRÁTICA DE ENSINO EM GEOGRAFIA", "1304004": "DIDATICA", "1304295": "PSICOLOGIA EDUCACIONAL", "1308014": "GEOGRAFIA DA PARAIBA", "1308025": "PROJETO DE PESQUISA", "1308032": "INFORMÁTICA APL. AO ENSINO DE GEOGRAFIA", "1308033": "GEOGRAFIA DOS RECURSOS HIDRICOS", "1308022": "GEOGRAFIA CULTURAL", "1308035": "GEOGRAFIA REGIONAL DO MUNDO", "1308036": "SENSORIAMENTO REMOTO E GEOPROCESSAMENTO", "1308037": "METODOLOGIA DO ENSINO EM GEOGRAFIA", "1308030": "PROD.E INST.DE REC.DIDAT.EM GEOGRAFIA", "1307189": "INGLES INSTRUMENTAL", "1308026": "GEOGRAFIA DO TURISMO", "1308027": "EDUCAÇÃO AMBIENTAL", "1308028": "TEG(GEOGRAFIA DO SEMIARIDO)", "1308029": "TEG(PROBLEMAS URBANOS E PLANEJ. LOCAL", "1308039": "GEOGRAFIA DA SAUDE", "1308040": "GEOGRAFIA AMBIENTAL", "1308041": "TEG(AGROECOLOGIA E GEOGRAFIA)", "1308043": "GEOGRAFIA SOCIOTERRITORIAL DO BRASIL", "1308045": "GEOGRAFIA FÍSICO-AMBIENTAL DO BRASIL", "1308047": "TEG (INTRODUÇÃO À OCEANOGRAFIA)", "1308095": "TEG(PESQ QUAL APLIC À CIÊNCIAS HUMANAS)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1305027", "nome": "INTRODUÇÃO À SOCIOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307169", "nome": "LÍNGUA PORTUGUESA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1308002", "nome": "HISTÓRIA DO PENSAMENTO GEOGRÁFICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1308003", "nome": "FUNDAMENTOS PARA ESTUDO EM GEOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1308004", "nome": "MET.DO TRAB.CIENT:AS NORMAS DA PROD.TEXT", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1308005", "nome": "TEORIA E METODOS EM GEOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1308002"]}, {"nivel": "2º Nível", "codigo": "1308006", "nome": "FUNDAMENTOS PARA ESTUDO EM GEOMORFOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1308007", "nome": "CARTOGRAFIA E ESTUDOS CORRELATOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1308008", "nome": "ELEMENTOS E DINAMICAS DEMOGRAFICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1308024", "nome": "LEITURA E PROD.DE TEXTOS EM GEOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1308009", "nome": "ESTUDO DE CAMPO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1308010", "nome": "FUNDAMENTOS PARA ESTUDO EM CLIMATOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1308003"]}, {"nivel": "3º Nível", "codigo": "1308011", "nome": "FUNDAMENTOS PARA ESTUDO EM PEDOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1308006"]}, {"nivel": "3º Nível", "codigo": "1308012", "nome": "FUNDAMENTOS PARA ESTUDO EM GEOG AGRARIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1308013", "nome": "FUNDAMENTOS PARA ESTUDO EM GEOG URBANA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1308001", "nome": "GEOGRAFIA ECONOMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1308015", "nome": "GEOGRAFIA POLITICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1308016", "nome": "FORMACAO TERRITORIAL DO BRASIL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1308017", "nome": "FUNDAMENTOS PARA ESTUDO EM BIOGEOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1308010"]}, {"nivel": "4º Nível", "codigo": "1308018", "nome": "REGIAO E REGIONALIZACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1308019", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO I", "ch": "105\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1304293", "nome": "POLITICA EDUCACIONAL NO BRASIL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1307332", "nome": "LIBRAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1308020", "nome": "GEOGRAFIA REGIONAL DO BRASIL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1308018"]}, {"nivel": "5º Nível", "codigo": "1308023", "nome": "PRÁTICA DE ENSINO EM GEOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1308021", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO II", "ch": "105\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1308019"]}, {"nivel": "6º Nível", "codigo": "1304004", "nome": "DIDATICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1304295", "nome": "PSICOLOGIA EDUCACIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1308014", "nome": "GEOGRAFIA DA PARAIBA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1308020"]}, {"nivel": "7º Nível", "codigo": "1308031", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO III", "ch": "105\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1308021"]}, {"nivel": "7º Nível", "codigo": "1308025", "nome": "PROJETO DE PESQUISA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1308032", "nome": "INFORMÁTICA APL. AO ENSINO DE GEOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1308033", "nome": "GEOGRAFIA DOS RECURSOS HIDRICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1308034", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO IV", "ch": "90\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1308031"]}, {"nivel": "8º Nível", "codigo": "1308022", "nome": "GEOGRAFIA CULTURAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1308035", "nome": "GEOGRAFIA REGIONAL DO MUNDO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1308036", "nome": "SENSORIAMENTO REMOTO E GEOPROCESSAMENTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1308007"]}, {"nivel": "8º Nível", "codigo": "1308037", "nome": "METODOLOGIA DO ENSINO EM GEOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1308023"]}, {"nivel": "9º Nível", "codigo": "1308042", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1306309", "1308025"]}, {"nivel": "9º Nível", "codigo": "1308044", "nome": "ATIVID ACADEMICO-CIENTIFICO-CULTURAIS", "ch": "210\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1308030", "nome": "PROD.E INST.DE REC.DIDAT.EM GEOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}];
+  const codigoToNome = {"1305027": "INTRODUÇÃO À SOCIOLOGIA", "1307169": "LÍNGUA PORTUGUESA", "1308002": "HISTÓRIA DO PENSAMENTO GEOGRÁFICO", "1308003": "FUNDAMENTOS PARA ESTUDO EM GEOLOGIA", "1308004": "MET.DO TRAB.CIENT:AS NORMAS DA PROD.TEXT", "1308005": "TEORIA E METODOS EM GEOGRAFIA", "1308006": "FUNDAMENTOS PARA ESTUDO EM GEOMORFOLOGIA", "1308007": "CARTOGRAFIA E ESTUDOS CORRELATOS", "1308008": "ELEMENTOS E DINAMICAS DEMOGRAFICAS", "1308024": "LEITURA E PROD.DE TEXTOS EM GEOGRAFIA", "1308009": "ESTUDO DE CAMPO", "1308010": "FUNDAMENTOS PARA ESTUDO EM CLIMATOLOGIA", "1308011": "FUNDAMENTOS PARA ESTUDO EM PEDOLOGIA", "1308012": "FUNDAMENTOS PARA ESTUDO EM GEOG AGRARIA", "1308013": "FUNDAMENTOS PARA ESTUDO EM GEOG URBANA", "1308001": "GEOGRAFIA ECONOMICA", "1308015": "GEOGRAFIA POLITICA", "1308016": "FORMACAO TERRITORIAL DO BRASIL", "1308017": "FUNDAMENTOS PARA ESTUDO EM BIOGEOGRAFIA", "1308018": "REGIAO E REGIONALIZACAO", "1308019": "ESTAGIO CURRICULAR SUPERVISIONADO I", "1304293": "POLITICA EDUCACIONAL NO BRASIL", "1307332": "LIBRAS", "1308020": "GEOGRAFIA REGIONAL DO BRASIL", "1308023": "PRÁTICA DE ENSINO EM GEOGRAFIA", "1308021": "ESTAGIO CURRICULAR SUPERVISIONADO II", "1304004": "DIDATICA", "1304295": "PSICOLOGIA EDUCACIONAL", "1308014": "GEOGRAFIA DA PARAIBA", "1308031": "ESTAGIO CURRICULAR SUPERVISIONADO III", "1308025": "PROJETO DE PESQUISA", "1308032": "INFORMÁTICA APL. AO ENSINO DE GEOGRAFIA", "1308033": "GEOGRAFIA DOS RECURSOS HIDRICOS", "1308034": "ESTAGIO CURRICULAR SUPERVISIONADO IV", "1308022": "GEOGRAFIA CULTURAL", "1308035": "GEOGRAFIA REGIONAL DO MUNDO", "1308036": "SENSORIAMENTO REMOTO E GEOPROCESSAMENTO", "1308037": "METODOLOGIA DO ENSINO EM GEOGRAFIA", "1308042": "TRABALHO DE CONCLUSAO DE CURSO", "1308044": "ATIVID ACADEMICO-CIENTIFICO-CULTURAIS", "1308030": "PROD.E INST.DE REC.DIDAT.EM GEOGRAFIA", "1307189": "INGLES INSTRUMENTAL", "1308026": "GEOGRAFIA DO TURISMO", "1308027": "EDUCAÇÃO AMBIENTAL", "1308028": "TEG(GEOGRAFIA DO SEMIARIDO)", "1308029": "TEG(PROBLEMAS URBANOS E PLANEJ. LOCAL", "1308039": "GEOGRAFIA DA SAUDE", "1308040": "GEOGRAFIA AMBIENTAL", "1308041": "TEG(AGROECOLOGIA E GEOGRAFIA)", "1308043": "GEOGRAFIA SOCIOTERRITORIAL DO BRASIL", "1308045": "GEOGRAFIA FÍSICO-AMBIENTAL DO BRASIL", "1308047": "TEG (INTRODUÇÃO À OCEANOGRAFIA)", "1308095": "TEG(PESQ QUAL APLIC À CIÊNCIAS HUMANAS)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -650,7 +653,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

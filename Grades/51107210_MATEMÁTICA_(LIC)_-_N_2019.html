@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,144 +404,144 @@
           <tr>
               <td>5101162</td>
               <td>INTRODUÇÃO À GEOMETRIA DIFERENCIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CALCULO DIFERENCIAL E INTEGRAL IV</td>
               <td></td>
           </tr>
           <tr>
               <td>5101175</td>
               <td>ÁLGEBRA LINEAR II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ALGEBRA LINEAR</td>
               <td></td>
           </tr>
           <tr>
               <td>5101176</td>
               <td>ANÁLISE NO RN</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANALISE NA RETA I, ALGEBRA LINEAR, CALCULO DIFERENCIAL E INTEGRAL IV</td>
               <td></td>
           </tr>
           <tr>
               <td>5101197</td>
               <td>MODELAGEM MATEMÁTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>EQUACOES DIFERENCIAIS ORDINARIAS</td>
               <td></td>
           </tr>
           <tr>
               <td>5101198</td>
               <td>ESPACOS METRICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANALISE NA RETA I</td>
               <td></td>
           </tr>
           <tr>
               <td>5101202</td>
               <td>TECNOLOGIA DA AMOSTRAGEM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROBABILIDADE E INFERÊNCIA ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5101208</td>
               <td>TÓPICOS DE HISTÓRIA DA MATEMÁTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À HISTÓRIA DA MATEMÁTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5101209</td>
               <td>MATEMATICA FINANCEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101223</td>
               <td>CONTROLE ESTATISTICO DE QUALIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROBABILIDADE E INFERÊNCIA ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5101242</td>
               <td>CURRÍCULO EDUCACIONAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>POLITICA E LEGISLAÇÃO DA EDUCAÇÃO BÁSICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5101243</td>
               <td>PROFISSÃO DOCENTE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101244</td>
               <td>EDUCAÇÃO INCLUSIVA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104015</td>
               <td>INGLES INSTRUMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104189</td>
               <td>TÓPICOS DE ANÁLISE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANALISE NA RETA I</td>
               <td></td>
           </tr>
           <tr>
               <td>5101270</td>
               <td>TEM(ENSINO INCLUSO)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101273</td>
               <td>TEM(INTROD À FILOSOFIA E À SOC DA EDUC)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101275</td>
               <td>TEM(METODOLOGIA CIENTÍFICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101276</td>
               <td>TEM(TÓPICOS EM GEOMETRIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CALCULO DIFERENCIAL E INTEGRAL IV</td>
               <td></td>
           </tr>
@@ -585,8 +588,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5101019", "nome": "INTROD. A LÓGICA E A LING. MATEMÁTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5101021", "nome": "INFORMÁTICA APLICADA AO ENSINO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5101226", "nome": "INTRODUÇÃO AO CÁLCULO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5101227", "nome": "INTRODUÇÃO À ÁLGEBRA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104016", "nome": "PSICOLOGIA E EDUCAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101012", "nome": "ÁLGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101024", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": ["5101226"]}, {"nivel": "2º Nível", "codigo": "5101030", "nome": "METODOLOGIA DO ENSINO DA MATEMÁTICA I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101228", "nome": "LEITURA E PRODUÇÃO DE TEXTOS", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104010", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5101048", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["5101024"]}, {"nivel": "3º Nível", "codigo": "5101053", "nome": "METODOLOGIA DO ENSINO DA MATEMÁTICA II", "ch": "60h", "preReqs": ["5101030"]}, {"nivel": "3º Nível", "codigo": "5101224", "nome": "ALGEBRA LINEAR", "ch": "60h", "preReqs": ["5101227"]}, {"nivel": "3º Nível", "codigo": "5101229", "nome": "GEOMETRIA EUCLIDIANA PLANA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5101236", "nome": "DIDÁTICA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5101237", "nome": "EDUCAÇÃO E DIVERSIDADE", "ch": "30h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "5101050", "nome": "ESTATÍSTICA DESCRITIVA", "ch": "60h", "preReqs": ["5101024"]}, {"nivel": "4º Nível", "codigo": "5101075", "nome": "CALCULO DIFERENCIAL E INTEGRAL III", "ch": "60h", "preReqs": ["5101048"]}, {"nivel": "4º Nível", "codigo": "5101077", "nome": "METODOLOGIA DO ENSINO DA MATEMÁTICA III", "ch": "60h", "preReqs": ["5101053"]}, {"nivel": "4º Nível", "codigo": "5101230", "nome": "GEOMETRIA EUCLIDIANA ESPACIAL", "ch": "60h", "preReqs": ["5101229"]}, {"nivel": "4º Nível", "codigo": "5101238", "nome": "PLANEJAMENTO EM EDUCAÇÃO", "ch": "60h", "preReqs": ["5101236"]}, {"nivel": "5º Nível", "codigo": "5101058", "nome": "FÍSICA GERAL E EXPERIMENTAL I", "ch": "60h", "preReqs": ["5101024"]}, {"nivel": "5º Nível", "codigo": "5101069", "nome": "CALCULO DIFERENCIAL E INTEGRAL IV", "ch": "60h", "preReqs": ["5101075"]}, {"nivel": "5º Nível", "codigo": "5101076", "nome": "PROBABILIDADE E INFERÊNCIA ESTATÍSTICA", "ch": "60h", "preReqs": ["5101048"]}, {"nivel": "5º Nível", "codigo": "5101109", "nome": "EQUACOES DIFERENCIAIS ORDINARIAS", "ch": "60h", "preReqs": ["5101224", "5101075"]}, {"nivel": "5º Nível", "codigo": "5101233", "nome": "TECNOLOGIAS NO ENSINO DA MATEMÁTICA", "ch": "60h", "preReqs": ["5101021"]}, {"nivel": "6º Nível", "codigo": "5101029", "nome": "INTRODUÇÃO À TEORIA DOS NUMEROS", "ch": "60h", "preReqs": ["5101019"]}, {"nivel": "6º Nível", "codigo": "5101060", "nome": "FÍSICA II", "ch": "60h", "preReqs": ["5101058"]}, {"nivel": "6º Nível", "codigo": "5101231", "nome": "LABORATÓRIO NO ENSINO DE MATEMÁTICA", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "5101232", "nome": "CÁLCULO AVANÇADO", "ch": "60h", "preReqs": ["5101069"]}, {"nivel": "6º Nível", "codigo": "5104041", "nome": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "5101113", "nome": "ALGORITMOS E LINGUAGENS DE PROGRAMAÇÃO", "ch": "60h", "preReqs": ["5101021"]}, {"nivel": "7º Nível", "codigo": "5101114", "nome": "ENS DA MATEM.ATRAVES DA RES.DE PROBLEMAS", "ch": "60h", "preReqs": ["5101077"]}, {"nivel": "7º Nível", "codigo": "5101148", "nome": "LINGUA BRASILEIRA DE SINAIS", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "5101225", "nome": "ANALISE NA RETA I", "ch": "60h", "preReqs": ["5101075", "5101029"]}, {"nivel": "7º Nível", "codigo": "5101239", "nome": "AVALIAÇÃO E APRENDIZAGEM", "ch": "60h", "preReqs": ["5104016"]}, {"nivel": "8º Nível", "codigo": "5101127", "nome": "ESTRUTURAS ALGÉBRICAS", "ch": "60h", "preReqs": ["5101019"]}, {"nivel": "8º Nível", "codigo": "5101128", "nome": "INTRODUÇÃO AOS MÉTODOS NUMÉRICOS", "ch": "60h", "preReqs": ["5101113"]}, {"nivel": "8º Nível", "codigo": "5101240", "nome": "POLITICA E LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "ch": "60h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "5101150", "nome": "INTRODUÇÃO ÀS VARIÁVEIS COMPLEXAS", "ch": "60h", "preReqs": ["5101232"]}, {"nivel": "9º Nível", "codigo": "5101151", "nome": "INTRODUÇÃO À HISTÓRIA DA MATEMÁTICA", "ch": "60h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "5101241", "nome": "PROJETO DE PESQUISA", "ch": "30h", "preReqs": []}, {"nivel": "10º Nível", "codigo": "5101234", "nome": "FÍSICA DO MEIO AMBIENTE", "ch": "30h", "preReqs": []}];
-  const codigoToNome = {"5101019": "INTROD. A LÓGICA E A LING. MATEMÁTICA", "5101021": "INFORMÁTICA APLICADA AO ENSINO", "5101226": "INTRODUÇÃO AO CÁLCULO", "5101227": "INTRODUÇÃO À ÁLGEBRA", "5104016": "PSICOLOGIA E EDUCAÇÃO", "5101012": "ÁLGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "5101024": "CALCULO DIFERENCIAL E INTEGRAL I", "5101030": "METODOLOGIA DO ENSINO DA MATEMÁTICA I", "5101228": "LEITURA E PRODUÇÃO DE TEXTOS", "5104010": "METODOLOGIA CIENTÍFICA", "5101048": "CALCULO DIFERENCIAL E INTEGRAL II", "5101053": "METODOLOGIA DO ENSINO DA MATEMÁTICA II", "5101224": "ALGEBRA LINEAR", "5101229": "GEOMETRIA EUCLIDIANA PLANA", "5101236": "DIDÁTICA", "5101237": "EDUCAÇÃO E DIVERSIDADE", "5101050": "ESTATÍSTICA DESCRITIVA", "5101075": "CALCULO DIFERENCIAL E INTEGRAL III", "5101077": "METODOLOGIA DO ENSINO DA MATEMÁTICA III", "5101230": "GEOMETRIA EUCLIDIANA ESPACIAL", "5101238": "PLANEJAMENTO EM EDUCAÇÃO", "5101058": "FÍSICA GERAL E EXPERIMENTAL I", "5101069": "CALCULO DIFERENCIAL E INTEGRAL IV", "5101076": "PROBABILIDADE E INFERÊNCIA ESTATÍSTICA", "5101109": "EQUACOES DIFERENCIAIS ORDINARIAS", "5101233": "TECNOLOGIAS NO ENSINO DA MATEMÁTICA", "5101029": "INTRODUÇÃO À TEORIA DOS NUMEROS", "5101060": "FÍSICA II", "5101231": "LABORATÓRIO NO ENSINO DE MATEMÁTICA", "5101232": "CÁLCULO AVANÇADO", "5104041": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "5101113": "ALGORITMOS E LINGUAGENS DE PROGRAMAÇÃO", "5101114": "ENS DA MATEM.ATRAVES DA RES.DE PROBLEMAS", "5101148": "LINGUA BRASILEIRA DE SINAIS", "5101225": "ANALISE NA RETA I", "5101239": "AVALIAÇÃO E APRENDIZAGEM", "5101127": "ESTRUTURAS ALGÉBRICAS", "5101128": "INTRODUÇÃO AOS MÉTODOS NUMÉRICOS", "5101240": "POLITICA E LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "5101150": "INTRODUÇÃO ÀS VARIÁVEIS COMPLEXAS", "5101151": "INTRODUÇÃO À HISTÓRIA DA MATEMÁTICA", "5101241": "PROJETO DE PESQUISA", "5101234": "FÍSICA DO MEIO AMBIENTE", "5101162": "INTRODUÇÃO À GEOMETRIA DIFERENCIAL", "5101175": "ÁLGEBRA LINEAR II", "5101176": "ANÁLISE NO RN", "5101197": "MODELAGEM MATEMÁTICA", "5101198": "ESPACOS METRICOS", "5101202": "TECNOLOGIA DA AMOSTRAGEM", "5101208": "TÓPICOS DE HISTÓRIA DA MATEMÁTICA", "5101209": "MATEMATICA FINANCEIRA", "5101223": "CONTROLE ESTATISTICO DE QUALIDADE", "5101242": "CURRÍCULO EDUCACIONAL", "5101243": "PROFISSÃO DOCENTE", "5101244": "EDUCAÇÃO INCLUSIVA", "5104015": "INGLES INSTRUMENTAL", "5104189": "TÓPICOS DE ANÁLISE", "5101270": "TEM(ENSINO INCLUSO)", "5101273": "TEM(INTROD À FILOSOFIA E À SOC DA EDUC)", "5101275": "TEM(METODOLOGIA CIENTÍFICA)", "5101276": "TEM(TÓPICOS EM GEOMETRIA)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5101019", "nome": "INTROD. A LÓGICA E A LING. MATEMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5101021", "nome": "INFORMÁTICA APLICADA AO ENSINO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5101226", "nome": "INTRODUÇÃO AO CÁLCULO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5101227", "nome": "INTRODUÇÃO À ÁLGEBRA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104016", "nome": "PSICOLOGIA E EDUCAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101012", "nome": "ÁLGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101024", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101226"]}, {"nivel": "2º Nível", "codigo": "5101030", "nome": "METODOLOGIA DO ENSINO DA MATEMÁTICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101228", "nome": "LEITURA E PRODUÇÃO DE TEXTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104010", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5101048", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101024"]}, {"nivel": "3º Nível", "codigo": "5101053", "nome": "METODOLOGIA DO ENSINO DA MATEMÁTICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101030"]}, {"nivel": "3º Nível", "codigo": "5101224", "nome": "ALGEBRA LINEAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101227"]}, {"nivel": "3º Nível", "codigo": "5101229", "nome": "GEOMETRIA EUCLIDIANA PLANA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5101236", "nome": "DIDÁTICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5101237", "nome": "EDUCAÇÃO E DIVERSIDADE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "5101050", "nome": "ESTATÍSTICA DESCRITIVA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101024"]}, {"nivel": "4º Nível", "codigo": "5101075", "nome": "CALCULO DIFERENCIAL E INTEGRAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101048"]}, {"nivel": "4º Nível", "codigo": "5101077", "nome": "METODOLOGIA DO ENSINO DA MATEMÁTICA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101053"]}, {"nivel": "4º Nível", "codigo": "5101230", "nome": "GEOMETRIA EUCLIDIANA ESPACIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101229"]}, {"nivel": "4º Nível", "codigo": "5101238", "nome": "PLANEJAMENTO EM EDUCAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101236"]}, {"nivel": "5º Nível", "codigo": "5101058", "nome": "FÍSICA GERAL E EXPERIMENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101024"]}, {"nivel": "5º Nível", "codigo": "5101069", "nome": "CALCULO DIFERENCIAL E INTEGRAL IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101075"]}, {"nivel": "5º Nível", "codigo": "5101076", "nome": "PROBABILIDADE E INFERÊNCIA ESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101048"]}, {"nivel": "5º Nível", "codigo": "5101109", "nome": "EQUACOES DIFERENCIAIS ORDINARIAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101224", "5101075"]}, {"nivel": "5º Nível", "codigo": "5101233", "nome": "TECNOLOGIAS NO ENSINO DA MATEMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101021"]}, {"nivel": "6º Nível", "codigo": "5101029", "nome": "INTRODUÇÃO À TEORIA DOS NUMEROS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101019"]}, {"nivel": "6º Nível", "codigo": "5101060", "nome": "FÍSICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101058"]}, {"nivel": "6º Nível", "codigo": "5101231", "nome": "LABORATÓRIO NO ENSINO DE MATEMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "5101232", "nome": "CÁLCULO AVANÇADO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101069"]}, {"nivel": "6º Nível", "codigo": "5104041", "nome": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "5101113", "nome": "ALGORITMOS E LINGUAGENS DE PROGRAMAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101021"]}, {"nivel": "7º Nível", "codigo": "5101114", "nome": "ENS DA MATEM.ATRAVES DA RES.DE PROBLEMAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101077"]}, {"nivel": "7º Nível", "codigo": "5101148", "nome": "LINGUA BRASILEIRA DE SINAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "5101225", "nome": "ANALISE NA RETA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101075", "5101029"]}, {"nivel": "7º Nível", "codigo": "5101239", "nome": "AVALIAÇÃO E APRENDIZAGEM", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104016"]}, {"nivel": "8º Nível", "codigo": "5101130", "nome": "ESTAGIO SUPERVISIONADO I", "ch": "135\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["5104010", "5101238", "5101077", "5101231", "5101148"]}, {"nivel": "8º Nível", "codigo": "5101127", "nome": "ESTRUTURAS ALGÉBRICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101019"]}, {"nivel": "8º Nível", "codigo": "5101128", "nome": "INTRODUÇÃO AOS MÉTODOS NUMÉRICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101113"]}, {"nivel": "8º Nível", "codigo": "5101240", "nome": "POLITICA E LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "5101152", "nome": "ESTAGIO SUPERVISIONADO II", "ch": "135\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["5101130"]}, {"nivel": "9º Nível", "codigo": "5101150", "nome": "INTRODUÇÃO ÀS VARIÁVEIS COMPLEXAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5101232"]}, {"nivel": "9º Nível", "codigo": "5101151", "nome": "INTRODUÇÃO À HISTÓRIA DA MATEMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "5101241", "nome": "PROJETO DE PESQUISA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "10º Nível", "codigo": "5101168", "nome": "ESTAGIO SUPERVISIONADO III", "ch": "135\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["5101152"]}, {"nivel": "10º Nível", "codigo": "5101235", "nome": "TRABALHO DE CONCLUSÃO DE CURSO", "ch": "30\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["5101241"]}, {"nivel": "10º Nível", "codigo": "5104163", "nome": "ATIV. ACADEMICO-CIENTIFICO-CULTURAIS", "ch": "210\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "5101234", "nome": "FÍSICA DO MEIO AMBIENTE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}];
+  const codigoToNome = {"5101019": "INTROD. A LÓGICA E A LING. MATEMÁTICA", "5101021": "INFORMÁTICA APLICADA AO ENSINO", "5101226": "INTRODUÇÃO AO CÁLCULO", "5101227": "INTRODUÇÃO À ÁLGEBRA", "5104016": "PSICOLOGIA E EDUCAÇÃO", "5101012": "ÁLGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "5101024": "CALCULO DIFERENCIAL E INTEGRAL I", "5101030": "METODOLOGIA DO ENSINO DA MATEMÁTICA I", "5101228": "LEITURA E PRODUÇÃO DE TEXTOS", "5104010": "METODOLOGIA CIENTÍFICA", "5101048": "CALCULO DIFERENCIAL E INTEGRAL II", "5101053": "METODOLOGIA DO ENSINO DA MATEMÁTICA II", "5101224": "ALGEBRA LINEAR", "5101229": "GEOMETRIA EUCLIDIANA PLANA", "5101236": "DIDÁTICA", "5101237": "EDUCAÇÃO E DIVERSIDADE", "5101050": "ESTATÍSTICA DESCRITIVA", "5101075": "CALCULO DIFERENCIAL E INTEGRAL III", "5101077": "METODOLOGIA DO ENSINO DA MATEMÁTICA III", "5101230": "GEOMETRIA EUCLIDIANA ESPACIAL", "5101238": "PLANEJAMENTO EM EDUCAÇÃO", "5101058": "FÍSICA GERAL E EXPERIMENTAL I", "5101069": "CALCULO DIFERENCIAL E INTEGRAL IV", "5101076": "PROBABILIDADE E INFERÊNCIA ESTATÍSTICA", "5101109": "EQUACOES DIFERENCIAIS ORDINARIAS", "5101233": "TECNOLOGIAS NO ENSINO DA MATEMÁTICA", "5101029": "INTRODUÇÃO À TEORIA DOS NUMEROS", "5101060": "FÍSICA II", "5101231": "LABORATÓRIO NO ENSINO DE MATEMÁTICA", "5101232": "CÁLCULO AVANÇADO", "5104041": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "5101113": "ALGORITMOS E LINGUAGENS DE PROGRAMAÇÃO", "5101114": "ENS DA MATEM.ATRAVES DA RES.DE PROBLEMAS", "5101148": "LINGUA BRASILEIRA DE SINAIS", "5101225": "ANALISE NA RETA I", "5101239": "AVALIAÇÃO E APRENDIZAGEM", "5101130": "ESTAGIO SUPERVISIONADO I", "5101127": "ESTRUTURAS ALGÉBRICAS", "5101128": "INTRODUÇÃO AOS MÉTODOS NUMÉRICOS", "5101240": "POLITICA E LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "5101152": "ESTAGIO SUPERVISIONADO II", "5101150": "INTRODUÇÃO ÀS VARIÁVEIS COMPLEXAS", "5101151": "INTRODUÇÃO À HISTÓRIA DA MATEMÁTICA", "5101241": "PROJETO DE PESQUISA", "5101168": "ESTAGIO SUPERVISIONADO III", "5101235": "TRABALHO DE CONCLUSÃO DE CURSO", "5104163": "ATIV. ACADEMICO-CIENTIFICO-CULTURAIS", "5101234": "FÍSICA DO MEIO AMBIENTE", "5101162": "INTRODUÇÃO À GEOMETRIA DIFERENCIAL", "5101175": "ÁLGEBRA LINEAR II", "5101176": "ANÁLISE NO RN", "5101197": "MODELAGEM MATEMÁTICA", "5101198": "ESPACOS METRICOS", "5101202": "TECNOLOGIA DA AMOSTRAGEM", "5101208": "TÓPICOS DE HISTÓRIA DA MATEMÁTICA", "5101209": "MATEMATICA FINANCEIRA", "5101223": "CONTROLE ESTATISTICO DE QUALIDADE", "5101242": "CURRÍCULO EDUCACIONAL", "5101243": "PROFISSÃO DOCENTE", "5101244": "EDUCAÇÃO INCLUSIVA", "5104015": "INGLES INSTRUMENTAL", "5104189": "TÓPICOS DE ANÁLISE", "5101270": "TEM(ENSINO INCLUSO)", "5101273": "TEM(INTROD À FILOSOFIA E À SOC DA EDUC)", "5101275": "TEM(METODOLOGIA CIENTÍFICA)", "5101276": "TEM(TÓPICOS EM GEOMETRIA)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -698,7 +701,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

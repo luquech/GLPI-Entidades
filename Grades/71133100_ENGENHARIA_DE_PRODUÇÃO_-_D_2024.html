@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,80 +404,80 @@
           <tr>
               <td>7101042</td>
               <td>INGLES I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7101084</td>
               <td>LINGUA BRASILEIRA DE SINAIS-LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7101086</td>
               <td>ESPANHOL I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7103306</td>
               <td>PROPRIEDADE INTELECTUAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7103307</td>
               <td>BIOSSEGURANÇA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7104319</td>
               <td>INTERFACE HOMEM-MÁQUINA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ERGONOMIA</td>
               <td></td>
           </tr>
           <tr>
               <td>7104320</td>
               <td>ANÁLISE DE DECISÃO MULTICRITÉRIO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROBABILIDADE E ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>7104321</td>
               <td>FONTES ALTERNATIVAS DE ENERGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7104322</td>
               <td>FÍSICA COMPUTACIONAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROGRAMAÇÃO II, ÁLGEBRA LINEAR, EQUACOES DIFERENCIAIS LINEARES, FÍSICA GERAL III</td>
               <td></td>
           </tr>
           <tr>
               <td>7104323</td>
               <td>TÓPICOS ESPECIAIS EM PESQ OPERACIONAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROGRAMAÇÃO II</td>
               <td></td>
           </tr>
@@ -521,8 +524,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "7101006", "nome": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102002", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102311", "nome": "CÁLCULO VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103004", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103005", "nome": "QUÍMICA EXPERIMENTAL", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7104305", "nome": "PROGRAMAÇÃO I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7104309", "nome": "INTRODUÇÃO À ENGENHARIA DE PRODUÇÃO", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7101280", "nome": "PRÁTICA DE EXTENSÃO I", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102009", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["7102002"]}, {"nivel": "2º Nível", "codigo": "7102010", "nome": "ÁLGEBRA LINEAR", "ch": "60h", "preReqs": ["7102311"]}, {"nivel": "2º Nível", "codigo": "7104011", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": ["7102002"]}, {"nivel": "2º Nível", "codigo": "7104030", "nome": "SISTEMAS DE PRODUCAO", "ch": "60h", "preReqs": ["7104309"]}, {"nivel": "2º Nível", "codigo": "7104306", "nome": "DESENHO ASSISTIDO I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7104307", "nome": "PROGRAMAÇÃO II", "ch": "60h", "preReqs": ["7104305"]}, {"nivel": "2º Nível", "codigo": "7105226", "nome": "SOCIOLOGIA E CIDADANIA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "7101279", "nome": "METODOLOGIA CIENTÍFICA E TECNOLÓGICA", "ch": "60h", "preReqs": ["7101006"]}, {"nivel": "3º Nível", "codigo": "7102021", "nome": "PROBABILIDADE E ESTATÍSTICA", "ch": "60h", "preReqs": ["7102009"]}, {"nivel": "3º Nível", "codigo": "7102028", "nome": "CALCULO DIFERENCIAL E INTEGRAL III", "ch": "60h", "preReqs": ["7102009", "7102311"]}, {"nivel": "3º Nível", "codigo": "7103305", "nome": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "7104023", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["7104011"]}, {"nivel": "3º Nível", "codigo": "7104308", "nome": "DESENHO ASSISTIDO II", "ch": "60h", "preReqs": ["7104306"]}, {"nivel": "3º Nível", "codigo": "7104310", "nome": "INTRODUÇÃO À ENGENHARIA DE FABRICAÇÃO", "ch": "30h", "preReqs": ["7104030"]}, {"nivel": "4º Nível", "codigo": "7102020", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["7102009"]}, {"nivel": "4º Nível", "codigo": "7102044", "nome": "MECÂNICA GERAL", "ch": "60h", "preReqs": ["7104023"]}, {"nivel": "4º Nível", "codigo": "7102312", "nome": "ADMINISTRAÇÃO ESTRATÉGICA", "ch": "60h", "preReqs": ["7104030"]}, {"nivel": "4º Nível", "codigo": "7102313", "nome": "CÁLCULO NÚMERICO", "ch": "30h", "preReqs": ["7102028"]}, {"nivel": "4º Nível", "codigo": "7102314", "nome": "ORGANIZAÇÃO DO TRABALHO", "ch": "60h", "preReqs": ["7104030"]}, {"nivel": "4º Nível", "codigo": "7104045", "nome": "FÍSICA GERAL III", "ch": "60h", "preReqs": ["7104023"]}, {"nivel": "4º Nível", "codigo": "7104311", "nome": "PROJETO INTEGRADOR I", "ch": "30h", "preReqs": ["7104030"]}, {"nivel": "5º Nível", "codigo": "7102050", "nome": "TERMODINAMICA", "ch": "60h", "preReqs": ["7104023"]}, {"nivel": "5º Nível", "codigo": "7102080", "nome": "RESISTENCIA DOS MATERIAIS", "ch": "60h", "preReqs": ["7102044"]}, {"nivel": "5º Nível", "codigo": "7104046", "nome": "FÍSICA EXPERIMENTAL", "ch": "60h", "preReqs": ["7104045"]}, {"nivel": "5º Nível", "codigo": "7104081", "nome": "ERGONOMIA", "ch": "60h", "preReqs": ["7102314"]}, {"nivel": "5º Nível", "codigo": "7104129", "nome": "PESQUISA OPERACIONAL I", "ch": "60h", "preReqs": ["7102010", "7104307"]}, {"nivel": "5º Nível", "codigo": "7104130", "nome": "PLANEJAMENTO E PROJETO DE PRODUTO", "ch": "60h", "preReqs": ["7104310", "7103305"]}, {"nivel": "5º Nível", "codigo": "7104312", "nome": "INDÚSTRIA 4.0", "ch": "60h", "preReqs": ["7102314"]}, {"nivel": "6º Nível", "codigo": "7102065", "nome": "FENOMENOS DE TRANSPORTE", "ch": "60h", "preReqs": ["7102009", "7102050"]}, {"nivel": "6º Nível", "codigo": "7104101", "nome": "PLANEJAMENTO E CONTROLE DA PRODUCAO I", "ch": "60h", "preReqs": ["7104030"]}, {"nivel": "6º Nível", "codigo": "7104102", "nome": "ENGENHARIA DE MÉTODOS", "ch": "60h", "preReqs": ["7102314"]}, {"nivel": "6º Nível", "codigo": "7104105", "nome": "HIGIENE E SEGURANCA DO TRABALHO", "ch": "60h", "preReqs": ["7104081"]}, {"nivel": "6º Nível", "codigo": "7104106", "nome": "ELETROTÉCNICA", "ch": "60h", "preReqs": ["7104046"]}, {"nivel": "6º Nível", "codigo": "7104260", "nome": "PESQUISA OPERACIONAL II", "ch": "60h", "preReqs": ["7104129", "7102313"]}, {"nivel": "6º Nível", "codigo": "7106207", "nome": "ÉTICA E RESPONSABILIDADE SOCIAL EM ENG", "ch": "30h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "7102103", "nome": "GESTAO AMBIENTAL", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "7104079", "nome": "ENGENHARIA ECONOMICA", "ch": "60h", "preReqs": ["7102021"]}, {"nivel": "7º Nível", "codigo": "7104128", "nome": "PLANEJAMENTO E CONTROLE DA PRODUCAO II", "ch": "60h", "preReqs": ["7104101"]}, {"nivel": "7º Nível", "codigo": "7104131", "nome": "GESTAO DA INFORMACAO", "ch": "60h", "preReqs": ["7104307", "7104311"]}, {"nivel": "7º Nível", "codigo": "7104132", "nome": "LOGISTICA E DISTRIBUICAO", "ch": "60h", "preReqs": ["7104101"]}, {"nivel": "7º Nível", "codigo": "7104313", "nome": "PROJETO INTEGRADOR II", "ch": "60h", "preReqs": ["7102021"]}, {"nivel": "8º Nível", "codigo": "7104259", "nome": "SIMULACAO DE SISTEMAS", "ch": "60h", "preReqs": ["7102021", "7104307"]}, {"nivel": "8º Nível", "codigo": "7104262", "nome": "GESTAO DA QUALIDADE", "ch": "60h", "preReqs": ["7104128"]}, {"nivel": "8º Nível", "codigo": "7104263", "nome": "CUSTOS DA PRODUCAO", "ch": "60h", "preReqs": ["7104079"]}, {"nivel": "8º Nível", "codigo": "7104314", "nome": "SISTEMAS AGROINDUSTRIAIS", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "7104315", "nome": "PRÁTICA DE EXTENSÃO II", "ch": "60h", "preReqs": ["7101280"]}, {"nivel": "9º Nível", "codigo": "7102315", "nome": "AUTOMAÇÃO", "ch": "60h", "preReqs": ["7104312"]}, {"nivel": "9º Nível", "codigo": "7104280", "nome": "GESTAO DA MANUTENCAO", "ch": "60h", "preReqs": ["7104262"]}, {"nivel": "9º Nível", "codigo": "7104281", "nome": "GESTAO DE PROJETOS", "ch": "60h", "preReqs": ["7104131"]}, {"nivel": "9º Nível", "codigo": "7104316", "nome": "PRÁTICA DE PESQUISA", "ch": "60h", "preReqs": ["7101279", "7104315"]}, {"nivel": "9º Nível", "codigo": "7104317", "nome": "PROJETO INTEGRADOR III", "ch": "60h", "preReqs": ["7104262"]}];
-  const codigoToNome = {"7101006": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "7102002": "CALCULO DIFERENCIAL E INTEGRAL I", "7102311": "CÁLCULO VETORIAL E GEOMETRIA ANALÍTICA", "7103004": "QUÍMICA GERAL", "7103005": "QUÍMICA EXPERIMENTAL", "7104305": "PROGRAMAÇÃO I", "7104309": "INTRODUÇÃO À ENGENHARIA DE PRODUÇÃO", "7101280": "PRÁTICA DE EXTENSÃO I", "7102009": "CALCULO DIFERENCIAL E INTEGRAL II", "7102010": "ÁLGEBRA LINEAR", "7104011": "FÍSICA GERAL I", "7104030": "SISTEMAS DE PRODUCAO", "7104306": "DESENHO ASSISTIDO I", "7104307": "PROGRAMAÇÃO II", "7105226": "SOCIOLOGIA E CIDADANIA", "7101279": "METODOLOGIA CIENTÍFICA E TECNOLÓGICA", "7102021": "PROBABILIDADE E ESTATÍSTICA", "7102028": "CALCULO DIFERENCIAL E INTEGRAL III", "7103305": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "7104023": "FÍSICA GERAL II", "7104308": "DESENHO ASSISTIDO II", "7104310": "INTRODUÇÃO À ENGENHARIA DE FABRICAÇÃO", "7102020": "EQUACOES DIFERENCIAIS LINEARES", "7102044": "MECÂNICA GERAL", "7102312": "ADMINISTRAÇÃO ESTRATÉGICA", "7102313": "CÁLCULO NÚMERICO", "7102314": "ORGANIZAÇÃO DO TRABALHO", "7104045": "FÍSICA GERAL III", "7104311": "PROJETO INTEGRADOR I", "7102050": "TERMODINAMICA", "7102080": "RESISTENCIA DOS MATERIAIS", "7104046": "FÍSICA EXPERIMENTAL", "7104081": "ERGONOMIA", "7104129": "PESQUISA OPERACIONAL I", "7104130": "PLANEJAMENTO E PROJETO DE PRODUTO", "7104312": "INDÚSTRIA 4.0", "7102065": "FENOMENOS DE TRANSPORTE", "7104101": "PLANEJAMENTO E CONTROLE DA PRODUCAO I", "7104102": "ENGENHARIA DE MÉTODOS", "7104105": "HIGIENE E SEGURANCA DO TRABALHO", "7104106": "ELETROTÉCNICA", "7104260": "PESQUISA OPERACIONAL II", "7106207": "ÉTICA E RESPONSABILIDADE SOCIAL EM ENG", "7102103": "GESTAO AMBIENTAL", "7104079": "ENGENHARIA ECONOMICA", "7104128": "PLANEJAMENTO E CONTROLE DA PRODUCAO II", "7104131": "GESTAO DA INFORMACAO", "7104132": "LOGISTICA E DISTRIBUICAO", "7104313": "PROJETO INTEGRADOR II", "7104259": "SIMULACAO DE SISTEMAS", "7104262": "GESTAO DA QUALIDADE", "7104263": "CUSTOS DA PRODUCAO", "7104314": "SISTEMAS AGROINDUSTRIAIS", "7104315": "PRÁTICA DE EXTENSÃO II", "7102315": "AUTOMAÇÃO", "7104280": "GESTAO DA MANUTENCAO", "7104281": "GESTAO DE PROJETOS", "7104316": "PRÁTICA DE PESQUISA", "7104317": "PROJETO INTEGRADOR III", "7101042": "INGLES I", "7101084": "LINGUA BRASILEIRA DE SINAIS-LIBRAS", "7101086": "ESPANHOL I", "7103306": "PROPRIEDADE INTELECTUAL", "7103307": "BIOSSEGURANÇA", "7104319": "INTERFACE HOMEM-MÁQUINA", "7104320": "ANÁLISE DE DECISÃO MULTICRITÉRIO", "7104321": "FONTES ALTERNATIVAS DE ENERGIA", "7104322": "FÍSICA COMPUTACIONAL", "7104323": "TÓPICOS ESPECIAIS EM PESQ OPERACIONAL"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "7101006", "nome": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102002", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102311", "nome": "CÁLCULO VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103004", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103005", "nome": "QUÍMICA EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7104305", "nome": "PROGRAMAÇÃO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7104309", "nome": "INTRODUÇÃO À ENGENHARIA DE PRODUÇÃO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7101280", "nome": "PRÁTICA DE EXTENSÃO I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102009", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102002"]}, {"nivel": "2º Nível", "codigo": "7102010", "nome": "ÁLGEBRA LINEAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102311"]}, {"nivel": "2º Nível", "codigo": "7104011", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102002"]}, {"nivel": "2º Nível", "codigo": "7104030", "nome": "SISTEMAS DE PRODUCAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104309"]}, {"nivel": "2º Nível", "codigo": "7104306", "nome": "DESENHO ASSISTIDO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7104307", "nome": "PROGRAMAÇÃO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104305"]}, {"nivel": "2º Nível", "codigo": "7105226", "nome": "SOCIOLOGIA E CIDADANIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "7101279", "nome": "METODOLOGIA CIENTÍFICA E TECNOLÓGICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7101006"]}, {"nivel": "3º Nível", "codigo": "7102021", "nome": "PROBABILIDADE E ESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102009"]}, {"nivel": "3º Nível", "codigo": "7102028", "nome": "CALCULO DIFERENCIAL E INTEGRAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102009", "7102311"]}, {"nivel": "3º Nível", "codigo": "7103305", "nome": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "7104023", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104011"]}, {"nivel": "3º Nível", "codigo": "7104308", "nome": "DESENHO ASSISTIDO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104306"]}, {"nivel": "3º Nível", "codigo": "7104310", "nome": "INTRODUÇÃO À ENGENHARIA DE FABRICAÇÃO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104030"]}, {"nivel": "4º Nível", "codigo": "7102020", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102009"]}, {"nivel": "4º Nível", "codigo": "7102044", "nome": "MECÂNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104023"]}, {"nivel": "4º Nível", "codigo": "7102312", "nome": "ADMINISTRAÇÃO ESTRATÉGICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104030"]}, {"nivel": "4º Nível", "codigo": "7102313", "nome": "CÁLCULO NÚMERICO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102028"]}, {"nivel": "4º Nível", "codigo": "7102314", "nome": "ORGANIZAÇÃO DO TRABALHO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104030"]}, {"nivel": "4º Nível", "codigo": "7104045", "nome": "FÍSICA GERAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104023"]}, {"nivel": "4º Nível", "codigo": "7104311", "nome": "PROJETO INTEGRADOR I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104030"]}, {"nivel": "5º Nível", "codigo": "7102050", "nome": "TERMODINAMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104023"]}, {"nivel": "5º Nível", "codigo": "7102080", "nome": "RESISTENCIA DOS MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102044"]}, {"nivel": "5º Nível", "codigo": "7104046", "nome": "FÍSICA EXPERIMENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104045"]}, {"nivel": "5º Nível", "codigo": "7104081", "nome": "ERGONOMIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102314"]}, {"nivel": "5º Nível", "codigo": "7104129", "nome": "PESQUISA OPERACIONAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102010", "7104307"]}, {"nivel": "5º Nível", "codigo": "7104130", "nome": "PLANEJAMENTO E PROJETO DE PRODUTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104310", "7103305"]}, {"nivel": "5º Nível", "codigo": "7104312", "nome": "INDÚSTRIA 4.0", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102314"]}, {"nivel": "6º Nível", "codigo": "7102065", "nome": "FENOMENOS DE TRANSPORTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102009", "7102050"]}, {"nivel": "6º Nível", "codigo": "7104101", "nome": "PLANEJAMENTO E CONTROLE DA PRODUCAO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104030"]}, {"nivel": "6º Nível", "codigo": "7104102", "nome": "ENGENHARIA DE MÉTODOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102314"]}, {"nivel": "6º Nível", "codigo": "7104105", "nome": "HIGIENE E SEGURANCA DO TRABALHO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104081"]}, {"nivel": "6º Nível", "codigo": "7104106", "nome": "ELETROTÉCNICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104046"]}, {"nivel": "6º Nível", "codigo": "7104260", "nome": "PESQUISA OPERACIONAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104129", "7102313"]}, {"nivel": "6º Nível", "codigo": "7106207", "nome": "ÉTICA E RESPONSABILIDADE SOCIAL EM ENG", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "7102103", "nome": "GESTAO AMBIENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "7104079", "nome": "ENGENHARIA ECONOMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102021"]}, {"nivel": "7º Nível", "codigo": "7104128", "nome": "PLANEJAMENTO E CONTROLE DA PRODUCAO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104101"]}, {"nivel": "7º Nível", "codigo": "7104131", "nome": "GESTAO DA INFORMACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104307", "7104311"]}, {"nivel": "7º Nível", "codigo": "7104132", "nome": "LOGISTICA E DISTRIBUICAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104101"]}, {"nivel": "7º Nível", "codigo": "7104313", "nome": "PROJETO INTEGRADOR II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102021"]}, {"nivel": "8º Nível", "codigo": "7104259", "nome": "SIMULACAO DE SISTEMAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102021", "7104307"]}, {"nivel": "8º Nível", "codigo": "7104262", "nome": "GESTAO DA QUALIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104128"]}, {"nivel": "8º Nível", "codigo": "7104263", "nome": "CUSTOS DA PRODUCAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104079"]}, {"nivel": "8º Nível", "codigo": "7104314", "nome": "SISTEMAS AGROINDUSTRIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "7104315", "nome": "PRÁTICA DE EXTENSÃO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7101280"]}, {"nivel": "9º Nível", "codigo": "7102315", "nome": "AUTOMAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104312"]}, {"nivel": "9º Nível", "codigo": "7104280", "nome": "GESTAO DA MANUTENCAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104262"]}, {"nivel": "9º Nível", "codigo": "7104281", "nome": "GESTAO DE PROJETOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104131"]}, {"nivel": "9º Nível", "codigo": "7104316", "nome": "PRÁTICA DE PESQUISA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7101279", "7104315"]}, {"nivel": "9º Nível", "codigo": "7104317", "nome": "PROJETO INTEGRADOR III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104262"]}, {"nivel": "10º Nível", "codigo": "7104290", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO", "ch": "210\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "7104318", "nome": "PROJETO FINAL DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["7104316"]}];
+  const codigoToNome = {"7101006": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "7102002": "CALCULO DIFERENCIAL E INTEGRAL I", "7102311": "CÁLCULO VETORIAL E GEOMETRIA ANALÍTICA", "7103004": "QUÍMICA GERAL", "7103005": "QUÍMICA EXPERIMENTAL", "7104305": "PROGRAMAÇÃO I", "7104309": "INTRODUÇÃO À ENGENHARIA DE PRODUÇÃO", "7101280": "PRÁTICA DE EXTENSÃO I", "7102009": "CALCULO DIFERENCIAL E INTEGRAL II", "7102010": "ÁLGEBRA LINEAR", "7104011": "FÍSICA GERAL I", "7104030": "SISTEMAS DE PRODUCAO", "7104306": "DESENHO ASSISTIDO I", "7104307": "PROGRAMAÇÃO II", "7105226": "SOCIOLOGIA E CIDADANIA", "7101279": "METODOLOGIA CIENTÍFICA E TECNOLÓGICA", "7102021": "PROBABILIDADE E ESTATÍSTICA", "7102028": "CALCULO DIFERENCIAL E INTEGRAL III", "7103305": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "7104023": "FÍSICA GERAL II", "7104308": "DESENHO ASSISTIDO II", "7104310": "INTRODUÇÃO À ENGENHARIA DE FABRICAÇÃO", "7102020": "EQUACOES DIFERENCIAIS LINEARES", "7102044": "MECÂNICA GERAL", "7102312": "ADMINISTRAÇÃO ESTRATÉGICA", "7102313": "CÁLCULO NÚMERICO", "7102314": "ORGANIZAÇÃO DO TRABALHO", "7104045": "FÍSICA GERAL III", "7104311": "PROJETO INTEGRADOR I", "7102050": "TERMODINAMICA", "7102080": "RESISTENCIA DOS MATERIAIS", "7104046": "FÍSICA EXPERIMENTAL", "7104081": "ERGONOMIA", "7104129": "PESQUISA OPERACIONAL I", "7104130": "PLANEJAMENTO E PROJETO DE PRODUTO", "7104312": "INDÚSTRIA 4.0", "7102065": "FENOMENOS DE TRANSPORTE", "7104101": "PLANEJAMENTO E CONTROLE DA PRODUCAO I", "7104102": "ENGENHARIA DE MÉTODOS", "7104105": "HIGIENE E SEGURANCA DO TRABALHO", "7104106": "ELETROTÉCNICA", "7104260": "PESQUISA OPERACIONAL II", "7106207": "ÉTICA E RESPONSABILIDADE SOCIAL EM ENG", "7102103": "GESTAO AMBIENTAL", "7104079": "ENGENHARIA ECONOMICA", "7104128": "PLANEJAMENTO E CONTROLE DA PRODUCAO II", "7104131": "GESTAO DA INFORMACAO", "7104132": "LOGISTICA E DISTRIBUICAO", "7104313": "PROJETO INTEGRADOR II", "7104259": "SIMULACAO DE SISTEMAS", "7104262": "GESTAO DA QUALIDADE", "7104263": "CUSTOS DA PRODUCAO", "7104314": "SISTEMAS AGROINDUSTRIAIS", "7104315": "PRÁTICA DE EXTENSÃO II", "7102315": "AUTOMAÇÃO", "7104280": "GESTAO DA MANUTENCAO", "7104281": "GESTAO DE PROJETOS", "7104316": "PRÁTICA DE PESQUISA", "7104317": "PROJETO INTEGRADOR III", "7104290": "ESTAGIO CURRICULAR SUPERVISIONADO", "7104318": "PROJETO FINAL DE CURSO", "7101042": "INGLES I", "7101084": "LINGUA BRASILEIRA DE SINAIS-LIBRAS", "7101086": "ESPANHOL I", "7103306": "PROPRIEDADE INTELECTUAL", "7103307": "BIOSSEGURANÇA", "7104319": "INTERFACE HOMEM-MÁQUINA", "7104320": "ANÁLISE DE DECISÃO MULTICRITÉRIO", "7104321": "FONTES ALTERNATIVAS DE ENERGIA", "7104322": "FÍSICA COMPUTACIONAL", "7104323": "TÓPICOS ESPECIAIS EM PESQ OPERACIONAL"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -634,7 +637,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

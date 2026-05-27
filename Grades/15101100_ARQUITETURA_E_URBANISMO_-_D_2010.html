@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,360 +404,360 @@
           <tr>
               <td>1305001</td>
               <td>INTRODUÇÃO À ANTROPOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1306299</td>
               <td>FORMAÇÃO TERRITORIAL DO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307169</td>
               <td>LÍNGUA PORTUGUESA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308012</td>
               <td>FUNDAMENTOS PARA ESTUDO EM GEOG AGRARIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1411001</td>
               <td>INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1502171</td>
               <td>DESASTRES AMBIENTAIS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1502182</td>
               <td>FUNDAMENTOS DE IMPACTOS AMBIENTAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503123</td>
               <td>GESTAO DO ESPAÇO URBANO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503124</td>
               <td>CAMPINA GRANDE ARQUITETURA E CIDADE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503141</td>
               <td>DIREITO URBANISTICO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503147</td>
               <td>ERGONOMIA E ACESSIBILIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503148</td>
               <td>METODOLOGIA DE PESQ E COMUNIC CIENTIFICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503154</td>
               <td>TEAUP I (OFICINA DE PROJETOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
-              <td>ESPACO, INTRODUÇÃO À ARQUITETURA</td>
+              <td>30"h</td>
+              <td>2"</td>
+              <td>ESPACO, FORMA E PLASTICA, INTRODUÇÃO À ARQUITETURA</td>
               <td></td>
           </tr>
           <tr>
               <td>1503155</td>
               <td>TEAUP I(CONCEP SOCIOCULTURAIS DE ESPACO)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503161</td>
               <td>ARQUITETURA DE INTERIORES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1112155</td>
               <td>CRIATIVIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1112265</td>
               <td>IMAGEM E TEXTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302070</td>
               <td>PSICOLOGIA DA CRIATIVIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305070</td>
               <td>SOCIOLOGIA URBANA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307011</td>
               <td>INGLES</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308013</td>
               <td>FUNDAMENTOS PARA ESTUDO EM GEOG URBANA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503162</td>
               <td>TEAUP I (METOD DE PESQ E COM.CIENTIFICA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503194</td>
               <td>TEAUP(VIAGEM E ESTUDO)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503201</td>
-              <td>TEAUP(TEOR DO PROJ ARQ.</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>TEAUP(TEOR DO PROJ ARQ.,URBAN E PAISAGIS</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO AO TRABALHO DE CONCLUSÃO DO C</td>
               <td></td>
           </tr>
           <tr>
               <td>1503205</td>
               <td>TEAUP(ARTE E TECNOLOGIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503206</td>
               <td>ARQUITETURA SUSTENTAVEL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503207</td>
               <td>INFORMATICA AVANCADA PARA ARQUITETURA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROJETO ASSISTIDO POR COMPUTADOR II</td>
               <td></td>
           </tr>
           <tr>
               <td>1503209</td>
               <td>TEAUP(CONCEP SOCIOCULTURAIS DE ESPACOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503210</td>
               <td>TEAUP(ANAL ESP NOS EST URB:TEOR E PRAT)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503211</td>
               <td>TEAUP I(ARQ.DOS MESTRES:DO INTER  AO EXT</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503212</td>
               <td>PROJETO E METODO NA ARQUITETURA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503213</td>
               <td>PLANEJAMENTO AMBIENTAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503214</td>
               <td>TEAUP II (CONCURSO ESTUDANTIL )</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>CONFORTO AMBIENTAL I</td>
               <td></td>
           </tr>
           <tr>
               <td>1503218</td>
               <td>TEAUP II(FORT CAPAC PELO DIR A CIDADE)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503219</td>
               <td>TEAUP II(RECICLAGEM E REF DE EDIFICACOES</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>PROJETO DE ARQUITETURA II, SISTEMAS ESTRUTURAIS II</td>
               <td></td>
           </tr>
           <tr>
               <td>1503224</td>
               <td>TEAUPIV(CONST PERS SOBRE DIR À CIDADE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503229</td>
               <td>TEAU(APROVEITAMENTO DE ÁGUA DE CHUVA)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503230</td>
               <td>TEAU(CIDADES SUSTENTÁVES)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503233</td>
               <td>TEAU(GEST DA DEM DE ÁGUA EM CID DE P MD)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503235</td>
-              <td>TEAU(SEMIÁRIDO:ARQ</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>TEAU(SEMIÁRIDO:ARQ, CULTURA E CIDADE)</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503236</td>
               <td>TEAU(APO:TEORIA E PRÁTICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503237</td>
               <td>TEAU(INDUSTRIALIZAÇÃO E FLEXIB NA ARQ)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503238</td>
               <td>TEAU(ANÁLISE DE ARQ:MÉTODOS E PRÁTICAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1503240</td>
               <td>TEAU(SINTAXE ESPACIAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -801,8 +804,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113008", "nome": "GEOMETRIA DESCRITIVA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1302056", "nome": "ESTÉTICA E HISTÓRIA DAS ARTES I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1302236", "nome": "DESENHO ARTISTICO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305298", "nome": "ESTUDOS SOCIOECONOMICOS", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1503120", "nome": "ESPACO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1106124", "nome": "MATERIAIS DE CONSTRUÇÃO I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1113023", "nome": "DESENHO TÉCNICO E ARQUITETÔNICO", "ch": "60h", "preReqs": ["1113008"]}, {"nivel": "2º Nível", "codigo": "1302059", "nome": "ESTÉTICA E HISTÓRIA DAS ARTES II", "ch": "60h", "preReqs": ["1302056"]}, {"nivel": "2º Nível", "codigo": "1503121", "nome": "INTRODUÇÃO À ARQUITETURA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1503122", "nome": "FUND DO PLANEJAMENTO E DO DESENHO URBANO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503125", "nome": "CONFORTO AMBIENTAL I", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503126", "nome": "ESTUDOS URBANOS E REGIONAIS I", "ch": "60h", "preReqs": ["1305298"]}, {"nivel": "3º Nível", "codigo": "1503127", "nome": "PROJETO ASSISTIDO POR COMPUTADOR I", "ch": "45h", "preReqs": ["1113023"]}, {"nivel": "3º Nível", "codigo": "1503128", "nome": "PROJETO DE ARQUITETURA I", "ch": "75h", "preReqs": ["1503120", "1302236", "1503119"]}, {"nivel": "3º Nível", "codigo": "1503129", "nome": "SISTEMAS ESTRUTURAIS I", "ch": "60h", "preReqs": ["1109126", "1108030"]}, {"nivel": "3º Nível", "codigo": "1503130", "nome": "TEORIA E HIST. DA ARQ. E DO URB. I", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503131", "nome": "TOPOGRAFIA", "ch": "60h", "preReqs": ["1113023"]}, {"nivel": "4º Nível", "codigo": "1503134", "nome": "TEORIA E HIST. DA ARQ. E DO URB. II", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503135", "nome": "PROJETO ASSISTIDO POR COMPUTADOR II", "ch": "45h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503136", "nome": "PROJETO DE ARQUITETURA II", "ch": "75h", "preReqs": ["1503121"]}, {"nivel": "4º Nível", "codigo": "1503137", "nome": "ESTUDOS URBANOS E REGIONAIS II", "ch": "60h", "preReqs": ["1503122"]}, {"nivel": "4º Nível", "codigo": "1503138", "nome": "PLANEJAMENTO DA PAISAGEM I", "ch": "45h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503139", "nome": "SISTEMAS ESTRUTURAIS II", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503140", "nome": "CONFORTO AMBIENTAL II", "ch": "45h", "preReqs": ["1503125"]}, {"nivel": "5º Nível", "codigo": "1503070", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1503142", "nome": "TEORIA E HIST. DA ARQ. E DO URB. III", "ch": "60h", "preReqs": ["1503130"]}, {"nivel": "5º Nível", "codigo": "1503143", "nome": "PROJETO DE ARQUITETURA III", "ch": "90h", "preReqs": ["1503128", "1113023"]}, {"nivel": "5º Nível", "codigo": "1503144", "nome": "ESTUDOS URBANOS E REGIONAIS III", "ch": "75h", "preReqs": ["1503126", "1113023"]}, {"nivel": "5º Nível", "codigo": "1503145", "nome": "PLANEJAMENTO DA PAISAGEM II", "ch": "45h", "preReqs": ["1503138"]}, {"nivel": "5º Nível", "codigo": "1503146", "nome": "INSTALACOES PREDIAIS I", "ch": "30h", "preReqs": ["1503128"]}, {"nivel": "6º Nível", "codigo": "1503149", "nome": "TEORIA E HIST. DA ARQ. E DO URB. IV", "ch": "60h", "preReqs": ["1503134"]}, {"nivel": "6º Nível", "codigo": "1503150", "nome": "PROJETO DE ARQUITETURA IV", "ch": "90h", "preReqs": ["1503136"]}, {"nivel": "6º Nível", "codigo": "1503151", "nome": "ESTUDOS URBANOS E REGIONAIS IV", "ch": "90h", "preReqs": ["1503137"]}, {"nivel": "6º Nível", "codigo": "1503152", "nome": "INSTALACOES PREDIAIS II", "ch": "30h", "preReqs": ["1108081", "1503128"]}, {"nivel": "6º Nível", "codigo": "1503153", "nome": "CONFORTO AMBIENTAL III", "ch": "45h", "preReqs": ["1503125"]}, {"nivel": "7º Nível", "codigo": "1503157", "nome": "TEORIA E HIST. DA ARQ. E DO URB. V", "ch": "60h", "preReqs": ["1503142"]}, {"nivel": "7º Nível", "codigo": "1503158", "nome": "GEOTECNOLOGIAS APLICADAS", "ch": "60h", "preReqs": ["1503127"]}, {"nivel": "7º Nível", "codigo": "1503159", "nome": "PROJETO DE ARQUITETURA V", "ch": "90h", "preReqs": ["1503143"]}, {"nivel": "7º Nível", "codigo": "1503160", "nome": "ESTUDOS URBANOS E REGIONAIS V", "ch": "90h", "preReqs": ["1503144", "1503070"]}, {"nivel": "8º Nível", "codigo": "1503163", "nome": "DESENHO DE DETALHES CONSTRUTIVOS", "ch": "45h", "preReqs": ["1503135", "1503136", "1503137", "1503138"]}, {"nivel": "8º Nível", "codigo": "1503164", "nome": "PROJETO DE ARQUITETURA VI", "ch": "90h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1503165", "nome": "PESQ CIENT  EM ARQ", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1503166", "nome": "TECNOLOGIAS SOCIAIS", "ch": "60h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "1503191", "nome": "TECNOLOGIA DO AMBIENTE CONSTRUIDO", "ch": "60h", "preReqs": ["1503146", "1106124", "1503074", "1503131"]}, {"nivel": "9º Nível", "codigo": "1503192", "nome": "ATELIER INTEG DE ARQ", "ch": "120h", "preReqs": ["1503159", "1503157", "1503160", "1503145", "1503139", "1503152", "1503140", "1503153", "1503158"]}, {"nivel": "9º Nível", "codigo": "1503193", "nome": "INTRODUÇÃO AO TRABALHO DE CONCLUSÃO DO C", "ch": "60h", "preReqs": ["1503159", "1503160", "1503157", "1503145"]}];
-  const codigoToNome = {"1108030": "FÍSICA GERAL I", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1113008": "GEOMETRIA DESCRITIVA", "1302056": "ESTÉTICA E HISTÓRIA DAS ARTES I", "1302236": "DESENHO ARTISTICO", "1305298": "ESTUDOS SOCIOECONOMICOS", "1503120": "ESPACO", "1106124": "MATERIAIS DE CONSTRUÇÃO I", "1108081": "FÍSICA GERAL II", "1113023": "DESENHO TÉCNICO E ARQUITETÔNICO", "1302059": "ESTÉTICA E HISTÓRIA DAS ARTES II", "1503121": "INTRODUÇÃO À ARQUITETURA", "1503122": "FUND DO PLANEJAMENTO E DO DESENHO URBANO", "1503125": "CONFORTO AMBIENTAL I", "1503126": "ESTUDOS URBANOS E REGIONAIS I", "1503127": "PROJETO ASSISTIDO POR COMPUTADOR I", "1503128": "PROJETO DE ARQUITETURA I", "1503129": "SISTEMAS ESTRUTURAIS I", "1503130": "TEORIA E HIST. DA ARQ. E DO URB. I", "1503131": "TOPOGRAFIA", "1503134": "TEORIA E HIST. DA ARQ. E DO URB. II", "1503135": "PROJETO ASSISTIDO POR COMPUTADOR II", "1503136": "PROJETO DE ARQUITETURA II", "1503137": "ESTUDOS URBANOS E REGIONAIS II", "1503138": "PLANEJAMENTO DA PAISAGEM I", "1503139": "SISTEMAS ESTRUTURAIS II", "1503140": "CONFORTO AMBIENTAL II", "1503070": "CIÊNCIAS DO AMBIENTE", "1503142": "TEORIA E HIST. DA ARQ. E DO URB. III", "1503143": "PROJETO DE ARQUITETURA III", "1503144": "ESTUDOS URBANOS E REGIONAIS III", "1503145": "PLANEJAMENTO DA PAISAGEM II", "1503146": "INSTALACOES PREDIAIS I", "1503149": "TEORIA E HIST. DA ARQ. E DO URB. IV", "1503150": "PROJETO DE ARQUITETURA IV", "1503151": "ESTUDOS URBANOS E REGIONAIS IV", "1503152": "INSTALACOES PREDIAIS II", "1503153": "CONFORTO AMBIENTAL III", "1503157": "TEORIA E HIST. DA ARQ. E DO URB. V", "1503158": "GEOTECNOLOGIAS APLICADAS", "1503159": "PROJETO DE ARQUITETURA V", "1503160": "ESTUDOS URBANOS E REGIONAIS V", "1503163": "DESENHO DE DETALHES CONSTRUTIVOS", "1503164": "PROJETO DE ARQUITETURA VI", "1503165": "PESQ CIENT  EM ARQ", "1503166": "TECNOLOGIAS SOCIAIS", "1503191": "TECNOLOGIA DO AMBIENTE CONSTRUIDO", "1503192": "ATELIER INTEG DE ARQ", "1503193": "INTRODUÇÃO AO TRABALHO DE CONCLUSÃO DO C", "1305001": "INTRODUÇÃO À ANTROPOLOGIA", "1306299": "FORMAÇÃO TERRITORIAL DO BRASIL", "1307169": "LÍNGUA PORTUGUESA", "1308012": "FUNDAMENTOS PARA ESTUDO EM GEOG AGRARIA", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1502171": "DESASTRES AMBIENTAIS", "1502182": "FUNDAMENTOS DE IMPACTOS AMBIENTAIS", "1503123": "GESTAO DO ESPAÇO URBANO", "1503124": "CAMPINA GRANDE ARQUITETURA E CIDADE", "1503141": "DIREITO URBANISTICO", "1503147": "ERGONOMIA E ACESSIBILIDADE", "1503148": "METODOLOGIA DE PESQ E COMUNIC CIENTIFICA", "1503154": "TEAUP I (OFICINA DE PROJETOS)", "1503155": "TEAUP I(CONCEP SOCIOCULTURAIS DE ESPACO)", "1503161": "ARQUITETURA DE INTERIORES", "1112155": "CRIATIVIDADE", "1112265": "IMAGEM E TEXTO", "1302070": "PSICOLOGIA DA CRIATIVIDADE", "1305070": "SOCIOLOGIA URBANA", "1307011": "INGLES", "1307332": "LIBRAS", "1308013": "FUNDAMENTOS PARA ESTUDO EM GEOG URBANA", "1503162": "TEAUP I (METOD DE PESQ E COM.CIENTIFICA)", "1503194": "TEAUP(VIAGEM E ESTUDO)", "1503201": "TEAUP(TEOR DO PROJ ARQ.", "1503205": "TEAUP(ARTE E TECNOLOGIA)", "1503206": "ARQUITETURA SUSTENTAVEL", "1503207": "INFORMATICA AVANCADA PARA ARQUITETURA", "1503209": "TEAUP(CONCEP SOCIOCULTURAIS DE ESPACOS)", "1503210": "TEAUP(ANAL ESP NOS EST URB:TEOR E PRAT)", "1503211": "TEAUP I(ARQ.DOS MESTRES:DO INTER  AO EXT", "1503212": "PROJETO E METODO NA ARQUITETURA", "1503213": "PLANEJAMENTO AMBIENTAL", "1503214": "TEAUP II (CONCURSO ESTUDANTIL )", "1503218": "TEAUP II(FORT CAPAC PELO DIR A CIDADE)", "1503219": "TEAUP II(RECICLAGEM E REF DE EDIFICACOES", "1503224": "TEAUPIV(CONST PERS SOBRE DIR À CIDADE)", "1503229": "TEAU(APROVEITAMENTO DE ÁGUA DE CHUVA)", "1503230": "TEAU(CIDADES SUSTENTÁVES)", "1503233": "TEAU(GEST DA DEM DE ÁGUA EM CID DE P MD)", "1503235": "TEAU(SEMIÁRIDO:ARQ", "1503236": "TEAU(APO:TEORIA E PRÁTICA)", "1503237": "TEAU(INDUSTRIALIZAÇÃO E FLEXIB NA ARQ)", "1503238": "TEAU(ANÁLISE DE ARQ:MÉTODOS E PRÁTICAS)", "1503240": "TEAU(SINTAXE ESPACIAL)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113008", "nome": "GEOMETRIA DESCRITIVA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1302056", "nome": "ESTÉTICA E HISTÓRIA DAS ARTES I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1302236", "nome": "DESENHO ARTISTICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305298", "nome": "ESTUDOS SOCIOECONOMICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1503120", "nome": "ESPACO, FORMA E PLASTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1106124", "nome": "MATERIAIS DE CONSTRUÇÃO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1113023", "nome": "DESENHO TÉCNICO E ARQUITETÔNICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113008"]}, {"nivel": "2º Nível", "codigo": "1302059", "nome": "ESTÉTICA E HISTÓRIA DAS ARTES II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1302056"]}, {"nivel": "2º Nível", "codigo": "1503121", "nome": "INTRODUÇÃO À ARQUITETURA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1503122", "nome": "FUND DO PLANEJAMENTO E DO DESENHO URBANO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503125", "nome": "CONFORTO AMBIENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503126", "nome": "ESTUDOS URBANOS E REGIONAIS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305298"]}, {"nivel": "3º Nível", "codigo": "1503127", "nome": "PROJETO ASSISTIDO POR COMPUTADOR I", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113023"]}, {"nivel": "3º Nível", "codigo": "1503128", "nome": "PROJETO DE ARQUITETURA I", "ch": "75\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503120", "1302236", "1503119"]}, {"nivel": "3º Nível", "codigo": "1503129", "nome": "SISTEMAS ESTRUTURAIS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126", "1108030"]}, {"nivel": "3º Nível", "codigo": "1503130", "nome": "TEORIA E HIST. DA ARQ. E DO URB. I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1503131", "nome": "TOPOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113023"]}, {"nivel": "4º Nível", "codigo": "1503134", "nome": "TEORIA E HIST. DA ARQ. E DO URB. II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503135", "nome": "PROJETO ASSISTIDO POR COMPUTADOR II", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503136", "nome": "PROJETO DE ARQUITETURA II", "ch": "75\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503121"]}, {"nivel": "4º Nível", "codigo": "1503137", "nome": "ESTUDOS URBANOS E REGIONAIS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503122"]}, {"nivel": "4º Nível", "codigo": "1503138", "nome": "PLANEJAMENTO DA PAISAGEM I", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503139", "nome": "SISTEMAS ESTRUTURAIS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1503140", "nome": "CONFORTO AMBIENTAL II", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503125"]}, {"nivel": "5º Nível", "codigo": "1503070", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1503142", "nome": "TEORIA E HIST. DA ARQ. E DO URB. III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503130"]}, {"nivel": "5º Nível", "codigo": "1503143", "nome": "PROJETO DE ARQUITETURA III", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503128", "1113023"]}, {"nivel": "5º Nível", "codigo": "1503144", "nome": "ESTUDOS URBANOS E REGIONAIS III", "ch": "75\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503126", "1113023"]}, {"nivel": "5º Nível", "codigo": "1503145", "nome": "PLANEJAMENTO DA PAISAGEM II", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503138"]}, {"nivel": "5º Nível", "codigo": "1503146", "nome": "INSTALACOES PREDIAIS I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503128"]}, {"nivel": "6º Nível", "codigo": "1503149", "nome": "TEORIA E HIST. DA ARQ. E DO URB. IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503134"]}, {"nivel": "6º Nível", "codigo": "1503150", "nome": "PROJETO DE ARQUITETURA IV", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503136"]}, {"nivel": "6º Nível", "codigo": "1503151", "nome": "ESTUDOS URBANOS E REGIONAIS IV", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503137"]}, {"nivel": "6º Nível", "codigo": "1503152", "nome": "INSTALACOES PREDIAIS II", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108081", "1503128"]}, {"nivel": "6º Nível", "codigo": "1503153", "nome": "CONFORTO AMBIENTAL III", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503125"]}, {"nivel": "7º Nível", "codigo": "1503157", "nome": "TEORIA E HIST. DA ARQ. E DO URB. V", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503142"]}, {"nivel": "7º Nível", "codigo": "1503158", "nome": "GEOTECNOLOGIAS APLICADAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503127"]}, {"nivel": "7º Nível", "codigo": "1503159", "nome": "PROJETO DE ARQUITETURA V", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503143"]}, {"nivel": "7º Nível", "codigo": "1503160", "nome": "ESTUDOS URBANOS E REGIONAIS V", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503144", "1503070"]}, {"nivel": "8º Nível", "codigo": "1503163", "nome": "DESENHO DE DETALHES CONSTRUTIVOS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503135", "1503136", "1503137", "1503138"]}, {"nivel": "8º Nível", "codigo": "1503164", "nome": "PROJETO DE ARQUITETURA VI", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1503165", "nome": "PESQ CIENT  EM ARQ, URBAN E PAISAGISMO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1503166", "nome": "TECNOLOGIAS SOCIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1503191", "nome": "TECNOLOGIA DO AMBIENTE CONSTRUIDO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503146", "1106124", "1503074", "1503131"]}, {"nivel": "9º Nível", "codigo": "1503192", "nome": "ATELIER INTEG DE ARQ,URB E PAISAGISMO", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503159", "1503157", "1503160", "1503145", "1503139", "1503152", "1503140", "1503153", "1503158"]}, {"nivel": "9º Nível", "codigo": "1503193", "nome": "INTRODUÇÃO AO TRABALHO DE CONCLUSÃO DO C", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503159", "1503160", "1503157", "1503145"]}, {"nivel": "10º Nível", "codigo": "1503196", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "120\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1503165", "1503192", "1503193", "1503166", "1503164", "1503163"]}, {"nivel": "10º Nível", "codigo": "1503197", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO", "ch": "180\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}];
+  const codigoToNome = {"1108030": "FÍSICA GERAL I", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1113008": "GEOMETRIA DESCRITIVA", "1302056": "ESTÉTICA E HISTÓRIA DAS ARTES I", "1302236": "DESENHO ARTISTICO", "1305298": "ESTUDOS SOCIOECONOMICOS", "1503120": "ESPACO, FORMA E PLASTICA", "1106124": "MATERIAIS DE CONSTRUÇÃO I", "1108081": "FÍSICA GERAL II", "1113023": "DESENHO TÉCNICO E ARQUITETÔNICO", "1302059": "ESTÉTICA E HISTÓRIA DAS ARTES II", "1503121": "INTRODUÇÃO À ARQUITETURA", "1503122": "FUND DO PLANEJAMENTO E DO DESENHO URBANO", "1503125": "CONFORTO AMBIENTAL I", "1503126": "ESTUDOS URBANOS E REGIONAIS I", "1503127": "PROJETO ASSISTIDO POR COMPUTADOR I", "1503128": "PROJETO DE ARQUITETURA I", "1503129": "SISTEMAS ESTRUTURAIS I", "1503130": "TEORIA E HIST. DA ARQ. E DO URB. I", "1503131": "TOPOGRAFIA", "1503134": "TEORIA E HIST. DA ARQ. E DO URB. II", "1503135": "PROJETO ASSISTIDO POR COMPUTADOR II", "1503136": "PROJETO DE ARQUITETURA II", "1503137": "ESTUDOS URBANOS E REGIONAIS II", "1503138": "PLANEJAMENTO DA PAISAGEM I", "1503139": "SISTEMAS ESTRUTURAIS II", "1503140": "CONFORTO AMBIENTAL II", "1503070": "CIÊNCIAS DO AMBIENTE", "1503142": "TEORIA E HIST. DA ARQ. E DO URB. III", "1503143": "PROJETO DE ARQUITETURA III", "1503144": "ESTUDOS URBANOS E REGIONAIS III", "1503145": "PLANEJAMENTO DA PAISAGEM II", "1503146": "INSTALACOES PREDIAIS I", "1503149": "TEORIA E HIST. DA ARQ. E DO URB. IV", "1503150": "PROJETO DE ARQUITETURA IV", "1503151": "ESTUDOS URBANOS E REGIONAIS IV", "1503152": "INSTALACOES PREDIAIS II", "1503153": "CONFORTO AMBIENTAL III", "1503157": "TEORIA E HIST. DA ARQ. E DO URB. V", "1503158": "GEOTECNOLOGIAS APLICADAS", "1503159": "PROJETO DE ARQUITETURA V", "1503160": "ESTUDOS URBANOS E REGIONAIS V", "1503163": "DESENHO DE DETALHES CONSTRUTIVOS", "1503164": "PROJETO DE ARQUITETURA VI", "1503165": "PESQ CIENT  EM ARQ, URBAN E PAISAGISMO", "1503166": "TECNOLOGIAS SOCIAIS", "1503191": "TECNOLOGIA DO AMBIENTE CONSTRUIDO", "1503192": "ATELIER INTEG DE ARQ,URB E PAISAGISMO", "1503193": "INTRODUÇÃO AO TRABALHO DE CONCLUSÃO DO C", "1503196": "TRABALHO DE CONCLUSAO DE CURSO", "1503197": "ESTAGIO CURRICULAR SUPERVISIONADO", "1305001": "INTRODUÇÃO À ANTROPOLOGIA", "1306299": "FORMAÇÃO TERRITORIAL DO BRASIL", "1307169": "LÍNGUA PORTUGUESA", "1308012": "FUNDAMENTOS PARA ESTUDO EM GEOG AGRARIA", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1502171": "DESASTRES AMBIENTAIS", "1502182": "FUNDAMENTOS DE IMPACTOS AMBIENTAIS", "1503123": "GESTAO DO ESPAÇO URBANO", "1503124": "CAMPINA GRANDE ARQUITETURA E CIDADE", "1503141": "DIREITO URBANISTICO", "1503147": "ERGONOMIA E ACESSIBILIDADE", "1503148": "METODOLOGIA DE PESQ E COMUNIC CIENTIFICA", "1503154": "TEAUP I (OFICINA DE PROJETOS)", "1503155": "TEAUP I(CONCEP SOCIOCULTURAIS DE ESPACO)", "1503161": "ARQUITETURA DE INTERIORES", "1112155": "CRIATIVIDADE", "1112265": "IMAGEM E TEXTO", "1302070": "PSICOLOGIA DA CRIATIVIDADE", "1305070": "SOCIOLOGIA URBANA", "1307011": "INGLES", "1307332": "LIBRAS", "1308013": "FUNDAMENTOS PARA ESTUDO EM GEOG URBANA", "1503162": "TEAUP I (METOD DE PESQ E COM.CIENTIFICA)", "1503194": "TEAUP(VIAGEM E ESTUDO)", "1503201": "TEAUP(TEOR DO PROJ ARQ.,URBAN E PAISAGIS", "1503205": "TEAUP(ARTE E TECNOLOGIA)", "1503206": "ARQUITETURA SUSTENTAVEL", "1503207": "INFORMATICA AVANCADA PARA ARQUITETURA", "1503209": "TEAUP(CONCEP SOCIOCULTURAIS DE ESPACOS)", "1503210": "TEAUP(ANAL ESP NOS EST URB:TEOR E PRAT)", "1503211": "TEAUP I(ARQ.DOS MESTRES:DO INTER  AO EXT", "1503212": "PROJETO E METODO NA ARQUITETURA", "1503213": "PLANEJAMENTO AMBIENTAL", "1503214": "TEAUP II (CONCURSO ESTUDANTIL )", "1503218": "TEAUP II(FORT CAPAC PELO DIR A CIDADE)", "1503219": "TEAUP II(RECICLAGEM E REF DE EDIFICACOES", "1503224": "TEAUPIV(CONST PERS SOBRE DIR À CIDADE)", "1503229": "TEAU(APROVEITAMENTO DE ÁGUA DE CHUVA)", "1503230": "TEAU(CIDADES SUSTENTÁVES)", "1503233": "TEAU(GEST DA DEM DE ÁGUA EM CID DE P MD)", "1503235": "TEAU(SEMIÁRIDO:ARQ, CULTURA E CIDADE)", "1503236": "TEAU(APO:TEORIA E PRÁTICA)", "1503237": "TEAU(INDUSTRIALIZAÇÃO E FLEXIB NA ARQ)", "1503238": "TEAU(ANÁLISE DE ARQ:MÉTODOS E PRÁTICAS)", "1503240": "TEAU(SINTAXE ESPACIAL)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -914,7 +917,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

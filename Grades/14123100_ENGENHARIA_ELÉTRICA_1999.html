@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,816 +404,816 @@
           <tr>
               <td>1105373</td>
               <td>TE(FUNDAMENTOS DO SETOR DE P&G)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105377</td>
               <td>TE(SISTEMAS DE PROD DO SETOR P&G)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105404</td>
               <td>TE(EQUIP E APLIC NO SETOR DE PETR E GAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304055</td>
               <td>FUTSAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304062</td>
               <td>PRÁTICA DESPORTIVA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307001</td>
               <td>ALEMAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307009</td>
               <td>FRANCES</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307011</td>
               <td>INGLES</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307045</td>
               <td>LINGUA PORTUGUESA</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404108</td>
               <td>TEEE(MET. NUM. NO ELETROMAGN.)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404167</td>
               <td>ANÁLISE DE SISTEMAS ELÉTRICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SISTEMAS ELÉTRICOS, LAB. SISTEMAS ELÉTRICOS, 1404038</td>
               <td></td>
           </tr>
           <tr>
               <td>1404168</td>
               <td>DISTRIBUICAO DE ENERGIA ELETRICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANÁLISE DE SISTEMAS ELÉTRICOS, 1404046</td>
               <td></td>
           </tr>
           <tr>
               <td>1404169</td>
               <td>EQUIPAMENTOS ELÉTRICOS</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td>MATERIAIS ELÉTRICOS, LAB. MATERIAIS ELÉTRICOS, 1404054, INSTALACOES ELETRICAS, LAB.INSTALACOES ELETRICAS, 1404014</td>
               <td></td>
           </tr>
           <tr>
               <td>1404170</td>
               <td>GERACAO DE ENERGIA ELETRICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CONVERSÃO ELETROMECÂNICA, LAB. CONVERSÃO ELETROMECÂNICA, 1404015</td>
               <td></td>
           </tr>
           <tr>
               <td>1404171</td>
               <td>GERENCIAMENTO DE ENERGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SISTEMAS ELÉTRICOS, LAB. SISTEMAS ELÉTRICOS, 1404038</td>
               <td></td>
           </tr>
           <tr>
               <td>1404172</td>
               <td>TÉCNICAS DE MEDIÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SISTEMAS ELÉTRICOS, LAB. SISTEMAS ELÉTRICOS, 1404038</td>
               <td></td>
           </tr>
           <tr>
               <td>1404173</td>
               <td>OPERAÇÃO E CONT. DE SISTEMAS ELÉTRICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANÁLISE DE SISTEMAS ELÉTRICOS, 1404046</td>
               <td></td>
           </tr>
           <tr>
               <td>1404174</td>
               <td>PROTEÇÃO DE SISTEMAS ELÉTRICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANÁLISE DE SISTEMAS ELÉTRICOS, 1404046</td>
               <td></td>
           </tr>
           <tr>
               <td>1404175</td>
               <td>TÉCNICAS DE ALTA TENSÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAIS ELÉTRICOS, LAB. MATERIAIS ELÉTRICOS, 1404054, INSTALACOES ELETRICAS, LAB.INSTALACOES ELETRICAS, 1404014</td>
               <td></td>
           </tr>
           <tr>
               <td>1404176</td>
               <td>ARQUITETURAS AVANÇ. P/ COMPUTAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ARQUITETURA DE SISTEMAS DIGITAIS, LAB ARQUIT. DE SISTEMAS DIGITAIS, 1404006, 1404049</td>
               <td></td>
           </tr>
           <tr>
               <td>1404177</td>
               <td>CIRCUITOS PARA COMUNICACOES</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td>ELETRONICA, LAB. ELETRONICA, 1404033, 1404211, PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES, 1404018</td>
               <td></td>
           </tr>
           <tr>
               <td>1404178</td>
               <td>ESTRUTURA E CONCEPCAO DE CIRC. INTEG.</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ELETRONICA, LAB. ELETRONICA, 1404033, 1404211</td>
               <td></td>
           </tr>
           <tr>
               <td>1404179</td>
               <td>FILTROS ELÉTRICOS</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td>ELETRONICA, LAB. ELETRONICA, 1404033, 1404211</td>
               <td></td>
           </tr>
           <tr>
               <td>1404180</td>
               <td>INSTRUMENTACAO ELETRONICA</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td>ELETRONICA, LAB. ELETRONICA, 1404033, 1404211</td>
               <td></td>
           </tr>
           <tr>
               <td>1404181</td>
               <td>PROCESSAMENTO DIGITAL DE SINAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANÁLISE DE SINAIS E SISTEMAS, 1109027, 1404082</td>
               <td></td>
           </tr>
           <tr>
               <td>1404182</td>
               <td>PROJETO DE CIRCUITOS INTEGRADOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>DISPOSITIVOS ELETRONICOS, LAB. DISPOSITIVOS ELETRONICOS, 1404033</td>
               <td></td>
           </tr>
           <tr>
               <td>1404183</td>
               <td>SISTEMAS DE AQUIS.DE DADOS E INTERFACE</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td>ELETRONICA, LAB. ELETRONICA, 1404033, 1404211</td>
               <td></td>
           </tr>
           <tr>
               <td>1404184</td>
               <td>SISTEMAS DE AUTOMACAO INDUSTRIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ARQUITETURA DE SISTEMAS DIGITAIS, LAB ARQUIT. DE SISTEMAS DIGITAIS, 1404006, 1404049</td>
               <td></td>
           </tr>
           <tr>
               <td>1404185</td>
               <td>SISTEMAS DE PROC. DE AUDIO E VIDEO</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td>ELETRONICA, LAB. ELETRONICA, 1404033, 1404211</td>
               <td></td>
           </tr>
           <tr>
               <td>1404186</td>
               <td>ANTENAS E PROPAGAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ONDAS E LINHAS, 1404019</td>
               <td></td>
           </tr>
           <tr>
               <td>1404187</td>
               <td>COMPATIBILIDADE E INTERF ELETROMAGNETICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ONDAS E LINHAS, 1404019</td>
               <td></td>
           </tr>
           <tr>
               <td>1404188</td>
               <td>COMUNICACOES DIGITAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES, 1404018</td>
               <td></td>
           </tr>
           <tr>
               <td>1404189</td>
               <td>COMUNICACOES OPTICAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ONDAS E LINHAS, 1404019, PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES</td>
               <td></td>
           </tr>
           <tr>
               <td>1404190</td>
               <td>ENGENHARIA DE MICROONDAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ONDAS E LINHAS, 1404019</td>
               <td></td>
           </tr>
           <tr>
               <td>1404191</td>
               <td>ESTRUTURAS GUIANTES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ONDAS E LINHAS, 1404019</td>
               <td></td>
           </tr>
           <tr>
               <td>1404192</td>
               <td>TRANSMISSAO DIGITAL DA INFORMACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES, 1404018</td>
               <td></td>
           </tr>
           <tr>
               <td>1404193</td>
               <td>SISTEMAS DE COMUNICACOES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES, 1404018</td>
               <td></td>
           </tr>
           <tr>
               <td>1404194</td>
               <td>TELEFONIA DIGITAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES</td>
               <td></td>
           </tr>
           <tr>
               <td>1404195</td>
               <td>TEORIA DA INFORMACAO E CODIFICACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES, 1404018</td>
               <td></td>
           </tr>
           <tr>
               <td>1404196</td>
               <td>ACIONAMENTOS ELÉTRICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CONVERSÃO ELETROMECÂNICA, LAB. CONVERSÃO ELETROMECÂNICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1404197</td>
               <td>AUTOMAÇÃO INTELIGENTE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CONTROLE DIGITAL, LAB. CONTROLE DIGITAL, 1404036</td>
               <td></td>
           </tr>
           <tr>
               <td>1404198</td>
               <td>CONVERSORES ESTATICOS E ELETROMECANICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ELETRONICA DE POTENCIA, LAB. ELETRONICA DE POTENCIA, 1404043, MÁQUINAS ELÉTRICAS, LABORATÓRIO DE MÁQUINAS ELÉTRICAS, 1404015</td>
               <td></td>
           </tr>
           <tr>
               <td>1404199</td>
-              <td>GERENCIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>GERENCIA,PLANEJ E CONTROLE DA PRODUCAO</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À ENGENHARIA ELÉTRICA, ADMINISTRAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>1404200</td>
               <td>REDES DE COMPUTADORES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES, 1404018</td>
               <td></td>
           </tr>
           <tr>
               <td>1404201</td>
               <td>SISTEMAS A EVENTOS DISCRETOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ARQUITETURA DE SISTEMAS DIGITAIS, LAB ARQUIT. DE SISTEMAS DIGITAIS, 1404006, 1404049</td>
               <td></td>
           </tr>
           <tr>
               <td>1404202</td>
               <td>INFORMÁTICA INDUSTRIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ARQUITETURA DE SISTEMAS DIGITAIS, LAB ARQUIT. DE SISTEMAS DIGITAIS, 1404006, 1404049</td>
               <td></td>
           </tr>
           <tr>
               <td>1404203</td>
               <td>SISTEMAS EM TEMPO REAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ARQUITETURA DE SISTEMAS DIGITAIS, LAB ARQUIT. DE SISTEMAS DIGITAIS, 1404006, 1404049, TÉCNICAS DE PROGRAMAÇÃO, 1411001</td>
               <td></td>
           </tr>
           <tr>
               <td>1404207</td>
               <td>TÓPICOS ESPECIAIS EM ENG. ELÉTRICA</td>
-              <td>0h</td>
-              <td>0.0</td>
+              <td>0"h</td>
+              <td>0"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404213</td>
               <td>LAB. FILTROS ELÉTRICOS</td>
-              <td>0h</td>
-              <td>0.0</td>
+              <td>0"h</td>
+              <td>0"</td>
               <td></td>
               <td>FILTROS ELÉTRICOS</td>
           </tr>
           <tr>
               <td>1404214</td>
               <td>LAB. INSTRUMENTACAO</td>
-              <td>0h</td>
-              <td>0.0</td>
+              <td>0"h</td>
+              <td>0"</td>
               <td></td>
               <td>INSTRUMENTACAO ELETRONICA</td>
           </tr>
           <tr>
               <td>1404218</td>
               <td>LAB SIST AQUIS DE DADOS E INTER</td>
-              <td>0h</td>
-              <td>0.0</td>
+              <td>0"h</td>
+              <td>0"</td>
               <td></td>
               <td>SISTEMAS DE AQUIS.DE DADOS E INTERFACE</td>
           </tr>
           <tr>
               <td>1404237</td>
               <td>LAB. EQUIPAMENTOS ELÉTRICOS</td>
-              <td>0h</td>
-              <td>0.0</td>
+              <td>0"h</td>
+              <td>0"</td>
               <td>MATERIAIS ELÉTRICOS, LAB. MATERIAIS ELÉTRICOS, 1404054, INSTALACOES ELETRICAS, LAB.INSTALACOES ELETRICAS, 1404014</td>
               <td>EQUIPAMENTOS ELÉTRICOS</td>
           </tr>
           <tr>
               <td>1404239</td>
               <td>TEEE(LAB ANTENAS E PROPAGACAO)</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td>ONDAS E LINHAS, 1404019</td>
               <td></td>
           </tr>
           <tr>
               <td>1404248</td>
               <td>TI (LINGUAGEM DE PROGRAMAÇÃO I)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404255</td>
               <td>TI (PROGRAMAÇÃO I)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404258</td>
               <td>TH (INTRODUÇÃO À PSICOLOGIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404260</td>
               <td>TEEE( DCCHCFP )</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ELETRONICA, CONTROLE ANALOGICO</td>
               <td></td>
           </tr>
           <tr>
               <td>1404264</td>
               <td>TT (MÁQ. HIDR. E PNEUMÁTICAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404265</td>
               <td>TT(ISNT METEOR E TEC OBS SUPERFICIE)</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404266</td>
               <td>TEE(SIST RECONF E MICROCONTROLADORES)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>DISPOSITIVOS ELETRONICOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1404268</td>
               <td>TEEE (PROGRAMAÇÃO ORIENTADA A OBJETOS)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404269</td>
               <td>TEEE (PROGRAMAÇÃO EM LINGUAGEM C++)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404270</td>
               <td>TEEE(ARQUITETURA DE SISTEMAS EMBUTIDOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404271</td>
               <td>TEEE(SIST OPER P/APLIC MOVEIS EMBUTIDAS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404272</td>
               <td>TAEE(MICROCONT E PROC DIGITAIS DE SINAIS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404273</td>
               <td>TAEE(INSTRUMENTACAO INDUSTRIAL)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404275</td>
               <td>TEEE (CRIPTOGRAFIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROBABILIDADE E ESTATÍSTICA, TÉCNICAS DE PROGRAMAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>1404276</td>
               <td>TEEE(SISTEMAS EMBARCADOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ARQUITETURA DE SISTEMAS DIGITAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1404277</td>
               <td>TEEE(QUALIDADE DE ENERGIA ELÉTRICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CIRCUITOS ELÉTRICOS II</td>
               <td>ELETROMAGNETISMO</td>
           </tr>
           <tr>
               <td>1404279</td>
               <td>TEEE(MET.GRAF.PARA LINHAS DE TRANSM.RF)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ONDAS E LINHAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1404280</td>
               <td>TEEE(INIC À CONC DE CIRC IN AN E MISTOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CIRCUITOS ELÉTRICOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1404372</td>
               <td>TE(FONTES REN DE ENERGIA E EFIC ENERG)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404373</td>
               <td>TAEE(QUALIDADE DE ENERGIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404374</td>
               <td>TEEE(RADIO DEFINIDO POR SOFTWARE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PRINCIPIOS DE COMUNICACOES, LAB. PRINCIPIOS DE COMUNICACOES</td>
               <td></td>
           </tr>
           <tr>
               <td>1404375</td>
               <td>TEEE(ARQ DE REDES E ELETROELET.VEICULAR)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ELETRONICA, LAB. ELETRONICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1404376</td>
               <td>TEEE(MODEL E SIMUL DE SISTE.AUTOMOTIVOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CONTROLE ANALOGICO, LAB. CONTROLE ANALOGICO</td>
               <td></td>
           </tr>
           <tr>
               <td>1404377</td>
               <td>TE(INSTR.E CONTROLE PARA O SETOR P&G)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404378</td>
               <td>TAEE(MAQUINAS ELETRICAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404379</td>
               <td>TEEE(PROCESSAMENTO DE SINAIS MULTIMIDIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TÉCNICAS DE PROGRAMAÇÃO, PROBABILIDADE E ESTATÍSTICA, ANÁLISE DE SINAIS E SISTEMAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1404380</td>
               <td>TAEE(IDENT.EM MALHA FECH P/CONT DE SIST)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CONTROLE DIGITAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1404381</td>
               <td>TEEE(SISTEMAS ELETRICOS INDUSTRIAIS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INSTALACOES ELETRICAS, LAB.INSTALACOES ELETRICAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1404382</td>
               <td>TEEE(INTERNET DAS COISAS INDUSTRIAL-IIOT</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ARQUITETURA DE SISTEMAS DIGITAIS, LAB ARQUIT. DE SISTEMAS DIGITAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1404383</td>
               <td>TEEE(INT AO PROC DE IMAG DIG E VISAO COM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TÉCNICAS DE PROGRAMAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>1404384</td>
-              <td>TEEE(ROBOTICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>TEEE(ROBOTICA, TEOR. TECNOL. E PROGAMA.)</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404385</td>
               <td>TEEE(REDES DE SENSORES/ATUAD INDUSTRIAIS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ELETRONICA, LAB. ELETRONICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1404386</td>
               <td>TEEE(MODELAGEM E IDENT DE PROCESSOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ANÁLISE DE SINAIS E SISTEMAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1404387</td>
               <td>TEEE(SISTEMAS OPTICOS COERENTES)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404388</td>
               <td>TEEE(PROJ DE CIRC. FOTONICOS EM SILICIOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ONDAS E LINHAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1404389</td>
               <td>TEEE(IDENTIF DE PROC MULTIVARIAVEIS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CONTROLE ANALOGICO, LAB. CONTROLE ANALOGICO</td>
               <td></td>
           </tr>
           <tr>
               <td>1404390</td>
               <td>TEEE(PROJ INTER DE CONTROLAD INDUSTRIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CONTROLE ANALOGICO, LAB. CONTROLE ANALOGICO</td>
               <td></td>
           </tr>
           <tr>
               <td>1404391</td>
               <td>TEEE(CONTROLE PREDITIVO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CONTROLE ANALOGICO</td>
               <td></td>
           </tr>
           <tr>
               <td>1404392</td>
               <td>TEEE(INT ART E CIENC DADOS APLIC SIST EL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CALCULO NUMERICO, SISTEMAS ELÉTRICOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1404393</td>
               <td>TEEE(PRÁTICAS DE ENGENHARIA ELÉTRICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404394</td>
               <td>TEEE(PRÁTICA DE ENG ELÉTRICA EXTRAMUROS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404395</td>
-              <td>TEEE(MODELAGEM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>TEEE(MODELAGEM,SIMULAÇÃO E IDENT DE PROC</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CONTROLE ANALOGICO</td>
               <td></td>
           </tr>
           <tr>
               <td>1404397</td>
               <td>TEEE(NR 10 SEG EM INST E SERV EM ELETR)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INSTALACOES ELETRICAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1404398</td>
               <td>TEEE(BIOSENSORES:FUNDAMENTOS E APLICAÇÕE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ELETRONICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1404399</td>
               <td>TEEE(INTERNET DAS COISAS INDUST(II0T)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CIRCUITOS LOGICOS, LAB. CIRCUITOS LOGICOS, TÉCNICAS DE PROGRAMAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>1404400</td>
               <td>TEEE(REDES DE PETRI)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CIRCUITOS LOGICOS, REDES DE COMPUTADORES, SISTEMAS A EVENTOS DISCRETOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1404401</td>
               <td>TEEE(SISTEMAS FÍSICO CIBERNÉTICOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CIRCUITOS LOGICOS, CONTROLE ANALOGICO</td>
               <td></td>
           </tr>
           <tr>
               <td>1404402</td>
               <td>TEEE(PRAT EM CONTROLE DE PROCESSOS E AUT</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CONTROLE ANALOGICO</td>
               <td></td>
           </tr>
           <tr>
               <td>1404403</td>
               <td>TEEE(SISTEMAS DISTR PARA AUT:HARD E SOFT</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CONTROLE ANALOGICO</td>
               <td></td>
           </tr>
@@ -1257,8 +1260,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109103", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1404132", "nome": "INTRODUÇÃO À ENGENHARIA ELÉTRICA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411160", "nome": "INTRODUÇÃO À PROGRAMAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1503038", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "45h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1107212", "nome": "QUÍMICA", "ch": "75h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60h", "preReqs": ["1108002", "1108030", "1108080"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1108080", "1108030"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109053", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109103", "1109007"]}, {"nivel": "2º Nível", "codigo": "1411161", "nome": "TÉCNICAS DE PROGRAMAÇÃO", "ch": "60h", "preReqs": ["1411001", "1411160"]}, {"nivel": "3º Nível", "codigo": "1108083", "nome": "ELETRICIDADE E MAGNETISMO", "ch": "60h", "preReqs": ["1108082", "1108023", "1109104", "1109053", "1108081"]}, {"nivel": "3º Nível", "codigo": "1108084", "nome": "LAB. DE OPTICA ELETRICIDADE E MAGNETISMO", "ch": "60h", "preReqs": ["1108081", "1108003", "1108031", "1108082", "1108023", "1108026", "1109104", "1109008", "1109053"]}, {"nivel": "3º Nível", "codigo": "1108098", "nome": "MECÂNICA GERAL I", "ch": "60h", "preReqs": ["1109053", "1108030"]}, {"nivel": "3º Nível", "codigo": "1109105", "nome": "CALCULO DIFERENCIAL E INTEGRAL III", "ch": "75h", "preReqs": ["1109053", "1109035"]}, {"nivel": "3º Nível", "codigo": "1109106", "nome": "EQUACOES DIFERENCIAIS", "ch": "60h", "preReqs": ["1109053", "1109049"]}, {"nivel": "3º Nível", "codigo": "1404163", "nome": "CIRCUITOS LOGICOS", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1404164", "nome": "LAB. CIRCUITOS LOGICOS", "ch": "15h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1108029", "nome": "MECÂNICA GERAL II", "ch": "60h", "preReqs": ["1108085", "1108006", "1108098"]}, {"nivel": "4º Nível", "codigo": "1109108", "nome": "VARIAVEIS COMPLEXAS", "ch": "60h", "preReqs": ["1109105", "1109009"]}, {"nivel": "4º Nível", "codigo": "1114107", "nome": "PROBABILIDADE E ESTATÍSTICA", "ch": "60h", "preReqs": ["1109104", "1109008", "1109053"]}, {"nivel": "4º Nível", "codigo": "1404137", "nome": "CIRCUITOS ELÉTRICOS I", "ch": "60h", "preReqs": ["1108083", "1108005", "1108087", "1109106", "1109010", "1108084", "1108024", "1108027"]}, {"nivel": "4º Nível", "codigo": "1404139", "nome": "LAB. CIRCUITOS ELÉTRICOS I", "ch": "15h", "preReqs": ["1108083", "1108005", "1108087", "1109106", "1109010", "1108084", "1108024", "1108027"]}, {"nivel": "4º Nível", "codigo": "1404141", "nome": "ELETROMAGNETISMO", "ch": "60h", "preReqs": ["1108083", "1108005", "1108087", "1108084", "1108024", "1109105", "1109009", "1109051"]}, {"nivel": "4º Nível", "codigo": "1404142", "nome": "LAB. ELETROMAGNETISMO", "ch": "15h", "preReqs": ["1108083", "1108005", "1108087", "1108084", "1108024", "1109105", "1109009", "1109051"]}, {"nivel": "4º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60h", "preReqs": ["1109106", "1109010", "1411161"]}, {"nivel": "5º Nível", "codigo": "1106058", "nome": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "ch": "60h", "preReqs": ["1107212", "1108029"]}, {"nivel": "5º Nível", "codigo": "1114109", "nome": "PROCESSOS ESTOCASTICOS", "ch": "60h", "preReqs": ["1114052", "1114107", "1114013"]}, {"nivel": "5º Nível", "codigo": "1404138", "nome": "CIRCUITOS ELÉTRICOS II", "ch": "60h", "preReqs": ["1404137", "1404139"]}, {"nivel": "5º Nível", "codigo": "1404140", "nome": "LAB. CIRCUITOS ELÉTRICOS II", "ch": "15h", "preReqs": ["1404137", "1404139"]}, {"nivel": "5º Nível", "codigo": "1404143", "nome": "ONDAS E LINHAS", "ch": "60h", "preReqs": ["1404141", "1404142", "1404017"]}, {"nivel": "5º Nível", "codigo": "1404144", "nome": "DISPOSITIVOS ELETRONICOS", "ch": "60h", "preReqs": ["1404137", "1404139", "1108083", "1108084"]}, {"nivel": "5º Nível", "codigo": "1404147", "nome": "LAB. DISPOSITIVOS ELETRONICOS", "ch": "15h", "preReqs": ["1404137", "1404139"]}, {"nivel": "5º Nível", "codigo": "1404160", "nome": "ANÁLISE DE SINAIS E SISTEMAS", "ch": "60h", "preReqs": ["1109011", "1109108", "1109061", "1109106", "1109010"]}, {"nivel": "6º Nível", "codigo": "1404145", "nome": "ELETRONICA", "ch": "60h", "preReqs": ["1404138", "1404140", "1404144", "1404147"]}, {"nivel": "6º Nível", "codigo": "1404148", "nome": "LAB. ELETRONICA", "ch": "15h", "preReqs": ["1404138", "1404140", "1404002", "1404144", "1404147"]}, {"nivel": "6º Nível", "codigo": "1404152", "nome": "CONVERSÃO ELETROMECÂNICA", "ch": "60h", "preReqs": ["1404138", "1404140", "1404141", "1404142"]}, {"nivel": "6º Nível", "codigo": "1404153", "nome": "LAB. CONVERSÃO ELETROMECÂNICA", "ch": "15h", "preReqs": ["1404138", "1404140", "1404141", "1404142"]}, {"nivel": "6º Nível", "codigo": "1404161", "nome": "PRINCIPIOS DE COMUNICACOES", "ch": "60h", "preReqs": ["1404160", "1109027", "1404082", "1114109", "1404396", "1114014"]}, {"nivel": "6º Nível", "codigo": "1404162", "nome": "LAB. PRINCIPIOS DE COMUNICACOES", "ch": "15h", "preReqs": ["1404160", "1114109", "1404396"]}, {"nivel": "6º Nível", "codigo": "1404165", "nome": "ARQUITETURA DE SISTEMAS DIGITAIS", "ch": "60h", "preReqs": ["1404163", "1404164", "1404031"]}, {"nivel": "6º Nível", "codigo": "1404166", "nome": "LAB ARQUIT. DE SISTEMAS DIGITAIS", "ch": "30h", "preReqs": ["1404163", "1404164", "1404031"]}, {"nivel": "6º Nível", "codigo": "1503034", "nome": "FENOMENOS DE TRANSPORTE", "ch": "75h", "preReqs": ["1108081", "1108003", "1109104", "1109053", "1109008", "1108023", "1108082", "1108007", "1108086", "1108069", "1108029"]}, {"nivel": "7º Nível", "codigo": "1305212", "nome": "SOCIOLOGIA INDUSTRIAL", "ch": "45h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1404135", "nome": "SISTEMAS ELÉTRICOS", "ch": "60h", "preReqs": ["1404138", "1404140", "1411075"]}, {"nivel": "7º Nível", "codigo": "1404136", "nome": "LAB. SISTEMAS ELÉTRICOS", "ch": "15h", "preReqs": ["1404138", "1404140", "1411075"]}, {"nivel": "7º Nível", "codigo": "1404150", "nome": "MATERIAIS ELÉTRICOS", "ch": "60h", "preReqs": ["1106058", "1108083", "1108084"]}, {"nivel": "7º Nível", "codigo": "1404151", "nome": "LAB. MATERIAIS ELÉTRICOS", "ch": "15h", "preReqs": ["1106058", "1108083", "1108084"]}, {"nivel": "7º Nível", "codigo": "1404154", "nome": "MÁQUINAS ELÉTRICAS", "ch": "60h", "preReqs": ["1404152", "1404153"]}, {"nivel": "7º Nível", "codigo": "1404155", "nome": "LABORATÓRIO DE MÁQUINAS ELÉTRICAS", "ch": "15h", "preReqs": ["1404152", "1404153"]}, {"nivel": "7º Nível", "codigo": "1404156", "nome": "CONTROLE ANALOGICO", "ch": "60h", "preReqs": ["1404160", "1109027", "1404082"]}, {"nivel": "7º Nível", "codigo": "1404158", "nome": "LAB. CONTROLE ANALOGICO", "ch": "15h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1301014", "nome": "ADMINISTRAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1303021", "nome": "ECONOMIA", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1404133", "nome": "INSTALACOES ELETRICAS", "ch": "60h", "preReqs": ["1404150", "1404151", "1404054", "1404135", "1404136"]}, {"nivel": "8º Nível", "codigo": "1404134", "nome": "LAB.INSTALACOES ELETRICAS", "ch": "15h", "preReqs": ["1404150", "1404151", "1404054", "1404135", "1404136", "1404038"]}, {"nivel": "8º Nível", "codigo": "1404146", "nome": "ELETRONICA DE POTENCIA", "ch": "60h", "preReqs": ["1404145", "1404148"]}, {"nivel": "8º Nível", "codigo": "1404149", "nome": "LAB. ELETRONICA DE POTENCIA", "ch": "15h", "preReqs": ["1404145", "1404148", "1404033", "1404211"]}, {"nivel": "8º Nível", "codigo": "1404157", "nome": "CONTROLE DIGITAL", "ch": "60h", "preReqs": ["1404156", "1404158"]}, {"nivel": "8º Nível", "codigo": "1404159", "nome": "LAB. CONTROLE DIGITAL", "ch": "15h", "preReqs": ["1404156", "1404158"]}, {"nivel": "9º Nível", "codigo": "1301018", "nome": "ENGENHARIA ECONOMICA", "ch": "60h", "preReqs": ["1303021"]}, {"nivel": "9º Nível", "codigo": "1305036", "nome": "INSTITUICOES DO DIREITO", "ch": "45h", "preReqs": []}];
-  const codigoToNome = {"1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109103": "CALCULO DIFERENCIAL E INTEGRAL I", "1113019": "EXPRESSAO GRAFICA", "1404132": "INTRODUÇÃO À ENGENHARIA ELÉTRICA", "1411160": "INTRODUÇÃO À PROGRAMAÇÃO", "1503038": "CIÊNCIAS DO AMBIENTE", "1107212": "QUÍMICA", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109053": "CALCULO DIFERENCIAL E INTEGRAL II", "1411161": "TÉCNICAS DE PROGRAMAÇÃO", "1108083": "ELETRICIDADE E MAGNETISMO", "1108084": "LAB. DE OPTICA ELETRICIDADE E MAGNETISMO", "1108098": "MECÂNICA GERAL I", "1109105": "CALCULO DIFERENCIAL E INTEGRAL III", "1109106": "EQUACOES DIFERENCIAIS", "1404163": "CIRCUITOS LOGICOS", "1404164": "LAB. CIRCUITOS LOGICOS", "1108029": "MECÂNICA GERAL II", "1109108": "VARIAVEIS COMPLEXAS", "1114107": "PROBABILIDADE E ESTATÍSTICA", "1404137": "CIRCUITOS ELÉTRICOS I", "1404139": "LAB. CIRCUITOS ELÉTRICOS I", "1404141": "ELETROMAGNETISMO", "1404142": "LAB. ELETROMAGNETISMO", "1411075": "CALCULO NUMERICO", "1106058": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "1114109": "PROCESSOS ESTOCASTICOS", "1404138": "CIRCUITOS ELÉTRICOS II", "1404140": "LAB. CIRCUITOS ELÉTRICOS II", "1404143": "ONDAS E LINHAS", "1404144": "DISPOSITIVOS ELETRONICOS", "1404147": "LAB. DISPOSITIVOS ELETRONICOS", "1404160": "ANÁLISE DE SINAIS E SISTEMAS", "1404145": "ELETRONICA", "1404148": "LAB. ELETRONICA", "1404152": "CONVERSÃO ELETROMECÂNICA", "1404153": "LAB. CONVERSÃO ELETROMECÂNICA", "1404161": "PRINCIPIOS DE COMUNICACOES", "1404162": "LAB. PRINCIPIOS DE COMUNICACOES", "1404165": "ARQUITETURA DE SISTEMAS DIGITAIS", "1404166": "LAB ARQUIT. DE SISTEMAS DIGITAIS", "1503034": "FENOMENOS DE TRANSPORTE", "1305212": "SOCIOLOGIA INDUSTRIAL", "1404135": "SISTEMAS ELÉTRICOS", "1404136": "LAB. SISTEMAS ELÉTRICOS", "1404150": "MATERIAIS ELÉTRICOS", "1404151": "LAB. MATERIAIS ELÉTRICOS", "1404154": "MÁQUINAS ELÉTRICAS", "1404155": "LABORATÓRIO DE MÁQUINAS ELÉTRICAS", "1404156": "CONTROLE ANALOGICO", "1404158": "LAB. CONTROLE ANALOGICO", "1301014": "ADMINISTRAÇÃO", "1303021": "ECONOMIA", "1404133": "INSTALACOES ELETRICAS", "1404134": "LAB.INSTALACOES ELETRICAS", "1404146": "ELETRONICA DE POTENCIA", "1404149": "LAB. ELETRONICA DE POTENCIA", "1404157": "CONTROLE DIGITAL", "1404159": "LAB. CONTROLE DIGITAL", "1301018": "ENGENHARIA ECONOMICA", "1305036": "INSTITUICOES DO DIREITO", "1105373": "TE(FUNDAMENTOS DO SETOR DE P&G)", "1105377": "TE(SISTEMAS DE PROD DO SETOR P&G)", "1105404": "TE(EQUIP E APLIC NO SETOR DE PETR E GAS)", "1304055": "FUTSAL", "1304062": "PRÁTICA DESPORTIVA", "1307001": "ALEMAO", "1307009": "FRANCES", "1307011": "INGLES", "1307045": "LINGUA PORTUGUESA", "1404108": "TEEE(MET. NUM. NO ELETROMAGN.)", "1404167": "ANÁLISE DE SISTEMAS ELÉTRICOS", "1404168": "DISTRIBUICAO DE ENERGIA ELETRICA", "1404169": "EQUIPAMENTOS ELÉTRICOS", "1404170": "GERACAO DE ENERGIA ELETRICA", "1404171": "GERENCIAMENTO DE ENERGIA", "1404172": "TÉCNICAS DE MEDIÇÃO", "1404173": "OPERAÇÃO E CONT. DE SISTEMAS ELÉTRICOS", "1404174": "PROTEÇÃO DE SISTEMAS ELÉTRICOS", "1404175": "TÉCNICAS DE ALTA TENSÃO", "1404176": "ARQUITETURAS AVANÇ. P/ COMPUTAÇÃO", "1404177": "CIRCUITOS PARA COMUNICACOES", "1404178": "ESTRUTURA E CONCEPCAO DE CIRC. INTEG.", "1404179": "FILTROS ELÉTRICOS", "1404180": "INSTRUMENTACAO ELETRONICA", "1404181": "PROCESSAMENTO DIGITAL DE SINAIS", "1404182": "PROJETO DE CIRCUITOS INTEGRADOS", "1404183": "SISTEMAS DE AQUIS.DE DADOS E INTERFACE", "1404184": "SISTEMAS DE AUTOMACAO INDUSTRIAL", "1404185": "SISTEMAS DE PROC. DE AUDIO E VIDEO", "1404186": "ANTENAS E PROPAGAÇÃO", "1404187": "COMPATIBILIDADE E INTERF ELETROMAGNETICA", "1404188": "COMUNICACOES DIGITAIS", "1404189": "COMUNICACOES OPTICAS", "1404190": "ENGENHARIA DE MICROONDAS", "1404191": "ESTRUTURAS GUIANTES", "1404192": "TRANSMISSAO DIGITAL DA INFORMACAO", "1404193": "SISTEMAS DE COMUNICACOES", "1404194": "TELEFONIA DIGITAL", "1404195": "TEORIA DA INFORMACAO E CODIFICACAO", "1404196": "ACIONAMENTOS ELÉTRICOS", "1404197": "AUTOMAÇÃO INTELIGENTE", "1404198": "CONVERSORES ESTATICOS E ELETROMECANICOS", "1404199": "GERENCIA", "1404200": "REDES DE COMPUTADORES", "1404201": "SISTEMAS A EVENTOS DISCRETOS", "1404202": "INFORMÁTICA INDUSTRIAL", "1404203": "SISTEMAS EM TEMPO REAL", "1404207": "TÓPICOS ESPECIAIS EM ENG. ELÉTRICA", "1404213": "LAB. FILTROS ELÉTRICOS", "1404214": "LAB. INSTRUMENTACAO", "1404218": "LAB SIST AQUIS DE DADOS E INTER", "1404237": "LAB. EQUIPAMENTOS ELÉTRICOS", "1404239": "TEEE(LAB ANTENAS E PROPAGACAO)", "1404248": "TI (LINGUAGEM DE PROGRAMAÇÃO I)", "1404255": "TI (PROGRAMAÇÃO I)", "1404258": "TH (INTRODUÇÃO À PSICOLOGIA)", "1404260": "TEEE( DCCHCFP )", "1404264": "TT (MÁQ. HIDR. E PNEUMÁTICAS)", "1404265": "TT(ISNT METEOR E TEC OBS SUPERFICIE)", "1404266": "TEE(SIST RECONF E MICROCONTROLADORES)", "1404268": "TEEE (PROGRAMAÇÃO ORIENTADA A OBJETOS)", "1404269": "TEEE (PROGRAMAÇÃO EM LINGUAGEM C++)", "1404270": "TEEE(ARQUITETURA DE SISTEMAS EMBUTIDOS)", "1404271": "TEEE(SIST OPER P/APLIC MOVEIS EMBUTIDAS)", "1404272": "TAEE(MICROCONT E PROC DIGITAIS DE SINAIS", "1404273": "TAEE(INSTRUMENTACAO INDUSTRIAL)", "1404275": "TEEE (CRIPTOGRAFIA)", "1404276": "TEEE(SISTEMAS EMBARCADOS)", "1404277": "TEEE(QUALIDADE DE ENERGIA ELÉTRICA)", "1404279": "TEEE(MET.GRAF.PARA LINHAS DE TRANSM.RF)", "1404280": "TEEE(INIC À CONC DE CIRC IN AN E MISTOS)", "1404372": "TE(FONTES REN DE ENERGIA E EFIC ENERG)", "1404373": "TAEE(QUALIDADE DE ENERGIA)", "1404374": "TEEE(RADIO DEFINIDO POR SOFTWARE)", "1404375": "TEEE(ARQ DE REDES E ELETROELET.VEICULAR)", "1404376": "TEEE(MODEL E SIMUL DE SISTE.AUTOMOTIVOS)", "1404377": "TE(INSTR.E CONTROLE PARA O SETOR P&G)", "1404378": "TAEE(MAQUINAS ELETRICAS)", "1404379": "TEEE(PROCESSAMENTO DE SINAIS MULTIMIDIA)", "1404380": "TAEE(IDENT.EM MALHA FECH P/CONT DE SIST)", "1404381": "TEEE(SISTEMAS ELETRICOS INDUSTRIAIS)", "1404382": "TEEE(INTERNET DAS COISAS INDUSTRIAL-IIOT", "1404383": "TEEE(INT AO PROC DE IMAG DIG E VISAO COM", "1404384": "TEEE(ROBOTICA", "1404385": "TEEE(REDES DE SENSORES/ATUAD INDUSTRIAIS", "1404386": "TEEE(MODELAGEM E IDENT DE PROCESSOS)", "1404387": "TEEE(SISTEMAS OPTICOS COERENTES)", "1404388": "TEEE(PROJ DE CIRC. FOTONICOS EM SILICIOS", "1404389": "TEEE(IDENTIF DE PROC MULTIVARIAVEIS)", "1404390": "TEEE(PROJ INTER DE CONTROLAD INDUSTRIAIS", "1404391": "TEEE(CONTROLE PREDITIVO)", "1404392": "TEEE(INT ART E CIENC DADOS APLIC SIST EL", "1404393": "TEEE(PRÁTICAS DE ENGENHARIA ELÉTRICA)", "1404394": "TEEE(PRÁTICA DE ENG ELÉTRICA EXTRAMUROS)", "1404395": "TEEE(MODELAGEM", "1404397": "TEEE(NR 10 SEG EM INST E SERV EM ELETR)", "1404398": "TEEE(BIOSENSORES:FUNDAMENTOS E APLICAÇÕE", "1404399": "TEEE(INTERNET DAS COISAS INDUST(II0T)", "1404400": "TEEE(REDES DE PETRI)", "1404401": "TEEE(SISTEMAS FÍSICO CIBERNÉTICOS)", "1404402": "TEEE(PRAT EM CONTROLE DE PROCESSOS E AUT", "1404403": "TEEE(SISTEMAS DISTR PARA AUT:HARD E SOFT"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109103", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1404132", "nome": "INTRODUÇÃO À ENGENHARIA ELÉTRICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411160", "nome": "INTRODUÇÃO À PROGRAMAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1503038", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1107212", "nome": "QUÍMICA", "ch": "75\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108002", "1108030", "1108080"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108080", "1108030"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109053", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109103", "1109007"]}, {"nivel": "2º Nível", "codigo": "1411161", "nome": "TÉCNICAS DE PROGRAMAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411001", "1411160"]}, {"nivel": "3º Nível", "codigo": "1108083", "nome": "ELETRICIDADE E MAGNETISMO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108082", "1108023", "1109104", "1109053", "1108081"]}, {"nivel": "3º Nível", "codigo": "1108084", "nome": "LAB. DE OPTICA ELETRICIDADE E MAGNETISMO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108081", "1108003", "1108031", "1108082", "1108023", "1108026", "1109104", "1109008", "1109053"]}, {"nivel": "3º Nível", "codigo": "1108098", "nome": "MECÂNICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109053", "1108030"]}, {"nivel": "3º Nível", "codigo": "1109105", "nome": "CALCULO DIFERENCIAL E INTEGRAL III", "ch": "75\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109053", "1109035"]}, {"nivel": "3º Nível", "codigo": "1109106", "nome": "EQUACOES DIFERENCIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109053", "1109049"]}, {"nivel": "3º Nível", "codigo": "1404163", "nome": "CIRCUITOS LOGICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1404164", "nome": "LAB. CIRCUITOS LOGICOS", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1108029", "nome": "MECÂNICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108085", "1108006", "1108098"]}, {"nivel": "4º Nível", "codigo": "1109108", "nome": "VARIAVEIS COMPLEXAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109105", "1109009"]}, {"nivel": "4º Nível", "codigo": "1114107", "nome": "PROBABILIDADE E ESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109104", "1109008", "1109053"]}, {"nivel": "4º Nível", "codigo": "1404137", "nome": "CIRCUITOS ELÉTRICOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108083", "1108005", "1108087", "1109106", "1109010", "1108084", "1108024", "1108027"]}, {"nivel": "4º Nível", "codigo": "1404139", "nome": "LAB. CIRCUITOS ELÉTRICOS I", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108083", "1108005", "1108087", "1109106", "1109010", "1108084", "1108024", "1108027"]}, {"nivel": "4º Nível", "codigo": "1404141", "nome": "ELETROMAGNETISMO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108083", "1108005", "1108087", "1108084", "1108024", "1109105", "1109009", "1109051"]}, {"nivel": "4º Nível", "codigo": "1404142", "nome": "LAB. ELETROMAGNETISMO", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108083", "1108005", "1108087", "1108084", "1108024", "1109105", "1109009", "1109051"]}, {"nivel": "4º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109106", "1109010", "1411161"]}, {"nivel": "5º Nível", "codigo": "1106058", "nome": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1107212", "1108029"]}, {"nivel": "5º Nível", "codigo": "1114109", "nome": "PROCESSOS ESTOCASTICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114052", "1114107", "1114013"]}, {"nivel": "5º Nível", "codigo": "1404138", "nome": "CIRCUITOS ELÉTRICOS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404137", "1404139"]}, {"nivel": "5º Nível", "codigo": "1404140", "nome": "LAB. CIRCUITOS ELÉTRICOS II", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404137", "1404139"]}, {"nivel": "5º Nível", "codigo": "1404143", "nome": "ONDAS E LINHAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404141", "1404142", "1404017"]}, {"nivel": "5º Nível", "codigo": "1404144", "nome": "DISPOSITIVOS ELETRONICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404137", "1404139", "1108083", "1108084"]}, {"nivel": "5º Nível", "codigo": "1404147", "nome": "LAB. DISPOSITIVOS ELETRONICOS", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404137", "1404139"]}, {"nivel": "5º Nível", "codigo": "1404160", "nome": "ANÁLISE DE SINAIS E SISTEMAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109011", "1109108", "1109061", "1109106", "1109010"]}, {"nivel": "6º Nível", "codigo": "1404145", "nome": "ELETRONICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404138", "1404140", "1404144", "1404147"]}, {"nivel": "6º Nível", "codigo": "1404148", "nome": "LAB. ELETRONICA", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404138", "1404140", "1404002", "1404144", "1404147"]}, {"nivel": "6º Nível", "codigo": "1404152", "nome": "CONVERSÃO ELETROMECÂNICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404138", "1404140", "1404141", "1404142"]}, {"nivel": "6º Nível", "codigo": "1404153", "nome": "LAB. CONVERSÃO ELETROMECÂNICA", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404138", "1404140", "1404141", "1404142"]}, {"nivel": "6º Nível", "codigo": "1404161", "nome": "PRINCIPIOS DE COMUNICACOES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404160", "1109027", "1404082", "1114109", "1404396", "1114014"]}, {"nivel": "6º Nível", "codigo": "1404162", "nome": "LAB. PRINCIPIOS DE COMUNICACOES", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404160", "1114109", "1404396"]}, {"nivel": "6º Nível", "codigo": "1404165", "nome": "ARQUITETURA DE SISTEMAS DIGITAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404163", "1404164", "1404031"]}, {"nivel": "6º Nível", "codigo": "1404166", "nome": "LAB ARQUIT. DE SISTEMAS DIGITAIS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404163", "1404164", "1404031"]}, {"nivel": "6º Nível", "codigo": "1503034", "nome": "FENOMENOS DE TRANSPORTE", "ch": "75\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108081", "1108003", "1109104", "1109053", "1109008", "1108023", "1108082", "1108007", "1108086", "1108069", "1108029"]}, {"nivel": "7º Nível", "codigo": "1305212", "nome": "SOCIOLOGIA INDUSTRIAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1404135", "nome": "SISTEMAS ELÉTRICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404138", "1404140", "1411075"]}, {"nivel": "7º Nível", "codigo": "1404136", "nome": "LAB. SISTEMAS ELÉTRICOS", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404138", "1404140", "1411075"]}, {"nivel": "7º Nível", "codigo": "1404150", "nome": "MATERIAIS ELÉTRICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106058", "1108083", "1108084"]}, {"nivel": "7º Nível", "codigo": "1404151", "nome": "LAB. MATERIAIS ELÉTRICOS", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106058", "1108083", "1108084"]}, {"nivel": "7º Nível", "codigo": "1404154", "nome": "MÁQUINAS ELÉTRICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404152", "1404153"]}, {"nivel": "7º Nível", "codigo": "1404155", "nome": "LABORATÓRIO DE MÁQUINAS ELÉTRICAS", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404152", "1404153"]}, {"nivel": "7º Nível", "codigo": "1404156", "nome": "CONTROLE ANALOGICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404160", "1109027", "1404082"]}, {"nivel": "7º Nível", "codigo": "1404158", "nome": "LAB. CONTROLE ANALOGICO", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1301014", "nome": "ADMINISTRAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1303021", "nome": "ECONOMIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1404133", "nome": "INSTALACOES ELETRICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404150", "1404151", "1404054", "1404135", "1404136"]}, {"nivel": "8º Nível", "codigo": "1404134", "nome": "LAB.INSTALACOES ELETRICAS", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404150", "1404151", "1404054", "1404135", "1404136", "1404038"]}, {"nivel": "8º Nível", "codigo": "1404146", "nome": "ELETRONICA DE POTENCIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404145", "1404148"]}, {"nivel": "8º Nível", "codigo": "1404149", "nome": "LAB. ELETRONICA DE POTENCIA", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404145", "1404148", "1404033", "1404211"]}, {"nivel": "8º Nível", "codigo": "1404157", "nome": "CONTROLE DIGITAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404156", "1404158"]}, {"nivel": "8º Nível", "codigo": "1404159", "nome": "LAB. CONTROLE DIGITAL", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1404156", "1404158"]}, {"nivel": "9º Nível", "codigo": "1404223", "nome": "PROJETO DE ENGENHARIA ELETRICA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1404224", "nome": "PROJETO DE ENGENHARIA ELETRICA", "ch": "90\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1404225", "nome": "PROJETO DE ENGENHARIA ELETRICA", "ch": "120\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1301018", "nome": "ENGENHARIA ECONOMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303021"]}, {"nivel": "9º Nível", "codigo": "1305036", "nome": "INSTITUICOES DO DIREITO", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1404126", "nome": "ESTAGIO SUPERVISIONADO", "ch": "270\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1404127", "nome": "ESTAGIO SUPERVISIONADO", "ch": "180\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1404204", "nome": "ESTAGIO INTEGRADO", "ch": "660\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1404217", "nome": "ESTAGIO SUPERVISIONADO", "ch": "360\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1404220", "nome": "ESTAGIO SUPERVISIONADO", "ch": "240\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1404233", "nome": "ESTAGIO SUPERVISIONADO", "ch": "300\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1404261", "nome": "ESTAGIO SUPERVISIONADO", "ch": "210\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1404274", "nome": "ESTAGIO SUPERVISIONADO", "ch": "330\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}];
+  const codigoToNome = {"1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109103": "CALCULO DIFERENCIAL E INTEGRAL I", "1113019": "EXPRESSAO GRAFICA", "1404132": "INTRODUÇÃO À ENGENHARIA ELÉTRICA", "1411160": "INTRODUÇÃO À PROGRAMAÇÃO", "1503038": "CIÊNCIAS DO AMBIENTE", "1107212": "QUÍMICA", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109053": "CALCULO DIFERENCIAL E INTEGRAL II", "1411161": "TÉCNICAS DE PROGRAMAÇÃO", "1108083": "ELETRICIDADE E MAGNETISMO", "1108084": "LAB. DE OPTICA ELETRICIDADE E MAGNETISMO", "1108098": "MECÂNICA GERAL I", "1109105": "CALCULO DIFERENCIAL E INTEGRAL III", "1109106": "EQUACOES DIFERENCIAIS", "1404163": "CIRCUITOS LOGICOS", "1404164": "LAB. CIRCUITOS LOGICOS", "1108029": "MECÂNICA GERAL II", "1109108": "VARIAVEIS COMPLEXAS", "1114107": "PROBABILIDADE E ESTATÍSTICA", "1404137": "CIRCUITOS ELÉTRICOS I", "1404139": "LAB. CIRCUITOS ELÉTRICOS I", "1404141": "ELETROMAGNETISMO", "1404142": "LAB. ELETROMAGNETISMO", "1411075": "CALCULO NUMERICO", "1106058": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "1114109": "PROCESSOS ESTOCASTICOS", "1404138": "CIRCUITOS ELÉTRICOS II", "1404140": "LAB. CIRCUITOS ELÉTRICOS II", "1404143": "ONDAS E LINHAS", "1404144": "DISPOSITIVOS ELETRONICOS", "1404147": "LAB. DISPOSITIVOS ELETRONICOS", "1404160": "ANÁLISE DE SINAIS E SISTEMAS", "1404145": "ELETRONICA", "1404148": "LAB. ELETRONICA", "1404152": "CONVERSÃO ELETROMECÂNICA", "1404153": "LAB. CONVERSÃO ELETROMECÂNICA", "1404161": "PRINCIPIOS DE COMUNICACOES", "1404162": "LAB. PRINCIPIOS DE COMUNICACOES", "1404165": "ARQUITETURA DE SISTEMAS DIGITAIS", "1404166": "LAB ARQUIT. DE SISTEMAS DIGITAIS", "1503034": "FENOMENOS DE TRANSPORTE", "1305212": "SOCIOLOGIA INDUSTRIAL", "1404135": "SISTEMAS ELÉTRICOS", "1404136": "LAB. SISTEMAS ELÉTRICOS", "1404150": "MATERIAIS ELÉTRICOS", "1404151": "LAB. MATERIAIS ELÉTRICOS", "1404154": "MÁQUINAS ELÉTRICAS", "1404155": "LABORATÓRIO DE MÁQUINAS ELÉTRICAS", "1404156": "CONTROLE ANALOGICO", "1404158": "LAB. CONTROLE ANALOGICO", "1301014": "ADMINISTRAÇÃO", "1303021": "ECONOMIA", "1404133": "INSTALACOES ELETRICAS", "1404134": "LAB.INSTALACOES ELETRICAS", "1404146": "ELETRONICA DE POTENCIA", "1404149": "LAB. ELETRONICA DE POTENCIA", "1404157": "CONTROLE DIGITAL", "1404159": "LAB. CONTROLE DIGITAL", "1404223": "PROJETO DE ENGENHARIA ELETRICA", "1404224": "PROJETO DE ENGENHARIA ELETRICA", "1404225": "PROJETO DE ENGENHARIA ELETRICA", "1301018": "ENGENHARIA ECONOMICA", "1305036": "INSTITUICOES DO DIREITO", "1404126": "ESTAGIO SUPERVISIONADO", "1404127": "ESTAGIO SUPERVISIONADO", "1404204": "ESTAGIO INTEGRADO", "1404217": "ESTAGIO SUPERVISIONADO", "1404220": "ESTAGIO SUPERVISIONADO", "1404233": "ESTAGIO SUPERVISIONADO", "1404261": "ESTAGIO SUPERVISIONADO", "1404274": "ESTAGIO SUPERVISIONADO", "1105373": "TE(FUNDAMENTOS DO SETOR DE P&G)", "1105377": "TE(SISTEMAS DE PROD DO SETOR P&G)", "1105404": "TE(EQUIP E APLIC NO SETOR DE PETR E GAS)", "1304055": "FUTSAL", "1304062": "PRÁTICA DESPORTIVA", "1307001": "ALEMAO", "1307009": "FRANCES", "1307011": "INGLES", "1307045": "LINGUA PORTUGUESA", "1404108": "TEEE(MET. NUM. NO ELETROMAGN.)", "1404167": "ANÁLISE DE SISTEMAS ELÉTRICOS", "1404168": "DISTRIBUICAO DE ENERGIA ELETRICA", "1404169": "EQUIPAMENTOS ELÉTRICOS", "1404170": "GERACAO DE ENERGIA ELETRICA", "1404171": "GERENCIAMENTO DE ENERGIA", "1404172": "TÉCNICAS DE MEDIÇÃO", "1404173": "OPERAÇÃO E CONT. DE SISTEMAS ELÉTRICOS", "1404174": "PROTEÇÃO DE SISTEMAS ELÉTRICOS", "1404175": "TÉCNICAS DE ALTA TENSÃO", "1404176": "ARQUITETURAS AVANÇ. P/ COMPUTAÇÃO", "1404177": "CIRCUITOS PARA COMUNICACOES", "1404178": "ESTRUTURA E CONCEPCAO DE CIRC. INTEG.", "1404179": "FILTROS ELÉTRICOS", "1404180": "INSTRUMENTACAO ELETRONICA", "1404181": "PROCESSAMENTO DIGITAL DE SINAIS", "1404182": "PROJETO DE CIRCUITOS INTEGRADOS", "1404183": "SISTEMAS DE AQUIS.DE DADOS E INTERFACE", "1404184": "SISTEMAS DE AUTOMACAO INDUSTRIAL", "1404185": "SISTEMAS DE PROC. DE AUDIO E VIDEO", "1404186": "ANTENAS E PROPAGAÇÃO", "1404187": "COMPATIBILIDADE E INTERF ELETROMAGNETICA", "1404188": "COMUNICACOES DIGITAIS", "1404189": "COMUNICACOES OPTICAS", "1404190": "ENGENHARIA DE MICROONDAS", "1404191": "ESTRUTURAS GUIANTES", "1404192": "TRANSMISSAO DIGITAL DA INFORMACAO", "1404193": "SISTEMAS DE COMUNICACOES", "1404194": "TELEFONIA DIGITAL", "1404195": "TEORIA DA INFORMACAO E CODIFICACAO", "1404196": "ACIONAMENTOS ELÉTRICOS", "1404197": "AUTOMAÇÃO INTELIGENTE", "1404198": "CONVERSORES ESTATICOS E ELETROMECANICOS", "1404199": "GERENCIA,PLANEJ E CONTROLE DA PRODUCAO", "1404200": "REDES DE COMPUTADORES", "1404201": "SISTEMAS A EVENTOS DISCRETOS", "1404202": "INFORMÁTICA INDUSTRIAL", "1404203": "SISTEMAS EM TEMPO REAL", "1404207": "TÓPICOS ESPECIAIS EM ENG. ELÉTRICA", "1404213": "LAB. FILTROS ELÉTRICOS", "1404214": "LAB. INSTRUMENTACAO", "1404218": "LAB SIST AQUIS DE DADOS E INTER", "1404237": "LAB. EQUIPAMENTOS ELÉTRICOS", "1404239": "TEEE(LAB ANTENAS E PROPAGACAO)", "1404248": "TI (LINGUAGEM DE PROGRAMAÇÃO I)", "1404255": "TI (PROGRAMAÇÃO I)", "1404258": "TH (INTRODUÇÃO À PSICOLOGIA)", "1404260": "TEEE( DCCHCFP )", "1404264": "TT (MÁQ. HIDR. E PNEUMÁTICAS)", "1404265": "TT(ISNT METEOR E TEC OBS SUPERFICIE)", "1404266": "TEE(SIST RECONF E MICROCONTROLADORES)", "1404268": "TEEE (PROGRAMAÇÃO ORIENTADA A OBJETOS)", "1404269": "TEEE (PROGRAMAÇÃO EM LINGUAGEM C++)", "1404270": "TEEE(ARQUITETURA DE SISTEMAS EMBUTIDOS)", "1404271": "TEEE(SIST OPER P/APLIC MOVEIS EMBUTIDAS)", "1404272": "TAEE(MICROCONT E PROC DIGITAIS DE SINAIS", "1404273": "TAEE(INSTRUMENTACAO INDUSTRIAL)", "1404275": "TEEE (CRIPTOGRAFIA)", "1404276": "TEEE(SISTEMAS EMBARCADOS)", "1404277": "TEEE(QUALIDADE DE ENERGIA ELÉTRICA)", "1404279": "TEEE(MET.GRAF.PARA LINHAS DE TRANSM.RF)", "1404280": "TEEE(INIC À CONC DE CIRC IN AN E MISTOS)", "1404372": "TE(FONTES REN DE ENERGIA E EFIC ENERG)", "1404373": "TAEE(QUALIDADE DE ENERGIA)", "1404374": "TEEE(RADIO DEFINIDO POR SOFTWARE)", "1404375": "TEEE(ARQ DE REDES E ELETROELET.VEICULAR)", "1404376": "TEEE(MODEL E SIMUL DE SISTE.AUTOMOTIVOS)", "1404377": "TE(INSTR.E CONTROLE PARA O SETOR P&G)", "1404378": "TAEE(MAQUINAS ELETRICAS)", "1404379": "TEEE(PROCESSAMENTO DE SINAIS MULTIMIDIA)", "1404380": "TAEE(IDENT.EM MALHA FECH P/CONT DE SIST)", "1404381": "TEEE(SISTEMAS ELETRICOS INDUSTRIAIS)", "1404382": "TEEE(INTERNET DAS COISAS INDUSTRIAL-IIOT", "1404383": "TEEE(INT AO PROC DE IMAG DIG E VISAO COM", "1404384": "TEEE(ROBOTICA, TEOR. TECNOL. E PROGAMA.)", "1404385": "TEEE(REDES DE SENSORES/ATUAD INDUSTRIAIS", "1404386": "TEEE(MODELAGEM E IDENT DE PROCESSOS)", "1404387": "TEEE(SISTEMAS OPTICOS COERENTES)", "1404388": "TEEE(PROJ DE CIRC. FOTONICOS EM SILICIOS", "1404389": "TEEE(IDENTIF DE PROC MULTIVARIAVEIS)", "1404390": "TEEE(PROJ INTER DE CONTROLAD INDUSTRIAIS", "1404391": "TEEE(CONTROLE PREDITIVO)", "1404392": "TEEE(INT ART E CIENC DADOS APLIC SIST EL", "1404393": "TEEE(PRÁTICAS DE ENGENHARIA ELÉTRICA)", "1404394": "TEEE(PRÁTICA DE ENG ELÉTRICA EXTRAMUROS)", "1404395": "TEEE(MODELAGEM,SIMULAÇÃO E IDENT DE PROC", "1404397": "TEEE(NR 10 SEG EM INST E SERV EM ELETR)", "1404398": "TEEE(BIOSENSORES:FUNDAMENTOS E APLICAÇÕE", "1404399": "TEEE(INTERNET DAS COISAS INDUST(II0T)", "1404400": "TEEE(REDES DE PETRI)", "1404401": "TEEE(SISTEMAS FÍSICO CIBERNÉTICOS)", "1404402": "TEEE(PRAT EM CONTROLE DE PROCESSOS E AUT", "1404403": "TEEE(SISTEMAS DISTR PARA AUT:HARD E SOFT"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -1370,7 +1373,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

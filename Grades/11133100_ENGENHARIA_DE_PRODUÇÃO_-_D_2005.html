@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,440 +404,440 @@
           <tr>
               <td>1105347</td>
               <td>SISTEMA DE GESTÃO DA QUALIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1105343, GESTAO DA QUALIDADE</td>
               <td></td>
           </tr>
           <tr>
               <td>1105348</td>
               <td>AUDITORIA DA QUALIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1105343</td>
               <td></td>
           </tr>
           <tr>
               <td>1105349</td>
               <td>INSTRUMENTAÇÃO E SISTEMAS DE MEDIÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105350</td>
               <td>CONFIABILIDADE DE SISTEMAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À PROBABILIDADE, INTRODUÇÃO À ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1105351</td>
               <td>HIGIENE E SEGURANÇA DO TRABALHO II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1105339</td>
               <td></td>
           </tr>
           <tr>
               <td>1105352</td>
               <td>ERGONOMIA II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ERGONOMIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1105353</td>
               <td>ERGONOMIA COGNITIVA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ERGONOMIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1105354</td>
               <td>GERENCIA DE RISCOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>HIGIENE E SEGURANÇA DO TRABALHO II</td>
               <td></td>
           </tr>
           <tr>
               <td>1107240</td>
               <td>PROCESSOS TECNOLOGICOS I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1105336</td>
               <td></td>
           </tr>
           <tr>
               <td>1107241</td>
               <td>PROCESSOS TECNOLOGICOS II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1107242</td>
               <td>PROCESSOS TECNOLOGICOS III</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ERGONOMIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1107243</td>
               <td>PROCESSOS TECNOLOGICOS IV</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROCESSOS TECNOLOGICOS III</td>
               <td></td>
           </tr>
           <tr>
               <td>1107244</td>
               <td>GESTAO DE RESIDUOS DA IND DO COURO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GESTÃO AMBIENTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1107245</td>
               <td>TECNOLOGIA LIMPA NA IND DO COURO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GESTÃO AMBIENTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1107246</td>
               <td>CONTROLE FÍSICO-MEC. NA IND. DE CURTUME</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1105341</td>
               <td></td>
           </tr>
           <tr>
               <td>1107247</td>
               <td>CONTROLE FÍSICO-MEC. NA IND. DE CALÇADOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1105341</td>
               <td></td>
           </tr>
           <tr>
               <td>1107248</td>
               <td>CONTROLE FÍSICO-MEC. NA IND. DO COURO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1105341</td>
               <td></td>
           </tr>
           <tr>
               <td>1107249</td>
               <td>HIGIENE E SEG DO TRAB NA IND DO COURO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1105339</td>
               <td></td>
           </tr>
           <tr>
               <td>1107250</td>
               <td>TRATAM DE EFLUENTES DA IND DE CURTUME</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GESTÃO AMBIENTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1107251</td>
               <td>TE EM PROC TECNOLOGICOS DA IND DO COURO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1113015</td>
               <td>TE ( MODELAMENTO DE SOLIDOS AVANÇADO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>DESENHO TÉCNICO E ARQUITETÔNICO</td>
               <td></td>
           </tr>
           <tr>
               <td>1113020</td>
               <td>TE (GERENCIANDO PESSOAS E PROCESSOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1113021</td>
               <td>TE (NOCOES DE QUALIDADE TOTAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1113022</td>
               <td>SISTEMAS CAD</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>EXPRESSAO GRAFICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1113029</td>
               <td>SISTEMA DE GESTAO DA QUALIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GESTAO DA QUALIDADE</td>
               <td></td>
           </tr>
           <tr>
               <td>1113031</td>
               <td>HIGIENE E SEGURANCA DO TRABALHO II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1105339, HIGIENE E SEGURANCA DO TRABALHO I</td>
               <td></td>
           </tr>
           <tr>
               <td>1113032</td>
               <td>ERGONOMIA II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1105337, ERGONOMIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1113033</td>
               <td>ERGONOMIA COGNITIVA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1105337, ERGONOMIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1113036</td>
               <td>TOP  ESP EM QUALIDADE E ENG DO TRABALHO</td>
-              <td>0h</td>
-              <td>0.0</td>
+              <td>0"h</td>
+              <td>0"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1113039</td>
               <td>PROCESSOS TECNOLOGICOS I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1105336</td>
               <td></td>
           </tr>
           <tr>
               <td>1113040</td>
               <td>PROCESSOS TECNOLOGICOS II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROCESSOS TECNOLOGICOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1113041</td>
               <td>PROCESSOS TECNOLOGICOS III</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ERGONOMIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1113042</td>
               <td>PROCESSOS TECNOLOGICOS IV</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROCESSOS TECNOLOGICOS III</td>
               <td></td>
           </tr>
           <tr>
               <td>1113043</td>
               <td>TOP.ESP.EM PROCESSOS TEC.DA IND.DO COURO</td>
-              <td>0h</td>
-              <td>0.0</td>
+              <td>0"h</td>
+              <td>0"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1113044</td>
               <td>AUDITORIA DA QUALIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GESTAO DA QUALIDADE, SISTEMA DE GESTAO DA QUALIDADE</td>
               <td></td>
           </tr>
           <tr>
               <td>1113048</td>
               <td>TE(PROCESSOS DE FABRICACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1113049</td>
               <td>TEQET(GESTAO DA QUALIDADE AMBIENTAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GESTAO DA QUALIDADE, GESTÃO AMBIENTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1113050</td>
               <td>PROCESSOS DE FABRICACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SISTEMA DE PRODUCAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1113051</td>
               <td>TEQET(PLANEJ E CONTROLE DA PRODUCAO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PLANEJAMENTO E CONTROLE DA PRODUCAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1113052</td>
               <td>TEQET (CRONOMETRAGEM E CRONOANÁLISE)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PLANEJAMENTO E CONTROLE DA PRODUCAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1113053</td>
               <td>TEQET(MODELAGEM E SIMULACAO DA PRODUCAO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PLANEJAMENTO E CONTROLE DA PRODUCAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1113054</td>
               <td>TEQET(GESTAO DE PROJETOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SISTEMA DE PRODUCAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1113055</td>
               <td>TEQET(AVANCOS EM PESQUISA OPERACIONAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1114127, PESQUISA OPERACIONAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1113056</td>
               <td>TEQET(GESTAO DE PESSOAS E PROCESSOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>EMPREENDEDORISMO</td>
               <td></td>
           </tr>
           <tr>
               <td>1113062</td>
               <td>GERENCIA DE RISCOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>HIGIENE E SEGURANÇA DO TRABALHO II</td>
               <td></td>
           </tr>
           <tr>
               <td>1113058</td>
               <td>TEQET(PREV E CONT DE RISCOS INST PROD)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>HIGIENE E SEGURANCA DO TRABALHO I</td>
               <td></td>
           </tr>
           <tr>
               <td>1113059</td>
-              <td>TEQET(ESPIRITUALIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>TEQET(ESPIRITUALIDADE, TRAB E ORGAN)</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PSICOLOGIA DAS ORGANIZACOES</td>
               <td></td>
           </tr>
           <tr>
               <td>1113063</td>
               <td>TEQET(SIMULACAO GERENCIAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ENGENHARIA DE METODOS, 1105338, PLANEJAMENTO E CONTROLE DA PRODUCAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1113064</td>
               <td>TEQET(NEGOCIAÇÃO E RES DE CONFLITOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1114127, PESQUISA OPERACIONAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1113066</td>
               <td>TEQET(SURVEY E ANÁLISE MULTIVARIADA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1113067</td>
               <td>TEQET(INTRODUÇÃO AO TCC)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1113068</td>
               <td>TEQET(TEND EM CADEIAS DE SUPRIM E OPER)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1113069</td>
               <td>INTRODUÇÃO À ANÁLISE DE DADOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CALCULO NUMERICO, INTRODUÇÃO À ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1113070</td>
               <td>TEQET(GESTÃO ESTRATÉGICA DE CUSTOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ENGENHARIA ECONOMICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1113071</td>
               <td>TEQET(AUTOMAÇÃO DA PRODUÇÃO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SISTEMA DE PRODUCAO</td>
               <td></td>
           </tr>
@@ -881,8 +884,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1107177", "nome": "QUÍMICA EXPERIMENTAL", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113018", "nome": "INTRODUÇÃO À ENGENHARIA DE PRODUÇÃO", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307169", "nome": "LÍNGUA PORTUGUESA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1106058", "nome": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "ch": "60h", "preReqs": ["1107232"]}, {"nivel": "2º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109126"]}, {"nivel": "2º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1301103", "nome": "FUNDAMENTOS DA ADMINISTRAÇÃO", "ch": "30h", "preReqs": ["1105335", "1113018"]}, {"nivel": "2º Nível", "codigo": "1305218", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "3º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1109126", "1108030", "1109035"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60h", "preReqs": ["1109131"]}, {"nivel": "3º Nível", "codigo": "1113023", "nome": "DESENHO TÉCNICO E ARQUITETÔNICO", "ch": "60h", "preReqs": ["1105356", "1113019"]}, {"nivel": "3º Nível", "codigo": "1113073", "nome": "PESQUISA OPERACIONAL", "ch": "60h", "preReqs": ["1109049"]}, {"nivel": "3º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60h", "preReqs": ["1109053", "1109131"]}, {"nivel": "3º Nível", "codigo": "1303089", "nome": "FUNDAMENTOS DE ECONOMIA", "ch": "30h", "preReqs": ["1301103"]}, {"nivel": "4º Nível", "codigo": "1105358", "nome": "INTRODUÇÃO A FENÔMENOS DE TRANPORTES", "ch": "60h", "preReqs": ["1108031", "1108081", "1109128"]}, {"nivel": "4º Nível", "codigo": "1108098", "nome": "MECÂNICA GERAL I", "ch": "60h", "preReqs": ["1108030", "1109131"]}, {"nivel": "4º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60h", "preReqs": ["1108031", "1108081", "1109131"]}, {"nivel": "4º Nível", "codigo": "1113024", "nome": "SISTEMA DE PRODUCAO", "ch": "60h", "preReqs": ["1301103"]}, {"nivel": "4º Nível", "codigo": "1303090", "nome": "ECONOMIA DA PRODUCAO", "ch": "60h", "preReqs": ["1303089"]}, {"nivel": "4º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60h", "preReqs": ["1109126", "1411001"]}, {"nivel": "5º Nível", "codigo": "1114130", "nome": "INTRODUÇÃO À ESTATÍSTICA", "ch": "60h", "preReqs": ["1114129"]}, {"nivel": "5º Nível", "codigo": "1301104", "nome": "GESTÃO DA INOVAÇÃO TECNOLÓGICA", "ch": "60h", "preReqs": ["1303090"]}, {"nivel": "5º Nível", "codigo": "1301105", "nome": "GESTÃO DA INFORMAÇÃO", "ch": "60h", "preReqs": ["1303090"]}, {"nivel": "5º Nível", "codigo": "1305259", "nome": "ORGANIZACAO DO TRABALHO", "ch": "60h", "preReqs": ["1113024"]}, {"nivel": "5º Nível", "codigo": "1404026", "nome": "ELETROTÉCNICA GERAL", "ch": "60h", "preReqs": ["1108035", "1108100"]}, {"nivel": "5º Nível", "codigo": "1503070", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1107236", "nome": "GESTÃO AMBIENTAL", "ch": "60h", "preReqs": ["1503070"]}, {"nivel": "6º Nível", "codigo": "1113025", "nome": "ERGONOMIA I", "ch": "60h", "preReqs": ["1305259"]}, {"nivel": "6º Nível", "codigo": "1113026", "nome": "HIGIENE E SEGURANCA DO TRABALHO I", "ch": "60h", "preReqs": ["1305259"]}, {"nivel": "6º Nível", "codigo": "1113030", "nome": "CONTROLE ESTATISTICO DE QUALIDADE", "ch": "60h", "preReqs": ["1114129"]}, {"nivel": "6º Nível", "codigo": "1113060", "nome": "ENGENHARIA DE METODOS", "ch": "60h", "preReqs": ["1113024"]}, {"nivel": "6º Nível", "codigo": "1113074", "nome": "PLANEJ DE EXP APLIC A ENG DE PRODUÇAO", "ch": "60h", "preReqs": ["1114130"]}, {"nivel": "6º Nível", "codigo": "1411201", "nome": "EMPREENDEDORISMO", "ch": "60h", "preReqs": ["1301104"]}, {"nivel": "7º Nível", "codigo": "1113047", "nome": "PLANEJAMENTO E PROJETO DO PRODUTO", "ch": "60h", "preReqs": ["1113025", "1113023"]}, {"nivel": "7º Nível", "codigo": "1301018", "nome": "ENGENHARIA ECONOMICA", "ch": "60h", "preReqs": ["1411201"]}, {"nivel": "7º Nível", "codigo": "1301062", "nome": "PSICOLOGIA DAS ORGANIZACOES", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1301106", "nome": "ADMINISTRAÇÃO ESTRATÉGICA", "ch": "60h", "preReqs": ["1411201"]}, {"nivel": "7º Nível", "codigo": "1305260", "nome": "INST DO DIREITO P/ ENG DE PRODUCAO", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1113028", "nome": "PLANEJAMENTO E CONTROLE DA PRODUCAO", "ch": "60h", "preReqs": ["1105338", "1113060"]}, {"nivel": "8º Nível", "codigo": "1113034", "nome": "GESTAO DA QUALIDADE", "ch": "60h", "preReqs": ["1113024"]}, {"nivel": "8º Nível", "codigo": "1113072", "nome": "GESTÃO DA MANUTENÇÃO", "ch": "60h", "preReqs": ["1301106"]}, {"nivel": "8º Nível", "codigo": "1113075", "nome": "LOGISTICA", "ch": "60h", "preReqs": ["1113024"]}, {"nivel": "8º Nível", "codigo": "1113076", "nome": "CUSTOS DA PRODUCAO", "ch": "60h", "preReqs": ["1301109", "1301018"]}, {"nivel": "9º Nível", "codigo": "1113035", "nome": "PROJETO DE FABRICA E LAY OUT", "ch": "60h", "preReqs": ["1113023", "1105338", "1113060", "1113026", "1105339"]}];
-  const codigoToNome = {"1107177": "QUÍMICA EXPERIMENTAL", "1107232": "QUÍMICA GERAL", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1113018": "INTRODUÇÃO À ENGENHARIA DE PRODUÇÃO", "1307169": "LÍNGUA PORTUGUESA", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1106058": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "1108030": "FÍSICA GERAL I", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1113019": "EXPRESSAO GRAFICA", "1301103": "FUNDAMENTOS DA ADMINISTRAÇÃO", "1305218": "METODOLOGIA CIENTÍFICA", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1113023": "DESENHO TÉCNICO E ARQUITETÔNICO", "1113073": "PESQUISA OPERACIONAL", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1303089": "FUNDAMENTOS DE ECONOMIA", "1105358": "INTRODUÇÃO A FENÔMENOS DE TRANPORTES", "1108098": "MECÂNICA GERAL I", "1108100": "FÍSICA GERAL III", "1113024": "SISTEMA DE PRODUCAO", "1303090": "ECONOMIA DA PRODUCAO", "1411075": "CALCULO NUMERICO", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1301104": "GESTÃO DA INOVAÇÃO TECNOLÓGICA", "1301105": "GESTÃO DA INFORMAÇÃO", "1305259": "ORGANIZACAO DO TRABALHO", "1404026": "ELETROTÉCNICA GERAL", "1503070": "CIÊNCIAS DO AMBIENTE", "1107236": "GESTÃO AMBIENTAL", "1113025": "ERGONOMIA I", "1113026": "HIGIENE E SEGURANCA DO TRABALHO I", "1113030": "CONTROLE ESTATISTICO DE QUALIDADE", "1113060": "ENGENHARIA DE METODOS", "1113074": "PLANEJ DE EXP APLIC A ENG DE PRODUÇAO", "1411201": "EMPREENDEDORISMO", "1113047": "PLANEJAMENTO E PROJETO DO PRODUTO", "1301018": "ENGENHARIA ECONOMICA", "1301062": "PSICOLOGIA DAS ORGANIZACOES", "1301106": "ADMINISTRAÇÃO ESTRATÉGICA", "1305260": "INST DO DIREITO P/ ENG DE PRODUCAO", "1113028": "PLANEJAMENTO E CONTROLE DA PRODUCAO", "1113034": "GESTAO DA QUALIDADE", "1113072": "GESTÃO DA MANUTENÇÃO", "1113075": "LOGISTICA", "1113076": "CUSTOS DA PRODUCAO", "1113035": "PROJETO DE FABRICA E LAY OUT", "1105347": "SISTEMA DE GESTÃO DA QUALIDADE", "1105348": "AUDITORIA DA QUALIDADE", "1105349": "INSTRUMENTAÇÃO E SISTEMAS DE MEDIÇÃO", "1105350": "CONFIABILIDADE DE SISTEMAS", "1105351": "HIGIENE E SEGURANÇA DO TRABALHO II", "1105352": "ERGONOMIA II", "1105353": "ERGONOMIA COGNITIVA", "1105354": "GERENCIA DE RISCOS", "1107240": "PROCESSOS TECNOLOGICOS I", "1107241": "PROCESSOS TECNOLOGICOS II", "1107242": "PROCESSOS TECNOLOGICOS III", "1107243": "PROCESSOS TECNOLOGICOS IV", "1107244": "GESTAO DE RESIDUOS DA IND DO COURO", "1107245": "TECNOLOGIA LIMPA NA IND DO COURO", "1107246": "CONTROLE FÍSICO-MEC. NA IND. DE CURTUME", "1107247": "CONTROLE FÍSICO-MEC. NA IND. DE CALÇADOS", "1107248": "CONTROLE FÍSICO-MEC. NA IND. DO COURO", "1107249": "HIGIENE E SEG DO TRAB NA IND DO COURO", "1107250": "TRATAM DE EFLUENTES DA IND DE CURTUME", "1107251": "TE EM PROC TECNOLOGICOS DA IND DO COURO", "1113015": "TE ( MODELAMENTO DE SOLIDOS AVANÇADO)", "1113020": "TE (GERENCIANDO PESSOAS E PROCESSOS)", "1113021": "TE (NOCOES DE QUALIDADE TOTAL)", "1113022": "SISTEMAS CAD", "1113029": "SISTEMA DE GESTAO DA QUALIDADE", "1113031": "HIGIENE E SEGURANCA DO TRABALHO II", "1113032": "ERGONOMIA II", "1113033": "ERGONOMIA COGNITIVA", "1113036": "TOP  ESP EM QUALIDADE E ENG DO TRABALHO", "1113039": "PROCESSOS TECNOLOGICOS I", "1113040": "PROCESSOS TECNOLOGICOS II", "1113041": "PROCESSOS TECNOLOGICOS III", "1113042": "PROCESSOS TECNOLOGICOS IV", "1113043": "TOP.ESP.EM PROCESSOS TEC.DA IND.DO COURO", "1113044": "AUDITORIA DA QUALIDADE", "1113048": "TE(PROCESSOS DE FABRICACAO", "1113049": "TEQET(GESTAO DA QUALIDADE AMBIENTAL)", "1113050": "PROCESSOS DE FABRICACAO", "1113051": "TEQET(PLANEJ E CONTROLE DA PRODUCAO)", "1113052": "TEQET (CRONOMETRAGEM E CRONOANÁLISE)", "1113053": "TEQET(MODELAGEM E SIMULACAO DA PRODUCAO)", "1113054": "TEQET(GESTAO DE PROJETOS)", "1113055": "TEQET(AVANCOS EM PESQUISA OPERACIONAL)", "1113056": "TEQET(GESTAO DE PESSOAS E PROCESSOS)", "1113062": "GERENCIA DE RISCOS", "1113058": "TEQET(PREV E CONT DE RISCOS INST PROD)", "1113059": "TEQET(ESPIRITUALIDADE", "1113063": "TEQET(SIMULACAO GERENCIAL)", "1113064": "TEQET(NEGOCIAÇÃO E RES DE CONFLITOS)", "1113066": "TEQET(SURVEY E ANÁLISE MULTIVARIADA)", "1113067": "TEQET(INTRODUÇÃO AO TCC)", "1113068": "TEQET(TEND EM CADEIAS DE SUPRIM E OPER)", "1113069": "INTRODUÇÃO À ANÁLISE DE DADOS", "1113070": "TEQET(GESTÃO ESTRATÉGICA DE CUSTOS)", "1113071": "TEQET(AUTOMAÇÃO DA PRODUÇÃO)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1107177", "nome": "QUÍMICA EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113018", "nome": "INTRODUÇÃO À ENGENHARIA DE PRODUÇÃO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307169", "nome": "LÍNGUA PORTUGUESA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1106058", "nome": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1107232"]}, {"nivel": "2º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126"]}, {"nivel": "2º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1301103", "nome": "FUNDAMENTOS DA ADMINISTRAÇÃO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105335", "1113018"]}, {"nivel": "2º Nível", "codigo": "1305218", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "3º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126", "1108030", "1109035"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131"]}, {"nivel": "3º Nível", "codigo": "1113023", "nome": "DESENHO TÉCNICO E ARQUITETÔNICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105356", "1113019"]}, {"nivel": "3º Nível", "codigo": "1113073", "nome": "PESQUISA OPERACIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109049"]}, {"nivel": "3º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109053", "1109131"]}, {"nivel": "3º Nível", "codigo": "1303089", "nome": "FUNDAMENTOS DE ECONOMIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301103"]}, {"nivel": "4º Nível", "codigo": "1105358", "nome": "INTRODUÇÃO A FENÔMENOS DE TRANPORTES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108031", "1108081", "1109128"]}, {"nivel": "4º Nível", "codigo": "1108098", "nome": "MECÂNICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030", "1109131"]}, {"nivel": "4º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108031", "1108081", "1109131"]}, {"nivel": "4º Nível", "codigo": "1113024", "nome": "SISTEMA DE PRODUCAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301103"]}, {"nivel": "4º Nível", "codigo": "1303090", "nome": "ECONOMIA DA PRODUCAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303089"]}, {"nivel": "4º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126", "1411001"]}, {"nivel": "5º Nível", "codigo": "1114130", "nome": "INTRODUÇÃO À ESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114129"]}, {"nivel": "5º Nível", "codigo": "1301104", "nome": "GESTÃO DA INOVAÇÃO TECNOLÓGICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303090"]}, {"nivel": "5º Nível", "codigo": "1301105", "nome": "GESTÃO DA INFORMAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303090"]}, {"nivel": "5º Nível", "codigo": "1305259", "nome": "ORGANIZACAO DO TRABALHO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113024"]}, {"nivel": "5º Nível", "codigo": "1404026", "nome": "ELETROTÉCNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108035", "1108100"]}, {"nivel": "5º Nível", "codigo": "1503070", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1107236", "nome": "GESTÃO AMBIENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503070"]}, {"nivel": "6º Nível", "codigo": "1113025", "nome": "ERGONOMIA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305259"]}, {"nivel": "6º Nível", "codigo": "1113026", "nome": "HIGIENE E SEGURANCA DO TRABALHO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305259"]}, {"nivel": "6º Nível", "codigo": "1113030", "nome": "CONTROLE ESTATISTICO DE QUALIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114129"]}, {"nivel": "6º Nível", "codigo": "1113060", "nome": "ENGENHARIA DE METODOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113024"]}, {"nivel": "6º Nível", "codigo": "1113074", "nome": "PLANEJ DE EXP APLIC A ENG DE PRODUÇAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114130"]}, {"nivel": "6º Nível", "codigo": "1411201", "nome": "EMPREENDEDORISMO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301104"]}, {"nivel": "7º Nível", "codigo": "1113047", "nome": "PLANEJAMENTO E PROJETO DO PRODUTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113025", "1113023"]}, {"nivel": "7º Nível", "codigo": "1301018", "nome": "ENGENHARIA ECONOMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411201"]}, {"nivel": "7º Nível", "codigo": "1301062", "nome": "PSICOLOGIA DAS ORGANIZACOES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1301106", "nome": "ADMINISTRAÇÃO ESTRATÉGICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411201"]}, {"nivel": "7º Nível", "codigo": "1305260", "nome": "INST DO DIREITO P/ ENG DE PRODUCAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1113028", "nome": "PLANEJAMENTO E CONTROLE DA PRODUCAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105338", "1113060"]}, {"nivel": "8º Nível", "codigo": "1113034", "nome": "GESTAO DA QUALIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113024"]}, {"nivel": "8º Nível", "codigo": "1113072", "nome": "GESTÃO DA MANUTENÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301106"]}, {"nivel": "8º Nível", "codigo": "1113075", "nome": "LOGISTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113024"]}, {"nivel": "8º Nível", "codigo": "1113076", "nome": "CUSTOS DA PRODUCAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301109", "1301018"]}, {"nivel": "9º Nível", "codigo": "1113037", "nome": "TRABALHO DE CONCLUSAO DE CURSO - TCC/EP", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1304203", "1305218"]}, {"nivel": "9º Nível", "codigo": "1113035", "nome": "PROJETO DE FABRICA E LAY OUT", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113023", "1105338", "1113060", "1113026", "1105339"]}, {"nivel": "10º Nível", "codigo": "1113038", "nome": "ESTAGIO SUPERVISIONADO", "ch": "240\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}];
+  const codigoToNome = {"1107177": "QUÍMICA EXPERIMENTAL", "1107232": "QUÍMICA GERAL", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1113018": "INTRODUÇÃO À ENGENHARIA DE PRODUÇÃO", "1307169": "LÍNGUA PORTUGUESA", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1106058": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "1108030": "FÍSICA GERAL I", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1113019": "EXPRESSAO GRAFICA", "1301103": "FUNDAMENTOS DA ADMINISTRAÇÃO", "1305218": "METODOLOGIA CIENTÍFICA", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1113023": "DESENHO TÉCNICO E ARQUITETÔNICO", "1113073": "PESQUISA OPERACIONAL", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1303089": "FUNDAMENTOS DE ECONOMIA", "1105358": "INTRODUÇÃO A FENÔMENOS DE TRANPORTES", "1108098": "MECÂNICA GERAL I", "1108100": "FÍSICA GERAL III", "1113024": "SISTEMA DE PRODUCAO", "1303090": "ECONOMIA DA PRODUCAO", "1411075": "CALCULO NUMERICO", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1301104": "GESTÃO DA INOVAÇÃO TECNOLÓGICA", "1301105": "GESTÃO DA INFORMAÇÃO", "1305259": "ORGANIZACAO DO TRABALHO", "1404026": "ELETROTÉCNICA GERAL", "1503070": "CIÊNCIAS DO AMBIENTE", "1107236": "GESTÃO AMBIENTAL", "1113025": "ERGONOMIA I", "1113026": "HIGIENE E SEGURANCA DO TRABALHO I", "1113030": "CONTROLE ESTATISTICO DE QUALIDADE", "1113060": "ENGENHARIA DE METODOS", "1113074": "PLANEJ DE EXP APLIC A ENG DE PRODUÇAO", "1411201": "EMPREENDEDORISMO", "1113047": "PLANEJAMENTO E PROJETO DO PRODUTO", "1301018": "ENGENHARIA ECONOMICA", "1301062": "PSICOLOGIA DAS ORGANIZACOES", "1301106": "ADMINISTRAÇÃO ESTRATÉGICA", "1305260": "INST DO DIREITO P/ ENG DE PRODUCAO", "1113028": "PLANEJAMENTO E CONTROLE DA PRODUCAO", "1113034": "GESTAO DA QUALIDADE", "1113072": "GESTÃO DA MANUTENÇÃO", "1113075": "LOGISTICA", "1113076": "CUSTOS DA PRODUCAO", "1113037": "TRABALHO DE CONCLUSAO DE CURSO - TCC/EP", "1113035": "PROJETO DE FABRICA E LAY OUT", "1113038": "ESTAGIO SUPERVISIONADO", "1105347": "SISTEMA DE GESTÃO DA QUALIDADE", "1105348": "AUDITORIA DA QUALIDADE", "1105349": "INSTRUMENTAÇÃO E SISTEMAS DE MEDIÇÃO", "1105350": "CONFIABILIDADE DE SISTEMAS", "1105351": "HIGIENE E SEGURANÇA DO TRABALHO II", "1105352": "ERGONOMIA II", "1105353": "ERGONOMIA COGNITIVA", "1105354": "GERENCIA DE RISCOS", "1107240": "PROCESSOS TECNOLOGICOS I", "1107241": "PROCESSOS TECNOLOGICOS II", "1107242": "PROCESSOS TECNOLOGICOS III", "1107243": "PROCESSOS TECNOLOGICOS IV", "1107244": "GESTAO DE RESIDUOS DA IND DO COURO", "1107245": "TECNOLOGIA LIMPA NA IND DO COURO", "1107246": "CONTROLE FÍSICO-MEC. NA IND. DE CURTUME", "1107247": "CONTROLE FÍSICO-MEC. NA IND. DE CALÇADOS", "1107248": "CONTROLE FÍSICO-MEC. NA IND. DO COURO", "1107249": "HIGIENE E SEG DO TRAB NA IND DO COURO", "1107250": "TRATAM DE EFLUENTES DA IND DE CURTUME", "1107251": "TE EM PROC TECNOLOGICOS DA IND DO COURO", "1113015": "TE ( MODELAMENTO DE SOLIDOS AVANÇADO)", "1113020": "TE (GERENCIANDO PESSOAS E PROCESSOS)", "1113021": "TE (NOCOES DE QUALIDADE TOTAL)", "1113022": "SISTEMAS CAD", "1113029": "SISTEMA DE GESTAO DA QUALIDADE", "1113031": "HIGIENE E SEGURANCA DO TRABALHO II", "1113032": "ERGONOMIA II", "1113033": "ERGONOMIA COGNITIVA", "1113036": "TOP  ESP EM QUALIDADE E ENG DO TRABALHO", "1113039": "PROCESSOS TECNOLOGICOS I", "1113040": "PROCESSOS TECNOLOGICOS II", "1113041": "PROCESSOS TECNOLOGICOS III", "1113042": "PROCESSOS TECNOLOGICOS IV", "1113043": "TOP.ESP.EM PROCESSOS TEC.DA IND.DO COURO", "1113044": "AUDITORIA DA QUALIDADE", "1113048": "TE(PROCESSOS DE FABRICACAO", "1113049": "TEQET(GESTAO DA QUALIDADE AMBIENTAL)", "1113050": "PROCESSOS DE FABRICACAO", "1113051": "TEQET(PLANEJ E CONTROLE DA PRODUCAO)", "1113052": "TEQET (CRONOMETRAGEM E CRONOANÁLISE)", "1113053": "TEQET(MODELAGEM E SIMULACAO DA PRODUCAO)", "1113054": "TEQET(GESTAO DE PROJETOS)", "1113055": "TEQET(AVANCOS EM PESQUISA OPERACIONAL)", "1113056": "TEQET(GESTAO DE PESSOAS E PROCESSOS)", "1113062": "GERENCIA DE RISCOS", "1113058": "TEQET(PREV E CONT DE RISCOS INST PROD)", "1113059": "TEQET(ESPIRITUALIDADE, TRAB E ORGAN)", "1113063": "TEQET(SIMULACAO GERENCIAL)", "1113064": "TEQET(NEGOCIAÇÃO E RES DE CONFLITOS)", "1113066": "TEQET(SURVEY E ANÁLISE MULTIVARIADA)", "1113067": "TEQET(INTRODUÇÃO AO TCC)", "1113068": "TEQET(TEND EM CADEIAS DE SUPRIM E OPER)", "1113069": "INTRODUÇÃO À ANÁLISE DE DADOS", "1113070": "TEQET(GESTÃO ESTRATÉGICA DE CUSTOS)", "1113071": "TEQET(AUTOMAÇÃO DA PRODUÇÃO)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -994,7 +997,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

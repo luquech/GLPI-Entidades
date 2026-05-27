@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,152 +404,152 @@
           <tr>
               <td>7101042</td>
               <td>INGLES I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102036</td>
               <td>ANATO-FISIOLOGIA VEGETAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BIOLOGIA CELULAR E MOLECULAR</td>
               <td></td>
           </tr>
           <tr>
               <td>7103090</td>
               <td>EMBRIOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BIOLOGIA CELULAR E MOLECULAR</td>
               <td></td>
           </tr>
           <tr>
               <td>7103234</td>
               <td>ESTATÍSTICA EXPERIMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROBABILIDADE E ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>7103239</td>
               <td>FISIOLOGIA MOLECULAR</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7103240</td>
               <td>GESTAO E INOVACAO EM BIOTECNOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7103244</td>
               <td>BIOCOMBUSTIVEIS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>7102076, QUÍMICA ANALÍTICA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>7101084</td>
               <td>LINGUA BRASILEIRA DE SINAIS-LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7101086</td>
               <td>ESPANHOL I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7101102</td>
               <td>INGLES II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102283</td>
               <td>BIOTECNOLOGIA DOS SOLOS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7103113</td>
               <td>MARCADORES MOLECULARES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GENETICA MOLECULAR</td>
               <td></td>
           </tr>
           <tr>
               <td>7103114</td>
               <td>TRATAMENTOS DE RESIDUOS SOLIDOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7103265</td>
               <td>TEBB(BIOTECNOLOGIA PARA O SECULO XXI)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7103299</td>
               <td>NANOTECNOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FÍSICO-QUÍMICA, QUÍMICA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>7103300</td>
               <td>TEBB(BIOQUIMICA E METABOLICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>QUÍMICA GERAL, BIOQUÍMICA</td>
               <td></td>
           </tr>
           <tr>
               <td>7103301</td>
               <td>TEBB(DOENCAS PARASITARIAS E VETORIAIS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7103302</td>
               <td>TEBB(EVOLUCAO E FILOGENIA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7103304</td>
               <td>TEBB(PROSPECÇÃO TECNOLÓGICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -593,8 +596,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "7101006", "nome": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102002", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102003", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103001", "nome": "BIOLOGIA CELULAR E MOLECULAR", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103004", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103005", "nome": "QUÍMICA EXPERIMENTAL", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103006", "nome": "INT. A ENG. DE BIOTEC. E BIOPROCESSOS", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102009", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["7102002"]}, {"nivel": "2º Nível", "codigo": "7102010", "nome": "ÁLGEBRA LINEAR", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102012", "nome": "DESENHO TÉCNICO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102014", "nome": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7103013", "nome": "GENETICA MOLECULAR", "ch": "60h", "preReqs": ["7103001"]}, {"nivel": "2º Nível", "codigo": "7104011", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": ["7102002"]}, {"nivel": "3º Nível", "codigo": "7102020", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["7102009"]}, {"nivel": "3º Nível", "codigo": "7102021", "nome": "PROBABILIDADE E ESTATÍSTICA", "ch": "60h", "preReqs": ["7102009"]}, {"nivel": "3º Nível", "codigo": "7102043", "nome": "USO SUSTENTAVEL DA BIODIVERSIDADE", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "7103041", "nome": "QUÍMICA ORGÂNICA", "ch": "60h", "preReqs": ["7103004"]}, {"nivel": "3º Nível", "codigo": "7103042", "nome": "MICROBIOLOGIA GERAL", "ch": "60h", "preReqs": ["7103001"]}, {"nivel": "3º Nível", "codigo": "7104023", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["7104011"]}, {"nivel": "3º Nível", "codigo": "7104029", "nome": "PROGRAMAÇÃO", "ch": "60h", "preReqs": ["7102003"]}, {"nivel": "4º Nível", "codigo": "7102050", "nome": "TERMODINAMICA", "ch": "60h", "preReqs": ["7104023"]}, {"nivel": "4º Nível", "codigo": "7103052", "nome": "FÍSICO-QUÍMICA", "ch": "60h", "preReqs": ["7102009", "7103004"]}, {"nivel": "4º Nível", "codigo": "7103053", "nome": "BIOQUÍMICA", "ch": "60h", "preReqs": ["7103001"]}, {"nivel": "4º Nível", "codigo": "7103054", "nome": "LAB. DE BIOQUÍMICA E BIOLOGIA MOLECULAR", "ch": "60h", "preReqs": ["7103013"]}, {"nivel": "4º Nível", "codigo": "7103055", "nome": "BIOSSEGURANCA", "ch": "30h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "7104045", "nome": "FÍSICA GERAL III", "ch": "60h", "preReqs": ["7104023"]}, {"nivel": "4º Nível", "codigo": "7104046", "nome": "FÍSICA EXPERIMENTAL", "ch": "60h", "preReqs": ["7104023"]}, {"nivel": "5º Nível", "codigo": "7102044", "nome": "MECÂNICA GERAL", "ch": "60h", "preReqs": ["7104011"]}, {"nivel": "5º Nível", "codigo": "7102065", "nome": "FENOMENOS DE TRANSPORTE", "ch": "60h", "preReqs": ["7102009", "7102050"]}, {"nivel": "5º Nível", "codigo": "7102075", "nome": "ELETRICIDADE BASICA", "ch": "30h", "preReqs": ["7104046"]}, {"nivel": "5º Nível", "codigo": "7103025", "nome": "QUÍMICA ANALÍTICA APLICADA", "ch": "60h", "preReqs": ["7103004", "7103005"]}, {"nivel": "5º Nível", "codigo": "7103072", "nome": "ENZIMOLOGIA E TECNOLOGIA DA FERMENTAÇÃO", "ch": "60h", "preReqs": ["7103053"]}, {"nivel": "5º Nível", "codigo": "7103073", "nome": "MELHORAMENTO VEGETAL", "ch": "60h", "preReqs": ["7102021"]}, {"nivel": "6º Nível", "codigo": "7102080", "nome": "RESISTENCIA DOS MATERIAIS", "ch": "60h", "preReqs": ["7102074", "7102044"]}, {"nivel": "6º Nível", "codigo": "7102095", "nome": "OPERACOES UNITARIAS", "ch": "60h", "preReqs": ["7102065"]}, {"nivel": "6º Nível", "codigo": "7103097", "nome": "FUNDAMENTOS DE ENGENHARIA GENETICA", "ch": "60h", "preReqs": ["7103013"]}, {"nivel": "6º Nível", "codigo": "7103098", "nome": "CULTURA DE CELULAS ANIMAIS", "ch": "60h", "preReqs": ["7103001"]}, {"nivel": "6º Nível", "codigo": "7103099", "nome": "CULTURA DE TECIDOS VEGETAIS", "ch": "60h", "preReqs": ["7103073"]}, {"nivel": "6º Nível", "codigo": "7103100", "nome": "TOXICOLOGIA", "ch": "30h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "7103123", "nome": "MODELAGEM E SIMULACAO", "ch": "60h", "preReqs": ["7104029", "7102020"]}, {"nivel": "7º Nível", "codigo": "7103124", "nome": "FARMACOBIOTECNOLOGIA", "ch": "60h", "preReqs": ["7103041", "7103004"]}, {"nivel": "7º Nível", "codigo": "7103125", "nome": "MELHORAMENTO ANIMAL", "ch": "60h", "preReqs": ["7102021", "7103013"]}, {"nivel": "7º Nível", "codigo": "7103126", "nome": "CINETICA E CALCULO DE BIORREATORES", "ch": "60h", "preReqs": ["7103072", "7102050"]}, {"nivel": "7º Nível", "codigo": "7103127", "nome": "IMUNOLOGIA GERAL E VACINOLOGIA", "ch": "30h", "preReqs": ["7103001", "7103042"]}, {"nivel": "8º Nível", "codigo": "7103250", "nome": "RELAÇÃO CIÊNCIA", "ch": "30h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "7103251", "nome": "RECUPERACAO E PURIFICACAO DE BIOPROCESSO", "ch": "30h", "preReqs": ["7103072", "7103124"]}, {"nivel": "8º Nível", "codigo": "7103252", "nome": "PLANEJAMENTO EXPERIMENTAL", "ch": "60h", "preReqs": ["7102021"]}, {"nivel": "8º Nível", "codigo": "7103253", "nome": "BIOINFORMÁTICA", "ch": "60h", "preReqs": ["7103013", "7104029"]}, {"nivel": "8º Nível", "codigo": "7103254", "nome": "BIOMATERIAIS", "ch": "30h", "preReqs": ["7102014"]}, {"nivel": "8º Nível", "codigo": "7103255", "nome": "INSTRUMENTACAO E CONTROLE DE PROCESSOS", "ch": "60h", "preReqs": ["7102095"]}, {"nivel": "9º Nível", "codigo": "7102094", "nome": "ADMINISTRAÇÃO E EMPREENDEDORISMO", "ch": "30h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "7103271", "nome": "TRATAMENTO DE EFLUENTES", "ch": "30h", "preReqs": ["7102050", "7103025"]}, {"nivel": "9º Nível", "codigo": "7103272", "nome": "BIOTECNOLOGIA AMBIENTAL", "ch": "60h", "preReqs": ["7103042"]}, {"nivel": "9º Nível", "codigo": "7103273", "nome": "PROJETO DE INDUSTRIA DE BIOPROCESSOS", "ch": "30h", "preReqs": ["7103123"]}, {"nivel": "9º Nível", "codigo": "7104262", "nome": "GESTAO DA QUALIDADE", "ch": "60h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "7106177", "nome": "DIREITO E ETICA", "ch": "30h", "preReqs": []}, {"nivel": "20º Nível", "codigo": "7102027", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60h", "preReqs": []}];
-  const codigoToNome = {"7101006": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "7102002": "CALCULO DIFERENCIAL E INTEGRAL I", "7102003": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "7103001": "BIOLOGIA CELULAR E MOLECULAR", "7103004": "QUÍMICA GERAL", "7103005": "QUÍMICA EXPERIMENTAL", "7103006": "INT. A ENG. DE BIOTEC. E BIOPROCESSOS", "7102009": "CALCULO DIFERENCIAL E INTEGRAL II", "7102010": "ÁLGEBRA LINEAR", "7102012": "DESENHO TÉCNICO", "7102014": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "7103013": "GENETICA MOLECULAR", "7104011": "FÍSICA GERAL I", "7102020": "EQUACOES DIFERENCIAIS LINEARES", "7102021": "PROBABILIDADE E ESTATÍSTICA", "7102043": "USO SUSTENTAVEL DA BIODIVERSIDADE", "7103041": "QUÍMICA ORGÂNICA", "7103042": "MICROBIOLOGIA GERAL", "7104023": "FÍSICA GERAL II", "7104029": "PROGRAMAÇÃO", "7102050": "TERMODINAMICA", "7103052": "FÍSICO-QUÍMICA", "7103053": "BIOQUÍMICA", "7103054": "LAB. DE BIOQUÍMICA E BIOLOGIA MOLECULAR", "7103055": "BIOSSEGURANCA", "7104045": "FÍSICA GERAL III", "7104046": "FÍSICA EXPERIMENTAL", "7102044": "MECÂNICA GERAL", "7102065": "FENOMENOS DE TRANSPORTE", "7102075": "ELETRICIDADE BASICA", "7103025": "QUÍMICA ANALÍTICA APLICADA", "7103072": "ENZIMOLOGIA E TECNOLOGIA DA FERMENTAÇÃO", "7103073": "MELHORAMENTO VEGETAL", "7102080": "RESISTENCIA DOS MATERIAIS", "7102095": "OPERACOES UNITARIAS", "7103097": "FUNDAMENTOS DE ENGENHARIA GENETICA", "7103098": "CULTURA DE CELULAS ANIMAIS", "7103099": "CULTURA DE TECIDOS VEGETAIS", "7103100": "TOXICOLOGIA", "7103123": "MODELAGEM E SIMULACAO", "7103124": "FARMACOBIOTECNOLOGIA", "7103125": "MELHORAMENTO ANIMAL", "7103126": "CINETICA E CALCULO DE BIORREATORES", "7103127": "IMUNOLOGIA GERAL E VACINOLOGIA", "7103250": "RELAÇÃO CIÊNCIA", "7103251": "RECUPERACAO E PURIFICACAO DE BIOPROCESSO", "7103252": "PLANEJAMENTO EXPERIMENTAL", "7103253": "BIOINFORMÁTICA", "7103254": "BIOMATERIAIS", "7103255": "INSTRUMENTACAO E CONTROLE DE PROCESSOS", "7102094": "ADMINISTRAÇÃO E EMPREENDEDORISMO", "7103271": "TRATAMENTO DE EFLUENTES", "7103272": "BIOTECNOLOGIA AMBIENTAL", "7103273": "PROJETO DE INDUSTRIA DE BIOPROCESSOS", "7104262": "GESTAO DA QUALIDADE", "7106177": "DIREITO E ETICA", "7102027": "METODOLOGIA CIENTÍFICA", "7101042": "INGLES I", "7102036": "ANATO-FISIOLOGIA VEGETAL", "7103090": "EMBRIOLOGIA", "7103234": "ESTATÍSTICA EXPERIMENTAL", "7103239": "FISIOLOGIA MOLECULAR", "7103240": "GESTAO E INOVACAO EM BIOTECNOLOGIA", "7103244": "BIOCOMBUSTIVEIS", "7101084": "LINGUA BRASILEIRA DE SINAIS-LIBRAS", "7101086": "ESPANHOL I", "7101102": "INGLES II", "7102283": "BIOTECNOLOGIA DOS SOLOS", "7103113": "MARCADORES MOLECULARES", "7103114": "TRATAMENTOS DE RESIDUOS SOLIDOS", "7103265": "TEBB(BIOTECNOLOGIA PARA O SECULO XXI)", "7103299": "NANOTECNOLOGIA", "7103300": "TEBB(BIOQUIMICA E METABOLICA)", "7103301": "TEBB(DOENCAS PARASITARIAS E VETORIAIS)", "7103302": "TEBB(EVOLUCAO E FILOGENIA)", "7103304": "TEBB(PROSPECÇÃO TECNOLÓGICA)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "7101006", "nome": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102002", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102003", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103001", "nome": "BIOLOGIA CELULAR E MOLECULAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103004", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103005", "nome": "QUÍMICA EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103006", "nome": "INT. A ENG. DE BIOTEC. E BIOPROCESSOS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102009", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102002"]}, {"nivel": "2º Nível", "codigo": "7102010", "nome": "ÁLGEBRA LINEAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102012", "nome": "DESENHO TÉCNICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102014", "nome": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7103013", "nome": "GENETICA MOLECULAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103001"]}, {"nivel": "2º Nível", "codigo": "7104011", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102002"]}, {"nivel": "3º Nível", "codigo": "7102020", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102009"]}, {"nivel": "3º Nível", "codigo": "7102021", "nome": "PROBABILIDADE E ESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102009"]}, {"nivel": "3º Nível", "codigo": "7102043", "nome": "USO SUSTENTAVEL DA BIODIVERSIDADE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "7103041", "nome": "QUÍMICA ORGÂNICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103004"]}, {"nivel": "3º Nível", "codigo": "7103042", "nome": "MICROBIOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103001"]}, {"nivel": "3º Nível", "codigo": "7104023", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104011"]}, {"nivel": "3º Nível", "codigo": "7104029", "nome": "PROGRAMAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102003"]}, {"nivel": "4º Nível", "codigo": "7102050", "nome": "TERMODINAMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104023"]}, {"nivel": "4º Nível", "codigo": "7103052", "nome": "FÍSICO-QUÍMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102009", "7103004"]}, {"nivel": "4º Nível", "codigo": "7103053", "nome": "BIOQUÍMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103001"]}, {"nivel": "4º Nível", "codigo": "7103054", "nome": "LAB. DE BIOQUÍMICA E BIOLOGIA MOLECULAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103013"]}, {"nivel": "4º Nível", "codigo": "7103055", "nome": "BIOSSEGURANCA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "7104045", "nome": "FÍSICA GERAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104023"]}, {"nivel": "4º Nível", "codigo": "7104046", "nome": "FÍSICA EXPERIMENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104023"]}, {"nivel": "5º Nível", "codigo": "7102044", "nome": "MECÂNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104011"]}, {"nivel": "5º Nível", "codigo": "7102065", "nome": "FENOMENOS DE TRANSPORTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102009", "7102050"]}, {"nivel": "5º Nível", "codigo": "7102075", "nome": "ELETRICIDADE BASICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104046"]}, {"nivel": "5º Nível", "codigo": "7103025", "nome": "QUÍMICA ANALÍTICA APLICADA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103004", "7103005"]}, {"nivel": "5º Nível", "codigo": "7103072", "nome": "ENZIMOLOGIA E TECNOLOGIA DA FERMENTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103053"]}, {"nivel": "5º Nível", "codigo": "7103073", "nome": "MELHORAMENTO VEGETAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102021"]}, {"nivel": "6º Nível", "codigo": "7102080", "nome": "RESISTENCIA DOS MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102074", "7102044"]}, {"nivel": "6º Nível", "codigo": "7102095", "nome": "OPERACOES UNITARIAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102065"]}, {"nivel": "6º Nível", "codigo": "7103097", "nome": "FUNDAMENTOS DE ENGENHARIA GENETICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103013"]}, {"nivel": "6º Nível", "codigo": "7103098", "nome": "CULTURA DE CELULAS ANIMAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103001"]}, {"nivel": "6º Nível", "codigo": "7103099", "nome": "CULTURA DE TECIDOS VEGETAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103073"]}, {"nivel": "6º Nível", "codigo": "7103100", "nome": "TOXICOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "7103123", "nome": "MODELAGEM E SIMULACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104029", "7102020"]}, {"nivel": "7º Nível", "codigo": "7103124", "nome": "FARMACOBIOTECNOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103041", "7103004"]}, {"nivel": "7º Nível", "codigo": "7103125", "nome": "MELHORAMENTO ANIMAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102021", "7103013"]}, {"nivel": "7º Nível", "codigo": "7103126", "nome": "CINETICA E CALCULO DE BIORREATORES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103072", "7102050"]}, {"nivel": "7º Nível", "codigo": "7103127", "nome": "IMUNOLOGIA GERAL E VACINOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103001", "7103042"]}, {"nivel": "8º Nível", "codigo": "7103250", "nome": "RELAÇÃO CIÊNCIA, TECNOLOGIA E SOCIEDADE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "7103251", "nome": "RECUPERACAO E PURIFICACAO DE BIOPROCESSO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103072", "7103124"]}, {"nivel": "8º Nível", "codigo": "7103252", "nome": "PLANEJAMENTO EXPERIMENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102021"]}, {"nivel": "8º Nível", "codigo": "7103253", "nome": "BIOINFORMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103013", "7104029"]}, {"nivel": "8º Nível", "codigo": "7103254", "nome": "BIOMATERIAIS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102014"]}, {"nivel": "8º Nível", "codigo": "7103255", "nome": "INSTRUMENTACAO E CONTROLE DE PROCESSOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102095"]}, {"nivel": "9º Nível", "codigo": "7102094", "nome": "ADMINISTRAÇÃO E EMPREENDEDORISMO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "7103271", "nome": "TRATAMENTO DE EFLUENTES", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102050", "7103025"]}, {"nivel": "9º Nível", "codigo": "7103272", "nome": "BIOTECNOLOGIA AMBIENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103042"]}, {"nivel": "9º Nível", "codigo": "7103273", "nome": "PROJETO DE INDUSTRIA DE BIOPROCESSOS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103123"]}, {"nivel": "9º Nível", "codigo": "7104262", "nome": "GESTAO DA QUALIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "7106177", "nome": "DIREITO E ETICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "10º Nível", "codigo": "7102289", "nome": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "ch": "75\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "7103287", "nome": "ESTAGIO SUPERVISIONADO", "ch": "240\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "7103288", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "20º Nível", "codigo": "7102027", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}];
+  const codigoToNome = {"7101006": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "7102002": "CALCULO DIFERENCIAL E INTEGRAL I", "7102003": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "7103001": "BIOLOGIA CELULAR E MOLECULAR", "7103004": "QUÍMICA GERAL", "7103005": "QUÍMICA EXPERIMENTAL", "7103006": "INT. A ENG. DE BIOTEC. E BIOPROCESSOS", "7102009": "CALCULO DIFERENCIAL E INTEGRAL II", "7102010": "ÁLGEBRA LINEAR", "7102012": "DESENHO TÉCNICO", "7102014": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "7103013": "GENETICA MOLECULAR", "7104011": "FÍSICA GERAL I", "7102020": "EQUACOES DIFERENCIAIS LINEARES", "7102021": "PROBABILIDADE E ESTATÍSTICA", "7102043": "USO SUSTENTAVEL DA BIODIVERSIDADE", "7103041": "QUÍMICA ORGÂNICA", "7103042": "MICROBIOLOGIA GERAL", "7104023": "FÍSICA GERAL II", "7104029": "PROGRAMAÇÃO", "7102050": "TERMODINAMICA", "7103052": "FÍSICO-QUÍMICA", "7103053": "BIOQUÍMICA", "7103054": "LAB. DE BIOQUÍMICA E BIOLOGIA MOLECULAR", "7103055": "BIOSSEGURANCA", "7104045": "FÍSICA GERAL III", "7104046": "FÍSICA EXPERIMENTAL", "7102044": "MECÂNICA GERAL", "7102065": "FENOMENOS DE TRANSPORTE", "7102075": "ELETRICIDADE BASICA", "7103025": "QUÍMICA ANALÍTICA APLICADA", "7103072": "ENZIMOLOGIA E TECNOLOGIA DA FERMENTAÇÃO", "7103073": "MELHORAMENTO VEGETAL", "7102080": "RESISTENCIA DOS MATERIAIS", "7102095": "OPERACOES UNITARIAS", "7103097": "FUNDAMENTOS DE ENGENHARIA GENETICA", "7103098": "CULTURA DE CELULAS ANIMAIS", "7103099": "CULTURA DE TECIDOS VEGETAIS", "7103100": "TOXICOLOGIA", "7103123": "MODELAGEM E SIMULACAO", "7103124": "FARMACOBIOTECNOLOGIA", "7103125": "MELHORAMENTO ANIMAL", "7103126": "CINETICA E CALCULO DE BIORREATORES", "7103127": "IMUNOLOGIA GERAL E VACINOLOGIA", "7103250": "RELAÇÃO CIÊNCIA, TECNOLOGIA E SOCIEDADE", "7103251": "RECUPERACAO E PURIFICACAO DE BIOPROCESSO", "7103252": "PLANEJAMENTO EXPERIMENTAL", "7103253": "BIOINFORMÁTICA", "7103254": "BIOMATERIAIS", "7103255": "INSTRUMENTACAO E CONTROLE DE PROCESSOS", "7102094": "ADMINISTRAÇÃO E EMPREENDEDORISMO", "7103271": "TRATAMENTO DE EFLUENTES", "7103272": "BIOTECNOLOGIA AMBIENTAL", "7103273": "PROJETO DE INDUSTRIA DE BIOPROCESSOS", "7104262": "GESTAO DA QUALIDADE", "7106177": "DIREITO E ETICA", "7102289": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "7103287": "ESTAGIO SUPERVISIONADO", "7103288": "TRABALHO DE CONCLUSAO DE CURSO", "7102027": "METODOLOGIA CIENTÍFICA", "7101042": "INGLES I", "7102036": "ANATO-FISIOLOGIA VEGETAL", "7103090": "EMBRIOLOGIA", "7103234": "ESTATÍSTICA EXPERIMENTAL", "7103239": "FISIOLOGIA MOLECULAR", "7103240": "GESTAO E INOVACAO EM BIOTECNOLOGIA", "7103244": "BIOCOMBUSTIVEIS", "7101084": "LINGUA BRASILEIRA DE SINAIS-LIBRAS", "7101086": "ESPANHOL I", "7101102": "INGLES II", "7102283": "BIOTECNOLOGIA DOS SOLOS", "7103113": "MARCADORES MOLECULARES", "7103114": "TRATAMENTOS DE RESIDUOS SOLIDOS", "7103265": "TEBB(BIOTECNOLOGIA PARA O SECULO XXI)", "7103299": "NANOTECNOLOGIA", "7103300": "TEBB(BIOQUIMICA E METABOLICA)", "7103301": "TEBB(DOENCAS PARASITARIAS E VETORIAIS)", "7103302": "TEBB(EVOLUCAO E FILOGENIA)", "7103304": "TEBB(PROSPECÇÃO TECNOLÓGICA)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -706,7 +709,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

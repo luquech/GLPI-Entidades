@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,272 +404,272 @@
           <tr>
               <td>1307147</td>
               <td>LINGUA INGLESA I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304293</td>
               <td>POLITICA EDUCACIONAL NO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304295</td>
               <td>PSICOLOGIA EDUCACIONAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309275</td>
               <td>ANÁLISE III</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ANÁLISE II</td>
               <td></td>
           </tr>
           <tr>
               <td>1309276</td>
               <td>PRÁTICA INTERPRETATIVA VII</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PRÁTICA INTERPRETATIVA VI</td>
               <td></td>
           </tr>
           <tr>
               <td>1309190</td>
               <td>MÚSICA DE CAMARA II</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309176</td>
               <td>MÚSICA DE CAMARA I</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309198</td>
               <td>INSTRUMENTACAO E ORQUESTRACAO II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INSTRUMENTACAO E ORQUESTRACAO I</td>
               <td></td>
           </tr>
           <tr>
               <td>1309207</td>
               <td>INTRODUÇÃO AO MARKETING CULTURAL</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309217</td>
               <td>PRÁTICA INTERPRETATIVA V</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PRÁTICA INTERPRETATIVA IV</td>
               <td></td>
           </tr>
           <tr>
               <td>1309226</td>
               <td>ANÁLISE I</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309228</td>
               <td>MÚSICA DE CAMARA III</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309234</td>
               <td>CORO DE CAMARA I</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309240</td>
               <td>ANÁLISE II</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ANÁLISE I</td>
               <td></td>
           </tr>
           <tr>
               <td>1309241</td>
               <td>MÚSICA DE CAMARA IV</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309243</td>
               <td>PRÁTICA INTERPRETATIVA VI</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PRÁTICA INTERPRETATIVA V</td>
               <td></td>
           </tr>
           <tr>
               <td>1309244</td>
               <td>CORO DE CAMARA II</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309253</td>
               <td>ELABORAÇÃO DE PROJETOS CULTURAIS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309258</td>
               <td>EMPREENDEDORISMO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309298</td>
               <td>PRÁTICA INTERPRETATIVA VIII</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PRÁTICA INTERPRETATIVA VII</td>
               <td></td>
           </tr>
           <tr>
               <td>1309333</td>
               <td>TEM(INTRODUCAO A COMPOSICAO)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309334</td>
               <td>TEM(MUSICA DAS AMERICAS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309337</td>
               <td>TEM(INTRODUCAO A ARRANJO)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309338</td>
               <td>TEM(MUSICA E INTERDISCIPLINARIDADE)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309339</td>
               <td>TEM(PRAT.DE INOVACAO EM EDUC MUSICAL)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309344</td>
               <td>TEM(CAMERATA I)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309345</td>
               <td>TEM(CAMERATA II)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309346</td>
               <td>TEM(CAMERATA III)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309347</td>
               <td>TEM(CAMERATA IV)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309348</td>
               <td>TEM(PRATICA DE ORQUESTRA DE CORDAS I )</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309349</td>
               <td>TEM(PRATICA DE ORQUESTRA DE CORDAS  II)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309350</td>
               <td>TEM(PRATICA DE ORQUESTRA DE CORDAS  III)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309351</td>
               <td>TEM(PRATICA DE ORQUESTRA DE CORDAS  IV</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309353</td>
               <td>TEM(EDUC MUSICAL EM MULTIPLOS CONTEXTOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
@@ -713,8 +716,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1307169", "nome": "LÍNGUA PORTUGUESA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1309141", "nome": "PERCEPÇÃO MUSICAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1309142", "nome": "APRECIAÇÃO MUSICAL", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1309143", "nome": "CANTO CORAL I", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1309144", "nome": "METODOLOGIA E TÉCNICA DE PESQUISA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1309145", "nome": "PRÁTICA INTERPRETATIVA I", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1309150", "nome": "PERCEPÇÃO MUSICAL II", "ch": "60h", "preReqs": ["1309141"]}, {"nivel": "2º Nível", "codigo": "1309151", "nome": "HARMONIA I", "ch": "60h", "preReqs": ["1309141"]}, {"nivel": "2º Nível", "codigo": "1309152", "nome": "CANTO CORAL II", "ch": "30h", "preReqs": ["1309143"]}, {"nivel": "2º Nível", "codigo": "1309153", "nome": "INTRODUÇÃO À TECNOLOGIA MUSICAL", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1309154", "nome": "HISTÓRIA DA MÚSICA OCIDENTAL I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1309155", "nome": "PRÁTICA INTERPRETATIVA II", "ch": "30h", "preReqs": ["1309145"]}, {"nivel": "2º Nível", "codigo": "1309156", "nome": "PESQUISA EM MÚSICA", "ch": "60h", "preReqs": ["1309144"]}, {"nivel": "3º Nível", "codigo": "1309166", "nome": "PRÁTICA INTERPRETATIVA III", "ch": "30h", "preReqs": ["1309155"]}, {"nivel": "3º Nível", "codigo": "1309167", "nome": "HISTÓRIA DA MÚSICA OCIDENTAL II", "ch": "60h", "preReqs": ["1309154"]}, {"nivel": "3º Nível", "codigo": "1309168", "nome": "METODOLOGIA DO ENSINO DA MÚSICA I", "ch": "60h", "preReqs": ["1309156"]}, {"nivel": "3º Nível", "codigo": "1309169", "nome": "CONTRAPONTO I", "ch": "60h", "preReqs": ["1309151"]}, {"nivel": "3º Nível", "codigo": "1309171", "nome": "HARMONIA II", "ch": "60h", "preReqs": ["1309151"]}, {"nivel": "3º Nível", "codigo": "1309172", "nome": "INSTRUMENTACAO E ORQUESTRACAO I", "ch": "60h", "preReqs": ["1309151"]}, {"nivel": "3º Nível", "codigo": "1309178", "nome": "PERCEPÇÃO MUSICAL III", "ch": "60h", "preReqs": ["1309150"]}, {"nivel": "3º Nível", "codigo": "1309179", "nome": "CANTO CORAL III", "ch": "30h", "preReqs": ["1309152"]}, {"nivel": "4º Nível", "codigo": "1309191", "nome": "METODOLOGIA DO ENSINO DE MÚSICA II", "ch": "60h", "preReqs": ["1309168"]}, {"nivel": "4º Nível", "codigo": "1309192", "nome": "CONTRAPONTO II", "ch": "60h", "preReqs": ["1309169"]}, {"nivel": "4º Nível", "codigo": "1309194", "nome": "HISTÓRIA DA MÚSICA OCIDENTAL III", "ch": "60h", "preReqs": ["1309167"]}, {"nivel": "4º Nível", "codigo": "1309197", "nome": "HARMONIA III", "ch": "30h", "preReqs": ["1309171"]}, {"nivel": "4º Nível", "codigo": "1309199", "nome": "PEDAGOGIA DO INSTRUMENTO", "ch": "30h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1309200", "nome": "PRÁTICA INTERPRETATIVA IV", "ch": "30h", "preReqs": ["1309166"]}, {"nivel": "4º Nível", "codigo": "1309201", "nome": "CANTO CORAL IV", "ch": "30h", "preReqs": ["1309179"]}, {"nivel": "4º Nível", "codigo": "1309202", "nome": "PERCEPÇÃO MUSICAL IV", "ch": "30h", "preReqs": ["1309178"]}, {"nivel": "5º Nível", "codigo": "1304294", "nome": "FILOSOFIA DA EDUCAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1309222", "nome": "PROJETO MUSICAL I", "ch": "30h", "preReqs": ["1309156"]}, {"nivel": "5º Nível", "codigo": "1309225", "nome": "HISTÓRIA DA MÚSICA BRASILEIRA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1309230", "nome": "ETNOMUSICOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1309231", "nome": "INTRODUÇÃO À REGÊNCIA", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1309232", "nome": "PRÁTICA DE CONJUNTO I", "ch": "30h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1304113", "nome": "SOCIOLOGIA DA EDUCAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1307332", "nome": "LIBRAS", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1309237", "nome": "PROJETO MUSICAL II", "ch": "30h", "preReqs": ["1309222"]}, {"nivel": "6º Nível", "codigo": "1309242", "nome": "PRÁTICA DE CONJUNTO II", "ch": "30h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1309255", "nome": "TÉCNICA VOCAL", "ch": "30h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1304004", "nome": "DIDATICA", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1309268", "nome": "EDUCAÇÃO MUSICAL ESPECIAL", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1309269", "nome": "OFICINA DE CONST DE INSTRUM ALTERNATIVOS", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1309270", "nome": "PROJETO MUSICAL III", "ch": "30h", "preReqs": ["1309237"]}, {"nivel": "8º Nível", "codigo": "1304297", "nome": "PSICOLOGIA DA ADOLESCENCIA", "ch": "60h", "preReqs": []}];
-  const codigoToNome = {"1307169": "LÍNGUA PORTUGUESA", "1309141": "PERCEPÇÃO MUSICAL I", "1309142": "APRECIAÇÃO MUSICAL", "1309143": "CANTO CORAL I", "1309144": "METODOLOGIA E TÉCNICA DE PESQUISA", "1309145": "PRÁTICA INTERPRETATIVA I", "1309150": "PERCEPÇÃO MUSICAL II", "1309151": "HARMONIA I", "1309152": "CANTO CORAL II", "1309153": "INTRODUÇÃO À TECNOLOGIA MUSICAL", "1309154": "HISTÓRIA DA MÚSICA OCIDENTAL I", "1309155": "PRÁTICA INTERPRETATIVA II", "1309156": "PESQUISA EM MÚSICA", "1309166": "PRÁTICA INTERPRETATIVA III", "1309167": "HISTÓRIA DA MÚSICA OCIDENTAL II", "1309168": "METODOLOGIA DO ENSINO DA MÚSICA I", "1309169": "CONTRAPONTO I", "1309171": "HARMONIA II", "1309172": "INSTRUMENTACAO E ORQUESTRACAO I", "1309178": "PERCEPÇÃO MUSICAL III", "1309179": "CANTO CORAL III", "1309191": "METODOLOGIA DO ENSINO DE MÚSICA II", "1309192": "CONTRAPONTO II", "1309194": "HISTÓRIA DA MÚSICA OCIDENTAL III", "1309197": "HARMONIA III", "1309199": "PEDAGOGIA DO INSTRUMENTO", "1309200": "PRÁTICA INTERPRETATIVA IV", "1309201": "CANTO CORAL IV", "1309202": "PERCEPÇÃO MUSICAL IV", "1304294": "FILOSOFIA DA EDUCAÇÃO", "1309222": "PROJETO MUSICAL I", "1309225": "HISTÓRIA DA MÚSICA BRASILEIRA", "1309230": "ETNOMUSICOLOGIA", "1309231": "INTRODUÇÃO À REGÊNCIA", "1309232": "PRÁTICA DE CONJUNTO I", "1304113": "SOCIOLOGIA DA EDUCAÇÃO", "1307332": "LIBRAS", "1309237": "PROJETO MUSICAL II", "1309242": "PRÁTICA DE CONJUNTO II", "1309255": "TÉCNICA VOCAL", "1304004": "DIDATICA", "1309268": "EDUCAÇÃO MUSICAL ESPECIAL", "1309269": "OFICINA DE CONST DE INSTRUM ALTERNATIVOS", "1309270": "PROJETO MUSICAL III", "1304297": "PSICOLOGIA DA ADOLESCENCIA", "1307147": "LINGUA INGLESA I", "1304293": "POLITICA EDUCACIONAL NO BRASIL", "1304295": "PSICOLOGIA EDUCACIONAL", "1309275": "ANÁLISE III", "1309276": "PRÁTICA INTERPRETATIVA VII", "1309190": "MÚSICA DE CAMARA II", "1309176": "MÚSICA DE CAMARA I", "1309198": "INSTRUMENTACAO E ORQUESTRACAO II", "1309207": "INTRODUÇÃO AO MARKETING CULTURAL", "1309217": "PRÁTICA INTERPRETATIVA V", "1309226": "ANÁLISE I", "1309228": "MÚSICA DE CAMARA III", "1309234": "CORO DE CAMARA I", "1309240": "ANÁLISE II", "1309241": "MÚSICA DE CAMARA IV", "1309243": "PRÁTICA INTERPRETATIVA VI", "1309244": "CORO DE CAMARA II", "1309253": "ELABORAÇÃO DE PROJETOS CULTURAIS", "1309258": "EMPREENDEDORISMO", "1309298": "PRÁTICA INTERPRETATIVA VIII", "1309333": "TEM(INTRODUCAO A COMPOSICAO)", "1309334": "TEM(MUSICA DAS AMERICAS)", "1309337": "TEM(INTRODUCAO A ARRANJO)", "1309338": "TEM(MUSICA E INTERDISCIPLINARIDADE)", "1309339": "TEM(PRAT.DE INOVACAO EM EDUC MUSICAL)", "1309344": "TEM(CAMERATA I)", "1309345": "TEM(CAMERATA II)", "1309346": "TEM(CAMERATA III)", "1309347": "TEM(CAMERATA IV)", "1309348": "TEM(PRATICA DE ORQUESTRA DE CORDAS I )", "1309349": "TEM(PRATICA DE ORQUESTRA DE CORDAS  II)", "1309350": "TEM(PRATICA DE ORQUESTRA DE CORDAS  III)", "1309351": "TEM(PRATICA DE ORQUESTRA DE CORDAS  IV", "1309353": "TEM(EDUC MUSICAL EM MULTIPLOS CONTEXTOS)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1307169", "nome": "LÍNGUA PORTUGUESA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1309141", "nome": "PERCEPÇÃO MUSICAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1309142", "nome": "APRECIAÇÃO MUSICAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1309143", "nome": "CANTO CORAL I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1309144", "nome": "METODOLOGIA E TÉCNICA DE PESQUISA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1309145", "nome": "PRÁTICA INTERPRETATIVA I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1309150", "nome": "PERCEPÇÃO MUSICAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309141"]}, {"nivel": "2º Nível", "codigo": "1309151", "nome": "HARMONIA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309141"]}, {"nivel": "2º Nível", "codigo": "1309152", "nome": "CANTO CORAL II", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309143"]}, {"nivel": "2º Nível", "codigo": "1309153", "nome": "INTRODUÇÃO À TECNOLOGIA MUSICAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1309154", "nome": "HISTÓRIA DA MÚSICA OCIDENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1309155", "nome": "PRÁTICA INTERPRETATIVA II", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309145"]}, {"nivel": "2º Nível", "codigo": "1309156", "nome": "PESQUISA EM MÚSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309144"]}, {"nivel": "3º Nível", "codigo": "1309166", "nome": "PRÁTICA INTERPRETATIVA III", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309155"]}, {"nivel": "3º Nível", "codigo": "1309167", "nome": "HISTÓRIA DA MÚSICA OCIDENTAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309154"]}, {"nivel": "3º Nível", "codigo": "1309168", "nome": "METODOLOGIA DO ENSINO DA MÚSICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309156"]}, {"nivel": "3º Nível", "codigo": "1309169", "nome": "CONTRAPONTO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309151"]}, {"nivel": "3º Nível", "codigo": "1309171", "nome": "HARMONIA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309151"]}, {"nivel": "3º Nível", "codigo": "1309172", "nome": "INSTRUMENTACAO E ORQUESTRACAO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309151"]}, {"nivel": "3º Nível", "codigo": "1309178", "nome": "PERCEPÇÃO MUSICAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309150"]}, {"nivel": "3º Nível", "codigo": "1309179", "nome": "CANTO CORAL III", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309152"]}, {"nivel": "4º Nível", "codigo": "1309191", "nome": "METODOLOGIA DO ENSINO DE MÚSICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309168"]}, {"nivel": "4º Nível", "codigo": "1309192", "nome": "CONTRAPONTO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309169"]}, {"nivel": "4º Nível", "codigo": "1309194", "nome": "HISTÓRIA DA MÚSICA OCIDENTAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309167"]}, {"nivel": "4º Nível", "codigo": "1309197", "nome": "HARMONIA III", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309171"]}, {"nivel": "4º Nível", "codigo": "1309199", "nome": "PEDAGOGIA DO INSTRUMENTO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1309200", "nome": "PRÁTICA INTERPRETATIVA IV", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309166"]}, {"nivel": "4º Nível", "codigo": "1309201", "nome": "CANTO CORAL IV", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309179"]}, {"nivel": "4º Nível", "codigo": "1309202", "nome": "PERCEPÇÃO MUSICAL IV", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309178"]}, {"nivel": "5º Nível", "codigo": "1309233", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO I", "ch": "120\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1309191"]}, {"nivel": "5º Nível", "codigo": "1304294", "nome": "FILOSOFIA DA EDUCAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1309222", "nome": "PROJETO MUSICAL I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309156"]}, {"nivel": "5º Nível", "codigo": "1309225", "nome": "HISTÓRIA DA MÚSICA BRASILEIRA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1309230", "nome": "ETNOMUSICOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1309231", "nome": "INTRODUÇÃO À REGÊNCIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1309232", "nome": "PRÁTICA DE CONJUNTO I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1309238", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO II", "ch": "120\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1309233"]}, {"nivel": "6º Nível", "codigo": "1304113", "nome": "SOCIOLOGIA DA EDUCAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1307332", "nome": "LIBRAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1309237", "nome": "PROJETO MUSICAL II", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309222"]}, {"nivel": "6º Nível", "codigo": "1309242", "nome": "PRÁTICA DE CONJUNTO II", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1309255", "nome": "TÉCNICA VOCAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1309267", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO III", "ch": "120\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1309238"]}, {"nivel": "7º Nível", "codigo": "1304004", "nome": "DIDATICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1309268", "nome": "EDUCAÇÃO MUSICAL ESPECIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1309269", "nome": "OFICINA DE CONST DE INSTRUM ALTERNATIVOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1309270", "nome": "PROJETO MUSICAL III", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1309237"]}, {"nivel": "8º Nível", "codigo": "1302313", "nome": "ATIV ACADEMICO-CIENTIFICO-CULTURAIS", "ch": "210\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1309293", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO IV", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1309267"]}, {"nivel": "8º Nível", "codigo": "1309294", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "30\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1309270"]}, {"nivel": "8º Nível", "codigo": "1304297", "nome": "PSICOLOGIA DA ADOLESCENCIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}];
+  const codigoToNome = {"1307169": "LÍNGUA PORTUGUESA", "1309141": "PERCEPÇÃO MUSICAL I", "1309142": "APRECIAÇÃO MUSICAL", "1309143": "CANTO CORAL I", "1309144": "METODOLOGIA E TÉCNICA DE PESQUISA", "1309145": "PRÁTICA INTERPRETATIVA I", "1309150": "PERCEPÇÃO MUSICAL II", "1309151": "HARMONIA I", "1309152": "CANTO CORAL II", "1309153": "INTRODUÇÃO À TECNOLOGIA MUSICAL", "1309154": "HISTÓRIA DA MÚSICA OCIDENTAL I", "1309155": "PRÁTICA INTERPRETATIVA II", "1309156": "PESQUISA EM MÚSICA", "1309166": "PRÁTICA INTERPRETATIVA III", "1309167": "HISTÓRIA DA MÚSICA OCIDENTAL II", "1309168": "METODOLOGIA DO ENSINO DA MÚSICA I", "1309169": "CONTRAPONTO I", "1309171": "HARMONIA II", "1309172": "INSTRUMENTACAO E ORQUESTRACAO I", "1309178": "PERCEPÇÃO MUSICAL III", "1309179": "CANTO CORAL III", "1309191": "METODOLOGIA DO ENSINO DE MÚSICA II", "1309192": "CONTRAPONTO II", "1309194": "HISTÓRIA DA MÚSICA OCIDENTAL III", "1309197": "HARMONIA III", "1309199": "PEDAGOGIA DO INSTRUMENTO", "1309200": "PRÁTICA INTERPRETATIVA IV", "1309201": "CANTO CORAL IV", "1309202": "PERCEPÇÃO MUSICAL IV", "1309233": "ESTAGIO CURRICULAR SUPERVISIONADO I", "1304294": "FILOSOFIA DA EDUCAÇÃO", "1309222": "PROJETO MUSICAL I", "1309225": "HISTÓRIA DA MÚSICA BRASILEIRA", "1309230": "ETNOMUSICOLOGIA", "1309231": "INTRODUÇÃO À REGÊNCIA", "1309232": "PRÁTICA DE CONJUNTO I", "1309238": "ESTAGIO CURRICULAR SUPERVISIONADO II", "1304113": "SOCIOLOGIA DA EDUCAÇÃO", "1307332": "LIBRAS", "1309237": "PROJETO MUSICAL II", "1309242": "PRÁTICA DE CONJUNTO II", "1309255": "TÉCNICA VOCAL", "1309267": "ESTAGIO CURRICULAR SUPERVISIONADO III", "1304004": "DIDATICA", "1309268": "EDUCAÇÃO MUSICAL ESPECIAL", "1309269": "OFICINA DE CONST DE INSTRUM ALTERNATIVOS", "1309270": "PROJETO MUSICAL III", "1302313": "ATIV ACADEMICO-CIENTIFICO-CULTURAIS", "1309293": "ESTAGIO CURRICULAR SUPERVISIONADO IV", "1309294": "TRABALHO DE CONCLUSAO DE CURSO", "1304297": "PSICOLOGIA DA ADOLESCENCIA", "1307147": "LINGUA INGLESA I", "1304293": "POLITICA EDUCACIONAL NO BRASIL", "1304295": "PSICOLOGIA EDUCACIONAL", "1309275": "ANÁLISE III", "1309276": "PRÁTICA INTERPRETATIVA VII", "1309190": "MÚSICA DE CAMARA II", "1309176": "MÚSICA DE CAMARA I", "1309198": "INSTRUMENTACAO E ORQUESTRACAO II", "1309207": "INTRODUÇÃO AO MARKETING CULTURAL", "1309217": "PRÁTICA INTERPRETATIVA V", "1309226": "ANÁLISE I", "1309228": "MÚSICA DE CAMARA III", "1309234": "CORO DE CAMARA I", "1309240": "ANÁLISE II", "1309241": "MÚSICA DE CAMARA IV", "1309243": "PRÁTICA INTERPRETATIVA VI", "1309244": "CORO DE CAMARA II", "1309253": "ELABORAÇÃO DE PROJETOS CULTURAIS", "1309258": "EMPREENDEDORISMO", "1309298": "PRÁTICA INTERPRETATIVA VIII", "1309333": "TEM(INTRODUCAO A COMPOSICAO)", "1309334": "TEM(MUSICA DAS AMERICAS)", "1309337": "TEM(INTRODUCAO A ARRANJO)", "1309338": "TEM(MUSICA E INTERDISCIPLINARIDADE)", "1309339": "TEM(PRAT.DE INOVACAO EM EDUC MUSICAL)", "1309344": "TEM(CAMERATA I)", "1309345": "TEM(CAMERATA II)", "1309346": "TEM(CAMERATA III)", "1309347": "TEM(CAMERATA IV)", "1309348": "TEM(PRATICA DE ORQUESTRA DE CORDAS I )", "1309349": "TEM(PRATICA DE ORQUESTRA DE CORDAS  II)", "1309350": "TEM(PRATICA DE ORQUESTRA DE CORDAS  III)", "1309351": "TEM(PRATICA DE ORQUESTRA DE CORDAS  IV", "1309353": "TEM(EDUC MUSICAL EM MULTIPLOS CONTEXTOS)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -826,7 +829,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

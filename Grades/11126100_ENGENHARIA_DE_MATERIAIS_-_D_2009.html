@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,328 +404,328 @@
           <tr>
               <td>1105124</td>
               <td>FRATURAS EM METAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1106006, ENSAIOS MECANICOS DE MATERAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1105139</td>
               <td>METALURGIA MECÂNICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TRANSFORMACOES DE FASES EM METAIS, 1106027</td>
               <td></td>
           </tr>
           <tr>
               <td>1105141</td>
               <td>METALURGIA DA SOLDAGEM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1106027, TRANSFORMACOES DE FASES EM METAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1105142</td>
               <td>TÉCNICAS METALOGRÁFICAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>1106003, CIÊNCIA DE MATERIAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1105224</td>
               <td>HIGIENE IND E SEG DO TRABALHO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105367</td>
               <td>SOLIDIFICACAO EM METAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1106027, TRANSFORMACOES DE FASES EM METAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1106101</td>
               <td>PROCESSOS DE FABRICACAO DE CERAMICAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAS-PRIMAS CERAMICAS, 1106014</td>
               <td></td>
           </tr>
           <tr>
               <td>1106102</td>
               <td>TECNOLOGIA DE VIDROS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAS-PRIMAS CERAMICAS, 1106014</td>
               <td></td>
           </tr>
           <tr>
               <td>1106103</td>
               <td>REFRATARIOS CERAMICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAS-PRIMAS CERAMICAS, 1106014</td>
               <td></td>
           </tr>
           <tr>
               <td>1106104</td>
               <td>ARGILAS INDUSTRIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAS-PRIMAS CERAMICAS, 1106014</td>
               <td></td>
           </tr>
           <tr>
               <td>1106105</td>
               <td>INT AO EQUIL DE FASES EM MATER CERAMICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAS-PRIMAS CERAMICAS, 1106014, TRANSFORMACOES DE FASES EM METAIS, 1106027</td>
               <td></td>
           </tr>
           <tr>
               <td>1106110</td>
               <td>APLICACOES DE CERAMICA AVANCADA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAS-PRIMAS CERAMICAS, 1106014</td>
               <td></td>
           </tr>
           <tr>
               <td>1106111</td>
               <td>TECNOLOGIA DE MEMBRANAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROCESSAMENTOS DOS MATERIAIS CERAMICOS, 1106017</td>
               <td></td>
           </tr>
           <tr>
               <td>1106112</td>
               <td>FALHA PREMATURA DE POLIMEROS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROCESSAMENTO DOS MATERIAIS POLIMERICOS, 1106021</td>
               <td></td>
           </tr>
           <tr>
               <td>1106113</td>
               <td>BLENDAS POLIMÉRICAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTRUTURA E PROPRIEDADES DE POLIMEROS</td>
               <td></td>
           </tr>
           <tr>
               <td>1106114</td>
               <td>TECNOLOGIA DE ELASTOMEROS E TERMOFIXOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTRUTURA E PROPRIEDADES DE POLIMEROS, 1106008</td>
               <td></td>
           </tr>
           <tr>
               <td>1106115</td>
               <td>ADITIVAÇÃO DE POLÍMEROS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTRUTURA E PROPRIEDADES DE POLIMEROS</td>
               <td></td>
           </tr>
           <tr>
               <td>1106116</td>
               <td>SELECAO DE MATERIAIS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PROPRIEDADES DOS MATERIAIS CERAMICOS, 1106020, PROCESSAMENTO DOS MATERIAIS POLIMERICOS, 1106021, PROCESSAMENTO DE MATERIAIS METALICOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1106117</td>
               <td>INTRODUÇÃO À CIÊNCIA DE BIOMATERIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAS-PRIMAS CERAMICAS, 1106014, TRANSFORMACOES DE FASES EM METAIS, 1106027, QUÍMICA DE POLÍMEROS, 1106012</td>
               <td></td>
           </tr>
           <tr>
               <td>1106118</td>
               <td>NANOCOMPOSITOS POLIMERICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAS-PRIMAS CERAMICAS, 1106014, ESTRUTURA E PROPRIEDADES DE POLIMEROS, 1106008</td>
               <td></td>
           </tr>
           <tr>
               <td>1106122</td>
               <td>TEEMAT(FORMULACAO DE MASSAS CERAMICAS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>MATERIAS-PRIMAS CERAMICAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1107267</td>
               <td>CONTROLE ESTATISTICO DE PROCESSOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1114052, INTRODUÇÃO À ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1113047</td>
               <td>PLANEJAMENTO E PROJETO DO PRODUTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ERGONOMIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1301018</td>
               <td>ENGENHARIA ECONOMICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ECONOMIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1301062</td>
               <td>PSICOLOGIA DAS ORGANIZACOES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301109</td>
               <td>ENGENHARIA ECONOMICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ECONOMIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1304122</td>
               <td>BASQUETE   MASC/FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305109</td>
               <td>SOCIOLOGIA INDUSTRIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305276</td>
               <td>RELACOES HUMANAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307150</td>
               <td>INGLÊS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307169</td>
               <td>LÍNGUA PORTUGUESA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307178</td>
               <td>FRANCES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307179</td>
               <td>ESPANHOL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1106123</td>
               <td>TEEMAT(APLIC CLINICAS DOS BIOMATERIAIS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAS-PRIMAS CERAMICAS, QUÍMICA DE POLÍMEROS</td>
               <td></td>
           </tr>
           <tr>
               <td>1106125</td>
               <td>TEEMAT(SENSORES E BIOSSENSORES)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CARACTERIZAÇÃO DE MATERIAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1106126</td>
               <td>TEEMAT(TECNOLOGIA EM TINTAS E VERNIZES)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROPRIEDADES MECÂNICAS DE MATERIAIS, QUÍMICA DE POLÍMEROS</td>
               <td></td>
           </tr>
           <tr>
               <td>1106127</td>
               <td>TEEMAT(DEGRADACAO DOS MAT PELO AMBIENTE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TERMODINAMICA DE SOLIDOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1106128</td>
               <td>TEEMAT(CIÊNCIA DA FELICIDADE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1106129</td>
               <td>TEEMAT(REOLOGIA DE MATERIAIS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1106130</td>
               <td>TEEMAT(PRAT DE ORATÓRIA P/ ENG. DE MAT)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -769,8 +772,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1106011", "nome": "INTRODUÇÃO À ENGENHARIA DE MATERIAIS", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1107255", "nome": "LABORATÓRIO DE QUÍMICA GERAL", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1106081", "nome": "QUÍMICA DE MATERIAIS", "ch": "60h", "preReqs": ["1107232", "1107132"]}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109126", "1109050"]}, {"nivel": "2º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1106082", "nome": "ESTRUTURAS CRISTALINAS", "ch": "60h", "preReqs": ["1106081", "1107167", "1107150"]}, {"nivel": "3º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60h", "preReqs": ["1108081", "1108031"]}, {"nivel": "3º Nível", "codigo": "1108101", "nome": "FÍSICA EXPERIMENTAL II", "ch": "60h", "preReqs": ["1108023", "1108026"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60h", "preReqs": ["1109131", "1109053", "1109035"]}, {"nivel": "3º Nível", "codigo": "1307177", "nome": "METODOLOGIA E TÉCNICAS DE PESQUISA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60h", "preReqs": ["1411001"]}, {"nivel": "4º Nível", "codigo": "1106083", "nome": "CIÊNCIA DE MATERIAIS", "ch": "60h", "preReqs": ["1108031", "1108081", "1106082", "1510041"]}, {"nivel": "4º Nível", "codigo": "1107256", "nome": "QUÍMICA ANALÍTICA", "ch": "60h", "preReqs": ["1107232", "1107132", "1107255", "1107177"]}, {"nivel": "4º Nível", "codigo": "1108099", "nome": "MECÂNICA GERAL", "ch": "60h", "preReqs": ["1109053", "1109131", "1108031", "1108081"]}, {"nivel": "4º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["1109131", "1109053", "1109049"]}, {"nivel": "4º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60h", "preReqs": ["1109131", "1109053"]}, {"nivel": "4º Nível", "codigo": "1305126", "nome": "INSTITUICOES DO DIREITO", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1106084", "nome": "CARACTERIZAÇÃO DE MATERIAIS", "ch": "60h", "preReqs": ["1106083", "1106003"]}, {"nivel": "5º Nível", "codigo": "1106085", "nome": "ENSAIOS MECANICOS DE MATERAIS", "ch": "60h", "preReqs": ["1106083", "1106003"]}, {"nivel": "5º Nível", "codigo": "1106086", "nome": "FENOMENOS DE TRANSPORTE", "ch": "60h", "preReqs": ["1109010", "1108081", "1108031"]}, {"nivel": "5º Nível", "codigo": "1106087", "nome": "TERMODINAMICA DE SOLIDOS", "ch": "60h", "preReqs": ["1108031", "1108081", "1109128", "1109051"]}, {"nivel": "5º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1114130", "nome": "INTRODUÇÃO À ESTATÍSTICA", "ch": "60h", "preReqs": ["1114129", "1114052"]}, {"nivel": "6º Nível", "codigo": "1106088", "nome": "PROPRIEDADES MECÂNICAS DE MATERIAIS", "ch": "60h", "preReqs": ["1106086", "1106010", "1106083", "1106003"]}, {"nivel": "6º Nível", "codigo": "1106089", "nome": "MATERIAS-PRIMAS CERAMICAS", "ch": "60h", "preReqs": ["1106083", "1106003"]}, {"nivel": "6º Nível", "codigo": "1106092", "nome": "TRANSFORMACOES DE FASES EM METAIS", "ch": "60h", "preReqs": ["1106083", "1106003"]}, {"nivel": "6º Nível", "codigo": "1106094", "nome": "QUÍMICA DE POLÍMEROS", "ch": "60h", "preReqs": ["1106083", "1106003"]}, {"nivel": "6º Nível", "codigo": "1303021", "nome": "ECONOMIA", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1404026", "nome": "ELETROTÉCNICA GERAL", "ch": "60h", "preReqs": ["1108100", "1108101"]}, {"nivel": "7º Nível", "codigo": "1105146", "nome": "TRATAMENTOS TÉRMICOS E TERMOQUÍMICOS", "ch": "60h", "preReqs": ["1106092", "1106027"]}, {"nivel": "7º Nível", "codigo": "1106090", "nome": "PROCESSAMENTOS DOS MATERIAIS CERAMICOS", "ch": "60h", "preReqs": ["1106089", "1106014"]}, {"nivel": "7º Nível", "codigo": "1106095", "nome": "ESTRUTURA E PROPRIEDADES DE POLIMEROS", "ch": "60h", "preReqs": ["1106094", "1106012"]}, {"nivel": "7º Nível", "codigo": "1301014", "nome": "ADMINISTRAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1503070", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1106091", "nome": "PROPRIEDADES DOS MATERIAIS CERAMICOS", "ch": "60h", "preReqs": ["1106090", "1106017"]}, {"nivel": "8º Nível", "codigo": "1106093", "nome": "PROCESSAMENTO DE MATERIAIS METALICOS", "ch": "60h", "preReqs": ["1105137", "1105146"]}, {"nivel": "8º Nível", "codigo": "1106096", "nome": "PROCESSAMENTO DOS MATERIAIS POLIMERICOS", "ch": "60h", "preReqs": ["1106095", "1106008", "1106086"]}, {"nivel": "8º Nível", "codigo": "1113025", "nome": "ERGONOMIA I", "ch": "60h", "preReqs": ["1301014"]}, {"nivel": "8º Nível", "codigo": "1301076", "nome": "FORMACAO DE EMPREENDEDORES", "ch": "60h", "preReqs": ["1301014"]}, {"nivel": "9º Nível", "codigo": "1106097", "nome": "RECICLAGEM DE MATERIAIS", "ch": "60h", "preReqs": ["1106083", "1106003", "1503070", "1503038"]}, {"nivel": "9º Nível", "codigo": "1113034", "nome": "GESTAO DA QUALIDADE", "ch": "60h", "preReqs": ["1301014"]}, {"nivel": "10º Nível", "codigo": "1106099", "nome": "TRABALHO DE CONCLUSAO DE CURSO - TCC", "ch": "60h", "preReqs": []}, {"nivel": "10º Nível", "codigo": "1106100", "nome": "ESTAGIO INTEGRADO", "ch": "330h", "preReqs": []}];
-  const codigoToNome = {"1106011": "INTRODUÇÃO À ENGENHARIA DE MATERIAIS", "1107232": "QUÍMICA GERAL", "1107255": "LABORATÓRIO DE QUÍMICA GERAL", "1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1106081": "QUÍMICA DE MATERIAIS", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1106082": "ESTRUTURAS CRISTALINAS", "1108100": "FÍSICA GERAL III", "1108101": "FÍSICA EXPERIMENTAL II", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1307177": "METODOLOGIA E TÉCNICAS DE PESQUISA", "1411075": "CALCULO NUMERICO", "1106083": "CIÊNCIA DE MATERIAIS", "1107256": "QUÍMICA ANALÍTICA", "1108099": "MECÂNICA GERAL", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1305126": "INSTITUICOES DO DIREITO", "1106084": "CARACTERIZAÇÃO DE MATERIAIS", "1106085": "ENSAIOS MECANICOS DE MATERAIS", "1106086": "FENOMENOS DE TRANSPORTE", "1106087": "TERMODINAMICA DE SOLIDOS", "1113019": "EXPRESSAO GRAFICA", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1106088": "PROPRIEDADES MECÂNICAS DE MATERIAIS", "1106089": "MATERIAS-PRIMAS CERAMICAS", "1106092": "TRANSFORMACOES DE FASES EM METAIS", "1106094": "QUÍMICA DE POLÍMEROS", "1303021": "ECONOMIA", "1404026": "ELETROTÉCNICA GERAL", "1105146": "TRATAMENTOS TÉRMICOS E TERMOQUÍMICOS", "1106090": "PROCESSAMENTOS DOS MATERIAIS CERAMICOS", "1106095": "ESTRUTURA E PROPRIEDADES DE POLIMEROS", "1301014": "ADMINISTRAÇÃO", "1503070": "CIÊNCIAS DO AMBIENTE", "1106091": "PROPRIEDADES DOS MATERIAIS CERAMICOS", "1106093": "PROCESSAMENTO DE MATERIAIS METALICOS", "1106096": "PROCESSAMENTO DOS MATERIAIS POLIMERICOS", "1113025": "ERGONOMIA I", "1301076": "FORMACAO DE EMPREENDEDORES", "1106097": "RECICLAGEM DE MATERIAIS", "1113034": "GESTAO DA QUALIDADE", "1106099": "TRABALHO DE CONCLUSAO DE CURSO - TCC", "1106100": "ESTAGIO INTEGRADO", "1105124": "FRATURAS EM METAIS", "1105139": "METALURGIA MECÂNICA", "1105141": "METALURGIA DA SOLDAGEM", "1105142": "TÉCNICAS METALOGRÁFICAS", "1105224": "HIGIENE IND E SEG DO TRABALHO", "1105367": "SOLIDIFICACAO EM METAIS", "1106101": "PROCESSOS DE FABRICACAO DE CERAMICAS", "1106102": "TECNOLOGIA DE VIDROS", "1106103": "REFRATARIOS CERAMICOS", "1106104": "ARGILAS INDUSTRIAIS", "1106105": "INT AO EQUIL DE FASES EM MATER CERAMICOS", "1106110": "APLICACOES DE CERAMICA AVANCADA", "1106111": "TECNOLOGIA DE MEMBRANAS", "1106112": "FALHA PREMATURA DE POLIMEROS", "1106113": "BLENDAS POLIMÉRICAS", "1106114": "TECNOLOGIA DE ELASTOMEROS E TERMOFIXOS", "1106115": "ADITIVAÇÃO DE POLÍMEROS", "1106116": "SELECAO DE MATERIAIS", "1106117": "INTRODUÇÃO À CIÊNCIA DE BIOMATERIAIS", "1106118": "NANOCOMPOSITOS POLIMERICOS", "1106122": "TEEMAT(FORMULACAO DE MASSAS CERAMICAS)", "1107267": "CONTROLE ESTATISTICO DE PROCESSOS", "1113047": "PLANEJAMENTO E PROJETO DO PRODUTO", "1301018": "ENGENHARIA ECONOMICA", "1301062": "PSICOLOGIA DAS ORGANIZACOES", "1301109": "ENGENHARIA ECONOMICA", "1304122": "BASQUETE   MASC/FEM", "1305109": "SOCIOLOGIA INDUSTRIAL", "1305276": "RELACOES HUMANAS", "1307150": "INGLÊS", "1307169": "LÍNGUA PORTUGUESA", "1307178": "FRANCES", "1307179": "ESPANHOL", "1106123": "TEEMAT(APLIC CLINICAS DOS BIOMATERIAIS)", "1106125": "TEEMAT(SENSORES E BIOSSENSORES)", "1106126": "TEEMAT(TECNOLOGIA EM TINTAS E VERNIZES)", "1106127": "TEEMAT(DEGRADACAO DOS MAT PELO AMBIENTE)", "1106128": "TEEMAT(CIÊNCIA DA FELICIDADE)", "1106129": "TEEMAT(REOLOGIA DE MATERIAIS)", "1106130": "TEEMAT(PRAT DE ORATÓRIA P/ ENG. DE MAT)", "1307332": "LIBRAS"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1106011", "nome": "INTRODUÇÃO À ENGENHARIA DE MATERIAIS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1107255", "nome": "LABORATÓRIO DE QUÍMICA GERAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1106081", "nome": "QUÍMICA DE MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1107232", "1107132"]}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126", "1109050"]}, {"nivel": "2º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1106082", "nome": "ESTRUTURAS CRISTALINAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106081", "1107167", "1107150"]}, {"nivel": "3º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108081", "1108031"]}, {"nivel": "3º Nível", "codigo": "1108101", "nome": "FÍSICA EXPERIMENTAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108023", "1108026"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109053", "1109035"]}, {"nivel": "3º Nível", "codigo": "1307177", "nome": "METODOLOGIA E TÉCNICAS DE PESQUISA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411001"]}, {"nivel": "4º Nível", "codigo": "1106083", "nome": "CIÊNCIA DE MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108031", "1108081", "1106082", "1510041"]}, {"nivel": "4º Nível", "codigo": "1107256", "nome": "QUÍMICA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1107232", "1107132", "1107255", "1107177"]}, {"nivel": "4º Nível", "codigo": "1108099", "nome": "MECÂNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109053", "1109131", "1108031", "1108081"]}, {"nivel": "4º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109053", "1109049"]}, {"nivel": "4º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109053"]}, {"nivel": "4º Nível", "codigo": "1305126", "nome": "INSTITUICOES DO DIREITO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1106084", "nome": "CARACTERIZAÇÃO DE MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106083", "1106003"]}, {"nivel": "5º Nível", "codigo": "1106085", "nome": "ENSAIOS MECANICOS DE MATERAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106083", "1106003"]}, {"nivel": "5º Nível", "codigo": "1106086", "nome": "FENOMENOS DE TRANSPORTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109010", "1108081", "1108031"]}, {"nivel": "5º Nível", "codigo": "1106087", "nome": "TERMODINAMICA DE SOLIDOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108031", "1108081", "1109128", "1109051"]}, {"nivel": "5º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1114130", "nome": "INTRODUÇÃO À ESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114129", "1114052"]}, {"nivel": "6º Nível", "codigo": "1106088", "nome": "PROPRIEDADES MECÂNICAS DE MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106086", "1106010", "1106083", "1106003"]}, {"nivel": "6º Nível", "codigo": "1106089", "nome": "MATERIAS-PRIMAS CERAMICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106083", "1106003"]}, {"nivel": "6º Nível", "codigo": "1106092", "nome": "TRANSFORMACOES DE FASES EM METAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106083", "1106003"]}, {"nivel": "6º Nível", "codigo": "1106094", "nome": "QUÍMICA DE POLÍMEROS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106083", "1106003"]}, {"nivel": "6º Nível", "codigo": "1303021", "nome": "ECONOMIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1404026", "nome": "ELETROTÉCNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108100", "1108101"]}, {"nivel": "7º Nível", "codigo": "1105146", "nome": "TRATAMENTOS TÉRMICOS E TERMOQUÍMICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106092", "1106027"]}, {"nivel": "7º Nível", "codigo": "1106090", "nome": "PROCESSAMENTOS DOS MATERIAIS CERAMICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106089", "1106014"]}, {"nivel": "7º Nível", "codigo": "1106095", "nome": "ESTRUTURA E PROPRIEDADES DE POLIMEROS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106094", "1106012"]}, {"nivel": "7º Nível", "codigo": "1301014", "nome": "ADMINISTRAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1503070", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1106091", "nome": "PROPRIEDADES DOS MATERIAIS CERAMICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106090", "1106017"]}, {"nivel": "8º Nível", "codigo": "1106093", "nome": "PROCESSAMENTO DE MATERIAIS METALICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105137", "1105146"]}, {"nivel": "8º Nível", "codigo": "1106096", "nome": "PROCESSAMENTO DOS MATERIAIS POLIMERICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106095", "1106008", "1106086"]}, {"nivel": "8º Nível", "codigo": "1113025", "nome": "ERGONOMIA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301014"]}, {"nivel": "8º Nível", "codigo": "1301076", "nome": "FORMACAO DE EMPREENDEDORES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301014"]}, {"nivel": "9º Nível", "codigo": "1106097", "nome": "RECICLAGEM DE MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106083", "1106003", "1503070", "1503038"]}, {"nivel": "9º Nível", "codigo": "1113034", "nome": "GESTAO DA QUALIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301014"]}, {"nivel": "10º Nível", "codigo": "1106098", "nome": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "ch": "90\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1106099", "nome": "TRABALHO DE CONCLUSAO DE CURSO - TCC", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1106100", "nome": "ESTAGIO INTEGRADO", "ch": "330\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}];
+  const codigoToNome = {"1106011": "INTRODUÇÃO À ENGENHARIA DE MATERIAIS", "1107232": "QUÍMICA GERAL", "1107255": "LABORATÓRIO DE QUÍMICA GERAL", "1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1106081": "QUÍMICA DE MATERIAIS", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1106082": "ESTRUTURAS CRISTALINAS", "1108100": "FÍSICA GERAL III", "1108101": "FÍSICA EXPERIMENTAL II", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1307177": "METODOLOGIA E TÉCNICAS DE PESQUISA", "1411075": "CALCULO NUMERICO", "1106083": "CIÊNCIA DE MATERIAIS", "1107256": "QUÍMICA ANALÍTICA", "1108099": "MECÂNICA GERAL", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1305126": "INSTITUICOES DO DIREITO", "1106084": "CARACTERIZAÇÃO DE MATERIAIS", "1106085": "ENSAIOS MECANICOS DE MATERAIS", "1106086": "FENOMENOS DE TRANSPORTE", "1106087": "TERMODINAMICA DE SOLIDOS", "1113019": "EXPRESSAO GRAFICA", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1106088": "PROPRIEDADES MECÂNICAS DE MATERIAIS", "1106089": "MATERIAS-PRIMAS CERAMICAS", "1106092": "TRANSFORMACOES DE FASES EM METAIS", "1106094": "QUÍMICA DE POLÍMEROS", "1303021": "ECONOMIA", "1404026": "ELETROTÉCNICA GERAL", "1105146": "TRATAMENTOS TÉRMICOS E TERMOQUÍMICOS", "1106090": "PROCESSAMENTOS DOS MATERIAIS CERAMICOS", "1106095": "ESTRUTURA E PROPRIEDADES DE POLIMEROS", "1301014": "ADMINISTRAÇÃO", "1503070": "CIÊNCIAS DO AMBIENTE", "1106091": "PROPRIEDADES DOS MATERIAIS CERAMICOS", "1106093": "PROCESSAMENTO DE MATERIAIS METALICOS", "1106096": "PROCESSAMENTO DOS MATERIAIS POLIMERICOS", "1113025": "ERGONOMIA I", "1301076": "FORMACAO DE EMPREENDEDORES", "1106097": "RECICLAGEM DE MATERIAIS", "1113034": "GESTAO DA QUALIDADE", "1106098": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "1106099": "TRABALHO DE CONCLUSAO DE CURSO - TCC", "1106100": "ESTAGIO INTEGRADO", "1105124": "FRATURAS EM METAIS", "1105139": "METALURGIA MECÂNICA", "1105141": "METALURGIA DA SOLDAGEM", "1105142": "TÉCNICAS METALOGRÁFICAS", "1105224": "HIGIENE IND E SEG DO TRABALHO", "1105367": "SOLIDIFICACAO EM METAIS", "1106101": "PROCESSOS DE FABRICACAO DE CERAMICAS", "1106102": "TECNOLOGIA DE VIDROS", "1106103": "REFRATARIOS CERAMICOS", "1106104": "ARGILAS INDUSTRIAIS", "1106105": "INT AO EQUIL DE FASES EM MATER CERAMICOS", "1106110": "APLICACOES DE CERAMICA AVANCADA", "1106111": "TECNOLOGIA DE MEMBRANAS", "1106112": "FALHA PREMATURA DE POLIMEROS", "1106113": "BLENDAS POLIMÉRICAS", "1106114": "TECNOLOGIA DE ELASTOMEROS E TERMOFIXOS", "1106115": "ADITIVAÇÃO DE POLÍMEROS", "1106116": "SELECAO DE MATERIAIS", "1106117": "INTRODUÇÃO À CIÊNCIA DE BIOMATERIAIS", "1106118": "NANOCOMPOSITOS POLIMERICOS", "1106122": "TEEMAT(FORMULACAO DE MASSAS CERAMICAS)", "1107267": "CONTROLE ESTATISTICO DE PROCESSOS", "1113047": "PLANEJAMENTO E PROJETO DO PRODUTO", "1301018": "ENGENHARIA ECONOMICA", "1301062": "PSICOLOGIA DAS ORGANIZACOES", "1301109": "ENGENHARIA ECONOMICA", "1304122": "BASQUETE   MASC/FEM", "1305109": "SOCIOLOGIA INDUSTRIAL", "1305276": "RELACOES HUMANAS", "1307150": "INGLÊS", "1307169": "LÍNGUA PORTUGUESA", "1307178": "FRANCES", "1307179": "ESPANHOL", "1106123": "TEEMAT(APLIC CLINICAS DOS BIOMATERIAIS)", "1106125": "TEEMAT(SENSORES E BIOSSENSORES)", "1106126": "TEEMAT(TECNOLOGIA EM TINTAS E VERNIZES)", "1106127": "TEEMAT(DEGRADACAO DOS MAT PELO AMBIENTE)", "1106128": "TEEMAT(CIÊNCIA DA FELICIDADE)", "1106129": "TEEMAT(REOLOGIA DE MATERIAIS)", "1106130": "TEEMAT(PRAT DE ORATÓRIA P/ ENG. DE MAT)", "1307332": "LIBRAS"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -882,7 +885,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

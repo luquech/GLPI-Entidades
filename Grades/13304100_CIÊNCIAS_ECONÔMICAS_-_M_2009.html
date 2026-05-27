@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,400 +404,400 @@
           <tr>
               <td>1109046</td>
               <td>METODOS QUANTITATIVOS III</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOS QUANTITATIVOS II</td>
               <td></td>
           </tr>
           <tr>
               <td>1301003</td>
               <td>ANÁLISE DE CUSTOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301006</td>
               <td>ADMINISTRAÇÃO FINANCEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1301055, MATEMÁTICA FINANCEIRA</td>
               <td></td>
           </tr>
           <tr>
               <td>1301007</td>
               <td>MERCADO DE CAPITAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ECONOMIA MONETARIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1301008</td>
               <td>ADMINISTRAÇÃO MERCADOLÓGICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301066</td>
               <td>ADMINISTRAÇÃO DA PRODUÇÃO I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303020</td>
               <td>PLANEJAMENTO URBANO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303062</td>
               <td>TEORIA DO VALOR</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ECONOMIA CLASSICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1303065</td>
               <td>ECONOMIA REGIONAL E URBANA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303066</td>
               <td>ECONOMIA DO TRABALHO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303067</td>
               <td>ECONOMIA DA TECNOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303068</td>
               <td>ECONOMIA DA ENERGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ECONOMIA BRASILEIRA CONTEMPORANEA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1303104</td>
               <td>ANÁLISE DE CONJUNTURA ECONÔMICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303105</td>
               <td>ECONOMETRIA II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ECONOMETRIA I, 1303013</td>
               <td></td>
           </tr>
           <tr>
               <td>1303106</td>
               <td>ECONOMIA DA PARAIBA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303107</td>
               <td>ECONOMIA DOS RECURSOS HIDRICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303108</td>
               <td>ECONOMIA E MEIO AMBIENTE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303109</td>
               <td>ECONOMIA LATINO-AMERICANA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303110</td>
               <td>GEOGRAFIA ECONOMICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303111</td>
               <td>RELACOES ECONOMICAS INTERNACIONAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ECONOMIA INTERNACIONAL I, 1303070, TEORIA MACROECONOMICA III</td>
               <td></td>
           </tr>
           <tr>
               <td>1304117</td>
               <td>GINASTICA MASC/FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305030</td>
               <td>SOCIOLOGIA RURAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO ÀS CIÊNCIAS SOCIAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1305126</td>
               <td>INSTITUICOES DO DIREITO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305290</td>
               <td>DIREITO ECONOMICO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INSTITUICOES DO DIREITO</td>
               <td></td>
           </tr>
           <tr>
               <td>1305291</td>
               <td>DIREITO FINANC. E LEGISLAÇÃO TRIBUTÁRIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INSTITUICOES DO DIREITO</td>
               <td></td>
           </tr>
           <tr>
               <td>1305292</td>
               <td>DIREITO INTERNACIONAL PUBLICO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305297</td>
               <td>ECONOMIA SOLIDARIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307187</td>
               <td>ESPANHOL INSTRUMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307188</td>
               <td>FRANCES INSTRUMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307189</td>
               <td>INGLES INSTRUMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1411001</td>
               <td>INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301011</td>
               <td>MATEMÁTICA FINANCEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOS QUANTITATIVOS II</td>
               <td></td>
           </tr>
           <tr>
               <td>1303078</td>
               <td>TEE (GLOBALIZACAO DA ECONOMIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303091</td>
               <td>TEE(INTROD. AO PENS.ECON. BRASILEIRO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303162</td>
               <td>TEE(DIREITO ECONOMICO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303163</td>
               <td>TEE(TEORIA DOS JOGOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303164</td>
               <td>TEE(FINANCAS PUBLICAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303165</td>
               <td>TEE(ECONOMIA E SOLIDARIEDADE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303166</td>
               <td>TEE(MATEMÁTICA APLICADA ÀS FINANÇAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303167</td>
               <td>TEE(ECON. POL.DA SAÚDE:ACESSOXINOVAÇÃO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303168</td>
               <td>TEE(METODOLOGIA DA CIENCIA ECONOMICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303169</td>
               <td>TEE(MACROECONOMIA KEYNESIANA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303170</td>
               <td>TEE(PERICIA ECONOMICA E FINANCEIRA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303172</td>
               <td>TEE(GESTÃO E POLÍTICAS PÚBLICAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303173</td>
               <td>TEE(AVALIAÇÃO TÉCNICA DE AÇÕES)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303174</td>
               <td>TEE (INTRODUÇÃO AO R)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTATÍSTICA ECONÔMICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1303175</td>
               <td>TEE(ANÁLISE DE DADOS APLICADA A ECONOMIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303176</td>
               <td>TEE(ECONOMIA DA CORRUÇÃO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308001</td>
               <td>GEOGRAFIA ECONOMICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -841,8 +844,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1109044", "nome": "METODOS QUANTITATIVOS I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1303028", "nome": "INTRODUÇÃO À ECONOMIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305125", "nome": "INTRODUÇÃO ÀS CIÊNCIAS SOCIAIS", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1306087", "nome": "FORMACAO ECONOMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307186", "nome": "PORTUGUES INSTRUMENTAL", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1109045", "nome": "METODOS QUANTITATIVOS II", "ch": "60h", "preReqs": ["1109044"]}, {"nivel": "2º Nível", "codigo": "1114181", "nome": "ESTATÍSTICA", "ch": "60h", "preReqs": ["1109044"]}, {"nivel": "2º Nível", "codigo": "1303038", "nome": "CONTABILIDADE SOCIAL", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1303053", "nome": "ECONOMIA CLASSICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1303100", "nome": "SISTEMAS ECONOMICOS", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1114182", "nome": "ESTATÍSTICA ECONÔMICA", "ch": "60h", "preReqs": ["1114181", "1114047"]}, {"nivel": "3º Nível", "codigo": "1303039", "nome": "TEORIA MACROECONOMICA I", "ch": "60h", "preReqs": ["1303038"]}, {"nivel": "3º Nível", "codigo": "1303096", "nome": "ECONOMIA MARXISTA I", "ch": "60h", "preReqs": ["1303053"]}, {"nivel": "3º Nível", "codigo": "1303101", "nome": "TEORIA MICROECONOMICA I", "ch": "60h", "preReqs": ["1109045"]}, {"nivel": "3º Nível", "codigo": "1306085", "nome": "FORMACAO ECONOMICA DO BRASIL I", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1303040", "nome": "TEORIA MACROECONOMICA II", "ch": "60h", "preReqs": ["1303039"]}, {"nivel": "4º Nível", "codigo": "1303093", "nome": "ECONOMETRIA I", "ch": "60h", "preReqs": ["1114182", "1114048"]}, {"nivel": "4º Nível", "codigo": "1303097", "nome": "ECONOMIA MARXISTA II", "ch": "60h", "preReqs": ["1303096", "1303056"]}, {"nivel": "4º Nível", "codigo": "1303102", "nome": "TEORIA MICROECONOMICA II", "ch": "60h", "preReqs": ["1303101", "1303054"]}, {"nivel": "4º Nível", "codigo": "1306086", "nome": "FORMACAO ECONOMICA DO BRASIL II", "ch": "60h", "preReqs": ["1306085", "1306034"]}, {"nivel": "5º Nível", "codigo": "1301113", "nome": "CONTABILIDADE E ANÁLISE DE BALANÇO", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1303041", "nome": "TEORIA MACROECONOMICA III", "ch": "60h", "preReqs": ["1303040"]}, {"nivel": "5º Nível", "codigo": "1303045", "nome": "DESENVOLVIMENTO SOCIO-ECONOMICO I", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1303094", "nome": "ECONOMIA INTERNACIONAL I", "ch": "60h", "preReqs": ["1303039", "1303100"]}, {"nivel": "5º Nível", "codigo": "1303103", "nome": "TEORIA MICROECONOMICA III", "ch": "60h", "preReqs": ["1303102", "1303055"]}, {"nivel": "6º Nível", "codigo": "1303043", "nome": "ECONOMIA DO SETOR PUBLICO", "ch": "60h", "preReqs": ["1303041"]}, {"nivel": "6º Nível", "codigo": "1303044", "nome": "ECONOMIA MONETARIA", "ch": "60h", "preReqs": ["1303039"]}, {"nivel": "6º Nível", "codigo": "1303046", "nome": "DESENVOLVIMENTO SOCIO-ECONOMICO II", "ch": "60h", "preReqs": ["1303045"]}, {"nivel": "6º Nível", "codigo": "1303047", "nome": "ECONOMIA BRASILEIRA CONTEMPORANEA I", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1303095", "nome": "ECONOMIA INTERNACIONAL II", "ch": "60h", "preReqs": ["1303094", "1303070", "1303007"]}, {"nivel": "7º Nível", "codigo": "1303048", "nome": "ECONOMIA BRASILEIRA CONTEMPORANEA II", "ch": "60h", "preReqs": ["1303047"]}, {"nivel": "7º Nível", "codigo": "1303052", "nome": "ECONOMIA INDUSTRIAL", "ch": "60h", "preReqs": ["1303103", "1303042"]}, {"nivel": "7º Nível", "codigo": "1303071", "nome": "HISTÓRIA DO PENSAMENTO ECONÔMICO", "ch": "60h", "preReqs": ["1303097", "1303057"]}, {"nivel": "7º Nível", "codigo": "1303092", "nome": "AGRICULTURA E DESENVOLVIMENTO ECONOMICO", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1303098", "nome": "MÉTODOS E TÉCNICAS DE PESQ. EM ECONOMIA", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1303058", "nome": "ECONOMIA DO NORDESTE", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1303076", "nome": "ELABORAÇÃO E ANÁLISE DE PROJETOS", "ch": "60h", "preReqs": ["1303103", "1303042", "1301113", "1301049"]}, {"nivel": "8º Nível", "codigo": "1303099", "nome": "PROJETO DE MONOGRAFIA", "ch": "120h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "1303113", "nome": "MONOGRAFIA", "ch": "120h", "preReqs": ["1303099"]}];
-  const codigoToNome = {"1109044": "METODOS QUANTITATIVOS I", "1303028": "INTRODUÇÃO À ECONOMIA", "1305125": "INTRODUÇÃO ÀS CIÊNCIAS SOCIAIS", "1306087": "FORMACAO ECONOMICA GERAL", "1307186": "PORTUGUES INSTRUMENTAL", "1109045": "METODOS QUANTITATIVOS II", "1114181": "ESTATÍSTICA", "1303038": "CONTABILIDADE SOCIAL", "1303053": "ECONOMIA CLASSICA", "1303100": "SISTEMAS ECONOMICOS", "1114182": "ESTATÍSTICA ECONÔMICA", "1303039": "TEORIA MACROECONOMICA I", "1303096": "ECONOMIA MARXISTA I", "1303101": "TEORIA MICROECONOMICA I", "1306085": "FORMACAO ECONOMICA DO BRASIL I", "1303040": "TEORIA MACROECONOMICA II", "1303093": "ECONOMETRIA I", "1303097": "ECONOMIA MARXISTA II", "1303102": "TEORIA MICROECONOMICA II", "1306086": "FORMACAO ECONOMICA DO BRASIL II", "1301113": "CONTABILIDADE E ANÁLISE DE BALANÇO", "1303041": "TEORIA MACROECONOMICA III", "1303045": "DESENVOLVIMENTO SOCIO-ECONOMICO I", "1303094": "ECONOMIA INTERNACIONAL I", "1303103": "TEORIA MICROECONOMICA III", "1303043": "ECONOMIA DO SETOR PUBLICO", "1303044": "ECONOMIA MONETARIA", "1303046": "DESENVOLVIMENTO SOCIO-ECONOMICO II", "1303047": "ECONOMIA BRASILEIRA CONTEMPORANEA I", "1303095": "ECONOMIA INTERNACIONAL II", "1303048": "ECONOMIA BRASILEIRA CONTEMPORANEA II", "1303052": "ECONOMIA INDUSTRIAL", "1303071": "HISTÓRIA DO PENSAMENTO ECONÔMICO", "1303092": "AGRICULTURA E DESENVOLVIMENTO ECONOMICO", "1303098": "MÉTODOS E TÉCNICAS DE PESQ. EM ECONOMIA", "1303058": "ECONOMIA DO NORDESTE", "1303076": "ELABORAÇÃO E ANÁLISE DE PROJETOS", "1303099": "PROJETO DE MONOGRAFIA", "1303113": "MONOGRAFIA", "1109046": "METODOS QUANTITATIVOS III", "1301003": "ANÁLISE DE CUSTOS", "1301006": "ADMINISTRAÇÃO FINANCEIRA", "1301007": "MERCADO DE CAPITAIS", "1301008": "ADMINISTRAÇÃO MERCADOLÓGICA", "1301066": "ADMINISTRAÇÃO DA PRODUÇÃO I", "1303020": "PLANEJAMENTO URBANO", "1303062": "TEORIA DO VALOR", "1303065": "ECONOMIA REGIONAL E URBANA", "1303066": "ECONOMIA DO TRABALHO", "1303067": "ECONOMIA DA TECNOLOGIA", "1303068": "ECONOMIA DA ENERGIA", "1303104": "ANÁLISE DE CONJUNTURA ECONÔMICA", "1303105": "ECONOMETRIA II", "1303106": "ECONOMIA DA PARAIBA", "1303107": "ECONOMIA DOS RECURSOS HIDRICOS", "1303108": "ECONOMIA E MEIO AMBIENTE", "1303109": "ECONOMIA LATINO-AMERICANA", "1303110": "GEOGRAFIA ECONOMICA", "1303111": "RELACOES ECONOMICAS INTERNACIONAIS", "1304117": "GINASTICA MASC/FEM", "1305030": "SOCIOLOGIA RURAL", "1305126": "INSTITUICOES DO DIREITO", "1305290": "DIREITO ECONOMICO", "1305291": "DIREITO FINANC. E LEGISLAÇÃO TRIBUTÁRIA", "1305292": "DIREITO INTERNACIONAL PUBLICO", "1305297": "ECONOMIA SOLIDARIA", "1307187": "ESPANHOL INSTRUMENTAL", "1307188": "FRANCES INSTRUMENTAL", "1307189": "INGLES INSTRUMENTAL", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1301011": "MATEMÁTICA FINANCEIRA", "1303078": "TEE (GLOBALIZACAO DA ECONOMIA)", "1303091": "TEE(INTROD. AO PENS.ECON. BRASILEIRO)", "1303162": "TEE(DIREITO ECONOMICO)", "1303163": "TEE(TEORIA DOS JOGOS)", "1303164": "TEE(FINANCAS PUBLICAS)", "1303165": "TEE(ECONOMIA E SOLIDARIEDADE)", "1303166": "TEE(MATEMÁTICA APLICADA ÀS FINANÇAS)", "1303167": "TEE(ECON. POL.DA SAÚDE:ACESSOXINOVAÇÃO)", "1303168": "TEE(METODOLOGIA DA CIENCIA ECONOMICA)", "1303169": "TEE(MACROECONOMIA KEYNESIANA)", "1303170": "TEE(PERICIA ECONOMICA E FINANCEIRA)", "1303172": "TEE(GESTÃO E POLÍTICAS PÚBLICAS)", "1303173": "TEE(AVALIAÇÃO TÉCNICA DE AÇÕES)", "1303174": "TEE (INTRODUÇÃO AO R)", "1303175": "TEE(ANÁLISE DE DADOS APLICADA A ECONOMIA", "1303176": "TEE(ECONOMIA DA CORRUÇÃO)", "1307332": "LIBRAS", "1308001": "GEOGRAFIA ECONOMICA"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1109044", "nome": "METODOS QUANTITATIVOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1303028", "nome": "INTRODUÇÃO À ECONOMIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305125", "nome": "INTRODUÇÃO ÀS CIÊNCIAS SOCIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1306087", "nome": "FORMACAO ECONOMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307186", "nome": "PORTUGUES INSTRUMENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1109045", "nome": "METODOS QUANTITATIVOS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109044"]}, {"nivel": "2º Nível", "codigo": "1114181", "nome": "ESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109044"]}, {"nivel": "2º Nível", "codigo": "1303038", "nome": "CONTABILIDADE SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1303053", "nome": "ECONOMIA CLASSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1303100", "nome": "SISTEMAS ECONOMICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1114182", "nome": "ESTATÍSTICA ECONÔMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114181", "1114047"]}, {"nivel": "3º Nível", "codigo": "1303039", "nome": "TEORIA MACROECONOMICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303038"]}, {"nivel": "3º Nível", "codigo": "1303096", "nome": "ECONOMIA MARXISTA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303053"]}, {"nivel": "3º Nível", "codigo": "1303101", "nome": "TEORIA MICROECONOMICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109045"]}, {"nivel": "3º Nível", "codigo": "1306085", "nome": "FORMACAO ECONOMICA DO BRASIL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1303040", "nome": "TEORIA MACROECONOMICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303039"]}, {"nivel": "4º Nível", "codigo": "1303093", "nome": "ECONOMETRIA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114182", "1114048"]}, {"nivel": "4º Nível", "codigo": "1303097", "nome": "ECONOMIA MARXISTA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303096", "1303056"]}, {"nivel": "4º Nível", "codigo": "1303102", "nome": "TEORIA MICROECONOMICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303101", "1303054"]}, {"nivel": "4º Nível", "codigo": "1306086", "nome": "FORMACAO ECONOMICA DO BRASIL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306085", "1306034"]}, {"nivel": "5º Nível", "codigo": "1301113", "nome": "CONTABILIDADE E ANÁLISE DE BALANÇO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1303041", "nome": "TEORIA MACROECONOMICA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303040"]}, {"nivel": "5º Nível", "codigo": "1303045", "nome": "DESENVOLVIMENTO SOCIO-ECONOMICO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1303094", "nome": "ECONOMIA INTERNACIONAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303039", "1303100"]}, {"nivel": "5º Nível", "codigo": "1303103", "nome": "TEORIA MICROECONOMICA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303102", "1303055"]}, {"nivel": "6º Nível", "codigo": "1303043", "nome": "ECONOMIA DO SETOR PUBLICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303041"]}, {"nivel": "6º Nível", "codigo": "1303044", "nome": "ECONOMIA MONETARIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303039"]}, {"nivel": "6º Nível", "codigo": "1303046", "nome": "DESENVOLVIMENTO SOCIO-ECONOMICO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303045"]}, {"nivel": "6º Nível", "codigo": "1303047", "nome": "ECONOMIA BRASILEIRA CONTEMPORANEA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1303095", "nome": "ECONOMIA INTERNACIONAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303094", "1303070", "1303007"]}, {"nivel": "7º Nível", "codigo": "1303048", "nome": "ECONOMIA BRASILEIRA CONTEMPORANEA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303047"]}, {"nivel": "7º Nível", "codigo": "1303052", "nome": "ECONOMIA INDUSTRIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303103", "1303042"]}, {"nivel": "7º Nível", "codigo": "1303071", "nome": "HISTÓRIA DO PENSAMENTO ECONÔMICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303097", "1303057"]}, {"nivel": "7º Nível", "codigo": "1303092", "nome": "AGRICULTURA E DESENVOLVIMENTO ECONOMICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1303098", "nome": "MÉTODOS E TÉCNICAS DE PESQ. EM ECONOMIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1303112", "nome": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "ch": "180\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1303058", "nome": "ECONOMIA DO NORDESTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1303076", "nome": "ELABORAÇÃO E ANÁLISE DE PROJETOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303103", "1303042", "1301113", "1301049"]}, {"nivel": "8º Nível", "codigo": "1303099", "nome": "PROJETO DE MONOGRAFIA", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1303113", "nome": "MONOGRAFIA", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1303099"]}];
+  const codigoToNome = {"1109044": "METODOS QUANTITATIVOS I", "1303028": "INTRODUÇÃO À ECONOMIA", "1305125": "INTRODUÇÃO ÀS CIÊNCIAS SOCIAIS", "1306087": "FORMACAO ECONOMICA GERAL", "1307186": "PORTUGUES INSTRUMENTAL", "1109045": "METODOS QUANTITATIVOS II", "1114181": "ESTATÍSTICA", "1303038": "CONTABILIDADE SOCIAL", "1303053": "ECONOMIA CLASSICA", "1303100": "SISTEMAS ECONOMICOS", "1114182": "ESTATÍSTICA ECONÔMICA", "1303039": "TEORIA MACROECONOMICA I", "1303096": "ECONOMIA MARXISTA I", "1303101": "TEORIA MICROECONOMICA I", "1306085": "FORMACAO ECONOMICA DO BRASIL I", "1303040": "TEORIA MACROECONOMICA II", "1303093": "ECONOMETRIA I", "1303097": "ECONOMIA MARXISTA II", "1303102": "TEORIA MICROECONOMICA II", "1306086": "FORMACAO ECONOMICA DO BRASIL II", "1301113": "CONTABILIDADE E ANÁLISE DE BALANÇO", "1303041": "TEORIA MACROECONOMICA III", "1303045": "DESENVOLVIMENTO SOCIO-ECONOMICO I", "1303094": "ECONOMIA INTERNACIONAL I", "1303103": "TEORIA MICROECONOMICA III", "1303043": "ECONOMIA DO SETOR PUBLICO", "1303044": "ECONOMIA MONETARIA", "1303046": "DESENVOLVIMENTO SOCIO-ECONOMICO II", "1303047": "ECONOMIA BRASILEIRA CONTEMPORANEA I", "1303095": "ECONOMIA INTERNACIONAL II", "1303048": "ECONOMIA BRASILEIRA CONTEMPORANEA II", "1303052": "ECONOMIA INDUSTRIAL", "1303071": "HISTÓRIA DO PENSAMENTO ECONÔMICO", "1303092": "AGRICULTURA E DESENVOLVIMENTO ECONOMICO", "1303098": "MÉTODOS E TÉCNICAS DE PESQ. EM ECONOMIA", "1303112": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "1303058": "ECONOMIA DO NORDESTE", "1303076": "ELABORAÇÃO E ANÁLISE DE PROJETOS", "1303099": "PROJETO DE MONOGRAFIA", "1303113": "MONOGRAFIA", "1109046": "METODOS QUANTITATIVOS III", "1301003": "ANÁLISE DE CUSTOS", "1301006": "ADMINISTRAÇÃO FINANCEIRA", "1301007": "MERCADO DE CAPITAIS", "1301008": "ADMINISTRAÇÃO MERCADOLÓGICA", "1301066": "ADMINISTRAÇÃO DA PRODUÇÃO I", "1303020": "PLANEJAMENTO URBANO", "1303062": "TEORIA DO VALOR", "1303065": "ECONOMIA REGIONAL E URBANA", "1303066": "ECONOMIA DO TRABALHO", "1303067": "ECONOMIA DA TECNOLOGIA", "1303068": "ECONOMIA DA ENERGIA", "1303104": "ANÁLISE DE CONJUNTURA ECONÔMICA", "1303105": "ECONOMETRIA II", "1303106": "ECONOMIA DA PARAIBA", "1303107": "ECONOMIA DOS RECURSOS HIDRICOS", "1303108": "ECONOMIA E MEIO AMBIENTE", "1303109": "ECONOMIA LATINO-AMERICANA", "1303110": "GEOGRAFIA ECONOMICA", "1303111": "RELACOES ECONOMICAS INTERNACIONAIS", "1304117": "GINASTICA MASC/FEM", "1305030": "SOCIOLOGIA RURAL", "1305126": "INSTITUICOES DO DIREITO", "1305290": "DIREITO ECONOMICO", "1305291": "DIREITO FINANC. E LEGISLAÇÃO TRIBUTÁRIA", "1305292": "DIREITO INTERNACIONAL PUBLICO", "1305297": "ECONOMIA SOLIDARIA", "1307187": "ESPANHOL INSTRUMENTAL", "1307188": "FRANCES INSTRUMENTAL", "1307189": "INGLES INSTRUMENTAL", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1301011": "MATEMÁTICA FINANCEIRA", "1303078": "TEE (GLOBALIZACAO DA ECONOMIA)", "1303091": "TEE(INTROD. AO PENS.ECON. BRASILEIRO)", "1303162": "TEE(DIREITO ECONOMICO)", "1303163": "TEE(TEORIA DOS JOGOS)", "1303164": "TEE(FINANCAS PUBLICAS)", "1303165": "TEE(ECONOMIA E SOLIDARIEDADE)", "1303166": "TEE(MATEMÁTICA APLICADA ÀS FINANÇAS)", "1303167": "TEE(ECON. POL.DA SAÚDE:ACESSOXINOVAÇÃO)", "1303168": "TEE(METODOLOGIA DA CIENCIA ECONOMICA)", "1303169": "TEE(MACROECONOMIA KEYNESIANA)", "1303170": "TEE(PERICIA ECONOMICA E FINANCEIRA)", "1303172": "TEE(GESTÃO E POLÍTICAS PÚBLICAS)", "1303173": "TEE(AVALIAÇÃO TÉCNICA DE AÇÕES)", "1303174": "TEE (INTRODUÇÃO AO R)", "1303175": "TEE(ANÁLISE DE DADOS APLICADA A ECONOMIA", "1303176": "TEE(ECONOMIA DA CORRUÇÃO)", "1307332": "LIBRAS", "1308001": "GEOGRAFIA ECONOMICA"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -954,7 +957,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

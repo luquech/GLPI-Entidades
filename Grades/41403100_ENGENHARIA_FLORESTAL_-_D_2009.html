@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,320 +404,320 @@
           <tr>
               <td>4102007</td>
               <td>QUÍMICA ORGÂNICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4102026</td>
               <td>IRRIGACAO E DRENAGEM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>HIDRAULICA</td>
               <td></td>
           </tr>
           <tr>
               <td>4102065</td>
               <td>ELAB E AVAL DE PROJ FLORESTAIS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>MANEJO FLORESTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>4102088</td>
               <td>PRÁTICA DESPORTIVA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4102206</td>
               <td>AGROTOXICOLOGIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ECOLOGIA GERAL, 4102115, ENTOMOLOGIA FLORESTAL, 4102037, 4102119</td>
               <td></td>
           </tr>
           <tr>
               <td>4102207</td>
               <td>AVALIAÇÃO QUAL. DE SEMENTES FLORESTAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BIOLOGIA E PROD DE SEMENTES FLORESTAIS, 4102124</td>
               <td></td>
           </tr>
           <tr>
               <td>4102208</td>
               <td>BIODETERIORAÇÃO E PRESERVAÇÃO DA MADEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROP. FÍSICAS E MECÂNICAS DA MADEIRA, 4102129</td>
               <td></td>
           </tr>
           <tr>
               <td>4102209</td>
               <td>ECOTURISMO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4102210</td>
               <td>EDUCAÇÃO AMBIENTAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ECOLOGIA GERAL, 4102115</td>
               <td></td>
           </tr>
           <tr>
               <td>4102211</td>
               <td>ENERGIA PARA O MEIO RURAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4102212</td>
               <td>ESTRUTURA E MANEJO DE FLORESTAS NATIVAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>INVENTARIO FLORESTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>4102213</td>
               <td>ESTUDOS DE IMPACTOS AMBIENTAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MANEJO E CONSERVACAO DOS SOLOS</td>
               <td>RECUPERACAO DE AREAS DEGRADADAS</td>
           </tr>
           <tr>
               <td>4102214</td>
               <td>FRUTICULTURA TROPICAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>VIVEIROS FLORESTAIS, QUÍMICA E FERTILIZAÇÃO DOS SOLOS, 4102049</td>
               <td></td>
           </tr>
           <tr>
               <td>4102215</td>
               <td>GEOLOGIA E MINERALOGIA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>PEDOLOGIA E FÍSICA DOS SOLOS</td>
               <td></td>
           </tr>
           <tr>
               <td>4102216</td>
               <td>GESTAO URBANA E MEIO AMBIENTE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>MANEJO DE AREAS SILVESTRES, 4102043</td>
               <td></td>
           </tr>
           <tr>
               <td>4102217</td>
               <td>INTRODUÇÃO À CIÊNCIA FLORESTAL</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4102218</td>
               <td>LINGUA BRASILEIRA DE SINAIS (LIBRAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4102219</td>
               <td>MANEJO DA FAUNA SILVESTRE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ZOOLOGIA GERAL, 4102118, ECOSSISTEMAS FLORESTAIS, 4102035</td>
               <td></td>
           </tr>
           <tr>
               <td>4102220</td>
               <td>MANEJO ECOLOGICO DE PRAGAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ECOLOGIA GERAL, 4102115, ENTOMOLOGIA FLORESTAL, 4102037, 4102119</td>
               <td></td>
           </tr>
           <tr>
               <td>4102221</td>
               <td>MELIPONICULTURA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ECOLOGIA GERAL, 4102115, ZOOLOGIA GERAL, 4102118</td>
               <td></td>
           </tr>
           <tr>
               <td>4102222</td>
               <td>ORGANISMOS DO SOLO DE IMPORT AGROFLOREST</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>MICROBIOLOGIA GERAL, 4102151, 4101029</td>
               <td></td>
           </tr>
           <tr>
               <td>4102223</td>
               <td>PATOLOGIA DE SEMENTES FLORESTAIS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>PATOLOGIA FLORESTAL, 4102045, BIOLOGIA E PROD DE SEMENTES FLORESTAIS, 4102124</td>
               <td></td>
           </tr>
           <tr>
               <td>4102224</td>
               <td>PLANEJAMENTO PAISAGISTICO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TOPOGRAFIA, 4102027, DENDROLOGIA, 4102020</td>
               <td></td>
           </tr>
           <tr>
               <td>4102225</td>
               <td>PRINCIPIOS DE ETNOBOTANICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>BOTÂNICA SISTEMÁTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>4102226</td>
               <td>PROCESSAMENTO MECANICO E ACAB DA MADEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROP. FÍSICAS E MECÂNICAS DA MADEIRA, 4102129</td>
               <td></td>
           </tr>
           <tr>
               <td>4102227</td>
               <td>PRODUTOS FLORESTAIS NAO MADEIREIROS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PROP. FÍSICAS E MECÂNICAS DA MADEIRA, 4102129</td>
               <td></td>
           </tr>
           <tr>
               <td>4102228</td>
-              <td>RELAÇÃO SOLO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>RELAÇÃO SOLO, ÁGUA E PLANTA</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>HIDROLOGIA BASICA, FISIOLOGIA VEGETAL, 4102100</td>
               <td></td>
           </tr>
           <tr>
               <td>4102229</td>
               <td>SENSORIAMENTO REMOTO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>SIST DE INFORM GEOG APLIC A C FLORESTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>4102230</td>
               <td>SILVICULTURA NO TROPICO SEMIARIDO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>IMPLANTACAO E MANUT DE POVOAM FLORESTAIS, 4102135</td>
               <td></td>
           </tr>
           <tr>
               <td>4102231</td>
               <td>SILVICULTURA URBANA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>DENDROLOGIA, 4102020, TOPOGRAFIA, 4102027</td>
               <td></td>
           </tr>
           <tr>
               <td>4102232</td>
               <td>TECNOLOGIA DE CELULOSE E PAPEL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PROP. FÍSICAS E MECÂNICAS DA MADEIRA, 4102129</td>
               <td></td>
           </tr>
           <tr>
               <td>4102236</td>
               <td>TEEF (DESCRIÇÃO E ANÁLISE DA VEGETAÇÃO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td>ECOLOGIA GERAL, 4102115, DENDROLOGIA, 4102020</td>
           </tr>
           <tr>
               <td>4102238</td>
               <td>TEEF(PATOLOGIA DE SEMENTES FLORESTAIS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>4102045, PATOLOGIA FLORESTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>4102239</td>
               <td>TEEF(ORNITOLOGIA APLICADA A CONSERVACAO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4102240</td>
               <td>TEEF (ANÁLISE DA VEGETAÇÃO DA CAATINGA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>4102115, ECOLOGIA GERAL, DENDROLOGIA, 4102020</td>
               <td></td>
           </tr>
           <tr>
               <td>4102241</td>
               <td>TEEF(INGLES TECNICO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4102242</td>
               <td>TEEF(EMPREENDEDORISMO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td>GESTAO EMPRESARIAL E MARKETING</td>
           </tr>
           <tr>
               <td>4102243</td>
               <td>TEEF(ERGO E SEG DO TRAB NO SETOR FLOR)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECANIZACAO FLORESTAL, COLHEITA E TRANSPORTE FLORESTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>4102244</td>
               <td>TEEF(ECOLOGIA DA POLINIZAÇÃO)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>4102245</td>
               <td>TEEF(COMPETENCIA PROFISSIONAL)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
@@ -761,8 +764,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "4102139", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4102165", "nome": "FUND PARA CALCULO DIFERENCIAL E INTEGRAL", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4102167", "nome": "INFORMÁTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4102171", "nome": "MORFOLOGIA E ANATOMIA VEGETAL", "ch": "90h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "4102184", "nome": "FILOSOFIA E ETICA PROFISSIONAL", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4102094", "nome": "BOTÂNICA SISTEMÁTICA", "ch": "60h", "preReqs": ["4102171", "4102117", "4102136"]}, {"nivel": "2º Nível", "codigo": "4102162", "nome": "CALCULO DIFERENCIAL E INTEGRAL", "ch": "60h", "preReqs": ["4102165"]}, {"nivel": "2º Nível", "codigo": "4102163", "nome": "ECOLOGIA GERAL", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4102164", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4102169", "nome": "MECÂNICA", "ch": "60h", "preReqs": ["4102165"]}, {"nivel": "2º Nível", "codigo": "4102170", "nome": "MICROBIOLOGIA GERAL", "ch": "45h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "4102172", "nome": "QUÍMICA ANALÍTICA", "ch": "45h", "preReqs": ["4102139", "4102016"]}, {"nivel": "3º Nível", "codigo": "4102097", "nome": "ESTATÍSTICA BÁSICA", "ch": "60h", "preReqs": ["4102162", "4102006"]}, {"nivel": "3º Nível", "codigo": "4102127", "nome": "DENDROMETRIA", "ch": "75h", "preReqs": ["4102097"]}, {"nivel": "3º Nível", "codigo": "4102160", "nome": "METODOLOGIA CIENTÍFICA E TECNOLÓGICA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "4102161", "nome": "BIOQUÍMICA VEGETAL", "ch": "60h", "preReqs": ["4102139", "4102016"]}, {"nivel": "3º Nível", "codigo": "4102173", "nome": "TERMODINAMICA", "ch": "30h", "preReqs": ["4102169", "4102024"]}, {"nivel": "3º Nível", "codigo": "4102174", "nome": "ZOOLOGIA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "4102179", "nome": "DENDROLOGIA", "ch": "60h", "preReqs": ["4102094"]}, {"nivel": "3º Nível", "codigo": "4102203", "nome": "TOPOGRAFIA", "ch": "60h", "preReqs": ["4102164", "4102015"]}, {"nivel": "4º Nível", "codigo": "4102159", "nome": "FISIOLOGIA VEGETAL", "ch": "60h", "preReqs": ["4102161", "4102085", "4102171", "4102117", "4102136"]}, {"nivel": "4º Nível", "codigo": "4102166", "nome": "GENETICA BASICA", "ch": "60h", "preReqs": ["4102097", "4102171", "4102117", "4102136"]}, {"nivel": "4º Nível", "codigo": "4102183", "nome": "ESTRUTURA ANATÔMICA E QUÍMICA DA MADEIRA", "ch": "60h", "preReqs": ["4102179", "4102020", "4102171", "4102117", "4102136"]}, {"nivel": "4º Nível", "codigo": "4102186", "nome": "HIDROLOGIA BASICA", "ch": "30h", "preReqs": ["4102173", "4102017"]}, {"nivel": "4º Nível", "codigo": "4102194", "nome": "PEDOLOGIA E FÍSICA DOS SOLOS", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "4102235", "nome": "FOTOGRAMETRIA E FOTOINTERPRETACAO", "ch": "60h", "preReqs": ["4102203", "4102027"]}, {"nivel": "5º Nível", "codigo": "4102061", "nome": "POLITICA E LEGISLACAO FLORESTAL", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "4102067", "nome": "EXPERIMENTACAO FLORESTAL", "ch": "60h", "preReqs": ["4102097"]}, {"nivel": "5º Nível", "codigo": "4102176", "nome": "BIOLOGIA E PROD DE SEMENTES FLORESTAIS", "ch": "60h", "preReqs": ["4102159", "4102100"]}, {"nivel": "5º Nível", "codigo": "4102181", "nome": "ECOSSISTEMAS FLORESTAIS", "ch": "30h", "preReqs": ["4102163", "4102115"]}, {"nivel": "5º Nível", "codigo": "4102182", "nome": "ENTOMOLOGIA FLORESTAL", "ch": "45h", "preReqs": ["4102174", "4102118"]}, {"nivel": "5º Nível", "codigo": "4102191", "nome": "METEOROLOGIA E CLIMATOLOGIA FLORESTAL", "ch": "45h", "preReqs": ["4102186"]}, {"nivel": "5º Nível", "codigo": "4102193", "nome": "PATOLOGIA FLORESTAL", "ch": "60h", "preReqs": ["4102170", "4102151", "4101029"]}, {"nivel": "5º Nível", "codigo": "4102197", "nome": "QUÍMICA E FERTILIZAÇÃO DOS SOLOS", "ch": "60h", "preReqs": ["4102194", "4102102"]}, {"nivel": "5º Nível", "codigo": "4102201", "nome": "SOCIOLOGIA RURAL", "ch": "30h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "4102042", "nome": "INVENTARIO FLORESTAL", "ch": "60h", "preReqs": ["4102127"]}, {"nivel": "6º Nível", "codigo": "4102080", "nome": "HIDRAULICA", "ch": "60h", "preReqs": ["4102169", "4102024"]}, {"nivel": "6º Nível", "codigo": "4102125", "nome": "VIVEIROS FLORESTAIS", "ch": "45h", "preReqs": ["4102176", "4102124"]}, {"nivel": "6º Nível", "codigo": "4102168", "nome": "INTRODUÇÃO À ECONOMIA", "ch": "30h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "4102177", "nome": "COMUNICAÇÃO E EXTENSÃO RURAL", "ch": "30h", "preReqs": ["4102201", "4102153"]}, {"nivel": "6º Nível", "codigo": "4102190", "nome": "MECANIZACAO FLORESTAL", "ch": "30h", "preReqs": ["4102169", "4102024", "4102194", "4102102"]}, {"nivel": "6º Nível", "codigo": "4102192", "nome": "NUTRICAO DE ESSENCIAS FLORESTAIS", "ch": "60h", "preReqs": ["4102159", "4102100", "4102197", "4102049"]}, {"nivel": "6º Nível", "codigo": "4102195", "nome": "PROP. FÍSICAS E MECÂNICAS DA MADEIRA", "ch": "60h", "preReqs": ["4102183", "4102128"]}, {"nivel": "7º Nível", "codigo": "4102050", "nome": "TECNOL E INDUS DE PROD FLORESTAIS", "ch": "60h", "preReqs": ["4102195", "4102129"]}, {"nivel": "7º Nível", "codigo": "4102052", "nome": "PRODUTOS ENERGETICOS MADEIRA", "ch": "45h", "preReqs": ["4102195", "4102129"]}, {"nivel": "7º Nível", "codigo": "4102058", "nome": "MELHORAMENTO FLORESTAL", "ch": "60h", "preReqs": ["4102166", "4102086", "4102067"]}, {"nivel": "7º Nível", "codigo": "4102123", "nome": "COLHEITA E TRANSPORTE FLORESTAL", "ch": "60h", "preReqs": ["4102190", "4102101"]}, {"nivel": "7º Nível", "codigo": "4102180", "nome": "ECONOMIA E ADMINISTRAÇÃO FLORESTAL", "ch": "90h", "preReqs": ["4102168", "4102098"]}, {"nivel": "7º Nível", "codigo": "4102187", "nome": "IMPLANTACAO E MANUT DE POVOAM FLORESTAIS", "ch": "45h", "preReqs": ["4102190", "4102101", "4102125"]}, {"nivel": "7º Nível", "codigo": "4102189", "nome": "MANEJO DE BACIAS HIDROGRAFICAS", "ch": "30h", "preReqs": ["4102181", "4102035", "4102186"]}, {"nivel": "8º Nível", "codigo": "4102105", "nome": "ESTRUTURAS DE MADEIRA", "ch": "60h", "preReqs": ["4102169", "4102024", "4102195", "4102129"]}, {"nivel": "8º Nível", "codigo": "4102130", "nome": "MANEJO FLORESTAL", "ch": "60h", "preReqs": ["4102042"]}, {"nivel": "8º Nível", "codigo": "4102188", "nome": "MANEJO DE AREAS SILVESTRES", "ch": "30h", "preReqs": ["4102181", "4102035"]}, {"nivel": "8º Nível", "codigo": "4102199", "nome": "SISTEMAS AGROFLORESTAIS", "ch": "60h", "preReqs": ["4102187", "4102135"]}, {"nivel": "8º Nível", "codigo": "4102200", "nome": "SIST DE INFORM GEOG APLIC A C FLORESTAL", "ch": "60h", "preReqs": ["4102235", "4102121"]}, {"nivel": "8º Nível", "codigo": "4102234", "nome": "MANEJO E CONSERVACAO DOS SOLOS", "ch": "60h", "preReqs": ["4102197", "4102049"]}, {"nivel": "9º Nível", "codigo": "4102175", "nome": "AVALIAÇÃO E PERÍCIAS RURAIS", "ch": "60h", "preReqs": ["4102203", "4102027", "4102180", "4102131"]}, {"nivel": "9º Nível", "codigo": "4102178", "nome": "CONSTRUCOES RURAIS", "ch": "30h", "preReqs": ["4102105"]}, {"nivel": "9º Nível", "codigo": "4102185", "nome": "GESTAO EMPRESARIAL E MARKETING", "ch": "30h", "preReqs": ["4102180", "4102131"]}, {"nivel": "9º Nível", "codigo": "4102196", "nome": "PROTECAO CONTRA INCENDIOS FLORESTAIS", "ch": "60h", "preReqs": ["4102191", "4102003"]}, {"nivel": "9º Nível", "codigo": "4102198", "nome": "RECUPERACAO DE AREAS DEGRADADAS", "ch": "60h", "preReqs": ["4102234", "4102059"]}, {"nivel": "10º Nível", "codigo": "4102202", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "45h", "preReqs": ["4102160", "4101028", "4102150"]}];
-  const codigoToNome = {"4102139": "QUÍMICA GERAL", "4102165": "FUND PARA CALCULO DIFERENCIAL E INTEGRAL", "4102167": "INFORMÁTICA", "4102171": "MORFOLOGIA E ANATOMIA VEGETAL", "4102184": "FILOSOFIA E ETICA PROFISSIONAL", "4102094": "BOTÂNICA SISTEMÁTICA", "4102162": "CALCULO DIFERENCIAL E INTEGRAL", "4102163": "ECOLOGIA GERAL", "4102164": "EXPRESSAO GRAFICA", "4102169": "MECÂNICA", "4102170": "MICROBIOLOGIA GERAL", "4102172": "QUÍMICA ANALÍTICA", "4102097": "ESTATÍSTICA BÁSICA", "4102127": "DENDROMETRIA", "4102160": "METODOLOGIA CIENTÍFICA E TECNOLÓGICA", "4102161": "BIOQUÍMICA VEGETAL", "4102173": "TERMODINAMICA", "4102174": "ZOOLOGIA GERAL", "4102179": "DENDROLOGIA", "4102203": "TOPOGRAFIA", "4102159": "FISIOLOGIA VEGETAL", "4102166": "GENETICA BASICA", "4102183": "ESTRUTURA ANATÔMICA E QUÍMICA DA MADEIRA", "4102186": "HIDROLOGIA BASICA", "4102194": "PEDOLOGIA E FÍSICA DOS SOLOS", "4102235": "FOTOGRAMETRIA E FOTOINTERPRETACAO", "4102061": "POLITICA E LEGISLACAO FLORESTAL", "4102067": "EXPERIMENTACAO FLORESTAL", "4102176": "BIOLOGIA E PROD DE SEMENTES FLORESTAIS", "4102181": "ECOSSISTEMAS FLORESTAIS", "4102182": "ENTOMOLOGIA FLORESTAL", "4102191": "METEOROLOGIA E CLIMATOLOGIA FLORESTAL", "4102193": "PATOLOGIA FLORESTAL", "4102197": "QUÍMICA E FERTILIZAÇÃO DOS SOLOS", "4102201": "SOCIOLOGIA RURAL", "4102042": "INVENTARIO FLORESTAL", "4102080": "HIDRAULICA", "4102125": "VIVEIROS FLORESTAIS", "4102168": "INTRODUÇÃO À ECONOMIA", "4102177": "COMUNICAÇÃO E EXTENSÃO RURAL", "4102190": "MECANIZACAO FLORESTAL", "4102192": "NUTRICAO DE ESSENCIAS FLORESTAIS", "4102195": "PROP. FÍSICAS E MECÂNICAS DA MADEIRA", "4102050": "TECNOL E INDUS DE PROD FLORESTAIS", "4102052": "PRODUTOS ENERGETICOS MADEIRA", "4102058": "MELHORAMENTO FLORESTAL", "4102123": "COLHEITA E TRANSPORTE FLORESTAL", "4102180": "ECONOMIA E ADMINISTRAÇÃO FLORESTAL", "4102187": "IMPLANTACAO E MANUT DE POVOAM FLORESTAIS", "4102189": "MANEJO DE BACIAS HIDROGRAFICAS", "4102105": "ESTRUTURAS DE MADEIRA", "4102130": "MANEJO FLORESTAL", "4102188": "MANEJO DE AREAS SILVESTRES", "4102199": "SISTEMAS AGROFLORESTAIS", "4102200": "SIST DE INFORM GEOG APLIC A C FLORESTAL", "4102234": "MANEJO E CONSERVACAO DOS SOLOS", "4102175": "AVALIAÇÃO E PERÍCIAS RURAIS", "4102178": "CONSTRUCOES RURAIS", "4102185": "GESTAO EMPRESARIAL E MARKETING", "4102196": "PROTECAO CONTRA INCENDIOS FLORESTAIS", "4102198": "RECUPERACAO DE AREAS DEGRADADAS", "4102202": "TRABALHO DE CONCLUSAO DE CURSO", "4102007": "QUÍMICA ORGÂNICA", "4102026": "IRRIGACAO E DRENAGEM", "4102065": "ELAB E AVAL DE PROJ FLORESTAIS", "4102088": "PRÁTICA DESPORTIVA", "4102206": "AGROTOXICOLOGIA", "4102207": "AVALIAÇÃO QUAL. DE SEMENTES FLORESTAIS", "4102208": "BIODETERIORAÇÃO E PRESERVAÇÃO DA MADEIRA", "4102209": "ECOTURISMO", "4102210": "EDUCAÇÃO AMBIENTAL", "4102211": "ENERGIA PARA O MEIO RURAL", "4102212": "ESTRUTURA E MANEJO DE FLORESTAS NATIVAS", "4102213": "ESTUDOS DE IMPACTOS AMBIENTAIS", "4102214": "FRUTICULTURA TROPICAL", "4102215": "GEOLOGIA E MINERALOGIA", "4102216": "GESTAO URBANA E MEIO AMBIENTE", "4102217": "INTRODUÇÃO À CIÊNCIA FLORESTAL", "4102218": "LINGUA BRASILEIRA DE SINAIS (LIBRAS)", "4102219": "MANEJO DA FAUNA SILVESTRE", "4102220": "MANEJO ECOLOGICO DE PRAGAS", "4102221": "MELIPONICULTURA", "4102222": "ORGANISMOS DO SOLO DE IMPORT AGROFLOREST", "4102223": "PATOLOGIA DE SEMENTES FLORESTAIS", "4102224": "PLANEJAMENTO PAISAGISTICO", "4102225": "PRINCIPIOS DE ETNOBOTANICA", "4102226": "PROCESSAMENTO MECANICO E ACAB DA MADEIRA", "4102227": "PRODUTOS FLORESTAIS NAO MADEIREIROS", "4102228": "RELAÇÃO SOLO", "4102229": "SENSORIAMENTO REMOTO", "4102230": "SILVICULTURA NO TROPICO SEMIARIDO", "4102231": "SILVICULTURA URBANA", "4102232": "TECNOLOGIA DE CELULOSE E PAPEL", "4102236": "TEEF (DESCRIÇÃO E ANÁLISE DA VEGETAÇÃO)", "4102238": "TEEF(PATOLOGIA DE SEMENTES FLORESTAIS)", "4102239": "TEEF(ORNITOLOGIA APLICADA A CONSERVACAO)", "4102240": "TEEF (ANÁLISE DA VEGETAÇÃO DA CAATINGA)", "4102241": "TEEF(INGLES TECNICO)", "4102242": "TEEF(EMPREENDEDORISMO)", "4102243": "TEEF(ERGO E SEG DO TRAB NO SETOR FLOR)", "4102244": "TEEF(ECOLOGIA DA POLINIZAÇÃO)", "4102245": "TEEF(COMPETENCIA PROFISSIONAL)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "4102139", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "4102165", "nome": "FUND PARA CALCULO DIFERENCIAL E INTEGRAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "4102167", "nome": "INFORMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "4102171", "nome": "MORFOLOGIA E ANATOMIA VEGETAL", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "4102184", "nome": "FILOSOFIA E ETICA PROFISSIONAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "4102094", "nome": "BOTÂNICA SISTEMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102171", "4102117", "4102136"]}, {"nivel": "2º Nível", "codigo": "4102162", "nome": "CALCULO DIFERENCIAL E INTEGRAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102165"]}, {"nivel": "2º Nível", "codigo": "4102163", "nome": "ECOLOGIA GERAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "4102164", "nome": "EXPRESSAO GRAFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "4102169", "nome": "MECÂNICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102165"]}, {"nivel": "2º Nível", "codigo": "4102170", "nome": "MICROBIOLOGIA GERAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "4102172", "nome": "QUÍMICA ANALÍTICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102139", "4102016"]}, {"nivel": "3º Nível", "codigo": "4102204", "nome": "ESTAGIO SUPERVISIONADO I", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "3º Nível", "codigo": "4102097", "nome": "ESTATÍSTICA BÁSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102162", "4102006"]}, {"nivel": "3º Nível", "codigo": "4102127", "nome": "DENDROMETRIA", "ch": "75\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102097"]}, {"nivel": "3º Nível", "codigo": "4102160", "nome": "METODOLOGIA CIENTÍFICA E TECNOLÓGICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "4102161", "nome": "BIOQUÍMICA VEGETAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102139", "4102016"]}, {"nivel": "3º Nível", "codigo": "4102173", "nome": "TERMODINAMICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102169", "4102024"]}, {"nivel": "3º Nível", "codigo": "4102174", "nome": "ZOOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "4102179", "nome": "DENDROLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102094"]}, {"nivel": "3º Nível", "codigo": "4102203", "nome": "TOPOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102164", "4102015"]}, {"nivel": "4º Nível", "codigo": "4102159", "nome": "FISIOLOGIA VEGETAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102161", "4102085", "4102171", "4102117", "4102136"]}, {"nivel": "4º Nível", "codigo": "4102166", "nome": "GENETICA BASICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102097", "4102171", "4102117", "4102136"]}, {"nivel": "4º Nível", "codigo": "4102183", "nome": "ESTRUTURA ANATÔMICA E QUÍMICA DA MADEIRA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102179", "4102020", "4102171", "4102117", "4102136"]}, {"nivel": "4º Nível", "codigo": "4102186", "nome": "HIDROLOGIA BASICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102173", "4102017"]}, {"nivel": "4º Nível", "codigo": "4102194", "nome": "PEDOLOGIA E FÍSICA DOS SOLOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "4102235", "nome": "FOTOGRAMETRIA E FOTOINTERPRETACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102203", "4102027"]}, {"nivel": "5º Nível", "codigo": "4102061", "nome": "POLITICA E LEGISLACAO FLORESTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "4102067", "nome": "EXPERIMENTACAO FLORESTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102097"]}, {"nivel": "5º Nível", "codigo": "4102176", "nome": "BIOLOGIA E PROD DE SEMENTES FLORESTAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102159", "4102100"]}, {"nivel": "5º Nível", "codigo": "4102181", "nome": "ECOSSISTEMAS FLORESTAIS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102163", "4102115"]}, {"nivel": "5º Nível", "codigo": "4102182", "nome": "ENTOMOLOGIA FLORESTAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102174", "4102118"]}, {"nivel": "5º Nível", "codigo": "4102191", "nome": "METEOROLOGIA E CLIMATOLOGIA FLORESTAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102186"]}, {"nivel": "5º Nível", "codigo": "4102193", "nome": "PATOLOGIA FLORESTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102170", "4102151", "4101029"]}, {"nivel": "5º Nível", "codigo": "4102197", "nome": "QUÍMICA E FERTILIZAÇÃO DOS SOLOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102194", "4102102"]}, {"nivel": "5º Nível", "codigo": "4102201", "nome": "SOCIOLOGIA RURAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "4102042", "nome": "INVENTARIO FLORESTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102127"]}, {"nivel": "6º Nível", "codigo": "4102080", "nome": "HIDRAULICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102169", "4102024"]}, {"nivel": "6º Nível", "codigo": "4102125", "nome": "VIVEIROS FLORESTAIS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102176", "4102124"]}, {"nivel": "6º Nível", "codigo": "4102168", "nome": "INTRODUÇÃO À ECONOMIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "4102177", "nome": "COMUNICAÇÃO E EXTENSÃO RURAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102201", "4102153"]}, {"nivel": "6º Nível", "codigo": "4102190", "nome": "MECANIZACAO FLORESTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102169", "4102024", "4102194", "4102102"]}, {"nivel": "6º Nível", "codigo": "4102192", "nome": "NUTRICAO DE ESSENCIAS FLORESTAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102159", "4102100", "4102197", "4102049"]}, {"nivel": "6º Nível", "codigo": "4102195", "nome": "PROP. FÍSICAS E MECÂNICAS DA MADEIRA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102183", "4102128"]}, {"nivel": "7º Nível", "codigo": "4102050", "nome": "TECNOL E INDUS DE PROD FLORESTAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102195", "4102129"]}, {"nivel": "7º Nível", "codigo": "4102052", "nome": "PRODUTOS ENERGETICOS MADEIRA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102195", "4102129"]}, {"nivel": "7º Nível", "codigo": "4102058", "nome": "MELHORAMENTO FLORESTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102166", "4102086", "4102067"]}, {"nivel": "7º Nível", "codigo": "4102123", "nome": "COLHEITA E TRANSPORTE FLORESTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102190", "4102101"]}, {"nivel": "7º Nível", "codigo": "4102180", "nome": "ECONOMIA E ADMINISTRAÇÃO FLORESTAL", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102168", "4102098"]}, {"nivel": "7º Nível", "codigo": "4102187", "nome": "IMPLANTACAO E MANUT DE POVOAM FLORESTAIS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102190", "4102101", "4102125"]}, {"nivel": "7º Nível", "codigo": "4102189", "nome": "MANEJO DE BACIAS HIDROGRAFICAS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102181", "4102035", "4102186"]}, {"nivel": "8º Nível", "codigo": "4102105", "nome": "ESTRUTURAS DE MADEIRA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102169", "4102024", "4102195", "4102129"]}, {"nivel": "8º Nível", "codigo": "4102130", "nome": "MANEJO FLORESTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102042"]}, {"nivel": "8º Nível", "codigo": "4102188", "nome": "MANEJO DE AREAS SILVESTRES", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102181", "4102035"]}, {"nivel": "8º Nível", "codigo": "4102199", "nome": "SISTEMAS AGROFLORESTAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102187", "4102135"]}, {"nivel": "8º Nível", "codigo": "4102200", "nome": "SIST DE INFORM GEOG APLIC A C FLORESTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102235", "4102121"]}, {"nivel": "8º Nível", "codigo": "4102234", "nome": "MANEJO E CONSERVACAO DOS SOLOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102197", "4102049"]}, {"nivel": "9º Nível", "codigo": "4102175", "nome": "AVALIAÇÃO E PERÍCIAS RURAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102203", "4102027", "4102180", "4102131"]}, {"nivel": "9º Nível", "codigo": "4102178", "nome": "CONSTRUCOES RURAIS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102105"]}, {"nivel": "9º Nível", "codigo": "4102185", "nome": "GESTAO EMPRESARIAL E MARKETING", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102180", "4102131"]}, {"nivel": "9º Nível", "codigo": "4102196", "nome": "PROTECAO CONTRA INCENDIOS FLORESTAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102191", "4102003"]}, {"nivel": "9º Nível", "codigo": "4102198", "nome": "RECUPERACAO DE AREAS DEGRADADAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102234", "4102059"]}, {"nivel": "10º Nível", "codigo": "4102205", "nome": "ESTAGIO SUPERVISIONADO II", "ch": "120\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["4102204"]}, {"nivel": "10º Nível", "codigo": "4102202", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["4102160", "4101028", "4102150"]}];
+  const codigoToNome = {"4102139": "QUÍMICA GERAL", "4102165": "FUND PARA CALCULO DIFERENCIAL E INTEGRAL", "4102167": "INFORMÁTICA", "4102171": "MORFOLOGIA E ANATOMIA VEGETAL", "4102184": "FILOSOFIA E ETICA PROFISSIONAL", "4102094": "BOTÂNICA SISTEMÁTICA", "4102162": "CALCULO DIFERENCIAL E INTEGRAL", "4102163": "ECOLOGIA GERAL", "4102164": "EXPRESSAO GRAFICA", "4102169": "MECÂNICA", "4102170": "MICROBIOLOGIA GERAL", "4102172": "QUÍMICA ANALÍTICA", "4102204": "ESTAGIO SUPERVISIONADO I", "4102097": "ESTATÍSTICA BÁSICA", "4102127": "DENDROMETRIA", "4102160": "METODOLOGIA CIENTÍFICA E TECNOLÓGICA", "4102161": "BIOQUÍMICA VEGETAL", "4102173": "TERMODINAMICA", "4102174": "ZOOLOGIA GERAL", "4102179": "DENDROLOGIA", "4102203": "TOPOGRAFIA", "4102159": "FISIOLOGIA VEGETAL", "4102166": "GENETICA BASICA", "4102183": "ESTRUTURA ANATÔMICA E QUÍMICA DA MADEIRA", "4102186": "HIDROLOGIA BASICA", "4102194": "PEDOLOGIA E FÍSICA DOS SOLOS", "4102235": "FOTOGRAMETRIA E FOTOINTERPRETACAO", "4102061": "POLITICA E LEGISLACAO FLORESTAL", "4102067": "EXPERIMENTACAO FLORESTAL", "4102176": "BIOLOGIA E PROD DE SEMENTES FLORESTAIS", "4102181": "ECOSSISTEMAS FLORESTAIS", "4102182": "ENTOMOLOGIA FLORESTAL", "4102191": "METEOROLOGIA E CLIMATOLOGIA FLORESTAL", "4102193": "PATOLOGIA FLORESTAL", "4102197": "QUÍMICA E FERTILIZAÇÃO DOS SOLOS", "4102201": "SOCIOLOGIA RURAL", "4102042": "INVENTARIO FLORESTAL", "4102080": "HIDRAULICA", "4102125": "VIVEIROS FLORESTAIS", "4102168": "INTRODUÇÃO À ECONOMIA", "4102177": "COMUNICAÇÃO E EXTENSÃO RURAL", "4102190": "MECANIZACAO FLORESTAL", "4102192": "NUTRICAO DE ESSENCIAS FLORESTAIS", "4102195": "PROP. FÍSICAS E MECÂNICAS DA MADEIRA", "4102050": "TECNOL E INDUS DE PROD FLORESTAIS", "4102052": "PRODUTOS ENERGETICOS MADEIRA", "4102058": "MELHORAMENTO FLORESTAL", "4102123": "COLHEITA E TRANSPORTE FLORESTAL", "4102180": "ECONOMIA E ADMINISTRAÇÃO FLORESTAL", "4102187": "IMPLANTACAO E MANUT DE POVOAM FLORESTAIS", "4102189": "MANEJO DE BACIAS HIDROGRAFICAS", "4102105": "ESTRUTURAS DE MADEIRA", "4102130": "MANEJO FLORESTAL", "4102188": "MANEJO DE AREAS SILVESTRES", "4102199": "SISTEMAS AGROFLORESTAIS", "4102200": "SIST DE INFORM GEOG APLIC A C FLORESTAL", "4102234": "MANEJO E CONSERVACAO DOS SOLOS", "4102175": "AVALIAÇÃO E PERÍCIAS RURAIS", "4102178": "CONSTRUCOES RURAIS", "4102185": "GESTAO EMPRESARIAL E MARKETING", "4102196": "PROTECAO CONTRA INCENDIOS FLORESTAIS", "4102198": "RECUPERACAO DE AREAS DEGRADADAS", "4102205": "ESTAGIO SUPERVISIONADO II", "4102202": "TRABALHO DE CONCLUSAO DE CURSO", "4102007": "QUÍMICA ORGÂNICA", "4102026": "IRRIGACAO E DRENAGEM", "4102065": "ELAB E AVAL DE PROJ FLORESTAIS", "4102088": "PRÁTICA DESPORTIVA", "4102206": "AGROTOXICOLOGIA", "4102207": "AVALIAÇÃO QUAL. DE SEMENTES FLORESTAIS", "4102208": "BIODETERIORAÇÃO E PRESERVAÇÃO DA MADEIRA", "4102209": "ECOTURISMO", "4102210": "EDUCAÇÃO AMBIENTAL", "4102211": "ENERGIA PARA O MEIO RURAL", "4102212": "ESTRUTURA E MANEJO DE FLORESTAS NATIVAS", "4102213": "ESTUDOS DE IMPACTOS AMBIENTAIS", "4102214": "FRUTICULTURA TROPICAL", "4102215": "GEOLOGIA E MINERALOGIA", "4102216": "GESTAO URBANA E MEIO AMBIENTE", "4102217": "INTRODUÇÃO À CIÊNCIA FLORESTAL", "4102218": "LINGUA BRASILEIRA DE SINAIS (LIBRAS)", "4102219": "MANEJO DA FAUNA SILVESTRE", "4102220": "MANEJO ECOLOGICO DE PRAGAS", "4102221": "MELIPONICULTURA", "4102222": "ORGANISMOS DO SOLO DE IMPORT AGROFLOREST", "4102223": "PATOLOGIA DE SEMENTES FLORESTAIS", "4102224": "PLANEJAMENTO PAISAGISTICO", "4102225": "PRINCIPIOS DE ETNOBOTANICA", "4102226": "PROCESSAMENTO MECANICO E ACAB DA MADEIRA", "4102227": "PRODUTOS FLORESTAIS NAO MADEIREIROS", "4102228": "RELAÇÃO SOLO, ÁGUA E PLANTA", "4102229": "SENSORIAMENTO REMOTO", "4102230": "SILVICULTURA NO TROPICO SEMIARIDO", "4102231": "SILVICULTURA URBANA", "4102232": "TECNOLOGIA DE CELULOSE E PAPEL", "4102236": "TEEF (DESCRIÇÃO E ANÁLISE DA VEGETAÇÃO)", "4102238": "TEEF(PATOLOGIA DE SEMENTES FLORESTAIS)", "4102239": "TEEF(ORNITOLOGIA APLICADA A CONSERVACAO)", "4102240": "TEEF (ANÁLISE DA VEGETAÇÃO DA CAATINGA)", "4102241": "TEEF(INGLES TECNICO)", "4102242": "TEEF(EMPREENDEDORISMO)", "4102243": "TEEF(ERGO E SEG DO TRAB NO SETOR FLOR)", "4102244": "TEEF(ECOLOGIA DA POLINIZAÇÃO)", "4102245": "TEEF(COMPETENCIA PROFISSIONAL)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -874,7 +877,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

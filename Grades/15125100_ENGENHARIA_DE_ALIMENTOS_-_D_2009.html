@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,160 +404,160 @@
           <tr>
               <td>1504309</td>
               <td>TECNOLOGIA DE PESCADO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MICROBIOLOGIA BASICA, 1201198</td>
               <td></td>
           </tr>
           <tr>
               <td>1504310</td>
-              <td>OLEOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>OLEOS, GORDURAS E BEBIDAS</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BIOQUÍMICA DE ALIMENTOS II, OPERACOES UNITARIAS III</td>
               <td></td>
           </tr>
           <tr>
               <td>1504311</td>
               <td>ADITIVOS E COADJ NA IND DE ALIMENTOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1504312</td>
               <td>TECNOLOGIA DE CEREAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1504313</td>
               <td>ARMAZENAMENTO DE PRODUTOS AGRICOLA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1502128, TERMODINAMICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1504314</td>
               <td>SECAGEM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1502128, TERMODINAMICA, FENOMENOS DE TRANSPORTE III</td>
               <td></td>
           </tr>
           <tr>
               <td>1504315</td>
               <td>TECNOLOGIA DE PROCESSOS FERMENTATIVOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ENGENHARIA DE BIOQUÍMICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1504316</td>
               <td>DESENVOLVIMENTO DE NOVOS PRODUTOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FORMACAO DE EMPREENDEDORES, ECONOMIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1307150</td>
               <td>INGLÊS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307169</td>
               <td>LÍNGUA PORTUGUESA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1504317</td>
               <td>TRATAMEN DE EFLUENTES NA IND DE ALIMENTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1502216, CIÊNCIAS DO AMBIENTE</td>
               <td></td>
           </tr>
           <tr>
               <td>1504318</td>
               <td>PROCESSOS DE SEPARAÇÃO COM MEMBRANAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>OPERACOES UNITARIAS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1504319</td>
               <td>TECNOLOGIA DE FRUTAS E HORTALIÇAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1504320</td>
               <td>PROP. FÍSICAS DOS MATERIAIS BIOLÓGICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FENOMENOS DE TRANSPORTE I</td>
               <td></td>
           </tr>
           <tr>
               <td>1504321</td>
               <td>ANÁLISE INSTRUMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>QUÍMICA ANALÍTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1504327</td>
               <td>TEEAL(TOXICOLOGIA DE ALIMENTOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BIOQUÍMICA DE ALIMENTOS II</td>
               <td></td>
           </tr>
           <tr>
               <td>1504328</td>
               <td>TEEAL(MODELAGEM E SIMULACAO DE PROCESSOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TERMODINAMICA, FENOMENOS DE TRANSPORTE II</td>
               <td></td>
           </tr>
           <tr>
               <td>1504329</td>
               <td>TEEAL(FISIOL PÓS-COLHEITA DE FRUT E HORT</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BIOQUÍMICA DE ALIMENTOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1504330</td>
               <td>TEEAL(TECNOLOGIA DA PRODUÇÃO DE BEBIDAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MICROBIOLOGIA DE ALIMENTOS, ENGENHARIA DE BIOQUÍMICA</td>
               <td></td>
           </tr>
@@ -601,8 +604,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1504210", "nome": "INTRODUÇÃO À ENGENHARIA DE ALIMENTOS", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1107004", "nome": "QUÍMICA ORGÂNICA I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1107256", "nome": "QUÍMICA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1108030", "1109126"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109126"]}, {"nivel": "2º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1107265", "nome": "FÍSICO-QUÍMICA", "ch": "60h", "preReqs": ["1107232"]}, {"nivel": "3º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["1109131", "1109049"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60h", "preReqs": ["1109035", "1109131"]}, {"nivel": "3º Nível", "codigo": "1303021", "nome": "ECONOMIA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60h", "preReqs": ["1109049", "1109131", "1411001"]}, {"nivel": "3º Nível", "codigo": "1503070", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1108099", "nome": "MECÂNICA GERAL", "ch": "60h", "preReqs": ["1108030", "1109131"]}, {"nivel": "4º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60h", "preReqs": ["1108081", "1109131"]}, {"nivel": "4º Nível", "codigo": "1108101", "nome": "FÍSICA EXPERIMENTAL II", "ch": "60h", "preReqs": ["1108023", "1108081"]}, {"nivel": "4º Nível", "codigo": "1504213", "nome": "HIGIENE E LEGISLACAO DE ALIMENTOS", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1504214", "nome": "BIOQUÍMICA DE ALIMENTOS I", "ch": "60h", "preReqs": ["1107004"]}, {"nivel": "4º Nível", "codigo": "1504215", "nome": "MICROBIOLOGIA BASICA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1404026", "nome": "ELETROTÉCNICA GERAL", "ch": "60h", "preReqs": ["1108100"]}, {"nivel": "5º Nível", "codigo": "1504217", "nome": "FENOMENOS DE TRANSPORTE I", "ch": "60h", "preReqs": ["1109128"]}, {"nivel": "5º Nível", "codigo": "1504218", "nome": "BIOQUÍMICA DE ALIMENTOS II", "ch": "60h", "preReqs": ["1504214"]}, {"nivel": "5º Nível", "codigo": "1504219", "nome": "ESTATÍSTICA EXPERIMENTAL", "ch": "60h", "preReqs": ["1109126"]}, {"nivel": "5º Nível", "codigo": "1504220", "nome": "MICROBIOLOGIA DE ALIMENTOS", "ch": "60h", "preReqs": ["1201198", "1504215"]}, {"nivel": "5º Nível", "codigo": "1504325", "nome": "RESISTENCIA DOS MATERIAIS", "ch": "60h", "preReqs": ["1108099"]}, {"nivel": "5º Nível", "codigo": "1504326", "nome": "TERMODINAMICA", "ch": "60h", "preReqs": ["1108081", "1109126"]}, {"nivel": "6º Nível", "codigo": "1504211", "nome": "REDAÇÃO TÉCNICO-CIENTÍFICA", "ch": "30h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1504222", "nome": "OPERACOES UNITARIAS I", "ch": "60h", "preReqs": ["1504217"]}, {"nivel": "6º Nível", "codigo": "1504223", "nome": "FENOMENOS DE TRANSPORTE II", "ch": "60h", "preReqs": ["1504217", "1504326", "1502128"]}, {"nivel": "6º Nível", "codigo": "1504224", "nome": "ANÁLISE DE ALIMENTOS", "ch": "60h", "preReqs": ["1107256", "1107265", "1107010", "1504214"]}, {"nivel": "6º Nível", "codigo": "1504225", "nome": "EMBALAGENS", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1504226", "nome": "REFRIGERACAO", "ch": "60h", "preReqs": ["1502128", "1504326"]}, {"nivel": "7º Nível", "codigo": "1301076", "nome": "FORMACAO DE EMPREENDEDORES", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1504227", "nome": "FENOMENOS DE TRANSPORTE III", "ch": "60h", "preReqs": ["1504223"]}, {"nivel": "7º Nível", "codigo": "1504228", "nome": "OPERACOES UNITARIAS II", "ch": "60h", "preReqs": ["1504222"]}, {"nivel": "7º Nível", "codigo": "1504229", "nome": "PROCESS DE ALIMENTOS DE ORIGEM VEGETAL", "ch": "60h", "preReqs": ["1504213", "1504220"]}, {"nivel": "7º Nível", "codigo": "1504300", "nome": "CONTROLE DE QUALIDADE", "ch": "60h", "preReqs": ["1504213", "1504219"]}, {"nivel": "7º Nível", "codigo": "1504301", "nome": "ENGENHARIA DE BIOQUÍMICA", "ch": "60h", "preReqs": ["1504220", "1504218"]}, {"nivel": "7º Nível", "codigo": "1504302", "nome": "TECNOLOGIA DE LEITE E DERIVADO", "ch": "60h", "preReqs": ["1504220"]}, {"nivel": "8º Nível", "codigo": "1305148", "nome": "SOCIOLOGIA E ANTROPOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1504303", "nome": "OPERACOES UNITARIAS III", "ch": "60h", "preReqs": ["1504228"]}, {"nivel": "8º Nível", "codigo": "1504304", "nome": "INSTRUMENTACAO E CONTROLE", "ch": "60h", "preReqs": ["1504228"]}, {"nivel": "8º Nível", "codigo": "1504305", "nome": "ANÁLISE SENSORIAL", "ch": "60h", "preReqs": ["1504219"]}, {"nivel": "8º Nível", "codigo": "1504306", "nome": "INSTALACOES INDUSTRIAIS", "ch": "60h", "preReqs": ["1504228"]}, {"nivel": "8º Nível", "codigo": "1504307", "nome": "FUNDAMENTOS DE NUTRICAO", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1504308", "nome": "PROCESSAMENTO DE ALIM DE ORIGEM ANIMAL", "ch": "60h", "preReqs": ["1504213", "1504220"]}];
-  const codigoToNome = {"1107232": "QUÍMICA GERAL", "1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1113019": "EXPRESSAO GRAFICA", "1504210": "INTRODUÇÃO À ENGENHARIA DE ALIMENTOS", "1107004": "QUÍMICA ORGÂNICA I", "1107256": "QUÍMICA ANALÍTICA", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1107265": "FÍSICO-QUÍMICA", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1303021": "ECONOMIA", "1411075": "CALCULO NUMERICO", "1503070": "CIÊNCIAS DO AMBIENTE", "1108099": "MECÂNICA GERAL", "1108100": "FÍSICA GERAL III", "1108101": "FÍSICA EXPERIMENTAL II", "1504213": "HIGIENE E LEGISLACAO DE ALIMENTOS", "1504214": "BIOQUÍMICA DE ALIMENTOS I", "1504215": "MICROBIOLOGIA BASICA", "1404026": "ELETROTÉCNICA GERAL", "1504217": "FENOMENOS DE TRANSPORTE I", "1504218": "BIOQUÍMICA DE ALIMENTOS II", "1504219": "ESTATÍSTICA EXPERIMENTAL", "1504220": "MICROBIOLOGIA DE ALIMENTOS", "1504325": "RESISTENCIA DOS MATERIAIS", "1504326": "TERMODINAMICA", "1504211": "REDAÇÃO TÉCNICO-CIENTÍFICA", "1504222": "OPERACOES UNITARIAS I", "1504223": "FENOMENOS DE TRANSPORTE II", "1504224": "ANÁLISE DE ALIMENTOS", "1504225": "EMBALAGENS", "1504226": "REFRIGERACAO", "1301076": "FORMACAO DE EMPREENDEDORES", "1504227": "FENOMENOS DE TRANSPORTE III", "1504228": "OPERACOES UNITARIAS II", "1504229": "PROCESS DE ALIMENTOS DE ORIGEM VEGETAL", "1504300": "CONTROLE DE QUALIDADE", "1504301": "ENGENHARIA DE BIOQUÍMICA", "1504302": "TECNOLOGIA DE LEITE E DERIVADO", "1305148": "SOCIOLOGIA E ANTROPOLOGIA", "1504303": "OPERACOES UNITARIAS III", "1504304": "INSTRUMENTACAO E CONTROLE", "1504305": "ANÁLISE SENSORIAL", "1504306": "INSTALACOES INDUSTRIAIS", "1504307": "FUNDAMENTOS DE NUTRICAO", "1504308": "PROCESSAMENTO DE ALIM DE ORIGEM ANIMAL", "1504309": "TECNOLOGIA DE PESCADO", "1504310": "OLEOS", "1504311": "ADITIVOS E COADJ NA IND DE ALIMENTOS", "1504312": "TECNOLOGIA DE CEREAIS", "1504313": "ARMAZENAMENTO DE PRODUTOS AGRICOLA", "1504314": "SECAGEM", "1504315": "TECNOLOGIA DE PROCESSOS FERMENTATIVOS", "1504316": "DESENVOLVIMENTO DE NOVOS PRODUTOS", "1307150": "INGLÊS", "1307169": "LÍNGUA PORTUGUESA", "1307332": "LIBRAS", "1504317": "TRATAMEN DE EFLUENTES NA IND DE ALIMENTO", "1504318": "PROCESSOS DE SEPARAÇÃO COM MEMBRANAS", "1504319": "TECNOLOGIA DE FRUTAS E HORTALIÇAS", "1504320": "PROP. FÍSICAS DOS MATERIAIS BIOLÓGICOS", "1504321": "ANÁLISE INSTRUMENTAL", "1504327": "TEEAL(TOXICOLOGIA DE ALIMENTOS)", "1504328": "TEEAL(MODELAGEM E SIMULACAO DE PROCESSOS", "1504329": "TEEAL(FISIOL PÓS-COLHEITA DE FRUT E HORT", "1504330": "TEEAL(TECNOLOGIA DA PRODUÇÃO DE BEBIDAS)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1504210", "nome": "INTRODUÇÃO À ENGENHARIA DE ALIMENTOS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1107004", "nome": "QUÍMICA ORGÂNICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1107256", "nome": "QUÍMICA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030", "1109126"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126"]}, {"nivel": "2º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1107265", "nome": "FÍSICO-QUÍMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1107232"]}, {"nivel": "3º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109049"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035", "1109131"]}, {"nivel": "3º Nível", "codigo": "1303021", "nome": "ECONOMIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109049", "1109131", "1411001"]}, {"nivel": "3º Nível", "codigo": "1503070", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1108099", "nome": "MECÂNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030", "1109131"]}, {"nivel": "4º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108081", "1109131"]}, {"nivel": "4º Nível", "codigo": "1108101", "nome": "FÍSICA EXPERIMENTAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108023", "1108081"]}, {"nivel": "4º Nível", "codigo": "1504213", "nome": "HIGIENE E LEGISLACAO DE ALIMENTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1504214", "nome": "BIOQUÍMICA DE ALIMENTOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1107004"]}, {"nivel": "4º Nível", "codigo": "1504215", "nome": "MICROBIOLOGIA BASICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1404026", "nome": "ELETROTÉCNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108100"]}, {"nivel": "5º Nível", "codigo": "1504217", "nome": "FENOMENOS DE TRANSPORTE I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109128"]}, {"nivel": "5º Nível", "codigo": "1504218", "nome": "BIOQUÍMICA DE ALIMENTOS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504214"]}, {"nivel": "5º Nível", "codigo": "1504219", "nome": "ESTATÍSTICA EXPERIMENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126"]}, {"nivel": "5º Nível", "codigo": "1504220", "nome": "MICROBIOLOGIA DE ALIMENTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1201198", "1504215"]}, {"nivel": "5º Nível", "codigo": "1504325", "nome": "RESISTENCIA DOS MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108099"]}, {"nivel": "5º Nível", "codigo": "1504326", "nome": "TERMODINAMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108081", "1109126"]}, {"nivel": "6º Nível", "codigo": "1504211", "nome": "REDAÇÃO TÉCNICO-CIENTÍFICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1504222", "nome": "OPERACOES UNITARIAS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504217"]}, {"nivel": "6º Nível", "codigo": "1504223", "nome": "FENOMENOS DE TRANSPORTE II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504217", "1504326", "1502128"]}, {"nivel": "6º Nível", "codigo": "1504224", "nome": "ANÁLISE DE ALIMENTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1107256", "1107265", "1107010", "1504214"]}, {"nivel": "6º Nível", "codigo": "1504225", "nome": "EMBALAGENS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1504226", "nome": "REFRIGERACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502128", "1504326"]}, {"nivel": "7º Nível", "codigo": "1301076", "nome": "FORMACAO DE EMPREENDEDORES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1504227", "nome": "FENOMENOS DE TRANSPORTE III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504223"]}, {"nivel": "7º Nível", "codigo": "1504228", "nome": "OPERACOES UNITARIAS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504222"]}, {"nivel": "7º Nível", "codigo": "1504229", "nome": "PROCESS DE ALIMENTOS DE ORIGEM VEGETAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504213", "1504220"]}, {"nivel": "7º Nível", "codigo": "1504300", "nome": "CONTROLE DE QUALIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504213", "1504219"]}, {"nivel": "7º Nível", "codigo": "1504301", "nome": "ENGENHARIA DE BIOQUÍMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504220", "1504218"]}, {"nivel": "7º Nível", "codigo": "1504302", "nome": "TECNOLOGIA DE LEITE E DERIVADO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504220"]}, {"nivel": "8º Nível", "codigo": "1305148", "nome": "SOCIOLOGIA E ANTROPOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1504303", "nome": "OPERACOES UNITARIAS III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504228"]}, {"nivel": "8º Nível", "codigo": "1504304", "nome": "INSTRUMENTACAO E CONTROLE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504228"]}, {"nivel": "8º Nível", "codigo": "1504305", "nome": "ANÁLISE SENSORIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504219"]}, {"nivel": "8º Nível", "codigo": "1504306", "nome": "INSTALACOES INDUSTRIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504228"]}, {"nivel": "8º Nível", "codigo": "1504307", "nome": "FUNDAMENTOS DE NUTRICAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1504308", "nome": "PROCESSAMENTO DE ALIM DE ORIGEM ANIMAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1504213", "1504220"]}, {"nivel": "10º Nível", "codigo": "1504322", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO", "ch": "180\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1504323", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1504211"]}, {"nivel": "10º Nível", "codigo": "1504324", "nome": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}];
+  const codigoToNome = {"1107232": "QUÍMICA GERAL", "1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1113019": "EXPRESSAO GRAFICA", "1504210": "INTRODUÇÃO À ENGENHARIA DE ALIMENTOS", "1107004": "QUÍMICA ORGÂNICA I", "1107256": "QUÍMICA ANALÍTICA", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1107265": "FÍSICO-QUÍMICA", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1303021": "ECONOMIA", "1411075": "CALCULO NUMERICO", "1503070": "CIÊNCIAS DO AMBIENTE", "1108099": "MECÂNICA GERAL", "1108100": "FÍSICA GERAL III", "1108101": "FÍSICA EXPERIMENTAL II", "1504213": "HIGIENE E LEGISLACAO DE ALIMENTOS", "1504214": "BIOQUÍMICA DE ALIMENTOS I", "1504215": "MICROBIOLOGIA BASICA", "1404026": "ELETROTÉCNICA GERAL", "1504217": "FENOMENOS DE TRANSPORTE I", "1504218": "BIOQUÍMICA DE ALIMENTOS II", "1504219": "ESTATÍSTICA EXPERIMENTAL", "1504220": "MICROBIOLOGIA DE ALIMENTOS", "1504325": "RESISTENCIA DOS MATERIAIS", "1504326": "TERMODINAMICA", "1504211": "REDAÇÃO TÉCNICO-CIENTÍFICA", "1504222": "OPERACOES UNITARIAS I", "1504223": "FENOMENOS DE TRANSPORTE II", "1504224": "ANÁLISE DE ALIMENTOS", "1504225": "EMBALAGENS", "1504226": "REFRIGERACAO", "1301076": "FORMACAO DE EMPREENDEDORES", "1504227": "FENOMENOS DE TRANSPORTE III", "1504228": "OPERACOES UNITARIAS II", "1504229": "PROCESS DE ALIMENTOS DE ORIGEM VEGETAL", "1504300": "CONTROLE DE QUALIDADE", "1504301": "ENGENHARIA DE BIOQUÍMICA", "1504302": "TECNOLOGIA DE LEITE E DERIVADO", "1305148": "SOCIOLOGIA E ANTROPOLOGIA", "1504303": "OPERACOES UNITARIAS III", "1504304": "INSTRUMENTACAO E CONTROLE", "1504305": "ANÁLISE SENSORIAL", "1504306": "INSTALACOES INDUSTRIAIS", "1504307": "FUNDAMENTOS DE NUTRICAO", "1504308": "PROCESSAMENTO DE ALIM DE ORIGEM ANIMAL", "1504322": "ESTAGIO CURRICULAR SUPERVISIONADO", "1504323": "TRABALHO DE CONCLUSAO DE CURSO", "1504324": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "1504309": "TECNOLOGIA DE PESCADO", "1504310": "OLEOS, GORDURAS E BEBIDAS", "1504311": "ADITIVOS E COADJ NA IND DE ALIMENTOS", "1504312": "TECNOLOGIA DE CEREAIS", "1504313": "ARMAZENAMENTO DE PRODUTOS AGRICOLA", "1504314": "SECAGEM", "1504315": "TECNOLOGIA DE PROCESSOS FERMENTATIVOS", "1504316": "DESENVOLVIMENTO DE NOVOS PRODUTOS", "1307150": "INGLÊS", "1307169": "LÍNGUA PORTUGUESA", "1307332": "LIBRAS", "1504317": "TRATAMEN DE EFLUENTES NA IND DE ALIMENTO", "1504318": "PROCESSOS DE SEPARAÇÃO COM MEMBRANAS", "1504319": "TECNOLOGIA DE FRUTAS E HORTALIÇAS", "1504320": "PROP. FÍSICAS DOS MATERIAIS BIOLÓGICOS", "1504321": "ANÁLISE INSTRUMENTAL", "1504327": "TEEAL(TOXICOLOGIA DE ALIMENTOS)", "1504328": "TEEAL(MODELAGEM E SIMULACAO DE PROCESSOS", "1504329": "TEEAL(FISIOL PÓS-COLHEITA DE FRUT E HORT", "1504330": "TEEAL(TECNOLOGIA DA PRODUÇÃO DE BEBIDAS)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -714,7 +717,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

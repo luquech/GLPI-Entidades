@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,168 +404,168 @@
           <tr>
               <td>3101129</td>
               <td>TRABALHO NA CONTEMPORANEIDADE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101137</td>
               <td>A QUESTÃO URBANA NO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101142</td>
               <td>DESENVOLVIMENTO REGIONAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101143</td>
               <td>FAMILIA E RELACOES DE GENERO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101171</td>
               <td>ESTATÍSTICA E ANÁLISE DE IND SOCIAIS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101136</td>
               <td>SAUDE MENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101150</td>
               <td>CULTURA BRASILEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101168</td>
               <td>OFICINA DE ELAB DE PROJETOS SOCIAIS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101155</td>
               <td>DIREITOS HUMANOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101319</td>
               <td>GESTAO AMBIENTAL E POLITICAS PUBLICAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101320</td>
               <td>OFICINA DE INST. TECN. EM SERVIÇO SOCIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101321</td>
               <td>TERCEIRO SETOR E SERVICO SOCIAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101364</td>
               <td>TESS(INSTRUMENTALIDADE EM SERVICO SOCIAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101365</td>
               <td>TESS(SERV SOC E ESP SOCIO-OCUPACIONAIS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101370</td>
               <td>TESS(POLIT.DE SEGUR.ALIM. E NUTRICIONAL)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101371</td>
               <td>TESS(OFOCINA DE PROJETO DE PESQUISA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101372</td>
               <td>TESS(OLIT.SOBRE DROGAS E RED. DE DANOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101373</td>
               <td>A QUESTAO AGRARIA BRASILEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101374</td>
               <td>PORTUGUES INSTRUMENTAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101375</td>
               <td>AVALIAÇÃO E MONITORAMENTO DE POL SOCIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101377</td>
               <td>TESS(EDUCAÇÃO POPULAR E SERVIÇO SOCIAL)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
@@ -609,8 +612,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "3101123", "nome": "INTRODUÇÃO AO SERVIÇO SOCIAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101124", "nome": "SOCIOLOGIA I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101125", "nome": "FILOSOFIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101126", "nome": "PSICOLOGIA SOCIAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101127", "nome": "FORMACAO SOCIAL DO BRASIL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101128", "nome": "METODOLOGIA DO TRABALHO ACADEMICO", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "3101130", "nome": "SERVICO SOCIAL I", "ch": "60h", "preReqs": ["3101123"]}, {"nivel": "2º Nível", "codigo": "3101131", "nome": "TEORIA POLITICA MODERNA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "3101132", "nome": "FILOSOFIA POLITICA", "ch": "60h", "preReqs": ["3101125"]}, {"nivel": "2º Nível", "codigo": "3101133", "nome": "SOCIOLOGIA II", "ch": "60h", "preReqs": ["3101124"]}, {"nivel": "2º Nível", "codigo": "3101134", "nome": "INFLUENCIAS FILOSOFICAS NO SERV SOCIAL", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "3101135", "nome": "ANTROPOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "3101138", "nome": "SERVICO SOCIAL II", "ch": "60h", "preReqs": ["3101130"]}, {"nivel": "3º Nível", "codigo": "3101139", "nome": "TEORIA POLITICA CONTEMPORANEA", "ch": "60h", "preReqs": ["3101131"]}, {"nivel": "3º Nível", "codigo": "3101140", "nome": "DIREITO E LEGISLAÇÃO SOCIAL", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "3101141", "nome": "ECONOMIA POLITICA E SERVICO SOCIAL", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "3101144", "nome": "SERVICO SOCIAL III", "ch": "60h", "preReqs": ["3101138"]}, {"nivel": "4º Nível", "codigo": "3101145", "nome": "QUESTAO SOCIAL NO BRASIL", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "3101146", "nome": "MOVIMENTOS SOCIAIS", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "3101147", "nome": "TRABALHO E SOCIABILIDADE", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "3101148", "nome": "POLITICA SOCIAL I", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "3101151", "nome": "SERVICO SOCIAL IV", "ch": "60h", "preReqs": ["3101144"]}, {"nivel": "5º Nível", "codigo": "3101152", "nome": "POLITICA SOCIAL II", "ch": "60h", "preReqs": ["3101148"]}, {"nivel": "5º Nível", "codigo": "3101153", "nome": "METODOLOGIA DA PESQUISA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "3101154", "nome": "ETICA PROFISSIONAL", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "3101156", "nome": "SEGURIDADE SOCIAL DO BRASIL", "ch": "60h", "preReqs": ["3101148"]}, {"nivel": "6º Nível", "codigo": "3101157", "nome": "DEBATE CONTEMPORANEO DO SERVICO SOCIAL", "ch": "60h", "preReqs": ["3101151"]}, {"nivel": "6º Nível", "codigo": "3101158", "nome": "PESQUISA EM SERVICO SOCIAL", "ch": "60h", "preReqs": ["3101153"]}, {"nivel": "6º Nível", "codigo": "3101159", "nome": "POLITICA DE ASSISTENCIA SOCIAL", "ch": "60h", "preReqs": ["3101148"]}, {"nivel": "6º Nível", "codigo": "3101160", "nome": "POLITICA DE PROT A CRIANCA E AO ADOLESC", "ch": "60h", "preReqs": ["3101148"]}, {"nivel": "6º Nível", "codigo": "3101161", "nome": "SEMINARIO TEMATICO I", "ch": "60h", "preReqs": ["3101154"]}, {"nivel": "7º Nível", "codigo": "3101163", "nome": "SERVICO SOCIAL E PROCESSO DE TRABALHO", "ch": "60h", "preReqs": ["3101151"]}, {"nivel": "7º Nível", "codigo": "3101164", "nome": "SEMINARIO DE MONOGRAFIA", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "3101165", "nome": "PLANEJAMENTO SOCIAL", "ch": "60h", "preReqs": ["3101151"]}, {"nivel": "7º Nível", "codigo": "3101166", "nome": "SEMINARIO TEMATICO II", "ch": "60h", "preReqs": ["3101161"]}, {"nivel": "8º Nível", "codigo": "3101149", "nome": "POLITICA DE PREVIDENCIA SOCIAL", "ch": "60h", "preReqs": ["3101148", "3101152"]}, {"nivel": "8º Nível", "codigo": "3101170", "nome": "POLITICA DE SAUDE NO BRASIL", "ch": "60h", "preReqs": ["3101148", "3101152"]}];
-  const codigoToNome = {"3101123": "INTRODUÇÃO AO SERVIÇO SOCIAL", "3101124": "SOCIOLOGIA I", "3101125": "FILOSOFIA", "3101126": "PSICOLOGIA SOCIAL", "3101127": "FORMACAO SOCIAL DO BRASIL", "3101128": "METODOLOGIA DO TRABALHO ACADEMICO", "3101130": "SERVICO SOCIAL I", "3101131": "TEORIA POLITICA MODERNA", "3101132": "FILOSOFIA POLITICA", "3101133": "SOCIOLOGIA II", "3101134": "INFLUENCIAS FILOSOFICAS NO SERV SOCIAL", "3101135": "ANTROPOLOGIA", "3101138": "SERVICO SOCIAL II", "3101139": "TEORIA POLITICA CONTEMPORANEA", "3101140": "DIREITO E LEGISLAÇÃO SOCIAL", "3101141": "ECONOMIA POLITICA E SERVICO SOCIAL", "3101144": "SERVICO SOCIAL III", "3101145": "QUESTAO SOCIAL NO BRASIL", "3101146": "MOVIMENTOS SOCIAIS", "3101147": "TRABALHO E SOCIABILIDADE", "3101148": "POLITICA SOCIAL I", "3101151": "SERVICO SOCIAL IV", "3101152": "POLITICA SOCIAL II", "3101153": "METODOLOGIA DA PESQUISA", "3101154": "ETICA PROFISSIONAL", "3101156": "SEGURIDADE SOCIAL DO BRASIL", "3101157": "DEBATE CONTEMPORANEO DO SERVICO SOCIAL", "3101158": "PESQUISA EM SERVICO SOCIAL", "3101159": "POLITICA DE ASSISTENCIA SOCIAL", "3101160": "POLITICA DE PROT A CRIANCA E AO ADOLESC", "3101161": "SEMINARIO TEMATICO I", "3101163": "SERVICO SOCIAL E PROCESSO DE TRABALHO", "3101164": "SEMINARIO DE MONOGRAFIA", "3101165": "PLANEJAMENTO SOCIAL", "3101166": "SEMINARIO TEMATICO II", "3101149": "POLITICA DE PREVIDENCIA SOCIAL", "3101170": "POLITICA DE SAUDE NO BRASIL", "3101129": "TRABALHO NA CONTEMPORANEIDADE", "3101137": "A QUESTÃO URBANA NO BRASIL", "3101142": "DESENVOLVIMENTO REGIONAL", "3101143": "FAMILIA E RELACOES DE GENERO", "3101171": "ESTATÍSTICA E ANÁLISE DE IND SOCIAIS", "3101136": "SAUDE MENTAL", "3101150": "CULTURA BRASILEIRA", "3101168": "OFICINA DE ELAB DE PROJETOS SOCIAIS", "3101155": "DIREITOS HUMANOS", "3101319": "GESTAO AMBIENTAL E POLITICAS PUBLICAS", "3101320": "OFICINA DE INST. TECN. EM SERVIÇO SOCIAL", "3101321": "TERCEIRO SETOR E SERVICO SOCIAL", "3101364": "TESS(INSTRUMENTALIDADE EM SERVICO SOCIAL", "3101365": "TESS(SERV SOC E ESP SOCIO-OCUPACIONAIS)", "3101370": "TESS(POLIT.DE SEGUR.ALIM. E NUTRICIONAL)", "3101371": "TESS(OFOCINA DE PROJETO DE PESQUISA)", "3101372": "TESS(OLIT.SOBRE DROGAS E RED. DE DANOS)", "3101373": "A QUESTAO AGRARIA BRASILEIRA", "3101374": "PORTUGUES INSTRUMENTAL", "3101375": "AVALIAÇÃO E MONITORAMENTO DE POL SOCIAIS", "3101377": "TESS(EDUCAÇÃO POPULAR E SERVIÇO SOCIAL)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "3101123", "nome": "INTRODUÇÃO AO SERVIÇO SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101124", "nome": "SOCIOLOGIA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101125", "nome": "FILOSOFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101126", "nome": "PSICOLOGIA SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101127", "nome": "FORMACAO SOCIAL DO BRASIL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101128", "nome": "METODOLOGIA DO TRABALHO ACADEMICO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "3101130", "nome": "SERVICO SOCIAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101123"]}, {"nivel": "2º Nível", "codigo": "3101131", "nome": "TEORIA POLITICA MODERNA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "3101132", "nome": "FILOSOFIA POLITICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101125"]}, {"nivel": "2º Nível", "codigo": "3101133", "nome": "SOCIOLOGIA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101124"]}, {"nivel": "2º Nível", "codigo": "3101134", "nome": "INFLUENCIAS FILOSOFICAS NO SERV SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "3101135", "nome": "ANTROPOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "3101138", "nome": "SERVICO SOCIAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101130"]}, {"nivel": "3º Nível", "codigo": "3101139", "nome": "TEORIA POLITICA CONTEMPORANEA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101131"]}, {"nivel": "3º Nível", "codigo": "3101140", "nome": "DIREITO E LEGISLAÇÃO SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "3101141", "nome": "ECONOMIA POLITICA E SERVICO SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "3101144", "nome": "SERVICO SOCIAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101138"]}, {"nivel": "4º Nível", "codigo": "3101145", "nome": "QUESTAO SOCIAL NO BRASIL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "3101146", "nome": "MOVIMENTOS SOCIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "3101147", "nome": "TRABALHO E SOCIABILIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "3101148", "nome": "POLITICA SOCIAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "3101151", "nome": "SERVICO SOCIAL IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101144"]}, {"nivel": "5º Nível", "codigo": "3101152", "nome": "POLITICA SOCIAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101148"]}, {"nivel": "5º Nível", "codigo": "3101153", "nome": "METODOLOGIA DA PESQUISA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "3101154", "nome": "ETICA PROFISSIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "3101156", "nome": "SEGURIDADE SOCIAL DO BRASIL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101148"]}, {"nivel": "6º Nível", "codigo": "3101162", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO I", "ch": "150\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "6º Nível", "codigo": "3101157", "nome": "DEBATE CONTEMPORANEO DO SERVICO SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101151"]}, {"nivel": "6º Nível", "codigo": "3101158", "nome": "PESQUISA EM SERVICO SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101153"]}, {"nivel": "6º Nível", "codigo": "3101159", "nome": "POLITICA DE ASSISTENCIA SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101148"]}, {"nivel": "6º Nível", "codigo": "3101160", "nome": "POLITICA DE PROT A CRIANCA E AO ADOLESC", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101148"]}, {"nivel": "6º Nível", "codigo": "3101161", "nome": "SEMINARIO TEMATICO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101154"]}, {"nivel": "7º Nível", "codigo": "3101167", "nome": "ESTAGIO CURRICULAR SUPERVISIONADO II", "ch": "150\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["3101162"]}, {"nivel": "7º Nível", "codigo": "3101163", "nome": "SERVICO SOCIAL E PROCESSO DE TRABALHO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101151"]}, {"nivel": "7º Nível", "codigo": "3101164", "nome": "SEMINARIO DE MONOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "3101165", "nome": "PLANEJAMENTO SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101151"]}, {"nivel": "7º Nível", "codigo": "3101166", "nome": "SEMINARIO TEMATICO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101161"]}, {"nivel": "8º Nível", "codigo": "3101169", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["3101164"]}, {"nivel": "8º Nível", "codigo": "3101318", "nome": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "ch": "150\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "8º Nível", "codigo": "3101149", "nome": "POLITICA DE PREVIDENCIA SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101148", "3101152"]}, {"nivel": "8º Nível", "codigo": "3101170", "nome": "POLITICA DE SAUDE NO BRASIL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101148", "3101152"]}];
+  const codigoToNome = {"3101123": "INTRODUÇÃO AO SERVIÇO SOCIAL", "3101124": "SOCIOLOGIA I", "3101125": "FILOSOFIA", "3101126": "PSICOLOGIA SOCIAL", "3101127": "FORMACAO SOCIAL DO BRASIL", "3101128": "METODOLOGIA DO TRABALHO ACADEMICO", "3101130": "SERVICO SOCIAL I", "3101131": "TEORIA POLITICA MODERNA", "3101132": "FILOSOFIA POLITICA", "3101133": "SOCIOLOGIA II", "3101134": "INFLUENCIAS FILOSOFICAS NO SERV SOCIAL", "3101135": "ANTROPOLOGIA", "3101138": "SERVICO SOCIAL II", "3101139": "TEORIA POLITICA CONTEMPORANEA", "3101140": "DIREITO E LEGISLAÇÃO SOCIAL", "3101141": "ECONOMIA POLITICA E SERVICO SOCIAL", "3101144": "SERVICO SOCIAL III", "3101145": "QUESTAO SOCIAL NO BRASIL", "3101146": "MOVIMENTOS SOCIAIS", "3101147": "TRABALHO E SOCIABILIDADE", "3101148": "POLITICA SOCIAL I", "3101151": "SERVICO SOCIAL IV", "3101152": "POLITICA SOCIAL II", "3101153": "METODOLOGIA DA PESQUISA", "3101154": "ETICA PROFISSIONAL", "3101156": "SEGURIDADE SOCIAL DO BRASIL", "3101162": "ESTAGIO CURRICULAR SUPERVISIONADO I", "3101157": "DEBATE CONTEMPORANEO DO SERVICO SOCIAL", "3101158": "PESQUISA EM SERVICO SOCIAL", "3101159": "POLITICA DE ASSISTENCIA SOCIAL", "3101160": "POLITICA DE PROT A CRIANCA E AO ADOLESC", "3101161": "SEMINARIO TEMATICO I", "3101167": "ESTAGIO CURRICULAR SUPERVISIONADO II", "3101163": "SERVICO SOCIAL E PROCESSO DE TRABALHO", "3101164": "SEMINARIO DE MONOGRAFIA", "3101165": "PLANEJAMENTO SOCIAL", "3101166": "SEMINARIO TEMATICO II", "3101169": "TRABALHO DE CONCLUSAO DE CURSO", "3101318": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "3101149": "POLITICA DE PREVIDENCIA SOCIAL", "3101170": "POLITICA DE SAUDE NO BRASIL", "3101129": "TRABALHO NA CONTEMPORANEIDADE", "3101137": "A QUESTÃO URBANA NO BRASIL", "3101142": "DESENVOLVIMENTO REGIONAL", "3101143": "FAMILIA E RELACOES DE GENERO", "3101171": "ESTATÍSTICA E ANÁLISE DE IND SOCIAIS", "3101136": "SAUDE MENTAL", "3101150": "CULTURA BRASILEIRA", "3101168": "OFICINA DE ELAB DE PROJETOS SOCIAIS", "3101155": "DIREITOS HUMANOS", "3101319": "GESTAO AMBIENTAL E POLITICAS PUBLICAS", "3101320": "OFICINA DE INST. TECN. EM SERVIÇO SOCIAL", "3101321": "TERCEIRO SETOR E SERVICO SOCIAL", "3101364": "TESS(INSTRUMENTALIDADE EM SERVICO SOCIAL", "3101365": "TESS(SERV SOC E ESP SOCIO-OCUPACIONAIS)", "3101370": "TESS(POLIT.DE SEGUR.ALIM. E NUTRICIONAL)", "3101371": "TESS(OFOCINA DE PROJETO DE PESQUISA)", "3101372": "TESS(OLIT.SOBRE DROGAS E RED. DE DANOS)", "3101373": "A QUESTAO AGRARIA BRASILEIRA", "3101374": "PORTUGUES INSTRUMENTAL", "3101375": "AVALIAÇÃO E MONITORAMENTO DE POL SOCIAIS", "3101377": "TESS(EDUCAÇÃO POPULAR E SERVIÇO SOCIAL)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -722,7 +725,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

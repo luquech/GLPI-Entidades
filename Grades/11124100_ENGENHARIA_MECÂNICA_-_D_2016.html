@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,368 +404,368 @@
           <tr>
               <td>1109134</td>
               <td>CALCULO AVANCADO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL III, ÁLGEBRA LINEAR I</td>
               <td></td>
           </tr>
           <tr>
               <td>1304013</td>
               <td>BASQUETEBOL - MASC</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304025</td>
               <td>BASQUETEBOL - FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304055</td>
               <td>FUTSAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305140</td>
               <td>METODOS E TECNICAS DE PESQUISA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105097</td>
               <td>TUBULACOES INDUSTRIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECÂNICA DOS FLUIDOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1105122</td>
               <td>ERGONOMIA APLICADA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ADMINISTRACAO DA PRODUCAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1105141</td>
               <td>METALURGIA DA SOLDAGEM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105427</td>
               <td>CORROSAO DE MATERIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAIS DE CONSTRUÇÃO MECÂNICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1105428</td>
               <td>LABORATORIO DE FUSAO E SOLIDIFICACAO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PROCESSOS METALURGICOS DE FABRICACAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1105429</td>
               <td>LABORATORIO DE SOLDAGEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PROCESSOS METALURGICOS DE FABRICACAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1105430</td>
               <td>MATERIAIS COMPOSITOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAIS DE CONSTRUÇÃO MECÂNICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1105431</td>
               <td>MECANICA DA FRATURA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAIS DE CONSTRUÇÃO MECÂNICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1105432</td>
               <td>SELECAO DE MATERIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAIS DE CONSTRUÇÃO MECÂNICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1105433</td>
               <td>TECNICAS METALOGRAFICAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAIS DE CONSTRUÇÃO MECÂNICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1105434</td>
               <td>TRANSFORMACAO DE FASES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATERIAIS DE CONSTRUÇÃO MECÂNICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1105435</td>
               <td>CONTROLE ESTATISTICO DE QUALIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À ESTATÍSTICA, ADMINISTRACAO DA PRODUCAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1105436</td>
               <td>GESTAO DA MANUTENCAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ADMINISTRACAO DA PRODUCAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1105437</td>
               <td>GESTAO DA QUALIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ADMINISTRACAO DA PRODUCAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1105438</td>
               <td>DESENHO ASSISTIDO POR COMPUTADOR</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>DESENHO TECNICO MECANICO</td>
               <td></td>
           </tr>
           <tr>
               <td>1105439</td>
               <td>INSTRUMENTACAO ELETRONICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SENSORES E TRANSDUTORES</td>
               <td></td>
           </tr>
           <tr>
               <td>1105440</td>
               <td>MANUT.PREDITIVA POR ANALISE DE VIBRACOES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>VIBRAÇÕES MECÂNICAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1105441</td>
               <td>IDENTIFICACAO DE SISTEMAS DINAMICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA DE CONTROLE</td>
               <td></td>
           </tr>
           <tr>
               <td>1105442</td>
               <td>SENSORES E TRANSDUTORES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTROD A ELETRONICA ANALOGICA E DIGITAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1105443</td>
               <td>TEORIA DE CONTROLE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>VIBRAÇÕES MECÂNICAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1105444</td>
               <td>CONDICIONAMENTO DE AR AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TRANSFERENCIA DE CALOR II</td>
               <td></td>
           </tr>
           <tr>
               <td>1105445</td>
               <td>FUNDAMENTOS DE IMPACTOS AMBIENTAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105446</td>
               <td>POLUICAO AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105447</td>
               <td>METODOS COMPUTACIONAIS EM TERMOFLUIDOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TRANSFERENCIA DE CALOR II</td>
               <td></td>
           </tr>
           <tr>
               <td>1105461</td>
               <td>TE(TOP EM MATEMATICA APLIC A ENGENHARIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL III, 1109051, MECANICA DOS CORPOS RIGIDOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1105462</td>
               <td>TE(OFICINA MECANICA)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>METROLOGIA MECANICA LINEAR</td>
               <td></td>
           </tr>
           <tr>
               <td>1105463</td>
               <td>SOLIDIFICACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROCESSOS METALURGICOS DE FABRICACAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1105464</td>
               <td>FONTES DE ENERGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105465</td>
-              <td>GERACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>GERACAO,UTILIZACAO E DIST DE VAPOR</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TERMODINAMICA APLICADA I, MECÂNICA DOS FLUIDOS II</td>
               <td></td>
           </tr>
           <tr>
               <td>1105466</td>
               <td>VENTILACAO INDUSTRIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECÂNICA DOS FLUIDOS II</td>
               <td></td>
           </tr>
           <tr>
               <td>1105467</td>
               <td>TE(PROJETO INTEGRADOR I)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOLOGIA DE PROJETO</td>
               <td></td>
           </tr>
           <tr>
               <td>1105468</td>
               <td>TE(PROJETO INTEGRADOR II)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TE(PROJETO INTEGRADOR I)</td>
               <td></td>
           </tr>
           <tr>
               <td>1105469</td>
               <td>TE(PROJETO INTEGRADOR III)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TE(PROJETO INTEGRADOR II)</td>
               <td></td>
           </tr>
           <tr>
               <td>1105470</td>
               <td>TE(PROJETO INTEGRADOR IV)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TE(PROJETO INTEGRADOR III)</td>
               <td></td>
           </tr>
           <tr>
               <td>1113061</td>
               <td>DESENHO ASSISTIDO POR COMPUTADOR</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>DESENHO TECNICO MECANICO</td>
               <td></td>
           </tr>
           <tr>
               <td>1304123</td>
               <td>FUTSAL - FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304207</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307150</td>
               <td>INGLÊS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307178</td>
               <td>FRANCES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307179</td>
               <td>ESPANHOL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -809,8 +812,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1105453", "nome": "INTRODUCAO A ENGENHARIA MECANICA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305212", "nome": "SOCIOLOGIA INDUSTRIAL", "ch": "45h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305412", "nome": "DIREITO PARA ENGENHARIA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1105410", "nome": "QUIMICA DOS MATERIAIS", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1108030", "1109126", "1109035"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109126"]}, {"nivel": "2º Nível", "codigo": "1303161", "nome": "ECONOMIA PARA ENGENHARIA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60h", "preReqs": ["1411001"]}, {"nivel": "3º Nível", "codigo": "1105160", "nome": "MATERIAIS DE CONSTRUÇÃO MECÂNICA I", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1105411", "nome": "MECANICA DOS CORPOS RIGIDOS I", "ch": "60h", "preReqs": ["1109035", "1109131", "1108030"]}, {"nivel": "3º Nível", "codigo": "1105413", "nome": "DESENHO TECNICO MECANICO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60h", "preReqs": ["1108031", "1108081", "1109131"]}, {"nivel": "3º Nível", "codigo": "1108101", "nome": "FÍSICA EXPERIMENTAL II", "ch": "60h", "preReqs": ["1108023"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60h", "preReqs": ["1109035", "1109131"]}, {"nivel": "3º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60h", "preReqs": ["1109131", "1109049"]}, {"nivel": "4º Nível", "codigo": "1105182", "nome": "MATERIAIS DE CONSTRUÇÃO MECÂNICA II", "ch": "60h", "preReqs": ["1105160"]}, {"nivel": "4º Nível", "codigo": "1105412", "nome": "MECANICA DOS CORPOS RIGIDOS II", "ch": "60h", "preReqs": ["1105411", "1109128"]}, {"nivel": "4º Nível", "codigo": "1105451", "nome": "INTROD A ELETRONICA ANALOGICA E DIGITAL", "ch": "60h", "preReqs": ["1108100", "1108025"]}, {"nivel": "4º Nível", "codigo": "1105452", "nome": "DESENHO DE MAQUINAS", "ch": "60h", "preReqs": ["1105413"]}, {"nivel": "4º Nível", "codigo": "1105454", "nome": "LAB DE MATERIAIS DE CONSTRUCAO MECANICA", "ch": "30h", "preReqs": ["1105160"]}, {"nivel": "4º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["1109131", "1109049"]}, {"nivel": "4º Nível", "codigo": "1114130", "nome": "INTRODUÇÃO À ESTATÍSTICA", "ch": "60h", "preReqs": ["1114129"]}, {"nivel": "5º Nível", "codigo": "1105123", "nome": "ENSAIOS DE MATERIAIS", "ch": "60h", "preReqs": ["1105160"]}, {"nivel": "5º Nível", "codigo": "1105161", "nome": "MECÂNICA DOS FLUIDOS I", "ch": "60h", "preReqs": ["1109053", "1109131"]}, {"nivel": "5º Nível", "codigo": "1105414", "nome": "CINEMATICA DAS MAQUINAS", "ch": "60h", "preReqs": ["1105412"]}, {"nivel": "5º Nível", "codigo": "1105415", "nome": "TERMODINAMICA APLICADA I", "ch": "60h", "preReqs": ["1109128", "1108031", "1108081"]}, {"nivel": "5º Nível", "codigo": "1105421", "nome": "METROLOGIA MECANICA LINEAR", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1105422", "nome": "MECANICA DE CORPOS DEFORMAVEIS I", "ch": "60h", "preReqs": ["1105411"]}, {"nivel": "5º Nível", "codigo": "1105460", "nome": "ELETROTECNICA INDUSTRIAL", "ch": "60h", "preReqs": ["1108100", "1108101", "1108024"]}, {"nivel": "6º Nível", "codigo": "1105183", "nome": "MECÂNICA DOS FLUIDOS II", "ch": "60h", "preReqs": ["1105161"]}, {"nivel": "6º Nível", "codigo": "1105184", "nome": "DINÂMICA DAS MÁQUINAS", "ch": "60h", "preReqs": ["1105414"]}, {"nivel": "6º Nível", "codigo": "1105416", "nome": "TERMODINAMICA APLICADA II", "ch": "60h", "preReqs": ["1105415", "1109128"]}, {"nivel": "6º Nível", "codigo": "1105417", "nome": "PROCESSOS DE USINAGEM", "ch": "60h", "preReqs": ["1105182"]}, {"nivel": "6º Nível", "codigo": "1105418", "nome": "PROCESSOS METALURGICOS DE FABRICACAO", "ch": "60h", "preReqs": ["1105182"]}, {"nivel": "6º Nível", "codigo": "1105423", "nome": "MECANICA DE CORPOS DEFORMAVEIS II", "ch": "60h", "preReqs": ["1105422"]}, {"nivel": "6º Nível", "codigo": "1105455", "nome": "MAQUINAS TERMICAS", "ch": "60h", "preReqs": ["1105415"]}, {"nivel": "7º Nível", "codigo": "1105021", "nome": "VIBRAÇÕES MECÂNICAS", "ch": "60h", "preReqs": ["1109010", "1105184"]}, {"nivel": "7º Nível", "codigo": "1105166", "nome": "TRANSFERENCIA DE CALOR I", "ch": "60h", "preReqs": ["1109010", "1105415"]}, {"nivel": "7º Nível", "codigo": "1105185", "nome": "MAQUINAS HIDRAULICAS E PNEUMATICAS", "ch": "60h", "preReqs": ["1105183"]}, {"nivel": "7º Nível", "codigo": "1105419", "nome": "ELEMENTOS ESTATICOS DE MAQUINAS", "ch": "60h", "preReqs": ["1105423"]}, {"nivel": "7º Nível", "codigo": "1105424", "nome": "PROCESSOS DE CONFORMACAO MECANICA", "ch": "60h", "preReqs": ["1105182"]}, {"nivel": "7º Nível", "codigo": "1105425", "nome": "ADMINISTRACAO E EMPREENDEDORISMO", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1105456", "nome": "LAB DE MAQ HIDRAULICAS E PNEUMATICAS", "ch": "30h", "preReqs": ["1105183"]}, {"nivel": "8º Nível", "codigo": "1105186", "nome": "TRANSFERENCIA DE CALOR II", "ch": "60h", "preReqs": ["1105166", "1105183"]}, {"nivel": "8º Nível", "codigo": "1105199", "nome": "METODOLOGIA DE PROJETO", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1105420", "nome": "ELEMENTOS DINAMICOS DE MAQUINAS", "ch": "60h", "preReqs": ["1105423"]}, {"nivel": "8º Nível", "codigo": "1105426", "nome": "ADMINISTRACAO DA PRODUCAO", "ch": "60h", "preReqs": ["1105425"]}, {"nivel": "8º Nível", "codigo": "1105457", "nome": "LABORATORIO DE CALOR E FLUIDOS", "ch": "30h", "preReqs": ["1105166"]}, {"nivel": "8º Nível", "codigo": "1307169", "nome": "LÍNGUA PORTUGUESA", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1503070", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "60h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "1105025", "nome": "MAQUINAS DE ELEVAÇÃO E TRANSPORTES", "ch": "60h", "preReqs": ["1105420", "1105419"]}, {"nivel": "9º Nível", "codigo": "1105146", "nome": "TRATAMENTOS TÉRMICOS E TERMOQUÍMICOS", "ch": "60h", "preReqs": ["1105182"]}, {"nivel": "9º Nível", "codigo": "1105458", "nome": "PLANEJAMENTO E CONTROLE DA PRODUCAO", "ch": "60h", "preReqs": ["1105426"]}, {"nivel": "9º Nível", "codigo": "1105459", "nome": "HIGIENE E SEGURANCA DO TRABALHO", "ch": "60h", "preReqs": ["1105426"]}];
-  const codigoToNome = {"1105453": "INTRODUCAO A ENGENHARIA MECANICA", "1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1305212": "SOCIOLOGIA INDUSTRIAL", "1305412": "DIREITO PARA ENGENHARIA", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1105410": "QUIMICA DOS MATERIAIS", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1303161": "ECONOMIA PARA ENGENHARIA", "1411075": "CALCULO NUMERICO", "1105160": "MATERIAIS DE CONSTRUÇÃO MECÂNICA I", "1105411": "MECANICA DOS CORPOS RIGIDOS I", "1105413": "DESENHO TECNICO MECANICO", "1108100": "FÍSICA GERAL III", "1108101": "FÍSICA EXPERIMENTAL II", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1105182": "MATERIAIS DE CONSTRUÇÃO MECÂNICA II", "1105412": "MECANICA DOS CORPOS RIGIDOS II", "1105451": "INTROD A ELETRONICA ANALOGICA E DIGITAL", "1105452": "DESENHO DE MAQUINAS", "1105454": "LAB DE MATERIAIS DE CONSTRUCAO MECANICA", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1105123": "ENSAIOS DE MATERIAIS", "1105161": "MECÂNICA DOS FLUIDOS I", "1105414": "CINEMATICA DAS MAQUINAS", "1105415": "TERMODINAMICA APLICADA I", "1105421": "METROLOGIA MECANICA LINEAR", "1105422": "MECANICA DE CORPOS DEFORMAVEIS I", "1105460": "ELETROTECNICA INDUSTRIAL", "1105183": "MECÂNICA DOS FLUIDOS II", "1105184": "DINÂMICA DAS MÁQUINAS", "1105416": "TERMODINAMICA APLICADA II", "1105417": "PROCESSOS DE USINAGEM", "1105418": "PROCESSOS METALURGICOS DE FABRICACAO", "1105423": "MECANICA DE CORPOS DEFORMAVEIS II", "1105455": "MAQUINAS TERMICAS", "1105021": "VIBRAÇÕES MECÂNICAS", "1105166": "TRANSFERENCIA DE CALOR I", "1105185": "MAQUINAS HIDRAULICAS E PNEUMATICAS", "1105419": "ELEMENTOS ESTATICOS DE MAQUINAS", "1105424": "PROCESSOS DE CONFORMACAO MECANICA", "1105425": "ADMINISTRACAO E EMPREENDEDORISMO", "1105456": "LAB DE MAQ HIDRAULICAS E PNEUMATICAS", "1105186": "TRANSFERENCIA DE CALOR II", "1105199": "METODOLOGIA DE PROJETO", "1105420": "ELEMENTOS DINAMICOS DE MAQUINAS", "1105426": "ADMINISTRACAO DA PRODUCAO", "1105457": "LABORATORIO DE CALOR E FLUIDOS", "1307169": "LÍNGUA PORTUGUESA", "1503070": "CIÊNCIAS DO AMBIENTE", "1105025": "MAQUINAS DE ELEVAÇÃO E TRANSPORTES", "1105146": "TRATAMENTOS TÉRMICOS E TERMOQUÍMICOS", "1105458": "PLANEJAMENTO E CONTROLE DA PRODUCAO", "1105459": "HIGIENE E SEGURANCA DO TRABALHO", "1109134": "CALCULO AVANCADO", "1304013": "BASQUETEBOL - MASC", "1304025": "BASQUETEBOL - FEM", "1304055": "FUTSAL", "1305140": "METODOS E TECNICAS DE PESQUISA", "1105097": "TUBULACOES INDUSTRIAIS", "1105122": "ERGONOMIA APLICADA", "1105141": "METALURGIA DA SOLDAGEM", "1105427": "CORROSAO DE MATERIAIS", "1105428": "LABORATORIO DE FUSAO E SOLIDIFICACAO", "1105429": "LABORATORIO DE SOLDAGEM", "1105430": "MATERIAIS COMPOSITOS", "1105431": "MECANICA DA FRATURA", "1105432": "SELECAO DE MATERIAIS", "1105433": "TECNICAS METALOGRAFICAS", "1105434": "TRANSFORMACAO DE FASES", "1105435": "CONTROLE ESTATISTICO DE QUALIDADE", "1105436": "GESTAO DA MANUTENCAO", "1105437": "GESTAO DA QUALIDADE", "1105438": "DESENHO ASSISTIDO POR COMPUTADOR", "1105439": "INSTRUMENTACAO ELETRONICA", "1105440": "MANUT.PREDITIVA POR ANALISE DE VIBRACOES", "1105441": "IDENTIFICACAO DE SISTEMAS DINAMICOS", "1105442": "SENSORES E TRANSDUTORES", "1105443": "TEORIA DE CONTROLE", "1105444": "CONDICIONAMENTO DE AR AMBIENTAL", "1105445": "FUNDAMENTOS DE IMPACTOS AMBIENTAIS", "1105446": "POLUICAO AMBIENTAL", "1105447": "METODOS COMPUTACIONAIS EM TERMOFLUIDOS", "1105461": "TE(TOP EM MATEMATICA APLIC A ENGENHARIA)", "1105462": "TE(OFICINA MECANICA)", "1105463": "SOLIDIFICACAO", "1105464": "FONTES DE ENERGIA", "1105465": "GERACAO", "1105466": "VENTILACAO INDUSTRIAL", "1105467": "TE(PROJETO INTEGRADOR I)", "1105468": "TE(PROJETO INTEGRADOR II)", "1105469": "TE(PROJETO INTEGRADOR III)", "1105470": "TE(PROJETO INTEGRADOR IV)", "1113061": "DESENHO ASSISTIDO POR COMPUTADOR", "1304123": "FUTSAL - FEM", "1304207": "LIBRAS", "1307150": "INGLÊS", "1307178": "FRANCES", "1307179": "ESPANHOL", "1307332": "LIBRAS"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1105453", "nome": "INTRODUCAO A ENGENHARIA MECANICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305212", "nome": "SOCIOLOGIA INDUSTRIAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305412", "nome": "DIREITO PARA ENGENHARIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1105410", "nome": "QUIMICA DOS MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030", "1109126", "1109035"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126"]}, {"nivel": "2º Nível", "codigo": "1303161", "nome": "ECONOMIA PARA ENGENHARIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411001"]}, {"nivel": "3º Nível", "codigo": "1105160", "nome": "MATERIAIS DE CONSTRUÇÃO MECÂNICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1105411", "nome": "MECANICA DOS CORPOS RIGIDOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035", "1109131", "1108030"]}, {"nivel": "3º Nível", "codigo": "1105413", "nome": "DESENHO TECNICO MECANICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108031", "1108081", "1109131"]}, {"nivel": "3º Nível", "codigo": "1108101", "nome": "FÍSICA EXPERIMENTAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108023"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035", "1109131"]}, {"nivel": "3º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109049"]}, {"nivel": "4º Nível", "codigo": "1105182", "nome": "MATERIAIS DE CONSTRUÇÃO MECÂNICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105160"]}, {"nivel": "4º Nível", "codigo": "1105412", "nome": "MECANICA DOS CORPOS RIGIDOS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105411", "1109128"]}, {"nivel": "4º Nível", "codigo": "1105451", "nome": "INTROD A ELETRONICA ANALOGICA E DIGITAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108100", "1108025"]}, {"nivel": "4º Nível", "codigo": "1105452", "nome": "DESENHO DE MAQUINAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105413"]}, {"nivel": "4º Nível", "codigo": "1105454", "nome": "LAB DE MATERIAIS DE CONSTRUCAO MECANICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105160"]}, {"nivel": "4º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109049"]}, {"nivel": "4º Nível", "codigo": "1114130", "nome": "INTRODUÇÃO À ESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114129"]}, {"nivel": "5º Nível", "codigo": "1105123", "nome": "ENSAIOS DE MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105160"]}, {"nivel": "5º Nível", "codigo": "1105161", "nome": "MECÂNICA DOS FLUIDOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109053", "1109131"]}, {"nivel": "5º Nível", "codigo": "1105414", "nome": "CINEMATICA DAS MAQUINAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105412"]}, {"nivel": "5º Nível", "codigo": "1105415", "nome": "TERMODINAMICA APLICADA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109128", "1108031", "1108081"]}, {"nivel": "5º Nível", "codigo": "1105421", "nome": "METROLOGIA MECANICA LINEAR", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1105422", "nome": "MECANICA DE CORPOS DEFORMAVEIS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105411"]}, {"nivel": "5º Nível", "codigo": "1105460", "nome": "ELETROTECNICA INDUSTRIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108100", "1108101", "1108024"]}, {"nivel": "6º Nível", "codigo": "1105183", "nome": "MECÂNICA DOS FLUIDOS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105161"]}, {"nivel": "6º Nível", "codigo": "1105184", "nome": "DINÂMICA DAS MÁQUINAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105414"]}, {"nivel": "6º Nível", "codigo": "1105416", "nome": "TERMODINAMICA APLICADA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105415", "1109128"]}, {"nivel": "6º Nível", "codigo": "1105417", "nome": "PROCESSOS DE USINAGEM", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105182"]}, {"nivel": "6º Nível", "codigo": "1105418", "nome": "PROCESSOS METALURGICOS DE FABRICACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105182"]}, {"nivel": "6º Nível", "codigo": "1105423", "nome": "MECANICA DE CORPOS DEFORMAVEIS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105422"]}, {"nivel": "6º Nível", "codigo": "1105455", "nome": "MAQUINAS TERMICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105415"]}, {"nivel": "7º Nível", "codigo": "1105021", "nome": "VIBRAÇÕES MECÂNICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109010", "1105184"]}, {"nivel": "7º Nível", "codigo": "1105166", "nome": "TRANSFERENCIA DE CALOR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109010", "1105415"]}, {"nivel": "7º Nível", "codigo": "1105185", "nome": "MAQUINAS HIDRAULICAS E PNEUMATICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105183"]}, {"nivel": "7º Nível", "codigo": "1105419", "nome": "ELEMENTOS ESTATICOS DE MAQUINAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105423"]}, {"nivel": "7º Nível", "codigo": "1105424", "nome": "PROCESSOS DE CONFORMACAO MECANICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105182"]}, {"nivel": "7º Nível", "codigo": "1105425", "nome": "ADMINISTRACAO E EMPREENDEDORISMO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1105456", "nome": "LAB DE MAQ HIDRAULICAS E PNEUMATICAS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105183"]}, {"nivel": "8º Nível", "codigo": "1105186", "nome": "TRANSFERENCIA DE CALOR II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105166", "1105183"]}, {"nivel": "8º Nível", "codigo": "1105199", "nome": "METODOLOGIA DE PROJETO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1105420", "nome": "ELEMENTOS DINAMICOS DE MAQUINAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105423"]}, {"nivel": "8º Nível", "codigo": "1105426", "nome": "ADMINISTRACAO DA PRODUCAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105425"]}, {"nivel": "8º Nível", "codigo": "1105457", "nome": "LABORATORIO DE CALOR E FLUIDOS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105166"]}, {"nivel": "8º Nível", "codigo": "1307169", "nome": "LÍNGUA PORTUGUESA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1503070", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1105449", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "30\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1105025", "nome": "MAQUINAS DE ELEVAÇÃO E TRANSPORTES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105420", "1105419"]}, {"nivel": "9º Nível", "codigo": "1105146", "nome": "TRATAMENTOS TÉRMICOS E TERMOQUÍMICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105182"]}, {"nivel": "9º Nível", "codigo": "1105458", "nome": "PLANEJAMENTO E CONTROLE DA PRODUCAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105426"]}, {"nivel": "9º Nível", "codigo": "1105459", "nome": "HIGIENE E SEGURANCA DO TRABALHO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105426"]}, {"nivel": "10º Nível", "codigo": "1105448", "nome": "ESTAGIO SUPERVISIONADO", "ch": "165\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}];
+  const codigoToNome = {"1105453": "INTRODUCAO A ENGENHARIA MECANICA", "1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1305212": "SOCIOLOGIA INDUSTRIAL", "1305412": "DIREITO PARA ENGENHARIA", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1105410": "QUIMICA DOS MATERIAIS", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1303161": "ECONOMIA PARA ENGENHARIA", "1411075": "CALCULO NUMERICO", "1105160": "MATERIAIS DE CONSTRUÇÃO MECÂNICA I", "1105411": "MECANICA DOS CORPOS RIGIDOS I", "1105413": "DESENHO TECNICO MECANICO", "1108100": "FÍSICA GERAL III", "1108101": "FÍSICA EXPERIMENTAL II", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1105182": "MATERIAIS DE CONSTRUÇÃO MECÂNICA II", "1105412": "MECANICA DOS CORPOS RIGIDOS II", "1105451": "INTROD A ELETRONICA ANALOGICA E DIGITAL", "1105452": "DESENHO DE MAQUINAS", "1105454": "LAB DE MATERIAIS DE CONSTRUCAO MECANICA", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1105123": "ENSAIOS DE MATERIAIS", "1105161": "MECÂNICA DOS FLUIDOS I", "1105414": "CINEMATICA DAS MAQUINAS", "1105415": "TERMODINAMICA APLICADA I", "1105421": "METROLOGIA MECANICA LINEAR", "1105422": "MECANICA DE CORPOS DEFORMAVEIS I", "1105460": "ELETROTECNICA INDUSTRIAL", "1105183": "MECÂNICA DOS FLUIDOS II", "1105184": "DINÂMICA DAS MÁQUINAS", "1105416": "TERMODINAMICA APLICADA II", "1105417": "PROCESSOS DE USINAGEM", "1105418": "PROCESSOS METALURGICOS DE FABRICACAO", "1105423": "MECANICA DE CORPOS DEFORMAVEIS II", "1105455": "MAQUINAS TERMICAS", "1105021": "VIBRAÇÕES MECÂNICAS", "1105166": "TRANSFERENCIA DE CALOR I", "1105185": "MAQUINAS HIDRAULICAS E PNEUMATICAS", "1105419": "ELEMENTOS ESTATICOS DE MAQUINAS", "1105424": "PROCESSOS DE CONFORMACAO MECANICA", "1105425": "ADMINISTRACAO E EMPREENDEDORISMO", "1105456": "LAB DE MAQ HIDRAULICAS E PNEUMATICAS", "1105186": "TRANSFERENCIA DE CALOR II", "1105199": "METODOLOGIA DE PROJETO", "1105420": "ELEMENTOS DINAMICOS DE MAQUINAS", "1105426": "ADMINISTRACAO DA PRODUCAO", "1105457": "LABORATORIO DE CALOR E FLUIDOS", "1307169": "LÍNGUA PORTUGUESA", "1503070": "CIÊNCIAS DO AMBIENTE", "1105449": "TRABALHO DE CONCLUSAO DE CURSO", "1105025": "MAQUINAS DE ELEVAÇÃO E TRANSPORTES", "1105146": "TRATAMENTOS TÉRMICOS E TERMOQUÍMICOS", "1105458": "PLANEJAMENTO E CONTROLE DA PRODUCAO", "1105459": "HIGIENE E SEGURANCA DO TRABALHO", "1105448": "ESTAGIO SUPERVISIONADO", "1109134": "CALCULO AVANCADO", "1304013": "BASQUETEBOL - MASC", "1304025": "BASQUETEBOL - FEM", "1304055": "FUTSAL", "1305140": "METODOS E TECNICAS DE PESQUISA", "1105097": "TUBULACOES INDUSTRIAIS", "1105122": "ERGONOMIA APLICADA", "1105141": "METALURGIA DA SOLDAGEM", "1105427": "CORROSAO DE MATERIAIS", "1105428": "LABORATORIO DE FUSAO E SOLIDIFICACAO", "1105429": "LABORATORIO DE SOLDAGEM", "1105430": "MATERIAIS COMPOSITOS", "1105431": "MECANICA DA FRATURA", "1105432": "SELECAO DE MATERIAIS", "1105433": "TECNICAS METALOGRAFICAS", "1105434": "TRANSFORMACAO DE FASES", "1105435": "CONTROLE ESTATISTICO DE QUALIDADE", "1105436": "GESTAO DA MANUTENCAO", "1105437": "GESTAO DA QUALIDADE", "1105438": "DESENHO ASSISTIDO POR COMPUTADOR", "1105439": "INSTRUMENTACAO ELETRONICA", "1105440": "MANUT.PREDITIVA POR ANALISE DE VIBRACOES", "1105441": "IDENTIFICACAO DE SISTEMAS DINAMICOS", "1105442": "SENSORES E TRANSDUTORES", "1105443": "TEORIA DE CONTROLE", "1105444": "CONDICIONAMENTO DE AR AMBIENTAL", "1105445": "FUNDAMENTOS DE IMPACTOS AMBIENTAIS", "1105446": "POLUICAO AMBIENTAL", "1105447": "METODOS COMPUTACIONAIS EM TERMOFLUIDOS", "1105461": "TE(TOP EM MATEMATICA APLIC A ENGENHARIA)", "1105462": "TE(OFICINA MECANICA)", "1105463": "SOLIDIFICACAO", "1105464": "FONTES DE ENERGIA", "1105465": "GERACAO,UTILIZACAO E DIST DE VAPOR", "1105466": "VENTILACAO INDUSTRIAL", "1105467": "TE(PROJETO INTEGRADOR I)", "1105468": "TE(PROJETO INTEGRADOR II)", "1105469": "TE(PROJETO INTEGRADOR III)", "1105470": "TE(PROJETO INTEGRADOR IV)", "1113061": "DESENHO ASSISTIDO POR COMPUTADOR", "1304123": "FUTSAL - FEM", "1304207": "LIBRAS", "1307150": "INGLÊS", "1307178": "FRANCES", "1307179": "ESPANHOL", "1307332": "LIBRAS"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -922,7 +925,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

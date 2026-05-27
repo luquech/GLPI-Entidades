@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,120 +404,120 @@
           <tr>
               <td>3101243</td>
               <td>DIREITO PENITENCIARIO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>DIREITO PROCESSUAL PENAL II</td>
               <td></td>
           </tr>
           <tr>
               <td>3101253</td>
               <td>DIREITO MUNICIPAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>3101209, DIREITO ADMINISTRATIVO II</td>
               <td></td>
           </tr>
           <tr>
               <td>3101353</td>
               <td>BIOETICA E BIODIREITO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>DIREITO CIVIL VI</td>
               <td></td>
           </tr>
           <tr>
               <td>3101354</td>
               <td>DIREITO DA INTEGRACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>3101230, DIREITO CONSTITUCIONAL II</td>
               <td></td>
           </tr>
           <tr>
               <td>3101355</td>
               <td>DIREITO ECONOMICO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>DIREITO FINANCEIRO, 3101084</td>
               <td></td>
           </tr>
           <tr>
               <td>3101356</td>
               <td>DIREITO ELETRONICO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>METODOLOGIA DA PESQUISA EM DIREITO I</td>
               <td></td>
           </tr>
           <tr>
               <td>3101357</td>
               <td>DIREITOS HUMANOS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>DIREITO CONSTITUCIONAL III, DIREITO CONSTITUCIONAL II, 3101230</td>
               <td></td>
           </tr>
           <tr>
               <td>3101358</td>
               <td>DIREITO SUMULAR</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>DIREITO PROCESSUAL CIVIL IV</td>
               <td></td>
           </tr>
           <tr>
               <td>3101359</td>
               <td>FORM HUM P O ING NAS CARREIRAS JURIDICAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>DIREITO PROCESSUAL CIVIL I</td>
               <td></td>
           </tr>
           <tr>
               <td>3101360</td>
               <td>INFORMATICA JURIDICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101361</td>
               <td>LINGUAGEM JURIDICA E TECNICA LEGISLATIVA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3101362</td>
-              <td>TEC DE CONCILIACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>TEC DE CONCILIACAO, MEDICAO E ARBITRAGEM</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>3101212, DIREITO PROCESSUAL CIVIL III</td>
               <td></td>
           </tr>
           <tr>
               <td>3101363</td>
               <td>MEDICINA LEGAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>DIREITO PENAL IV</td>
               <td></td>
           </tr>
           <tr>
               <td>3101376</td>
               <td>TED(TÓPICO ESPEC DE DIREITOS HUMANOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>3103162</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -561,8 +564,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "3101076", "nome": "INTRODUÇÃO AO ESTUDO DO DIREITO I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101097", "nome": "HISTÓRIA DO DIREITO", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101322", "nome": "ANTROPOLOGIA JURIDICA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101323", "nome": "CIENCIA POLITICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101328", "nome": "FILOSOFIA GERAL E DO DIREITO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101331", "nome": "METODOLOGIA DA PESQUISA EM DIREITO I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "3101080", "nome": "INTRODUÇÃO AO ESTUDO DO DIREITO II", "ch": "60h", "preReqs": ["3101076"]}, {"nivel": "2º Nível", "codigo": "3101229", "nome": "DIREITO CONSTITUCIONAL I", "ch": "60h", "preReqs": ["3101323", "3101075"]}, {"nivel": "2º Nível", "codigo": "3101324", "nome": "CRIMINOLOGIA", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "3101325", "nome": "DIREITO ROMANO", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "3101330", "nome": "SOCIOLOGIA GERAL E JURIDICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "3101335", "nome": "DIREITO CIVIL I", "ch": "60h", "preReqs": ["3101076"]}, {"nivel": "3º Nível", "codigo": "3101204", "nome": "DIREITO PENAL I", "ch": "60h", "preReqs": ["3101076"]}, {"nivel": "3º Nível", "codigo": "3101326", "nome": "ECONOMIA GERAL E POLITICA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "3101327", "nome": "ETICA GERAL E PROFISSIONAL", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "3101329", "nome": "PSICOLOGIA JURIDICA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "3101336", "nome": "DIREITO CIVIL II", "ch": "60h", "preReqs": ["3101335", "3101004"]}, {"nivel": "3º Nível", "codigo": "3101347", "nome": "TEORIA GERAL DO PROCESSO", "ch": "60h", "preReqs": ["3101229"]}, {"nivel": "3º Nível", "codigo": "3101367", "nome": "DIREITO CONSTITUCIONAL II", "ch": "60h", "preReqs": ["3101229"]}, {"nivel": "4º Nível", "codigo": "3101089", "nome": "DIREITO CIVIL III", "ch": "60h", "preReqs": ["3101336", "3101087"]}, {"nivel": "4º Nível", "codigo": "3101205", "nome": "DIREITO PENAL II", "ch": "60h", "preReqs": ["3101204", "3101227"]}, {"nivel": "4º Nível", "codigo": "3101208", "nome": "DIREITO ADMINISTRATIVO I", "ch": "60h", "preReqs": ["3101229"]}, {"nivel": "4º Nível", "codigo": "3101210", "nome": "DIREITO PROCESSUAL CIVIL I", "ch": "60h", "preReqs": ["3101347", "3101232"]}, {"nivel": "4º Nível", "codigo": "3101337", "nome": "DIREITO CONSTITUCIONAL III", "ch": "30h", "preReqs": ["3101230", "3101367"]}, {"nivel": "4º Nível", "codigo": "3101339", "nome": "DIREITO EMPRESARIAL I", "ch": "60h", "preReqs": ["3101335", "3101004"]}, {"nivel": "5º Nível", "codigo": "3101007", "nome": "DIREITO CIVIL IV", "ch": "60h", "preReqs": ["3101089", "3101090"]}, {"nivel": "5º Nível", "codigo": "3101206", "nome": "DIREITO PENAL III", "ch": "60h", "preReqs": ["3101205", "3101231"]}, {"nivel": "5º Nível", "codigo": "3101211", "nome": "DIREITO PROCESSUAL CIVIL II", "ch": "60h", "preReqs": ["3101210"]}, {"nivel": "5º Nível", "codigo": "3101340", "nome": "DIREITO EMPRESARIAL II", "ch": "60h", "preReqs": ["3101339", "3101016"]}, {"nivel": "5º Nível", "codigo": "3101366", "nome": "DIREITO ADMINISTRATIVO II", "ch": "60h", "preReqs": ["3101208"]}, {"nivel": "6º Nível", "codigo": "3101008", "nome": "DIREITO CIVIL V", "ch": "60h", "preReqs": ["3101007"]}, {"nivel": "6º Nível", "codigo": "3101207", "nome": "DIREITO PENAL IV", "ch": "60h", "preReqs": ["3101206"]}, {"nivel": "6º Nível", "codigo": "3101333", "nome": "DIREITO ADMINISTRATIVO III", "ch": "30h", "preReqs": ["3101209", "3101366"]}, {"nivel": "6º Nível", "codigo": "3101341", "nome": "DIREITO EMPRESARIAL III", "ch": "60h", "preReqs": ["3101340", "3101017", "3101347", "3101232"]}, {"nivel": "6º Nível", "codigo": "3101342", "nome": "DIREITO FINANCEIRO", "ch": "60h", "preReqs": ["3101209", "3101366"]}, {"nivel": "6º Nível", "codigo": "3101369", "nome": "DIREITO PROCESSUAL CIVIL III", "ch": "60h", "preReqs": ["3101211"]}, {"nivel": "7º Nível", "codigo": "3101009", "nome": "DIREITO CIVIL VI", "ch": "60h", "preReqs": ["3101008", "3101091"]}, {"nivel": "7º Nível", "codigo": "3101213", "nome": "DIREITO PROCESSUAL CIVIL IV", "ch": "60h", "preReqs": ["3101212", "3101369"]}, {"nivel": "7º Nível", "codigo": "3101214", "nome": "DIREITO PROCESSUAL PENAL I", "ch": "60h", "preReqs": ["3101210", "3101205", "3101231"]}, {"nivel": "7º Nível", "codigo": "3101247", "nome": "DIREITO DA SEGURIDADE SOCIAL", "ch": "60h", "preReqs": ["3101008"]}, {"nivel": "7º Nível", "codigo": "3101346", "nome": "DIREITO TRIBUTARIO", "ch": "60h", "preReqs": ["3101209", "3101366"]}, {"nivel": "7º Nível", "codigo": "3101368", "nome": "DIREITO DO TRABALHO I", "ch": "60h", "preReqs": ["3101076"]}, {"nivel": "8º Nível", "codigo": "3101010", "nome": "DIREITO CIVIL VII", "ch": "60h", "preReqs": ["3101009"]}, {"nivel": "8º Nível", "codigo": "3101215", "nome": "DIREITO PROCESSUAL PENAL II", "ch": "60h", "preReqs": ["3101214"]}, {"nivel": "8º Nível", "codigo": "3101332", "nome": "METODOLOGIA DA PESQUISA EM DIREITO II", "ch": "30h", "preReqs": ["3101331", "3101085"]}, {"nivel": "8º Nível", "codigo": "3101334", "nome": "DIREITO AGRARIO", "ch": "30h", "preReqs": ["3101091", "3101008"]}, {"nivel": "8º Nível", "codigo": "3101338", "nome": "DIREITO DO TRABALHO II", "ch": "60h", "preReqs": ["3101216", "3101368"]}, {"nivel": "8º Nível", "codigo": "3101344", "nome": "DIREITO PROCESSUAL DO TRABALHO I", "ch": "60h", "preReqs": ["3101216", "3101368"]}, {"nivel": "9º Nível", "codigo": "3101094", "nome": "DIREITO DA CRIANCA E DO ADOLESCENTE", "ch": "60h", "preReqs": ["3101230", "3101367"]}, {"nivel": "9º Nível", "codigo": "3101105", "nome": "DIREITO DO CONSUMIDOR", "ch": "60h", "preReqs": ["3101008", "3101091"]}, {"nivel": "9º Nível", "codigo": "3101225", "nome": "DIREITO ELEITORAL", "ch": "60h", "preReqs": ["3101333", "3101209"]}, {"nivel": "9º Nível", "codigo": "3101343", "nome": "DIREITO INTERNACIONAL", "ch": "60h", "preReqs": ["3101230", "3101367"]}, {"nivel": "9º Nível", "codigo": "3101345", "nome": "DIREITO PROCESSUAL DO TRABALHO II", "ch": "60h", "preReqs": ["3101344", "3101217"]}, {"nivel": "10º Nível", "codigo": "3101252", "nome": "DIREITO AMBIENTAL", "ch": "60h", "preReqs": ["3101209", "3101366"]}];
-  const codigoToNome = {"3101076": "INTRODUÇÃO AO ESTUDO DO DIREITO I", "3101097": "HISTÓRIA DO DIREITO", "3101322": "ANTROPOLOGIA JURIDICA", "3101323": "CIENCIA POLITICA", "3101328": "FILOSOFIA GERAL E DO DIREITO", "3101331": "METODOLOGIA DA PESQUISA EM DIREITO I", "3101080": "INTRODUÇÃO AO ESTUDO DO DIREITO II", "3101229": "DIREITO CONSTITUCIONAL I", "3101324": "CRIMINOLOGIA", "3101325": "DIREITO ROMANO", "3101330": "SOCIOLOGIA GERAL E JURIDICA", "3101335": "DIREITO CIVIL I", "3101204": "DIREITO PENAL I", "3101326": "ECONOMIA GERAL E POLITICA", "3101327": "ETICA GERAL E PROFISSIONAL", "3101329": "PSICOLOGIA JURIDICA", "3101336": "DIREITO CIVIL II", "3101347": "TEORIA GERAL DO PROCESSO", "3101367": "DIREITO CONSTITUCIONAL II", "3101089": "DIREITO CIVIL III", "3101205": "DIREITO PENAL II", "3101208": "DIREITO ADMINISTRATIVO I", "3101210": "DIREITO PROCESSUAL CIVIL I", "3101337": "DIREITO CONSTITUCIONAL III", "3101339": "DIREITO EMPRESARIAL I", "3101007": "DIREITO CIVIL IV", "3101206": "DIREITO PENAL III", "3101211": "DIREITO PROCESSUAL CIVIL II", "3101340": "DIREITO EMPRESARIAL II", "3101366": "DIREITO ADMINISTRATIVO II", "3101008": "DIREITO CIVIL V", "3101207": "DIREITO PENAL IV", "3101333": "DIREITO ADMINISTRATIVO III", "3101341": "DIREITO EMPRESARIAL III", "3101342": "DIREITO FINANCEIRO", "3101369": "DIREITO PROCESSUAL CIVIL III", "3101009": "DIREITO CIVIL VI", "3101213": "DIREITO PROCESSUAL CIVIL IV", "3101214": "DIREITO PROCESSUAL PENAL I", "3101247": "DIREITO DA SEGURIDADE SOCIAL", "3101346": "DIREITO TRIBUTARIO", "3101368": "DIREITO DO TRABALHO I", "3101010": "DIREITO CIVIL VII", "3101215": "DIREITO PROCESSUAL PENAL II", "3101332": "METODOLOGIA DA PESQUISA EM DIREITO II", "3101334": "DIREITO AGRARIO", "3101338": "DIREITO DO TRABALHO II", "3101344": "DIREITO PROCESSUAL DO TRABALHO I", "3101094": "DIREITO DA CRIANCA E DO ADOLESCENTE", "3101105": "DIREITO DO CONSUMIDOR", "3101225": "DIREITO ELEITORAL", "3101343": "DIREITO INTERNACIONAL", "3101345": "DIREITO PROCESSUAL DO TRABALHO II", "3101252": "DIREITO AMBIENTAL", "3101243": "DIREITO PENITENCIARIO", "3101253": "DIREITO MUNICIPAL", "3101353": "BIOETICA E BIODIREITO", "3101354": "DIREITO DA INTEGRACAO", "3101355": "DIREITO ECONOMICO", "3101356": "DIREITO ELETRONICO", "3101357": "DIREITOS HUMANOS", "3101358": "DIREITO SUMULAR", "3101359": "FORM HUM P O ING NAS CARREIRAS JURIDICAS", "3101360": "INFORMATICA JURIDICA", "3101361": "LINGUAGEM JURIDICA E TECNICA LEGISLATIVA", "3101362": "TEC DE CONCILIACAO", "3101363": "MEDICINA LEGAL", "3101376": "TED(TÓPICO ESPEC DE DIREITOS HUMANOS)", "3103162": "LIBRAS"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "3101076", "nome": "INTRODUÇÃO AO ESTUDO DO DIREITO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101097", "nome": "HISTÓRIA DO DIREITO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101322", "nome": "ANTROPOLOGIA JURIDICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101323", "nome": "CIENCIA POLITICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101328", "nome": "FILOSOFIA GERAL E DO DIREITO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "3101331", "nome": "METODOLOGIA DA PESQUISA EM DIREITO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "3101080", "nome": "INTRODUÇÃO AO ESTUDO DO DIREITO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101076"]}, {"nivel": "2º Nível", "codigo": "3101229", "nome": "DIREITO CONSTITUCIONAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101323", "3101075"]}, {"nivel": "2º Nível", "codigo": "3101324", "nome": "CRIMINOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "3101325", "nome": "DIREITO ROMANO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "3101330", "nome": "SOCIOLOGIA GERAL E JURIDICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "3101335", "nome": "DIREITO CIVIL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101076"]}, {"nivel": "3º Nível", "codigo": "3101204", "nome": "DIREITO PENAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101076"]}, {"nivel": "3º Nível", "codigo": "3101326", "nome": "ECONOMIA GERAL E POLITICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "3101327", "nome": "ETICA GERAL E PROFISSIONAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "3101329", "nome": "PSICOLOGIA JURIDICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "3101336", "nome": "DIREITO CIVIL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101335", "3101004"]}, {"nivel": "3º Nível", "codigo": "3101347", "nome": "TEORIA GERAL DO PROCESSO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101229"]}, {"nivel": "3º Nível", "codigo": "3101367", "nome": "DIREITO CONSTITUCIONAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101229"]}, {"nivel": "4º Nível", "codigo": "3101089", "nome": "DIREITO CIVIL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101336", "3101087"]}, {"nivel": "4º Nível", "codigo": "3101205", "nome": "DIREITO PENAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101204", "3101227"]}, {"nivel": "4º Nível", "codigo": "3101208", "nome": "DIREITO ADMINISTRATIVO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101229"]}, {"nivel": "4º Nível", "codigo": "3101210", "nome": "DIREITO PROCESSUAL CIVIL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101347", "3101232"]}, {"nivel": "4º Nível", "codigo": "3101337", "nome": "DIREITO CONSTITUCIONAL III", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101230", "3101367"]}, {"nivel": "4º Nível", "codigo": "3101339", "nome": "DIREITO EMPRESARIAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101335", "3101004"]}, {"nivel": "5º Nível", "codigo": "3101007", "nome": "DIREITO CIVIL IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101089", "3101090"]}, {"nivel": "5º Nível", "codigo": "3101206", "nome": "DIREITO PENAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101205", "3101231"]}, {"nivel": "5º Nível", "codigo": "3101211", "nome": "DIREITO PROCESSUAL CIVIL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101210"]}, {"nivel": "5º Nível", "codigo": "3101340", "nome": "DIREITO EMPRESARIAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101339", "3101016"]}, {"nivel": "5º Nível", "codigo": "3101366", "nome": "DIREITO ADMINISTRATIVO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101208"]}, {"nivel": "6º Nível", "codigo": "3101348", "nome": "PRÁTICA JURÍDICA I", "ch": "75\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["3101211"]}, {"nivel": "6º Nível", "codigo": "3101008", "nome": "DIREITO CIVIL V", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101007"]}, {"nivel": "6º Nível", "codigo": "3101207", "nome": "DIREITO PENAL IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101206"]}, {"nivel": "6º Nível", "codigo": "3101333", "nome": "DIREITO ADMINISTRATIVO III", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101209", "3101366"]}, {"nivel": "6º Nível", "codigo": "3101341", "nome": "DIREITO EMPRESARIAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101340", "3101017", "3101347", "3101232"]}, {"nivel": "6º Nível", "codigo": "3101342", "nome": "DIREITO FINANCEIRO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101209", "3101366"]}, {"nivel": "6º Nível", "codigo": "3101369", "nome": "DIREITO PROCESSUAL CIVIL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101211"]}, {"nivel": "7º Nível", "codigo": "3101349", "nome": "PRÁTICA JURÍDICA II", "ch": "75\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["3101207"]}, {"nivel": "7º Nível", "codigo": "3101009", "nome": "DIREITO CIVIL VI", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101008", "3101091"]}, {"nivel": "7º Nível", "codigo": "3101213", "nome": "DIREITO PROCESSUAL CIVIL IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101212", "3101369"]}, {"nivel": "7º Nível", "codigo": "3101214", "nome": "DIREITO PROCESSUAL PENAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101210", "3101205", "3101231"]}, {"nivel": "7º Nível", "codigo": "3101247", "nome": "DIREITO DA SEGURIDADE SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101008"]}, {"nivel": "7º Nível", "codigo": "3101346", "nome": "DIREITO TRIBUTARIO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101209", "3101366"]}, {"nivel": "7º Nível", "codigo": "3101368", "nome": "DIREITO DO TRABALHO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101076"]}, {"nivel": "8º Nível", "codigo": "3101350", "nome": "PRÁTICA JURÍDICA III", "ch": "75\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["3101348", "3101233", "3101349", "3101234"]}, {"nivel": "8º Nível", "codigo": "3101010", "nome": "DIREITO CIVIL VII", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101009"]}, {"nivel": "8º Nível", "codigo": "3101215", "nome": "DIREITO PROCESSUAL PENAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101214"]}, {"nivel": "8º Nível", "codigo": "3101332", "nome": "METODOLOGIA DA PESQUISA EM DIREITO II", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101331", "3101085"]}, {"nivel": "8º Nível", "codigo": "3101334", "nome": "DIREITO AGRARIO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101091", "3101008"]}, {"nivel": "8º Nível", "codigo": "3101338", "nome": "DIREITO DO TRABALHO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101216", "3101368"]}, {"nivel": "8º Nível", "codigo": "3101344", "nome": "DIREITO PROCESSUAL DO TRABALHO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101216", "3101368"]}, {"nivel": "9º Nível", "codigo": "3101351", "nome": "PRÁTICA JURÍDICA IV", "ch": "75\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["3101348", "3101233", "3101349", "3101234"]}, {"nivel": "9º Nível", "codigo": "3101094", "nome": "DIREITO DA CRIANCA E DO ADOLESCENTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101230", "3101367"]}, {"nivel": "9º Nível", "codigo": "3101105", "nome": "DIREITO DO CONSUMIDOR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101008", "3101091"]}, {"nivel": "9º Nível", "codigo": "3101225", "nome": "DIREITO ELEITORAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101333", "3101209"]}, {"nivel": "9º Nível", "codigo": "3101343", "nome": "DIREITO INTERNACIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101230", "3101367"]}, {"nivel": "9º Nível", "codigo": "3101345", "nome": "DIREITO PROCESSUAL DO TRABALHO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101344", "3101217"]}, {"nivel": "10º Nível", "codigo": "3101352", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "30\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["3101332", "3101085"]}, {"nivel": "10º Nível", "codigo": "3101252", "nome": "DIREITO AMBIENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["3101209", "3101366"]}];
+  const codigoToNome = {"3101076": "INTRODUÇÃO AO ESTUDO DO DIREITO I", "3101097": "HISTÓRIA DO DIREITO", "3101322": "ANTROPOLOGIA JURIDICA", "3101323": "CIENCIA POLITICA", "3101328": "FILOSOFIA GERAL E DO DIREITO", "3101331": "METODOLOGIA DA PESQUISA EM DIREITO I", "3101080": "INTRODUÇÃO AO ESTUDO DO DIREITO II", "3101229": "DIREITO CONSTITUCIONAL I", "3101324": "CRIMINOLOGIA", "3101325": "DIREITO ROMANO", "3101330": "SOCIOLOGIA GERAL E JURIDICA", "3101335": "DIREITO CIVIL I", "3101204": "DIREITO PENAL I", "3101326": "ECONOMIA GERAL E POLITICA", "3101327": "ETICA GERAL E PROFISSIONAL", "3101329": "PSICOLOGIA JURIDICA", "3101336": "DIREITO CIVIL II", "3101347": "TEORIA GERAL DO PROCESSO", "3101367": "DIREITO CONSTITUCIONAL II", "3101089": "DIREITO CIVIL III", "3101205": "DIREITO PENAL II", "3101208": "DIREITO ADMINISTRATIVO I", "3101210": "DIREITO PROCESSUAL CIVIL I", "3101337": "DIREITO CONSTITUCIONAL III", "3101339": "DIREITO EMPRESARIAL I", "3101007": "DIREITO CIVIL IV", "3101206": "DIREITO PENAL III", "3101211": "DIREITO PROCESSUAL CIVIL II", "3101340": "DIREITO EMPRESARIAL II", "3101366": "DIREITO ADMINISTRATIVO II", "3101348": "PRÁTICA JURÍDICA I", "3101008": "DIREITO CIVIL V", "3101207": "DIREITO PENAL IV", "3101333": "DIREITO ADMINISTRATIVO III", "3101341": "DIREITO EMPRESARIAL III", "3101342": "DIREITO FINANCEIRO", "3101369": "DIREITO PROCESSUAL CIVIL III", "3101349": "PRÁTICA JURÍDICA II", "3101009": "DIREITO CIVIL VI", "3101213": "DIREITO PROCESSUAL CIVIL IV", "3101214": "DIREITO PROCESSUAL PENAL I", "3101247": "DIREITO DA SEGURIDADE SOCIAL", "3101346": "DIREITO TRIBUTARIO", "3101368": "DIREITO DO TRABALHO I", "3101350": "PRÁTICA JURÍDICA III", "3101010": "DIREITO CIVIL VII", "3101215": "DIREITO PROCESSUAL PENAL II", "3101332": "METODOLOGIA DA PESQUISA EM DIREITO II", "3101334": "DIREITO AGRARIO", "3101338": "DIREITO DO TRABALHO II", "3101344": "DIREITO PROCESSUAL DO TRABALHO I", "3101351": "PRÁTICA JURÍDICA IV", "3101094": "DIREITO DA CRIANCA E DO ADOLESCENTE", "3101105": "DIREITO DO CONSUMIDOR", "3101225": "DIREITO ELEITORAL", "3101343": "DIREITO INTERNACIONAL", "3101345": "DIREITO PROCESSUAL DO TRABALHO II", "3101352": "TRABALHO DE CONCLUSAO DE CURSO", "3101252": "DIREITO AMBIENTAL", "3101243": "DIREITO PENITENCIARIO", "3101253": "DIREITO MUNICIPAL", "3101353": "BIOETICA E BIODIREITO", "3101354": "DIREITO DA INTEGRACAO", "3101355": "DIREITO ECONOMICO", "3101356": "DIREITO ELETRONICO", "3101357": "DIREITOS HUMANOS", "3101358": "DIREITO SUMULAR", "3101359": "FORM HUM P O ING NAS CARREIRAS JURIDICAS", "3101360": "INFORMATICA JURIDICA", "3101361": "LINGUAGEM JURIDICA E TECNICA LEGISLATIVA", "3101362": "TEC DE CONCILIACAO, MEDICAO E ARBITRAGEM", "3101363": "MEDICINA LEGAL", "3101376": "TED(TÓPICO ESPEC DE DIREITOS HUMANOS)", "3103162": "LIBRAS"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -674,7 +677,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

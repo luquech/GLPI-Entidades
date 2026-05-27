@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,288 +404,288 @@
           <tr>
               <td>5101021</td>
               <td>INFORMÁTICA APLICADA AO ENSINO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102156</td>
               <td>PARASITOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104009</td>
               <td>PRINCIPIOS DE SEGURANCA EM LABORATÓRIOS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104015</td>
               <td>INGLES INSTRUMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104104</td>
               <td>ETOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104105</td>
               <td>BIOLOGIA E ECOLOGIA DA MEIOFAUNA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104136</td>
               <td>BOTANICA ECONOMICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SISTEMÁTICA DE FANERÓGAMAS</td>
               <td></td>
           </tr>
           <tr>
               <td>5104137</td>
               <td>ECOLOGIA DA POLINIZAÇÃO E DISPERSÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MORFOLOGIA E ANATOMIA VEGETAL</td>
               <td></td>
           </tr>
           <tr>
               <td>5104169</td>
               <td>ECOTURISMO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ECOLOGIA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>5104174</td>
               <td>ENTOMOLOGIA GERAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104182</td>
               <td>BIOLOGIA MARINHA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104190</td>
               <td>ANATOMIA COMPARADA DOS VERTEBRADOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ZOOLOGIA DOS INVERTEBRADOS II</td>
               <td></td>
           </tr>
           <tr>
               <td>5104191</td>
               <td>FUNDAMENTOS DE ETNOECOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104192</td>
               <td>MICOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BOTANICA CRIPTOGAMICA</td>
               <td></td>
           </tr>
           <tr>
               <td>5104193</td>
               <td>FUNDAMENTOS DE LIMNOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104194</td>
               <td>FUNDAMENTOS DE AQUICULTURA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104179</td>
               <td>GERENCIAMENTO DE RESIDUOS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104205</td>
               <td>BIOLOGIA GERAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104206</td>
               <td>EDUCAÇÃO AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ECOLOGIA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>5104207</td>
               <td>POLÍTICA E EDUCAÇÃO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104211</td>
               <td>ENSINO INCLUSO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104212</td>
               <td>CURRICULO EDUCACIONAL</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104213</td>
               <td>ETICA E DIVERSIDADE</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104215</td>
               <td>HISTORIA DA BIOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104220</td>
               <td>TECB(ENSINO INCLUSO)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104222</td>
               <td>TECB(INTROD À FILOSOFIA E À SOC DA EDUC)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104224</td>
               <td>TECB(METODOLOGIA CIENTÍFICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104225</td>
               <td>TECB(BIOTECNOLOGIA E BIOPRODUTOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104226</td>
               <td>TECB(PALEOTONLOGIA E EDUCAÇÃO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104227</td>
               <td>TECB(VIROLOGIA BÁSICA E APLICADA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104228</td>
               <td>TECB(ESCRITA CIENTÍFICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104229</td>
               <td>TECB(TÓPICOS EM BOTÂNICA APLICADA I)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104230</td>
               <td>TECB(TÓPICOS EM BOTÂNICA APLICADA II)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104231</td>
               <td>TECB(BIOEST EXPERIMENTAL APLIC ÀS C BIOL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104232</td>
               <td>TECB(TÓPICOS EM BIOQUÍMICA CELULAR)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104237</td>
               <td>TECB(GENÉTICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -729,8 +732,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5104001", "nome": "BIOLOGIA CELULAR", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104002", "nome": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104003", "nome": "ZOOLOGIA DOS INVERTEBRADOS I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104004", "nome": "BOTANICA CRIPTOGAMICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104035", "nome": "EMBRIOLOGIA E HISTOLOGIA", "ch": "60h", "preReqs": ["5104001"]}, {"nivel": "2º Nível", "codigo": "5104036", "nome": "MORFOLOGIA E ANATOMIA VEGETAL", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104037", "nome": "ZOOLOGIA DOS INVERTEBRADOS II", "ch": "60h", "preReqs": ["5104003"]}, {"nivel": "2º Nível", "codigo": "5104038", "nome": "BIOQUÍMICA GERAL", "ch": "60h", "preReqs": ["5104005"]}, {"nivel": "2º Nível", "codigo": "5104040", "nome": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS II", "ch": "60h", "preReqs": ["5104002"]}, {"nivel": "3º Nível", "codigo": "5104042", "nome": "ANATOMIA HUMANA BASICA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5104043", "nome": "SISTEMÁTICA DE FANERÓGAMAS", "ch": "60h", "preReqs": ["5104036"]}, {"nivel": "3º Nível", "codigo": "5104044", "nome": "ZOOLOGIA DOS CORDADOS I", "ch": "60h", "preReqs": ["5104037"]}, {"nivel": "3º Nível", "codigo": "5104047", "nome": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS III", "ch": "60h", "preReqs": ["5104040"]}, {"nivel": "4º Nível", "codigo": "5104041", "nome": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "5104084", "nome": "ECOLOGIA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "5104085", "nome": "FISIOLOGIA VEGETAL", "ch": "60h", "preReqs": ["5104036"]}, {"nivel": "4º Nível", "codigo": "5104086", "nome": "ZOOLOGIA DOS CORDADOS II", "ch": "60h", "preReqs": ["5104044"]}, {"nivel": "4º Nível", "codigo": "5104087", "nome": "FISIOLOGIA ANIMAL COMPARADA", "ch": "60h", "preReqs": ["5104042"]}, {"nivel": "4º Nível", "codigo": "5104088", "nome": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS IV", "ch": "60h", "preReqs": ["5104047"]}, {"nivel": "5º Nível", "codigo": "5104016", "nome": "PSICOLOGIA E EDUCAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104100", "nome": "ECOLOGIA DE ECOSSISTEMAS AQUATICOS", "ch": "60h", "preReqs": ["5104084"]}, {"nivel": "5º Nível", "codigo": "5104101", "nome": "GENETICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104102", "nome": "MICROBIOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104103", "nome": "INSTRUMENTACAO NO ENSINO DE C BIOLOGICAS", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "5101054", "nome": "PLANEJAMENTO EM EDUCAÇÃO", "ch": "45h", "preReqs": ["5104016"]}, {"nivel": "6º Nível", "codigo": "5104131", "nome": "ECOLOGIA DE ECOSSISTEMAS TERRESTRES", "ch": "60h", "preReqs": ["5104084"]}, {"nivel": "6º Nível", "codigo": "5104132", "nome": "GENETICA DE POPULACOES E EVOLUCAO", "ch": "60h", "preReqs": ["5104101"]}, {"nivel": "6º Nível", "codigo": "5104133", "nome": "GEOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "5104134", "nome": "RECURSOS TEC PARA O ENS DE C BIOLOGICAS", "ch": "45h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "5104135", "nome": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA I", "ch": "90h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "5101033", "nome": "LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "ch": "45h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "5101052", "nome": "AVALIAÇÃO E APRENDIZAGEM", "ch": "45h", "preReqs": ["5104016"]}, {"nivel": "7º Nível", "codigo": "5104145", "nome": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA II", "ch": "150h", "preReqs": ["5104135"]}, {"nivel": "7º Nível", "codigo": "5104146", "nome": "PALEONTOLOGIA", "ch": "60h", "preReqs": ["5104133"]}, {"nivel": "7º Nível", "codigo": "5104147", "nome": "MET. CIENTÍFICA PARA O ENS. DA BIOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "5101148", "nome": "LINGUA BRASILEIRA DE SINAIS", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "5104164", "nome": "TRABALHO DE CONCLUSÃO DE CURSO", "ch": "30h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "5104165", "nome": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA III", "ch": "165h", "preReqs": ["5104145"]}];
-  const codigoToNome = {"5104001": "BIOLOGIA CELULAR", "5104002": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS I", "5104003": "ZOOLOGIA DOS INVERTEBRADOS I", "5104004": "BOTANICA CRIPTOGAMICA", "5104035": "EMBRIOLOGIA E HISTOLOGIA", "5104036": "MORFOLOGIA E ANATOMIA VEGETAL", "5104037": "ZOOLOGIA DOS INVERTEBRADOS II", "5104038": "BIOQUÍMICA GERAL", "5104040": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS II", "5104042": "ANATOMIA HUMANA BASICA", "5104043": "SISTEMÁTICA DE FANERÓGAMAS", "5104044": "ZOOLOGIA DOS CORDADOS I", "5104047": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS III", "5104041": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "5104084": "ECOLOGIA GERAL", "5104085": "FISIOLOGIA VEGETAL", "5104086": "ZOOLOGIA DOS CORDADOS II", "5104087": "FISIOLOGIA ANIMAL COMPARADA", "5104088": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS IV", "5104016": "PSICOLOGIA E EDUCAÇÃO", "5104100": "ECOLOGIA DE ECOSSISTEMAS AQUATICOS", "5104101": "GENETICA GERAL", "5104102": "MICROBIOLOGIA", "5104103": "INSTRUMENTACAO NO ENSINO DE C BIOLOGICAS", "5101054": "PLANEJAMENTO EM EDUCAÇÃO", "5104131": "ECOLOGIA DE ECOSSISTEMAS TERRESTRES", "5104132": "GENETICA DE POPULACOES E EVOLUCAO", "5104133": "GEOLOGIA", "5104134": "RECURSOS TEC PARA O ENS DE C BIOLOGICAS", "5104135": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA I", "5101033": "LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "5101052": "AVALIAÇÃO E APRENDIZAGEM", "5104145": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA II", "5104146": "PALEONTOLOGIA", "5104147": "MET. CIENTÍFICA PARA O ENS. DA BIOLOGIA", "5101148": "LINGUA BRASILEIRA DE SINAIS", "5104164": "TRABALHO DE CONCLUSÃO DE CURSO", "5104165": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA III", "5101021": "INFORMÁTICA APLICADA AO ENSINO", "5102156": "PARASITOLOGIA", "5104009": "PRINCIPIOS DE SEGURANCA EM LABORATÓRIOS", "5104015": "INGLES INSTRUMENTAL", "5104104": "ETOLOGIA", "5104105": "BIOLOGIA E ECOLOGIA DA MEIOFAUNA", "5104136": "BOTANICA ECONOMICA", "5104137": "ECOLOGIA DA POLINIZAÇÃO E DISPERSÃO", "5104169": "ECOTURISMO", "5104174": "ENTOMOLOGIA GERAL", "5104182": "BIOLOGIA MARINHA", "5104190": "ANATOMIA COMPARADA DOS VERTEBRADOS", "5104191": "FUNDAMENTOS DE ETNOECOLOGIA", "5104192": "MICOLOGIA", "5104193": "FUNDAMENTOS DE LIMNOLOGIA", "5104194": "FUNDAMENTOS DE AQUICULTURA", "5104179": "GERENCIAMENTO DE RESIDUOS", "5104205": "BIOLOGIA GERAL", "5104206": "EDUCAÇÃO AMBIENTAL", "5104207": "POLÍTICA E EDUCAÇÃO", "5104211": "ENSINO INCLUSO", "5104212": "CURRICULO EDUCACIONAL", "5104213": "ETICA E DIVERSIDADE", "5104215": "HISTORIA DA BIOLOGIA", "5104220": "TECB(ENSINO INCLUSO)", "5104222": "TECB(INTROD À FILOSOFIA E À SOC DA EDUC)", "5104224": "TECB(METODOLOGIA CIENTÍFICA)", "5104225": "TECB(BIOTECNOLOGIA E BIOPRODUTOS)", "5104226": "TECB(PALEOTONLOGIA E EDUCAÇÃO)", "5104227": "TECB(VIROLOGIA BÁSICA E APLICADA)", "5104228": "TECB(ESCRITA CIENTÍFICA)", "5104229": "TECB(TÓPICOS EM BOTÂNICA APLICADA I)", "5104230": "TECB(TÓPICOS EM BOTÂNICA APLICADA II)", "5104231": "TECB(BIOEST EXPERIMENTAL APLIC ÀS C BIOL", "5104232": "TECB(TÓPICOS EM BIOQUÍMICA CELULAR)", "5104237": "TECB(GENÉTICA)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5101006", "nome": "LINGUA PORTUGUESA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104005", "nome": "FUNDAMENTOS DE QUÍMICA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104001", "nome": "BIOLOGIA CELULAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104002", "nome": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104003", "nome": "ZOOLOGIA DOS INVERTEBRADOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104004", "nome": "BOTANICA CRIPTOGAMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101039", "nome": "MATEMÁTICA BÁSICA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104035", "nome": "EMBRIOLOGIA E HISTOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104001"]}, {"nivel": "2º Nível", "codigo": "5104036", "nome": "MORFOLOGIA E ANATOMIA VEGETAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104037", "nome": "ZOOLOGIA DOS INVERTEBRADOS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104003"]}, {"nivel": "2º Nível", "codigo": "5104038", "nome": "BIOQUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104005"]}, {"nivel": "2º Nível", "codigo": "5104040", "nome": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104002"]}, {"nivel": "3º Nível", "codigo": "5101045", "nome": "FÍSICA E BIOFÍSICA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5101046", "nome": "BIOESTATÍSTICA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["5101039"]}, {"nivel": "3º Nível", "codigo": "5104042", "nome": "ANATOMIA HUMANA BASICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5104043", "nome": "SISTEMÁTICA DE FANERÓGAMAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104036"]}, {"nivel": "3º Nível", "codigo": "5104044", "nome": "ZOOLOGIA DOS CORDADOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104037"]}, {"nivel": "3º Nível", "codigo": "5104047", "nome": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104040"]}, {"nivel": "4º Nível", "codigo": "5104041", "nome": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "5104084", "nome": "ECOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "5104085", "nome": "FISIOLOGIA VEGETAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104036"]}, {"nivel": "4º Nível", "codigo": "5104086", "nome": "ZOOLOGIA DOS CORDADOS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104044"]}, {"nivel": "4º Nível", "codigo": "5104087", "nome": "FISIOLOGIA ANIMAL COMPARADA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104042"]}, {"nivel": "4º Nível", "codigo": "5104088", "nome": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104047"]}, {"nivel": "5º Nível", "codigo": "5104016", "nome": "PSICOLOGIA E EDUCAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104100", "nome": "ECOLOGIA DE ECOSSISTEMAS AQUATICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104084"]}, {"nivel": "5º Nível", "codigo": "5104101", "nome": "GENETICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104102", "nome": "MICROBIOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "5104103", "nome": "INSTRUMENTACAO NO ENSINO DE C BIOLOGICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "5101054", "nome": "PLANEJAMENTO EM EDUCAÇÃO", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104016"]}, {"nivel": "6º Nível", "codigo": "5104131", "nome": "ECOLOGIA DE ECOSSISTEMAS TERRESTRES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104084"]}, {"nivel": "6º Nível", "codigo": "5104132", "nome": "GENETICA DE POPULACOES E EVOLUCAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104101"]}, {"nivel": "6º Nível", "codigo": "5104133", "nome": "GEOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "5104134", "nome": "RECURSOS TEC PARA O ENS DE C BIOLOGICAS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "5104135", "nome": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA I", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "5101033", "nome": "LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "5101052", "nome": "AVALIAÇÃO E APRENDIZAGEM", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104016"]}, {"nivel": "7º Nível", "codigo": "5104145", "nome": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA II", "ch": "150\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104135"]}, {"nivel": "7º Nível", "codigo": "5104146", "nome": "PALEONTOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104133"]}, {"nivel": "7º Nível", "codigo": "5104147", "nome": "MET. CIENTÍFICA PARA O ENS. DA BIOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "5101148", "nome": "LINGUA BRASILEIRA DE SINAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "5104164", "nome": "TRABALHO DE CONCLUSÃO DE CURSO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "5104165", "nome": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA III", "ch": "165\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104145"]}];
+  const codigoToNome = {"5101006": "LINGUA PORTUGUESA", "5104005": "FUNDAMENTOS DE QUÍMICA", "5104001": "BIOLOGIA CELULAR", "5104002": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS I", "5104003": "ZOOLOGIA DOS INVERTEBRADOS I", "5104004": "BOTANICA CRIPTOGAMICA", "5101039": "MATEMÁTICA BÁSICA", "5104035": "EMBRIOLOGIA E HISTOLOGIA", "5104036": "MORFOLOGIA E ANATOMIA VEGETAL", "5104037": "ZOOLOGIA DOS INVERTEBRADOS II", "5104038": "BIOQUÍMICA GERAL", "5104040": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS II", "5101045": "FÍSICA E BIOFÍSICA", "5101046": "BIOESTATÍSTICA", "5104042": "ANATOMIA HUMANA BASICA", "5104043": "SISTEMÁTICA DE FANERÓGAMAS", "5104044": "ZOOLOGIA DOS CORDADOS I", "5104047": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS III", "5104041": "FILOSOFIA E SOCIOLOGIA DA EDUCAÇÃO", "5104084": "ECOLOGIA GERAL", "5104085": "FISIOLOGIA VEGETAL", "5104086": "ZOOLOGIA DOS CORDADOS II", "5104087": "FISIOLOGIA ANIMAL COMPARADA", "5104088": "PRÁTICA EM ENSINO DE C. BIOLÓGICAS IV", "5104016": "PSICOLOGIA E EDUCAÇÃO", "5104100": "ECOLOGIA DE ECOSSISTEMAS AQUATICOS", "5104101": "GENETICA GERAL", "5104102": "MICROBIOLOGIA", "5104103": "INSTRUMENTACAO NO ENSINO DE C BIOLOGICAS", "5101054": "PLANEJAMENTO EM EDUCAÇÃO", "5104131": "ECOLOGIA DE ECOSSISTEMAS TERRESTRES", "5104132": "GENETICA DE POPULACOES E EVOLUCAO", "5104133": "GEOLOGIA", "5104134": "RECURSOS TEC PARA O ENS DE C BIOLOGICAS", "5104135": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA I", "5101033": "LEGISLAÇÃO DA EDUCAÇÃO BÁSICA", "5101052": "AVALIAÇÃO E APRENDIZAGEM", "5104145": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA II", "5104146": "PALEONTOLOGIA", "5104147": "MET. CIENTÍFICA PARA O ENS. DA BIOLOGIA", "5101148": "LINGUA BRASILEIRA DE SINAIS", "5104164": "TRABALHO DE CONCLUSÃO DE CURSO", "5104165": "ESTAGIO SUPERV EM ENSINO DE BIOLOGIA III", "5101021": "INFORMÁTICA APLICADA AO ENSINO", "5102156": "PARASITOLOGIA", "5104009": "PRINCIPIOS DE SEGURANCA EM LABORATÓRIOS", "5104015": "INGLES INSTRUMENTAL", "5104104": "ETOLOGIA", "5104105": "BIOLOGIA E ECOLOGIA DA MEIOFAUNA", "5104136": "BOTANICA ECONOMICA", "5104137": "ECOLOGIA DA POLINIZAÇÃO E DISPERSÃO", "5104169": "ECOTURISMO", "5104174": "ENTOMOLOGIA GERAL", "5104182": "BIOLOGIA MARINHA", "5104190": "ANATOMIA COMPARADA DOS VERTEBRADOS", "5104191": "FUNDAMENTOS DE ETNOECOLOGIA", "5104192": "MICOLOGIA", "5104193": "FUNDAMENTOS DE LIMNOLOGIA", "5104194": "FUNDAMENTOS DE AQUICULTURA", "5104179": "GERENCIAMENTO DE RESIDUOS", "5104205": "BIOLOGIA GERAL", "5104206": "EDUCAÇÃO AMBIENTAL", "5104207": "POLÍTICA E EDUCAÇÃO", "5104211": "ENSINO INCLUSO", "5104212": "CURRICULO EDUCACIONAL", "5104213": "ETICA E DIVERSIDADE", "5104215": "HISTORIA DA BIOLOGIA", "5104220": "TECB(ENSINO INCLUSO)", "5104222": "TECB(INTROD À FILOSOFIA E À SOC DA EDUC)", "5104224": "TECB(METODOLOGIA CIENTÍFICA)", "5104225": "TECB(BIOTECNOLOGIA E BIOPRODUTOS)", "5104226": "TECB(PALEOTONLOGIA E EDUCAÇÃO)", "5104227": "TECB(VIROLOGIA BÁSICA E APLICADA)", "5104228": "TECB(ESCRITA CIENTÍFICA)", "5104229": "TECB(TÓPICOS EM BOTÂNICA APLICADA I)", "5104230": "TECB(TÓPICOS EM BOTÂNICA APLICADA II)", "5104231": "TECB(BIOEST EXPERIMENTAL APLIC ÀS C BIOL", "5104232": "TECB(TÓPICOS EM BIOQUÍMICA CELULAR)", "5104237": "TECB(GENÉTICA)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -842,7 +845,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

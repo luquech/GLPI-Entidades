@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,336 +404,336 @@
           <tr>
               <td>1105224</td>
               <td>HIGIENE IND E SEG DO TRABALHO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105384</td>
               <td>SOLDAGEM DE DUTOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105401</td>
               <td>TRATAMENTOS DE ÁGUAS E EFLUENTES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1107316</td>
               <td>A CATÁLISE E CATALISADORES NA REFINARIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111385</td>
               <td>TECNOLOGIA DE REFINO II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111386</td>
               <td>SEDIMENTOLOGIA E EXTRATIGRAFIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111389</td>
               <td>GERENCIAMENTO DE RESERVATORIOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111390</td>
               <td>PETROFÍSICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111391</td>
               <td>OPERACOES ESPECIAIS DE PERFURACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111392</td>
               <td>GEOPROCESSAMENTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111393</td>
               <td>MINERALOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111394</td>
               <td>PETROGRAFIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111395</td>
               <td>PETROQUÍMICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111396</td>
               <td>FLUIDOS DE PERF E DE COMPLETACAO DE POCO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111397</td>
               <td>TECNOLOGIA DE MEMBRANAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111398</td>
               <td>CALCULO DE REATORES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307169</td>
               <td>LÍNGUA PORTUGUESA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105097</td>
               <td>TUBULACOES INDUSTRIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105404</td>
               <td>TE(EQUIP E APLIC NO SETOR DE PETR E GAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105405</td>
               <td>SISTEMAS DE BOMBEAMENTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111403</td>
               <td>TE(TRATAMENTO DE AGUA PRODUZIDA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111406</td>
               <td>TEEP(TESTE DE FORM EM POCOS DE PETROLEO)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>FLUXO DE FLUIDOS EM MEIOS POROSOS, COMPLETAÇÃO DE POÇOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1111407</td>
               <td>TEEP(CIMENTACAO DE POCOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PERFURACAO DE POCOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1111410</td>
               <td>TEEP(CORROSAO NA INDUSTRIA DE PETROLEO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111412</td>
               <td>TEEP(GEOLOGIA DE RESERVATORIOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GEOLOGIA DO PETRÓLEO, GEOFÍSICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1111415</td>
               <td>TEEP(TESTES DE PRES EM POCOS DE PETROLEO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FLUXO DE FLUIDOS EM MEIOS POROSOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1111416</td>
               <td>TEEP(INT.A MEC.DOS FLUID.COMPUTAC.-CFD)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL III, MECÂNICA DOS FLUIDOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1111417</td>
               <td>TEEP(PROCESSAMENTO PRIM DE PETRÓLEO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SISTEMAS DE PRODUCAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1111418</td>
               <td>TEEP(ACIDIFICAÇÃO DE POÇOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>COMPLETAÇÃO DE POÇOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1111419</td>
               <td>TEEP(INTROD A PROC SEP POR MEMB NA ENG P</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ENSAIOS DE MATER.P/A IND DE PETROL.E GAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1111420</td>
               <td>TEEP(ESTÁGIO-NÃO OBRIGATÓRIO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1111421</td>
               <td>TEEP(PRODUÇÃO CIENTÍFICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOLOGIA E TÉCNICAS DE PESQUISA</td>
               <td></td>
           </tr>
           <tr>
               <td>1111422</td>
               <td>TEEP(LAB DE FLUIDOS DE PERFURAÇÃO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PERFURACAO DE POCOS, FLUIDOS DE PERF E DE COMPLETACAO DE POCO</td>
               <td></td>
           </tr>
           <tr>
               <td>1111423</td>
               <td>TEEP(MÉTODOS DE RECUPERAÇÃO SUPLEMENTAR)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FLUXO DE FLUIDOS EM MEIOS POROSOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1111424</td>
               <td>TEEP(SÍSMICA DE REFLEXÃO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GEOFÍSICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1111425</td>
               <td>TEEP(TESTES DE FORM APLIC A POÇOS DE PET</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FLUXO DE FLUIDOS EM MEIOS POROSOS, COMPLETAÇÃO DE POÇOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1114218</td>
               <td>GEOESTATÍSTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301109</td>
               <td>ENGENHARIA ECONOMICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305430</td>
               <td>RELACOES HUMANAS NO TRABALHO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307179</td>
               <td>ESPANHOL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1404377</td>
               <td>TE(INSTR.E CONTROLE PARA O SETOR P&G)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -777,8 +780,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1111364", "nome": "INTRODUÇÃO À ENGENHARIA DE PETRÓLEO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1111413", "nome": "QUIMICA DO PETROLEO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1510100", "nome": "GEOLOGIA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1108030", "1109126", "1109035"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109126"]}, {"nivel": "2º Nível", "codigo": "1111365", "nome": "GEOLOGIA DO PETRÓLEO", "ch": "60h", "preReqs": ["1107263", "1111413", "1510100"]}, {"nivel": "2º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60h", "preReqs": ["1108031", "1108081"]}, {"nivel": "3º Nível", "codigo": "1108101", "nome": "FÍSICA EXPERIMENTAL II", "ch": "60h", "preReqs": ["1108023"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60h", "preReqs": ["1109131", "1109035"]}, {"nivel": "3º Nível", "codigo": "1111411", "nome": "MATERIAIS PARA A INDUSTRIA DO PETROLEO", "ch": "60h", "preReqs": ["1108081", "1108031", "1108023", "1111365"]}, {"nivel": "3º Nível", "codigo": "1307177", "nome": "METODOLOGIA E TÉCNICAS DE PESQUISA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60h", "preReqs": ["1411001"]}, {"nivel": "4º Nível", "codigo": "1108099", "nome": "MECÂNICA GERAL", "ch": "60h", "preReqs": ["1109131", "1108081", "1108031"]}, {"nivel": "4º Nível", "codigo": "1109134", "nome": "CALCULO AVANCADO", "ch": "60h", "preReqs": ["1109128", "1109049"]}, {"nivel": "4º Nível", "codigo": "1111368", "nome": "ENSAIOS DE MATER.P/A IND DE PETROL.E GAS", "ch": "60h", "preReqs": ["1106121", "1111411"]}, {"nivel": "4º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60h", "preReqs": ["1109131", "1109049"]}, {"nivel": "4º Nível", "codigo": "1510101", "nome": "GEOFÍSICA", "ch": "60h", "preReqs": ["1108100", "1108004", "1108023"]}, {"nivel": "4º Nível", "codigo": "1510102", "nome": "MECÂNICA DAS ROCHAS", "ch": "60h", "preReqs": ["1106121", "1111411"]}, {"nivel": "5º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["1109131", "1109049"]}, {"nivel": "5º Nível", "codigo": "1111369", "nome": "AVALIAÇÃO DE FORMAÇÕES", "ch": "60h", "preReqs": ["1510101"]}, {"nivel": "5º Nível", "codigo": "1111370", "nome": "TERMODINAMICA GERAL", "ch": "60h", "preReqs": ["1108081", "1109128"]}, {"nivel": "5º Nível", "codigo": "1111371", "nome": "PERFURACAO DE POCOS", "ch": "60h", "preReqs": ["1510102"]}, {"nivel": "5º Nível", "codigo": "1111372", "nome": "TECNOLOGIA DE REFINO I", "ch": "60h", "preReqs": ["1107263", "1111413"]}, {"nivel": "5º Nível", "codigo": "1114130", "nome": "INTRODUÇÃO À ESTATÍSTICA", "ch": "60h", "preReqs": ["1114129"]}, {"nivel": "6º Nível", "codigo": "1111374", "nome": "MECÂNICA DOS FLUIDOS", "ch": "60h", "preReqs": ["1109134", "1109010"]}, {"nivel": "6º Nível", "codigo": "1111375", "nome": "SISTEMAS DE PRODUCAO", "ch": "60h", "preReqs": ["1111371"]}, {"nivel": "6º Nível", "codigo": "1111376", "nome": "COMPLETAÇÃO DE POÇOS", "ch": "60h", "preReqs": ["1111371"]}, {"nivel": "6º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1305328", "nome": "DIREITO DO PETRÓLEO", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1404026", "nome": "ELETROTÉCNICA GERAL", "ch": "60h", "preReqs": ["1108100", "1108101"]}, {"nivel": "7º Nível", "codigo": "1111378", "nome": "FLUXO DE FLUIDOS EM MEIOS POROSOS", "ch": "60h", "preReqs": ["1109134", "1111374", "1111371"]}, {"nivel": "7º Nível", "codigo": "1111379", "nome": "PRODUCAO E PROCESS DE GAS NATURAL", "ch": "60h", "preReqs": ["1111370"]}, {"nivel": "7º Nível", "codigo": "1111380", "nome": "ESCOAMENTO MULTIFASICO", "ch": "60h", "preReqs": ["1111374"]}, {"nivel": "7º Nível", "codigo": "1301014", "nome": "ADMINISTRAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1307150", "nome": "INGLÊS", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1503133", "nome": "DIAGNÓSTICO E REMEDIAÇÃO AMBIENTAL", "ch": "60h", "preReqs": ["1111413", "1107263"]}, {"nivel": "8º Nível", "codigo": "1105382", "nome": "ANÁLISE E MANUTENÇÃO DE DUTOS", "ch": "60h", "preReqs": ["1111368"]}, {"nivel": "8º Nível", "codigo": "1111383", "nome": "ELEVAÇÃO ARTIFICIAL", "ch": "60h", "preReqs": ["1111376"]}, {"nivel": "8º Nível", "codigo": "1113025", "nome": "ERGONOMIA I", "ch": "60h", "preReqs": ["1301014"]}, {"nivel": "8º Nível", "codigo": "1113034", "nome": "GESTAO DA QUALIDADE", "ch": "60h", "preReqs": ["1301014"]}, {"nivel": "9º Nível", "codigo": "1111387", "nome": "ARMAZ. E TRANSP. PETRÓLEO E GÁS NATURAL", "ch": "60h", "preReqs": ["1105382"]}, {"nivel": "9º Nível", "codigo": "1111414", "nome": "ENGENHARIA DE RESERVATORIO", "ch": "60h", "preReqs": ["1111380"]}, {"nivel": "9º Nível", "codigo": "1303115", "nome": "ECONOMIA DO PETRÓLEO", "ch": "60h", "preReqs": []}];
-  const codigoToNome = {"1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1111364": "INTRODUÇÃO À ENGENHARIA DE PETRÓLEO", "1111413": "QUIMICA DO PETROLEO", "1510100": "GEOLOGIA GERAL", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1111365": "GEOLOGIA DO PETRÓLEO", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1108100": "FÍSICA GERAL III", "1108101": "FÍSICA EXPERIMENTAL II", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1111411": "MATERIAIS PARA A INDUSTRIA DO PETROLEO", "1307177": "METODOLOGIA E TÉCNICAS DE PESQUISA", "1411075": "CALCULO NUMERICO", "1108099": "MECÂNICA GERAL", "1109134": "CALCULO AVANCADO", "1111368": "ENSAIOS DE MATER.P/A IND DE PETROL.E GAS", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1510101": "GEOFÍSICA", "1510102": "MECÂNICA DAS ROCHAS", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1111369": "AVALIAÇÃO DE FORMAÇÕES", "1111370": "TERMODINAMICA GERAL", "1111371": "PERFURACAO DE POCOS", "1111372": "TECNOLOGIA DE REFINO I", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1111374": "MECÂNICA DOS FLUIDOS", "1111375": "SISTEMAS DE PRODUCAO", "1111376": "COMPLETAÇÃO DE POÇOS", "1113019": "EXPRESSAO GRAFICA", "1305328": "DIREITO DO PETRÓLEO", "1404026": "ELETROTÉCNICA GERAL", "1111378": "FLUXO DE FLUIDOS EM MEIOS POROSOS", "1111379": "PRODUCAO E PROCESS DE GAS NATURAL", "1111380": "ESCOAMENTO MULTIFASICO", "1301014": "ADMINISTRAÇÃO", "1307150": "INGLÊS", "1503133": "DIAGNÓSTICO E REMEDIAÇÃO AMBIENTAL", "1105382": "ANÁLISE E MANUTENÇÃO DE DUTOS", "1111383": "ELEVAÇÃO ARTIFICIAL", "1113025": "ERGONOMIA I", "1113034": "GESTAO DA QUALIDADE", "1111387": "ARMAZ. E TRANSP. PETRÓLEO E GÁS NATURAL", "1111414": "ENGENHARIA DE RESERVATORIO", "1303115": "ECONOMIA DO PETRÓLEO", "1105224": "HIGIENE IND E SEG DO TRABALHO", "1105384": "SOLDAGEM DE DUTOS", "1105401": "TRATAMENTOS DE ÁGUAS E EFLUENTES", "1107316": "A CATÁLISE E CATALISADORES NA REFINARIA", "1111385": "TECNOLOGIA DE REFINO II", "1111386": "SEDIMENTOLOGIA E EXTRATIGRAFIA", "1111389": "GERENCIAMENTO DE RESERVATORIOS", "1111390": "PETROFÍSICA", "1111391": "OPERACOES ESPECIAIS DE PERFURACAO", "1111392": "GEOPROCESSAMENTO", "1111393": "MINERALOGIA", "1111394": "PETROGRAFIA", "1111395": "PETROQUÍMICA", "1111396": "FLUIDOS DE PERF E DE COMPLETACAO DE POCO", "1111397": "TECNOLOGIA DE MEMBRANAS", "1111398": "CALCULO DE REATORES", "1307169": "LÍNGUA PORTUGUESA", "1105097": "TUBULACOES INDUSTRIAIS", "1105404": "TE(EQUIP E APLIC NO SETOR DE PETR E GAS)", "1105405": "SISTEMAS DE BOMBEAMENTO", "1111403": "TE(TRATAMENTO DE AGUA PRODUZIDA)", "1111406": "TEEP(TESTE DE FORM EM POCOS DE PETROLEO)", "1111407": "TEEP(CIMENTACAO DE POCOS)", "1111410": "TEEP(CORROSAO NA INDUSTRIA DE PETROLEO)", "1111412": "TEEP(GEOLOGIA DE RESERVATORIOS)", "1111415": "TEEP(TESTES DE PRES EM POCOS DE PETROLEO", "1111416": "TEEP(INT.A MEC.DOS FLUID.COMPUTAC.-CFD)", "1111417": "TEEP(PROCESSAMENTO PRIM DE PETRÓLEO)", "1111418": "TEEP(ACIDIFICAÇÃO DE POÇOS)", "1111419": "TEEP(INTROD A PROC SEP POR MEMB NA ENG P", "1111420": "TEEP(ESTÁGIO-NÃO OBRIGATÓRIO)", "1111421": "TEEP(PRODUÇÃO CIENTÍFICA)", "1111422": "TEEP(LAB DE FLUIDOS DE PERFURAÇÃO)", "1111423": "TEEP(MÉTODOS DE RECUPERAÇÃO SUPLEMENTAR)", "1111424": "TEEP(SÍSMICA DE REFLEXÃO)", "1111425": "TEEP(TESTES DE FORM APLIC A POÇOS DE PET", "1114218": "GEOESTATÍSTICA", "1301109": "ENGENHARIA ECONOMICA", "1305430": "RELACOES HUMANAS NO TRABALHO", "1307179": "ESPANHOL", "1307332": "LIBRAS", "1404377": "TE(INSTR.E CONTROLE PARA O SETOR P&G)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1111364", "nome": "INTRODUÇÃO À ENGENHARIA DE PETRÓLEO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1111413", "nome": "QUIMICA DO PETROLEO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1510100", "nome": "GEOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030", "1109126", "1109035"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126"]}, {"nivel": "2º Nível", "codigo": "1111365", "nome": "GEOLOGIA DO PETRÓLEO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1107263", "1111413", "1510100"]}, {"nivel": "2º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108031", "1108081"]}, {"nivel": "3º Nível", "codigo": "1108101", "nome": "FÍSICA EXPERIMENTAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108023"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109035"]}, {"nivel": "3º Nível", "codigo": "1111411", "nome": "MATERIAIS PARA A INDUSTRIA DO PETROLEO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108081", "1108031", "1108023", "1111365"]}, {"nivel": "3º Nível", "codigo": "1307177", "nome": "METODOLOGIA E TÉCNICAS DE PESQUISA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1411075", "nome": "CALCULO NUMERICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411001"]}, {"nivel": "4º Nível", "codigo": "1108099", "nome": "MECÂNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1108081", "1108031"]}, {"nivel": "4º Nível", "codigo": "1109134", "nome": "CALCULO AVANCADO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109128", "1109049"]}, {"nivel": "4º Nível", "codigo": "1111368", "nome": "ENSAIOS DE MATER.P/A IND DE PETROL.E GAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106121", "1111411"]}, {"nivel": "4º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109049"]}, {"nivel": "4º Nível", "codigo": "1510101", "nome": "GEOFÍSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108100", "1108004", "1108023"]}, {"nivel": "4º Nível", "codigo": "1510102", "nome": "MECÂNICA DAS ROCHAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1106121", "1111411"]}, {"nivel": "5º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109049"]}, {"nivel": "5º Nível", "codigo": "1111369", "nome": "AVALIAÇÃO DE FORMAÇÕES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510101"]}, {"nivel": "5º Nível", "codigo": "1111370", "nome": "TERMODINAMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108081", "1109128"]}, {"nivel": "5º Nível", "codigo": "1111371", "nome": "PERFURACAO DE POCOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510102"]}, {"nivel": "5º Nível", "codigo": "1111372", "nome": "TECNOLOGIA DE REFINO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1107263", "1111413"]}, {"nivel": "5º Nível", "codigo": "1114130", "nome": "INTRODUÇÃO À ESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114129"]}, {"nivel": "6º Nível", "codigo": "1111374", "nome": "MECÂNICA DOS FLUIDOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109134", "1109010"]}, {"nivel": "6º Nível", "codigo": "1111375", "nome": "SISTEMAS DE PRODUCAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1111371"]}, {"nivel": "6º Nível", "codigo": "1111376", "nome": "COMPLETAÇÃO DE POÇOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1111371"]}, {"nivel": "6º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1305328", "nome": "DIREITO DO PETRÓLEO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1404026", "nome": "ELETROTÉCNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108100", "1108101"]}, {"nivel": "7º Nível", "codigo": "1111378", "nome": "FLUXO DE FLUIDOS EM MEIOS POROSOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109134", "1111374", "1111371"]}, {"nivel": "7º Nível", "codigo": "1111379", "nome": "PRODUCAO E PROCESS DE GAS NATURAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1111370"]}, {"nivel": "7º Nível", "codigo": "1111380", "nome": "ESCOAMENTO MULTIFASICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1111374"]}, {"nivel": "7º Nível", "codigo": "1301014", "nome": "ADMINISTRAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1307150", "nome": "INGLÊS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1503133", "nome": "DIAGNÓSTICO E REMEDIAÇÃO AMBIENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1111413", "1107263"]}, {"nivel": "8º Nível", "codigo": "1105382", "nome": "ANÁLISE E MANUTENÇÃO DE DUTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1111368"]}, {"nivel": "8º Nível", "codigo": "1111383", "nome": "ELEVAÇÃO ARTIFICIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1111376"]}, {"nivel": "8º Nível", "codigo": "1113025", "nome": "ERGONOMIA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301014"]}, {"nivel": "8º Nível", "codigo": "1113034", "nome": "GESTAO DA QUALIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301014"]}, {"nivel": "9º Nível", "codigo": "1105388", "nome": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "ch": "90\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1111387", "nome": "ARMAZ. E TRANSP. PETRÓLEO E GÁS NATURAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1105382"]}, {"nivel": "9º Nível", "codigo": "1111414", "nome": "ENGENHARIA DE RESERVATORIO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1111380"]}, {"nivel": "9º Nível", "codigo": "1303115", "nome": "ECONOMIA DO PETRÓLEO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1111399", "nome": "ESTAGIO INTEGRADO", "ch": "330\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1111400", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}];
+  const codigoToNome = {"1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1111364": "INTRODUÇÃO À ENGENHARIA DE PETRÓLEO", "1111413": "QUIMICA DO PETROLEO", "1510100": "GEOLOGIA GERAL", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1111365": "GEOLOGIA DO PETRÓLEO", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1108100": "FÍSICA GERAL III", "1108101": "FÍSICA EXPERIMENTAL II", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1111411": "MATERIAIS PARA A INDUSTRIA DO PETROLEO", "1307177": "METODOLOGIA E TÉCNICAS DE PESQUISA", "1411075": "CALCULO NUMERICO", "1108099": "MECÂNICA GERAL", "1109134": "CALCULO AVANCADO", "1111368": "ENSAIOS DE MATER.P/A IND DE PETROL.E GAS", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1510101": "GEOFÍSICA", "1510102": "MECÂNICA DAS ROCHAS", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1111369": "AVALIAÇÃO DE FORMAÇÕES", "1111370": "TERMODINAMICA GERAL", "1111371": "PERFURACAO DE POCOS", "1111372": "TECNOLOGIA DE REFINO I", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1111374": "MECÂNICA DOS FLUIDOS", "1111375": "SISTEMAS DE PRODUCAO", "1111376": "COMPLETAÇÃO DE POÇOS", "1113019": "EXPRESSAO GRAFICA", "1305328": "DIREITO DO PETRÓLEO", "1404026": "ELETROTÉCNICA GERAL", "1111378": "FLUXO DE FLUIDOS EM MEIOS POROSOS", "1111379": "PRODUCAO E PROCESS DE GAS NATURAL", "1111380": "ESCOAMENTO MULTIFASICO", "1301014": "ADMINISTRAÇÃO", "1307150": "INGLÊS", "1503133": "DIAGNÓSTICO E REMEDIAÇÃO AMBIENTAL", "1105382": "ANÁLISE E MANUTENÇÃO DE DUTOS", "1111383": "ELEVAÇÃO ARTIFICIAL", "1113025": "ERGONOMIA I", "1113034": "GESTAO DA QUALIDADE", "1105388": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "1111387": "ARMAZ. E TRANSP. PETRÓLEO E GÁS NATURAL", "1111414": "ENGENHARIA DE RESERVATORIO", "1303115": "ECONOMIA DO PETRÓLEO", "1111399": "ESTAGIO INTEGRADO", "1111400": "TRABALHO DE CONCLUSAO DE CURSO", "1105224": "HIGIENE IND E SEG DO TRABALHO", "1105384": "SOLDAGEM DE DUTOS", "1105401": "TRATAMENTOS DE ÁGUAS E EFLUENTES", "1107316": "A CATÁLISE E CATALISADORES NA REFINARIA", "1111385": "TECNOLOGIA DE REFINO II", "1111386": "SEDIMENTOLOGIA E EXTRATIGRAFIA", "1111389": "GERENCIAMENTO DE RESERVATORIOS", "1111390": "PETROFÍSICA", "1111391": "OPERACOES ESPECIAIS DE PERFURACAO", "1111392": "GEOPROCESSAMENTO", "1111393": "MINERALOGIA", "1111394": "PETROGRAFIA", "1111395": "PETROQUÍMICA", "1111396": "FLUIDOS DE PERF E DE COMPLETACAO DE POCO", "1111397": "TECNOLOGIA DE MEMBRANAS", "1111398": "CALCULO DE REATORES", "1307169": "LÍNGUA PORTUGUESA", "1105097": "TUBULACOES INDUSTRIAIS", "1105404": "TE(EQUIP E APLIC NO SETOR DE PETR E GAS)", "1105405": "SISTEMAS DE BOMBEAMENTO", "1111403": "TE(TRATAMENTO DE AGUA PRODUZIDA)", "1111406": "TEEP(TESTE DE FORM EM POCOS DE PETROLEO)", "1111407": "TEEP(CIMENTACAO DE POCOS)", "1111410": "TEEP(CORROSAO NA INDUSTRIA DE PETROLEO)", "1111412": "TEEP(GEOLOGIA DE RESERVATORIOS)", "1111415": "TEEP(TESTES DE PRES EM POCOS DE PETROLEO", "1111416": "TEEP(INT.A MEC.DOS FLUID.COMPUTAC.-CFD)", "1111417": "TEEP(PROCESSAMENTO PRIM DE PETRÓLEO)", "1111418": "TEEP(ACIDIFICAÇÃO DE POÇOS)", "1111419": "TEEP(INTROD A PROC SEP POR MEMB NA ENG P", "1111420": "TEEP(ESTÁGIO-NÃO OBRIGATÓRIO)", "1111421": "TEEP(PRODUÇÃO CIENTÍFICA)", "1111422": "TEEP(LAB DE FLUIDOS DE PERFURAÇÃO)", "1111423": "TEEP(MÉTODOS DE RECUPERAÇÃO SUPLEMENTAR)", "1111424": "TEEP(SÍSMICA DE REFLEXÃO)", "1111425": "TEEP(TESTES DE FORM APLIC A POÇOS DE PET", "1114218": "GEOESTATÍSTICA", "1301109": "ENGENHARIA ECONOMICA", "1305430": "RELACOES HUMANAS NO TRABALHO", "1307179": "ESPANHOL", "1307332": "LIBRAS", "1404377": "TE(INSTR.E CONTROLE PARA O SETOR P&G)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -890,7 +893,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

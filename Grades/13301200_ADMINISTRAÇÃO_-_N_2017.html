@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,200 +404,200 @@
           <tr>
               <td>1301059</td>
               <td>CULTURA ORGANIZACIONAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301096</td>
               <td>TEA(CONCEITOS CONTAB E SUAS APLICACOES)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301104</td>
               <td>GESTÃO DA INOVAÇÃO TECNOLÓGICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA DAS ORGANIZACOES II, 1301026</td>
               <td></td>
           </tr>
           <tr>
               <td>1301147</td>
               <td>GESTAO DE TURISMO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301148</td>
               <td>COMPORTAMENTO DO CONSUMIDOR</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MARKETING I, 1301064</td>
               <td></td>
           </tr>
           <tr>
               <td>1301149</td>
               <td>PESQUISA DE MERCADO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MARKETING I</td>
               <td></td>
           </tr>
           <tr>
               <td>1301150</td>
               <td>COMUNICACAO EMPRESARIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PRATICA DE PRODUCAO TEXTUAL, 1307045</td>
               <td></td>
           </tr>
           <tr>
               <td>1301151</td>
               <td>GESTAO DE PROJETOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ADMINISTRACAO DA PRODUCAO E OPERACOES I, 1301066</td>
               <td></td>
           </tr>
           <tr>
               <td>1301152</td>
               <td>GESTÃO DE SERVICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301153</td>
               <td>GESTAO NO TERCEIRO SETOR</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301154</td>
               <td>GESTAO DE CONHECIMENTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA DAS ORGANIZACOES II</td>
               <td></td>
           </tr>
           <tr>
               <td>1301155</td>
               <td>GESTAO PUBLICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301156</td>
               <td>METODOS QUANT DE PESQ EM ADMINISTRACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INFERÊNCIA ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1301157</td>
               <td>METODOS QUALIT DE PESQ EM ADMINISTRACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOLOGIA DE PESQUISA, 1301085</td>
               <td></td>
           </tr>
           <tr>
               <td>1301158</td>
               <td>GOVERNANCA CORPORATIVA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GESTAO DA CADEIA DE SUPRIMENTOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1301159</td>
-              <td>EMPRESA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>EMPRESA,MERCADO E SOC EM ADMINISTRACAO</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SOCIOLOGIA DAS ORGANIZACOES</td>
               <td></td>
           </tr>
           <tr>
               <td>1301160</td>
               <td>ECONOMIA INDUSTRIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FUNDAMENTOS DE ECONOMIA, 1303001</td>
               <td></td>
           </tr>
           <tr>
               <td>1301161</td>
               <td>NEGOCIOS INTERNACIONAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTRATEGIA ORGANIZACIONAL, 1301093</td>
               <td></td>
           </tr>
           <tr>
               <td>1301162</td>
               <td>MARKETING ELETRONICO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301163</td>
               <td>GESTAO DE INVESTIMENTOS FINANCEIROS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MERCADO FINANCEIRO, 1301007</td>
               <td></td>
           </tr>
           <tr>
               <td>1301166</td>
               <td>TEA(GESTAO AMBIENTAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301167</td>
               <td>TEA(ANÁLISE TÉCNICA DE AÇÕES)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MERCADO FINANCEIRO</td>
               <td></td>
           </tr>
           <tr>
               <td>1301168</td>
               <td>TEA(GOVERNANÇA E INOVAÇÃO NA GEST PUB)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1306320</td>
               <td>HISTORIA DA AFRICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -641,8 +644,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1109196", "nome": "MATEMATICA APLICADA A ADMINISTRACAO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1301063", "nome": "SOCIOLOGIA DAS ORGANIZACOES", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1301125", "nome": "CONTABILIDADE EMPRESARIAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1301165", "nome": "INTRODUCAO A ADMINISTRACAO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307386", "nome": "PRATICA DE PRODUCAO TEXTUAL", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1114031", "nome": "ESTATÍSTICA DESCRITIVA", "ch": "60h", "preReqs": ["1109196", "1109083"]}, {"nivel": "2º Nível", "codigo": "1301126", "nome": "METODOLOGIA DE PESQUISA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1301127", "nome": "TEORIA DAS ORGANIZACOES I", "ch": "60h", "preReqs": ["1301165", "1301027"]}, {"nivel": "2º Nível", "codigo": "1301137", "nome": "ANALISE DAS DEMONSTRACOES CONTABEIS", "ch": "60h", "preReqs": ["1301125", "1301001"]}, {"nivel": "2º Nível", "codigo": "1305439", "nome": "DIREITO EMPRESARIAL", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1114032", "nome": "INFERÊNCIA ESTATÍSTICA", "ch": "60h", "preReqs": ["1114031"]}, {"nivel": "3º Nível", "codigo": "1301086", "nome": "INTRODUÇÃO À PSICOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1301128", "nome": "TEORIA DAS ORGANIZACOES II", "ch": "60h", "preReqs": ["1301127", "1301005"]}, {"nivel": "3º Nível", "codigo": "1303117", "nome": "FUNDAMENTOS DE ECONOMIA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1305073", "nome": "LEGISLACAO SOCIAL", "ch": "60h", "preReqs": ["1305439", "1305072"]}, {"nivel": "4º Nível", "codigo": "1301062", "nome": "PSICOLOGIA DAS ORGANIZACOES", "ch": "60h", "preReqs": ["1301086"]}, {"nivel": "4º Nível", "codigo": "1301140", "nome": "GESTAO DE PROCESSOS", "ch": "60h", "preReqs": ["1301128", "1301026"]}, {"nivel": "4º Nível", "codigo": "1301143", "nome": "TEORIA DOS JOGOS", "ch": "60h", "preReqs": ["1114031"]}, {"nivel": "4º Nível", "codigo": "1303224", "nome": "MATEMATICA FINANCEIRA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1305074", "nome": "LEGISLACAO TRIBUTARIA", "ch": "60h", "preReqs": ["1305439", "1305072"]}, {"nivel": "5º Nível", "codigo": "1301124", "nome": "ETICA E RESPONSABILIDADE SOCIOAMBIENTAL", "ch": "60h", "preReqs": ["1301128"]}, {"nivel": "5º Nível", "codigo": "1301129", "nome": "GESTAO DE PESSOAS I", "ch": "60h", "preReqs": ["1301128", "1301026"]}, {"nivel": "5º Nível", "codigo": "1301131", "nome": "MARKETING I", "ch": "60h", "preReqs": ["1301128", "1301026"]}, {"nivel": "5º Nível", "codigo": "1301133", "nome": "ADMINISTRACAO DA PRODUCAO E OPERACOES I", "ch": "60h", "preReqs": ["1301140", "1301072"]}, {"nivel": "5º Nível", "codigo": "1301139", "nome": "MERCADO FINANCEIRO", "ch": "60h", "preReqs": ["1301137", "1301004", "1301011", "1303224"]}, {"nivel": "6º Nível", "codigo": "1301057", "nome": "ADMINISTRAÇÃO FINANCEIRA I", "ch": "60h", "preReqs": ["1301139", "1301007"]}, {"nivel": "6º Nível", "codigo": "1301130", "nome": "GESTAO DE PESSOAS II", "ch": "60h", "preReqs": ["1301129", "1301068"]}, {"nivel": "6º Nível", "codigo": "1301132", "nome": "MARKETING II", "ch": "60h", "preReqs": ["1301131", "1301064"]}, {"nivel": "6º Nível", "codigo": "1301134", "nome": "ADMINISTRACAO DA PRODUCAO E OPERACOES II", "ch": "60h", "preReqs": ["1301133", "1301066"]}, {"nivel": "6º Nível", "codigo": "1301135", "nome": "LOGISTICA EMPRESARIAL", "ch": "60h", "preReqs": ["1301140", "1301072"]}, {"nivel": "7º Nível", "codigo": "1301058", "nome": "ADMINISTRAÇÃO FINANCEIRA II", "ch": "60h", "preReqs": ["1301057"]}, {"nivel": "7º Nível", "codigo": "1301136", "nome": "GESTAO DA CADEIA DE SUPRIMENTOS", "ch": "60h", "preReqs": ["1301135", "1301070"]}, {"nivel": "7º Nível", "codigo": "1301138", "nome": "GESTAO DE CUSTOS", "ch": "60h", "preReqs": ["1301057", "1301133"]}, {"nivel": "7º Nível", "codigo": "1301141", "nome": "ESTRATEGIA ORGANIZACIONAL", "ch": "60h", "preReqs": ["1301131", "1301133"]}, {"nivel": "7º Nível", "codigo": "1301142", "nome": "EMPREENDEDORISMO", "ch": "60h", "preReqs": ["1301128", "1301026"]}, {"nivel": "8º Nível", "codigo": "1301019", "nome": "PESQUISA OPERACIONAL", "ch": "60h", "preReqs": ["1109196", "1109083"]}, {"nivel": "8º Nível", "codigo": "1301040", "nome": "ORCAMENTO EMPRESARIAL", "ch": "60h", "preReqs": ["1301138", "1301003", "1301058"]}, {"nivel": "8º Nível", "codigo": "1411301", "nome": "GESTAO DE SISTEMAS DE INFORMACAO", "ch": "60h", "preReqs": ["1301140", "1301072"]}];
-  const codigoToNome = {"1109196": "MATEMATICA APLICADA A ADMINISTRACAO", "1301063": "SOCIOLOGIA DAS ORGANIZACOES", "1301125": "CONTABILIDADE EMPRESARIAL", "1301165": "INTRODUCAO A ADMINISTRACAO", "1307386": "PRATICA DE PRODUCAO TEXTUAL", "1114031": "ESTATÍSTICA DESCRITIVA", "1301126": "METODOLOGIA DE PESQUISA", "1301127": "TEORIA DAS ORGANIZACOES I", "1301137": "ANALISE DAS DEMONSTRACOES CONTABEIS", "1305439": "DIREITO EMPRESARIAL", "1114032": "INFERÊNCIA ESTATÍSTICA", "1301086": "INTRODUÇÃO À PSICOLOGIA", "1301128": "TEORIA DAS ORGANIZACOES II", "1303117": "FUNDAMENTOS DE ECONOMIA", "1305073": "LEGISLACAO SOCIAL", "1301062": "PSICOLOGIA DAS ORGANIZACOES", "1301140": "GESTAO DE PROCESSOS", "1301143": "TEORIA DOS JOGOS", "1303224": "MATEMATICA FINANCEIRA", "1305074": "LEGISLACAO TRIBUTARIA", "1301124": "ETICA E RESPONSABILIDADE SOCIOAMBIENTAL", "1301129": "GESTAO DE PESSOAS I", "1301131": "MARKETING I", "1301133": "ADMINISTRACAO DA PRODUCAO E OPERACOES I", "1301139": "MERCADO FINANCEIRO", "1301057": "ADMINISTRAÇÃO FINANCEIRA I", "1301130": "GESTAO DE PESSOAS II", "1301132": "MARKETING II", "1301134": "ADMINISTRACAO DA PRODUCAO E OPERACOES II", "1301135": "LOGISTICA EMPRESARIAL", "1301058": "ADMINISTRAÇÃO FINANCEIRA II", "1301136": "GESTAO DA CADEIA DE SUPRIMENTOS", "1301138": "GESTAO DE CUSTOS", "1301141": "ESTRATEGIA ORGANIZACIONAL", "1301142": "EMPREENDEDORISMO", "1301019": "PESQUISA OPERACIONAL", "1301040": "ORCAMENTO EMPRESARIAL", "1411301": "GESTAO DE SISTEMAS DE INFORMACAO", "1301059": "CULTURA ORGANIZACIONAL", "1301096": "TEA(CONCEITOS CONTAB E SUAS APLICACOES)", "1301104": "GESTÃO DA INOVAÇÃO TECNOLÓGICA", "1301147": "GESTAO DE TURISMO", "1301148": "COMPORTAMENTO DO CONSUMIDOR", "1301149": "PESQUISA DE MERCADO", "1301150": "COMUNICACAO EMPRESARIAL", "1301151": "GESTAO DE PROJETOS", "1301152": "GESTÃO DE SERVICOS", "1301153": "GESTAO NO TERCEIRO SETOR", "1301154": "GESTAO DE CONHECIMENTO", "1301155": "GESTAO PUBLICA", "1301156": "METODOS QUANT DE PESQ EM ADMINISTRACAO", "1301157": "METODOS QUALIT DE PESQ EM ADMINISTRACAO", "1301158": "GOVERNANCA CORPORATIVA", "1301159": "EMPRESA", "1301160": "ECONOMIA INDUSTRIAL", "1301161": "NEGOCIOS INTERNACIONAIS", "1301162": "MARKETING ELETRONICO", "1301163": "GESTAO DE INVESTIMENTOS FINANCEIROS", "1301166": "TEA(GESTAO AMBIENTAL)", "1301167": "TEA(ANÁLISE TÉCNICA DE AÇÕES)", "1301168": "TEA(GOVERNANÇA E INOVAÇÃO NA GEST PUB)", "1306320": "HISTORIA DA AFRICA", "1307332": "LIBRAS"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1109196", "nome": "MATEMATICA APLICADA A ADMINISTRACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1301063", "nome": "SOCIOLOGIA DAS ORGANIZACOES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1301125", "nome": "CONTABILIDADE EMPRESARIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1301165", "nome": "INTRODUCAO A ADMINISTRACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307386", "nome": "PRATICA DE PRODUCAO TEXTUAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1114031", "nome": "ESTATÍSTICA DESCRITIVA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109196", "1109083"]}, {"nivel": "2º Nível", "codigo": "1301126", "nome": "METODOLOGIA DE PESQUISA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1301127", "nome": "TEORIA DAS ORGANIZACOES I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301165", "1301027"]}, {"nivel": "2º Nível", "codigo": "1301137", "nome": "ANALISE DAS DEMONSTRACOES CONTABEIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301125", "1301001"]}, {"nivel": "2º Nível", "codigo": "1305439", "nome": "DIREITO EMPRESARIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1114032", "nome": "INFERÊNCIA ESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114031"]}, {"nivel": "3º Nível", "codigo": "1301086", "nome": "INTRODUÇÃO À PSICOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1301128", "nome": "TEORIA DAS ORGANIZACOES II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301127", "1301005"]}, {"nivel": "3º Nível", "codigo": "1303117", "nome": "FUNDAMENTOS DE ECONOMIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1305073", "nome": "LEGISLACAO SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305439", "1305072"]}, {"nivel": "4º Nível", "codigo": "1301062", "nome": "PSICOLOGIA DAS ORGANIZACOES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301086"]}, {"nivel": "4º Nível", "codigo": "1301140", "nome": "GESTAO DE PROCESSOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301128", "1301026"]}, {"nivel": "4º Nível", "codigo": "1301143", "nome": "TEORIA DOS JOGOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114031"]}, {"nivel": "4º Nível", "codigo": "1303224", "nome": "MATEMATICA FINANCEIRA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1305074", "nome": "LEGISLACAO TRIBUTARIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305439", "1305072"]}, {"nivel": "5º Nível", "codigo": "1301124", "nome": "ETICA E RESPONSABILIDADE SOCIOAMBIENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301128"]}, {"nivel": "5º Nível", "codigo": "1301129", "nome": "GESTAO DE PESSOAS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301128", "1301026"]}, {"nivel": "5º Nível", "codigo": "1301131", "nome": "MARKETING I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301128", "1301026"]}, {"nivel": "5º Nível", "codigo": "1301133", "nome": "ADMINISTRACAO DA PRODUCAO E OPERACOES I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301140", "1301072"]}, {"nivel": "5º Nível", "codigo": "1301139", "nome": "MERCADO FINANCEIRO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301137", "1301004", "1301011", "1303224"]}, {"nivel": "6º Nível", "codigo": "1301057", "nome": "ADMINISTRAÇÃO FINANCEIRA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301139", "1301007"]}, {"nivel": "6º Nível", "codigo": "1301130", "nome": "GESTAO DE PESSOAS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301129", "1301068"]}, {"nivel": "6º Nível", "codigo": "1301132", "nome": "MARKETING II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301131", "1301064"]}, {"nivel": "6º Nível", "codigo": "1301134", "nome": "ADMINISTRACAO DA PRODUCAO E OPERACOES II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301133", "1301066"]}, {"nivel": "6º Nível", "codigo": "1301135", "nome": "LOGISTICA EMPRESARIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301140", "1301072"]}, {"nivel": "7º Nível", "codigo": "1301058", "nome": "ADMINISTRAÇÃO FINANCEIRA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301057"]}, {"nivel": "7º Nível", "codigo": "1301136", "nome": "GESTAO DA CADEIA DE SUPRIMENTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301135", "1301070"]}, {"nivel": "7º Nível", "codigo": "1301138", "nome": "GESTAO DE CUSTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301057", "1301133"]}, {"nivel": "7º Nível", "codigo": "1301141", "nome": "ESTRATEGIA ORGANIZACIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301131", "1301133"]}, {"nivel": "7º Nível", "codigo": "1301142", "nome": "EMPREENDEDORISMO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301128", "1301026"]}, {"nivel": "8º Nível", "codigo": "1301144", "nome": "SEMINARIO DE PROJETO DE PESQUISA", "ch": "120\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1301126", "1301085"]}, {"nivel": "8º Nível", "codigo": "1301019", "nome": "PESQUISA OPERACIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109196", "1109083"]}, {"nivel": "8º Nível", "codigo": "1301040", "nome": "ORCAMENTO EMPRESARIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301138", "1301003", "1301058"]}, {"nivel": "8º Nível", "codigo": "1411301", "nome": "GESTAO DE SISTEMAS DE INFORMACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301140", "1301072"]}, {"nivel": "10º Nível", "codigo": "1301145", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "180\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1301144"]}];
+  const codigoToNome = {"1109196": "MATEMATICA APLICADA A ADMINISTRACAO", "1301063": "SOCIOLOGIA DAS ORGANIZACOES", "1301125": "CONTABILIDADE EMPRESARIAL", "1301165": "INTRODUCAO A ADMINISTRACAO", "1307386": "PRATICA DE PRODUCAO TEXTUAL", "1114031": "ESTATÍSTICA DESCRITIVA", "1301126": "METODOLOGIA DE PESQUISA", "1301127": "TEORIA DAS ORGANIZACOES I", "1301137": "ANALISE DAS DEMONSTRACOES CONTABEIS", "1305439": "DIREITO EMPRESARIAL", "1114032": "INFERÊNCIA ESTATÍSTICA", "1301086": "INTRODUÇÃO À PSICOLOGIA", "1301128": "TEORIA DAS ORGANIZACOES II", "1303117": "FUNDAMENTOS DE ECONOMIA", "1305073": "LEGISLACAO SOCIAL", "1301062": "PSICOLOGIA DAS ORGANIZACOES", "1301140": "GESTAO DE PROCESSOS", "1301143": "TEORIA DOS JOGOS", "1303224": "MATEMATICA FINANCEIRA", "1305074": "LEGISLACAO TRIBUTARIA", "1301124": "ETICA E RESPONSABILIDADE SOCIOAMBIENTAL", "1301129": "GESTAO DE PESSOAS I", "1301131": "MARKETING I", "1301133": "ADMINISTRACAO DA PRODUCAO E OPERACOES I", "1301139": "MERCADO FINANCEIRO", "1301057": "ADMINISTRAÇÃO FINANCEIRA I", "1301130": "GESTAO DE PESSOAS II", "1301132": "MARKETING II", "1301134": "ADMINISTRACAO DA PRODUCAO E OPERACOES II", "1301135": "LOGISTICA EMPRESARIAL", "1301058": "ADMINISTRAÇÃO FINANCEIRA II", "1301136": "GESTAO DA CADEIA DE SUPRIMENTOS", "1301138": "GESTAO DE CUSTOS", "1301141": "ESTRATEGIA ORGANIZACIONAL", "1301142": "EMPREENDEDORISMO", "1301144": "SEMINARIO DE PROJETO DE PESQUISA", "1301019": "PESQUISA OPERACIONAL", "1301040": "ORCAMENTO EMPRESARIAL", "1411301": "GESTAO DE SISTEMAS DE INFORMACAO", "1301145": "TRABALHO DE CONCLUSAO DE CURSO", "1301059": "CULTURA ORGANIZACIONAL", "1301096": "TEA(CONCEITOS CONTAB E SUAS APLICACOES)", "1301104": "GESTÃO DA INOVAÇÃO TECNOLÓGICA", "1301147": "GESTAO DE TURISMO", "1301148": "COMPORTAMENTO DO CONSUMIDOR", "1301149": "PESQUISA DE MERCADO", "1301150": "COMUNICACAO EMPRESARIAL", "1301151": "GESTAO DE PROJETOS", "1301152": "GESTÃO DE SERVICOS", "1301153": "GESTAO NO TERCEIRO SETOR", "1301154": "GESTAO DE CONHECIMENTO", "1301155": "GESTAO PUBLICA", "1301156": "METODOS QUANT DE PESQ EM ADMINISTRACAO", "1301157": "METODOS QUALIT DE PESQ EM ADMINISTRACAO", "1301158": "GOVERNANCA CORPORATIVA", "1301159": "EMPRESA,MERCADO E SOC EM ADMINISTRACAO", "1301160": "ECONOMIA INDUSTRIAL", "1301161": "NEGOCIOS INTERNACIONAIS", "1301162": "MARKETING ELETRONICO", "1301163": "GESTAO DE INVESTIMENTOS FINANCEIROS", "1301166": "TEA(GESTAO AMBIENTAL)", "1301167": "TEA(ANÁLISE TÉCNICA DE AÇÕES)", "1301168": "TEA(GOVERNANÇA E INOVAÇÃO NA GEST PUB)", "1306320": "HISTORIA DA AFRICA", "1307332": "LIBRAS"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -754,7 +757,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

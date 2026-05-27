@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,600 +404,600 @@
           <tr>
               <td>1302092</td>
               <td>PRÁTICA INSTRUMENTAL I</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302093</td>
               <td>PRÁTICA INSTRUMENTAL II</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302094</td>
               <td>PRÁTICA INSTRUMENTAL III</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302095</td>
               <td>PRÁTICA INSTRUMENTAL MIDI I</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302096</td>
               <td>PRÁTICA INSTRUMENTAL MIDI II</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302097</td>
               <td>PRÁTICA INSTRUMENTAL MIDI III</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302098</td>
               <td>LEITURA DE PARTITURA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302099</td>
               <td>HARMONIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302100</td>
               <td>INTRODUÇÃO À COMPOSIÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302101</td>
               <td>MÚSICA ELETROACÚSTICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302102</td>
               <td>ESTILOS MUSICAIS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302103</td>
               <td>LABORATÓRIO DE AUDIO II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1302081</td>
               <td></td>
           </tr>
           <tr>
               <td>1302104</td>
               <td>INTRODUÇÃO À COMPUTAÇÃO E MÚSICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>INTRODUÇÃO À TECNOLOGIA MUSICAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1302105</td>
               <td>SINTESE SONORA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>1302077</td>
               <td></td>
           </tr>
           <tr>
               <td>1302106</td>
               <td>LABORATÓRIO DE VÍDEO II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1302084</td>
               <td></td>
           </tr>
           <tr>
               <td>1302107</td>
               <td>INTRODUÇÃO AO CINEMA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302108</td>
               <td>ANÁLISE DE FILME E PUBLICIDADE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>1302087</td>
               <td></td>
           </tr>
           <tr>
               <td>1302109</td>
               <td>FOLCLORE BRASILEIRO E NORDESTINO</td>
-              <td>90h</td>
-              <td>6.0</td>
+              <td>90"h</td>
+              <td>6"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302110</td>
               <td>PESQ E DES ARTES VISUAIS E TECNOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOLOGIA E TÉCNICA DE PESQUISA</td>
               <td></td>
           </tr>
           <tr>
               <td>1302111</td>
               <td>PESQ E DES CINEMA/VIDEO E TECNOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOLOGIA E TÉCNICA DE PESQUISA</td>
               <td></td>
           </tr>
           <tr>
               <td>1302112</td>
               <td>PESQ. E DES. EM MÚSICA E TECNOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOLOGIA E TÉCNICA DE PESQUISA</td>
               <td></td>
           </tr>
           <tr>
               <td>1302113</td>
               <td>DESENHO I</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302114</td>
               <td>DESENHO II</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302115</td>
               <td>PINTURA I</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302116</td>
               <td>PINTURA II</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302117</td>
               <td>DESENHO E ANIMAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1302076</td>
               <td></td>
           </tr>
           <tr>
               <td>1302118</td>
               <td>TEC DE EXPRESSAO E COMUNICACAO VISUAL</td>
-              <td>90h</td>
-              <td>6.0</td>
+              <td>90"h</td>
+              <td>6"</td>
               <td>1302069</td>
               <td></td>
           </tr>
           <tr>
               <td>1302119</td>
               <td>EXPRESSAO CORPORAL E VOCAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>OFICINA BASICA DE ARTES I</td>
               <td></td>
           </tr>
           <tr>
               <td>1302120</td>
               <td>ENCENAÇÃO I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302121</td>
               <td>ENCENAÇÃO II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302122</td>
               <td>CENOGRAFIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302124</td>
               <td>TE (INTRODUÇAO AO MARKETING CULTURAL)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302127</td>
               <td>TE (TEORIA E PRÁTICA DO CINEMA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302130</td>
               <td>TE (PERFORMANCE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302132</td>
               <td>TE(CINEMA BRASILEIRO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302133</td>
               <td>TE (TÉCNICA E EXERCÍCIO DE CRIATIVIDADE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302134</td>
               <td>TE (TRATAMENTO DE IMAGEM DIGITALIZADA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302135</td>
               <td>TE (FOTOGRAFIA AVANCADA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302137</td>
               <td>TE(OFICINA DE MODELAGEM 3D - BLENDER)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302138</td>
               <td>TE (ANÁLISE DO FILME CINEMATOGRÁFICO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302139</td>
               <td>TE( CINEMA E ESTUDOS CULTURAIS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302140</td>
               <td>TE(OFIC BASICA DE FIGURINO E MAQUIAGEM)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302146</td>
               <td>TE (INTRODUÇÃO AO DOCUMENTÁRIO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302147</td>
               <td>TE(PRODUCAO GRAFICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302148</td>
               <td>TE(IDENTIDADE VISUAL DE MARCAS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302149</td>
               <td>TE(DIRECAO DE ARTE EM PUBLICIDADE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302157</td>
               <td>TE (HISTÓRIA DO CINEMA NO MUNDO)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302158</td>
               <td>TE (INTERPRETAÇÃO TEATRAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302159</td>
               <td>TE (PRODUÇÃO DE MIDIAS EDUCATIVAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302160</td>
               <td>TE (TÉCNICA DE PRODUÇÃO AUDIO-VISUAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302181</td>
               <td>TE(CRIACAO DE PERSONAGENS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302182</td>
               <td>TE(NOVAS NARRATIVAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302204</td>
               <td>TE (ESTÉTICA AUDIOVISUAL MUSICAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302205</td>
               <td>TE (INTRODUÇÃO À FILOSOFIA DA ARTE)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302206</td>
               <td>TE (SEMIÓTICA P/ ANÁLISE DE LINGUAGENS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302324</td>
               <td>TEAM(TEATRO DE SOMBRAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302327</td>
               <td>TE(OFICINA DE AUDIO CRIATIVO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302328</td>
               <td>TE(ORGANIZACAO DE TEMPO E PLAN ACADEMICO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302330</td>
               <td>TE(CORPO E MOVIMENTO)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302335</td>
               <td>TE(PESQUISA EM ARTES CENICAS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302342</td>
               <td>TE(MIDIAS E ESTRATEGIAS DE DIVULGAÇÃO)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302343</td>
               <td>TE(TECNICA VOCAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302354</td>
               <td>TE(ASSESSORIA E PROD.DE CONT. INSTITUC.I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302355</td>
               <td>TE(OFICINA DE ROTEIRO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302356</td>
               <td>TEAM(PESQUISA EM ARTE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302357</td>
               <td>TEAM(DUBLAGEM PRÁTICA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302358</td>
               <td>TE(LABORATORIO DE POETICAS TECNOLOGICAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302359</td>
               <td>TE(MODELAGEM PARA ANIMACAO 3D DIGITAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302360</td>
               <td>TE(PANORAMA DOS EFEITOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302361</td>
               <td>TE(MANIPULADORES P/ ANIMACAO 3D DIGITAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304152</td>
               <td>PRÁTICA DESPORTIVA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305069</td>
               <td>SOCIOLOGIA DA ARTE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307146</td>
               <td>LINGUA PORTUGUESA II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1307145</td>
               <td></td>
           </tr>
           <tr>
               <td>1307148</td>
               <td>LINGUA INGLESA II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1307147</td>
               <td></td>
           </tr>
           <tr>
               <td>1309344</td>
               <td>TEM(CAMERATA I)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
@@ -1041,7 +1044,7 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1302056", "nome": "ESTÉTICA E HISTÓRIA DAS ARTES I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1302057", "nome": "OFICINA BASICA DE ARTES I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1302058", "nome": "INTRODUÇÃO À INFORMÁTICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1302059", "nome": "ESTÉTICA E HISTÓRIA DAS ARTES II", "ch": "60h", "preReqs": ["1302056"]}, {"nivel": "2º Nível", "codigo": "1302060", "nome": "OFICINA BASICA DE ARTES II", "ch": "60h", "preReqs": ["1302057"]}, {"nivel": "2º Nível", "codigo": "1302062", "nome": "PERCEPÇÃO MUSICAL", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1302063", "nome": "INTRODUÇÃO À TECNOLOGIA MUSICAL", "ch": "30h", "preReqs": ["1302058"]}, {"nivel": "3º Nível", "codigo": "1302061", "nome": "METODOLOGIA E TÉCNICA DE PESQUISA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1302064", "nome": "FUNDAMENTOS DA LINGUAGEM VISUAL I", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1302070", "nome": "PSICOLOGIA DA CRIATIVIDADE", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1302065", "nome": "EVOLUCAO DAS ARTES VISUAIS I", "ch": "60h", "preReqs": ["1302056", "1302060"]}, {"nivel": "4º Nível", "codigo": "1302071", "nome": "FUNDAMENTOS DA LINGUAGEM VISUAL II", "ch": "60h", "preReqs": ["1302064"]}, {"nivel": "5º Nível", "codigo": "1302072", "nome": "EVOLUCAO DAS ARTES VISUAIS II", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1302073", "nome": "INTRODUÇÃO À DIREÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1302066", "nome": "SEMINARIOS DE INTEGRACAO I", "ch": "15h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1302067", "nome": "SEMINARIOS DE INTEGRACAO II", "ch": "15h", "preReqs": ["1302066"]}];
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1302056", "nome": "ESTÉTICA E HISTÓRIA DAS ARTES I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1302057", "nome": "OFICINA BASICA DE ARTES I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1302058", "nome": "INTRODUÇÃO À INFORMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1302059", "nome": "ESTÉTICA E HISTÓRIA DAS ARTES II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1302056"]}, {"nivel": "2º Nível", "codigo": "1302060", "nome": "OFICINA BASICA DE ARTES II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1302057"]}, {"nivel": "2º Nível", "codigo": "1302062", "nome": "PERCEPÇÃO MUSICAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1302063", "nome": "INTRODUÇÃO À TECNOLOGIA MUSICAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1302058"]}, {"nivel": "3º Nível", "codigo": "1302061", "nome": "METODOLOGIA E TÉCNICA DE PESQUISA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1302064", "nome": "FUNDAMENTOS DA LINGUAGEM VISUAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1302070", "nome": "PSICOLOGIA DA CRIATIVIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1302065", "nome": "EVOLUCAO DAS ARTES VISUAIS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1302056", "1302060"]}, {"nivel": "4º Nível", "codigo": "1302071", "nome": "FUNDAMENTOS DA LINGUAGEM VISUAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1302064"]}, {"nivel": "5º Nível", "codigo": "1302072", "nome": "EVOLUCAO DAS ARTES VISUAIS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1302073", "nome": "INTRODUÇÃO À DIREÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1302066", "nome": "SEMINARIOS DE INTEGRACAO I", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1302067", "nome": "SEMINARIOS DE INTEGRACAO II", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1302066"]}];
   const codigoToNome = {"1302056": "ESTÉTICA E HISTÓRIA DAS ARTES I", "1302057": "OFICINA BASICA DE ARTES I", "1302058": "INTRODUÇÃO À INFORMÁTICA", "1302059": "ESTÉTICA E HISTÓRIA DAS ARTES II", "1302060": "OFICINA BASICA DE ARTES II", "1302062": "PERCEPÇÃO MUSICAL", "1302063": "INTRODUÇÃO À TECNOLOGIA MUSICAL", "1302061": "METODOLOGIA E TÉCNICA DE PESQUISA", "1302064": "FUNDAMENTOS DA LINGUAGEM VISUAL I", "1302070": "PSICOLOGIA DA CRIATIVIDADE", "1302065": "EVOLUCAO DAS ARTES VISUAIS I", "1302071": "FUNDAMENTOS DA LINGUAGEM VISUAL II", "1302072": "EVOLUCAO DAS ARTES VISUAIS II", "1302073": "INTRODUÇÃO À DIREÇÃO", "1302066": "SEMINARIOS DE INTEGRACAO I", "1302067": "SEMINARIOS DE INTEGRACAO II", "1302092": "PRÁTICA INSTRUMENTAL I", "1302093": "PRÁTICA INSTRUMENTAL II", "1302094": "PRÁTICA INSTRUMENTAL III", "1302095": "PRÁTICA INSTRUMENTAL MIDI I", "1302096": "PRÁTICA INSTRUMENTAL MIDI II", "1302097": "PRÁTICA INSTRUMENTAL MIDI III", "1302098": "LEITURA DE PARTITURA", "1302099": "HARMONIA", "1302100": "INTRODUÇÃO À COMPOSIÇÃO", "1302101": "MÚSICA ELETROACÚSTICA", "1302102": "ESTILOS MUSICAIS", "1302103": "LABORATÓRIO DE AUDIO II", "1302104": "INTRODUÇÃO À COMPUTAÇÃO E MÚSICA", "1302105": "SINTESE SONORA", "1302106": "LABORATÓRIO DE VÍDEO II", "1302107": "INTRODUÇÃO AO CINEMA", "1302108": "ANÁLISE DE FILME E PUBLICIDADE", "1302109": "FOLCLORE BRASILEIRO E NORDESTINO", "1302110": "PESQ E DES ARTES VISUAIS E TECNOLOGIA", "1302111": "PESQ E DES CINEMA/VIDEO E TECNOLOGIA", "1302112": "PESQ. E DES. EM MÚSICA E TECNOLOGIA", "1302113": "DESENHO I", "1302114": "DESENHO II", "1302115": "PINTURA I", "1302116": "PINTURA II", "1302117": "DESENHO E ANIMAÇÃO", "1302118": "TEC DE EXPRESSAO E COMUNICACAO VISUAL", "1302119": "EXPRESSAO CORPORAL E VOCAL", "1302120": "ENCENAÇÃO I", "1302121": "ENCENAÇÃO II", "1302122": "CENOGRAFIA", "1302124": "TE (INTRODUÇAO AO MARKETING CULTURAL)", "1302127": "TE (TEORIA E PRÁTICA DO CINEMA)", "1302130": "TE (PERFORMANCE)", "1302132": "TE(CINEMA BRASILEIRO)", "1302133": "TE (TÉCNICA E EXERCÍCIO DE CRIATIVIDADE)", "1302134": "TE (TRATAMENTO DE IMAGEM DIGITALIZADA)", "1302135": "TE (FOTOGRAFIA AVANCADA)", "1302137": "TE(OFICINA DE MODELAGEM 3D - BLENDER)", "1302138": "TE (ANÁLISE DO FILME CINEMATOGRÁFICO)", "1302139": "TE( CINEMA E ESTUDOS CULTURAIS)", "1302140": "TE(OFIC BASICA DE FIGURINO E MAQUIAGEM)", "1302146": "TE (INTRODUÇÃO AO DOCUMENTÁRIO)", "1302147": "TE(PRODUCAO GRAFICA)", "1302148": "TE(IDENTIDADE VISUAL DE MARCAS)", "1302149": "TE(DIRECAO DE ARTE EM PUBLICIDADE)", "1302157": "TE (HISTÓRIA DO CINEMA NO MUNDO)", "1302158": "TE (INTERPRETAÇÃO TEATRAL)", "1302159": "TE (PRODUÇÃO DE MIDIAS EDUCATIVAS)", "1302160": "TE (TÉCNICA DE PRODUÇÃO AUDIO-VISUAL)", "1302181": "TE(CRIACAO DE PERSONAGENS)", "1302182": "TE(NOVAS NARRATIVAS)", "1302204": "TE (ESTÉTICA AUDIOVISUAL MUSICAL)", "1302205": "TE (INTRODUÇÃO À FILOSOFIA DA ARTE)", "1302206": "TE (SEMIÓTICA P/ ANÁLISE DE LINGUAGENS)", "1302324": "TEAM(TEATRO DE SOMBRAS)", "1302327": "TE(OFICINA DE AUDIO CRIATIVO)", "1302328": "TE(ORGANIZACAO DE TEMPO E PLAN ACADEMICO", "1302330": "TE(CORPO E MOVIMENTO)", "1302335": "TE(PESQUISA EM ARTES CENICAS)", "1302342": "TE(MIDIAS E ESTRATEGIAS DE DIVULGAÇÃO)", "1302343": "TE(TECNICA VOCAL)", "1302354": "TE(ASSESSORIA E PROD.DE CONT. INSTITUC.I", "1302355": "TE(OFICINA DE ROTEIRO)", "1302356": "TEAM(PESQUISA EM ARTE)", "1302357": "TEAM(DUBLAGEM PRÁTICA)", "1302358": "TE(LABORATORIO DE POETICAS TECNOLOGICAS)", "1302359": "TE(MODELAGEM PARA ANIMACAO 3D DIGITAL)", "1302360": "TE(PANORAMA DOS EFEITOS)", "1302361": "TE(MANIPULADORES P/ ANIMACAO 3D DIGITAL)", "1304152": "PRÁTICA DESPORTIVA", "1305069": "SOCIOLOGIA DA ARTE", "1307146": "LINGUA PORTUGUESA II", "1307148": "LINGUA INGLESA II", "1309344": "TEM(CAMERATA I)"};
 
   const subjectsMap = new Map();
@@ -1154,7 +1157,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

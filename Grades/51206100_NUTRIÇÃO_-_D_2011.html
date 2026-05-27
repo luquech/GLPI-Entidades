@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,248 +404,248 @@
           <tr>
               <td>5102158</td>
               <td>TENUT(NUTRICAO E MARKETING)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102159</td>
               <td>TENUT(ALIMENTOS FUNCIONAIS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102160</td>
               <td>TENUT(INTERP DE EXAMES LAB P/ O NUTRIC)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102161</td>
               <td>TENUT(TOXICOLOGIA DE ALIMENTOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102162</td>
               <td>TENUT(ANA INT DE D Q APL A NUT E SAU COL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102169</td>
               <td>TENUT(HAB E COM NO PROG N.A. DO ESCOLAR)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102172</td>
               <td>TENUT I(T E EM ED POP EM SAUDE E AN ISTI</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102173</td>
               <td>TENUT I(ENDOCRINOLOGIA APLIC A NUTRICAO)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>FISIOLOGIA HUMANA</td>
               <td></td>
           </tr>
           <tr>
               <td>5102174</td>
               <td>TENUT I (TÓP. EM NUTRIÇÃO EXPERIMENTAL)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102175</td>
               <td>PRINCÍPIOS DE SEGURANÇA EM LABORATÓRIOS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102176</td>
               <td>TENUT I (TÉC. EM ANÁLISE DE ALIMENTOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102185</td>
               <td>TENUT I(A ATUACAO DO NUTR NA ATEN PRIMAR</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>NUTRICAO EM SAUDE COLETIVA, AVALIAÇÃO NUTRICIONAL</td>
               <td></td>
           </tr>
           <tr>
               <td>5104015</td>
               <td>INGLES INSTRUMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101006</td>
               <td>LINGUA PORTUGUESA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101148</td>
               <td>LINGUA BRASILEIRA DE SINAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102155</td>
               <td>TENUT (GERENCIAMENTO DE RESIDUOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102187</td>
               <td>TENUT II(EMPREENDEDORISMO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102193</td>
               <td>TENUT I(BIOQUIMICA APLICADA AO EXERCICIO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>BIOQUÍMICA, FISIOLOGIA HUMANA</td>
               <td></td>
           </tr>
           <tr>
               <td>5102194</td>
               <td>TENUT I(MEC DE ACAO N E PAT NO SIST DIG)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>FISIOLOGIA HUMANA, PATOLOGIA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>5102195</td>
               <td>TENUT I(SIST ALIM SUST P SEG ALIM E NUT)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ANTROPOLOGIA DA NUTRIÇÃO, BIOQUÍMICA DA NUTRIÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>5102198</td>
               <td>TENUT I(FITOTERAPIA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102199</td>
               <td>TERAPIAS ALTER E COMPLEMENT EM NUTRICAO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102200</td>
               <td>TENUT I(PRAT INTEG E COMP EM SAUDE-PICS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102205</td>
               <td>TENUT(NUTRIÇÃO COMPORTAMENTAL)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>FISIOLOGIA HUMANA, PSICOLOGIA E SAUDE, FISIOPATOLOGIA DA NUTRICAO</td>
               <td>DIETOTERAPIA I</td>
           </tr>
           <tr>
               <td>5102207</td>
               <td>TENUT(TOP ATUAIS NUT CLINC PAC CRONICO)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>DIETOTERAPIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>5102216</td>
               <td>TENUT(PSICOLOGIA APLICADA A SAUDE)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102217</td>
               <td>TENUT(GRUPOS E DISPOSITIVOS GRUPAIS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102218</td>
               <td>TENUT(DESENVOLVIMENTO DE NOVOS PROD ALIM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MICROBIOLOGIA DOS ALIMENTOS, BROMATOLOGIA GERAL, TECNOLOGIA DE ALIMENTOS</td>
               <td>ANÁLISE SENSORIAL DE ALIMENTOS</td>
           </tr>
           <tr>
               <td>5102219</td>
               <td>TENUT(NOÇÕES BÁSICAS SOBRE PATENTES)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102220</td>
-              <td>TENUT(NUTRIÇÃO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>TENUT(NUTRIÇÃO,TERRITÓRIO E SAÚDE)</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5103059</td>
               <td>ENFERMAGEM NA INTERP DE EXAMES LABORATOR</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
@@ -689,8 +692,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5101066", "nome": "INFORMÁTICA APLICADA À SAUDE", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102007", "nome": "METODOLOGIA CIENTÍFICA APLICADA À SAÚDE", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102020", "nome": "ANATOMIA HUMANA BASICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102028", "nome": "PARASITOLOGIA HUMANA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102053", "nome": "CITOLOGIA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102054", "nome": "QUÍMICA DE BIOMOLÉCULA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102055", "nome": "INTRODUÇÃO À NUTRIÇÃO", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104035", "nome": "EMBRIOLOGIA E HISTOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101156", "nome": "BIOESTATÍSTICA", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102008", "nome": "SAUDE E SOCIEDADE", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102038", "nome": "MICROBIOLOGIA E IMUNOLOGIA", "ch": "60h", "preReqs": ["5102053", "5104035"]}, {"nivel": "2º Nível", "codigo": "5102070", "nome": "BIOQUÍMICA", "ch": "60h", "preReqs": ["5102054"]}, {"nivel": "2º Nível", "codigo": "5102073", "nome": "FISIOLOGIA HUMANA", "ch": "60h", "preReqs": ["5102020"]}, {"nivel": "2º Nível", "codigo": "5102091", "nome": "EPIDEMIOLOGIA", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104160", "nome": "GENETICA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5102010", "nome": "PATOLOGIA GERAL", "ch": "60h", "preReqs": ["5102038", "5102073"]}, {"nivel": "3º Nível", "codigo": "5102049", "nome": "BROMATOLOGIA GERAL", "ch": "60h", "preReqs": ["5102070"]}, {"nivel": "3º Nível", "codigo": "5102090", "nome": "BIOQUÍMICA DA NUTRIÇÃO", "ch": "60h", "preReqs": ["5102070", "5102073"]}, {"nivel": "3º Nível", "codigo": "5102107", "nome": "AVALIAÇÃO NUTRICIONAL", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5102108", "nome": "MICROBIOLOGIA DOS ALIMENTOS", "ch": "60h", "preReqs": ["5102038"]}, {"nivel": "3º Nível", "codigo": "5102110", "nome": "ANTROPOLOGIA DA NUTRIÇÃO", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5104143", "nome": "PSICOLOGIA E SAUDE", "ch": "30h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "5102105", "nome": "NUTRICAO E CICLO DE VIDA I", "ch": "60h", "preReqs": ["5102090"]}, {"nivel": "4º Nível", "codigo": "5102106", "nome": "TÉCNICA DIÉTETICA", "ch": "60h", "preReqs": ["5102090"]}, {"nivel": "4º Nível", "codigo": "5102109", "nome": "BIOQUÍMICA DOS  ALIMENTOS", "ch": "30h", "preReqs": ["5102049"]}, {"nivel": "4º Nível", "codigo": "5102123", "nome": "HIGIENE E LEGISLACAO SANITARIA DE ALIMEN", "ch": "60h", "preReqs": ["5102108"]}, {"nivel": "4º Nível", "codigo": "5102124", "nome": "FISIOPATOLOGIA DA NUTRICAO", "ch": "60h", "preReqs": ["5102010"]}, {"nivel": "4º Nível", "codigo": "5102125", "nome": "NUTRICAO EM SAUDE COLETIVA", "ch": "60h", "preReqs": ["5102091"]}, {"nivel": "4º Nível", "codigo": "5102136", "nome": "EDUCAÇÃO NUTRICIONAL", "ch": "60h", "preReqs": ["5102110"]}, {"nivel": "4º Nível", "codigo": "5102137", "nome": "FUNDAMENTOS EM GESTAO DA QUALIDADE", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "5102098", "nome": "TECNOLOGIA DE ALIMENTOS", "ch": "60h", "preReqs": ["5102108", "5102109"]}, {"nivel": "5º Nível", "codigo": "5102121", "nome": "NUTRICAO E CICLO DE VIDA II", "ch": "30h", "preReqs": ["5102105"]}, {"nivel": "5º Nível", "codigo": "5102122", "nome": "DIETETICA", "ch": "30h", "preReqs": ["5102106"]}, {"nivel": "5º Nível", "codigo": "5102134", "nome": "GESTAO DE UNID DE ALIMENTACAO COLETIVA I", "ch": "60h", "preReqs": ["5102123"]}, {"nivel": "5º Nível", "codigo": "5102135", "nome": "FARMACOLOGIA APLICADA A NUTRICAO", "ch": "30h", "preReqs": ["5102010"]}, {"nivel": "5º Nível", "codigo": "5102147", "nome": "NUTRIÇÃO EM ATIVIDADE FÍSICA", "ch": "30h", "preReqs": ["5102090"]}, {"nivel": "5º Nível", "codigo": "5102149", "nome": "PRÁTICA EM SAÚDE COLETIVA", "ch": "60h", "preReqs": ["5102125", "5102136", "5102107"]}, {"nivel": "5º Nível", "codigo": "5102151", "nome": "DIETOTERAPIA I", "ch": "60h", "preReqs": ["5102124"]}, {"nivel": "6º Nível", "codigo": "5102131", "nome": "NUTRICAO E CICLO DA VIDA III", "ch": "30h", "preReqs": ["5102121"]}, {"nivel": "6º Nível", "codigo": "5102132", "nome": "ANÁLISE SENSORIAL DE ALIMENTOS", "ch": "30h", "preReqs": ["5102122"]}, {"nivel": "6º Nível", "codigo": "5102133", "nome": "ETICA", "ch": "30h", "preReqs": ["5102008"]}, {"nivel": "6º Nível", "codigo": "5102148", "nome": "NUTRICAO EXPERIMENTAL", "ch": "30h", "preReqs": ["5104035", "5102073", "5102135"]}, {"nivel": "6º Nível", "codigo": "5102150", "nome": "GESTAO DE UNID DE ALIMENT COLETIVA II", "ch": "60h", "preReqs": ["5102134"]}, {"nivel": "6º Nível", "codigo": "5102164", "nome": "PROJETO DE PESQUISA EM NUTRICAO", "ch": "30h", "preReqs": ["5102007"]}, {"nivel": "6º Nível", "codigo": "5102165", "nome": "INTRODUÇÃO À GASTRONOMIA", "ch": "30h", "preReqs": ["5102106"]}, {"nivel": "6º Nível", "codigo": "5102166", "nome": "VIGILANCIA NUTRICIONAL E SAUDE PUBLICA", "ch": "60h", "preReqs": ["5102149"]}, {"nivel": "6º Nível", "codigo": "5102168", "nome": "DIETOTERAPIA II", "ch": "60h", "preReqs": ["5102151"]}, {"nivel": "7º Nível", "codigo": "5102167", "nome": "PRAT EM GESTAO DE UNID DE ALIM COLETIVA", "ch": "60h", "preReqs": ["5102150"]}, {"nivel": "7º Nível", "codigo": "5102170", "nome": "PRÁTICA EM NUTRIÇÃO CLÍNICA", "ch": "90h", "preReqs": ["5102168"]}];
-  const codigoToNome = {"5101066": "INFORMÁTICA APLICADA À SAUDE", "5102007": "METODOLOGIA CIENTÍFICA APLICADA À SAÚDE", "5102020": "ANATOMIA HUMANA BASICA", "5102028": "PARASITOLOGIA HUMANA", "5102053": "CITOLOGIA", "5102054": "QUÍMICA DE BIOMOLÉCULA", "5102055": "INTRODUÇÃO À NUTRIÇÃO", "5104035": "EMBRIOLOGIA E HISTOLOGIA", "5101156": "BIOESTATÍSTICA", "5102008": "SAUDE E SOCIEDADE", "5102038": "MICROBIOLOGIA E IMUNOLOGIA", "5102070": "BIOQUÍMICA", "5102073": "FISIOLOGIA HUMANA", "5102091": "EPIDEMIOLOGIA", "5104160": "GENETICA", "5102010": "PATOLOGIA GERAL", "5102049": "BROMATOLOGIA GERAL", "5102090": "BIOQUÍMICA DA NUTRIÇÃO", "5102107": "AVALIAÇÃO NUTRICIONAL", "5102108": "MICROBIOLOGIA DOS ALIMENTOS", "5102110": "ANTROPOLOGIA DA NUTRIÇÃO", "5104143": "PSICOLOGIA E SAUDE", "5102105": "NUTRICAO E CICLO DE VIDA I", "5102106": "TÉCNICA DIÉTETICA", "5102109": "BIOQUÍMICA DOS  ALIMENTOS", "5102123": "HIGIENE E LEGISLACAO SANITARIA DE ALIMEN", "5102124": "FISIOPATOLOGIA DA NUTRICAO", "5102125": "NUTRICAO EM SAUDE COLETIVA", "5102136": "EDUCAÇÃO NUTRICIONAL", "5102137": "FUNDAMENTOS EM GESTAO DA QUALIDADE", "5102098": "TECNOLOGIA DE ALIMENTOS", "5102121": "NUTRICAO E CICLO DE VIDA II", "5102122": "DIETETICA", "5102134": "GESTAO DE UNID DE ALIMENTACAO COLETIVA I", "5102135": "FARMACOLOGIA APLICADA A NUTRICAO", "5102147": "NUTRIÇÃO EM ATIVIDADE FÍSICA", "5102149": "PRÁTICA EM SAÚDE COLETIVA", "5102151": "DIETOTERAPIA I", "5102131": "NUTRICAO E CICLO DA VIDA III", "5102132": "ANÁLISE SENSORIAL DE ALIMENTOS", "5102133": "ETICA", "5102148": "NUTRICAO EXPERIMENTAL", "5102150": "GESTAO DE UNID DE ALIMENT COLETIVA II", "5102164": "PROJETO DE PESQUISA EM NUTRICAO", "5102165": "INTRODUÇÃO À GASTRONOMIA", "5102166": "VIGILANCIA NUTRICIONAL E SAUDE PUBLICA", "5102168": "DIETOTERAPIA II", "5102167": "PRAT EM GESTAO DE UNID DE ALIM COLETIVA", "5102170": "PRÁTICA EM NUTRIÇÃO CLÍNICA", "5102158": "TENUT(NUTRICAO E MARKETING)", "5102159": "TENUT(ALIMENTOS FUNCIONAIS)", "5102160": "TENUT(INTERP DE EXAMES LAB P/ O NUTRIC)", "5102161": "TENUT(TOXICOLOGIA DE ALIMENTOS)", "5102162": "TENUT(ANA INT DE D Q APL A NUT E SAU COL", "5102169": "TENUT(HAB E COM NO PROG N.A. DO ESCOLAR)", "5102172": "TENUT I(T E EM ED POP EM SAUDE E AN ISTI", "5102173": "TENUT I(ENDOCRINOLOGIA APLIC A NUTRICAO)", "5102174": "TENUT I (TÓP. EM NUTRIÇÃO EXPERIMENTAL)", "5102175": "PRINCÍPIOS DE SEGURANÇA EM LABORATÓRIOS", "5102176": "TENUT I (TÉC. EM ANÁLISE DE ALIMENTOS)", "5102185": "TENUT I(A ATUACAO DO NUTR NA ATEN PRIMAR", "5104015": "INGLES INSTRUMENTAL", "5101006": "LINGUA PORTUGUESA", "5101148": "LINGUA BRASILEIRA DE SINAIS", "5102155": "TENUT (GERENCIAMENTO DE RESIDUOS)", "5102187": "TENUT II(EMPREENDEDORISMO)", "5102193": "TENUT I(BIOQUIMICA APLICADA AO EXERCICIO", "5102194": "TENUT I(MEC DE ACAO N E PAT NO SIST DIG)", "5102195": "TENUT I(SIST ALIM SUST P SEG ALIM E NUT)", "5102198": "TENUT I(FITOTERAPIA)", "5102199": "TERAPIAS ALTER E COMPLEMENT EM NUTRICAO", "5102200": "TENUT I(PRAT INTEG E COMP EM SAUDE-PICS)", "5102205": "TENUT(NUTRIÇÃO COMPORTAMENTAL)", "5102207": "TENUT(TOP ATUAIS NUT CLINC PAC CRONICO)", "5102216": "TENUT(PSICOLOGIA APLICADA A SAUDE)", "5102217": "TENUT(GRUPOS E DISPOSITIVOS GRUPAIS)", "5102218": "TENUT(DESENVOLVIMENTO DE NOVOS PROD ALIM", "5102219": "TENUT(NOÇÕES BÁSICAS SOBRE PATENTES)", "5102220": "TENUT(NUTRIÇÃO", "5103059": "ENFERMAGEM NA INTERP DE EXAMES LABORATOR"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5101066", "nome": "INFORMÁTICA APLICADA À SAUDE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102007", "nome": "METODOLOGIA CIENTÍFICA APLICADA À SAÚDE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102020", "nome": "ANATOMIA HUMANA BASICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102028", "nome": "PARASITOLOGIA HUMANA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102053", "nome": "CITOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102054", "nome": "QUÍMICA DE BIOMOLÉCULA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102055", "nome": "INTRODUÇÃO À NUTRIÇÃO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104035", "nome": "EMBRIOLOGIA E HISTOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5101156", "nome": "BIOESTATÍSTICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102008", "nome": "SAUDE E SOCIEDADE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102038", "nome": "MICROBIOLOGIA E IMUNOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102053", "5104035"]}, {"nivel": "2º Nível", "codigo": "5102070", "nome": "BIOQUÍMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102054"]}, {"nivel": "2º Nível", "codigo": "5102073", "nome": "FISIOLOGIA HUMANA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102020"]}, {"nivel": "2º Nível", "codigo": "5102091", "nome": "EPIDEMIOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104160", "nome": "GENETICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5102010", "nome": "PATOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102038", "5102073"]}, {"nivel": "3º Nível", "codigo": "5102049", "nome": "BROMATOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102070"]}, {"nivel": "3º Nível", "codigo": "5102090", "nome": "BIOQUÍMICA DA NUTRIÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102070", "5102073"]}, {"nivel": "3º Nível", "codigo": "5102107", "nome": "AVALIAÇÃO NUTRICIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5102108", "nome": "MICROBIOLOGIA DOS ALIMENTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102038"]}, {"nivel": "3º Nível", "codigo": "5102110", "nome": "ANTROPOLOGIA DA NUTRIÇÃO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5104143", "nome": "PSICOLOGIA E SAUDE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "5102105", "nome": "NUTRICAO E CICLO DE VIDA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102090"]}, {"nivel": "4º Nível", "codigo": "5102106", "nome": "TÉCNICA DIÉTETICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102090"]}, {"nivel": "4º Nível", "codigo": "5102109", "nome": "BIOQUÍMICA DOS  ALIMENTOS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102049"]}, {"nivel": "4º Nível", "codigo": "5102123", "nome": "HIGIENE E LEGISLACAO SANITARIA DE ALIMEN", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102108"]}, {"nivel": "4º Nível", "codigo": "5102124", "nome": "FISIOPATOLOGIA DA NUTRICAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102010"]}, {"nivel": "4º Nível", "codigo": "5102125", "nome": "NUTRICAO EM SAUDE COLETIVA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102091"]}, {"nivel": "4º Nível", "codigo": "5102136", "nome": "EDUCAÇÃO NUTRICIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102110"]}, {"nivel": "4º Nível", "codigo": "5102137", "nome": "FUNDAMENTOS EM GESTAO DA QUALIDADE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "5102098", "nome": "TECNOLOGIA DE ALIMENTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102108", "5102109"]}, {"nivel": "5º Nível", "codigo": "5102121", "nome": "NUTRICAO E CICLO DE VIDA II", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102105"]}, {"nivel": "5º Nível", "codigo": "5102122", "nome": "DIETETICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102106"]}, {"nivel": "5º Nível", "codigo": "5102134", "nome": "GESTAO DE UNID DE ALIMENTACAO COLETIVA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102123"]}, {"nivel": "5º Nível", "codigo": "5102135", "nome": "FARMACOLOGIA APLICADA A NUTRICAO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102010"]}, {"nivel": "5º Nível", "codigo": "5102147", "nome": "NUTRIÇÃO EM ATIVIDADE FÍSICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102090"]}, {"nivel": "5º Nível", "codigo": "5102149", "nome": "PRÁTICA EM SAÚDE COLETIVA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102125", "5102136", "5102107"]}, {"nivel": "5º Nível", "codigo": "5102151", "nome": "DIETOTERAPIA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102124"]}, {"nivel": "6º Nível", "codigo": "5102131", "nome": "NUTRICAO E CICLO DA VIDA III", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102121"]}, {"nivel": "6º Nível", "codigo": "5102132", "nome": "ANÁLISE SENSORIAL DE ALIMENTOS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102122"]}, {"nivel": "6º Nível", "codigo": "5102133", "nome": "ETICA, BIOETICA E ORIENT PROFISSIONAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102008"]}, {"nivel": "6º Nível", "codigo": "5102148", "nome": "NUTRICAO EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104035", "5102073", "5102135"]}, {"nivel": "6º Nível", "codigo": "5102150", "nome": "GESTAO DE UNID DE ALIMENT COLETIVA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102134"]}, {"nivel": "6º Nível", "codigo": "5102164", "nome": "PROJETO DE PESQUISA EM NUTRICAO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102007"]}, {"nivel": "6º Nível", "codigo": "5102165", "nome": "INTRODUÇÃO À GASTRONOMIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102106"]}, {"nivel": "6º Nível", "codigo": "5102166", "nome": "VIGILANCIA NUTRICIONAL E SAUDE PUBLICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102149"]}, {"nivel": "6º Nível", "codigo": "5102168", "nome": "DIETOTERAPIA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102151"]}, {"nivel": "7º Nível", "codigo": "5102179", "nome": "ESTAG SUP EM SAUDE COLETIVA", "ch": "225\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "7º Nível", "codigo": "5102167", "nome": "PRAT EM GESTAO DE UNID DE ALIM COLETIVA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102150"]}, {"nivel": "7º Nível", "codigo": "5102170", "nome": "PRÁTICA EM NUTRIÇÃO CLÍNICA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102168"]}, {"nivel": "8º Nível", "codigo": "5102171", "nome": "ESTAG SUP EM UNIDADES DE ALIM COLETIVA", "ch": "225\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "8º Nível", "codigo": "5102178", "nome": "ESTÁGIO SUPERV. EM NUTRIÇÃO CLÍNICA", "ch": "225\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "8º Nível", "codigo": "5102180", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "30\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["5102164"]}];
+  const codigoToNome = {"5101066": "INFORMÁTICA APLICADA À SAUDE", "5102007": "METODOLOGIA CIENTÍFICA APLICADA À SAÚDE", "5102020": "ANATOMIA HUMANA BASICA", "5102028": "PARASITOLOGIA HUMANA", "5102053": "CITOLOGIA", "5102054": "QUÍMICA DE BIOMOLÉCULA", "5102055": "INTRODUÇÃO À NUTRIÇÃO", "5104035": "EMBRIOLOGIA E HISTOLOGIA", "5101156": "BIOESTATÍSTICA", "5102008": "SAUDE E SOCIEDADE", "5102038": "MICROBIOLOGIA E IMUNOLOGIA", "5102070": "BIOQUÍMICA", "5102073": "FISIOLOGIA HUMANA", "5102091": "EPIDEMIOLOGIA", "5104160": "GENETICA", "5102010": "PATOLOGIA GERAL", "5102049": "BROMATOLOGIA GERAL", "5102090": "BIOQUÍMICA DA NUTRIÇÃO", "5102107": "AVALIAÇÃO NUTRICIONAL", "5102108": "MICROBIOLOGIA DOS ALIMENTOS", "5102110": "ANTROPOLOGIA DA NUTRIÇÃO", "5104143": "PSICOLOGIA E SAUDE", "5102105": "NUTRICAO E CICLO DE VIDA I", "5102106": "TÉCNICA DIÉTETICA", "5102109": "BIOQUÍMICA DOS  ALIMENTOS", "5102123": "HIGIENE E LEGISLACAO SANITARIA DE ALIMEN", "5102124": "FISIOPATOLOGIA DA NUTRICAO", "5102125": "NUTRICAO EM SAUDE COLETIVA", "5102136": "EDUCAÇÃO NUTRICIONAL", "5102137": "FUNDAMENTOS EM GESTAO DA QUALIDADE", "5102098": "TECNOLOGIA DE ALIMENTOS", "5102121": "NUTRICAO E CICLO DE VIDA II", "5102122": "DIETETICA", "5102134": "GESTAO DE UNID DE ALIMENTACAO COLETIVA I", "5102135": "FARMACOLOGIA APLICADA A NUTRICAO", "5102147": "NUTRIÇÃO EM ATIVIDADE FÍSICA", "5102149": "PRÁTICA EM SAÚDE COLETIVA", "5102151": "DIETOTERAPIA I", "5102131": "NUTRICAO E CICLO DA VIDA III", "5102132": "ANÁLISE SENSORIAL DE ALIMENTOS", "5102133": "ETICA, BIOETICA E ORIENT PROFISSIONAL", "5102148": "NUTRICAO EXPERIMENTAL", "5102150": "GESTAO DE UNID DE ALIMENT COLETIVA II", "5102164": "PROJETO DE PESQUISA EM NUTRICAO", "5102165": "INTRODUÇÃO À GASTRONOMIA", "5102166": "VIGILANCIA NUTRICIONAL E SAUDE PUBLICA", "5102168": "DIETOTERAPIA II", "5102179": "ESTAG SUP EM SAUDE COLETIVA", "5102167": "PRAT EM GESTAO DE UNID DE ALIM COLETIVA", "5102170": "PRÁTICA EM NUTRIÇÃO CLÍNICA", "5102171": "ESTAG SUP EM UNIDADES DE ALIM COLETIVA", "5102178": "ESTÁGIO SUPERV. EM NUTRIÇÃO CLÍNICA", "5102180": "TRABALHO DE CONCLUSAO DE CURSO", "5102158": "TENUT(NUTRICAO E MARKETING)", "5102159": "TENUT(ALIMENTOS FUNCIONAIS)", "5102160": "TENUT(INTERP DE EXAMES LAB P/ O NUTRIC)", "5102161": "TENUT(TOXICOLOGIA DE ALIMENTOS)", "5102162": "TENUT(ANA INT DE D Q APL A NUT E SAU COL", "5102169": "TENUT(HAB E COM NO PROG N.A. DO ESCOLAR)", "5102172": "TENUT I(T E EM ED POP EM SAUDE E AN ISTI", "5102173": "TENUT I(ENDOCRINOLOGIA APLIC A NUTRICAO)", "5102174": "TENUT I (TÓP. EM NUTRIÇÃO EXPERIMENTAL)", "5102175": "PRINCÍPIOS DE SEGURANÇA EM LABORATÓRIOS", "5102176": "TENUT I (TÉC. EM ANÁLISE DE ALIMENTOS)", "5102185": "TENUT I(A ATUACAO DO NUTR NA ATEN PRIMAR", "5104015": "INGLES INSTRUMENTAL", "5101006": "LINGUA PORTUGUESA", "5101148": "LINGUA BRASILEIRA DE SINAIS", "5102155": "TENUT (GERENCIAMENTO DE RESIDUOS)", "5102187": "TENUT II(EMPREENDEDORISMO)", "5102193": "TENUT I(BIOQUIMICA APLICADA AO EXERCICIO", "5102194": "TENUT I(MEC DE ACAO N E PAT NO SIST DIG)", "5102195": "TENUT I(SIST ALIM SUST P SEG ALIM E NUT)", "5102198": "TENUT I(FITOTERAPIA)", "5102199": "TERAPIAS ALTER E COMPLEMENT EM NUTRICAO", "5102200": "TENUT I(PRAT INTEG E COMP EM SAUDE-PICS)", "5102205": "TENUT(NUTRIÇÃO COMPORTAMENTAL)", "5102207": "TENUT(TOP ATUAIS NUT CLINC PAC CRONICO)", "5102216": "TENUT(PSICOLOGIA APLICADA A SAUDE)", "5102217": "TENUT(GRUPOS E DISPOSITIVOS GRUPAIS)", "5102218": "TENUT(DESENVOLVIMENTO DE NOVOS PROD ALIM", "5102219": "TENUT(NOÇÕES BÁSICAS SOBRE PATENTES)", "5102220": "TENUT(NUTRIÇÃO,TERRITÓRIO E SAÚDE)", "5103059": "ENFERMAGEM NA INTERP DE EXAMES LABORATOR"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -802,7 +805,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

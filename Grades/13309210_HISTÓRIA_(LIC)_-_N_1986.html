@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,392 +404,392 @@
           <tr>
               <td>1306021</td>
               <td>MÉTODOS E TÉC. PESQUISA EM HISTÓRIA I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO AO ESTUDO DA HISTÓRIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1306022</td>
               <td>MÉTODOS E TÉC. PESQUISA EM HISTÓRIA II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MÉTODOS E TÉC. PESQUISA EM HISTÓRIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1105040</td>
               <td>HISTÓRIA DA TECNOLOGIA I</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1105041</td>
               <td>HISTÓRIA DA TECNOLOGIA II</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>HISTÓRIA DA TECNOLOGIA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1303012</td>
               <td>ECONOMIA BRASILEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>HISTÓRIA ECONÔMICA DO BRASIL</td>
               <td></td>
           </tr>
           <tr>
               <td>1303015</td>
               <td>ECONOMIA REGIONAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303075</td>
               <td>TEORIA DO DESENVOLVIMENTO ECONOMICO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1303074, 1303037</td>
               <td></td>
           </tr>
           <tr>
               <td>1304001</td>
               <td>FILOSOFIA DA EDUCAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304006</td>
               <td>HISTÓRIA DA EDUCAÇÃO I (GERAL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304009</td>
               <td>EDUCAÇÃO FÍSICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304010</td>
               <td>GINASTICA - MASC</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304012</td>
               <td>VOLEIBOL - MASC/FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304013</td>
               <td>BASQUETEBOL - MASC</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304015</td>
               <td>INTRODUÇÃO À PSICOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304016</td>
               <td>PSICOLOGIA SOCIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304022</td>
               <td>GINASTICA - FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304024</td>
               <td>VOLEIBOL - MAS/FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304025</td>
               <td>BASQUETEBOL - FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304026</td>
               <td>HANDEBOL - FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304027</td>
               <td>ATLETISMO - MASC</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304055</td>
               <td>FUTSAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304060</td>
               <td>JUDO - FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304069</td>
               <td>HISTÓRIA DA EDUCAÇÃO II (BRAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>HISTÓRIA DA EDUCAÇÃO I (GERAL)</td>
               <td></td>
           </tr>
           <tr>
               <td>1304113</td>
               <td>SOCIOLOGIA DA EDUCAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304117</td>
               <td>GINASTICA MASC/FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304122</td>
               <td>BASQUETE   MASC/FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304123</td>
               <td>FUTSAL - FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304172</td>
               <td>FUTEBOL MASCULINO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304173</td>
               <td>JUDO - MASC/FEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305001</td>
               <td>INTRODUÇÃO À ANTROPOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305016</td>
               <td>TEORIA POLITICA I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1305015, INTRODUÇÃO À POLÍTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1305018</td>
               <td>PARTIDOS POLITICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA POLITICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1305024</td>
               <td>MATRICULA INSTITUCIONAL</td>
-              <td>0h</td>
-              <td>0.0</td>
+              <td>0"h</td>
+              <td>0"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305027</td>
               <td>INTRODUÇÃO À SOCIOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305032</td>
               <td>SOCIOLOGIA DO DESENVOLVIMENTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1305146, 1303011, 1303046, TEORIA DO DESENVOLVIMENTO ECONOMICO</td>
               <td></td>
           </tr>
           <tr>
               <td>1305049</td>
               <td>TEORIA SOCIOLOGICA II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1305028, TEORIA SOCIOLOGICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1305107</td>
               <td>CULTURA BRASILEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305180</td>
               <td>TEORIA DO CONHECIMENTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305184</td>
               <td>INTRODUÇÃO À POLÍTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305187</td>
               <td>TEORIA SOCIOLOGICA I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À SOCIOLOGIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1305188</td>
               <td>ESTRUT CLASSES E ESTRAT SOCIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA SOCIOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1306031</td>
               <td>HIST DOS MOV SOCIAIS NO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1306032</td>
               <td>HIST DA AGRICULTURA BRASILEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1306039</td>
               <td>HISTÓRIA DE CAMPINA GRANDE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1306042</td>
               <td>HISTÓRIA DA ARTE NO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>1302019</td>
               <td></td>
           </tr>
           <tr>
               <td>1306053</td>
               <td>HISTÓRIA DA ARTE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1306060</td>
               <td>CULTURA BRASILEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308001</td>
               <td>GEOGRAFIA ECONOMICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308020</td>
               <td>GEOGRAFIA REGIONAL DO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -833,8 +836,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1306001", "nome": "PRÉ-HISTÓRIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1306002", "nome": "HISTÓRIA ANTIGA ORIENTAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1306018", "nome": "INTRODUÇÃO AO ESTUDO DA HISTÓRIA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1306003", "nome": "HISTÓRIA ANTIGA OCIDENTAL", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1306004", "nome": "HISTÓRIA MEDIEVAL ORIENTAL", "ch": "60h", "preReqs": ["1306002"]}, {"nivel": "3º Nível", "codigo": "1306005", "nome": "HISTÓRIA MEDIEVAL OCIDENTAL", "ch": "60h", "preReqs": ["1306003"]}, {"nivel": "3º Nível", "codigo": "1306006", "nome": "HISTÓRIA MODERNA ORIENTAL", "ch": "60h", "preReqs": ["1306004"]}, {"nivel": "3º Nível", "codigo": "1306027", "nome": "HISTÓRIA ECONÔMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1306036", "nome": "CIVILIZAÇÃO IBÉRICA", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1306007", "nome": "HISTÓRIA MODERNA OCIDENTAL", "ch": "60h", "preReqs": ["1306005"]}, {"nivel": "4º Nível", "codigo": "1306011", "nome": "HISTÓRIA DO BRASIL I", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1306015", "nome": "HISTÓRIA DA AMÉRICA I", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1306019", "nome": "TEORIA DA HISTÓRIA", "ch": "60h", "preReqs": ["1306018"]}, {"nivel": "4º Nível", "codigo": "1306028", "nome": "HISTÓRIA ECONÔMICA DO BRASIL", "ch": "60h", "preReqs": ["1306027"]}, {"nivel": "5º Nível", "codigo": "1306008", "nome": "HISTÓRIA CONTEMPORÂNEA I", "ch": "60h", "preReqs": ["1306007"]}, {"nivel": "5º Nível", "codigo": "1306012", "nome": "HISTÓRIA DO BRASIL II", "ch": "60h", "preReqs": ["1306011"]}, {"nivel": "5º Nível", "codigo": "1306016", "nome": "HISTÓRIA DA AMÉRICA II", "ch": "60h", "preReqs": ["1306015"]}, {"nivel": "5º Nível", "codigo": "1306025", "nome": "HISTÓRIA DA PARAÍBA I", "ch": "60h", "preReqs": ["1306005"]}, {"nivel": "6º Nível", "codigo": "1306009", "nome": "HISTÓRIA CONTEMPORÂNEA II", "ch": "60h", "preReqs": ["1306008"]}, {"nivel": "6º Nível", "codigo": "1306013", "nome": "HISTÓRIA DO BRASIL III", "ch": "60h", "preReqs": ["1306012"]}, {"nivel": "6º Nível", "codigo": "1306017", "nome": "HISTÓRIA DA AMÉRICA III", "ch": "60h", "preReqs": ["1306016"]}, {"nivel": "6º Nível", "codigo": "1306026", "nome": "HISTÓRIA DA PARAÍBA II", "ch": "60h", "preReqs": ["1306025"]}, {"nivel": "7º Nível", "codigo": "1306010", "nome": "HISTÓRIA CONTEMPORÂNEA III", "ch": "60h", "preReqs": ["1306009"]}, {"nivel": "7º Nível", "codigo": "1306014", "nome": "HISTÓRIA DO BRASIL IV", "ch": "60h", "preReqs": ["1306013"]}, {"nivel": "7º Nível", "codigo": "1306024", "nome": "HISTÓRIA DO NORDESTE", "ch": "60h", "preReqs": ["1306011"]}];
-  const codigoToNome = {"1306001": "PRÉ-HISTÓRIA", "1306002": "HISTÓRIA ANTIGA ORIENTAL", "1306018": "INTRODUÇÃO AO ESTUDO DA HISTÓRIA", "1306003": "HISTÓRIA ANTIGA OCIDENTAL", "1306004": "HISTÓRIA MEDIEVAL ORIENTAL", "1306005": "HISTÓRIA MEDIEVAL OCIDENTAL", "1306006": "HISTÓRIA MODERNA ORIENTAL", "1306027": "HISTÓRIA ECONÔMICA GERAL", "1306036": "CIVILIZAÇÃO IBÉRICA", "1306007": "HISTÓRIA MODERNA OCIDENTAL", "1306011": "HISTÓRIA DO BRASIL I", "1306015": "HISTÓRIA DA AMÉRICA I", "1306019": "TEORIA DA HISTÓRIA", "1306028": "HISTÓRIA ECONÔMICA DO BRASIL", "1306008": "HISTÓRIA CONTEMPORÂNEA I", "1306012": "HISTÓRIA DO BRASIL II", "1306016": "HISTÓRIA DA AMÉRICA II", "1306025": "HISTÓRIA DA PARAÍBA I", "1306009": "HISTÓRIA CONTEMPORÂNEA II", "1306013": "HISTÓRIA DO BRASIL III", "1306017": "HISTÓRIA DA AMÉRICA III", "1306026": "HISTÓRIA DA PARAÍBA II", "1306010": "HISTÓRIA CONTEMPORÂNEA III", "1306014": "HISTÓRIA DO BRASIL IV", "1306024": "HISTÓRIA DO NORDESTE", "1306021": "MÉTODOS E TÉC. PESQUISA EM HISTÓRIA I", "1306022": "MÉTODOS E TÉC. PESQUISA EM HISTÓRIA II", "1105040": "HISTÓRIA DA TECNOLOGIA I", "1105041": "HISTÓRIA DA TECNOLOGIA II", "1303012": "ECONOMIA BRASILEIRA", "1303015": "ECONOMIA REGIONAL", "1303075": "TEORIA DO DESENVOLVIMENTO ECONOMICO", "1304001": "FILOSOFIA DA EDUCAÇÃO", "1304006": "HISTÓRIA DA EDUCAÇÃO I (GERAL)", "1304009": "EDUCAÇÃO FÍSICA", "1304010": "GINASTICA - MASC", "1304012": "VOLEIBOL - MASC/FEM", "1304013": "BASQUETEBOL - MASC", "1304015": "INTRODUÇÃO À PSICOLOGIA", "1304016": "PSICOLOGIA SOCIAL", "1304022": "GINASTICA - FEM", "1304024": "VOLEIBOL - MAS/FEM", "1304025": "BASQUETEBOL - FEM", "1304026": "HANDEBOL - FEM", "1304027": "ATLETISMO - MASC", "1304055": "FUTSAL", "1304060": "JUDO - FEM", "1304069": "HISTÓRIA DA EDUCAÇÃO II (BRAS)", "1304113": "SOCIOLOGIA DA EDUCAÇÃO", "1304117": "GINASTICA MASC/FEM", "1304122": "BASQUETE   MASC/FEM", "1304123": "FUTSAL - FEM", "1304172": "FUTEBOL MASCULINO", "1304173": "JUDO - MASC/FEM", "1305001": "INTRODUÇÃO À ANTROPOLOGIA", "1305016": "TEORIA POLITICA I", "1305018": "PARTIDOS POLITICOS", "1305024": "MATRICULA INSTITUCIONAL", "1305027": "INTRODUÇÃO À SOCIOLOGIA", "1305032": "SOCIOLOGIA DO DESENVOLVIMENTO", "1305049": "TEORIA SOCIOLOGICA II", "1305107": "CULTURA BRASILEIRA", "1305180": "TEORIA DO CONHECIMENTO", "1305184": "INTRODUÇÃO À POLÍTICA", "1305187": "TEORIA SOCIOLOGICA I", "1305188": "ESTRUT CLASSES E ESTRAT SOCIAL", "1306031": "HIST DOS MOV SOCIAIS NO BRASIL", "1306032": "HIST DA AGRICULTURA BRASILEIRA", "1306039": "HISTÓRIA DE CAMPINA GRANDE", "1306042": "HISTÓRIA DA ARTE NO BRASIL", "1306053": "HISTÓRIA DA ARTE", "1306060": "CULTURA BRASILEIRA", "1308001": "GEOGRAFIA ECONOMICA", "1308020": "GEOGRAFIA REGIONAL DO BRASIL"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1303036", "nome": "INTRODUÇÃO À ECONOMIA POLÍTICA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307045", "nome": "LINGUA PORTUGUESA", "ch": "75\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1306001", "nome": "PRÉ-HISTÓRIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1306002", "nome": "HISTÓRIA ANTIGA ORIENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1306018", "nome": "INTRODUÇÃO AO ESTUDO DA HISTÓRIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1307009", "nome": "FRANCES", "ch": "75\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1307011", "nome": "INGLES", "ch": "75\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1306003", "nome": "HISTÓRIA ANTIGA OCIDENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1306004", "nome": "HISTÓRIA MEDIEVAL ORIENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306002"]}, {"nivel": "3º Nível", "codigo": "1306005", "nome": "HISTÓRIA MEDIEVAL OCIDENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306003"]}, {"nivel": "3º Nível", "codigo": "1306006", "nome": "HISTÓRIA MODERNA ORIENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306004"]}, {"nivel": "3º Nível", "codigo": "1306027", "nome": "HISTÓRIA ECONÔMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1306036", "nome": "CIVILIZAÇÃO IBÉRICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1304087", "nome": "ESTRUT FUNC ENS I-II GRAUS", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1306007", "nome": "HISTÓRIA MODERNA OCIDENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306005"]}, {"nivel": "4º Nível", "codigo": "1306011", "nome": "HISTÓRIA DO BRASIL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1306015", "nome": "HISTÓRIA DA AMÉRICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1306019", "nome": "TEORIA DA HISTÓRIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306018"]}, {"nivel": "4º Nível", "codigo": "1306028", "nome": "HISTÓRIA ECONÔMICA DO BRASIL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306027"]}, {"nivel": "5º Nível", "codigo": "1304058", "nome": "PSICOLOGIA EDUCAC/ADOLESCENCIA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1306029", "nome": "HIST DO PENS POL E SOC  GERAL", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1306008", "nome": "HISTÓRIA CONTEMPORÂNEA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306007"]}, {"nivel": "5º Nível", "codigo": "1306012", "nome": "HISTÓRIA DO BRASIL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306011"]}, {"nivel": "5º Nível", "codigo": "1306016", "nome": "HISTÓRIA DA AMÉRICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306015"]}, {"nivel": "5º Nível", "codigo": "1306025", "nome": "HISTÓRIA DA PARAÍBA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306005"]}, {"nivel": "6º Nível", "codigo": "1304019", "nome": "PSIC EDUCACIONAL/APRENDIZAGEM", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1306030", "nome": "HIST DO PENS POL E SOC BRASIL", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1306029"]}, {"nivel": "6º Nível", "codigo": "1306009", "nome": "HISTÓRIA CONTEMPORÂNEA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306008"]}, {"nivel": "6º Nível", "codigo": "1306013", "nome": "HISTÓRIA DO BRASIL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306012"]}, {"nivel": "6º Nível", "codigo": "1306017", "nome": "HISTÓRIA DA AMÉRICA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306016"]}, {"nivel": "6º Nível", "codigo": "1306026", "nome": "HISTÓRIA DA PARAÍBA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306025"]}, {"nivel": "7º Nível", "codigo": "1304063", "nome": "DIDATICA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1306020", "nome": "HISTORIOGRAFIA BRASILEIRA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1306018"]}, {"nivel": "7º Nível", "codigo": "1306010", "nome": "HISTÓRIA CONTEMPORÂNEA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306009"]}, {"nivel": "7º Nível", "codigo": "1306014", "nome": "HISTÓRIA DO BRASIL IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306013"]}, {"nivel": "7º Nível", "codigo": "1306024", "nome": "HISTÓRIA DO NORDESTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1306011"]}, {"nivel": "8º Nível", "codigo": "1306023", "nome": "MET.DO ENS.DE HIST. NO I E IIG", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1306038", "nome": "PRAT ENS HIST NA ESC I E II G", "ch": "120\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1304063", "1304004"]}];
+  const codigoToNome = {"1303036": "INTRODUÇÃO À ECONOMIA POLÍTICA", "1307045": "LINGUA PORTUGUESA", "1306001": "PRÉ-HISTÓRIA", "1306002": "HISTÓRIA ANTIGA ORIENTAL", "1306018": "INTRODUÇÃO AO ESTUDO DA HISTÓRIA", "1307009": "FRANCES", "1307011": "INGLES", "1306003": "HISTÓRIA ANTIGA OCIDENTAL", "1306004": "HISTÓRIA MEDIEVAL ORIENTAL", "1306005": "HISTÓRIA MEDIEVAL OCIDENTAL", "1306006": "HISTÓRIA MODERNA ORIENTAL", "1306027": "HISTÓRIA ECONÔMICA GERAL", "1306036": "CIVILIZAÇÃO IBÉRICA", "1304087": "ESTRUT FUNC ENS I-II GRAUS", "1306007": "HISTÓRIA MODERNA OCIDENTAL", "1306011": "HISTÓRIA DO BRASIL I", "1306015": "HISTÓRIA DA AMÉRICA I", "1306019": "TEORIA DA HISTÓRIA", "1306028": "HISTÓRIA ECONÔMICA DO BRASIL", "1304058": "PSICOLOGIA EDUCAC/ADOLESCENCIA", "1306029": "HIST DO PENS POL E SOC  GERAL", "1306008": "HISTÓRIA CONTEMPORÂNEA I", "1306012": "HISTÓRIA DO BRASIL II", "1306016": "HISTÓRIA DA AMÉRICA II", "1306025": "HISTÓRIA DA PARAÍBA I", "1304019": "PSIC EDUCACIONAL/APRENDIZAGEM", "1306030": "HIST DO PENS POL E SOC BRASIL", "1306009": "HISTÓRIA CONTEMPORÂNEA II", "1306013": "HISTÓRIA DO BRASIL III", "1306017": "HISTÓRIA DA AMÉRICA III", "1306026": "HISTÓRIA DA PARAÍBA II", "1304063": "DIDATICA", "1306020": "HISTORIOGRAFIA BRASILEIRA", "1306010": "HISTÓRIA CONTEMPORÂNEA III", "1306014": "HISTÓRIA DO BRASIL IV", "1306024": "HISTÓRIA DO NORDESTE", "1306023": "MET.DO ENS.DE HIST. NO I E IIG", "1306038": "PRAT ENS HIST NA ESC I E II G", "1306021": "MÉTODOS E TÉC. PESQUISA EM HISTÓRIA I", "1306022": "MÉTODOS E TÉC. PESQUISA EM HISTÓRIA II", "1105040": "HISTÓRIA DA TECNOLOGIA I", "1105041": "HISTÓRIA DA TECNOLOGIA II", "1303012": "ECONOMIA BRASILEIRA", "1303015": "ECONOMIA REGIONAL", "1303075": "TEORIA DO DESENVOLVIMENTO ECONOMICO", "1304001": "FILOSOFIA DA EDUCAÇÃO", "1304006": "HISTÓRIA DA EDUCAÇÃO I (GERAL)", "1304009": "EDUCAÇÃO FÍSICA", "1304010": "GINASTICA - MASC", "1304012": "VOLEIBOL - MASC/FEM", "1304013": "BASQUETEBOL - MASC", "1304015": "INTRODUÇÃO À PSICOLOGIA", "1304016": "PSICOLOGIA SOCIAL", "1304022": "GINASTICA - FEM", "1304024": "VOLEIBOL - MAS/FEM", "1304025": "BASQUETEBOL - FEM", "1304026": "HANDEBOL - FEM", "1304027": "ATLETISMO - MASC", "1304055": "FUTSAL", "1304060": "JUDO - FEM", "1304069": "HISTÓRIA DA EDUCAÇÃO II (BRAS)", "1304113": "SOCIOLOGIA DA EDUCAÇÃO", "1304117": "GINASTICA MASC/FEM", "1304122": "BASQUETE   MASC/FEM", "1304123": "FUTSAL - FEM", "1304172": "FUTEBOL MASCULINO", "1304173": "JUDO - MASC/FEM", "1305001": "INTRODUÇÃO À ANTROPOLOGIA", "1305016": "TEORIA POLITICA I", "1305018": "PARTIDOS POLITICOS", "1305024": "MATRICULA INSTITUCIONAL", "1305027": "INTRODUÇÃO À SOCIOLOGIA", "1305032": "SOCIOLOGIA DO DESENVOLVIMENTO", "1305049": "TEORIA SOCIOLOGICA II", "1305107": "CULTURA BRASILEIRA", "1305180": "TEORIA DO CONHECIMENTO", "1305184": "INTRODUÇÃO À POLÍTICA", "1305187": "TEORIA SOCIOLOGICA I", "1305188": "ESTRUT CLASSES E ESTRAT SOCIAL", "1306031": "HIST DOS MOV SOCIAIS NO BRASIL", "1306032": "HIST DA AGRICULTURA BRASILEIRA", "1306039": "HISTÓRIA DE CAMPINA GRANDE", "1306042": "HISTÓRIA DA ARTE NO BRASIL", "1306053": "HISTÓRIA DA ARTE", "1306060": "CULTURA BRASILEIRA", "1308001": "GEOGRAFIA ECONOMICA", "1308020": "GEOGRAFIA REGIONAL DO BRASIL"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -946,7 +949,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

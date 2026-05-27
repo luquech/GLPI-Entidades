@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,640 +404,640 @@
           <tr>
               <td>1302212</td>
               <td>FUNDAMENTOS DA SEMIÓTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1302318</td>
               <td>CINEMA BRASILEIRO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1303108</td>
               <td>ECONOMIA E MEIO AMBIENTE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305011</td>
               <td>HISTÓRIA ECONÔMICA GERAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305012</td>
               <td>HISTÓRIA ECONÔMICA DO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305029</td>
               <td>SOCIOLOGIA URBANA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305030</td>
               <td>SOCIOLOGIA RURAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305032</td>
               <td>SOCIOLOGIA DO DESENVOLVIMENTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305054</td>
               <td>SOCIEDADES CAMPONESAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305055</td>
               <td>ANTROPOLOGIA URBANA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305069</td>
               <td>SOCIOLOGIA DA ARTE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA SOCIOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305119</td>
               <td>HISTÓRIA DO NORDESTE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305157</td>
               <td>PARTIDOS POLITICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA POLITICA III</td>
               <td></td>
           </tr>
           <tr>
               <td>1305173</td>
               <td>SOCIOLOGIA DA RELIGIAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA SOCIOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305456</td>
               <td>ANTROPOLOGIA DA PERFORMANCE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305459</td>
               <td>ANTROPOLOGIA DA RELIGIAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305460</td>
               <td>ANTROPOLOGIA DA VIOLENCIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305461</td>
               <td>ATROPOLOGIA DO TURISMO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305462</td>
               <td>ANTROPOLOGIA E EDUCACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II, RELACOES ETNICO-RACIAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1305463</td>
               <td>ANTROPOLOGIA E GENEROS LITERARIOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305464</td>
               <td>ANTROPOLOGIA E HISTORIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305465</td>
               <td>ANTROPOLOGIA E OS ESTUDOS DE GENERO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305466</td>
               <td>ANTROPOLOGIA E PATRIMONIO CULTURAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305467</td>
               <td>ANTROPOLOGIA ECONOMICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305468</td>
               <td>ANTROPOLOGIA EM ESPACOS VIRTUAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305469</td>
               <td>ANTROPOLOGIA JURIDICA E DO DIREITO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305470</td>
               <td>ANTROPOLOGIA POLITICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305471</td>
               <td>ANTROPOLOGIA RURAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305472</td>
-              <td>ANTROPOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>ANTROPOLOGIA, CULTURA MATERIAL E ARTE</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305473</td>
-              <td>ANTROP.</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>ANTROP., POPULACAO TRAD E MEIO AMBIENTE</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II, RELACOES ETNICO-RACIAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1305474</td>
               <td>APLICACOES DA ANTROPOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305475</td>
-              <td>CULTURA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>CULTURA, MIDIA E POLITICA</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305476</td>
               <td>ETNOGRAFIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305477</td>
               <td>ORGANIZACAO SOCIAL E PARENTESCO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305478</td>
               <td>RELACOES INTERETNICAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305479</td>
               <td>TEORIA ANTROPOLOGICA CONTEMPORANEA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA ANTROPOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305480</td>
               <td>INSTITUICOES E POLITICA COMPARADA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA POLITICA III</td>
               <td></td>
           </tr>
           <tr>
               <td>1305481</td>
               <td>DEMOCRATIZACAO NO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA POLITICA III</td>
               <td></td>
           </tr>
           <tr>
               <td>1305482</td>
               <td>SISTEMAS ELEITORAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PARTIDOS POLITICOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1305483</td>
-              <td>FEDERAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>FEDERAL,DESIG REG E SIST TRIB BRASILEIRO</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA POLITICA III</td>
               <td></td>
           </tr>
           <tr>
               <td>1305484</td>
               <td>PODER JUD E CONTROLES DEMOCRATICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA POLITICA III</td>
               <td></td>
           </tr>
           <tr>
               <td>1305485</td>
               <td>EPISTEMIOLOGIA E MET EM CIENCIA POLITICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUCAO A CIENCIA POLITICA, METODOLOGIA CIENTÍFICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1305486</td>
               <td>NEOINSTITUCIONALISMO E EST LEGISLATIVOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA POLITICA III</td>
               <td></td>
           </tr>
           <tr>
               <td>1305487</td>
               <td>INDICADORES SOCIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOS QUANTITATIVOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1305488</td>
               <td>ELABORACAO DE PROJETOS SOCIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOS QUANTITATIVOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1305489</td>
               <td>ANALISE DE REGRESSAO APLIC AS C SOCIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOS QUANTITATIVOS II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305490</td>
               <td>DIREITO CONSTITUCIONAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305491</td>
-              <td>EDUC.</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>EDUC.,DIVERSIDADE E DIREITOS HUMANOS</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305492</td>
               <td>GENERO E SOCIEDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À SOCIOLOGIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1305493</td>
               <td>HISTORIA ORAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>METODOS QUALITATIVOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1305494</td>
               <td>LITERATURA E SOCIEDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA SOCIOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305495</td>
               <td>PENSAMENTO SOCIAL BRASILEIRO II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PENSAMENTO SOCIAL BRASILEIRO</td>
               <td></td>
           </tr>
           <tr>
               <td>1305496</td>
               <td>POPULACOES CAMPONESAS E TERRITORIO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA SOCIOLOGICA I, TEORIA ANTROPOLOGICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1305497</td>
               <td>TEORIA SOCIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA SOCIOLOGICA III</td>
               <td></td>
           </tr>
           <tr>
               <td>1305498</td>
               <td>SOCIOLOGIA AMBIENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305499</td>
               <td>SOCIOLOGIA CRITICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305500</td>
               <td>SOCIOLOGIA DA CULTURA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA SOCIOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305501</td>
               <td>SOCIOLOGIA DA EMOCAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À SOCIOLOGIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1305502</td>
               <td>SOCIOLOGIA DA JUVENTUDE E DA FAMILIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305503</td>
               <td>SOCIOLOGIA DA VIOLENCIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À SOCIOLOGIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1305504</td>
               <td>SOCIOLOGIA DO CORPO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA SOCIOLOGICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>1305505</td>
               <td>SOCIOLOGIA DO TRABALHO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA SOCIOLOGICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1305506</td>
               <td>SOCIOLOGIA POLITICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TEORIA SOCIOLOGICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1305507</td>
               <td>SOCIOLOGIA RURAL CONTEMPORANEA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305540</td>
               <td>SCCS(TEOR JURÍDICA DO TRABALHO RELI)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305541</td>
-              <td>SCCS(TÓP ESP: TECNOP</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>SCCS(TÓP ESP: TECNOP, GOV ALG E DISP DI)</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305552</td>
               <td>TECS(TEORIAS DEMOCRÁTICAS CONTEPORÂNEAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUCAO A CIENCIA POLITICA, TEORIA POLITICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1305553</td>
               <td>TECS(HISTÓRIA DAS IDEIAS ECONÔMICAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305554</td>
               <td>TECS(ECONOMIA POLÍTICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305556</td>
-              <td>TECS(TECNOP</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>TECS(TECNOP,GOVERNAMENT ALG E DISP DIG)</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305590</td>
               <td>TESC(DEMOCRACIA CONTEMPORÂNEA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1306031</td>
               <td>HIST DOS MOV SOCIAIS NO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308001</td>
               <td>GEOGRAFIA ECONOMICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308007</td>
               <td>CARTOGRAFIA E ESTUDOS CORRELATOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308015</td>
               <td>GEOGRAFIA POLITICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308016</td>
               <td>FORMACAO TERRITORIAL DO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308020</td>
               <td>GEOGRAFIA REGIONAL DO BRASIL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1308036</td>
               <td>SENSORIAMENTO REMOTO E GEOPROCESSAMENTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1309253</td>
               <td>ELABORAÇÃO DE PROJETOS CULTURAIS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
@@ -1081,8 +1084,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1305001", "nome": "INTRODUÇÃO À ANTROPOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305027", "nome": "INTRODUÇÃO À SOCIOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305218", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305440", "nome": "INTRODUCAO A CIENCIA POLITICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1305016", "nome": "TEORIA POLITICA I", "ch": "60h", "preReqs": ["1305440"]}, {"nivel": "2º Nível", "codigo": "1305028", "nome": "TEORIA SOCIOLOGICA I", "ch": "60h", "preReqs": ["1305027"]}, {"nivel": "2º Nível", "codigo": "1305121", "nome": "TEORIA ANTROPOLOGICA I", "ch": "60h", "preReqs": ["1305001"]}, {"nivel": "2º Nível", "codigo": "1305144", "nome": "METODOLOGIA DAS CIENC SOCIAIS", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1305441", "nome": "PENSAMENTO SOCIAL BRASILEIRO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1305017", "nome": "TEORIA POLITICA II", "ch": "60h", "preReqs": ["1305016"]}, {"nivel": "3º Nível", "codigo": "1305049", "nome": "TEORIA SOCIOLOGICA II", "ch": "60h", "preReqs": ["1305028"]}, {"nivel": "3º Nível", "codigo": "1305122", "nome": "TEORIA ANTROPOLOGICA II", "ch": "60h", "preReqs": ["1305121"]}, {"nivel": "3º Nível", "codigo": "1305443", "nome": "METODOS QUANTITATIVOS I", "ch": "60h", "preReqs": ["1305218"]}, {"nivel": "3º Nível", "codigo": "1305444", "nome": "METODOS QUALITATIVOS", "ch": "60h", "preReqs": ["1305218"]}, {"nivel": "4º Nível", "codigo": "1305146", "nome": "TEORIA SOCIOLOGICA III", "ch": "60h", "preReqs": ["1305049"]}, {"nivel": "4º Nível", "codigo": "1305445", "nome": "TEORIA POLITICA III", "ch": "60h", "preReqs": ["1305017"]}, {"nivel": "4º Nível", "codigo": "1305446", "nome": "TEORIA ANTROPOLOGICA III", "ch": "60h", "preReqs": ["1305122"]}, {"nivel": "4º Nível", "codigo": "1305447", "nome": "METODOS QUANTITATIVOS II", "ch": "60h", "preReqs": ["1305443"]}, {"nivel": "5º Nível", "codigo": "1305153", "nome": "ANTROPOLOGIA BRASILEIRA", "ch": "60h", "preReqs": ["1305001"]}, {"nivel": "5º Nível", "codigo": "1305448", "nome": "CIENCIA POLITICA BRASILEIRA", "ch": "60h", "preReqs": ["1305445"]}, {"nivel": "5º Nível", "codigo": "1305449", "nome": "SOCIOLOGIA BRASILEIRA", "ch": "60h", "preReqs": ["1305049"]}, {"nivel": "6º Nível", "codigo": "1305053", "nome": "ESTRUT CLASSES E ESTRAT SOCIAL", "ch": "60h", "preReqs": ["1305049"]}, {"nivel": "6º Nível", "codigo": "1305450", "nome": "POLITICA PUBLICA", "ch": "60h", "preReqs": ["1305445"]}, {"nivel": "6º Nível", "codigo": "1305451", "nome": "RELACOES ETNICO-RACIAIS", "ch": "60h", "preReqs": ["1305121"]}, {"nivel": "6º Nível", "codigo": "1305452", "nome": "PROJETO DE PESQUISA", "ch": "60h", "preReqs": ["1305444", "1305447"]}];
-  const codigoToNome = {"1305001": "INTRODUÇÃO À ANTROPOLOGIA", "1305027": "INTRODUÇÃO À SOCIOLOGIA", "1305218": "METODOLOGIA CIENTÍFICA", "1305440": "INTRODUCAO A CIENCIA POLITICA", "1305016": "TEORIA POLITICA I", "1305028": "TEORIA SOCIOLOGICA I", "1305121": "TEORIA ANTROPOLOGICA I", "1305144": "METODOLOGIA DAS CIENC SOCIAIS", "1305441": "PENSAMENTO SOCIAL BRASILEIRO", "1305017": "TEORIA POLITICA II", "1305049": "TEORIA SOCIOLOGICA II", "1305122": "TEORIA ANTROPOLOGICA II", "1305443": "METODOS QUANTITATIVOS I", "1305444": "METODOS QUALITATIVOS", "1305146": "TEORIA SOCIOLOGICA III", "1305445": "TEORIA POLITICA III", "1305446": "TEORIA ANTROPOLOGICA III", "1305447": "METODOS QUANTITATIVOS II", "1305153": "ANTROPOLOGIA BRASILEIRA", "1305448": "CIENCIA POLITICA BRASILEIRA", "1305449": "SOCIOLOGIA BRASILEIRA", "1305053": "ESTRUT CLASSES E ESTRAT SOCIAL", "1305450": "POLITICA PUBLICA", "1305451": "RELACOES ETNICO-RACIAIS", "1305452": "PROJETO DE PESQUISA", "1302212": "FUNDAMENTOS DA SEMIÓTICA", "1302318": "CINEMA BRASILEIRO", "1303108": "ECONOMIA E MEIO AMBIENTE", "1305011": "HISTÓRIA ECONÔMICA GERAL", "1305012": "HISTÓRIA ECONÔMICA DO BRASIL", "1305029": "SOCIOLOGIA URBANA", "1305030": "SOCIOLOGIA RURAL", "1305032": "SOCIOLOGIA DO DESENVOLVIMENTO", "1305054": "SOCIEDADES CAMPONESAS", "1305055": "ANTROPOLOGIA URBANA", "1305069": "SOCIOLOGIA DA ARTE", "1305119": "HISTÓRIA DO NORDESTE", "1305157": "PARTIDOS POLITICOS", "1305173": "SOCIOLOGIA DA RELIGIAO", "1305456": "ANTROPOLOGIA DA PERFORMANCE", "1305459": "ANTROPOLOGIA DA RELIGIAO", "1305460": "ANTROPOLOGIA DA VIOLENCIA", "1305461": "ATROPOLOGIA DO TURISMO", "1305462": "ANTROPOLOGIA E EDUCACAO", "1305463": "ANTROPOLOGIA E GENEROS LITERARIOS", "1305464": "ANTROPOLOGIA E HISTORIA", "1305465": "ANTROPOLOGIA E OS ESTUDOS DE GENERO", "1305466": "ANTROPOLOGIA E PATRIMONIO CULTURAL", "1305467": "ANTROPOLOGIA ECONOMICA", "1305468": "ANTROPOLOGIA EM ESPACOS VIRTUAIS", "1305469": "ANTROPOLOGIA JURIDICA E DO DIREITO", "1305470": "ANTROPOLOGIA POLITICA", "1305471": "ANTROPOLOGIA RURAL", "1305472": "ANTROPOLOGIA", "1305473": "ANTROP.", "1305474": "APLICACOES DA ANTROPOLOGIA", "1305475": "CULTURA", "1305476": "ETNOGRAFIA", "1305477": "ORGANIZACAO SOCIAL E PARENTESCO", "1305478": "RELACOES INTERETNICAS", "1305479": "TEORIA ANTROPOLOGICA CONTEMPORANEA", "1305480": "INSTITUICOES E POLITICA COMPARADA", "1305481": "DEMOCRATIZACAO NO BRASIL", "1305482": "SISTEMAS ELEITORAIS", "1305483": "FEDERAL", "1305484": "PODER JUD E CONTROLES DEMOCRATICOS", "1305485": "EPISTEMIOLOGIA E MET EM CIENCIA POLITICA", "1305486": "NEOINSTITUCIONALISMO E EST LEGISLATIVOS", "1305487": "INDICADORES SOCIAIS", "1305488": "ELABORACAO DE PROJETOS SOCIAIS", "1305489": "ANALISE DE REGRESSAO APLIC AS C SOCIAIS", "1305490": "DIREITO CONSTITUCIONAL", "1305491": "EDUC.", "1305492": "GENERO E SOCIEDADE", "1305493": "HISTORIA ORAL", "1305494": "LITERATURA E SOCIEDADE", "1305495": "PENSAMENTO SOCIAL BRASILEIRO II", "1305496": "POPULACOES CAMPONESAS E TERRITORIO", "1305497": "TEORIA SOCIAL", "1305498": "SOCIOLOGIA AMBIENTAL", "1305499": "SOCIOLOGIA CRITICA", "1305500": "SOCIOLOGIA DA CULTURA", "1305501": "SOCIOLOGIA DA EMOCAO", "1305502": "SOCIOLOGIA DA JUVENTUDE E DA FAMILIA", "1305503": "SOCIOLOGIA DA VIOLENCIA", "1305504": "SOCIOLOGIA DO CORPO", "1305505": "SOCIOLOGIA DO TRABALHO", "1305506": "SOCIOLOGIA POLITICA", "1305507": "SOCIOLOGIA RURAL CONTEMPORANEA", "1305540": "SCCS(TEOR JURÍDICA DO TRABALHO RELI)", "1305541": "SCCS(TÓP ESP: TECNOP", "1305552": "TECS(TEORIAS DEMOCRÁTICAS CONTEPORÂNEAS)", "1305553": "TECS(HISTÓRIA DAS IDEIAS ECONÔMICAS)", "1305554": "TECS(ECONOMIA POLÍTICA)", "1305556": "TECS(TECNOP", "1305590": "TESC(DEMOCRACIA CONTEMPORÂNEA)", "1306031": "HIST DOS MOV SOCIAIS NO BRASIL", "1307332": "LIBRAS", "1308001": "GEOGRAFIA ECONOMICA", "1308007": "CARTOGRAFIA E ESTUDOS CORRELATOS", "1308015": "GEOGRAFIA POLITICA", "1308016": "FORMACAO TERRITORIAL DO BRASIL", "1308020": "GEOGRAFIA REGIONAL DO BRASIL", "1308036": "SENSORIAMENTO REMOTO E GEOPROCESSAMENTO", "1309253": "ELABORAÇÃO DE PROJETOS CULTURAIS"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1303036", "nome": "INTRODUÇÃO À ECONOMIA POLÍTICA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305453", "nome": "FUND FILOSOFICOS DAS CIENCIAS SOCIAIS", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305001", "nome": "INTRODUÇÃO À ANTROPOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305027", "nome": "INTRODUÇÃO À SOCIOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305218", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305440", "nome": "INTRODUCAO A CIENCIA POLITICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1305016", "nome": "TEORIA POLITICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305440"]}, {"nivel": "2º Nível", "codigo": "1305028", "nome": "TEORIA SOCIOLOGICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305027"]}, {"nivel": "2º Nível", "codigo": "1305121", "nome": "TEORIA ANTROPOLOGICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305001"]}, {"nivel": "2º Nível", "codigo": "1305144", "nome": "METODOLOGIA DAS CIENC SOCIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1305441", "nome": "PENSAMENTO SOCIAL BRASILEIRO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1305017", "nome": "TEORIA POLITICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305016"]}, {"nivel": "3º Nível", "codigo": "1305049", "nome": "TEORIA SOCIOLOGICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305028"]}, {"nivel": "3º Nível", "codigo": "1305122", "nome": "TEORIA ANTROPOLOGICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305121"]}, {"nivel": "3º Nível", "codigo": "1305443", "nome": "METODOS QUANTITATIVOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305218"]}, {"nivel": "3º Nível", "codigo": "1305444", "nome": "METODOS QUALITATIVOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305218"]}, {"nivel": "4º Nível", "codigo": "1305146", "nome": "TEORIA SOCIOLOGICA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305049"]}, {"nivel": "4º Nível", "codigo": "1305445", "nome": "TEORIA POLITICA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305017"]}, {"nivel": "4º Nível", "codigo": "1305446", "nome": "TEORIA ANTROPOLOGICA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305122"]}, {"nivel": "4º Nível", "codigo": "1305447", "nome": "METODOS QUANTITATIVOS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305443"]}, {"nivel": "5º Nível", "codigo": "1305153", "nome": "ANTROPOLOGIA BRASILEIRA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305001"]}, {"nivel": "5º Nível", "codigo": "1305448", "nome": "CIENCIA POLITICA BRASILEIRA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305445"]}, {"nivel": "5º Nível", "codigo": "1305449", "nome": "SOCIOLOGIA BRASILEIRA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305049"]}, {"nivel": "6º Nível", "codigo": "1305053", "nome": "ESTRUT CLASSES E ESTRAT SOCIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305049"]}, {"nivel": "6º Nível", "codigo": "1305450", "nome": "POLITICA PUBLICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305445"]}, {"nivel": "6º Nível", "codigo": "1305451", "nome": "RELACOES ETNICO-RACIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305121"]}, {"nivel": "6º Nível", "codigo": "1305452", "nome": "PROJETO DE PESQUISA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1305444", "1305447"]}, {"nivel": "7º Nível", "codigo": "1305455", "nome": "PROJETO DE TRAB DE CONCLUSAO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1305452"]}, {"nivel": "8º Nível", "codigo": "1305457", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1305455"]}];
+  const codigoToNome = {"1303036": "INTRODUÇÃO À ECONOMIA POLÍTICA", "1305453": "FUND FILOSOFICOS DAS CIENCIAS SOCIAIS", "1305001": "INTRODUÇÃO À ANTROPOLOGIA", "1305027": "INTRODUÇÃO À SOCIOLOGIA", "1305218": "METODOLOGIA CIENTÍFICA", "1305440": "INTRODUCAO A CIENCIA POLITICA", "1305016": "TEORIA POLITICA I", "1305028": "TEORIA SOCIOLOGICA I", "1305121": "TEORIA ANTROPOLOGICA I", "1305144": "METODOLOGIA DAS CIENC SOCIAIS", "1305441": "PENSAMENTO SOCIAL BRASILEIRO", "1305017": "TEORIA POLITICA II", "1305049": "TEORIA SOCIOLOGICA II", "1305122": "TEORIA ANTROPOLOGICA II", "1305443": "METODOS QUANTITATIVOS I", "1305444": "METODOS QUALITATIVOS", "1305146": "TEORIA SOCIOLOGICA III", "1305445": "TEORIA POLITICA III", "1305446": "TEORIA ANTROPOLOGICA III", "1305447": "METODOS QUANTITATIVOS II", "1305153": "ANTROPOLOGIA BRASILEIRA", "1305448": "CIENCIA POLITICA BRASILEIRA", "1305449": "SOCIOLOGIA BRASILEIRA", "1305053": "ESTRUT CLASSES E ESTRAT SOCIAL", "1305450": "POLITICA PUBLICA", "1305451": "RELACOES ETNICO-RACIAIS", "1305452": "PROJETO DE PESQUISA", "1305455": "PROJETO DE TRAB DE CONCLUSAO DE CURSO", "1305457": "TRABALHO DE CONCLUSAO DE CURSO", "1302212": "FUNDAMENTOS DA SEMIÓTICA", "1302318": "CINEMA BRASILEIRO", "1303108": "ECONOMIA E MEIO AMBIENTE", "1305011": "HISTÓRIA ECONÔMICA GERAL", "1305012": "HISTÓRIA ECONÔMICA DO BRASIL", "1305029": "SOCIOLOGIA URBANA", "1305030": "SOCIOLOGIA RURAL", "1305032": "SOCIOLOGIA DO DESENVOLVIMENTO", "1305054": "SOCIEDADES CAMPONESAS", "1305055": "ANTROPOLOGIA URBANA", "1305069": "SOCIOLOGIA DA ARTE", "1305119": "HISTÓRIA DO NORDESTE", "1305157": "PARTIDOS POLITICOS", "1305173": "SOCIOLOGIA DA RELIGIAO", "1305456": "ANTROPOLOGIA DA PERFORMANCE", "1305459": "ANTROPOLOGIA DA RELIGIAO", "1305460": "ANTROPOLOGIA DA VIOLENCIA", "1305461": "ATROPOLOGIA DO TURISMO", "1305462": "ANTROPOLOGIA E EDUCACAO", "1305463": "ANTROPOLOGIA E GENEROS LITERARIOS", "1305464": "ANTROPOLOGIA E HISTORIA", "1305465": "ANTROPOLOGIA E OS ESTUDOS DE GENERO", "1305466": "ANTROPOLOGIA E PATRIMONIO CULTURAL", "1305467": "ANTROPOLOGIA ECONOMICA", "1305468": "ANTROPOLOGIA EM ESPACOS VIRTUAIS", "1305469": "ANTROPOLOGIA JURIDICA E DO DIREITO", "1305470": "ANTROPOLOGIA POLITICA", "1305471": "ANTROPOLOGIA RURAL", "1305472": "ANTROPOLOGIA, CULTURA MATERIAL E ARTE", "1305473": "ANTROP., POPULACAO TRAD E MEIO AMBIENTE", "1305474": "APLICACOES DA ANTROPOLOGIA", "1305475": "CULTURA, MIDIA E POLITICA", "1305476": "ETNOGRAFIA", "1305477": "ORGANIZACAO SOCIAL E PARENTESCO", "1305478": "RELACOES INTERETNICAS", "1305479": "TEORIA ANTROPOLOGICA CONTEMPORANEA", "1305480": "INSTITUICOES E POLITICA COMPARADA", "1305481": "DEMOCRATIZACAO NO BRASIL", "1305482": "SISTEMAS ELEITORAIS", "1305483": "FEDERAL,DESIG REG E SIST TRIB BRASILEIRO", "1305484": "PODER JUD E CONTROLES DEMOCRATICOS", "1305485": "EPISTEMIOLOGIA E MET EM CIENCIA POLITICA", "1305486": "NEOINSTITUCIONALISMO E EST LEGISLATIVOS", "1305487": "INDICADORES SOCIAIS", "1305488": "ELABORACAO DE PROJETOS SOCIAIS", "1305489": "ANALISE DE REGRESSAO APLIC AS C SOCIAIS", "1305490": "DIREITO CONSTITUCIONAL", "1305491": "EDUC.,DIVERSIDADE E DIREITOS HUMANOS", "1305492": "GENERO E SOCIEDADE", "1305493": "HISTORIA ORAL", "1305494": "LITERATURA E SOCIEDADE", "1305495": "PENSAMENTO SOCIAL BRASILEIRO II", "1305496": "POPULACOES CAMPONESAS E TERRITORIO", "1305497": "TEORIA SOCIAL", "1305498": "SOCIOLOGIA AMBIENTAL", "1305499": "SOCIOLOGIA CRITICA", "1305500": "SOCIOLOGIA DA CULTURA", "1305501": "SOCIOLOGIA DA EMOCAO", "1305502": "SOCIOLOGIA DA JUVENTUDE E DA FAMILIA", "1305503": "SOCIOLOGIA DA VIOLENCIA", "1305504": "SOCIOLOGIA DO CORPO", "1305505": "SOCIOLOGIA DO TRABALHO", "1305506": "SOCIOLOGIA POLITICA", "1305507": "SOCIOLOGIA RURAL CONTEMPORANEA", "1305540": "SCCS(TEOR JURÍDICA DO TRABALHO RELI)", "1305541": "SCCS(TÓP ESP: TECNOP, GOV ALG E DISP DI)", "1305552": "TECS(TEORIAS DEMOCRÁTICAS CONTEPORÂNEAS)", "1305553": "TECS(HISTÓRIA DAS IDEIAS ECONÔMICAS)", "1305554": "TECS(ECONOMIA POLÍTICA)", "1305556": "TECS(TECNOP,GOVERNAMENT ALG E DISP DIG)", "1305590": "TESC(DEMOCRACIA CONTEMPORÂNEA)", "1306031": "HIST DOS MOV SOCIAIS NO BRASIL", "1307332": "LIBRAS", "1308001": "GEOGRAFIA ECONOMICA", "1308007": "CARTOGRAFIA E ESTUDOS CORRELATOS", "1308015": "GEOGRAFIA POLITICA", "1308016": "FORMACAO TERRITORIAL DO BRASIL", "1308020": "GEOGRAFIA REGIONAL DO BRASIL", "1308036": "SENSORIAMENTO REMOTO E GEOPROCESSAMENTO", "1309253": "ELABORAÇÃO DE PROJETOS CULTURAIS"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -1194,7 +1197,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

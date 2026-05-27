@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,400 +404,400 @@
           <tr>
               <td>1307150</td>
               <td>INGLÊS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1411188</td>
               <td>MÉTODOS E SOFTWARE NUMÉRICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ÁLGEBRA LINEAR I, CÁLCULO DIFERENCIAL E INTEGRAL II</td>
               <td></td>
           </tr>
           <tr>
               <td>1411194</td>
               <td>BANCO DE DADOS II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BANCO DE DADOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1411197</td>
               <td>AVAL.DE DESEMPENHO DE SISTEMAS DISCRETOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À PROBABILIDADE</td>
               <td></td>
           </tr>
           <tr>
               <td>1411198</td>
               <td>ADM.DE SIST.GERENC.DE BANCO DE DADOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BANCO DE DADOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1411200</td>
               <td>COMPUTAÇÃO GRÁFICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL I, ÁLGEBRA LINEAR I, ESTRUTURAS DE DADOS E ALGORITMOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1411213</td>
               <td>OTIMIZAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ÁLGEBRA LINEAR I, CÁLCULO DIFERENCIAL E INTEGRAL II</td>
               <td></td>
           </tr>
           <tr>
               <td>1411217</td>
               <td>PROJETO DE REDES DE COMPUTADORES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTERCONEXÃO DE REDES DE COMPUTADORES</td>
               <td></td>
           </tr>
           <tr>
               <td>1411221</td>
               <td>SISTEMAS DE INFORMAÇÕES GEOGRÁFICAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BANCO DE DADOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1411222</td>
               <td>SISTEMAS DISTRIBUÍDOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>REDES DE COMPUTADORES, SISTEMAS OPERACIONAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1411320</td>
               <td>ADMINISTRAÇÃO DE SISTEMAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>REDES DE COMPUTADORES, SISTEMAS OPERACIONAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1411321</td>
               <td>ALGORITMOS AVANÇADOS I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROGRAMAÇÃO I, LABORATÓRIO DE PROGRAMAÇÃO I</td>
               <td></td>
           </tr>
           <tr>
               <td>1411322</td>
               <td>ALGORITMOS AVANÇADOS II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROGRAMAÇÃO I, LABORATÓRIO DE PROGRAMAÇÃO I</td>
               <td></td>
           </tr>
           <tr>
               <td>1411323</td>
               <td>ALGORITMOS AVANÇADOS III</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROGRAMAÇÃO I, LABORATÓRIO DE PROGRAMAÇÃO I</td>
               <td></td>
           </tr>
           <tr>
               <td>1411324</td>
               <td>ALGORITMOS AVANÇADOS IV</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROGRAMAÇÃO I, LABORATÓRIO DE PROGRAMAÇÃO I</td>
               <td></td>
           </tr>
           <tr>
               <td>1411325</td>
               <td>ARQUITETURA DE SOFTWARE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROJETO DE SOFTWARE</td>
               <td></td>
           </tr>
           <tr>
               <td>1411327</td>
               <td>DES DE SOFTWARE INTEG À OPER DA INFRAEST</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BANCO DE DADOS I, PROJETO DE SOFTWARE</td>
               <td></td>
           </tr>
           <tr>
               <td>1411328</td>
               <td>ECONOMIA DE TECNOLOGIA DA INFORMAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À PROBABILIDADE</td>
               <td></td>
           </tr>
           <tr>
               <td>1411330</td>
               <td>GERÊNCIA DE REDES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>REDES DE COMPUTADORES</td>
               <td></td>
           </tr>
           <tr>
               <td>1411331</td>
               <td>INTERCONEXÃO DE REDES DE COMPUTADORES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>REDES DE COMPUTADORES, SISTEMAS OPERACIONAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1411332</td>
               <td>MÉTODOS FORMAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1411333</td>
               <td>PRÁTICA DE ENSINO DE COMPUTAÇÃO I</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1411334</td>
               <td>PRÁTICA DE ENSINO DE COMPUTAÇÃO II</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PRÁTICA DE ENSINO DE COMPUTAÇÃO I</td>
               <td></td>
           </tr>
           <tr>
               <td>1411336</td>
               <td>PROGRAMAÇÃO EM BANCO DE DADOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BANCO DE DADOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1411337</td>
               <td>PROVIS. E OPER. DE INFRAESTRUTURAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>REDES DE COMPUTADORES, SISTEMAS OPERACIONAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1411338</td>
               <td>RECONHEC. DE PADRÕES E REDES NEURAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTATÍSTICA APLICADA, INTELIGÊNCIA ARTIFICIAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1411339</td>
               <td>RECUP. DE INFORMAÇÃO E BUSCA NA WEB</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BANCO DE DADOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1411340</td>
               <td>SEGURANÇA DE SISTEMAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>REDES DE COMPUTADORES, SISTEMAS OPERACIONAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1411342</td>
               <td>SISTEMAS DE APOIO À DECISÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BANCO DE DADOS I</td>
               <td></td>
           </tr>
           <tr>
               <td>1411343</td>
               <td>VERIFICAÇÃO E VALIDAÇÃO DE SOFTWARE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ENGENHARIA DE SOFTWARE</td>
               <td></td>
           </tr>
           <tr>
               <td>1411345</td>
               <td>INFORMÁTICA E SOCIEDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1411364</td>
               <td>CIÊNCIA DE DADOS DESCRITIVA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTATÍSTICA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>1411365</td>
               <td>CIÊNCIA DE DADOS PREDITIVA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTATÍSTICA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>1411366</td>
               <td>COMPUTAÇÃO E MÚSICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTRUTURAS DE DADOS E ALGORITMOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1411367</td>
               <td>EMPREENDEDORISMO E INOVAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ENGENHARIA DE SOFTWARE</td>
               <td></td>
           </tr>
           <tr>
               <td>1411368</td>
               <td>GESTÃO DE PROJETOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ENGENHARIA DE SOFTWARE</td>
               <td></td>
           </tr>
           <tr>
               <td>1411369</td>
               <td>GOVERNANÇA DA INTERNET</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>REDES DE COMPUTADORES</td>
               <td></td>
           </tr>
           <tr>
               <td>1411370</td>
               <td>HABILIDADES SOCIOEMOCIONAIS I</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1411371</td>
               <td>HABILIDADES SOCIOEMOCIONAIS II</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1411372</td>
               <td>INTERFACE HUMANO-COMPUTADOR</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTRUTURAS DE DADOS E ALGORITMOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1411373</td>
               <td>JOGOS DIGITAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1411374</td>
               <td>PERCEPÇÃO COMPUTACIONAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ÁLGEBRA LINEAR I, CÁLCULO DIFERENCIAL E INTEGRAL II, INTRODUÇÃO À PROBABILIDADE</td>
               <td></td>
           </tr>
           <tr>
               <td>1411375</td>
               <td>PROCESSAMENTO DE LINGUAGEM NATURAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FUND DE MATEMÁTICA P/ C.DA COMPUTAÇÃO II, ESTRUTURAS DE DADOS E ALGORITMOS, LAB.DE ESTRUTURAS DE DADOS E ALGORITMOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1411376</td>
               <td>PROGRAMAÇÃO FUNCIONAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PARADIGMAS DE LINGUAGENS DE PROGRANAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>1411377</td>
               <td>PROGRAMAÇÃO PARA A WEB I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTRUTURAS DE DADOS E ALGORITMOS, LAB.DE ESTRUTURAS DE DADOS E ALGORITMOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1411378</td>
               <td>PROGRAMAÇÃO PARA A WEB II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROGRAMAÇÃO PARA A WEB I</td>
               <td></td>
           </tr>
           <tr>
               <td>1411379</td>
               <td>PROJETO DE SISTEMAS DIGITAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ORGANIZAÇÃO E ARQUIT. DE COMPUTADORES</td>
               <td></td>
           </tr>
           <tr>
               <td>1411380</td>
               <td>TRANSFORMAÇAO DIGITAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1411381</td>
               <td>VISUALIZAÇÃO DE DADOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BANCO DE DADOS I, ESTATÍSTICA APLICADA</td>
               <td></td>
           </tr>
@@ -841,8 +844,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1305219", "nome": "DIREITO E CIDADANIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411167", "nome": "PROGRAMAÇÃO I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411174", "nome": "INTRODUÇÃO À COMPUTAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411180", "nome": "LABORATÓRIO DE PROGRAMAÇÃO I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411311", "nome": "FUND DE MATEMÁTICA P/ C.DA COMPUTAÇÃO I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": ["1411311"]}, {"nivel": "2º Nível", "codigo": "1303021", "nome": "ECONOMIA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1411168", "nome": "PROGRAMAÇÃO II", "ch": "60h", "preReqs": ["1411167", "1411180"]}, {"nivel": "2º Nível", "codigo": "1411181", "nome": "LABORATÓRIO DE PROGRAMAÇÃO II", "ch": "60h", "preReqs": ["1411167", "1411180"]}, {"nivel": "2º Nível", "codigo": "1411312", "nome": "FUND DE MATEMÁTICA P/ C.DA COMPUTAÇÃO II", "ch": "60h", "preReqs": ["1411311"]}, {"nivel": "3º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1411312"]}, {"nivel": "3º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109126"]}, {"nivel": "3º Nível", "codigo": "1411172", "nome": "ESTRUTURAS DE DADOS E ALGORITMOS", "ch": "60h", "preReqs": ["1411168", "1411181"]}, {"nivel": "3º Nível", "codigo": "1411179", "nome": "LAB.DE ESTRUTURAS DE DADOS E ALGORITMOS", "ch": "60h", "preReqs": ["1411168", "1411181"]}, {"nivel": "3º Nível", "codigo": "1411307", "nome": "LÓGICA PARA COMPUTAÇÃO", "ch": "60h", "preReqs": ["1411312"]}, {"nivel": "4º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60h", "preReqs": ["1109131"]}, {"nivel": "4º Nível", "codigo": "1411171", "nome": "TEORIA DA COMPUTAÇÃO", "ch": "60h", "preReqs": ["1411307"]}, {"nivel": "4º Nível", "codigo": "1411193", "nome": "BANCO DE DADOS I", "ch": "60h", "preReqs": ["1411172"]}, {"nivel": "4º Nível", "codigo": "1411304", "nome": "TEORIA DOS GRAFOS", "ch": "60h", "preReqs": ["1411311", "1411168", "1411181"]}, {"nivel": "4º Nível", "codigo": "1411309", "nome": "PARADIGMAS DE LINGUAGENS DE PROGRANAÇÃO", "ch": "60h", "preReqs": ["1411168", "1411181"]}, {"nivel": "4º Nível", "codigo": "1411310", "nome": "ORGANIZAÇÃO E ARQUIT. DE COMPUTADORES", "ch": "60h", "preReqs": ["1411174"]}, {"nivel": "5º Nível", "codigo": "1114222", "nome": "ESTATÍSTICA APLICADA", "ch": "60h", "preReqs": ["1114129"]}, {"nivel": "5º Nível", "codigo": "1411190", "nome": "REDES DE COMPUTADORES", "ch": "60h", "preReqs": ["1411174"]}, {"nivel": "5º Nível", "codigo": "1411192", "nome": "SISTEMAS OPERACIONAIS", "ch": "60h", "preReqs": ["1411310"]}, {"nivel": "5º Nível", "codigo": "1411308", "nome": "PROJETO DE SOFTWARE", "ch": "60h", "preReqs": ["1411172", "1411179"]}, {"nivel": "5º Nível", "codigo": "1411314", "nome": "ENGENHARIA DE SOFTWARE", "ch": "60h", "preReqs": ["1411168", "1411181"]}, {"nivel": "5º Nível", "codigo": "1411316", "nome": "INTELIGÊNCIA ARTIFICIAL", "ch": "60h", "preReqs": ["1411171"]}, {"nivel": "6º Nível", "codigo": "1411187", "nome": "ANÁLISE E TÉCNICA DE ALGORITMOS", "ch": "60h", "preReqs": ["1411172", "1411304"]}, {"nivel": "6º Nível", "codigo": "1411313", "nome": "ANÁLISE DE SISTEMAS", "ch": "60h", "preReqs": ["1411308"]}, {"nivel": "6º Nível", "codigo": "1411315", "nome": "PROGRAMAÇÃO CONCORRENTE", "ch": "60h", "preReqs": ["1411192"]}, {"nivel": "7º Nível", "codigo": "1411189", "nome": "COMPILADORES", "ch": "60h", "preReqs": ["1411309", "1411171"]}, {"nivel": "7º Nível", "codigo": "1411383", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60h", "preReqs": ["1114222"]}, {"nivel": "8º Nível", "codigo": "1307169", "nome": "LÍNGUA PORTUGUESA", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1411185", "nome": "PROJETO EM COMPUTAÇÃO I", "ch": "60h", "preReqs": ["1411314", "1411313"]}, {"nivel": "9º Nível", "codigo": "1411348", "nome": "PROJETO EM COMPUTAÇÃO II", "ch": "60h", "preReqs": ["1411185"]}];
-  const codigoToNome = {"1305219": "DIREITO E CIDADANIA", "1411167": "PROGRAMAÇÃO I", "1411174": "INTRODUÇÃO À COMPUTAÇÃO", "1411180": "LABORATÓRIO DE PROGRAMAÇÃO I", "1411311": "FUND DE MATEMÁTICA P/ C.DA COMPUTAÇÃO I", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1303021": "ECONOMIA", "1411168": "PROGRAMAÇÃO II", "1411181": "LABORATÓRIO DE PROGRAMAÇÃO II", "1411312": "FUND DE MATEMÁTICA P/ C.DA COMPUTAÇÃO II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1411172": "ESTRUTURAS DE DADOS E ALGORITMOS", "1411179": "LAB.DE ESTRUTURAS DE DADOS E ALGORITMOS", "1411307": "LÓGICA PARA COMPUTAÇÃO", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1411171": "TEORIA DA COMPUTAÇÃO", "1411193": "BANCO DE DADOS I", "1411304": "TEORIA DOS GRAFOS", "1411309": "PARADIGMAS DE LINGUAGENS DE PROGRANAÇÃO", "1411310": "ORGANIZAÇÃO E ARQUIT. DE COMPUTADORES", "1114222": "ESTATÍSTICA APLICADA", "1411190": "REDES DE COMPUTADORES", "1411192": "SISTEMAS OPERACIONAIS", "1411308": "PROJETO DE SOFTWARE", "1411314": "ENGENHARIA DE SOFTWARE", "1411316": "INTELIGÊNCIA ARTIFICIAL", "1411187": "ANÁLISE E TÉCNICA DE ALGORITMOS", "1411313": "ANÁLISE DE SISTEMAS", "1411315": "PROGRAMAÇÃO CONCORRENTE", "1411189": "COMPILADORES", "1411383": "METODOLOGIA CIENTÍFICA", "1307169": "LÍNGUA PORTUGUESA", "1411185": "PROJETO EM COMPUTAÇÃO I", "1411348": "PROJETO EM COMPUTAÇÃO II", "1307150": "INGLÊS", "1307332": "LIBRAS", "1411188": "MÉTODOS E SOFTWARE NUMÉRICOS", "1411194": "BANCO DE DADOS II", "1411197": "AVAL.DE DESEMPENHO DE SISTEMAS DISCRETOS", "1411198": "ADM.DE SIST.GERENC.DE BANCO DE DADOS", "1411200": "COMPUTAÇÃO GRÁFICA", "1411213": "OTIMIZAÇÃO", "1411217": "PROJETO DE REDES DE COMPUTADORES", "1411221": "SISTEMAS DE INFORMAÇÕES GEOGRÁFICAS", "1411222": "SISTEMAS DISTRIBUÍDOS", "1411320": "ADMINISTRAÇÃO DE SISTEMAS", "1411321": "ALGORITMOS AVANÇADOS I", "1411322": "ALGORITMOS AVANÇADOS II", "1411323": "ALGORITMOS AVANÇADOS III", "1411324": "ALGORITMOS AVANÇADOS IV", "1411325": "ARQUITETURA DE SOFTWARE", "1411327": "DES DE SOFTWARE INTEG À OPER DA INFRAEST", "1411328": "ECONOMIA DE TECNOLOGIA DA INFORMAÇÃO", "1411330": "GERÊNCIA DE REDES", "1411331": "INTERCONEXÃO DE REDES DE COMPUTADORES", "1411332": "MÉTODOS FORMAIS", "1411333": "PRÁTICA DE ENSINO DE COMPUTAÇÃO I", "1411334": "PRÁTICA DE ENSINO DE COMPUTAÇÃO II", "1411336": "PROGRAMAÇÃO EM BANCO DE DADOS", "1411337": "PROVIS. E OPER. DE INFRAESTRUTURAS", "1411338": "RECONHEC. DE PADRÕES E REDES NEURAIS", "1411339": "RECUP. DE INFORMAÇÃO E BUSCA NA WEB", "1411340": "SEGURANÇA DE SISTEMAS", "1411342": "SISTEMAS DE APOIO À DECISÃO", "1411343": "VERIFICAÇÃO E VALIDAÇÃO DE SOFTWARE", "1411345": "INFORMÁTICA E SOCIEDADE", "1411364": "CIÊNCIA DE DADOS DESCRITIVA", "1411365": "CIÊNCIA DE DADOS PREDITIVA", "1411366": "COMPUTAÇÃO E MÚSICA", "1411367": "EMPREENDEDORISMO E INOVAÇÃO", "1411368": "GESTÃO DE PROJETOS", "1411369": "GOVERNANÇA DA INTERNET", "1411370": "HABILIDADES SOCIOEMOCIONAIS I", "1411371": "HABILIDADES SOCIOEMOCIONAIS II", "1411372": "INTERFACE HUMANO-COMPUTADOR", "1411373": "JOGOS DIGITAIS", "1411374": "PERCEPÇÃO COMPUTACIONAL", "1411375": "PROCESSAMENTO DE LINGUAGEM NATURAL", "1411376": "PROGRAMAÇÃO FUNCIONAL", "1411377": "PROGRAMAÇÃO PARA A WEB I", "1411378": "PROGRAMAÇÃO PARA A WEB II", "1411379": "PROJETO DE SISTEMAS DIGITAIS", "1411380": "TRANSFORMAÇAO DIGITAL", "1411381": "VISUALIZAÇÃO DE DADOS"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1305219", "nome": "DIREITO E CIDADANIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411167", "nome": "PROGRAMAÇÃO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411174", "nome": "INTRODUÇÃO À COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411180", "nome": "LABORATÓRIO DE PROGRAMAÇÃO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411311", "nome": "FUND DE MATEMÁTICA P/ C.DA COMPUTAÇÃO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411311"]}, {"nivel": "2º Nível", "codigo": "1303021", "nome": "ECONOMIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1411168", "nome": "PROGRAMAÇÃO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411167", "1411180"]}, {"nivel": "2º Nível", "codigo": "1411181", "nome": "LABORATÓRIO DE PROGRAMAÇÃO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411167", "1411180"]}, {"nivel": "2º Nível", "codigo": "1411312", "nome": "FUND DE MATEMÁTICA P/ C.DA COMPUTAÇÃO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411311"]}, {"nivel": "3º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411312"]}, {"nivel": "3º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126"]}, {"nivel": "3º Nível", "codigo": "1411172", "nome": "ESTRUTURAS DE DADOS E ALGORITMOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411168", "1411181"]}, {"nivel": "3º Nível", "codigo": "1411179", "nome": "LAB.DE ESTRUTURAS DE DADOS E ALGORITMOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411168", "1411181"]}, {"nivel": "3º Nível", "codigo": "1411307", "nome": "LÓGICA PARA COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411312"]}, {"nivel": "4º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131"]}, {"nivel": "4º Nível", "codigo": "1411171", "nome": "TEORIA DA COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411307"]}, {"nivel": "4º Nível", "codigo": "1411193", "nome": "BANCO DE DADOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411172"]}, {"nivel": "4º Nível", "codigo": "1411304", "nome": "TEORIA DOS GRAFOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411311", "1411168", "1411181"]}, {"nivel": "4º Nível", "codigo": "1411309", "nome": "PARADIGMAS DE LINGUAGENS DE PROGRANAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411168", "1411181"]}, {"nivel": "4º Nível", "codigo": "1411310", "nome": "ORGANIZAÇÃO E ARQUIT. DE COMPUTADORES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411174"]}, {"nivel": "5º Nível", "codigo": "1114222", "nome": "ESTATÍSTICA APLICADA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114129"]}, {"nivel": "5º Nível", "codigo": "1411190", "nome": "REDES DE COMPUTADORES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411174"]}, {"nivel": "5º Nível", "codigo": "1411192", "nome": "SISTEMAS OPERACIONAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411310"]}, {"nivel": "5º Nível", "codigo": "1411308", "nome": "PROJETO DE SOFTWARE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411172", "1411179"]}, {"nivel": "5º Nível", "codigo": "1411314", "nome": "ENGENHARIA DE SOFTWARE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411168", "1411181"]}, {"nivel": "5º Nível", "codigo": "1411316", "nome": "INTELIGÊNCIA ARTIFICIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411171"]}, {"nivel": "6º Nível", "codigo": "1411187", "nome": "ANÁLISE E TÉCNICA DE ALGORITMOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411172", "1411304"]}, {"nivel": "6º Nível", "codigo": "1411313", "nome": "ANÁLISE DE SISTEMAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411308"]}, {"nivel": "6º Nível", "codigo": "1411315", "nome": "PROGRAMAÇÃO CONCORRENTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411192"]}, {"nivel": "7º Nível", "codigo": "1411189", "nome": "COMPILADORES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411309", "1411171"]}, {"nivel": "7º Nível", "codigo": "1411383", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114222"]}, {"nivel": "8º Nível", "codigo": "1307169", "nome": "LÍNGUA PORTUGUESA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1411185", "nome": "PROJETO EM COMPUTAÇÃO I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411314", "1411313"]}, {"nivel": "9º Nível", "codigo": "1411318", "nome": "TRABALHO DE CONCLUSÃO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1411383", "1307169"]}, {"nivel": "9º Nível", "codigo": "1411348", "nome": "PROJETO EM COMPUTAÇÃO II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411185"]}];
+  const codigoToNome = {"1305219": "DIREITO E CIDADANIA", "1411167": "PROGRAMAÇÃO I", "1411174": "INTRODUÇÃO À COMPUTAÇÃO", "1411180": "LABORATÓRIO DE PROGRAMAÇÃO I", "1411311": "FUND DE MATEMÁTICA P/ C.DA COMPUTAÇÃO I", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1303021": "ECONOMIA", "1411168": "PROGRAMAÇÃO II", "1411181": "LABORATÓRIO DE PROGRAMAÇÃO II", "1411312": "FUND DE MATEMÁTICA P/ C.DA COMPUTAÇÃO II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1411172": "ESTRUTURAS DE DADOS E ALGORITMOS", "1411179": "LAB.DE ESTRUTURAS DE DADOS E ALGORITMOS", "1411307": "LÓGICA PARA COMPUTAÇÃO", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1411171": "TEORIA DA COMPUTAÇÃO", "1411193": "BANCO DE DADOS I", "1411304": "TEORIA DOS GRAFOS", "1411309": "PARADIGMAS DE LINGUAGENS DE PROGRANAÇÃO", "1411310": "ORGANIZAÇÃO E ARQUIT. DE COMPUTADORES", "1114222": "ESTATÍSTICA APLICADA", "1411190": "REDES DE COMPUTADORES", "1411192": "SISTEMAS OPERACIONAIS", "1411308": "PROJETO DE SOFTWARE", "1411314": "ENGENHARIA DE SOFTWARE", "1411316": "INTELIGÊNCIA ARTIFICIAL", "1411187": "ANÁLISE E TÉCNICA DE ALGORITMOS", "1411313": "ANÁLISE DE SISTEMAS", "1411315": "PROGRAMAÇÃO CONCORRENTE", "1411189": "COMPILADORES", "1411383": "METODOLOGIA CIENTÍFICA", "1307169": "LÍNGUA PORTUGUESA", "1411185": "PROJETO EM COMPUTAÇÃO I", "1411318": "TRABALHO DE CONCLUSÃO DE CURSO", "1411348": "PROJETO EM COMPUTAÇÃO II", "1307150": "INGLÊS", "1307332": "LIBRAS", "1411188": "MÉTODOS E SOFTWARE NUMÉRICOS", "1411194": "BANCO DE DADOS II", "1411197": "AVAL.DE DESEMPENHO DE SISTEMAS DISCRETOS", "1411198": "ADM.DE SIST.GERENC.DE BANCO DE DADOS", "1411200": "COMPUTAÇÃO GRÁFICA", "1411213": "OTIMIZAÇÃO", "1411217": "PROJETO DE REDES DE COMPUTADORES", "1411221": "SISTEMAS DE INFORMAÇÕES GEOGRÁFICAS", "1411222": "SISTEMAS DISTRIBUÍDOS", "1411320": "ADMINISTRAÇÃO DE SISTEMAS", "1411321": "ALGORITMOS AVANÇADOS I", "1411322": "ALGORITMOS AVANÇADOS II", "1411323": "ALGORITMOS AVANÇADOS III", "1411324": "ALGORITMOS AVANÇADOS IV", "1411325": "ARQUITETURA DE SOFTWARE", "1411327": "DES DE SOFTWARE INTEG À OPER DA INFRAEST", "1411328": "ECONOMIA DE TECNOLOGIA DA INFORMAÇÃO", "1411330": "GERÊNCIA DE REDES", "1411331": "INTERCONEXÃO DE REDES DE COMPUTADORES", "1411332": "MÉTODOS FORMAIS", "1411333": "PRÁTICA DE ENSINO DE COMPUTAÇÃO I", "1411334": "PRÁTICA DE ENSINO DE COMPUTAÇÃO II", "1411336": "PROGRAMAÇÃO EM BANCO DE DADOS", "1411337": "PROVIS. E OPER. DE INFRAESTRUTURAS", "1411338": "RECONHEC. DE PADRÕES E REDES NEURAIS", "1411339": "RECUP. DE INFORMAÇÃO E BUSCA NA WEB", "1411340": "SEGURANÇA DE SISTEMAS", "1411342": "SISTEMAS DE APOIO À DECISÃO", "1411343": "VERIFICAÇÃO E VALIDAÇÃO DE SOFTWARE", "1411345": "INFORMÁTICA E SOCIEDADE", "1411364": "CIÊNCIA DE DADOS DESCRITIVA", "1411365": "CIÊNCIA DE DADOS PREDITIVA", "1411366": "COMPUTAÇÃO E MÚSICA", "1411367": "EMPREENDEDORISMO E INOVAÇÃO", "1411368": "GESTÃO DE PROJETOS", "1411369": "GOVERNANÇA DA INTERNET", "1411370": "HABILIDADES SOCIOEMOCIONAIS I", "1411371": "HABILIDADES SOCIOEMOCIONAIS II", "1411372": "INTERFACE HUMANO-COMPUTADOR", "1411373": "JOGOS DIGITAIS", "1411374": "PERCEPÇÃO COMPUTACIONAL", "1411375": "PROCESSAMENTO DE LINGUAGEM NATURAL", "1411376": "PROGRAMAÇÃO FUNCIONAL", "1411377": "PROGRAMAÇÃO PARA A WEB I", "1411378": "PROGRAMAÇÃO PARA A WEB II", "1411379": "PROJETO DE SISTEMAS DIGITAIS", "1411380": "TRANSFORMAÇAO DIGITAL", "1411381": "VISUALIZAÇÃO DE DADOS"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -954,7 +957,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

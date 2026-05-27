@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,264 +404,264 @@
           <tr>
               <td>5103075</td>
               <td>HUMANIZACAO EM SAUDE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102127</td>
               <td>AUDITORIA EM ENFERMAGEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>BASES TEOR DA GESTAO EM ENFERMAGEM II, BASES PRAT DA GESTAO EM ENFERMAGEM II</td>
               <td></td>
           </tr>
           <tr>
               <td>5101066</td>
               <td>INFORMÁTICA APLICADA À SAUDE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101116</td>
               <td>PORTUGUES</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101218</td>
               <td>INGLES INSTRUMENTAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5101222</td>
               <td>LIBRAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5102072</td>
               <td>FITOTERAPIA E HOMEOPATIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>FARMACOLOGIA GERAL</td>
               <td></td>
           </tr>
           <tr>
               <td>5103030</td>
               <td>SAUDE AMBIENTAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5103111</td>
               <td>ASSIST DE ENFERMAGEM EM HOME CARE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>BASES TEOR DE ENF EM SEMIOL E SEMIOTE II, BASES PRAT DE ENF EM SEMIOL E SEMIOTE II</td>
               <td></td>
           </tr>
           <tr>
               <td>5103182</td>
               <td>VIGILANCIA SANITARIA E EPIDEMIOLOGIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>EPIDEMIOLOGIA E SAUDE</td>
               <td></td>
           </tr>
           <tr>
               <td>5103226</td>
               <td>ATENCAO INTEG AS DOENCAS PREV NA INFANCI</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>BAS T DE ENF NA SAUDE DA CRIAN E ADOL I, BAS P DE ENF NA SAUDE DA CRIAN E ADOL I</td>
               <td></td>
           </tr>
           <tr>
               <td>5103227</td>
               <td>BASES TEOR DA ASSIST A PESSOA COM DEFIC</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>BASES TEOR DE ENF EM SEMIOL E SEMIOTE II, BASES PRAT DE ENF EM SEMIOL E SEMIOTE II</td>
               <td></td>
           </tr>
           <tr>
               <td>5103228</td>
               <td>CUIDADOS PALIATIVOS DE ENFERMAGEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ENFERMAGEM EM ONCOLOGIA</td>
               <td></td>
           </tr>
           <tr>
               <td>5103229</td>
               <td>PESQUISA EM ENFERMAGEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>METODOLOGIA CIENTÍFICA APLICADA À SAÚDE</td>
               <td></td>
           </tr>
           <tr>
               <td>5103230</td>
               <td>PRAT INTEGRATIVAS E COMP EM SAUDE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ANTROPOLOGIA DA SAUDE</td>
               <td></td>
           </tr>
           <tr>
               <td>5103231</td>
               <td>SISTEMA DE CLASSIFICACAO EM ENFERMAGEM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>METODOLOGIA DA ASSISTENCIA EM ENFERMAGEM</td>
               <td></td>
           </tr>
           <tr>
               <td>5103233</td>
               <td>SEMINARIO INTEGRADOR I</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5103234</td>
               <td>SEMINARIO INTEGRADOR II</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5103235</td>
               <td>SEMINARIO INTEGRADOR III</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5103238</td>
               <td>TES( AIDPI NEONATAL)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>ENFERMAGEM EM NEONATOLOGIA</td>
               <td></td>
           </tr>
           <tr>
               <td>5103239</td>
               <td>TES ( FITOTERAPIA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>FISIOLOGIA HUMANA</td>
               <td></td>
           </tr>
           <tr>
               <td>5103240</td>
-              <td>TES(GENERO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>TES(GENERO,SAUDE E DIVERSIDADE)</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BASES TEOR DE ENF EM SAUDE COLETIVA III, BASES PRAT DE ENF EM SAUDE COLETIVA III</td>
               <td>SAUDE MENTAL</td>
           </tr>
           <tr>
               <td>5103241</td>
               <td>TES(SUPORTE BASICO E AVANCADO DE VIDA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>BASES TEOR DE ENF EM SEMIOL E SEMIOTE II, BASES PRAT DE ENF EM SEMIOL E SEMIOTE II</td>
               <td></td>
           </tr>
           <tr>
               <td>5103242</td>
               <td>TES(MARCADORES DAS DIFER E VUNER SOCIAL)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5103243</td>
-              <td>TES(MULHERES</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>TES(MULHERES,SAÚDE E DIVERSIDADE)</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>SAUDE E SOCIEDADE, PSICOLOGIA E SAUDE</td>
               <td>BASES TEOR DE ENF NA SAUDE DA MULHER, BASES PRAT DE ENF NA SAUDE DA MULHER</td>
           </tr>
           <tr>
               <td>5103244</td>
               <td>TES(ATENÇÃO A SAÚDE DE PESSOAS PRIV LIB</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5103245</td>
               <td>TES(FUND DO C EM ENF AO PAC COM COVID-19</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FISIOLOGIA HUMANA</td>
               <td></td>
           </tr>
           <tr>
               <td>5103246</td>
               <td>TES(N TEO DE ENF EM C CIR DE CENT M E ES</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>BASES TEOR DE ENF EM SEMIOL E SEMIOTE II, BASES TEOR DE ENF NA SAUDE DO ADULTO I, BASES TEOR DE ENF NA SAUDE DO ADULTO II</td>
               <td></td>
           </tr>
           <tr>
               <td>5103247</td>
               <td>TES(NOÇÕES TEÓRICAS DE PRIMEIROS SOCORRO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>BASES TEOR DE ENF EM SEMIOL E SEMIOTE II</td>
               <td></td>
           </tr>
           <tr>
               <td>5103248</td>
               <td>TES(ESTILOS DE APRENDIZAGEM)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5103249</td>
               <td>TES(CUID DA PELE NOS DIF CICLOS DA VIDA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>BIOLOGIA CELULAR</td>
               <td></td>
           </tr>
           <tr>
               <td>5104217</td>
               <td>POLITICA E EDUCACAO</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>5104234</td>
               <td>TEENF(TÓPICOS EM GENÉTICA GERAL P/ ENF)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -705,8 +708,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5102004", "nome": "ANATOMIA HUMANA", "ch": "90h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102005", "nome": "BIOQUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102007", "nome": "METODOLOGIA CIENTÍFICA APLICADA À SAÚDE", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5103021", "nome": "ANTROPOLOGIA DA SAUDE", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5103022", "nome": "HISTÓRIA DA ENFERMAGEM", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5103153", "nome": "EMBRIOLOGIA HUMANA", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104001", "nome": "BIOLOGIA CELULAR", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102008", "nome": "SAUDE E SOCIEDADE", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102037", "nome": "HISTOLOGIA", "ch": "30h", "preReqs": ["5104001"]}, {"nivel": "2º Nível", "codigo": "5102038", "nome": "MICROBIOLOGIA E IMUNOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102191", "nome": "BIOFISICA", "ch": "30h", "preReqs": ["5104001"]}, {"nivel": "2º Nível", "codigo": "5102192", "nome": "FISIOLOGIA HUMANA", "ch": "90h", "preReqs": ["5102004"]}, {"nivel": "2º Nível", "codigo": "5103039", "nome": "ETICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5103183", "nome": "EPIDEMIOLOGIA E SAUDE", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104101", "nome": "GENETICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5102010", "nome": "PATOLOGIA GERAL", "ch": "60h", "preReqs": ["5102192", "5102005"]}, {"nivel": "3º Nível", "codigo": "5102028", "nome": "PARASITOLOGIA HUMANA", "ch": "60h", "preReqs": ["5104001", "5104101"]}, {"nivel": "3º Nível", "codigo": "5102029", "nome": "FARMACOLOGIA GERAL", "ch": "60h", "preReqs": ["5102192"]}, {"nivel": "3º Nível", "codigo": "5102033", "nome": "ASPECTOS NUTRICIONAIS EM SAUDE-DOENCA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5103043", "nome": "METODOLOGIA DA ASSISTENCIA EM ENFERMAGEM", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "5103184", "nome": "SAUDE COLETIVA I", "ch": "30h", "preReqs": ["5103183"]}, {"nivel": "3º Nível", "codigo": "5103185", "nome": "BASES TEOR DE ENF EM SEMIOL E SEMIOTEC I", "ch": "120h", "preReqs": ["5102192"]}, {"nivel": "3º Nível", "codigo": "5103186", "nome": "BASES PRAT DE ENF EM SEMIOL E SEMIOTEC I", "ch": "15h", "preReqs": ["5102192"]}, {"nivel": "4º Nível", "codigo": "5103041", "nome": "FARMACOLOGIA APLICADA A ENFERMAGEM", "ch": "30h", "preReqs": ["5102029", "5103185", "5103186"]}, {"nivel": "4º Nível", "codigo": "5103187", "nome": "BASES TEOR DE ENF EM SEMIOL E SEMIOTE II", "ch": "120h", "preReqs": ["5103185", "5103186"]}, {"nivel": "4º Nível", "codigo": "5103188", "nome": "BASES PRAT DE ENF EM SEMIOL E SEMIOTE II", "ch": "30h", "preReqs": ["5103185", "5103186"]}, {"nivel": "4º Nível", "codigo": "5103189", "nome": "BASES TEOR DE ENF EM SAUDE COLETIVA II", "ch": "60h", "preReqs": ["5103184", "5103185", "5103186"]}, {"nivel": "4º Nível", "codigo": "5103190", "nome": "BASES PRAT DE ENF EM SAUDE COLETIVA II", "ch": "15h", "preReqs": ["5103184", "5103185", "5103186"]}, {"nivel": "4º Nível", "codigo": "5103191", "nome": "ENFERMAGEM NA SAUDE DO HOMEM", "ch": "30h", "preReqs": ["5103184"]}, {"nivel": "4º Nível", "codigo": "5103192", "nome": "ENFERMAGEM NA INTERP DE EXAMES LABORATOR", "ch": "30h", "preReqs": ["5102038"]}, {"nivel": "4º Nível", "codigo": "5103193", "nome": "GESTAO EM ENFERMAGEM I", "ch": "30h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "5104143", "nome": "PSICOLOGIA E SAUDE", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "5103194", "nome": "BASES TEOR DE ENF NA SAUDE DO ADULTO I", "ch": "90h", "preReqs": ["5103187", "5103188"]}, {"nivel": "5º Nível", "codigo": "5103195", "nome": "BASES PRAT DE ENF NA SAUDE DO ADULTO I", "ch": "15h", "preReqs": ["5103187", "5103188"]}, {"nivel": "5º Nível", "codigo": "5103196", "nome": "BASES TEOR DE ENF EM SAUDE COLETIVA III", "ch": "60h", "preReqs": ["5103189", "5103190"]}, {"nivel": "5º Nível", "codigo": "5103197", "nome": "BASES PRAT DE ENF EM SAUDE COLETIVA III", "ch": "15h", "preReqs": ["5103189", "5103190"]}, {"nivel": "5º Nível", "codigo": "5103198", "nome": "BASES TEOR DE ENF NA SAUDE DA MULHER", "ch": "90h", "preReqs": ["5103189", "5103190"]}, {"nivel": "5º Nível", "codigo": "5103199", "nome": "BASES PRAT DE ENF NA SAUDE DA MULHER", "ch": "15h", "preReqs": ["5103189", "5103190"]}, {"nivel": "5º Nível", "codigo": "5103200", "nome": "AVALIACAO E TRAT DE FERIDAS E CURATIVOS", "ch": "30h", "preReqs": ["5103187", "5103188"]}, {"nivel": "5º Nível", "codigo": "5103201", "nome": "ENFERMAGEM EM ONCOLOGIA", "ch": "30h", "preReqs": ["5103187", "5103188"]}, {"nivel": "5º Nível", "codigo": "5103202", "nome": "ENFERMAGEM NA SAUDE DO IDOSO", "ch": "30h", "preReqs": ["5103187", "5103188"]}, {"nivel": "6º Nível", "codigo": "5103102", "nome": "EDUCAÇÃO EM SAÚDE", "ch": "30h", "preReqs": ["5103184"]}, {"nivel": "6º Nível", "codigo": "5103203", "nome": "BASES TEOR DE ENF NA SAUDE DO ADULTO II", "ch": "90h", "preReqs": ["5103194", "5103195"]}, {"nivel": "6º Nível", "codigo": "5103204", "nome": "BASES PRAT DE ENF NA SAUDE DO ADULTO II", "ch": "15h", "preReqs": ["5103194", "5103195"]}, {"nivel": "6º Nível", "codigo": "5103205", "nome": "BASES TEORICAS DE ENFERM EM OBSTETRICIA", "ch": "90h", "preReqs": ["5103187", "5103188", "5103198", "5103199"]}, {"nivel": "6º Nível", "codigo": "5103206", "nome": "BASES PRÁTICAS DE ENFERM EM OBSTETRÍCIA", "ch": "15h", "preReqs": ["5103187", "5103188", "5103198", "5103199"]}, {"nivel": "6º Nível", "codigo": "5103207", "nome": "BASES TEOR DA GESTAO EM ENFERMAGEM II", "ch": "90h", "preReqs": ["5103193"]}, {"nivel": "6º Nível", "codigo": "5103208", "nome": "BASES PRAT DA GESTAO EM ENFERMAGEM II", "ch": "15h", "preReqs": ["5103193"]}, {"nivel": "6º Nível", "codigo": "5103209", "nome": "ENFERMAGEM EM NEONATOLOGIA", "ch": "30h", "preReqs": ["5103153", "5103187", "5103188"]}, {"nivel": "6º Nível", "codigo": "5103210", "nome": "SAUDE MENTAL", "ch": "60h", "preReqs": ["5104143"]}, {"nivel": "7º Nível", "codigo": "5103114", "nome": "ENFERMAGEM NA SAUDE DO TRABALHADOR", "ch": "30h", "preReqs": ["5103194", "5103195", "5103196", "5103197"]}, {"nivel": "7º Nível", "codigo": "5103211", "nome": "BASES TEORICAS DE ENFERM EM CIRURGIA I", "ch": "90h", "preReqs": ["5103194", "5103195", "5103201"]}, {"nivel": "7º Nível", "codigo": "5103212", "nome": "BASES PRÁTICAS DE ENFERM EM CIRURGIA I", "ch": "15h", "preReqs": ["5103194", "5103195", "5103201"]}, {"nivel": "7º Nível", "codigo": "5103213", "nome": "BASES TEORICAS DE ENFERM EM PSIQUIATRIA", "ch": "90h", "preReqs": ["5103210"]}, {"nivel": "7º Nível", "codigo": "5103214", "nome": "BASES PRÁTICAS DE ENFERM EM PSIQUIATRIA", "ch": "15h", "preReqs": ["5103210"]}, {"nivel": "7º Nível", "codigo": "5103215", "nome": "BAS T DE ENF NA SAUDE DA CRIAN E ADOL I", "ch": "60h", "preReqs": ["5103187", "5103188", "5103197"]}, {"nivel": "7º Nível", "codigo": "5103216", "nome": "BAS P DE ENF NA SAUDE DA CRIAN E ADOL I", "ch": "15h", "preReqs": ["5103187", "5103188", "5103196", "5103197"]}, {"nivel": "7º Nível", "codigo": "5103217", "nome": "PRIMEIROS SOCORROS", "ch": "30h", "preReqs": ["5103187", "5103188"]}, {"nivel": "8º Nível", "codigo": "5103218", "nome": "BASES TEORICAS DE ENFERM EM CIRURGICA II", "ch": "90h", "preReqs": ["5103211", "5103212"]}, {"nivel": "8º Nível", "codigo": "5103219", "nome": "BAS TEOR DE ENF EM CUID CRIT EM TER INTE", "ch": "90h", "preReqs": ["5103203", "5103204", "5103211", "5103212"]}, {"nivel": "8º Nível", "codigo": "5103220", "nome": "BAS PRAT DE ENF EM CUID CRIT EM TER INTE", "ch": "15h", "preReqs": ["5103203", "5103204", "5103211", "5103212"]}, {"nivel": "8º Nível", "codigo": "5103221", "nome": "BAS T DE ENF NA SAUDE DA CRIAN E ADOL II", "ch": "60h", "preReqs": ["5103215", "5103216"]}, {"nivel": "8º Nível", "codigo": "5103222", "nome": "BAS P DE ENF NA SAUDE DA CRIAN E ADOL II", "ch": "15h", "preReqs": ["5103215", "5103216"]}, {"nivel": "8º Nível", "codigo": "5103223", "nome": "PROCESSO DE TRABALHO EM SAUDE", "ch": "30h", "preReqs": ["5103196", "5103197"]}, {"nivel": "8º Nível", "codigo": "5103224", "nome": "TRABALHO DE CONCLUSAO DE CURSO I", "ch": "30h", "preReqs": ["5102007"]}, {"nivel": "8º Nível", "codigo": "5103236", "nome": "BASES PRÁTICAS DE ENFERM EM CIRURGIA II", "ch": "15h", "preReqs": ["5103211", "5103212"]}];
-  const codigoToNome = {"5102004": "ANATOMIA HUMANA", "5102005": "BIOQUÍMICA GERAL", "5102007": "METODOLOGIA CIENTÍFICA APLICADA À SAÚDE", "5103021": "ANTROPOLOGIA DA SAUDE", "5103022": "HISTÓRIA DA ENFERMAGEM", "5103153": "EMBRIOLOGIA HUMANA", "5104001": "BIOLOGIA CELULAR", "5102008": "SAUDE E SOCIEDADE", "5102037": "HISTOLOGIA", "5102038": "MICROBIOLOGIA E IMUNOLOGIA", "5102191": "BIOFISICA", "5102192": "FISIOLOGIA HUMANA", "5103039": "ETICA", "5103183": "EPIDEMIOLOGIA E SAUDE", "5104101": "GENETICA GERAL", "5102010": "PATOLOGIA GERAL", "5102028": "PARASITOLOGIA HUMANA", "5102029": "FARMACOLOGIA GERAL", "5102033": "ASPECTOS NUTRICIONAIS EM SAUDE-DOENCA", "5103043": "METODOLOGIA DA ASSISTENCIA EM ENFERMAGEM", "5103184": "SAUDE COLETIVA I", "5103185": "BASES TEOR DE ENF EM SEMIOL E SEMIOTEC I", "5103186": "BASES PRAT DE ENF EM SEMIOL E SEMIOTEC I", "5103041": "FARMACOLOGIA APLICADA A ENFERMAGEM", "5103187": "BASES TEOR DE ENF EM SEMIOL E SEMIOTE II", "5103188": "BASES PRAT DE ENF EM SEMIOL E SEMIOTE II", "5103189": "BASES TEOR DE ENF EM SAUDE COLETIVA II", "5103190": "BASES PRAT DE ENF EM SAUDE COLETIVA II", "5103191": "ENFERMAGEM NA SAUDE DO HOMEM", "5103192": "ENFERMAGEM NA INTERP DE EXAMES LABORATOR", "5103193": "GESTAO EM ENFERMAGEM I", "5104143": "PSICOLOGIA E SAUDE", "5103194": "BASES TEOR DE ENF NA SAUDE DO ADULTO I", "5103195": "BASES PRAT DE ENF NA SAUDE DO ADULTO I", "5103196": "BASES TEOR DE ENF EM SAUDE COLETIVA III", "5103197": "BASES PRAT DE ENF EM SAUDE COLETIVA III", "5103198": "BASES TEOR DE ENF NA SAUDE DA MULHER", "5103199": "BASES PRAT DE ENF NA SAUDE DA MULHER", "5103200": "AVALIACAO E TRAT DE FERIDAS E CURATIVOS", "5103201": "ENFERMAGEM EM ONCOLOGIA", "5103202": "ENFERMAGEM NA SAUDE DO IDOSO", "5103102": "EDUCAÇÃO EM SAÚDE", "5103203": "BASES TEOR DE ENF NA SAUDE DO ADULTO II", "5103204": "BASES PRAT DE ENF NA SAUDE DO ADULTO II", "5103205": "BASES TEORICAS DE ENFERM EM OBSTETRICIA", "5103206": "BASES PRÁTICAS DE ENFERM EM OBSTETRÍCIA", "5103207": "BASES TEOR DA GESTAO EM ENFERMAGEM II", "5103208": "BASES PRAT DA GESTAO EM ENFERMAGEM II", "5103209": "ENFERMAGEM EM NEONATOLOGIA", "5103210": "SAUDE MENTAL", "5103114": "ENFERMAGEM NA SAUDE DO TRABALHADOR", "5103211": "BASES TEORICAS DE ENFERM EM CIRURGIA I", "5103212": "BASES PRÁTICAS DE ENFERM EM CIRURGIA I", "5103213": "BASES TEORICAS DE ENFERM EM PSIQUIATRIA", "5103214": "BASES PRÁTICAS DE ENFERM EM PSIQUIATRIA", "5103215": "BAS T DE ENF NA SAUDE DA CRIAN E ADOL I", "5103216": "BAS P DE ENF NA SAUDE DA CRIAN E ADOL I", "5103217": "PRIMEIROS SOCORROS", "5103218": "BASES TEORICAS DE ENFERM EM CIRURGICA II", "5103219": "BAS TEOR DE ENF EM CUID CRIT EM TER INTE", "5103220": "BAS PRAT DE ENF EM CUID CRIT EM TER INTE", "5103221": "BAS T DE ENF NA SAUDE DA CRIAN E ADOL II", "5103222": "BAS P DE ENF NA SAUDE DA CRIAN E ADOL II", "5103223": "PROCESSO DE TRABALHO EM SAUDE", "5103224": "TRABALHO DE CONCLUSAO DE CURSO I", "5103236": "BASES PRÁTICAS DE ENFERM EM CIRURGIA II", "5103075": "HUMANIZACAO EM SAUDE", "5102127": "AUDITORIA EM ENFERMAGEM", "5101066": "INFORMÁTICA APLICADA À SAUDE", "5101116": "PORTUGUES", "5101218": "INGLES INSTRUMENTAL", "5101222": "LIBRAS", "5102072": "FITOTERAPIA E HOMEOPATIA", "5103030": "SAUDE AMBIENTAL", "5103111": "ASSIST DE ENFERMAGEM EM HOME CARE", "5103182": "VIGILANCIA SANITARIA E EPIDEMIOLOGIA", "5103226": "ATENCAO INTEG AS DOENCAS PREV NA INFANCI", "5103227": "BASES TEOR DA ASSIST A PESSOA COM DEFIC", "5103228": "CUIDADOS PALIATIVOS DE ENFERMAGEM", "5103229": "PESQUISA EM ENFERMAGEM", "5103230": "PRAT INTEGRATIVAS E COMP EM SAUDE", "5103231": "SISTEMA DE CLASSIFICACAO EM ENFERMAGEM", "5103233": "SEMINARIO INTEGRADOR I", "5103234": "SEMINARIO INTEGRADOR II", "5103235": "SEMINARIO INTEGRADOR III", "5103238": "TES( AIDPI NEONATAL)", "5103239": "TES ( FITOTERAPIA)", "5103240": "TES(GENERO", "5103241": "TES(SUPORTE BASICO E AVANCADO DE VIDA", "5103242": "TES(MARCADORES DAS DIFER E VUNER SOCIAL)", "5103243": "TES(MULHERES", "5103244": "TES(ATENÇÃO A SAÚDE DE PESSOAS PRIV LIB", "5103245": "TES(FUND DO C EM ENF AO PAC COM COVID-19", "5103246": "TES(N TEO DE ENF EM C CIR DE CENT M E ES", "5103247": "TES(NOÇÕES TEÓRICAS DE PRIMEIROS SOCORRO", "5103248": "TES(ESTILOS DE APRENDIZAGEM)", "5103249": "TES(CUID DA PELE NOS DIF CICLOS DA VIDA)", "5104217": "POLITICA E EDUCACAO", "5104234": "TEENF(TÓPICOS EM GENÉTICA GERAL P/ ENF)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "5102004", "nome": "ANATOMIA HUMANA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102005", "nome": "BIOQUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5102007", "nome": "METODOLOGIA CIENTÍFICA APLICADA À SAÚDE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5103021", "nome": "ANTROPOLOGIA DA SAUDE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5103022", "nome": "HISTÓRIA DA ENFERMAGEM", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5103153", "nome": "EMBRIOLOGIA HUMANA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "5104001", "nome": "BIOLOGIA CELULAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102008", "nome": "SAUDE E SOCIEDADE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102037", "nome": "HISTOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104001"]}, {"nivel": "2º Nível", "codigo": "5102038", "nome": "MICROBIOLOGIA E IMUNOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5102191", "nome": "BIOFISICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104001"]}, {"nivel": "2º Nível", "codigo": "5102192", "nome": "FISIOLOGIA HUMANA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102004"]}, {"nivel": "2º Nível", "codigo": "5103039", "nome": "ETICA,LEGISLACAO E BIOET.EM ENFERMAGEM", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5103183", "nome": "EPIDEMIOLOGIA E SAUDE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "5104101", "nome": "GENETICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5102010", "nome": "PATOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102192", "5102005"]}, {"nivel": "3º Nível", "codigo": "5102028", "nome": "PARASITOLOGIA HUMANA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104001", "5104101"]}, {"nivel": "3º Nível", "codigo": "5102029", "nome": "FARMACOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102192"]}, {"nivel": "3º Nível", "codigo": "5102033", "nome": "ASPECTOS NUTRICIONAIS EM SAUDE-DOENCA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5103043", "nome": "METODOLOGIA DA ASSISTENCIA EM ENFERMAGEM", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "5103184", "nome": "SAUDE COLETIVA I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103183"]}, {"nivel": "3º Nível", "codigo": "5103185", "nome": "BASES TEOR DE ENF EM SEMIOL E SEMIOTEC I", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102192"]}, {"nivel": "3º Nível", "codigo": "5103186", "nome": "BASES PRAT DE ENF EM SEMIOL E SEMIOTEC I", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102192"]}, {"nivel": "4º Nível", "codigo": "5103041", "nome": "FARMACOLOGIA APLICADA A ENFERMAGEM", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102029", "5103185", "5103186"]}, {"nivel": "4º Nível", "codigo": "5103187", "nome": "BASES TEOR DE ENF EM SEMIOL E SEMIOTE II", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103185", "5103186"]}, {"nivel": "4º Nível", "codigo": "5103188", "nome": "BASES PRAT DE ENF EM SEMIOL E SEMIOTE II", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103185", "5103186"]}, {"nivel": "4º Nível", "codigo": "5103189", "nome": "BASES TEOR DE ENF EM SAUDE COLETIVA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103184", "5103185", "5103186"]}, {"nivel": "4º Nível", "codigo": "5103190", "nome": "BASES PRAT DE ENF EM SAUDE COLETIVA II", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103184", "5103185", "5103186"]}, {"nivel": "4º Nível", "codigo": "5103191", "nome": "ENFERMAGEM NA SAUDE DO HOMEM", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103184"]}, {"nivel": "4º Nível", "codigo": "5103192", "nome": "ENFERMAGEM NA INTERP DE EXAMES LABORATOR", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102038"]}, {"nivel": "4º Nível", "codigo": "5103193", "nome": "GESTAO EM ENFERMAGEM I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "5104143", "nome": "PSICOLOGIA E SAUDE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "5103194", "nome": "BASES TEOR DE ENF NA SAUDE DO ADULTO I", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103187", "5103188"]}, {"nivel": "5º Nível", "codigo": "5103195", "nome": "BASES PRAT DE ENF NA SAUDE DO ADULTO I", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103187", "5103188"]}, {"nivel": "5º Nível", "codigo": "5103196", "nome": "BASES TEOR DE ENF EM SAUDE COLETIVA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103189", "5103190"]}, {"nivel": "5º Nível", "codigo": "5103197", "nome": "BASES PRAT DE ENF EM SAUDE COLETIVA III", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103189", "5103190"]}, {"nivel": "5º Nível", "codigo": "5103198", "nome": "BASES TEOR DE ENF NA SAUDE DA MULHER", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103189", "5103190"]}, {"nivel": "5º Nível", "codigo": "5103199", "nome": "BASES PRAT DE ENF NA SAUDE DA MULHER", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103189", "5103190"]}, {"nivel": "5º Nível", "codigo": "5103200", "nome": "AVALIACAO E TRAT DE FERIDAS E CURATIVOS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103187", "5103188"]}, {"nivel": "5º Nível", "codigo": "5103201", "nome": "ENFERMAGEM EM ONCOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103187", "5103188"]}, {"nivel": "5º Nível", "codigo": "5103202", "nome": "ENFERMAGEM NA SAUDE DO IDOSO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103187", "5103188"]}, {"nivel": "6º Nível", "codigo": "5103102", "nome": "EDUCAÇÃO EM SAÚDE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103184"]}, {"nivel": "6º Nível", "codigo": "5103203", "nome": "BASES TEOR DE ENF NA SAUDE DO ADULTO II", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103194", "5103195"]}, {"nivel": "6º Nível", "codigo": "5103204", "nome": "BASES PRAT DE ENF NA SAUDE DO ADULTO II", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103194", "5103195"]}, {"nivel": "6º Nível", "codigo": "5103205", "nome": "BASES TEORICAS DE ENFERM EM OBSTETRICIA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103187", "5103188", "5103198", "5103199"]}, {"nivel": "6º Nível", "codigo": "5103206", "nome": "BASES PRÁTICAS DE ENFERM EM OBSTETRÍCIA", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103187", "5103188", "5103198", "5103199"]}, {"nivel": "6º Nível", "codigo": "5103207", "nome": "BASES TEOR DA GESTAO EM ENFERMAGEM II", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103193"]}, {"nivel": "6º Nível", "codigo": "5103208", "nome": "BASES PRAT DA GESTAO EM ENFERMAGEM II", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103193"]}, {"nivel": "6º Nível", "codigo": "5103209", "nome": "ENFERMAGEM EM NEONATOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103153", "5103187", "5103188"]}, {"nivel": "6º Nível", "codigo": "5103210", "nome": "SAUDE MENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5104143"]}, {"nivel": "7º Nível", "codigo": "5103114", "nome": "ENFERMAGEM NA SAUDE DO TRABALHADOR", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103194", "5103195", "5103196", "5103197"]}, {"nivel": "7º Nível", "codigo": "5103211", "nome": "BASES TEORICAS DE ENFERM EM CIRURGIA I", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103194", "5103195", "5103201"]}, {"nivel": "7º Nível", "codigo": "5103212", "nome": "BASES PRÁTICAS DE ENFERM EM CIRURGIA I", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103194", "5103195", "5103201"]}, {"nivel": "7º Nível", "codigo": "5103213", "nome": "BASES TEORICAS DE ENFERM EM PSIQUIATRIA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103210"]}, {"nivel": "7º Nível", "codigo": "5103214", "nome": "BASES PRÁTICAS DE ENFERM EM PSIQUIATRIA", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103210"]}, {"nivel": "7º Nível", "codigo": "5103215", "nome": "BAS T DE ENF NA SAUDE DA CRIAN E ADOL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103187", "5103188", "5103197"]}, {"nivel": "7º Nível", "codigo": "5103216", "nome": "BAS P DE ENF NA SAUDE DA CRIAN E ADOL I", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103187", "5103188", "5103196", "5103197"]}, {"nivel": "7º Nível", "codigo": "5103217", "nome": "PRIMEIROS SOCORROS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103187", "5103188"]}, {"nivel": "8º Nível", "codigo": "5103218", "nome": "BASES TEORICAS DE ENFERM EM CIRURGICA II", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103211", "5103212"]}, {"nivel": "8º Nível", "codigo": "5103219", "nome": "BAS TEOR DE ENF EM CUID CRIT EM TER INTE", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103203", "5103204", "5103211", "5103212"]}, {"nivel": "8º Nível", "codigo": "5103220", "nome": "BAS PRAT DE ENF EM CUID CRIT EM TER INTE", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103203", "5103204", "5103211", "5103212"]}, {"nivel": "8º Nível", "codigo": "5103221", "nome": "BAS T DE ENF NA SAUDE DA CRIAN E ADOL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103215", "5103216"]}, {"nivel": "8º Nível", "codigo": "5103222", "nome": "BAS P DE ENF NA SAUDE DA CRIAN E ADOL II", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103215", "5103216"]}, {"nivel": "8º Nível", "codigo": "5103223", "nome": "PROCESSO DE TRABALHO EM SAUDE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103196", "5103197"]}, {"nivel": "8º Nível", "codigo": "5103224", "nome": "TRABALHO DE CONCLUSAO DE CURSO I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5102007"]}, {"nivel": "8º Nível", "codigo": "5103236", "nome": "BASES PRÁTICAS DE ENFERM EM CIRURGIA II", "ch": "15\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["5103211", "5103212"]}, {"nivel": "9º Nível", "codigo": "5103128", "nome": "ESTAGIO SUPERVISIONADO EM ENFERMAGEM I", "ch": "405\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["5103207", "5103208", "5103213", "5103214", "5103215", "5103216", "5103205", "5103206"]}, {"nivel": "10º Nível", "codigo": "5103142", "nome": "ESTAGIO SUPERVISIONADO EM ENFERMAGEM II", "ch": "405\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["5103219", "5103220", "5103218", "5103236", "5103221", "5103222", "5103207", "5103208"]}, {"nivel": "10º Nível", "codigo": "5103225", "nome": "TRABALHO DE CONCLUSAO II", "ch": "30\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["5103224"]}];
+  const codigoToNome = {"5102004": "ANATOMIA HUMANA", "5102005": "BIOQUÍMICA GERAL", "5102007": "METODOLOGIA CIENTÍFICA APLICADA À SAÚDE", "5103021": "ANTROPOLOGIA DA SAUDE", "5103022": "HISTÓRIA DA ENFERMAGEM", "5103153": "EMBRIOLOGIA HUMANA", "5104001": "BIOLOGIA CELULAR", "5102008": "SAUDE E SOCIEDADE", "5102037": "HISTOLOGIA", "5102038": "MICROBIOLOGIA E IMUNOLOGIA", "5102191": "BIOFISICA", "5102192": "FISIOLOGIA HUMANA", "5103039": "ETICA,LEGISLACAO E BIOET.EM ENFERMAGEM", "5103183": "EPIDEMIOLOGIA E SAUDE", "5104101": "GENETICA GERAL", "5102010": "PATOLOGIA GERAL", "5102028": "PARASITOLOGIA HUMANA", "5102029": "FARMACOLOGIA GERAL", "5102033": "ASPECTOS NUTRICIONAIS EM SAUDE-DOENCA", "5103043": "METODOLOGIA DA ASSISTENCIA EM ENFERMAGEM", "5103184": "SAUDE COLETIVA I", "5103185": "BASES TEOR DE ENF EM SEMIOL E SEMIOTEC I", "5103186": "BASES PRAT DE ENF EM SEMIOL E SEMIOTEC I", "5103041": "FARMACOLOGIA APLICADA A ENFERMAGEM", "5103187": "BASES TEOR DE ENF EM SEMIOL E SEMIOTE II", "5103188": "BASES PRAT DE ENF EM SEMIOL E SEMIOTE II", "5103189": "BASES TEOR DE ENF EM SAUDE COLETIVA II", "5103190": "BASES PRAT DE ENF EM SAUDE COLETIVA II", "5103191": "ENFERMAGEM NA SAUDE DO HOMEM", "5103192": "ENFERMAGEM NA INTERP DE EXAMES LABORATOR", "5103193": "GESTAO EM ENFERMAGEM I", "5104143": "PSICOLOGIA E SAUDE", "5103194": "BASES TEOR DE ENF NA SAUDE DO ADULTO I", "5103195": "BASES PRAT DE ENF NA SAUDE DO ADULTO I", "5103196": "BASES TEOR DE ENF EM SAUDE COLETIVA III", "5103197": "BASES PRAT DE ENF EM SAUDE COLETIVA III", "5103198": "BASES TEOR DE ENF NA SAUDE DA MULHER", "5103199": "BASES PRAT DE ENF NA SAUDE DA MULHER", "5103200": "AVALIACAO E TRAT DE FERIDAS E CURATIVOS", "5103201": "ENFERMAGEM EM ONCOLOGIA", "5103202": "ENFERMAGEM NA SAUDE DO IDOSO", "5103102": "EDUCAÇÃO EM SAÚDE", "5103203": "BASES TEOR DE ENF NA SAUDE DO ADULTO II", "5103204": "BASES PRAT DE ENF NA SAUDE DO ADULTO II", "5103205": "BASES TEORICAS DE ENFERM EM OBSTETRICIA", "5103206": "BASES PRÁTICAS DE ENFERM EM OBSTETRÍCIA", "5103207": "BASES TEOR DA GESTAO EM ENFERMAGEM II", "5103208": "BASES PRAT DA GESTAO EM ENFERMAGEM II", "5103209": "ENFERMAGEM EM NEONATOLOGIA", "5103210": "SAUDE MENTAL", "5103114": "ENFERMAGEM NA SAUDE DO TRABALHADOR", "5103211": "BASES TEORICAS DE ENFERM EM CIRURGIA I", "5103212": "BASES PRÁTICAS DE ENFERM EM CIRURGIA I", "5103213": "BASES TEORICAS DE ENFERM EM PSIQUIATRIA", "5103214": "BASES PRÁTICAS DE ENFERM EM PSIQUIATRIA", "5103215": "BAS T DE ENF NA SAUDE DA CRIAN E ADOL I", "5103216": "BAS P DE ENF NA SAUDE DA CRIAN E ADOL I", "5103217": "PRIMEIROS SOCORROS", "5103218": "BASES TEORICAS DE ENFERM EM CIRURGICA II", "5103219": "BAS TEOR DE ENF EM CUID CRIT EM TER INTE", "5103220": "BAS PRAT DE ENF EM CUID CRIT EM TER INTE", "5103221": "BAS T DE ENF NA SAUDE DA CRIAN E ADOL II", "5103222": "BAS P DE ENF NA SAUDE DA CRIAN E ADOL II", "5103223": "PROCESSO DE TRABALHO EM SAUDE", "5103224": "TRABALHO DE CONCLUSAO DE CURSO I", "5103236": "BASES PRÁTICAS DE ENFERM EM CIRURGIA II", "5103128": "ESTAGIO SUPERVISIONADO EM ENFERMAGEM I", "5103142": "ESTAGIO SUPERVISIONADO EM ENFERMAGEM II", "5103225": "TRABALHO DE CONCLUSAO II", "5103075": "HUMANIZACAO EM SAUDE", "5102127": "AUDITORIA EM ENFERMAGEM", "5101066": "INFORMÁTICA APLICADA À SAUDE", "5101116": "PORTUGUES", "5101218": "INGLES INSTRUMENTAL", "5101222": "LIBRAS", "5102072": "FITOTERAPIA E HOMEOPATIA", "5103030": "SAUDE AMBIENTAL", "5103111": "ASSIST DE ENFERMAGEM EM HOME CARE", "5103182": "VIGILANCIA SANITARIA E EPIDEMIOLOGIA", "5103226": "ATENCAO INTEG AS DOENCAS PREV NA INFANCI", "5103227": "BASES TEOR DA ASSIST A PESSOA COM DEFIC", "5103228": "CUIDADOS PALIATIVOS DE ENFERMAGEM", "5103229": "PESQUISA EM ENFERMAGEM", "5103230": "PRAT INTEGRATIVAS E COMP EM SAUDE", "5103231": "SISTEMA DE CLASSIFICACAO EM ENFERMAGEM", "5103233": "SEMINARIO INTEGRADOR I", "5103234": "SEMINARIO INTEGRADOR II", "5103235": "SEMINARIO INTEGRADOR III", "5103238": "TES( AIDPI NEONATAL)", "5103239": "TES ( FITOTERAPIA)", "5103240": "TES(GENERO,SAUDE E DIVERSIDADE)", "5103241": "TES(SUPORTE BASICO E AVANCADO DE VIDA", "5103242": "TES(MARCADORES DAS DIFER E VUNER SOCIAL)", "5103243": "TES(MULHERES,SAÚDE E DIVERSIDADE)", "5103244": "TES(ATENÇÃO A SAÚDE DE PESSOAS PRIV LIB", "5103245": "TES(FUND DO C EM ENF AO PAC COM COVID-19", "5103246": "TES(N TEO DE ENF EM C CIR DE CENT M E ES", "5103247": "TES(NOÇÕES TEÓRICAS DE PRIMEIROS SOCORRO", "5103248": "TES(ESTILOS DE APRENDIZAGEM)", "5103249": "TES(CUID DA PELE NOS DIF CICLOS DA VIDA)", "5104217": "POLITICA E EDUCACAO", "5104234": "TEENF(TÓPICOS EM GENÉTICA GERAL P/ ENF)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -818,7 +821,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

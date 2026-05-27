@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,312 +404,312 @@
           <tr>
               <td>1105359</td>
               <td>GESTÃO DA MANUTENCAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ADMINISTRAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>1111371</td>
               <td>PERFURACAO DE POCOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECÂNICA DAS ROCHAS, 1510079</td>
               <td></td>
           </tr>
           <tr>
               <td>1503013</td>
               <td>BARRAGENS DE TERRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECÂNICA DOS SOLOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1503071</td>
               <td>MECÂNICA DOS SOLOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>RESISTENCIA DOS MATERIAIS I, GEOLOGIA GERAL, 1510052</td>
               <td></td>
           </tr>
           <tr>
               <td>1510075</td>
               <td>METALURGIA EXTRATIVA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TRATAMENTO DE MINERIOS I, 1510044</td>
               <td></td>
           </tr>
           <tr>
               <td>1510133</td>
               <td>FOTOINTERPRETAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PESQUISA MINERAL, 1510051</td>
               <td></td>
           </tr>
           <tr>
               <td>1510134</td>
               <td>ANáLISE DE ESTRUTURAS GEOLÓGICAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GEOLOGIA ESTRUTURAL, 1510049</td>
               <td></td>
           </tr>
           <tr>
               <td>1510135</td>
               <td>GEMOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MINERALOGIA, 1510053</td>
               <td></td>
           </tr>
           <tr>
               <td>1510136</td>
               <td>FORMALIZACAO DA PRODUCAO MINERAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PESQUISA MINERAL, 1510051</td>
               <td></td>
           </tr>
           <tr>
               <td>1510137</td>
               <td>ESTABILIDADE DE ESCAVACOES EM ROCHAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECÂNICA DAS ROCHAS, 1510079</td>
               <td></td>
           </tr>
           <tr>
               <td>1510138</td>
               <td>ROCHAS ORNAMENTAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>LAVRA DE MINAS A CEU ABERTO, 1510093</td>
               <td></td>
           </tr>
           <tr>
               <td>1510139</td>
               <td>TRANSPORTE NA MINERACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>LAVRA DE MINAS SUBTERRANEAS, 1510048, LAVRA DE MINAS A CEU ABERTO, 1510093</td>
               <td></td>
           </tr>
           <tr>
               <td>1510140</td>
               <td>MINERAIS INDUSTRIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ECONOMIA MINERAL, 1510091</td>
               <td></td>
           </tr>
           <tr>
               <td>1510141</td>
               <td>QUÍMICA ANALÍTICA MINERAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MINERALOGIA, 1510053</td>
               <td></td>
           </tr>
           <tr>
               <td>1510142</td>
               <td>FÍSICO-QUÍMICA DE SUPERFÍCIE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TRATAMENTO DE MINERIOS III, 1510074</td>
               <td></td>
           </tr>
           <tr>
               <td>1510143</td>
               <td>TRATAMENTO DE EFLUENTES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MINERACAO E MEIO AMBIENTE</td>
               <td></td>
           </tr>
           <tr>
               <td>1510144</td>
               <td>GEOPROCESSAMENTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PESQUISA MINERAL, 1510051</td>
               <td></td>
           </tr>
           <tr>
               <td>1109010</td>
               <td>EQUACOES DIFERENCIAIS LINEARES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL II, 1109053, ÁLGEBRA LINEAR I</td>
               <td></td>
           </tr>
           <tr>
               <td>1114130</td>
               <td>INTRODUÇÃO À ESTATÍSTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À PROBABILIDADE, 1114052</td>
               <td></td>
           </tr>
           <tr>
               <td>1301062</td>
               <td>PSICOLOGIA DAS ORGANIZACOES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301076</td>
               <td>FORMACAO DE EMPREENDEDORES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ADMINISTRAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>1301078</td>
               <td>GESTAO DA QUALIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ADMINISTRAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>1301108</td>
               <td>CUSTOS DA PRODUÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ENGENHARIA ECONOMICA, 1510081</td>
               <td></td>
           </tr>
           <tr>
               <td>1301113</td>
               <td>CONTABILIDADE E ANÁLISE DE BALANÇO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1305276</td>
               <td>RELACOES HUMANAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307150</td>
               <td>INGLÊS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307178</td>
               <td>FRANCES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1411075</td>
               <td>CALCULO NUMERICO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>1305109</td>
               <td>SOCIOLOGIA INDUSTRIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307179</td>
               <td>ESPANHOL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1510146</td>
               <td>RECUPERACAO DE AREAS DEGRADADAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ADMINISTRAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>1510147</td>
               <td>TEEM(PROC. FORMADORES DE DEPOS.MINERAIS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GEOLOGIA GERAL, PETROGRAFIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1510148</td>
               <td>TEEM(MINERALOGIA AVANCADA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MINERALOGIA, PETROGRAFIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1510149</td>
               <td>PERFURACAO DE POCOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECÂNICA DAS ROCHAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1510150</td>
               <td>TEEM(GEOLOGIA SEDIMENTAR)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PETROGRAFIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1510151</td>
               <td>TEEM(GEOLOGIA DE ROCHAS ORNAMENTAIS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1510152</td>
               <td>TEEM(INTRO À INTERP DE MAPAS GEO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1510153</td>
               <td>TEEM(GEOQUÍMICA APLICADA À ENG DE MINAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>QUÍMICA GERAL, PETROGRAFIA, GEOLOGIA ECONOMICA</td>
               <td></td>
           </tr>
@@ -753,8 +756,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307169", "nome": "LÍNGUA PORTUGUESA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1510105", "nome": "INTRODUÇÃO À ENGENHARIA DE MINAS", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1109035", "1109126", "1109050", "1108030"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109126", "1109050"]}, {"nivel": "2º Nível", "codigo": "1510106", "nome": "GEOLOGIA GERAL", "ch": "60h", "preReqs": ["1107232", "1107131"]}, {"nivel": "2º Nível", "codigo": "1510107", "nome": "MINERALOGIA", "ch": "60h", "preReqs": ["1107232", "1107131"]}, {"nivel": "3º Nível", "codigo": "1108099", "nome": "MECÂNICA GERAL", "ch": "60h", "preReqs": ["1108030", "1109131", "1109053"]}, {"nivel": "3º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60h", "preReqs": ["1109131", "1109053", "1108081", "1108031"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60h", "preReqs": ["1109035", "1109131", "1109053"]}, {"nivel": "3º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1510108", "nome": "PETROGRAFIA", "ch": "60h", "preReqs": ["1510106", "1510052", "1510107", "1510053"]}, {"nivel": "4º Nível", "codigo": "1113057", "nome": "DESENHO TÉCNICO", "ch": "60h", "preReqs": ["1113019", "1113006"]}, {"nivel": "4º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60h", "preReqs": ["1109131", "1109053", "1109049"]}, {"nivel": "4º Nível", "codigo": "1404026", "nome": "ELETROTÉCNICA GERAL", "ch": "60h", "preReqs": ["1108100", "1108025"]}, {"nivel": "4º Nível", "codigo": "1503048", "nome": "RESISTENCIA DOS MATERIAIS I", "ch": "60h", "preReqs": ["1108099", "1108028"]}, {"nivel": "4º Nível", "codigo": "1510109", "nome": "GEOLOGIA ESTRUTURAL", "ch": "60h", "preReqs": ["1510108", "1510070"]}, {"nivel": "4º Nível", "codigo": "1510110", "nome": "GEOLOGIA ECONOMICA", "ch": "60h", "preReqs": ["1510108", "1510070"]}, {"nivel": "5º Nível", "codigo": "1301014", "nome": "ADMINISTRAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1307177", "nome": "METODOLOGIA E TÉCNICAS DE PESQUISA", "ch": "60h", "preReqs": ["1307169", "1307045"]}, {"nivel": "5º Nível", "codigo": "1503118", "nome": "FENOMENOS DE TRANSPORTES", "ch": "60h", "preReqs": ["1108081", "1108031", "1108099", "1108028"]}, {"nivel": "5º Nível", "codigo": "1510111", "nome": "MECÂNICA DAS ROCHAS", "ch": "60h", "preReqs": ["1503048"]}, {"nivel": "5º Nível", "codigo": "1510112", "nome": "PESQUISA MINERAL", "ch": "60h", "preReqs": ["1510109", "1510049", "1510110", "1510050"]}, {"nivel": "5º Nível", "codigo": "1510113", "nome": "TOPOGRAFIA APLICADA A MINERACAO", "ch": "60h", "preReqs": ["1113009", "1113057", "1105034", "1113045"]}, {"nivel": "6º Nível", "codigo": "1510101", "nome": "GEOFÍSICA", "ch": "60h", "preReqs": ["1510112", "1510051"]}, {"nivel": "6º Nível", "codigo": "1510114", "nome": "PESQUISA OPERACIONAL", "ch": "60h", "preReqs": ["1114129", "1114052"]}, {"nivel": "6º Nível", "codigo": "1510116", "nome": "HIGIENE E SEGURANCA DO TRABALHO", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1510117", "nome": "CARACTERIZAÇÃO TECNOLÓGICA DE MINERAIS", "ch": "60h", "preReqs": ["1510108", "1510070"]}, {"nivel": "6º Nível", "codigo": "1510118", "nome": "TRATAMENTO DE MINERIOS I", "ch": "60h", "preReqs": ["1503118", "1503034"]}, {"nivel": "6º Nível", "codigo": "1510119", "nome": "PERFURACAO E DESMONTE DE ROCHAS", "ch": "60h", "preReqs": ["1503048"]}, {"nivel": "7º Nível", "codigo": "1510115", "nome": "ENGENHARIA ECONOMICA", "ch": "60h", "preReqs": ["1301014"]}, {"nivel": "7º Nível", "codigo": "1510120", "nome": "TRATAMENTO DE MINERIOS II", "ch": "60h", "preReqs": ["1510118", "1510044"]}, {"nivel": "7º Nível", "codigo": "1510121", "nome": "LAVRA DE MINAS SUBTERRANEAS", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1510122", "nome": "LAVRA DE MINAS A CEU ABERTO", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1510123", "nome": "GEOESTATÍSTICA", "ch": "60h", "preReqs": ["1114129", "1114052", "1510112", "1510051"]}, {"nivel": "7º Nível", "codigo": "1510124", "nome": "HIDROGEOLOGIA", "ch": "60h", "preReqs": ["1510101", "1510077"]}, {"nivel": "8º Nível", "codigo": "1510125", "nome": "ECONOMIA MINERAL", "ch": "60h", "preReqs": ["1510115", "1510081"]}, {"nivel": "8º Nível", "codigo": "1510126", "nome": "TRATAMENTO DE MINERIOS III", "ch": "60h", "preReqs": ["1510120", "1510045"]}, {"nivel": "8º Nível", "codigo": "1510127", "nome": "VENTILACAO DE MINA", "ch": "60h", "preReqs": ["1510121", "1510048"]}, {"nivel": "8º Nível", "codigo": "1510128", "nome": "PLANEJAMENTO DE LAVRA", "ch": "60h", "preReqs": ["1510122", "1510093"]}, {"nivel": "8º Nível", "codigo": "1510129", "nome": "MINERACAO E MEIO AMBIENTE", "ch": "60h", "preReqs": ["1510119", "1510046"]}];
-  const codigoToNome = {"1107232": "QUÍMICA GERAL", "1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1307169": "LÍNGUA PORTUGUESA", "1510105": "INTRODUÇÃO À ENGENHARIA DE MINAS", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1510106": "GEOLOGIA GERAL", "1510107": "MINERALOGIA", "1108099": "MECÂNICA GERAL", "1108100": "FÍSICA GERAL III", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1113019": "EXPRESSAO GRAFICA", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1510108": "PETROGRAFIA", "1113057": "DESENHO TÉCNICO", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1404026": "ELETROTÉCNICA GERAL", "1503048": "RESISTENCIA DOS MATERIAIS I", "1510109": "GEOLOGIA ESTRUTURAL", "1510110": "GEOLOGIA ECONOMICA", "1301014": "ADMINISTRAÇÃO", "1307177": "METODOLOGIA E TÉCNICAS DE PESQUISA", "1503118": "FENOMENOS DE TRANSPORTES", "1510111": "MECÂNICA DAS ROCHAS", "1510112": "PESQUISA MINERAL", "1510113": "TOPOGRAFIA APLICADA A MINERACAO", "1510101": "GEOFÍSICA", "1510114": "PESQUISA OPERACIONAL", "1510116": "HIGIENE E SEGURANCA DO TRABALHO", "1510117": "CARACTERIZAÇÃO TECNOLÓGICA DE MINERAIS", "1510118": "TRATAMENTO DE MINERIOS I", "1510119": "PERFURACAO E DESMONTE DE ROCHAS", "1510115": "ENGENHARIA ECONOMICA", "1510120": "TRATAMENTO DE MINERIOS II", "1510121": "LAVRA DE MINAS SUBTERRANEAS", "1510122": "LAVRA DE MINAS A CEU ABERTO", "1510123": "GEOESTATÍSTICA", "1510124": "HIDROGEOLOGIA", "1510125": "ECONOMIA MINERAL", "1510126": "TRATAMENTO DE MINERIOS III", "1510127": "VENTILACAO DE MINA", "1510128": "PLANEJAMENTO DE LAVRA", "1510129": "MINERACAO E MEIO AMBIENTE", "1105359": "GESTÃO DA MANUTENCAO", "1111371": "PERFURACAO DE POCOS", "1503013": "BARRAGENS DE TERRA", "1503071": "MECÂNICA DOS SOLOS", "1510075": "METALURGIA EXTRATIVA", "1510133": "FOTOINTERPRETAÇÃO", "1510134": "ANáLISE DE ESTRUTURAS GEOLÓGICAS", "1510135": "GEMOLOGIA", "1510136": "FORMALIZACAO DA PRODUCAO MINERAL", "1510137": "ESTABILIDADE DE ESCAVACOES EM ROCHAS", "1510138": "ROCHAS ORNAMENTAIS", "1510139": "TRANSPORTE NA MINERACAO", "1510140": "MINERAIS INDUSTRIAIS", "1510141": "QUÍMICA ANALÍTICA MINERAL", "1510142": "FÍSICO-QUÍMICA DE SUPERFÍCIE", "1510143": "TRATAMENTO DE EFLUENTES", "1510144": "GEOPROCESSAMENTO", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1301062": "PSICOLOGIA DAS ORGANIZACOES", "1301076": "FORMACAO DE EMPREENDEDORES", "1301078": "GESTAO DA QUALIDADE", "1301108": "CUSTOS DA PRODUÇÃO", "1301113": "CONTABILIDADE E ANÁLISE DE BALANÇO", "1305276": "RELACOES HUMANAS", "1307150": "INGLÊS", "1307178": "FRANCES", "1307332": "LIBRAS", "1411075": "CALCULO NUMERICO", "1305109": "SOCIOLOGIA INDUSTRIAL", "1307179": "ESPANHOL", "1510146": "RECUPERACAO DE AREAS DEGRADADAS", "1510147": "TEEM(PROC. FORMADORES DE DEPOS.MINERAIS)", "1510148": "TEEM(MINERALOGIA AVANCADA)", "1510149": "PERFURACAO DE POCOS", "1510150": "TEEM(GEOLOGIA SEDIMENTAR)", "1510151": "TEEM(GEOLOGIA DE ROCHAS ORNAMENTAIS)", "1510152": "TEEM(INTRO À INTERP DE MAPAS GEO)", "1510153": "TEEM(GEOQUÍMICA APLICADA À ENG DE MINAS)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307169", "nome": "LÍNGUA PORTUGUESA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1510105", "nome": "INTRODUÇÃO À ENGENHARIA DE MINAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "2º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035", "1109126", "1109050", "1108030"]}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126", "1109050"]}, {"nivel": "2º Nível", "codigo": "1510106", "nome": "GEOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1107232", "1107131"]}, {"nivel": "2º Nível", "codigo": "1510107", "nome": "MINERALOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1107232", "1107131"]}, {"nivel": "3º Nível", "codigo": "1108099", "nome": "MECÂNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030", "1109131", "1109053"]}, {"nivel": "3º Nível", "codigo": "1108100", "nome": "FÍSICA GERAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109053", "1108081", "1108031"]}, {"nivel": "3º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035", "1109131", "1109053"]}, {"nivel": "3º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1510108", "nome": "PETROGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510106", "1510052", "1510107", "1510053"]}, {"nivel": "4º Nível", "codigo": "1113057", "nome": "DESENHO TÉCNICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113019", "1113006"]}, {"nivel": "4º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109053", "1109049"]}, {"nivel": "4º Nível", "codigo": "1404026", "nome": "ELETROTÉCNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108100", "1108025"]}, {"nivel": "4º Nível", "codigo": "1503048", "nome": "RESISTENCIA DOS MATERIAIS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108099", "1108028"]}, {"nivel": "4º Nível", "codigo": "1510109", "nome": "GEOLOGIA ESTRUTURAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510108", "1510070"]}, {"nivel": "4º Nível", "codigo": "1510110", "nome": "GEOLOGIA ECONOMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510108", "1510070"]}, {"nivel": "5º Nível", "codigo": "1301014", "nome": "ADMINISTRAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1307177", "nome": "METODOLOGIA E TÉCNICAS DE PESQUISA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1307169", "1307045"]}, {"nivel": "5º Nível", "codigo": "1503118", "nome": "FENOMENOS DE TRANSPORTES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108081", "1108031", "1108099", "1108028"]}, {"nivel": "5º Nível", "codigo": "1510111", "nome": "MECÂNICA DAS ROCHAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503048"]}, {"nivel": "5º Nível", "codigo": "1510112", "nome": "PESQUISA MINERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510109", "1510049", "1510110", "1510050"]}, {"nivel": "5º Nível", "codigo": "1510113", "nome": "TOPOGRAFIA APLICADA A MINERACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113009", "1113057", "1105034", "1113045"]}, {"nivel": "6º Nível", "codigo": "1510101", "nome": "GEOFÍSICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510112", "1510051"]}, {"nivel": "6º Nível", "codigo": "1510114", "nome": "PESQUISA OPERACIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114129", "1114052"]}, {"nivel": "6º Nível", "codigo": "1510116", "nome": "HIGIENE E SEGURANCA DO TRABALHO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1510117", "nome": "CARACTERIZAÇÃO TECNOLÓGICA DE MINERAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510108", "1510070"]}, {"nivel": "6º Nível", "codigo": "1510118", "nome": "TRATAMENTO DE MINERIOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503118", "1503034"]}, {"nivel": "6º Nível", "codigo": "1510119", "nome": "PERFURACAO E DESMONTE DE ROCHAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1503048"]}, {"nivel": "7º Nível", "codigo": "1510115", "nome": "ENGENHARIA ECONOMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1301014"]}, {"nivel": "7º Nível", "codigo": "1510120", "nome": "TRATAMENTO DE MINERIOS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510118", "1510044"]}, {"nivel": "7º Nível", "codigo": "1510121", "nome": "LAVRA DE MINAS SUBTERRANEAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1510122", "nome": "LAVRA DE MINAS A CEU ABERTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1510123", "nome": "GEOESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114129", "1114052", "1510112", "1510051"]}, {"nivel": "7º Nível", "codigo": "1510124", "nome": "HIDROGEOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510101", "1510077"]}, {"nivel": "8º Nível", "codigo": "1510125", "nome": "ECONOMIA MINERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510115", "1510081"]}, {"nivel": "8º Nível", "codigo": "1510126", "nome": "TRATAMENTO DE MINERIOS III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510120", "1510045"]}, {"nivel": "8º Nível", "codigo": "1510127", "nome": "VENTILACAO DE MINA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510121", "1510048"]}, {"nivel": "8º Nível", "codigo": "1510128", "nome": "PLANEJAMENTO DE LAVRA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510122", "1510093"]}, {"nivel": "8º Nível", "codigo": "1510129", "nome": "MINERACAO E MEIO AMBIENTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1510119", "1510046"]}, {"nivel": "9º Nível", "codigo": "1510130", "nome": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "ch": "120\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1510131", "nome": "ESTAGIO INTEGRADO", "ch": "240\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1510121", "1510048", "1510122", "1510093", "1510120", "1510045"]}, {"nivel": "10º Nível", "codigo": "1510132", "nome": "TRABALHO FINAL DE CURSO - TFC", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}];
+  const codigoToNome = {"1107232": "QUÍMICA GERAL", "1108030": "FÍSICA GERAL I", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1307169": "LÍNGUA PORTUGUESA", "1510105": "INTRODUÇÃO À ENGENHARIA DE MINAS", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1510106": "GEOLOGIA GERAL", "1510107": "MINERALOGIA", "1108099": "MECÂNICA GERAL", "1108100": "FÍSICA GERAL III", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1113019": "EXPRESSAO GRAFICA", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1510108": "PETROGRAFIA", "1113057": "DESENHO TÉCNICO", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1404026": "ELETROTÉCNICA GERAL", "1503048": "RESISTENCIA DOS MATERIAIS I", "1510109": "GEOLOGIA ESTRUTURAL", "1510110": "GEOLOGIA ECONOMICA", "1301014": "ADMINISTRAÇÃO", "1307177": "METODOLOGIA E TÉCNICAS DE PESQUISA", "1503118": "FENOMENOS DE TRANSPORTES", "1510111": "MECÂNICA DAS ROCHAS", "1510112": "PESQUISA MINERAL", "1510113": "TOPOGRAFIA APLICADA A MINERACAO", "1510101": "GEOFÍSICA", "1510114": "PESQUISA OPERACIONAL", "1510116": "HIGIENE E SEGURANCA DO TRABALHO", "1510117": "CARACTERIZAÇÃO TECNOLÓGICA DE MINERAIS", "1510118": "TRATAMENTO DE MINERIOS I", "1510119": "PERFURACAO E DESMONTE DE ROCHAS", "1510115": "ENGENHARIA ECONOMICA", "1510120": "TRATAMENTO DE MINERIOS II", "1510121": "LAVRA DE MINAS SUBTERRANEAS", "1510122": "LAVRA DE MINAS A CEU ABERTO", "1510123": "GEOESTATÍSTICA", "1510124": "HIDROGEOLOGIA", "1510125": "ECONOMIA MINERAL", "1510126": "TRATAMENTO DE MINERIOS III", "1510127": "VENTILACAO DE MINA", "1510128": "PLANEJAMENTO DE LAVRA", "1510129": "MINERACAO E MEIO AMBIENTE", "1510130": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "1510131": "ESTAGIO INTEGRADO", "1510132": "TRABALHO FINAL DE CURSO - TFC", "1105359": "GESTÃO DA MANUTENCAO", "1111371": "PERFURACAO DE POCOS", "1503013": "BARRAGENS DE TERRA", "1503071": "MECÂNICA DOS SOLOS", "1510075": "METALURGIA EXTRATIVA", "1510133": "FOTOINTERPRETAÇÃO", "1510134": "ANáLISE DE ESTRUTURAS GEOLÓGICAS", "1510135": "GEMOLOGIA", "1510136": "FORMALIZACAO DA PRODUCAO MINERAL", "1510137": "ESTABILIDADE DE ESCAVACOES EM ROCHAS", "1510138": "ROCHAS ORNAMENTAIS", "1510139": "TRANSPORTE NA MINERACAO", "1510140": "MINERAIS INDUSTRIAIS", "1510141": "QUÍMICA ANALÍTICA MINERAL", "1510142": "FÍSICO-QUÍMICA DE SUPERFÍCIE", "1510143": "TRATAMENTO DE EFLUENTES", "1510144": "GEOPROCESSAMENTO", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1301062": "PSICOLOGIA DAS ORGANIZACOES", "1301076": "FORMACAO DE EMPREENDEDORES", "1301078": "GESTAO DA QUALIDADE", "1301108": "CUSTOS DA PRODUÇÃO", "1301113": "CONTABILIDADE E ANÁLISE DE BALANÇO", "1305276": "RELACOES HUMANAS", "1307150": "INGLÊS", "1307178": "FRANCES", "1307332": "LIBRAS", "1411075": "CALCULO NUMERICO", "1305109": "SOCIOLOGIA INDUSTRIAL", "1307179": "ESPANHOL", "1510146": "RECUPERACAO DE AREAS DEGRADADAS", "1510147": "TEEM(PROC. FORMADORES DE DEPOS.MINERAIS)", "1510148": "TEEM(MINERALOGIA AVANCADA)", "1510149": "PERFURACAO DE POCOS", "1510150": "TEEM(GEOLOGIA SEDIMENTAR)", "1510151": "TEEM(GEOLOGIA DE ROCHAS ORNAMENTAIS)", "1510152": "TEEM(INTRO À INTERP DE MAPAS GEO)", "1510153": "TEEM(GEOQUÍMICA APLICADA À ENG DE MINAS)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -866,7 +869,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,400 +404,400 @@
           <tr>
               <td>1201310</td>
               <td>TEENF(AMB E REL INTERPESSOAIS NA S DO H)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>SAUDE COLETIVA, ATENCAO BASICA EM SAUDE</td>
               <td></td>
           </tr>
           <tr>
               <td>1205218</td>
               <td>BIOETICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205219</td>
               <td>CULTURA E SUBJETIVIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205254</td>
-              <td>CORPO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>CORPO, CULTURA E SOCIEDADE</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205270</td>
               <td>PSICOLOGIA E ESTETICA DA SUBJETIVACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205289</td>
-              <td>TEPSI(TESTEMUNHO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>TEPSI(TESTEMUNHO,VIOLENCIA E MODERNIDADE</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205295</td>
               <td>TEPSI(GESTÃO DE PESSOAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205297</td>
               <td>TEPSI(PSICOLOGIA E FAMILIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205300</td>
               <td>TEPSI(FORM. INTERPROFISSIONAL EM SAUDE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205326</td>
-              <td>DROGAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>DROGAS, CULTURA E CUIDADOS EM SAUDE</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205327</td>
               <td>GESTAO DE PESSOAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205328</td>
               <td>LOGOT E NALIS EXIST:PERSP CLIN E SOCIAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205329</td>
               <td>PSICOLOGIA E FAMILIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205330</td>
               <td>PSICOMOTRICIDADE</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205331</td>
-              <td>TESTEMUNHO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>TESTEMUNHO, VIOLENCIA E MODERNIDADE</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205332</td>
               <td>TEPSI(DESCOL.EPIST:DA ECOL PSI A SAUDE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205333</td>
               <td>TEPSI(PSICOPATOLOGIA E CLINICA LACANIANA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205336</td>
               <td>TEPSI(METOD.PART PARA INTERV. GRUPAIS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PSICOLOGIA COMUNITARIA</td>
               <td></td>
           </tr>
           <tr>
               <td>1205337</td>
               <td>TEPSI(TEORIAS DA PERSONALIDADE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205338</td>
               <td>TEPSI(PSIQUIATRIAS CLASSICAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205340</td>
               <td>TEPSI(TRAB.PROD.DE SUBJ:QUEST E. P/ PSIC</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205342</td>
               <td>TEPSI(TERAPIA COGNITIVO-COMPORTAMENTAL)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205343</td>
               <td>TEPSI(DESENVOLVIMENTO MORAL E EMPATIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205344</td>
               <td>TEPSI(REPRESENT SOCIAIS:TEORIA E METODOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>TECNICA E ANALISE DE DADOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1205345</td>
               <td>TEPSI(INT AS PRAT INTEG E COMPLEMENTARES</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205346</td>
               <td>TEPSI(ONCOLOGIA PEDIÁTRICA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>SAUDE COLETIVA, PSICOLOGIA DA SAUDE, AVALIACAO PSICOLOGICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1205349</td>
               <td>TEPS(CLÍNICA PSICANALÍTICA: FUND E PRAC)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205353</td>
               <td>TEPS(INTRODUÇÃO À SANDOR FERENCZI)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205354</td>
               <td>TEPS(MICROP P/ ENF SIT ADV CON BRA ATU)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205362</td>
               <td>TEPS(INTER PSI E NECES EDU ESP)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205366</td>
               <td>TEPS(PSICANÁLISE COM CRIAN: ESP E DESAF)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205367</td>
               <td>TEPS(SABE TRAD E CURA: DIAL EPIS E PRAC)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205370</td>
               <td>TEPS(INTRODUÇÃO À NEUROPSICOLOGIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205373</td>
               <td>TEPS(ABORD CENTRADA NA PESSOA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205374</td>
               <td>TEPS(PSI PRAC INTR E COMP E EDU POPULAR)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205375</td>
-              <td>TEPS(SAÚDE MENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>TEPS(SAÚDE MENTAL, JUS E DIR HUMANOS)</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205376</td>
               <td>POLÍTICA DE SAÚDE NO BRASIL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205377</td>
               <td>TEPSI(POLÍTICA  DE SAÙDE NO BRASIL)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205378</td>
               <td>TEPSI(O CONCEITO DE IDENT NA PSIC SOCIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205379</td>
               <td>TEPSI(SEMINARIO EM ANTROP DAS EMOCOES)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SOCIOLOGIA DA SAUDE</td>
               <td></td>
           </tr>
           <tr>
               <td>1205380</td>
               <td>TEPSI(GENERO E SEXUALIDADE)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205381</td>
               <td>TEPSI(PSIC PERINATAL E PARENTALIDADES)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205382</td>
               <td>TEPSI(PSICOFARMACOL INTEG A CLIN PSICON)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205383</td>
               <td>TEPSI(EPISTEMOLOGIA DA PSICANÁLISE)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205384</td>
-              <td>TEPSI(QUESTÃO SOCIAL</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>TEPSI(QUESTÃO SOCIAL,EST, SOC, E POL PUB</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>SAUDE COLETIVA</td>
               <td></td>
           </tr>
           <tr>
               <td>1205385</td>
               <td>TEPSI(AMB. E REL INTERPESSOAIS NA S DO H</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>SAUDE COLETIVA</td>
               <td></td>
           </tr>
           <tr>
               <td>1205386</td>
               <td>TEPSI(CUIDADOS PALIATIVOS)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>BASES ANATOMOFISIOLOGICAS DA PSICOLOGIA, PSICOLOGIA E PROFISSAO, PROCESSOS PSICOLOGICOS BASICOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1205387</td>
               <td>TEPSI(CRÍTICA DA SUBJETIV PSICOLÓGICA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1205388</td>
               <td>TEPSI(PRAT INTERV EM PSIC S JUR C FAM L)</td>
-              <td>60h</td>
-              <td>4.0</td>
-              <td>1205341, PSICOLOGIA JURIDICA</td>
+              <td>60"h</td>
+              <td>4"</td>
+              <td>PRÁTICAS INTEGRATIVAS EM PSICOLOGIA II, PSICOLOGIA JURIDICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -841,8 +844,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1205147", "nome": "HISTÓRIA DA PSICOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1205199", "nome": "SOCIOLOGIA DA SAUDE", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1205200", "nome": "BASES ANATOMOFISIOLOGICAS DA PSICOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1205202", "nome": "PROCESSOS PSICOLOGICOS BASICOS", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1205301", "nome": "PSICOLOGIA E PROFISSAO", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1205303", "nome": "METODOLOGIA DO TRABALHO ACADÊMICO", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1205335", "nome": "BASES EPISTEMOLOGICAS DA PSICOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1205150", "nome": "SAUDE COLETIVA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1205203", "nome": "ANTROPOLOGIA", "ch": "60h", "preReqs": ["1205199"]}, {"nivel": "2º Nível", "codigo": "1205215", "nome": "PSICOLOGIA SOCIAL I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1205231", "nome": "GENEALOGIA E COSNT DA SUBJ I : INFANCIA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1205304", "nome": "METODOS E TECNICAS DE PESQUISA", "ch": "60h", "preReqs": ["1205303"]}, {"nivel": "2º Nível", "codigo": "1205305", "nome": "FENOMENOLOGIA E EXISTENCIALISMO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1205233", "nome": "PSICOLOGIA SOCIAL II", "ch": "60h", "preReqs": ["1205215"]}, {"nivel": "3º Nível", "codigo": "1205246", "nome": "GENEALOGIA E COSNT DA SUBJ II:ADOLESCENC", "ch": "60h", "preReqs": ["1205231"]}, {"nivel": "3º Nível", "codigo": "1205274", "nome": "PSICOLOGIA DA SAUDE", "ch": "60h", "preReqs": ["1205150"]}, {"nivel": "3º Nível", "codigo": "1205306", "nome": "TECNICA E ANALISE DE DADOS", "ch": "60h", "preReqs": ["1205304"]}, {"nivel": "3º Nível", "codigo": "1205307", "nome": "EDUCACAO E SAUDE", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1205149", "nome": "SAUDE MENTAL E ATENCAO PSICOSSOCIAL I", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1205234", "nome": "PSICANÁLISE I", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1205248", "nome": "PSICOLOGIA EDUCACIONAL", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1205260", "nome": "GENEA E CONST DA SUBJETIVIDADE:III:IDOSO", "ch": "60h", "preReqs": ["1205246"]}, {"nivel": "4º Nível", "codigo": "1205292", "nome": "ATENCAO BASICA EM SAUDE", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1205308", "nome": "PSICOLOGIA HUMANISTA", "ch": "60h", "preReqs": ["1205305"]}, {"nivel": "5º Nível", "codigo": "1205214", "nome": "SAUDE MENTAL E ATENCAO PSICOSSOCIAL II", "ch": "60h", "preReqs": ["1205149"]}, {"nivel": "5º Nível", "codigo": "1205247", "nome": "PSICANÁLISE II", "ch": "60h", "preReqs": ["1205234"]}, {"nivel": "5º Nível", "codigo": "1205250", "nome": "PSICOLOGIA JURIDICA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1205309", "nome": "ETICA E LEGISLACAO EM PSICOLOGIA", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1205310", "nome": "PSICOLOGIA E POLITICAS PUBLICAS", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1205262", "nome": "PSICOLOGIA ORGANIZACIONAL E DO TRABALHO", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1205311", "nome": "AVALIACAO PSICOLOGICA I", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1205312", "nome": "PROCESSOS GRUPAIS", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1205313", "nome": "PSICOPATOLOGIA I", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1205314", "nome": "CLINICA AMPLIADA", "ch": "45h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1205315", "nome": "ABORDAGEM PSICOTERAPEUTICAS I", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1205249", "nome": "PSICOLOGIA COMUNITARIA", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1205316", "nome": "AVALIACAO PSICOLOGICA II", "ch": "60h", "preReqs": ["1205311"]}, {"nivel": "7º Nível", "codigo": "1205317", "nome": "REDE DE CUIDADO E INTERSETORIALIDADE", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "1205318", "nome": "PSICOPATOLOGIA II", "ch": "60h", "preReqs": ["1205313"]}, {"nivel": "7º Nível", "codigo": "1205319", "nome": "ABORDAGENS PSICOTERAPEUTICAS II", "ch": "60h", "preReqs": ["1205315"]}, {"nivel": "8º Nível", "codigo": "1205275", "nome": "SAUDE MENTAL E TRABALHO", "ch": "60h", "preReqs": ["1205262"]}, {"nivel": "8º Nível", "codigo": "1205277", "nome": "PSICOLOGIA HOSPITALAR", "ch": "60h", "preReqs": ["1205274"]}, {"nivel": "8º Nível", "codigo": "1205321", "nome": "AVALIACAO PSICOLOGICA III", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1205322", "nome": "PRÁTICAS E INTERVENÇÕES PSICOSSOCIAIS", "ch": "60h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "1205324", "nome": "TRABALHO DE CONCLUSAO DE CURSO I", "ch": "90h", "preReqs": []}];
-  const codigoToNome = {"1205147": "HISTÓRIA DA PSICOLOGIA", "1205199": "SOCIOLOGIA DA SAUDE", "1205200": "BASES ANATOMOFISIOLOGICAS DA PSICOLOGIA", "1205202": "PROCESSOS PSICOLOGICOS BASICOS", "1205301": "PSICOLOGIA E PROFISSAO", "1205303": "METODOLOGIA DO TRABALHO ACADÊMICO", "1205335": "BASES EPISTEMOLOGICAS DA PSICOLOGIA", "1205150": "SAUDE COLETIVA", "1205203": "ANTROPOLOGIA", "1205215": "PSICOLOGIA SOCIAL I", "1205231": "GENEALOGIA E COSNT DA SUBJ I : INFANCIA", "1205304": "METODOS E TECNICAS DE PESQUISA", "1205305": "FENOMENOLOGIA E EXISTENCIALISMO", "1205233": "PSICOLOGIA SOCIAL II", "1205246": "GENEALOGIA E COSNT DA SUBJ II:ADOLESCENC", "1205274": "PSICOLOGIA DA SAUDE", "1205306": "TECNICA E ANALISE DE DADOS", "1205307": "EDUCACAO E SAUDE", "1205149": "SAUDE MENTAL E ATENCAO PSICOSSOCIAL I", "1205234": "PSICANÁLISE I", "1205248": "PSICOLOGIA EDUCACIONAL", "1205260": "GENEA E CONST DA SUBJETIVIDADE:III:IDOSO", "1205292": "ATENCAO BASICA EM SAUDE", "1205308": "PSICOLOGIA HUMANISTA", "1205214": "SAUDE MENTAL E ATENCAO PSICOSSOCIAL II", "1205247": "PSICANÁLISE II", "1205250": "PSICOLOGIA JURIDICA", "1205309": "ETICA E LEGISLACAO EM PSICOLOGIA", "1205310": "PSICOLOGIA E POLITICAS PUBLICAS", "1205262": "PSICOLOGIA ORGANIZACIONAL E DO TRABALHO", "1205311": "AVALIACAO PSICOLOGICA I", "1205312": "PROCESSOS GRUPAIS", "1205313": "PSICOPATOLOGIA I", "1205314": "CLINICA AMPLIADA", "1205315": "ABORDAGEM PSICOTERAPEUTICAS I", "1205249": "PSICOLOGIA COMUNITARIA", "1205316": "AVALIACAO PSICOLOGICA II", "1205317": "REDE DE CUIDADO E INTERSETORIALIDADE", "1205318": "PSICOPATOLOGIA II", "1205319": "ABORDAGENS PSICOTERAPEUTICAS II", "1205275": "SAUDE MENTAL E TRABALHO", "1205277": "PSICOLOGIA HOSPITALAR", "1205321": "AVALIACAO PSICOLOGICA III", "1205322": "PRÁTICAS E INTERVENÇÕES PSICOSSOCIAIS", "1205324": "TRABALHO DE CONCLUSAO DE CURSO I", "1201310": "TEENF(AMB E REL INTERPESSOAIS NA S DO H)", "1205218": "BIOETICA", "1205219": "CULTURA E SUBJETIVIDADE", "1205254": "CORPO", "1205270": "PSICOLOGIA E ESTETICA DA SUBJETIVACAO", "1205289": "TEPSI(TESTEMUNHO", "1205295": "TEPSI(GESTÃO DE PESSOAS)", "1205297": "TEPSI(PSICOLOGIA E FAMILIA)", "1205300": "TEPSI(FORM. INTERPROFISSIONAL EM SAUDE)", "1205326": "DROGAS", "1205327": "GESTAO DE PESSOAS", "1205328": "LOGOT E NALIS EXIST:PERSP CLIN E SOCIAIS", "1205329": "PSICOLOGIA E FAMILIA", "1205330": "PSICOMOTRICIDADE", "1205331": "TESTEMUNHO", "1205332": "TEPSI(DESCOL.EPIST:DA ECOL PSI A SAUDE)", "1205333": "TEPSI(PSICOPATOLOGIA E CLINICA LACANIANA", "1205336": "TEPSI(METOD.PART PARA INTERV. GRUPAIS)", "1205337": "TEPSI(TEORIAS DA PERSONALIDADE)", "1205338": "TEPSI(PSIQUIATRIAS CLASSICAS)", "1205340": "TEPSI(TRAB.PROD.DE SUBJ:QUEST E. P/ PSIC", "1205342": "TEPSI(TERAPIA COGNITIVO-COMPORTAMENTAL)", "1205343": "TEPSI(DESENVOLVIMENTO MORAL E EMPATIA)", "1205344": "TEPSI(REPRESENT SOCIAIS:TEORIA E METODOS", "1205345": "TEPSI(INT AS PRAT INTEG E COMPLEMENTARES", "1205346": "TEPSI(ONCOLOGIA PEDIÁTRICA)", "1205349": "TEPS(CLÍNICA PSICANALÍTICA: FUND E PRAC)", "1205353": "TEPS(INTRODUÇÃO À SANDOR FERENCZI)", "1205354": "TEPS(MICROP P/ ENF SIT ADV CON BRA ATU)", "1205362": "TEPS(INTER PSI E NECES EDU ESP)", "1205366": "TEPS(PSICANÁLISE COM CRIAN: ESP E DESAF)", "1205367": "TEPS(SABE TRAD E CURA: DIAL EPIS E PRAC)", "1205370": "TEPS(INTRODUÇÃO À NEUROPSICOLOGIA)", "1205373": "TEPS(ABORD CENTRADA NA PESSOA)", "1205374": "TEPS(PSI PRAC INTR E COMP E EDU POPULAR)", "1205375": "TEPS(SAÚDE MENTAL", "1205376": "POLÍTICA DE SAÚDE NO BRASIL", "1205377": "TEPSI(POLÍTICA  DE SAÙDE NO BRASIL)", "1205378": "TEPSI(O CONCEITO DE IDENT NA PSIC SOCIAL", "1205379": "TEPSI(SEMINARIO EM ANTROP DAS EMOCOES)", "1205380": "TEPSI(GENERO E SEXUALIDADE)", "1205381": "TEPSI(PSIC PERINATAL E PARENTALIDADES)", "1205382": "TEPSI(PSICOFARMACOL INTEG A CLIN PSICON)", "1205383": "TEPSI(EPISTEMOLOGIA DA PSICANÁLISE)", "1205384": "TEPSI(QUESTÃO SOCIAL", "1205385": "TEPSI(AMB. E REL INTERPESSOAIS NA S DO H", "1205386": "TEPSI(CUIDADOS PALIATIVOS)", "1205387": "TEPSI(CRÍTICA DA SUBJETIV PSICOLÓGICA)", "1205388": "TEPSI(PRAT INTERV EM PSIC S JUR C FAM L)", "1307332": "LIBRAS"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1205147", "nome": "HISTÓRIA DA PSICOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1205199", "nome": "SOCIOLOGIA DA SAUDE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1205200", "nome": "BASES ANATOMOFISIOLOGICAS DA PSICOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1205202", "nome": "PROCESSOS PSICOLOGICOS BASICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1205301", "nome": "PSICOLOGIA E PROFISSAO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1205303", "nome": "METODOLOGIA DO TRABALHO ACADÊMICO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1205335", "nome": "BASES EPISTEMOLOGICAS DA PSICOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1205150", "nome": "SAUDE COLETIVA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1205203", "nome": "ANTROPOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205199"]}, {"nivel": "2º Nível", "codigo": "1205215", "nome": "PSICOLOGIA SOCIAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1205231", "nome": "GENEALOGIA E COSNT DA SUBJ I : INFANCIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1205304", "nome": "METODOS E TECNICAS DE PESQUISA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205303"]}, {"nivel": "2º Nível", "codigo": "1205305", "nome": "FENOMENOLOGIA E EXISTENCIALISMO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1205217", "nome": "PRÁTICAS INTEGRATIVAS EM PSICOLOGIA I", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1205233", "nome": "PSICOLOGIA SOCIAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205215"]}, {"nivel": "3º Nível", "codigo": "1205246", "nome": "GENEALOGIA E COSNT DA SUBJ II:ADOLESCENC", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205231"]}, {"nivel": "3º Nível", "codigo": "1205274", "nome": "PSICOLOGIA DA SAUDE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205150"]}, {"nivel": "3º Nível", "codigo": "1205306", "nome": "TECNICA E ANALISE DE DADOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205304"]}, {"nivel": "3º Nível", "codigo": "1205307", "nome": "EDUCACAO E SAUDE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1205149", "nome": "SAUDE MENTAL E ATENCAO PSICOSSOCIAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1205234", "nome": "PSICANÁLISE I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1205248", "nome": "PSICOLOGIA EDUCACIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1205260", "nome": "GENEA E CONST DA SUBJETIVIDADE:III:IDOSO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205246"]}, {"nivel": "4º Nível", "codigo": "1205292", "nome": "ATENCAO BASICA EM SAUDE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1205308", "nome": "PSICOLOGIA HUMANISTA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205305"]}, {"nivel": "5º Nível", "codigo": "1205341", "nome": "PRÁTICAS INTEGRATIVAS EM PSICOLOGIA II", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1205217"]}, {"nivel": "5º Nível", "codigo": "1205214", "nome": "SAUDE MENTAL E ATENCAO PSICOSSOCIAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205149"]}, {"nivel": "5º Nível", "codigo": "1205247", "nome": "PSICANÁLISE II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205234"]}, {"nivel": "5º Nível", "codigo": "1205250", "nome": "PSICOLOGIA JURIDICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1205309", "nome": "ETICA E LEGISLACAO EM PSICOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1205310", "nome": "PSICOLOGIA E POLITICAS PUBLICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1205262", "nome": "PSICOLOGIA ORGANIZACIONAL E DO TRABALHO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1205311", "nome": "AVALIACAO PSICOLOGICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1205312", "nome": "PROCESSOS GRUPAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1205313", "nome": "PSICOPATOLOGIA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1205314", "nome": "CLINICA AMPLIADA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1205315", "nome": "ABORDAGEM PSICOTERAPEUTICAS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1205320", "nome": "ESTAGIO SUPERVISIONADO BASICO I", "ch": "135\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1205249", "nome": "PSICOLOGIA COMUNITARIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1205316", "nome": "AVALIACAO PSICOLOGICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205311"]}, {"nivel": "7º Nível", "codigo": "1205317", "nome": "REDE DE CUIDADO E INTERSETORIALIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1205318", "nome": "PSICOPATOLOGIA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205313"]}, {"nivel": "7º Nível", "codigo": "1205319", "nome": "ABORDAGENS PSICOTERAPEUTICAS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205315"]}, {"nivel": "8º Nível", "codigo": "1205323", "nome": "ESTAGIO SUPERVISIONADO BASICO II", "ch": "135\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1205320"]}, {"nivel": "8º Nível", "codigo": "1205275", "nome": "SAUDE MENTAL E TRABALHO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205262"]}, {"nivel": "8º Nível", "codigo": "1205277", "nome": "PSICOLOGIA HOSPITALAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1205274"]}, {"nivel": "8º Nível", "codigo": "1205321", "nome": "AVALIACAO PSICOLOGICA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1205322", "nome": "PRÁTICAS E INTERVENÇÕES PSICOSSOCIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1205288", "nome": "ESTAGIO SUPERVISIONADO ESPECIFICO I", "ch": "180\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1205323"]}, {"nivel": "9º Nível", "codigo": "1205324", "nome": "TRABALHO DE CONCLUSAO DE CURSO I", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1205294", "nome": "ESTAGIO SUPERVISIONADO ESPECIFICO II", "ch": "240\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1205288"]}, {"nivel": "10º Nível", "codigo": "1205325", "nome": "TRABALHO DE CONCLUSAO DE CURSO II", "ch": "90\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1205324"]}];
+  const codigoToNome = {"1205147": "HISTÓRIA DA PSICOLOGIA", "1205199": "SOCIOLOGIA DA SAUDE", "1205200": "BASES ANATOMOFISIOLOGICAS DA PSICOLOGIA", "1205202": "PROCESSOS PSICOLOGICOS BASICOS", "1205301": "PSICOLOGIA E PROFISSAO", "1205303": "METODOLOGIA DO TRABALHO ACADÊMICO", "1205335": "BASES EPISTEMOLOGICAS DA PSICOLOGIA", "1205150": "SAUDE COLETIVA", "1205203": "ANTROPOLOGIA", "1205215": "PSICOLOGIA SOCIAL I", "1205231": "GENEALOGIA E COSNT DA SUBJ I : INFANCIA", "1205304": "METODOS E TECNICAS DE PESQUISA", "1205305": "FENOMENOLOGIA E EXISTENCIALISMO", "1205217": "PRÁTICAS INTEGRATIVAS EM PSICOLOGIA I", "1205233": "PSICOLOGIA SOCIAL II", "1205246": "GENEALOGIA E COSNT DA SUBJ II:ADOLESCENC", "1205274": "PSICOLOGIA DA SAUDE", "1205306": "TECNICA E ANALISE DE DADOS", "1205307": "EDUCACAO E SAUDE", "1205149": "SAUDE MENTAL E ATENCAO PSICOSSOCIAL I", "1205234": "PSICANÁLISE I", "1205248": "PSICOLOGIA EDUCACIONAL", "1205260": "GENEA E CONST DA SUBJETIVIDADE:III:IDOSO", "1205292": "ATENCAO BASICA EM SAUDE", "1205308": "PSICOLOGIA HUMANISTA", "1205341": "PRÁTICAS INTEGRATIVAS EM PSICOLOGIA II", "1205214": "SAUDE MENTAL E ATENCAO PSICOSSOCIAL II", "1205247": "PSICANÁLISE II", "1205250": "PSICOLOGIA JURIDICA", "1205309": "ETICA E LEGISLACAO EM PSICOLOGIA", "1205310": "PSICOLOGIA E POLITICAS PUBLICAS", "1205262": "PSICOLOGIA ORGANIZACIONAL E DO TRABALHO", "1205311": "AVALIACAO PSICOLOGICA I", "1205312": "PROCESSOS GRUPAIS", "1205313": "PSICOPATOLOGIA I", "1205314": "CLINICA AMPLIADA", "1205315": "ABORDAGEM PSICOTERAPEUTICAS I", "1205320": "ESTAGIO SUPERVISIONADO BASICO I", "1205249": "PSICOLOGIA COMUNITARIA", "1205316": "AVALIACAO PSICOLOGICA II", "1205317": "REDE DE CUIDADO E INTERSETORIALIDADE", "1205318": "PSICOPATOLOGIA II", "1205319": "ABORDAGENS PSICOTERAPEUTICAS II", "1205323": "ESTAGIO SUPERVISIONADO BASICO II", "1205275": "SAUDE MENTAL E TRABALHO", "1205277": "PSICOLOGIA HOSPITALAR", "1205321": "AVALIACAO PSICOLOGICA III", "1205322": "PRÁTICAS E INTERVENÇÕES PSICOSSOCIAIS", "1205288": "ESTAGIO SUPERVISIONADO ESPECIFICO I", "1205324": "TRABALHO DE CONCLUSAO DE CURSO I", "1205294": "ESTAGIO SUPERVISIONADO ESPECIFICO II", "1205325": "TRABALHO DE CONCLUSAO DE CURSO II", "1201310": "TEENF(AMB E REL INTERPESSOAIS NA S DO H)", "1205218": "BIOETICA", "1205219": "CULTURA E SUBJETIVIDADE", "1205254": "CORPO, CULTURA E SOCIEDADE", "1205270": "PSICOLOGIA E ESTETICA DA SUBJETIVACAO", "1205289": "TEPSI(TESTEMUNHO,VIOLENCIA E MODERNIDADE", "1205295": "TEPSI(GESTÃO DE PESSOAS)", "1205297": "TEPSI(PSICOLOGIA E FAMILIA)", "1205300": "TEPSI(FORM. INTERPROFISSIONAL EM SAUDE)", "1205326": "DROGAS, CULTURA E CUIDADOS EM SAUDE", "1205327": "GESTAO DE PESSOAS", "1205328": "LOGOT E NALIS EXIST:PERSP CLIN E SOCIAIS", "1205329": "PSICOLOGIA E FAMILIA", "1205330": "PSICOMOTRICIDADE", "1205331": "TESTEMUNHO, VIOLENCIA E MODERNIDADE", "1205332": "TEPSI(DESCOL.EPIST:DA ECOL PSI A SAUDE)", "1205333": "TEPSI(PSICOPATOLOGIA E CLINICA LACANIANA", "1205336": "TEPSI(METOD.PART PARA INTERV. GRUPAIS)", "1205337": "TEPSI(TEORIAS DA PERSONALIDADE)", "1205338": "TEPSI(PSIQUIATRIAS CLASSICAS)", "1205340": "TEPSI(TRAB.PROD.DE SUBJ:QUEST E. P/ PSIC", "1205342": "TEPSI(TERAPIA COGNITIVO-COMPORTAMENTAL)", "1205343": "TEPSI(DESENVOLVIMENTO MORAL E EMPATIA)", "1205344": "TEPSI(REPRESENT SOCIAIS:TEORIA E METODOS", "1205345": "TEPSI(INT AS PRAT INTEG E COMPLEMENTARES", "1205346": "TEPSI(ONCOLOGIA PEDIÁTRICA)", "1205349": "TEPS(CLÍNICA PSICANALÍTICA: FUND E PRAC)", "1205353": "TEPS(INTRODUÇÃO À SANDOR FERENCZI)", "1205354": "TEPS(MICROP P/ ENF SIT ADV CON BRA ATU)", "1205362": "TEPS(INTER PSI E NECES EDU ESP)", "1205366": "TEPS(PSICANÁLISE COM CRIAN: ESP E DESAF)", "1205367": "TEPS(SABE TRAD E CURA: DIAL EPIS E PRAC)", "1205370": "TEPS(INTRODUÇÃO À NEUROPSICOLOGIA)", "1205373": "TEPS(ABORD CENTRADA NA PESSOA)", "1205374": "TEPS(PSI PRAC INTR E COMP E EDU POPULAR)", "1205375": "TEPS(SAÚDE MENTAL, JUS E DIR HUMANOS)", "1205376": "POLÍTICA DE SAÚDE NO BRASIL", "1205377": "TEPSI(POLÍTICA  DE SAÙDE NO BRASIL)", "1205378": "TEPSI(O CONCEITO DE IDENT NA PSIC SOCIAL", "1205379": "TEPSI(SEMINARIO EM ANTROP DAS EMOCOES)", "1205380": "TEPSI(GENERO E SEXUALIDADE)", "1205381": "TEPSI(PSIC PERINATAL E PARENTALIDADES)", "1205382": "TEPSI(PSICOFARMACOL INTEG A CLIN PSICON)", "1205383": "TEPSI(EPISTEMOLOGIA DA PSICANÁLISE)", "1205384": "TEPSI(QUESTÃO SOCIAL,EST, SOC, E POL PUB", "1205385": "TEPSI(AMB. E REL INTERPESSOAIS NA S DO H", "1205386": "TEPSI(CUIDADOS PALIATIVOS)", "1205387": "TEPSI(CRÍTICA DA SUBJETIV PSICOLÓGICA)", "1205388": "TEPSI(PRAT INTERV EM PSIC S JUR C FAM L)", "1307332": "LIBRAS"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -954,7 +957,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

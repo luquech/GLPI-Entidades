@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,88 +404,88 @@
           <tr>
               <td>1307392</td>
               <td>TEL(INTERCOMPREENSAO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307395</td>
               <td>TELIB(LIBRAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307405</td>
               <td>ESTUDOS DA TRADUCAO E DA INTERPRETACAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307406</td>
               <td>ENSINO DE SEGUNDA LINGUA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307407</td>
               <td>ELABORACAO DE MATERIAL DIDATICO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307421</td>
               <td>TIC´S E ENSINO DA LIBRAS E DA LIT SURDA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307422</td>
               <td>TEATRO EM LIBRAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307423</td>
               <td>VARIAÇÃO LINGUÍSTICA EM LIBRAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307424</td>
               <td>DISCURSOS E IDENT NOS TEXTOS EM LIBRAS</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307426</td>
               <td>TÓPICOS ESPECIAIS DA LITERATURA SURDA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307432</td>
               <td>ESTUDOS DE CURRÍCULO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -529,8 +532,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1307196", "nome": "FUNDAMENTOS DA PRÁTICA EDUCATIVA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307351", "nome": "FUNDAMENTOS DOS ESTUDOS LINGUISTICOS", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307352", "nome": "FUNDAMENTOS DA EDUCACAO DE SURDOS", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307353", "nome": "LABORATORIO DE LIBRAS I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1304302", "nome": "PSICOLOGIA DA INFANCIA E DA ADOLESCENCIA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1307354", "nome": "FUNDAMENTOS DOS ESTUDOS LITERARIOS", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1307355", "nome": "LABORATORIO DE LIBRAS II", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1307356", "nome": "LEITURA E ESCRITA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1304293", "nome": "POLITICA EDUCACIONAL NO BRASIL", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1304295", "nome": "PSICOLOGIA EDUCACIONAL", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1307357", "nome": "FONOLOGIA DA LIBRAS", "ch": "60h", "preReqs": ["1307351"]}, {"nivel": "3º Nível", "codigo": "1307358", "nome": "LABORATORIO DE LIBRAS III", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1307359", "nome": "MORFOLOGIA DA LIBRAS", "ch": "60h", "preReqs": ["1307351"]}, {"nivel": "4º Nível", "codigo": "1307360", "nome": "ESTUDOS LITERARIOS I", "ch": "60h", "preReqs": ["1307354"]}, {"nivel": "4º Nível", "codigo": "1307361", "nome": "PLANEJAMENTO E AVAL DO ENS. DE LIBRAS I", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1307362", "nome": "LABORATORIO DE LIBRAS IV", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1307325", "nome": "METODOLOGIA DA PESQUISA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1307363", "nome": "SINTAXE DA LIBRAS", "ch": "60h", "preReqs": ["1307351"]}, {"nivel": "5º Nível", "codigo": "1307364", "nome": "ESTETICA DA LITERATURA SURDA", "ch": "60h", "preReqs": ["1307354"]}, {"nivel": "5º Nível", "codigo": "1307365", "nome": "ESTUDOS LITERARIOS II", "ch": "60h", "preReqs": ["1307354"]}, {"nivel": "5º Nível", "codigo": "1307366", "nome": "PLANEJAMENTO E AVAL DO ENS. DE LIBRAS II", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1307367", "nome": "LABORATORIO DE LIBRAS V", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1307231", "nome": "LITERATURA INFANTO-JUVENIL", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1307368", "nome": "SEMANTICA E PRAGMATICA DA LIBRAS", "ch": "60h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "1304239", "nome": "EDUCAÇÃO ESPECIAL", "ch": "60h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "1304304", "nome": "EDUCACAO E DIVERSIDADE", "ch": "60h", "preReqs": []}];
-  const codigoToNome = {"1307196": "FUNDAMENTOS DA PRÁTICA EDUCATIVA", "1307351": "FUNDAMENTOS DOS ESTUDOS LINGUISTICOS", "1307352": "FUNDAMENTOS DA EDUCACAO DE SURDOS", "1307353": "LABORATORIO DE LIBRAS I", "1304302": "PSICOLOGIA DA INFANCIA E DA ADOLESCENCIA", "1307354": "FUNDAMENTOS DOS ESTUDOS LITERARIOS", "1307355": "LABORATORIO DE LIBRAS II", "1307356": "LEITURA E ESCRITA", "1304293": "POLITICA EDUCACIONAL NO BRASIL", "1304295": "PSICOLOGIA EDUCACIONAL", "1307357": "FONOLOGIA DA LIBRAS", "1307358": "LABORATORIO DE LIBRAS III", "1307359": "MORFOLOGIA DA LIBRAS", "1307360": "ESTUDOS LITERARIOS I", "1307361": "PLANEJAMENTO E AVAL DO ENS. DE LIBRAS I", "1307362": "LABORATORIO DE LIBRAS IV", "1307325": "METODOLOGIA DA PESQUISA", "1307363": "SINTAXE DA LIBRAS", "1307364": "ESTETICA DA LITERATURA SURDA", "1307365": "ESTUDOS LITERARIOS II", "1307366": "PLANEJAMENTO E AVAL DO ENS. DE LIBRAS II", "1307367": "LABORATORIO DE LIBRAS V", "1307231": "LITERATURA INFANTO-JUVENIL", "1307368": "SEMANTICA E PRAGMATICA DA LIBRAS", "1304239": "EDUCAÇÃO ESPECIAL", "1304304": "EDUCACAO E DIVERSIDADE", "1307392": "TEL(INTERCOMPREENSAO)", "1307395": "TELIB(LIBRAS)", "1307405": "ESTUDOS DA TRADUCAO E DA INTERPRETACAO", "1307406": "ENSINO DE SEGUNDA LINGUA", "1307407": "ELABORACAO DE MATERIAL DIDATICO", "1307421": "TIC´S E ENSINO DA LIBRAS E DA LIT SURDA", "1307422": "TEATRO EM LIBRAS", "1307423": "VARIAÇÃO LINGUÍSTICA EM LIBRAS", "1307424": "DISCURSOS E IDENT NOS TEXTOS EM LIBRAS", "1307426": "TÓPICOS ESPECIAIS DA LITERATURA SURDA", "1307432": "ESTUDOS DE CURRÍCULO"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1307369", "nome": "PORTUGUES I", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307370", "nome": "LINGUA,CULTURA E IDENTIDADE SURDA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307196", "nome": "FUNDAMENTOS DA PRÁTICA EDUCATIVA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307351", "nome": "FUNDAMENTOS DOS ESTUDOS LINGUISTICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307352", "nome": "FUNDAMENTOS DA EDUCACAO DE SURDOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307353", "nome": "LABORATORIO DE LIBRAS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1307371", "nome": "AQUISICAO DE LINGUAGEM", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1307372", "nome": "PORTUGUES II", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1307369"]}, {"nivel": "2º Nível", "codigo": "1304302", "nome": "PSICOLOGIA DA INFANCIA E DA ADOLESCENCIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1307354", "nome": "FUNDAMENTOS DOS ESTUDOS LITERARIOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1307355", "nome": "LABORATORIO DE LIBRAS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1307356", "nome": "LEITURA E ESCRITA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1307373", "nome": "GENERO EM LIBRAS I", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1307374", "nome": "ESCRITA EM LINGUAS DE SINAIS I", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1304293", "nome": "POLITICA EDUCACIONAL NO BRASIL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1304295", "nome": "PSICOLOGIA EDUCACIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1307357", "nome": "FONOLOGIA DA LIBRAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1307351"]}, {"nivel": "3º Nível", "codigo": "1307358", "nome": "LABORATORIO DE LIBRAS III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1307375", "nome": "ESCRITA EM LINGUAS DE SINAIS II", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1307374"]}, {"nivel": "4º Nível", "codigo": "1307376", "nome": "GENERO EM LIBRAS II", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1307359", "nome": "MORFOLOGIA DA LIBRAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1307351"]}, {"nivel": "4º Nível", "codigo": "1307360", "nome": "ESTUDOS LITERARIOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1307354"]}, {"nivel": "4º Nível", "codigo": "1307361", "nome": "PLANEJAMENTO E AVAL DO ENS. DE LIBRAS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1307362", "nome": "LABORATORIO DE LIBRAS IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1307325", "nome": "METODOLOGIA DA PESQUISA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1307363", "nome": "SINTAXE DA LIBRAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1307351"]}, {"nivel": "5º Nível", "codigo": "1307364", "nome": "ESTETICA DA LITERATURA SURDA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1307354"]}, {"nivel": "5º Nível", "codigo": "1307365", "nome": "ESTUDOS LITERARIOS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1307354"]}, {"nivel": "5º Nível", "codigo": "1307366", "nome": "PLANEJAMENTO E AVAL DO ENS. DE LIBRAS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1307367", "nome": "LABORATORIO DE LIBRAS V", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1307377", "nome": "LITERATURAS EM LINGUAS DE SINAIS", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1307378", "nome": "INICIACAO A PESQUISA I", "ch": "30\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1307325"]}, {"nivel": "6º Nível", "codigo": "1307231", "nome": "LITERATURA INFANTO-JUVENIL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1307368", "nome": "SEMANTICA E PRAGMATICA DA LIBRAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "1307410", "nome": "ESTÁGIO DE LIBRAS I", "ch": "210\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1307352", "1307196", "1304295", "1307361", "1307366", "1307357", "1307359", "1307363", "1307368", "1307364", "1307231"]}, {"nivel": "7º Nível", "codigo": "1307411", "nome": "PRODUÇÃO LITERÁRIA EM LIBRAS", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1307364"]}, {"nivel": "7º Nível", "codigo": "1307412", "nome": "INICIAÇÃO À PESQUISA II", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1307378"]}, {"nivel": "8º Nível", "codigo": "1307382", "nome": "ESTAGIO DE LIBRAS II", "ch": "210\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1307352", "1307196", "1304295", "1307361", "1307366", "1307357", "1307359", "1307363", "1307368", "1307364", "1307231"]}, {"nivel": "8º Nível", "codigo": "1307383", "nome": "MONOGRAFIA I", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1307325", "1307378", "1307412"]}, {"nivel": "9º Nível", "codigo": "1307384", "nome": "MONOGRAFIA II", "ch": "120\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1307383"]}, {"nivel": "9º Nível", "codigo": "1304239", "nome": "EDUCAÇÃO ESPECIAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1304304", "nome": "EDUCACAO E DIVERSIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}];
+  const codigoToNome = {"1307369": "PORTUGUES I", "1307370": "LINGUA,CULTURA E IDENTIDADE SURDA", "1307196": "FUNDAMENTOS DA PRÁTICA EDUCATIVA", "1307351": "FUNDAMENTOS DOS ESTUDOS LINGUISTICOS", "1307352": "FUNDAMENTOS DA EDUCACAO DE SURDOS", "1307353": "LABORATORIO DE LIBRAS I", "1307371": "AQUISICAO DE LINGUAGEM", "1307372": "PORTUGUES II", "1304302": "PSICOLOGIA DA INFANCIA E DA ADOLESCENCIA", "1307354": "FUNDAMENTOS DOS ESTUDOS LITERARIOS", "1307355": "LABORATORIO DE LIBRAS II", "1307356": "LEITURA E ESCRITA", "1307373": "GENERO EM LIBRAS I", "1307374": "ESCRITA EM LINGUAS DE SINAIS I", "1304293": "POLITICA EDUCACIONAL NO BRASIL", "1304295": "PSICOLOGIA EDUCACIONAL", "1307357": "FONOLOGIA DA LIBRAS", "1307358": "LABORATORIO DE LIBRAS III", "1307375": "ESCRITA EM LINGUAS DE SINAIS II", "1307376": "GENERO EM LIBRAS II", "1307359": "MORFOLOGIA DA LIBRAS", "1307360": "ESTUDOS LITERARIOS I", "1307361": "PLANEJAMENTO E AVAL DO ENS. DE LIBRAS I", "1307362": "LABORATORIO DE LIBRAS IV", "1307325": "METODOLOGIA DA PESQUISA", "1307363": "SINTAXE DA LIBRAS", "1307364": "ESTETICA DA LITERATURA SURDA", "1307365": "ESTUDOS LITERARIOS II", "1307366": "PLANEJAMENTO E AVAL DO ENS. DE LIBRAS II", "1307367": "LABORATORIO DE LIBRAS V", "1307377": "LITERATURAS EM LINGUAS DE SINAIS", "1307378": "INICIACAO A PESQUISA I", "1307231": "LITERATURA INFANTO-JUVENIL", "1307368": "SEMANTICA E PRAGMATICA DA LIBRAS", "1307410": "ESTÁGIO DE LIBRAS I", "1307411": "PRODUÇÃO LITERÁRIA EM LIBRAS", "1307412": "INICIAÇÃO À PESQUISA II", "1307382": "ESTAGIO DE LIBRAS II", "1307383": "MONOGRAFIA I", "1307384": "MONOGRAFIA II", "1304239": "EDUCAÇÃO ESPECIAL", "1304304": "EDUCACAO E DIVERSIDADE", "1307392": "TEL(INTERCOMPREENSAO)", "1307395": "TELIB(LIBRAS)", "1307405": "ESTUDOS DA TRADUCAO E DA INTERPRETACAO", "1307406": "ENSINO DE SEGUNDA LINGUA", "1307407": "ELABORACAO DE MATERIAL DIDATICO", "1307421": "TIC´S E ENSINO DA LIBRAS E DA LIT SURDA", "1307422": "TEATRO EM LIBRAS", "1307423": "VARIAÇÃO LINGUÍSTICA EM LIBRAS", "1307424": "DISCURSOS E IDENT NOS TEXTOS EM LIBRAS", "1307426": "TÓPICOS ESPECIAIS DA LITERATURA SURDA", "1307432": "ESTUDOS DE CURRÍCULO"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -642,7 +645,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

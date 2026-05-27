@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,160 +404,160 @@
           <tr>
               <td>7101042</td>
               <td>INGLES I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102018</td>
               <td>INTRODUÇÃO À AGROECOLOGIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102028</td>
               <td>CALCULO DIFERENCIAL E INTEGRAL III</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CALCULO DIFERENCIAL E INTEGRAL II</td>
               <td></td>
           </tr>
           <tr>
               <td>7102074</td>
               <td>MÁQUINAS AGRÍCOLAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102233</td>
               <td>INTRODUÇÃO AO SENSORIAMENTO REMOTO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GEOPROCESSAMENTO</td>
               <td></td>
           </tr>
           <tr>
               <td>7102275</td>
               <td>GESTAO DE RECURSOS HIDRICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>HIDROLOGIA APLICADA</td>
               <td></td>
           </tr>
           <tr>
               <td>7102294</td>
               <td>ESTATÍSTICA EXPERIMENTAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>PROBABILIDADE E ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>7103013</td>
               <td>GENETICA MOLECULAR</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>BIOLOGIA CELULAR E MOLECULAR</td>
               <td></td>
           </tr>
           <tr>
               <td>7101084</td>
               <td>LINGUA BRASILEIRA DE SINAIS-LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7101086</td>
               <td>ESPANHOL I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102076</td>
               <td>MANEJO E CONSERVACAO DO SOLO E DA AGUA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102276</td>
               <td>TEBIOS I(MANEJO CONT DA SALIN NA AGRIC)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>DRENAGEM AGRICOLA</td>
               <td></td>
           </tr>
           <tr>
               <td>7102295</td>
               <td>TEBIOS - II(GENETICA MOLECULAR)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td>BIOLOGIA CELULAR E MOLECULAR</td>
           </tr>
           <tr>
               <td>7102296</td>
               <td>TE -II(FONTES ALTERNATIVAS DE ENERGIA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102300</td>
               <td>TE-II(LOGISTICA REVERSA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102301</td>
               <td>INSTRUMENTAÇÃO E EXPERIM.EM BIOSSISTEMAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>QUÍMICA ANALÍTICA APLICADA, FÍSICA EXPERIMENTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>7102302</td>
               <td>MANEJO INTEGRADO DE DOENCAS DE PLANTAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102308</td>
               <td>TEEB(PRODUÇÃO E USO DE HORTALIÇAS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102309</td>
               <td>TEEB(TRATAMENTO DE RESÍDUOS SÓLIDOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>7102310</td>
               <td>INDICADORES DE SUSTENTABILIDADE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CIÊNCIAS DO AMBIENTE</td>
               <td></td>
           </tr>
@@ -601,8 +604,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "7102002", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102003", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102007", "nome": "INT. A ENG. DE BIOSSISTEMAS", "ch": "30h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103001", "nome": "BIOLOGIA CELULAR E MOLECULAR", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103004", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103005", "nome": "QUÍMICA EXPERIMENTAL", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7101006", "nome": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102009", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["7102002"]}, {"nivel": "2º Nível", "codigo": "7102010", "nome": "ÁLGEBRA LINEAR", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102012", "nome": "DESENHO TÉCNICO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102027", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "7104011", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": ["7102002"]}, {"nivel": "3º Nível", "codigo": "7102014", "nome": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "7102020", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["7102009"]}, {"nivel": "3º Nível", "codigo": "7102021", "nome": "PROBABILIDADE E ESTATÍSTICA", "ch": "60h", "preReqs": ["7102009"]}, {"nivel": "3º Nível", "codigo": "7102022", "nome": "BOTANICA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "7102024", "nome": "TOPOGRAFIA", "ch": "60h", "preReqs": ["7102012"]}, {"nivel": "3º Nível", "codigo": "7102026", "nome": "INTRODUÇÃO À ZOOTECNIA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "7103025", "nome": "QUÍMICA ANALÍTICA APLICADA", "ch": "60h", "preReqs": ["7103004", "7103005"]}, {"nivel": "3º Nível", "codigo": "7104023", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["7104011"]}, {"nivel": "4º Nível", "codigo": "7102044", "nome": "MECÂNICA GERAL", "ch": "60h", "preReqs": ["7104011"]}, {"nivel": "4º Nível", "codigo": "7102049", "nome": "GENESE E MORFOLOGIA DOS SOLOS", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "7102050", "nome": "TERMODINAMICA", "ch": "60h", "preReqs": ["7102020", "7104023"]}, {"nivel": "4º Nível", "codigo": "7102051", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "30h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "7104029", "nome": "PROGRAMAÇÃO", "ch": "60h", "preReqs": ["7102003"]}, {"nivel": "4º Nível", "codigo": "7104045", "nome": "FÍSICA GERAL III", "ch": "60h", "preReqs": ["7104023"]}, {"nivel": "4º Nível", "codigo": "7104046", "nome": "FÍSICA EXPERIMENTAL", "ch": "60h", "preReqs": ["7104023"]}, {"nivel": "5º Nível", "codigo": "7102048", "nome": "FÍSICO-QUÍMICA DOS SOLOS", "ch": "60h", "preReqs": ["7103025"]}, {"nivel": "5º Nível", "codigo": "7102065", "nome": "FENOMENOS DE TRANSPORTE", "ch": "60h", "preReqs": ["7102050"]}, {"nivel": "5º Nível", "codigo": "7102066", "nome": "INST. ELÉTRICAS E EFICIÊNCIA ENERGÉTICA", "ch": "60h", "preReqs": ["7104045"]}, {"nivel": "5º Nível", "codigo": "7102067", "nome": "AGROMETEOROLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "7102068", "nome": "ANATOMIA VEGETAL", "ch": "30h", "preReqs": ["7102022"]}, {"nivel": "5º Nível", "codigo": "7102069", "nome": "LAB DE FENOMENOS DE TRANSPORTE", "ch": "60h", "preReqs": ["7102050"]}, {"nivel": "5º Nível", "codigo": "7103053", "nome": "BIOQUÍMICA", "ch": "60h", "preReqs": ["7103001"]}, {"nivel": "6º Nível", "codigo": "7102062", "nome": "HIDRAULICA", "ch": "60h", "preReqs": ["7102065"]}, {"nivel": "6º Nível", "codigo": "7102080", "nome": "RESISTENCIA DOS MATERIAIS", "ch": "60h", "preReqs": ["7102044"]}, {"nivel": "6º Nível", "codigo": "7102091", "nome": "MICROBIOLOGIA", "ch": "60h", "preReqs": ["7103001"]}, {"nivel": "6º Nível", "codigo": "7102092", "nome": "PRINCIPIOS DE BIOCLIMATOLOGIA", "ch": "30h", "preReqs": ["7102067"]}, {"nivel": "6º Nível", "codigo": "7102093", "nome": "GEOPROCESSAMENTO", "ch": "60h", "preReqs": ["7102024"]}, {"nivel": "6º Nível", "codigo": "7102094", "nome": "ADMINISTRAÇÃO E EMPREENDEDORISMO", "ch": "30h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "7102095", "nome": "OPERACOES UNITARIAS", "ch": "60h", "preReqs": ["7102065"]}, {"nivel": "6º Nível", "codigo": "7105137", "nome": "CIDADANIA E TRABALHO", "ch": "30h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "7102119", "nome": "GRANDES CULTIVOS", "ch": "60h", "preReqs": ["7102068"]}, {"nivel": "7º Nível", "codigo": "7102120", "nome": "HIDROLOGIA APLICADA", "ch": "60h", "preReqs": ["7102024", "7102062"]}, {"nivel": "7º Nível", "codigo": "7102121", "nome": "CONSTRUCOES RURAIS E AMBIENCIA", "ch": "60h", "preReqs": ["7102012", "7102080"]}, {"nivel": "7º Nível", "codigo": "7102122", "nome": "LABORATÓRIO DE HIDRÁULICA", "ch": "30h", "preReqs": ["7102062"]}, {"nivel": "7º Nível", "codigo": "7104118", "nome": "AUTOMAÇÃO", "ch": "60h", "preReqs": ["7102066"]}, {"nivel": "7º Nível", "codigo": "7106132", "nome": "ECONOMIA", "ch": "30h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "7106138", "nome": "BIODIREITO", "ch": "30h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "7102243", "nome": "PROCESSAMENTO DE SINAIS EM BIOSSISTEMAS", "ch": "60h", "preReqs": ["7104118"]}, {"nivel": "8º Nível", "codigo": "7102245", "nome": "QUALIDADE DE ÁGUA", "ch": "60h", "preReqs": ["7103025", "7102091"]}, {"nivel": "8º Nível", "codigo": "7102246", "nome": "CONTROLE EM PROCESSOS AGROPECUARIOS", "ch": "30h", "preReqs": ["7102026", "7102119"]}, {"nivel": "8º Nível", "codigo": "7102247", "nome": "CLIMATIZAÇÃO E AUTOM. EM AMB. PROTEGIDOS", "ch": "60h", "preReqs": ["7102067", "7104118"]}, {"nivel": "8º Nível", "codigo": "7102248", "nome": "DRENAGEM AGRICOLA", "ch": "60h", "preReqs": ["7102120"]}, {"nivel": "8º Nível", "codigo": "7102249", "nome": "PERÍCIA TÉCNICA", "ch": "30h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "7103244", "nome": "BIOCOMBUSTIVEIS", "ch": "30h", "preReqs": ["7103025"]}, {"nivel": "9º Nível", "codigo": "7102103", "nome": "GESTAO AMBIENTAL", "ch": "60h", "preReqs": ["7102051"]}, {"nivel": "9º Nível", "codigo": "7102266", "nome": "AGRICULTURA DE PRECISAO", "ch": "60h", "preReqs": ["7102119", "7102093"]}, {"nivel": "9º Nível", "codigo": "7102267", "nome": "TRATAMENTO DE ÁGUAS RESIDUÁRIAS", "ch": "60h", "preReqs": ["7102245"]}, {"nivel": "9º Nível", "codigo": "7102268", "nome": "ZOOTECNIA DE PRECISAO", "ch": "30h", "preReqs": ["7102026"]}, {"nivel": "9º Nível", "codigo": "7102269", "nome": "TECNOLOGIA DE SECAGEM E ARMAZENAMENTO", "ch": "60h", "preReqs": ["7102119"]}, {"nivel": "9º Nível", "codigo": "7102270", "nome": "IRRIGACAO", "ch": "60h", "preReqs": ["7102120"]}];
-  const codigoToNome = {"7102002": "CALCULO DIFERENCIAL E INTEGRAL I", "7102003": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "7102007": "INT. A ENG. DE BIOSSISTEMAS", "7103001": "BIOLOGIA CELULAR E MOLECULAR", "7103004": "QUÍMICA GERAL", "7103005": "QUÍMICA EXPERIMENTAL", "7101006": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "7102009": "CALCULO DIFERENCIAL E INTEGRAL II", "7102010": "ÁLGEBRA LINEAR", "7102012": "DESENHO TÉCNICO", "7102027": "METODOLOGIA CIENTÍFICA", "7104011": "FÍSICA GERAL I", "7102014": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "7102020": "EQUACOES DIFERENCIAIS LINEARES", "7102021": "PROBABILIDADE E ESTATÍSTICA", "7102022": "BOTANICA", "7102024": "TOPOGRAFIA", "7102026": "INTRODUÇÃO À ZOOTECNIA", "7103025": "QUÍMICA ANALÍTICA APLICADA", "7104023": "FÍSICA GERAL II", "7102044": "MECÂNICA GERAL", "7102049": "GENESE E MORFOLOGIA DOS SOLOS", "7102050": "TERMODINAMICA", "7102051": "CIÊNCIAS DO AMBIENTE", "7104029": "PROGRAMAÇÃO", "7104045": "FÍSICA GERAL III", "7104046": "FÍSICA EXPERIMENTAL", "7102048": "FÍSICO-QUÍMICA DOS SOLOS", "7102065": "FENOMENOS DE TRANSPORTE", "7102066": "INST. ELÉTRICAS E EFICIÊNCIA ENERGÉTICA", "7102067": "AGROMETEOROLOGIA", "7102068": "ANATOMIA VEGETAL", "7102069": "LAB DE FENOMENOS DE TRANSPORTE", "7103053": "BIOQUÍMICA", "7102062": "HIDRAULICA", "7102080": "RESISTENCIA DOS MATERIAIS", "7102091": "MICROBIOLOGIA", "7102092": "PRINCIPIOS DE BIOCLIMATOLOGIA", "7102093": "GEOPROCESSAMENTO", "7102094": "ADMINISTRAÇÃO E EMPREENDEDORISMO", "7102095": "OPERACOES UNITARIAS", "7105137": "CIDADANIA E TRABALHO", "7102119": "GRANDES CULTIVOS", "7102120": "HIDROLOGIA APLICADA", "7102121": "CONSTRUCOES RURAIS E AMBIENCIA", "7102122": "LABORATÓRIO DE HIDRÁULICA", "7104118": "AUTOMAÇÃO", "7106132": "ECONOMIA", "7106138": "BIODIREITO", "7102243": "PROCESSAMENTO DE SINAIS EM BIOSSISTEMAS", "7102245": "QUALIDADE DE ÁGUA", "7102246": "CONTROLE EM PROCESSOS AGROPECUARIOS", "7102247": "CLIMATIZAÇÃO E AUTOM. EM AMB. PROTEGIDOS", "7102248": "DRENAGEM AGRICOLA", "7102249": "PERÍCIA TÉCNICA", "7103244": "BIOCOMBUSTIVEIS", "7102103": "GESTAO AMBIENTAL", "7102266": "AGRICULTURA DE PRECISAO", "7102267": "TRATAMENTO DE ÁGUAS RESIDUÁRIAS", "7102268": "ZOOTECNIA DE PRECISAO", "7102269": "TECNOLOGIA DE SECAGEM E ARMAZENAMENTO", "7102270": "IRRIGACAO", "7101042": "INGLES I", "7102018": "INTRODUÇÃO À AGROECOLOGIA", "7102028": "CALCULO DIFERENCIAL E INTEGRAL III", "7102074": "MÁQUINAS AGRÍCOLAS", "7102233": "INTRODUÇÃO AO SENSORIAMENTO REMOTO", "7102275": "GESTAO DE RECURSOS HIDRICOS", "7102294": "ESTATÍSTICA EXPERIMENTAL", "7103013": "GENETICA MOLECULAR", "7101084": "LINGUA BRASILEIRA DE SINAIS-LIBRAS", "7101086": "ESPANHOL I", "7102076": "MANEJO E CONSERVACAO DO SOLO E DA AGUA", "7102276": "TEBIOS I(MANEJO CONT DA SALIN NA AGRIC)", "7102295": "TEBIOS - II(GENETICA MOLECULAR)", "7102296": "TE -II(FONTES ALTERNATIVAS DE ENERGIA)", "7102300": "TE-II(LOGISTICA REVERSA)", "7102301": "INSTRUMENTAÇÃO E EXPERIM.EM BIOSSISTEMAS", "7102302": "MANEJO INTEGRADO DE DOENCAS DE PLANTAS", "7102308": "TEEB(PRODUÇÃO E USO DE HORTALIÇAS)", "7102309": "TEEB(TRATAMENTO DE RESÍDUOS SÓLIDOS)", "7102310": "INDICADORES DE SUSTENTABILIDADE"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "7102002", "nome": "CALCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102003", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7102007", "nome": "INT. A ENG. DE BIOSSISTEMAS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103001", "nome": "BIOLOGIA CELULAR E MOLECULAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103004", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "7103005", "nome": "QUÍMICA EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7101006", "nome": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102009", "nome": "CALCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102002"]}, {"nivel": "2º Nível", "codigo": "7102010", "nome": "ÁLGEBRA LINEAR", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102012", "nome": "DESENHO TÉCNICO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7102027", "nome": "METODOLOGIA CIENTÍFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "7104011", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102002"]}, {"nivel": "3º Nível", "codigo": "7102014", "nome": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "7102020", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102009"]}, {"nivel": "3º Nível", "codigo": "7102021", "nome": "PROBABILIDADE E ESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102009"]}, {"nivel": "3º Nível", "codigo": "7102022", "nome": "BOTANICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "7102024", "nome": "TOPOGRAFIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102012"]}, {"nivel": "3º Nível", "codigo": "7102026", "nome": "INTRODUÇÃO À ZOOTECNIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "7103025", "nome": "QUÍMICA ANALÍTICA APLICADA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103004", "7103005"]}, {"nivel": "3º Nível", "codigo": "7104023", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104011"]}, {"nivel": "4º Nível", "codigo": "7102044", "nome": "MECÂNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104011"]}, {"nivel": "4º Nível", "codigo": "7102049", "nome": "GENESE E MORFOLOGIA DOS SOLOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "7102050", "nome": "TERMODINAMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102020", "7104023"]}, {"nivel": "4º Nível", "codigo": "7102051", "nome": "CIÊNCIAS DO AMBIENTE", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "7104029", "nome": "PROGRAMAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102003"]}, {"nivel": "4º Nível", "codigo": "7104045", "nome": "FÍSICA GERAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104023"]}, {"nivel": "4º Nível", "codigo": "7104046", "nome": "FÍSICA EXPERIMENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104023"]}, {"nivel": "5º Nível", "codigo": "7102048", "nome": "FÍSICO-QUÍMICA DOS SOLOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103025"]}, {"nivel": "5º Nível", "codigo": "7102065", "nome": "FENOMENOS DE TRANSPORTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102050"]}, {"nivel": "5º Nível", "codigo": "7102066", "nome": "INST. ELÉTRICAS E EFICIÊNCIA ENERGÉTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104045"]}, {"nivel": "5º Nível", "codigo": "7102067", "nome": "AGROMETEOROLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "7102068", "nome": "ANATOMIA VEGETAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102022"]}, {"nivel": "5º Nível", "codigo": "7102069", "nome": "LAB DE FENOMENOS DE TRANSPORTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102050"]}, {"nivel": "5º Nível", "codigo": "7103053", "nome": "BIOQUÍMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103001"]}, {"nivel": "6º Nível", "codigo": "7102062", "nome": "HIDRAULICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102065"]}, {"nivel": "6º Nível", "codigo": "7102080", "nome": "RESISTENCIA DOS MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102044"]}, {"nivel": "6º Nível", "codigo": "7102091", "nome": "MICROBIOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103001"]}, {"nivel": "6º Nível", "codigo": "7102092", "nome": "PRINCIPIOS DE BIOCLIMATOLOGIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102067"]}, {"nivel": "6º Nível", "codigo": "7102093", "nome": "GEOPROCESSAMENTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102024"]}, {"nivel": "6º Nível", "codigo": "7102094", "nome": "ADMINISTRAÇÃO E EMPREENDEDORISMO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "7102095", "nome": "OPERACOES UNITARIAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102065"]}, {"nivel": "6º Nível", "codigo": "7105137", "nome": "CIDADANIA E TRABALHO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "7102119", "nome": "GRANDES CULTIVOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102068"]}, {"nivel": "7º Nível", "codigo": "7102120", "nome": "HIDROLOGIA APLICADA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102024", "7102062"]}, {"nivel": "7º Nível", "codigo": "7102121", "nome": "CONSTRUCOES RURAIS E AMBIENCIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102012", "7102080"]}, {"nivel": "7º Nível", "codigo": "7102122", "nome": "LABORATÓRIO DE HIDRÁULICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102062"]}, {"nivel": "7º Nível", "codigo": "7104118", "nome": "AUTOMAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102066"]}, {"nivel": "7º Nível", "codigo": "7106132", "nome": "ECONOMIA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "7106138", "nome": "BIODIREITO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "7102243", "nome": "PROCESSAMENTO DE SINAIS EM BIOSSISTEMAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7104118"]}, {"nivel": "8º Nível", "codigo": "7102245", "nome": "QUALIDADE DE ÁGUA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103025", "7102091"]}, {"nivel": "8º Nível", "codigo": "7102246", "nome": "CONTROLE EM PROCESSOS AGROPECUARIOS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102026", "7102119"]}, {"nivel": "8º Nível", "codigo": "7102247", "nome": "CLIMATIZAÇÃO E AUTOM. EM AMB. PROTEGIDOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102067", "7104118"]}, {"nivel": "8º Nível", "codigo": "7102248", "nome": "DRENAGEM AGRICOLA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102120"]}, {"nivel": "8º Nível", "codigo": "7102249", "nome": "PERÍCIA TÉCNICA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "7103244", "nome": "BIOCOMBUSTIVEIS", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7103025"]}, {"nivel": "9º Nível", "codigo": "7102103", "nome": "GESTAO AMBIENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102051"]}, {"nivel": "9º Nível", "codigo": "7102266", "nome": "AGRICULTURA DE PRECISAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102119", "7102093"]}, {"nivel": "9º Nível", "codigo": "7102267", "nome": "TRATAMENTO DE ÁGUAS RESIDUÁRIAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102245"]}, {"nivel": "9º Nível", "codigo": "7102268", "nome": "ZOOTECNIA DE PRECISAO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102026"]}, {"nivel": "9º Nível", "codigo": "7102269", "nome": "TECNOLOGIA DE SECAGEM E ARMAZENAMENTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102119"]}, {"nivel": "9º Nível", "codigo": "7102270", "nome": "IRRIGACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["7102120"]}, {"nivel": "10º Nível", "codigo": "7102284", "nome": "ESTAGIO SUPERVISIONADO", "ch": "180\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "7102285", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "7102286", "nome": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}];
+  const codigoToNome = {"7102002": "CALCULO DIFERENCIAL E INTEGRAL I", "7102003": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "7102007": "INT. A ENG. DE BIOSSISTEMAS", "7103001": "BIOLOGIA CELULAR E MOLECULAR", "7103004": "QUÍMICA GERAL", "7103005": "QUÍMICA EXPERIMENTAL", "7101006": "PRAT. DE LEITURA E PRODUCAO DE TEXTOS", "7102009": "CALCULO DIFERENCIAL E INTEGRAL II", "7102010": "ÁLGEBRA LINEAR", "7102012": "DESENHO TÉCNICO", "7102027": "METODOLOGIA CIENTÍFICA", "7104011": "FÍSICA GERAL I", "7102014": "INTRODUÇÃO À CIÊNCIA DOS MATERIAIS", "7102020": "EQUACOES DIFERENCIAIS LINEARES", "7102021": "PROBABILIDADE E ESTATÍSTICA", "7102022": "BOTANICA", "7102024": "TOPOGRAFIA", "7102026": "INTRODUÇÃO À ZOOTECNIA", "7103025": "QUÍMICA ANALÍTICA APLICADA", "7104023": "FÍSICA GERAL II", "7102044": "MECÂNICA GERAL", "7102049": "GENESE E MORFOLOGIA DOS SOLOS", "7102050": "TERMODINAMICA", "7102051": "CIÊNCIAS DO AMBIENTE", "7104029": "PROGRAMAÇÃO", "7104045": "FÍSICA GERAL III", "7104046": "FÍSICA EXPERIMENTAL", "7102048": "FÍSICO-QUÍMICA DOS SOLOS", "7102065": "FENOMENOS DE TRANSPORTE", "7102066": "INST. ELÉTRICAS E EFICIÊNCIA ENERGÉTICA", "7102067": "AGROMETEOROLOGIA", "7102068": "ANATOMIA VEGETAL", "7102069": "LAB DE FENOMENOS DE TRANSPORTE", "7103053": "BIOQUÍMICA", "7102062": "HIDRAULICA", "7102080": "RESISTENCIA DOS MATERIAIS", "7102091": "MICROBIOLOGIA", "7102092": "PRINCIPIOS DE BIOCLIMATOLOGIA", "7102093": "GEOPROCESSAMENTO", "7102094": "ADMINISTRAÇÃO E EMPREENDEDORISMO", "7102095": "OPERACOES UNITARIAS", "7105137": "CIDADANIA E TRABALHO", "7102119": "GRANDES CULTIVOS", "7102120": "HIDROLOGIA APLICADA", "7102121": "CONSTRUCOES RURAIS E AMBIENCIA", "7102122": "LABORATÓRIO DE HIDRÁULICA", "7104118": "AUTOMAÇÃO", "7106132": "ECONOMIA", "7106138": "BIODIREITO", "7102243": "PROCESSAMENTO DE SINAIS EM BIOSSISTEMAS", "7102245": "QUALIDADE DE ÁGUA", "7102246": "CONTROLE EM PROCESSOS AGROPECUARIOS", "7102247": "CLIMATIZAÇÃO E AUTOM. EM AMB. PROTEGIDOS", "7102248": "DRENAGEM AGRICOLA", "7102249": "PERÍCIA TÉCNICA", "7103244": "BIOCOMBUSTIVEIS", "7102103": "GESTAO AMBIENTAL", "7102266": "AGRICULTURA DE PRECISAO", "7102267": "TRATAMENTO DE ÁGUAS RESIDUÁRIAS", "7102268": "ZOOTECNIA DE PRECISAO", "7102269": "TECNOLOGIA DE SECAGEM E ARMAZENAMENTO", "7102270": "IRRIGACAO", "7102284": "ESTAGIO SUPERVISIONADO", "7102285": "TRABALHO DE CONCLUSAO DE CURSO", "7102286": "ATIVIDADES COMPLEMENTARES FLEXIVEIS", "7101042": "INGLES I", "7102018": "INTRODUÇÃO À AGROECOLOGIA", "7102028": "CALCULO DIFERENCIAL E INTEGRAL III", "7102074": "MÁQUINAS AGRÍCOLAS", "7102233": "INTRODUÇÃO AO SENSORIAMENTO REMOTO", "7102275": "GESTAO DE RECURSOS HIDRICOS", "7102294": "ESTATÍSTICA EXPERIMENTAL", "7103013": "GENETICA MOLECULAR", "7101084": "LINGUA BRASILEIRA DE SINAIS-LIBRAS", "7101086": "ESPANHOL I", "7102076": "MANEJO E CONSERVACAO DO SOLO E DA AGUA", "7102276": "TEBIOS I(MANEJO CONT DA SALIN NA AGRIC)", "7102295": "TEBIOS - II(GENETICA MOLECULAR)", "7102296": "TE -II(FONTES ALTERNATIVAS DE ENERGIA)", "7102300": "TE-II(LOGISTICA REVERSA)", "7102301": "INSTRUMENTAÇÃO E EXPERIM.EM BIOSSISTEMAS", "7102302": "MANEJO INTEGRADO DE DOENCAS DE PLANTAS", "7102308": "TEEB(PRODUÇÃO E USO DE HORTALIÇAS)", "7102309": "TEEB(TRATAMENTO DE RESÍDUOS SÓLIDOS)", "7102310": "INDICADORES DE SUSTENTABILIDADE"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -714,7 +717,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,200 +404,200 @@
           <tr>
               <td>1307169</td>
               <td>LÍNGUA PORTUGUESA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307332</td>
               <td>LIBRAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307425</td>
               <td>INGLÊS A1</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1502015</td>
               <td>SISTEMATIZACAO DE TERRAS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>SISTEMAS DE IRRIGACAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1502058</td>
               <td>SOLOS AFETADOS POR SAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SOLOS, SISTEMAS DE PRODUCAO VEGETAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1502166</td>
               <td>POLUICAO AMBIENTAL</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>FUNDAMENTOS DE IMPACTOS AMBIENTAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1502182</td>
               <td>FUNDAMENTOS DE IMPACTOS AMBIENTAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1502184</td>
               <td>FERTILIDADE DOS SOLOS E ADUBACAO</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>SOLOS</td>
               <td></td>
           </tr>
           <tr>
               <td>1502185</td>
               <td>MANEJO DE ÁGUA E SOLOS AGRÍCOLAS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>SISTEMAS DE IRRIGACAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1502186</td>
               <td>CULTURAS IRRIGADAS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>SISTEMAS DE PRODUCAO VEGETAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1502190</td>
               <td>FISIOLOGIA POS-COLHEITA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>ARMAZENAMENTO DE PRODUTOS AGRICOLAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1502196</td>
               <td>PROJETO DE SILOS VERTICAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECÂNICA DOS MATERIAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1502200</td>
               <td>LEGISLACAO AMBIENTAL</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>GESTÃO AMBIENTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1502202</td>
               <td>ECOLOGIA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1502249</td>
               <td>OFICINA E FERRAMENTAS MECÂNICAS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1502250</td>
-              <td>PRINC DE INSTRUM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>PRINC DE INSTRUM,AQUISIÇÃO E PROC DE SIN</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MECÂNICA DOS MATERIAIS</td>
               <td></td>
           </tr>
           <tr>
               <td>1502251</td>
               <td>PROPRIEDADE INTELECTUAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1502252</td>
               <td>PRODUÇÃO DE ANIMAIS EM CLIMA QUENTE</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SISTEMAS DE PRODUCAO ANIMAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1502253</td>
               <td>DESASTRES AMBIENTAIS</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>AEROFOTOGRAMETRIA E SENSORIAMENTO REMOTO</td>
               <td></td>
           </tr>
           <tr>
               <td>1502254</td>
               <td>COMPUTAÇÃO APLICADA A IRRIGAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SISTEMAS DE IRRIGACAO</td>
               <td></td>
           </tr>
           <tr>
               <td>1502255</td>
               <td>PRODUÇÃO E TECNOLOGIA DE SEMENTES</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td>ARMAZENAMENTO DE PRODUTOS AGRICOLAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1502256</td>
               <td>TRATAMENTO DE RESÍDUOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>GESTÃO AMBIENTAL</td>
               <td></td>
           </tr>
           <tr>
               <td>1502257</td>
               <td>SECAGEM DE PRODUTOS AGRÍCOLAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ARMAZENAMENTO DE PRODUTOS AGRICOLAS, TERMODINAMICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1502266</td>
               <td>TEEA(APROVEITAMENTO DE RES ORG NA PROD A</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1502267</td>
               <td>TEEA(AGRICULTURA FAMILIAR E ENG AGRÍCOLA</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
@@ -641,8 +644,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305148", "nome": "SOCIOLOGIA E ANTROPOLOGIA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1502008", "nome": "BIOLOGIA GERAL", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1502046", "nome": "INT A ENGENHARIA AGRICOLA", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1107255", "nome": "LABORATÓRIO DE QUÍMICA GERAL", "ch": "30h", "preReqs": ["1107232"]}, {"nivel": "2º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109126"]}, {"nivel": "2º Nível", "codigo": "1113045", "nome": "DESENHO TÉCNICO INSTRUMENTAL", "ch": "60h", "preReqs": ["1113019"]}, {"nivel": "2º Nível", "codigo": "1502150", "nome": "ECONOMIA E AGRONEGOCIO", "ch": "45h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1502230", "nome": "SOLOS", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "3º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "3º Nível", "codigo": "1108099", "nome": "MECÂNICA GERAL", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "3º Nível", "codigo": "1502148", "nome": "FÍSICA DO SOLO", "ch": "45h", "preReqs": ["1502230"]}, {"nivel": "3º Nível", "codigo": "1502205", "nome": "METEOR. E BIOCLIMATOLOGIA AGRICOLA", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1502228", "nome": "METODOLOGIA E TÉCNICAS DE PESQUISA", "ch": "30h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1502231", "nome": "TOPOGRAFIA APLICADA", "ch": "45h", "preReqs": ["1113045"]}, {"nivel": "3º Nível", "codigo": "1502260", "nome": "FENÔMENOS DE TRANSPORTE", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "4º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["1109131", "1109049"]}, {"nivel": "4º Nível", "codigo": "1502149", "nome": "SISTEMAS DE PRODUCAO VEGETAL", "ch": "60h", "preReqs": ["1502008"]}, {"nivel": "4º Nível", "codigo": "1502177", "nome": "ESTATÍSTICA E EXPERIMENTAÇÃO AGRÍCOLA", "ch": "60h", "preReqs": ["1109131"]}, {"nivel": "4º Nível", "codigo": "1502232", "nome": "AEROFOTOGRAMETRIA E SENSORIAMENTO REMOTO", "ch": "60h", "preReqs": ["1502231"]}, {"nivel": "4º Nível", "codigo": "1502259", "nome": "MECÂNICA DOS MATERIAIS", "ch": "60h", "preReqs": ["1108099"]}, {"nivel": "4º Nível", "codigo": "1502261", "nome": "HIDRÁULICA", "ch": "60h", "preReqs": ["1502260"]}, {"nivel": "4º Nível", "codigo": "1502262", "nome": "HIDRÁULICA EXPERIMENTAL", "ch": "30h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1502016", "nome": "ELEMENTOS DE MÁQUINAS AGRÍCOLAS", "ch": "60h", "preReqs": ["1502259"]}, {"nivel": "5º Nível", "codigo": "1502091", "nome": "SISTEMAS DE PRODUCAO ANIMAL", "ch": "60h", "preReqs": ["1502008"]}, {"nivel": "5º Nível", "codigo": "1502128", "nome": "TERMODINAMICA", "ch": "60h", "preReqs": ["1109126", "1108081"]}, {"nivel": "5º Nível", "codigo": "1502146", "nome": "GEOPROCESSAMENTO", "ch": "45h", "preReqs": ["1502232"]}, {"nivel": "5º Nível", "codigo": "1502229", "nome": "INTRODUÇÃO À PROGRAMAÇÃO COMPUTACIONAL", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "1502233", "nome": "MECÂNICA DOS SOLOS TEOR E EXPERIMENTAL", "ch": "60h", "preReqs": ["1502259"]}, {"nivel": "5º Nível", "codigo": "1502263", "nome": "PROPRIEDADES FÍSICAS DE MAT BIOLÓGICOS", "ch": "60h", "preReqs": ["1502260"]}, {"nivel": "6º Nível", "codigo": "1502151", "nome": "ADM. RURAL E EMPREENDEDORISMO", "ch": "45h", "preReqs": ["1502150"]}, {"nivel": "6º Nível", "codigo": "1502158", "nome": "MATERIAIS E TÉCNICAS DE CONSTRUÇÃO", "ch": "45h", "preReqs": ["1502259"]}, {"nivel": "6º Nível", "codigo": "1502162", "nome": "ARMAZENAMENTO DE PRODUTOS AGRICOLAS", "ch": "45h", "preReqs": ["1502263"]}, {"nivel": "6º Nível", "codigo": "1502164", "nome": "INSTALACOES ELETRICAS", "ch": "45h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "1502234", "nome": "MANEJO E CONSERVAÇÃO DO SOLO E ÁGUA", "ch": "60h", "preReqs": ["1502148"]}, {"nivel": "6º Nível", "codigo": "1502235", "nome": "MECANIZAÇÃO AGRÍCOLA", "ch": "60h", "preReqs": ["1502016"]}, {"nivel": "6º Nível", "codigo": "1502264", "nome": "HIDROLOGIA APLICADA", "ch": "60h", "preReqs": ["1502205"]}, {"nivel": "7º Nível", "codigo": "1502095", "nome": "SISTEMAS DE IRRIGACAO", "ch": "60h", "preReqs": ["1502261"]}, {"nivel": "7º Nível", "codigo": "1502125", "nome": "MECÂNICA AGRÍCOLA", "ch": "60h", "preReqs": ["1502235"]}, {"nivel": "7º Nível", "codigo": "1502165", "nome": "FONTES RENOVAVEIS DE ENERGIA", "ch": "45h", "preReqs": ["1502164"]}, {"nivel": "7º Nível", "codigo": "1502236", "nome": "ESTRUTURAS PARA EDIFICAÇÕES RURAIS", "ch": "60h", "preReqs": ["1502158"]}, {"nivel": "7º Nível", "codigo": "1502241", "nome": "BARRAGENS E OBRAS HIDRÍCAS", "ch": "60h", "preReqs": ["1502233"]}, {"nivel": "7º Nível", "codigo": "1502242", "nome": "PROJETO DE ELETRIFICAÇÃO RURAL", "ch": "45h", "preReqs": ["1502164"]}, {"nivel": "7º Nível", "codigo": "1502265", "nome": "GESTÃO AMBIENTAL", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "1502157", "nome": "AUTOM. E CONTROLE DE SISTEMAS AGRICOLAS", "ch": "45h", "preReqs": ["1502164"]}, {"nivel": "8º Nível", "codigo": "1502169", "nome": "PROJETO DE IMPACTOS AMBIENTAIS", "ch": "45h", "preReqs": ["1502265"]}, {"nivel": "8º Nível", "codigo": "1502237", "nome": "DRENAGEM AGRÍCOLA", "ch": "60h", "preReqs": ["1502233", "1502095"]}, {"nivel": "8º Nível", "codigo": "1502238", "nome": "PROCESSAMENTO DE PRODUTOS AGRÍCOLAS", "ch": "60h", "preReqs": ["1502162"]}, {"nivel": "8º Nível", "codigo": "1502243", "nome": "RECUPERAÇÃO E MANEJO DE ÁREAS DEGRADADAS", "ch": "60h", "preReqs": ["1502234"]}, {"nivel": "8º Nível", "codigo": "1502244", "nome": "PROJETO DE CONSTRUÇÕES RURAIS", "ch": "45h", "preReqs": ["1502236"]}, {"nivel": "8º Nível", "codigo": "1502245", "nome": "PROJETO DE MÁQUINAS AGRÍCOLAS", "ch": "45h", "preReqs": ["1502125"]}, {"nivel": "9º Nível", "codigo": "1502152", "nome": "COMUNICAÇÃO E EXTENSÃO RURAL", "ch": "60h", "preReqs": ["1502151"]}, {"nivel": "9º Nível", "codigo": "1502239", "nome": "AVALIAÇÃO E PERÍCIAS RURAIS", "ch": "45h", "preReqs": []}, {"nivel": "9º Nível", "codigo": "1502240", "nome": "SANEAMENTO AMBIENTAL", "ch": "30h", "preReqs": ["1502237"]}, {"nivel": "9º Nível", "codigo": "1502246", "nome": "PROJETO DE ARMAZENAGEM AGRÍCOLA", "ch": "45h", "preReqs": ["1502162"]}, {"nivel": "9º Nível", "codigo": "1502247", "nome": "PROJETO DE IRRIGAÇÃO E DRENAGEM", "ch": "45h", "preReqs": ["1502237"]}, {"nivel": "9º Nível", "codigo": "1502248", "nome": "SEGURANÇA DO TRABALHO RURAL", "ch": "30h", "preReqs": []}];
-  const codigoToNome = {"1107232": "QUÍMICA GERAL", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1113019": "EXPRESSAO GRAFICA", "1305148": "SOCIOLOGIA E ANTROPOLOGIA", "1502008": "BIOLOGIA GERAL", "1502046": "INT A ENGENHARIA AGRICOLA", "1107255": "LABORATÓRIO DE QUÍMICA GERAL", "1108030": "FÍSICA GERAL I", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1113045": "DESENHO TÉCNICO INSTRUMENTAL", "1502150": "ECONOMIA E AGRONEGOCIO", "1502230": "SOLOS", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1108099": "MECÂNICA GERAL", "1502148": "FÍSICA DO SOLO", "1502205": "METEOR. E BIOCLIMATOLOGIA AGRICOLA", "1502228": "METODOLOGIA E TÉCNICAS DE PESQUISA", "1502231": "TOPOGRAFIA APLICADA", "1502260": "FENÔMENOS DE TRANSPORTE", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1502149": "SISTEMAS DE PRODUCAO VEGETAL", "1502177": "ESTATÍSTICA E EXPERIMENTAÇÃO AGRÍCOLA", "1502232": "AEROFOTOGRAMETRIA E SENSORIAMENTO REMOTO", "1502259": "MECÂNICA DOS MATERIAIS", "1502261": "HIDRÁULICA", "1502262": "HIDRÁULICA EXPERIMENTAL", "1502016": "ELEMENTOS DE MÁQUINAS AGRÍCOLAS", "1502091": "SISTEMAS DE PRODUCAO ANIMAL", "1502128": "TERMODINAMICA", "1502146": "GEOPROCESSAMENTO", "1502229": "INTRODUÇÃO À PROGRAMAÇÃO COMPUTACIONAL", "1502233": "MECÂNICA DOS SOLOS TEOR E EXPERIMENTAL", "1502263": "PROPRIEDADES FÍSICAS DE MAT BIOLÓGICOS", "1502151": "ADM. RURAL E EMPREENDEDORISMO", "1502158": "MATERIAIS E TÉCNICAS DE CONSTRUÇÃO", "1502162": "ARMAZENAMENTO DE PRODUTOS AGRICOLAS", "1502164": "INSTALACOES ELETRICAS", "1502234": "MANEJO E CONSERVAÇÃO DO SOLO E ÁGUA", "1502235": "MECANIZAÇÃO AGRÍCOLA", "1502264": "HIDROLOGIA APLICADA", "1502095": "SISTEMAS DE IRRIGACAO", "1502125": "MECÂNICA AGRÍCOLA", "1502165": "FONTES RENOVAVEIS DE ENERGIA", "1502236": "ESTRUTURAS PARA EDIFICAÇÕES RURAIS", "1502241": "BARRAGENS E OBRAS HIDRÍCAS", "1502242": "PROJETO DE ELETRIFICAÇÃO RURAL", "1502265": "GESTÃO AMBIENTAL", "1502157": "AUTOM. E CONTROLE DE SISTEMAS AGRICOLAS", "1502169": "PROJETO DE IMPACTOS AMBIENTAIS", "1502237": "DRENAGEM AGRÍCOLA", "1502238": "PROCESSAMENTO DE PRODUTOS AGRÍCOLAS", "1502243": "RECUPERAÇÃO E MANEJO DE ÁREAS DEGRADADAS", "1502244": "PROJETO DE CONSTRUÇÕES RURAIS", "1502245": "PROJETO DE MÁQUINAS AGRÍCOLAS", "1502152": "COMUNICAÇÃO E EXTENSÃO RURAL", "1502239": "AVALIAÇÃO E PERÍCIAS RURAIS", "1502240": "SANEAMENTO AMBIENTAL", "1502246": "PROJETO DE ARMAZENAGEM AGRÍCOLA", "1502247": "PROJETO DE IRRIGAÇÃO E DRENAGEM", "1502248": "SEGURANÇA DO TRABALHO RURAL", "1307169": "LÍNGUA PORTUGUESA", "1307332": "LIBRAS", "1307425": "INGLÊS A1", "1502015": "SISTEMATIZACAO DE TERRAS", "1502058": "SOLOS AFETADOS POR SAIS", "1502166": "POLUICAO AMBIENTAL", "1502182": "FUNDAMENTOS DE IMPACTOS AMBIENTAIS", "1502184": "FERTILIDADE DOS SOLOS E ADUBACAO", "1502185": "MANEJO DE ÁGUA E SOLOS AGRÍCOLAS", "1502186": "CULTURAS IRRIGADAS", "1502190": "FISIOLOGIA POS-COLHEITA", "1502196": "PROJETO DE SILOS VERTICAIS", "1502200": "LEGISLACAO AMBIENTAL", "1502202": "ECOLOGIA", "1502249": "OFICINA E FERRAMENTAS MECÂNICAS", "1502250": "PRINC DE INSTRUM", "1502251": "PROPRIEDADE INTELECTUAL", "1502252": "PRODUÇÃO DE ANIMAIS EM CLIMA QUENTE", "1502253": "DESASTRES AMBIENTAIS", "1502254": "COMPUTAÇÃO APLICADA A IRRIGAÇÃO", "1502255": "PRODUÇÃO E TECNOLOGIA DE SEMENTES", "1502256": "TRATAMENTO DE RESÍDUOS", "1502257": "SECAGEM DE PRODUTOS AGRÍCOLAS", "1502266": "TEEA(APROVEITAMENTO DE RES ORG NA PROD A", "1502267": "TEEA(AGRICULTURA FAMILIAR E ENG AGRÍCOLA"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1107232", "nome": "QUÍMICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1305148", "nome": "SOCIOLOGIA E ANTROPOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1502008", "nome": "BIOLOGIA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1502046", "nome": "INT A ENGENHARIA AGRICOLA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1107255", "nome": "LABORATÓRIO DE QUÍMICA GERAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1107232"]}, {"nivel": "2º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035"]}, {"nivel": "2º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126"]}, {"nivel": "2º Nível", "codigo": "1113045", "nome": "DESENHO TÉCNICO INSTRUMENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113019"]}, {"nivel": "2º Nível", "codigo": "1502150", "nome": "ECONOMIA E AGRONEGOCIO", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1502230", "nome": "SOLOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "3º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "3º Nível", "codigo": "1108099", "nome": "MECÂNICA GERAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "3º Nível", "codigo": "1502148", "nome": "FÍSICA DO SOLO", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502230"]}, {"nivel": "3º Nível", "codigo": "1502205", "nome": "METEOR. E BIOCLIMATOLOGIA AGRICOLA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1502228", "nome": "METODOLOGIA E TÉCNICAS DE PESQUISA", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1502231", "nome": "TOPOGRAFIA APLICADA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113045"]}, {"nivel": "3º Nível", "codigo": "1502260", "nome": "FENÔMENOS DE TRANSPORTE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "4º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109049"]}, {"nivel": "4º Nível", "codigo": "1502149", "nome": "SISTEMAS DE PRODUCAO VEGETAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502008"]}, {"nivel": "4º Nível", "codigo": "1502177", "nome": "ESTATÍSTICA E EXPERIMENTAÇÃO AGRÍCOLA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131"]}, {"nivel": "4º Nível", "codigo": "1502232", "nome": "AEROFOTOGRAMETRIA E SENSORIAMENTO REMOTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502231"]}, {"nivel": "4º Nível", "codigo": "1502259", "nome": "MECÂNICA DOS MATERIAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108099"]}, {"nivel": "4º Nível", "codigo": "1502261", "nome": "HIDRÁULICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502260"]}, {"nivel": "4º Nível", "codigo": "1502262", "nome": "HIDRÁULICA EXPERIMENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1502016", "nome": "ELEMENTOS DE MÁQUINAS AGRÍCOLAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502259"]}, {"nivel": "5º Nível", "codigo": "1502091", "nome": "SISTEMAS DE PRODUCAO ANIMAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502008"]}, {"nivel": "5º Nível", "codigo": "1502128", "nome": "TERMODINAMICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126", "1108081"]}, {"nivel": "5º Nível", "codigo": "1502146", "nome": "GEOPROCESSAMENTO", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502232"]}, {"nivel": "5º Nível", "codigo": "1502229", "nome": "INTRODUÇÃO À PROGRAMAÇÃO COMPUTACIONAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "1502233", "nome": "MECÂNICA DOS SOLOS TEOR E EXPERIMENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502259"]}, {"nivel": "5º Nível", "codigo": "1502263", "nome": "PROPRIEDADES FÍSICAS DE MAT BIOLÓGICOS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502260"]}, {"nivel": "6º Nível", "codigo": "1502151", "nome": "ADM. RURAL E EMPREENDEDORISMO", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502150"]}, {"nivel": "6º Nível", "codigo": "1502158", "nome": "MATERIAIS E TÉCNICAS DE CONSTRUÇÃO", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502259"]}, {"nivel": "6º Nível", "codigo": "1502162", "nome": "ARMAZENAMENTO DE PRODUTOS AGRICOLAS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502263"]}, {"nivel": "6º Nível", "codigo": "1502164", "nome": "INSTALACOES ELETRICAS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "1502234", "nome": "MANEJO E CONSERVAÇÃO DO SOLO E ÁGUA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502148"]}, {"nivel": "6º Nível", "codigo": "1502235", "nome": "MECANIZAÇÃO AGRÍCOLA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502016"]}, {"nivel": "6º Nível", "codigo": "1502264", "nome": "HIDROLOGIA APLICADA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502205"]}, {"nivel": "7º Nível", "codigo": "1502095", "nome": "SISTEMAS DE IRRIGACAO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502261"]}, {"nivel": "7º Nível", "codigo": "1502125", "nome": "MECÂNICA AGRÍCOLA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502235"]}, {"nivel": "7º Nível", "codigo": "1502165", "nome": "FONTES RENOVAVEIS DE ENERGIA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502164"]}, {"nivel": "7º Nível", "codigo": "1502236", "nome": "ESTRUTURAS PARA EDIFICAÇÕES RURAIS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502158"]}, {"nivel": "7º Nível", "codigo": "1502241", "nome": "BARRAGENS E OBRAS HIDRÍCAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502233"]}, {"nivel": "7º Nível", "codigo": "1502242", "nome": "PROJETO DE ELETRIFICAÇÃO RURAL", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502164"]}, {"nivel": "7º Nível", "codigo": "1502265", "nome": "GESTÃO AMBIENTAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "1502157", "nome": "AUTOM. E CONTROLE DE SISTEMAS AGRICOLAS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502164"]}, {"nivel": "8º Nível", "codigo": "1502169", "nome": "PROJETO DE IMPACTOS AMBIENTAIS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502265"]}, {"nivel": "8º Nível", "codigo": "1502237", "nome": "DRENAGEM AGRÍCOLA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502233", "1502095"]}, {"nivel": "8º Nível", "codigo": "1502238", "nome": "PROCESSAMENTO DE PRODUTOS AGRÍCOLAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502162"]}, {"nivel": "8º Nível", "codigo": "1502243", "nome": "RECUPERAÇÃO E MANEJO DE ÁREAS DEGRADADAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502234"]}, {"nivel": "8º Nível", "codigo": "1502244", "nome": "PROJETO DE CONSTRUÇÕES RURAIS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502236"]}, {"nivel": "8º Nível", "codigo": "1502245", "nome": "PROJETO DE MÁQUINAS AGRÍCOLAS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502125"]}, {"nivel": "9º Nível", "codigo": "1502175", "nome": "ESTAGIO SUPERVISIONADO", "ch": "180\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1502152", "nome": "COMUNICAÇÃO E EXTENSÃO RURAL", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502151"]}, {"nivel": "9º Nível", "codigo": "1502239", "nome": "AVALIAÇÃO E PERÍCIAS RURAIS", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "9º Nível", "codigo": "1502240", "nome": "SANEAMENTO AMBIENTAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502237"]}, {"nivel": "9º Nível", "codigo": "1502246", "nome": "PROJETO DE ARMAZENAGEM AGRÍCOLA", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502162"]}, {"nivel": "9º Nível", "codigo": "1502247", "nome": "PROJETO DE IRRIGAÇÃO E DRENAGEM", "ch": "45\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1502237"]}, {"nivel": "9º Nível", "codigo": "1502248", "nome": "SEGURANÇA DO TRABALHO RURAL", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "10º Nível", "codigo": "1502176", "nome": "TRABALHO DE CONCLUSAO DE CURSO", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}];
+  const codigoToNome = {"1107232": "QUÍMICA GERAL", "1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1113019": "EXPRESSAO GRAFICA", "1305148": "SOCIOLOGIA E ANTROPOLOGIA", "1502008": "BIOLOGIA GERAL", "1502046": "INT A ENGENHARIA AGRICOLA", "1107255": "LABORATÓRIO DE QUÍMICA GERAL", "1108030": "FÍSICA GERAL I", "1109049": "ÁLGEBRA LINEAR I", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1113045": "DESENHO TÉCNICO INSTRUMENTAL", "1502150": "ECONOMIA E AGRONEGOCIO", "1502230": "SOLOS", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1108099": "MECÂNICA GERAL", "1502148": "FÍSICA DO SOLO", "1502205": "METEOR. E BIOCLIMATOLOGIA AGRICOLA", "1502228": "METODOLOGIA E TÉCNICAS DE PESQUISA", "1502231": "TOPOGRAFIA APLICADA", "1502260": "FENÔMENOS DE TRANSPORTE", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1502149": "SISTEMAS DE PRODUCAO VEGETAL", "1502177": "ESTATÍSTICA E EXPERIMENTAÇÃO AGRÍCOLA", "1502232": "AEROFOTOGRAMETRIA E SENSORIAMENTO REMOTO", "1502259": "MECÂNICA DOS MATERIAIS", "1502261": "HIDRÁULICA", "1502262": "HIDRÁULICA EXPERIMENTAL", "1502016": "ELEMENTOS DE MÁQUINAS AGRÍCOLAS", "1502091": "SISTEMAS DE PRODUCAO ANIMAL", "1502128": "TERMODINAMICA", "1502146": "GEOPROCESSAMENTO", "1502229": "INTRODUÇÃO À PROGRAMAÇÃO COMPUTACIONAL", "1502233": "MECÂNICA DOS SOLOS TEOR E EXPERIMENTAL", "1502263": "PROPRIEDADES FÍSICAS DE MAT BIOLÓGICOS", "1502151": "ADM. RURAL E EMPREENDEDORISMO", "1502158": "MATERIAIS E TÉCNICAS DE CONSTRUÇÃO", "1502162": "ARMAZENAMENTO DE PRODUTOS AGRICOLAS", "1502164": "INSTALACOES ELETRICAS", "1502234": "MANEJO E CONSERVAÇÃO DO SOLO E ÁGUA", "1502235": "MECANIZAÇÃO AGRÍCOLA", "1502264": "HIDROLOGIA APLICADA", "1502095": "SISTEMAS DE IRRIGACAO", "1502125": "MECÂNICA AGRÍCOLA", "1502165": "FONTES RENOVAVEIS DE ENERGIA", "1502236": "ESTRUTURAS PARA EDIFICAÇÕES RURAIS", "1502241": "BARRAGENS E OBRAS HIDRÍCAS", "1502242": "PROJETO DE ELETRIFICAÇÃO RURAL", "1502265": "GESTÃO AMBIENTAL", "1502157": "AUTOM. E CONTROLE DE SISTEMAS AGRICOLAS", "1502169": "PROJETO DE IMPACTOS AMBIENTAIS", "1502237": "DRENAGEM AGRÍCOLA", "1502238": "PROCESSAMENTO DE PRODUTOS AGRÍCOLAS", "1502243": "RECUPERAÇÃO E MANEJO DE ÁREAS DEGRADADAS", "1502244": "PROJETO DE CONSTRUÇÕES RURAIS", "1502245": "PROJETO DE MÁQUINAS AGRÍCOLAS", "1502175": "ESTAGIO SUPERVISIONADO", "1502152": "COMUNICAÇÃO E EXTENSÃO RURAL", "1502239": "AVALIAÇÃO E PERÍCIAS RURAIS", "1502240": "SANEAMENTO AMBIENTAL", "1502246": "PROJETO DE ARMAZENAGEM AGRÍCOLA", "1502247": "PROJETO DE IRRIGAÇÃO E DRENAGEM", "1502248": "SEGURANÇA DO TRABALHO RURAL", "1502176": "TRABALHO DE CONCLUSAO DE CURSO", "1307169": "LÍNGUA PORTUGUESA", "1307332": "LIBRAS", "1307425": "INGLÊS A1", "1502015": "SISTEMATIZACAO DE TERRAS", "1502058": "SOLOS AFETADOS POR SAIS", "1502166": "POLUICAO AMBIENTAL", "1502182": "FUNDAMENTOS DE IMPACTOS AMBIENTAIS", "1502184": "FERTILIDADE DOS SOLOS E ADUBACAO", "1502185": "MANEJO DE ÁGUA E SOLOS AGRÍCOLAS", "1502186": "CULTURAS IRRIGADAS", "1502190": "FISIOLOGIA POS-COLHEITA", "1502196": "PROJETO DE SILOS VERTICAIS", "1502200": "LEGISLACAO AMBIENTAL", "1502202": "ECOLOGIA", "1502249": "OFICINA E FERRAMENTAS MECÂNICAS", "1502250": "PRINC DE INSTRUM,AQUISIÇÃO E PROC DE SIN", "1502251": "PROPRIEDADE INTELECTUAL", "1502252": "PRODUÇÃO DE ANIMAIS EM CLIMA QUENTE", "1502253": "DESASTRES AMBIENTAIS", "1502254": "COMPUTAÇÃO APLICADA A IRRIGAÇÃO", "1502255": "PRODUÇÃO E TECNOLOGIA DE SEMENTES", "1502256": "TRATAMENTO DE RESÍDUOS", "1502257": "SECAGEM DE PRODUTOS AGRÍCOLAS", "1502266": "TEEA(APROVEITAMENTO DE RES ORG NA PROD A", "1502267": "TEEA(AGRICULTURA FAMILIAR E ENG AGRÍCOLA"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -754,7 +757,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

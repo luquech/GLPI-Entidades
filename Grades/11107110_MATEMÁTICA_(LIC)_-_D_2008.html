@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,240 +404,240 @@
           <tr>
               <td>1109163</td>
               <td>FUNDAMENTOS DA GEOMETRIA ESPACIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FUNDAMENTOS DA GEOM EUCLIDIANA PLANA, 1109058</td>
               <td></td>
           </tr>
           <tr>
               <td>1109175</td>
               <td>MODELAGEM MATEMÁTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>MATEM P/ O ENS MEDIO I:UMA ABORD CRITICA, 1109123</td>
               <td></td>
           </tr>
           <tr>
               <td>1109176</td>
               <td>MATEM P/ O ENS MEDIO II:UMA ABORD CRITIC</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1109177</td>
               <td>TÓP. ESP. DE HISTÓRIA DA MATEMÁTICA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301014</td>
               <td>ADMINISTRAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1301049</td>
               <td>CONTABILIDADE E ANÁLISE DE BALANÇO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304058</td>
               <td>PSICOLOGIA EDUCAC/ADOLESCENCIA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304113</td>
               <td>SOCIOLOGIA DA EDUCAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304143</td>
               <td>POLÍTICA DA EDUCAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1108038</td>
               <td>MECÂNICA CLÁSSICA I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FÍSICA GERAL III, 1108035</td>
               <td></td>
           </tr>
           <tr>
               <td>1108100</td>
               <td>FÍSICA GERAL III</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>FÍSICA GERAL II</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL III</td>
           </tr>
           <tr>
               <td>1108101</td>
               <td>FÍSICA EXPERIMENTAL II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1109021</td>
               <td>ANÁLISE I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL III, FUNDAMENTOS DE MATEMÁTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1109022</td>
               <td>ANÁLISE II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANÁLISE I</td>
               <td></td>
           </tr>
           <tr>
               <td>1109023</td>
               <td>ANÁLISE III</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANÁLISE II</td>
               <td></td>
           </tr>
           <tr>
               <td>1109026</td>
               <td>EQUACOES DIFERENCIAIS ORDINARIAS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANÁLISE I</td>
               <td></td>
           </tr>
           <tr>
               <td>1109029</td>
               <td>INT A GEOMETRIA DIFERENCIAL</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CALCULO AVANCADO, 1109051</td>
               <td></td>
           </tr>
           <tr>
               <td>1109034</td>
               <td>TOPOLOGIA DOS ESPACOS METRICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ANÁLISE II</td>
               <td></td>
           </tr>
           <tr>
               <td>1109056</td>
               <td>ALGEBRA LINEAR II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ÁLGEBRA LINEAR I, ESTRUTURAS ALGÉBRICAS, 1109018</td>
               <td></td>
           </tr>
           <tr>
               <td>1109061</td>
               <td>FUNCOES DE UMA VARIAVEL COMPLEXA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL III</td>
               <td></td>
           </tr>
           <tr>
               <td>1109134</td>
               <td>CALCULO AVANCADO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL III, ÁLGEBRA LINEAR I</td>
               <td></td>
           </tr>
           <tr>
               <td>1109138</td>
               <td>INTRODUÇÃO AOS MÉTODOS NUMÉRICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL II, 1109053, ÁLGEBRA LINEAR I, INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO</td>
               <td></td>
           </tr>
           <tr>
               <td>1109140</td>
               <td>PROJETO DE PESQUISA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1109160</td>
               <td>ÁLGEBRA I</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ESTRUTURAS ALGÉBRICAS</td>
               <td></td>
           </tr>
           <tr>
               <td>1109178</td>
               <td>ÁLGEBRA II</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>ÁLGEBRA I</td>
               <td></td>
           </tr>
           <tr>
               <td>1114069</td>
               <td>INT.AOS PROCESSOS ESTOCASTICOS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>CÁLCULO DIFERENCIAL E INTEGRAL III, INTRODUÇÃO À ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1114071</td>
               <td>MODELOS LINEARES</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>INTRODUÇÃO À ESTATÍSTICA</td>
               <td></td>
           </tr>
           <tr>
               <td>1303224</td>
               <td>MATEMATICA FINANCEIRA</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1304294</td>
               <td>FILOSOFIA DA EDUCAÇÃO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>1307150</td>
               <td>INGLÊS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -681,8 +684,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60h", "preReqs": ["1109035"]}, {"nivel": "1º Nível", "codigo": "1109139", "nome": "LÓGICA APLICADA À MATEMÁTICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109161", "nome": "MATEM P/ O ENS MEDIO I:UMA ABORD CRITICA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1304019", "nome": "PSIC EDUCACIONAL/APRENDIZAGEM", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307175", "nome": "LEITURA E PROD DE TEXTOS ACADEMICOS I", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1304004", "nome": "DIDATICA", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1304205", "nome": "METODOLOGIA DO ENSINO DA MATEMÁTICA I", "ch": "60h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "1307332", "nome": "LIBRAS", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60h", "preReqs": ["1109126", "1109050"]}, {"nivel": "3º Nível", "codigo": "1109136", "nome": "FUNDAMENTOS DA GEOM EUCLIDIANA PLANA", "ch": "60h", "preReqs": ["1113019", "1105156"]}, {"nivel": "3º Nível", "codigo": "1109137", "nome": "FUNDAMENTOS DE MATEMÁTICA", "ch": "60h", "preReqs": ["1109139"]}, {"nivel": "3º Nível", "codigo": "1109167", "nome": "O COMPUTADOR COMO INSTRUMENTO DE ENSINO", "ch": "60h", "preReqs": ["1411001"]}, {"nivel": "3º Nível", "codigo": "1304206", "nome": "METODOLOGIA DO ENSINO DA MATEMÁTICA II", "ch": "60h", "preReqs": ["1304205", "1304194"]}, {"nivel": "4º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60h", "preReqs": ["1109131", "1109049"]}, {"nivel": "4º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60h", "preReqs": ["1109131", "1109053", "1109035"]}, {"nivel": "4º Nível", "codigo": "1109164", "nome": "LABORATÓRIO DE ENSINO DE MATEMÁTICA", "ch": "60h", "preReqs": ["1109136", "1109058"]}, {"nivel": "4º Nível", "codigo": "1109165", "nome": "PRÁTICA DE ENSINO DE MATEMÁTICA I", "ch": "60h", "preReqs": ["1304063"]}, {"nivel": "4º Nível", "codigo": "1307176", "nome": "LEITURA E PROD DE TEXTOS ACADEMICOS II", "ch": "60h", "preReqs": ["1307175", "1307045"]}, {"nivel": "5º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60h", "preReqs": ["1108030"]}, {"nivel": "5º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60h", "preReqs": ["1108030", "1109126", "1109050", "1109035"]}, {"nivel": "5º Nível", "codigo": "1109135", "nome": "ESTRUTURAS ALGÉBRICAS", "ch": "60h", "preReqs": ["1109137", "1109057"]}, {"nivel": "5º Nível", "codigo": "1109168", "nome": "PRÁTICA DE ENSINO DE MATEMÁTICA II", "ch": "60h", "preReqs": ["1109165"]}, {"nivel": "5º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60h", "preReqs": ["1109131", "1109053", "1109049"]}, {"nivel": "6º Nível", "codigo": "1109043", "nome": "INTRODUÇÃO À HISTÓRIA DA MATEMÁTICA", "ch": "60h", "preReqs": ["1109128", "1109051", "1109137", "1109057"]}, {"nivel": "6º Nível", "codigo": "1109169", "nome": "PRÁTICA DE ENSINO DE MATEMÁTICA III", "ch": "60h", "preReqs": ["1304063"]}, {"nivel": "6º Nível", "codigo": "1114130", "nome": "INTRODUÇÃO À ESTATÍSTICA", "ch": "60h", "preReqs": ["1114129"]}, {"nivel": "7º Nível", "codigo": "1109166", "nome": "ANÁLISE MATEMÁTICA PARA LICENCIATURA", "ch": "60h", "preReqs": ["1109128", "1109051", "1109137", "1109057"]}, {"nivel": "7º Nível", "codigo": "1109170", "nome": "PRÁTICA DE ENSINO DE MATEMÁTICA IV", "ch": "60h", "preReqs": ["1109169"]}];
-  const codigoToNome = {"1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109049": "ÁLGEBRA LINEAR I", "1109139": "LÓGICA APLICADA À MATEMÁTICA", "1109161": "MATEM P/ O ENS MEDIO I:UMA ABORD CRITICA", "1304019": "PSIC EDUCACIONAL/APRENDIZAGEM", "1307175": "LEITURA E PROD DE TEXTOS ACADEMICOS I", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1113019": "EXPRESSAO GRAFICA", "1304004": "DIDATICA", "1304205": "METODOLOGIA DO ENSINO DA MATEMÁTICA I", "1307332": "LIBRAS", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1109136": "FUNDAMENTOS DA GEOM EUCLIDIANA PLANA", "1109137": "FUNDAMENTOS DE MATEMÁTICA", "1109167": "O COMPUTADOR COMO INSTRUMENTO DE ENSINO", "1304206": "METODOLOGIA DO ENSINO DA MATEMÁTICA II", "1108030": "FÍSICA GERAL I", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1109164": "LABORATÓRIO DE ENSINO DE MATEMÁTICA", "1109165": "PRÁTICA DE ENSINO DE MATEMÁTICA I", "1307176": "LEITURA E PROD DE TEXTOS ACADEMICOS II", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109135": "ESTRUTURAS ALGÉBRICAS", "1109168": "PRÁTICA DE ENSINO DE MATEMÁTICA II", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1109043": "INTRODUÇÃO À HISTÓRIA DA MATEMÁTICA", "1109169": "PRÁTICA DE ENSINO DE MATEMÁTICA III", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1109166": "ANÁLISE MATEMÁTICA PARA LICENCIATURA", "1109170": "PRÁTICA DE ENSINO DE MATEMÁTICA IV", "1109163": "FUNDAMENTOS DA GEOMETRIA ESPACIAL", "1109175": "MODELAGEM MATEMÁTICA", "1109176": "MATEM P/ O ENS MEDIO II:UMA ABORD CRITIC", "1109177": "TÓP. ESP. DE HISTÓRIA DA MATEMÁTICA", "1301014": "ADMINISTRAÇÃO", "1301049": "CONTABILIDADE E ANÁLISE DE BALANÇO", "1304058": "PSICOLOGIA EDUCAC/ADOLESCENCIA", "1304113": "SOCIOLOGIA DA EDUCAÇÃO", "1304143": "POLÍTICA DA EDUCAÇÃO", "1108038": "MECÂNICA CLÁSSICA I", "1108100": "FÍSICA GERAL III", "1108101": "FÍSICA EXPERIMENTAL II", "1109021": "ANÁLISE I", "1109022": "ANÁLISE II", "1109023": "ANÁLISE III", "1109026": "EQUACOES DIFERENCIAIS ORDINARIAS", "1109029": "INT A GEOMETRIA DIFERENCIAL", "1109034": "TOPOLOGIA DOS ESPACOS METRICOS", "1109056": "ALGEBRA LINEAR II", "1109061": "FUNCOES DE UMA VARIAVEL COMPLEXA", "1109134": "CALCULO AVANCADO", "1109138": "INTRODUÇÃO AOS MÉTODOS NUMÉRICOS", "1109140": "PROJETO DE PESQUISA", "1109160": "ÁLGEBRA I", "1109178": "ÁLGEBRA II", "1114069": "INT.AOS PROCESSOS ESTOCASTICOS", "1114071": "MODELOS LINEARES", "1303224": "MATEMATICA FINANCEIRA", "1304294": "FILOSOFIA DA EDUCAÇÃO", "1307150": "INGLÊS"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "1109035", "nome": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109049", "nome": "ÁLGEBRA LINEAR I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109035"]}, {"nivel": "1º Nível", "codigo": "1109139", "nome": "LÓGICA APLICADA À MATEMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1109161", "nome": "MATEM P/ O ENS MEDIO I:UMA ABORD CRITICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1304019", "nome": "PSIC EDUCACIONAL/APRENDIZAGEM", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1307175", "nome": "LEITURA E PROD DE TEXTOS ACADEMICOS I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "1411001", "nome": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1109126", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1113019", "nome": "EXPRESSAO GRAFICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1304004", "nome": "DIDATICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1304205", "nome": "METODOLOGIA DO ENSINO DA MATEMÁTICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "1307332", "nome": "LIBRAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "1109131", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109126", "1109050"]}, {"nivel": "3º Nível", "codigo": "1109136", "nome": "FUNDAMENTOS DA GEOM EUCLIDIANA PLANA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1113019", "1105156"]}, {"nivel": "3º Nível", "codigo": "1109137", "nome": "FUNDAMENTOS DE MATEMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109139"]}, {"nivel": "3º Nível", "codigo": "1109167", "nome": "O COMPUTADOR COMO INSTRUMENTO DE ENSINO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1411001"]}, {"nivel": "3º Nível", "codigo": "1304206", "nome": "METODOLOGIA DO ENSINO DA MATEMÁTICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304205", "1304194"]}, {"nivel": "4º Nível", "codigo": "1108030", "nome": "FÍSICA GERAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "1109010", "nome": "EQUACOES DIFERENCIAIS LINEARES", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109049"]}, {"nivel": "4º Nível", "codigo": "1109128", "nome": "CÁLCULO DIFERENCIAL E INTEGRAL III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109053", "1109035"]}, {"nivel": "4º Nível", "codigo": "1109164", "nome": "LABORATÓRIO DE ENSINO DE MATEMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109136", "1109058"]}, {"nivel": "4º Nível", "codigo": "1109165", "nome": "PRÁTICA DE ENSINO DE MATEMÁTICA I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304063"]}, {"nivel": "4º Nível", "codigo": "1307176", "nome": "LEITURA E PROD DE TEXTOS ACADEMICOS II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1307175", "1307045"]}, {"nivel": "5º Nível", "codigo": "1108023", "nome": "FÍSICA EXPERIMENTAL I", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030"]}, {"nivel": "5º Nível", "codigo": "1108081", "nome": "FÍSICA GERAL II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1108030", "1109126", "1109050", "1109035"]}, {"nivel": "5º Nível", "codigo": "1109135", "nome": "ESTRUTURAS ALGÉBRICAS", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109137", "1109057"]}, {"nivel": "5º Nível", "codigo": "1109168", "nome": "PRÁTICA DE ENSINO DE MATEMÁTICA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109165"]}, {"nivel": "5º Nível", "codigo": "1114129", "nome": "INTRODUÇÃO À PROBABILIDADE", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109131", "1109053", "1109049"]}, {"nivel": "6º Nível", "codigo": "1109171", "nome": "ESTAGIO SUPERVISIONADO I", "ch": "105\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1109168"]}, {"nivel": "6º Nível", "codigo": "1109043", "nome": "INTRODUÇÃO À HISTÓRIA DA MATEMÁTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109128", "1109051", "1109137", "1109057"]}, {"nivel": "6º Nível", "codigo": "1109169", "nome": "PRÁTICA DE ENSINO DE MATEMÁTICA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1304063"]}, {"nivel": "6º Nível", "codigo": "1114130", "nome": "INTRODUÇÃO À ESTATÍSTICA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1114129"]}, {"nivel": "7º Nível", "codigo": "1109172", "nome": "ESTAGIO SUPERVISIONADO II", "ch": "105\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1109168"]}, {"nivel": "7º Nível", "codigo": "1109166", "nome": "ANÁLISE MATEMÁTICA PARA LICENCIATURA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109128", "1109051", "1109137", "1109057"]}, {"nivel": "7º Nível", "codigo": "1109170", "nome": "PRÁTICA DE ENSINO DE MATEMÁTICA IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["1109169"]}, {"nivel": "8º Nível", "codigo": "1109173", "nome": "ESTAGIO SUPERVISIONADO III", "ch": "195\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": ["1109170"]}];
+  const codigoToNome = {"1109035": "ALGEBRA VETORIAL E GEOMETRIA ANALÍTICA", "1109049": "ÁLGEBRA LINEAR I", "1109139": "LÓGICA APLICADA À MATEMÁTICA", "1109161": "MATEM P/ O ENS MEDIO I:UMA ABORD CRITICA", "1304019": "PSIC EDUCACIONAL/APRENDIZAGEM", "1307175": "LEITURA E PROD DE TEXTOS ACADEMICOS I", "1411001": "INTRODUÇÃO À CIÊNCIA DA COMPUTAÇÃO", "1109126": "CÁLCULO DIFERENCIAL E INTEGRAL I", "1113019": "EXPRESSAO GRAFICA", "1304004": "DIDATICA", "1304205": "METODOLOGIA DO ENSINO DA MATEMÁTICA I", "1307332": "LIBRAS", "1109131": "CÁLCULO DIFERENCIAL E INTEGRAL II", "1109136": "FUNDAMENTOS DA GEOM EUCLIDIANA PLANA", "1109137": "FUNDAMENTOS DE MATEMÁTICA", "1109167": "O COMPUTADOR COMO INSTRUMENTO DE ENSINO", "1304206": "METODOLOGIA DO ENSINO DA MATEMÁTICA II", "1108030": "FÍSICA GERAL I", "1109010": "EQUACOES DIFERENCIAIS LINEARES", "1109128": "CÁLCULO DIFERENCIAL E INTEGRAL III", "1109164": "LABORATÓRIO DE ENSINO DE MATEMÁTICA", "1109165": "PRÁTICA DE ENSINO DE MATEMÁTICA I", "1307176": "LEITURA E PROD DE TEXTOS ACADEMICOS II", "1108023": "FÍSICA EXPERIMENTAL I", "1108081": "FÍSICA GERAL II", "1109135": "ESTRUTURAS ALGÉBRICAS", "1109168": "PRÁTICA DE ENSINO DE MATEMÁTICA II", "1114129": "INTRODUÇÃO À PROBABILIDADE", "1109171": "ESTAGIO SUPERVISIONADO I", "1109043": "INTRODUÇÃO À HISTÓRIA DA MATEMÁTICA", "1109169": "PRÁTICA DE ENSINO DE MATEMÁTICA III", "1114130": "INTRODUÇÃO À ESTATÍSTICA", "1109172": "ESTAGIO SUPERVISIONADO II", "1109166": "ANÁLISE MATEMÁTICA PARA LICENCIATURA", "1109170": "PRÁTICA DE ENSINO DE MATEMÁTICA IV", "1109173": "ESTAGIO SUPERVISIONADO III", "1109163": "FUNDAMENTOS DA GEOMETRIA ESPACIAL", "1109175": "MODELAGEM MATEMÁTICA", "1109176": "MATEM P/ O ENS MEDIO II:UMA ABORD CRITIC", "1109177": "TÓP. ESP. DE HISTÓRIA DA MATEMÁTICA", "1301014": "ADMINISTRAÇÃO", "1301049": "CONTABILIDADE E ANÁLISE DE BALANÇO", "1304058": "PSICOLOGIA EDUCAC/ADOLESCENCIA", "1304113": "SOCIOLOGIA DA EDUCAÇÃO", "1304143": "POLÍTICA DA EDUCAÇÃO", "1108038": "MECÂNICA CLÁSSICA I", "1108100": "FÍSICA GERAL III", "1108101": "FÍSICA EXPERIMENTAL II", "1109021": "ANÁLISE I", "1109022": "ANÁLISE II", "1109023": "ANÁLISE III", "1109026": "EQUACOES DIFERENCIAIS ORDINARIAS", "1109029": "INT A GEOMETRIA DIFERENCIAL", "1109034": "TOPOLOGIA DOS ESPACOS METRICOS", "1109056": "ALGEBRA LINEAR II", "1109061": "FUNCOES DE UMA VARIAVEL COMPLEXA", "1109134": "CALCULO AVANCADO", "1109138": "INTRODUÇÃO AOS MÉTODOS NUMÉRICOS", "1109140": "PROJETO DE PESQUISA", "1109160": "ÁLGEBRA I", "1109178": "ÁLGEBRA II", "1114069": "INT.AOS PROCESSOS ESTOCASTICOS", "1114071": "MODELOS LINEARES", "1303224": "MATEMATICA FINANCEIRA", "1304294": "FILOSOFIA DA EDUCAÇÃO", "1307150": "INGLÊS"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -794,7 +797,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>

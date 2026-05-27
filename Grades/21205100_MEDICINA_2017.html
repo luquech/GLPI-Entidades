@@ -280,6 +280,9 @@
     .subject-ch { font-size: 0.62rem; background: var(--ch-bg); padding: 2px 8px; border-radius: 999px; display: inline-block; font-weight: 600; }
     .pre-req-hint { font-size: 0.65rem; color: var(--hint-text); margin-top: 7px; border-top: 1px dashed var(--hint-border); padding-top: 6px; word-break: break-word; line-height: 1.35; }
     .status-badge { font-size: 0.56rem; font-weight: 700; background: var(--code-bg); color: var(--code-text); padding: 2px 7px; border-radius: 999px; letter-spacing: 0.02em; white-space: nowrap; }
+    .type-badge { display: inline-block; font-size: 0.55rem; font-weight: 700; padding: 2px 6px; border-radius: 999px; margin-left: 6px; letter-spacing: 0.03em; text-transform: uppercase; vertical-align: middle; }
+    .type-complementar { background: rgba(168, 85, 247, 0.15); color: #7c3aed; border: 1px solid rgba(168, 85, 247, 0.35); }
+    [data-theme="dark"] .type-complementar { background: rgba(168, 85, 247, 0.22); color: #c4b5fd; border-color: rgba(168, 85, 247, 0.45); }
 
     /* ---------- Optativas ---------- */
     .optativas-section { margin-top: 32px; background: var(--surface); border-radius: 22px; padding: 20px; box-shadow: var(--shadow); border: 1px solid var(--border); }
@@ -372,7 +375,7 @@
       <button class="pdf-btn" id="pdfBtn" aria-label="Exportar para PDF" title="Exportar para PDF">📄 PDF</button>
       <button class="theme-btn" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
       <div class="progress-panel">
-        <div class="progress-label">Progresso obrigatórias</div>
+        <div class="progress-label">Progresso obrigatórias + complementares</div>
         <div class="progress-value" id="percentDisplay">0%</div>
         <div class="progress-bar-bg"><div class="progress-fill" id="progressFill"></div></div>
         <div class="progress-meta" id="progressMeta">0 / 0 disciplinas</div>
@@ -401,616 +404,616 @@
           <tr>
               <td>2104012</td>
               <td>LINGUA BRASILEIRA DE SINAIS</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105079</td>
               <td>MEDICINA ESPORTIVA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105085</td>
               <td>PROCESSOS PATOLOGICOS GERAIS</td>
-              <td>90h</td>
-              <td>6.0</td>
+              <td>90"h</td>
+              <td>6"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105113</td>
               <td>PRÁTICAS DE ENFERMAGEM</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105114</td>
               <td>HOMEOPATIA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105115</td>
               <td>PRÁTICAS NÃO-CONVENCIONAIS EM MEDICINA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105116</td>
               <td>SAUDE DO TRABALHADOR</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105117</td>
               <td>TOXICOLOGIA CLÍNICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105118</td>
               <td>MEDICINA NUCLEAR</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105119</td>
               <td>NUTRICAO</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105127</td>
               <td>TEM(GERIATRIA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105147</td>
               <td>TEM (ED. MÉDICA E NEC. SOCIAIS EM SAÚDE)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105153</td>
               <td>PSIQUIATRIA APLICADA</td>
-              <td>90h</td>
-              <td>6.0</td>
+              <td>90"h</td>
+              <td>6"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105156</td>
               <td>TEM(NOMECLATURA EM ANATOMIA HUMANA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105157</td>
               <td>TEM(PATOLOGIA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105158</td>
               <td>TEM(FITOTERAPIA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PRINC. FÍSICOS E QUÍMICOS DO SER HUMANO</td>
               <td></td>
           </tr>
           <tr>
               <td>2105159</td>
               <td>TEM(CIRURGIA ONCOLÓGICA DO APARELHO DIG)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CLÍNICA MÉDICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>2105160</td>
               <td>TEM(PRINC TEOR DA CIRURGIA DE CAB E PESC</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CLÍNICA CIRÚRGICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>2105161</td>
               <td>TEM(ATLS-SUPORTE AVANÇADO DE VIDA NO TRA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>SEMIOLOGIA</td>
               <td></td>
           </tr>
           <tr>
               <td>2105162</td>
               <td>TEM(ANTIBIOTICOTERAPIA CLÍNICA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CLÍNICA MÉDICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>2105163</td>
               <td>TEM(IMUNOLOGIA APLICADA À CLÍNICA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>SEMIOLOGIA</td>
               <td></td>
           </tr>
           <tr>
               <td>2105164</td>
               <td>TEM(O QUE TODO CLIN DEVERIA SAB SOB DERM</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CLÍNICA MÉDICA II</td>
               <td></td>
           </tr>
           <tr>
               <td>2105165</td>
               <td>TEM(INTRD A ANESTESIOLOGIA E A REANIM)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>PRINC. FÍSICOS E QUÍMICOS DO SER HUMANO</td>
               <td></td>
           </tr>
           <tr>
               <td>2105166</td>
               <td>TEM(FARMACOLOGIA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>AGENTES AGRESSORES E MECAN DE DEFESA II</td>
               <td></td>
           </tr>
           <tr>
               <td>2105167</td>
               <td>TEM(CUIDADOS PALEATIVOS)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>AGENTES AGRESSORES E MECAN DE DEFESA II</td>
               <td></td>
           </tr>
           <tr>
               <td>2105168</td>
               <td>TEM(PSIQUIATRIA:RACIOCÍNIO CLÍNICO E CON</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td>SEMIOLOGIA</td>
               <td></td>
           </tr>
           <tr>
               <td>2105169</td>
               <td>TEMII(EMPREENDEDORISMO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105170</td>
               <td>TEM(FUND DE ANATOMIA HUMANA TEÓRICA)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105171</td>
               <td>TEM(FUND DE ANATOMIA HUMANA PRÁTICA)</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105172</td>
               <td>TEM(PRINC FIS E QUIM SER HUMANO TEÓRICO)</td>
-              <td>165h</td>
-              <td>11.0</td>
+              <td>165"h</td>
+              <td>11"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105173</td>
               <td>TEM(PRINC FIS E QUIM SER HUMANO PRÁTICO)</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105174</td>
               <td>TEM(AGENTES AGR E MEC DE DEF I TEÓRICO)</td>
-              <td>120h</td>
-              <td>8.0</td>
+              <td>120"h</td>
+              <td>8"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105175</td>
               <td>TEM(AGENTES AGR E MEC DE DEF I PRÁTICO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105176</td>
               <td>TEM(SISTEMA NERVOSO TEÓRICO)</td>
-              <td>165h</td>
-              <td>11.0</td>
+              <td>165"h</td>
+              <td>11"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105177</td>
               <td>TEM(SISTEMA NERVOSO PRÁTICO)</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105178</td>
               <td>TEM(SISTEMA ENDÓCRINO REPRODUTOR TEÓRICO</td>
-              <td>165h</td>
-              <td>11.0</td>
+              <td>165"h</td>
+              <td>11"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105179</td>
               <td>TEM(SISTEMA ENDÓCRINO REPRODUTOS PRÁTICO</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105180</td>
               <td>TEM(SIST LOCOMOTOR E TEGUMENTAR TEÓRICO)</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105181</td>
               <td>TEM(SIST LOCOMOTOR E TEGUMENTAR PRÁTICO)</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105182</td>
-              <td>TEM(SIST CARDIO</td>
-              <td>120h</td>
-              <td>8.0</td>
+              <td>TEM(SIST CARDIO,HEMATOPOIÉTICO E LINF T)</td>
+              <td>120"h</td>
+              <td>8"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105183</td>
-              <td>TEM(SIST CARDIO</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>TEM(SIST CARDIO,HEMATOPOIÉTICO E LINF P)</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105184</td>
               <td>TEM(SISTEMA DIGESTÓRIO TEÓRICO)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105185</td>
               <td>TEM(SISTEMA DIGESTÓRIO PRÁTICO)</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105186</td>
               <td>TEM(SISTEMA RESPIRATÓRIO TEÓRICO)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105187</td>
               <td>TEM(SISTEMA RESPIRATÓRIO PRÁTICO)</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105188</td>
               <td>TEM(SISTEMA URINÁRIO TEÓRICO)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105189</td>
               <td>TEM(SISTEMA URINÁRIO PRÁTICO)</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105190</td>
               <td>TEM(SEMIOLOGIA TEÓRICA)</td>
-              <td>90h</td>
-              <td>6.0</td>
+              <td>90"h</td>
+              <td>6"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105191</td>
               <td>TEM(SEMIOLOGIA PRÁTICA)</td>
-              <td>150h</td>
-              <td>10.0</td>
+              <td>150"h</td>
+              <td>10"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105192</td>
               <td>TEM(SAÚDE DA FAM E COMUNIDADE IV TEÓR)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105193</td>
               <td>TEM(SAÚDE DA FAM E COMUNIDADE IV PRAT)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105194</td>
               <td>TEM(CLÍNICA MÉDICA I:TEÓRICA)</td>
-              <td>180h</td>
-              <td>12.0</td>
+              <td>180"h</td>
+              <td>12"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105195</td>
               <td>TEM(CLÍNICA MÉDICA I:PRÁTICA)</td>
-              <td>90h</td>
-              <td>6.0</td>
+              <td>90"h</td>
+              <td>6"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105200</td>
               <td>TEM(CIRURGIA AMBULATORIAL TEÓRICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105201</td>
               <td>TEM(CIRUGUA AMBULATORIAL PRÁTICA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105202</td>
               <td>TEM(ANESTESIOLOGIA TEÓRICA)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105203</td>
               <td>TEM(ANESTESIOLOGIA PRÁTICA)</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105204</td>
               <td>TEM(SAÚDE DA FAM E COMUNIDADE V TEÓR)</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105205</td>
               <td>TEM(SAÚDE DA FAM E COMUNIDADE V PRAT)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105206</td>
               <td>TEM(CLÍNICA MÉDICA II:TEÓRICA)</td>
-              <td>195h</td>
-              <td>13.0</td>
+              <td>195"h</td>
+              <td>13"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105207</td>
               <td>TEM(CLÍNICA MÉDICA II:PRÁTICA)</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105210</td>
               <td>TEM(CLÍNICA CIRÚRGICA I TEÓRICA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105211</td>
               <td>TEM(CLÍNICA CIRÚRGICA I PRÁTICA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105212</td>
               <td>TEM(SAÚDE DA FAM E COMUNIDADE VI TEOR)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105213</td>
               <td>TEM(SAÚDE DA FAM E COMUNIDADE VI PRAT)</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105214</td>
               <td>TEM(CLÍNICA MÉDICA III TEÓRICA)</td>
-              <td>225h</td>
-              <td>15.0</td>
+              <td>225"h</td>
+              <td>15"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105215</td>
               <td>TEM(CLÍNICA MÉDICA III PRÁTICA)</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105218</td>
               <td>TEM(CLÍNICA CIRÚRGICA II TEÓRICA)</td>
-              <td>75h</td>
-              <td>5.0</td>
+              <td>75"h</td>
+              <td>5"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105219</td>
               <td>TEM(CLÍNICA CIRÚRGICA II PRÁTICA)</td>
-              <td>15h</td>
-              <td>1.0</td>
+              <td>15"h</td>
+              <td>1"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105220</td>
               <td>TEM(URGÊNCIA E TERAPIA INTENSIVA I:TEOR)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105221</td>
               <td>TEM(URGÊNCIA E TERAPIA INTENSIVA I:PRAT)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105222</td>
               <td>TEM(DOENÇAS INFECCIOSAS E PARASITAR TEOR</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105223</td>
               <td>TEM(DOENÇAS INFECCIOSAS E PARASITAR PRAT</td>
-              <td>45h</td>
-              <td>3.0</td>
+              <td>45"h</td>
+              <td>3"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105224</td>
               <td>TEM(ELABORAÇÃO DE ART CIENT EM MEDICINA)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105225</td>
               <td>TEM(INTERPRETACAO DE ELETROCARDIOGRAMA)</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td>CLÍNICA MÉDICA I</td>
               <td></td>
           </tr>
           <tr>
               <td>2105226</td>
               <td>TEM(INTROD AS HAB DE COMUNICACAO CLINICA</td>
-              <td>30h</td>
-              <td>2.0</td>
+              <td>30"h</td>
+              <td>2"</td>
               <td></td>
               <td></td>
           </tr>
           <tr>
               <td>2105227</td>
               <td>TEM(NEUROLOGIA INFANTIL)</td>
-              <td>60h</td>
-              <td>4.0</td>
+              <td>60"h</td>
+              <td>4"</td>
               <td></td>
               <td></td>
           </tr>
@@ -1057,8 +1060,8 @@
 
 
   // ---------- Dados ----------
-  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "2105004", "nome": "FUNDAMENTOS DE ANATOMIA HUMANA", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "2105006", "nome": "GENESE E DESENVOLVIMENTO", "ch": "60h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "2105060", "nome": "PRINC. FÍSICOS E QUÍMICOS DO SER HUMANO", "ch": "180h", "preReqs": []}, {"nivel": "1º Nível", "codigo": "2105061", "nome": "BIOLOGIA E FISIOLOGIA CELULAR E TECIDUAL", "ch": "120h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "2105062", "nome": "SAUDE DA FAMILIA E COMUNITARIA I", "ch": "30h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "2105063", "nome": "AGENTES AGRESSORES E MECAN DE DEFESA I", "ch": "180h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "2105064", "nome": "SISTEMA NERVOSO", "ch": "180h", "preReqs": []}, {"nivel": "2º Nível", "codigo": "2105065", "nome": "SISTEMAS ENDOCRINO E REPRODUTOR", "ch": "180h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105054", "nome": "SISTEMA URINARIO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105066", "nome": "SAUDE DA FAMILIA E COMUNITARIA II", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105067", "nome": "AGENTES AGRESSORES E MECAN DE DEFESA II", "ch": "75h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105068", "nome": "SIST CARDIOV HEMATOPOIETICO E LINFATICO", "ch": "135h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105069", "nome": "SISTEMA RESPIRATORIO", "ch": "60h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105070", "nome": "SISTEMA DIGESTORIO", "ch": "75h", "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105071", "nome": "SISTEMA LOCOMOTOR E TEGUMENTAR", "ch": "90h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "2105072", "nome": "SAUDE DA FAMILIA E COMUNITARIA III", "ch": "60h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "2105073", "nome": "ALTERACOES GEN E DIST DO CICLO CELULAR", "ch": "90h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "2105074", "nome": "SEMIOLOGIA", "ch": "240h", "preReqs": []}, {"nivel": "4º Nível", "codigo": "2105075", "nome": "FARMACOLOGIA", "ch": "90h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "2105080", "nome": "SAUDE DA FAMILIA E COMUNITARIA IV", "ch": "60h", "preReqs": []}, {"nivel": "5º Nível", "codigo": "2105081", "nome": "CLÍNICA MÉDICA I", "ch": "270h", "preReqs": ["2105074", "2105075"]}, {"nivel": "5º Nível", "codigo": "2105082", "nome": "CIRURGIA AMBULATORIAL", "ch": "90h", "preReqs": ["2105075", "2105074"]}, {"nivel": "5º Nível", "codigo": "2105083", "nome": "ANESTESIOLOGIA", "ch": "60h", "preReqs": ["2105074", "2105075"]}, {"nivel": "5º Nível", "codigo": "2105084", "nome": "DIAGNOSTICO POR IMAGEM", "ch": "60h", "preReqs": ["2105074", "2105075"]}, {"nivel": "6º Nível", "codigo": "2105086", "nome": "SAUDE DA FAMILIA E COMUNITARIA V", "ch": "60h", "preReqs": []}, {"nivel": "6º Nível", "codigo": "2105087", "nome": "CLÍNICA MÉDICA II", "ch": "270h", "preReqs": ["2105074", "2105075"]}, {"nivel": "6º Nível", "codigo": "2105088", "nome": "CLÍNICA CIRÚRGICA I", "ch": "90h", "preReqs": ["2105074", "2105075"]}, {"nivel": "6º Nível", "codigo": "2105089", "nome": "DOENCAS INFECCIOSAS E PARASITARIAS", "ch": "90h", "preReqs": ["2105074", "2105075"]}, {"nivel": "7º Nível", "codigo": "2105098", "nome": "SAUDE DA FAMILIA E COMUNITARIA VI", "ch": "60h", "preReqs": []}, {"nivel": "7º Nível", "codigo": "2105099", "nome": "CLÍNICA MÉDICA III", "ch": "270h", "preReqs": ["2105074", "2105075"]}, {"nivel": "7º Nível", "codigo": "2105100", "nome": "CLÍNICA CIRÚRGICA II", "ch": "90h", "preReqs": ["2105074", "2105075"]}, {"nivel": "7º Nível", "codigo": "2105101", "nome": "URGENCIA E TERAPIA INTENSIVA", "ch": "90h", "preReqs": ["2105074", "2105075"]}, {"nivel": "7º Nível", "codigo": "2105102", "nome": "GESTAO E ADMINISTRACAO", "ch": "30h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "2105107", "nome": "SAUDE DA FAMILIA E COMUNITARIA VII", "ch": "60h", "preReqs": []}, {"nivel": "8º Nível", "codigo": "2105109", "nome": "SAUDE DA CRIANCA E DO ADOLESCENTE", "ch": "120h", "preReqs": ["2105074", "2105075"]}, {"nivel": "8º Nível", "codigo": "2105110", "nome": "SAUDE DA MULHER", "ch": "180h", "preReqs": ["2105074", "2105075"]}, {"nivel": "8º Nível", "codigo": "2105111", "nome": "CLÍNICA MÉDICA E CIRÚRGICA", "ch": "90h", "preReqs": ["2105074", "2105075"]}];
-  const codigoToNome = {"2105004": "FUNDAMENTOS DE ANATOMIA HUMANA", "2105006": "GENESE E DESENVOLVIMENTO", "2105060": "PRINC. FÍSICOS E QUÍMICOS DO SER HUMANO", "2105061": "BIOLOGIA E FISIOLOGIA CELULAR E TECIDUAL", "2105062": "SAUDE DA FAMILIA E COMUNITARIA I", "2105063": "AGENTES AGRESSORES E MECAN DE DEFESA I", "2105064": "SISTEMA NERVOSO", "2105065": "SISTEMAS ENDOCRINO E REPRODUTOR", "2105054": "SISTEMA URINARIO", "2105066": "SAUDE DA FAMILIA E COMUNITARIA II", "2105067": "AGENTES AGRESSORES E MECAN DE DEFESA II", "2105068": "SIST CARDIOV HEMATOPOIETICO E LINFATICO", "2105069": "SISTEMA RESPIRATORIO", "2105070": "SISTEMA DIGESTORIO", "2105071": "SISTEMA LOCOMOTOR E TEGUMENTAR", "2105072": "SAUDE DA FAMILIA E COMUNITARIA III", "2105073": "ALTERACOES GEN E DIST DO CICLO CELULAR", "2105074": "SEMIOLOGIA", "2105075": "FARMACOLOGIA", "2105080": "SAUDE DA FAMILIA E COMUNITARIA IV", "2105081": "CLÍNICA MÉDICA I", "2105082": "CIRURGIA AMBULATORIAL", "2105083": "ANESTESIOLOGIA", "2105084": "DIAGNOSTICO POR IMAGEM", "2105086": "SAUDE DA FAMILIA E COMUNITARIA V", "2105087": "CLÍNICA MÉDICA II", "2105088": "CLÍNICA CIRÚRGICA I", "2105089": "DOENCAS INFECCIOSAS E PARASITARIAS", "2105098": "SAUDE DA FAMILIA E COMUNITARIA VI", "2105099": "CLÍNICA MÉDICA III", "2105100": "CLÍNICA CIRÚRGICA II", "2105101": "URGENCIA E TERAPIA INTENSIVA", "2105102": "GESTAO E ADMINISTRACAO", "2105107": "SAUDE DA FAMILIA E COMUNITARIA VII", "2105109": "SAUDE DA CRIANCA E DO ADOLESCENTE", "2105110": "SAUDE DA MULHER", "2105111": "CLÍNICA MÉDICA E CIRÚRGICA", "2104012": "LINGUA BRASILEIRA DE SINAIS", "2105079": "MEDICINA ESPORTIVA", "2105085": "PROCESSOS PATOLOGICOS GERAIS", "2105113": "PRÁTICAS DE ENFERMAGEM", "2105114": "HOMEOPATIA", "2105115": "PRÁTICAS NÃO-CONVENCIONAIS EM MEDICINA", "2105116": "SAUDE DO TRABALHADOR", "2105117": "TOXICOLOGIA CLÍNICA", "2105118": "MEDICINA NUCLEAR", "2105119": "NUTRICAO", "2105127": "TEM(GERIATRIA)", "2105147": "TEM (ED. MÉDICA E NEC. SOCIAIS EM SAÚDE)", "2105153": "PSIQUIATRIA APLICADA", "2105156": "TEM(NOMECLATURA EM ANATOMIA HUMANA)", "2105157": "TEM(PATOLOGIA)", "2105158": "TEM(FITOTERAPIA)", "2105159": "TEM(CIRURGIA ONCOLÓGICA DO APARELHO DIG)", "2105160": "TEM(PRINC TEOR DA CIRURGIA DE CAB E PESC", "2105161": "TEM(ATLS-SUPORTE AVANÇADO DE VIDA NO TRA", "2105162": "TEM(ANTIBIOTICOTERAPIA CLÍNICA)", "2105163": "TEM(IMUNOLOGIA APLICADA À CLÍNICA)", "2105164": "TEM(O QUE TODO CLIN DEVERIA SAB SOB DERM", "2105165": "TEM(INTRD A ANESTESIOLOGIA E A REANIM)", "2105166": "TEM(FARMACOLOGIA)", "2105167": "TEM(CUIDADOS PALEATIVOS)", "2105168": "TEM(PSIQUIATRIA:RACIOCÍNIO CLÍNICO E CON", "2105169": "TEMII(EMPREENDEDORISMO)", "2105170": "TEM(FUND DE ANATOMIA HUMANA TEÓRICA)", "2105171": "TEM(FUND DE ANATOMIA HUMANA PRÁTICA)", "2105172": "TEM(PRINC FIS E QUIM SER HUMANO TEÓRICO)", "2105173": "TEM(PRINC FIS E QUIM SER HUMANO PRÁTICO)", "2105174": "TEM(AGENTES AGR E MEC DE DEF I TEÓRICO)", "2105175": "TEM(AGENTES AGR E MEC DE DEF I PRÁTICO)", "2105176": "TEM(SISTEMA NERVOSO TEÓRICO)", "2105177": "TEM(SISTEMA NERVOSO PRÁTICO)", "2105178": "TEM(SISTEMA ENDÓCRINO REPRODUTOR TEÓRICO", "2105179": "TEM(SISTEMA ENDÓCRINO REPRODUTOS PRÁTICO", "2105180": "TEM(SIST LOCOMOTOR E TEGUMENTAR TEÓRICO)", "2105181": "TEM(SIST LOCOMOTOR E TEGUMENTAR PRÁTICO)", "2105182": "TEM(SIST CARDIO", "2105183": "TEM(SIST CARDIO", "2105184": "TEM(SISTEMA DIGESTÓRIO TEÓRICO)", "2105185": "TEM(SISTEMA DIGESTÓRIO PRÁTICO)", "2105186": "TEM(SISTEMA RESPIRATÓRIO TEÓRICO)", "2105187": "TEM(SISTEMA RESPIRATÓRIO PRÁTICO)", "2105188": "TEM(SISTEMA URINÁRIO TEÓRICO)", "2105189": "TEM(SISTEMA URINÁRIO PRÁTICO)", "2105190": "TEM(SEMIOLOGIA TEÓRICA)", "2105191": "TEM(SEMIOLOGIA PRÁTICA)", "2105192": "TEM(SAÚDE DA FAM E COMUNIDADE IV TEÓR)", "2105193": "TEM(SAÚDE DA FAM E COMUNIDADE IV PRAT)", "2105194": "TEM(CLÍNICA MÉDICA I:TEÓRICA)", "2105195": "TEM(CLÍNICA MÉDICA I:PRÁTICA)", "2105200": "TEM(CIRURGIA AMBULATORIAL TEÓRICA)", "2105201": "TEM(CIRUGUA AMBULATORIAL PRÁTICA)", "2105202": "TEM(ANESTESIOLOGIA TEÓRICA)", "2105203": "TEM(ANESTESIOLOGIA PRÁTICA)", "2105204": "TEM(SAÚDE DA FAM E COMUNIDADE V TEÓR)", "2105205": "TEM(SAÚDE DA FAM E COMUNIDADE V PRAT)", "2105206": "TEM(CLÍNICA MÉDICA II:TEÓRICA)", "2105207": "TEM(CLÍNICA MÉDICA II:PRÁTICA)", "2105210": "TEM(CLÍNICA CIRÚRGICA I TEÓRICA)", "2105211": "TEM(CLÍNICA CIRÚRGICA I PRÁTICA)", "2105212": "TEM(SAÚDE DA FAM E COMUNIDADE VI TEOR)", "2105213": "TEM(SAÚDE DA FAM E COMUNIDADE VI PRAT)", "2105214": "TEM(CLÍNICA MÉDICA III TEÓRICA)", "2105215": "TEM(CLÍNICA MÉDICA III PRÁTICA)", "2105218": "TEM(CLÍNICA CIRÚRGICA II TEÓRICA)", "2105219": "TEM(CLÍNICA CIRÚRGICA II PRÁTICA)", "2105220": "TEM(URGÊNCIA E TERAPIA INTENSIVA I:TEOR)", "2105221": "TEM(URGÊNCIA E TERAPIA INTENSIVA I:PRAT)", "2105222": "TEM(DOENÇAS INFECCIOSAS E PARASITAR TEOR", "2105223": "TEM(DOENÇAS INFECCIOSAS E PARASITAR PRAT", "2105224": "TEM(ELABORAÇÃO DE ART CIENT EM MEDICINA)", "2105225": "TEM(INTERPRETACAO DE ELETROCARDIOGRAMA)", "2105226": "TEM(INTROD AS HAB DE COMUNICACAO CLINICA", "2105227": "TEM(NEUROLOGIA INFANTIL)"};
+  const mandatorySubjects = [{"nivel": "1º Nível", "codigo": "2105001", "nome": "INTRODUÇÃO À MEDICINA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "1º Nível", "codigo": "2105007", "nome": "INICIACAO CIENTIFICA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "1º Nível", "codigo": "2105004", "nome": "FUNDAMENTOS DE ANATOMIA HUMANA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "2105006", "nome": "GENESE E DESENVOLVIMENTO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "2105060", "nome": "PRINC. FÍSICOS E QUÍMICOS DO SER HUMANO", "ch": "180\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "1º Nível", "codigo": "2105061", "nome": "BIOLOGIA E FISIOLOGIA CELULAR E TECIDUAL", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "2105062", "nome": "SAUDE DA FAMILIA E COMUNITARIA I", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "2105063", "nome": "AGENTES AGRESSORES E MECAN DE DEFESA I", "ch": "180\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "2105064", "nome": "SISTEMA NERVOSO", "ch": "180\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "2º Nível", "codigo": "2105065", "nome": "SISTEMAS ENDOCRINO E REPRODUTOR", "ch": "180\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105054", "nome": "SISTEMA URINARIO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105066", "nome": "SAUDE DA FAMILIA E COMUNITARIA II", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105067", "nome": "AGENTES AGRESSORES E MECAN DE DEFESA II", "ch": "75\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105068", "nome": "SIST CARDIOV HEMATOPOIETICO E LINFATICO", "ch": "135\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105069", "nome": "SISTEMA RESPIRATORIO", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105070", "nome": "SISTEMA DIGESTORIO", "ch": "75\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "3º Nível", "codigo": "2105071", "nome": "SISTEMA LOCOMOTOR E TEGUMENTAR", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "2103218", "nome": "INGLES INSTRUMENTAL", "ch": "30\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "4º Nível", "codigo": "2105011", "nome": "PSICOLOGIA MÉDICA", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "4º Nível", "codigo": "2105072", "nome": "SAUDE DA FAMILIA E COMUNITARIA III", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "2105073", "nome": "ALTERACOES GEN E DIST DO CICLO CELULAR", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "2105074", "nome": "SEMIOLOGIA", "ch": "240\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "4º Nível", "codigo": "2105075", "nome": "FARMACOLOGIA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "2105080", "nome": "SAUDE DA FAMILIA E COMUNITARIA IV", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "5º Nível", "codigo": "2105081", "nome": "CLÍNICA MÉDICA I", "ch": "270\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105074", "2105075"]}, {"nivel": "5º Nível", "codigo": "2105082", "nome": "CIRURGIA AMBULATORIAL", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105075", "2105074"]}, {"nivel": "5º Nível", "codigo": "2105083", "nome": "ANESTESIOLOGIA", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105074", "2105075"]}, {"nivel": "5º Nível", "codigo": "2105084", "nome": "DIAGNOSTICO POR IMAGEM", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105074", "2105075"]}, {"nivel": "6º Nível", "codigo": "2105086", "nome": "SAUDE DA FAMILIA E COMUNITARIA V", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "6º Nível", "codigo": "2105087", "nome": "CLÍNICA MÉDICA II", "ch": "270\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105074", "2105075"]}, {"nivel": "6º Nível", "codigo": "2105088", "nome": "CLÍNICA CIRÚRGICA I", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105074", "2105075"]}, {"nivel": "6º Nível", "codigo": "2105089", "nome": "DOENCAS INFECCIOSAS E PARASITARIAS", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105074", "2105075"]}, {"nivel": "7º Nível", "codigo": "2105098", "nome": "SAUDE DA FAMILIA E COMUNITARIA VI", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "7º Nível", "codigo": "2105099", "nome": "CLÍNICA MÉDICA III", "ch": "270\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105074", "2105075"]}, {"nivel": "7º Nível", "codigo": "2105100", "nome": "CLÍNICA CIRÚRGICA II", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105074", "2105075"]}, {"nivel": "7º Nível", "codigo": "2105101", "nome": "URGENCIA E TERAPIA INTENSIVA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105074", "2105075"]}, {"nivel": "7º Nível", "codigo": "2105102", "nome": "GESTAO E ADMINISTRACAO", "ch": "30\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "2105108", "nome": "ETICA, BIOETICA E MEDICINA LEGAL", "ch": "60\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "8º Nível", "codigo": "2105112", "nome": "SEMINARIO DE PESQUISA", "ch": "30\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "8º Nível", "codigo": "2105107", "nome": "SAUDE DA FAMILIA E COMUNITARIA VII", "ch": "60\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": []}, {"nivel": "8º Nível", "codigo": "2105109", "nome": "SAUDE DA CRIANCA E DO ADOLESCENTE", "ch": "120\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105074", "2105075"]}, {"nivel": "8º Nível", "codigo": "2105110", "nome": "SAUDE DA MULHER", "ch": "180\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105074", "2105075"]}, {"nivel": "8º Nível", "codigo": "2105111", "nome": "CLÍNICA MÉDICA E CIRÚRGICA", "ch": "90\"h", "tipo": "Obrigatória", "isComplementar": false, "preReqs": ["2105074", "2105075"]}, {"nivel": "9º Nível", "codigo": "2105131", "nome": "EST CURR SUPERV. EM CLÍNICA MÉDICA I", "ch": "405\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "9º Nível", "codigo": "2105135", "nome": "ESTÁGIO CURR SUPERV CLINICA CIRURGICA", "ch": "405\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "2105132", "nome": "EST CURR SUPERV EM CLINICA MEDICA II", "ch": "405\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "10º Nível", "codigo": "2105136", "nome": "EST CURR SUPERV EM GINEC E OBSTETRICIA", "ch": "405\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "11º Nível", "codigo": "2105129", "nome": "ESTAGIO CURR SUPERV SAUDE COLETIVA I", "ch": "405\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "11º Nível", "codigo": "2105133", "nome": "ESTAGIO CURR SUPERVISIONADO PEDIATRIA I", "ch": "405\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "12º Nível", "codigo": "2105130", "nome": "ESTAGIO CURR SUPERV SAUDE COLETIVA II", "ch": "405\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}, {"nivel": "12º Nível", "codigo": "2105134", "nome": "ESTAGIO CURR SUPERVISIONADO PEDIATRIA II", "ch": "405\"h", "tipo": "Complementar", "isComplementar": true, "preReqs": []}];
+  const codigoToNome = {"2105001": "INTRODUÇÃO À MEDICINA", "2105007": "INICIACAO CIENTIFICA", "2105004": "FUNDAMENTOS DE ANATOMIA HUMANA", "2105006": "GENESE E DESENVOLVIMENTO", "2105060": "PRINC. FÍSICOS E QUÍMICOS DO SER HUMANO", "2105061": "BIOLOGIA E FISIOLOGIA CELULAR E TECIDUAL", "2105062": "SAUDE DA FAMILIA E COMUNITARIA I", "2105063": "AGENTES AGRESSORES E MECAN DE DEFESA I", "2105064": "SISTEMA NERVOSO", "2105065": "SISTEMAS ENDOCRINO E REPRODUTOR", "2105054": "SISTEMA URINARIO", "2105066": "SAUDE DA FAMILIA E COMUNITARIA II", "2105067": "AGENTES AGRESSORES E MECAN DE DEFESA II", "2105068": "SIST CARDIOV HEMATOPOIETICO E LINFATICO", "2105069": "SISTEMA RESPIRATORIO", "2105070": "SISTEMA DIGESTORIO", "2105071": "SISTEMA LOCOMOTOR E TEGUMENTAR", "2103218": "INGLES INSTRUMENTAL", "2105011": "PSICOLOGIA MÉDICA", "2105072": "SAUDE DA FAMILIA E COMUNITARIA III", "2105073": "ALTERACOES GEN E DIST DO CICLO CELULAR", "2105074": "SEMIOLOGIA", "2105075": "FARMACOLOGIA", "2105080": "SAUDE DA FAMILIA E COMUNITARIA IV", "2105081": "CLÍNICA MÉDICA I", "2105082": "CIRURGIA AMBULATORIAL", "2105083": "ANESTESIOLOGIA", "2105084": "DIAGNOSTICO POR IMAGEM", "2105086": "SAUDE DA FAMILIA E COMUNITARIA V", "2105087": "CLÍNICA MÉDICA II", "2105088": "CLÍNICA CIRÚRGICA I", "2105089": "DOENCAS INFECCIOSAS E PARASITARIAS", "2105098": "SAUDE DA FAMILIA E COMUNITARIA VI", "2105099": "CLÍNICA MÉDICA III", "2105100": "CLÍNICA CIRÚRGICA II", "2105101": "URGENCIA E TERAPIA INTENSIVA", "2105102": "GESTAO E ADMINISTRACAO", "2105108": "ETICA, BIOETICA E MEDICINA LEGAL", "2105112": "SEMINARIO DE PESQUISA", "2105107": "SAUDE DA FAMILIA E COMUNITARIA VII", "2105109": "SAUDE DA CRIANCA E DO ADOLESCENTE", "2105110": "SAUDE DA MULHER", "2105111": "CLÍNICA MÉDICA E CIRÚRGICA", "2105131": "EST CURR SUPERV. EM CLÍNICA MÉDICA I", "2105135": "ESTÁGIO CURR SUPERV CLINICA CIRURGICA", "2105132": "EST CURR SUPERV EM CLINICA MEDICA II", "2105136": "EST CURR SUPERV EM GINEC E OBSTETRICIA", "2105129": "ESTAGIO CURR SUPERV SAUDE COLETIVA I", "2105133": "ESTAGIO CURR SUPERVISIONADO PEDIATRIA I", "2105130": "ESTAGIO CURR SUPERV SAUDE COLETIVA II", "2105134": "ESTAGIO CURR SUPERVISIONADO PEDIATRIA II", "2104012": "LINGUA BRASILEIRA DE SINAIS", "2105079": "MEDICINA ESPORTIVA", "2105085": "PROCESSOS PATOLOGICOS GERAIS", "2105113": "PRÁTICAS DE ENFERMAGEM", "2105114": "HOMEOPATIA", "2105115": "PRÁTICAS NÃO-CONVENCIONAIS EM MEDICINA", "2105116": "SAUDE DO TRABALHADOR", "2105117": "TOXICOLOGIA CLÍNICA", "2105118": "MEDICINA NUCLEAR", "2105119": "NUTRICAO", "2105127": "TEM(GERIATRIA)", "2105147": "TEM (ED. MÉDICA E NEC. SOCIAIS EM SAÚDE)", "2105153": "PSIQUIATRIA APLICADA", "2105156": "TEM(NOMECLATURA EM ANATOMIA HUMANA)", "2105157": "TEM(PATOLOGIA)", "2105158": "TEM(FITOTERAPIA)", "2105159": "TEM(CIRURGIA ONCOLÓGICA DO APARELHO DIG)", "2105160": "TEM(PRINC TEOR DA CIRURGIA DE CAB E PESC", "2105161": "TEM(ATLS-SUPORTE AVANÇADO DE VIDA NO TRA", "2105162": "TEM(ANTIBIOTICOTERAPIA CLÍNICA)", "2105163": "TEM(IMUNOLOGIA APLICADA À CLÍNICA)", "2105164": "TEM(O QUE TODO CLIN DEVERIA SAB SOB DERM", "2105165": "TEM(INTRD A ANESTESIOLOGIA E A REANIM)", "2105166": "TEM(FARMACOLOGIA)", "2105167": "TEM(CUIDADOS PALEATIVOS)", "2105168": "TEM(PSIQUIATRIA:RACIOCÍNIO CLÍNICO E CON", "2105169": "TEMII(EMPREENDEDORISMO)", "2105170": "TEM(FUND DE ANATOMIA HUMANA TEÓRICA)", "2105171": "TEM(FUND DE ANATOMIA HUMANA PRÁTICA)", "2105172": "TEM(PRINC FIS E QUIM SER HUMANO TEÓRICO)", "2105173": "TEM(PRINC FIS E QUIM SER HUMANO PRÁTICO)", "2105174": "TEM(AGENTES AGR E MEC DE DEF I TEÓRICO)", "2105175": "TEM(AGENTES AGR E MEC DE DEF I PRÁTICO)", "2105176": "TEM(SISTEMA NERVOSO TEÓRICO)", "2105177": "TEM(SISTEMA NERVOSO PRÁTICO)", "2105178": "TEM(SISTEMA ENDÓCRINO REPRODUTOR TEÓRICO", "2105179": "TEM(SISTEMA ENDÓCRINO REPRODUTOS PRÁTICO", "2105180": "TEM(SIST LOCOMOTOR E TEGUMENTAR TEÓRICO)", "2105181": "TEM(SIST LOCOMOTOR E TEGUMENTAR PRÁTICO)", "2105182": "TEM(SIST CARDIO,HEMATOPOIÉTICO E LINF T)", "2105183": "TEM(SIST CARDIO,HEMATOPOIÉTICO E LINF P)", "2105184": "TEM(SISTEMA DIGESTÓRIO TEÓRICO)", "2105185": "TEM(SISTEMA DIGESTÓRIO PRÁTICO)", "2105186": "TEM(SISTEMA RESPIRATÓRIO TEÓRICO)", "2105187": "TEM(SISTEMA RESPIRATÓRIO PRÁTICO)", "2105188": "TEM(SISTEMA URINÁRIO TEÓRICO)", "2105189": "TEM(SISTEMA URINÁRIO PRÁTICO)", "2105190": "TEM(SEMIOLOGIA TEÓRICA)", "2105191": "TEM(SEMIOLOGIA PRÁTICA)", "2105192": "TEM(SAÚDE DA FAM E COMUNIDADE IV TEÓR)", "2105193": "TEM(SAÚDE DA FAM E COMUNIDADE IV PRAT)", "2105194": "TEM(CLÍNICA MÉDICA I:TEÓRICA)", "2105195": "TEM(CLÍNICA MÉDICA I:PRÁTICA)", "2105200": "TEM(CIRURGIA AMBULATORIAL TEÓRICA)", "2105201": "TEM(CIRUGUA AMBULATORIAL PRÁTICA)", "2105202": "TEM(ANESTESIOLOGIA TEÓRICA)", "2105203": "TEM(ANESTESIOLOGIA PRÁTICA)", "2105204": "TEM(SAÚDE DA FAM E COMUNIDADE V TEÓR)", "2105205": "TEM(SAÚDE DA FAM E COMUNIDADE V PRAT)", "2105206": "TEM(CLÍNICA MÉDICA II:TEÓRICA)", "2105207": "TEM(CLÍNICA MÉDICA II:PRÁTICA)", "2105210": "TEM(CLÍNICA CIRÚRGICA I TEÓRICA)", "2105211": "TEM(CLÍNICA CIRÚRGICA I PRÁTICA)", "2105212": "TEM(SAÚDE DA FAM E COMUNIDADE VI TEOR)", "2105213": "TEM(SAÚDE DA FAM E COMUNIDADE VI PRAT)", "2105214": "TEM(CLÍNICA MÉDICA III TEÓRICA)", "2105215": "TEM(CLÍNICA MÉDICA III PRÁTICA)", "2105218": "TEM(CLÍNICA CIRÚRGICA II TEÓRICA)", "2105219": "TEM(CLÍNICA CIRÚRGICA II PRÁTICA)", "2105220": "TEM(URGÊNCIA E TERAPIA INTENSIVA I:TEOR)", "2105221": "TEM(URGÊNCIA E TERAPIA INTENSIVA I:PRAT)", "2105222": "TEM(DOENÇAS INFECCIOSAS E PARASITAR TEOR", "2105223": "TEM(DOENÇAS INFECCIOSAS E PARASITAR PRAT", "2105224": "TEM(ELABORAÇÃO DE ART CIENT EM MEDICINA)", "2105225": "TEM(INTERPRETACAO DE ELETROCARDIOGRAMA)", "2105226": "TEM(INTROD AS HAB DE COMUNICACAO CLINICA", "2105227": "TEM(NEUROLOGIA INFANTIL)"};
 
   const subjectsMap = new Map();
   mandatorySubjects.forEach(sub => subjectsMap.set(sub.codigo, sub));
@@ -1170,7 +1173,7 @@
               <span class="subject-code">${sub.codigo}</span>
               <span class="status-badge">${statusText}</span>
             </div>
-            <div class="subject-name">${sub.nome}</div>
+            <div class="subject-name">${sub.nome}${sub.isComplementar ? ' <span class="type-badge type-complementar" title="Disciplina Complementar">Complementar</span>' : ''}</div>
             <div><span class="subject-ch">${sub.ch}</span></div>
             <div class="pre-req-hint">📌 Pré‑req: ${prereqDisplay}</div>
           </div>
